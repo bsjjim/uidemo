@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExternalAPI">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExternalAPI" shorttypename="ExternalAPI" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="可以与在外部应用中定义的API模块联动的对象。" />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定ExternalAPI的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定ExternalAPI的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含ExternalAPI的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于执行在特定的外部应用程序中定义的API模块的方法。">
+        <Syntax text="ExternalAPI.execExtAPI( strRecvID, strAppID, strAPI [, strParams] )">
+          <Return type="Boolean" description="与API模块的执行与否无关地在执行方法成功时，将返回true。&#xD;&#xA;&#xD;&#xA;与API模块的执行与否无关地在执行方法失败时，将返回false。" />
+          <Arguments>
+            <Argument name="strAPI" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要执行的API模块的名称。" />
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对需要执行的API模块做出定义的外部应用程序的ID。" />
+            <Argument name="strParams" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要传递到所执行的API模块中的参数。&#xA;&#xA;当包含多个参数时，利用空格区分各个参数。&#xA;在参数值中包含空格的情况下，需要使用“'”（单引号）。" />
+            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于对所执行的方法进行区分的ID。&#xA;&#xA;对在onsuccess、onrecvdata事件中设定到ExternalAPIEventIfo对象的recvid属性中的值进行传递。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于确认是否可以访问特定外部应用程序的方法。">
+        <Syntax text="ExternalAPI.isAccessible ( strAppID )">
+          <Return type="Boolean" description="与外部应用程序的可访问与否无关地在执行方法成功时，将返回true。&#xA;&#xA;与外部应用程序的可访问与否无关地在执行方法失败时，将返回false。" />
+          <Arguments>
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对可访问与否进行确认的外部应用程序·的ID。&#xA;&#xA;Android以Domain形态进行设定。(&quot;com.nexacro.testmodule&quot;)&#xA;iOS以URL Scheme形态进行设定。(&quot;TobesoftTestApp://&quot;)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在ExternalAPI对象中请求的作业失败时触发的事件。">
+        <Syntax text="ExternalAPI.onerror(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvdata" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在从外部应用接收到数据（字符串）时触发的事件。">
+        <Syntax text="ExternalAPI.onrecvdata(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在ExternalAPI对象中请求的作业成功时触发的事件。">
+        <Syntax text="ExternalAPI.onsuccess(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

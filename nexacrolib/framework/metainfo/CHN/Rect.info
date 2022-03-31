@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Rect">
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.Rect" shorttypename="Rect" csstypename="Rect" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对四角形形状的区域坐标进行处理的对象。" />
+    <PropertyInfo>
+      <Property name="height" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Rect对象的高度的属性。" csspropertyname="" normalpropertyname="height" />
+      <Property name="left" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Rect对象的左侧坐标值的属性。" csspropertyname="" normalpropertyname="left" />
+      <Property name="top" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Rect对象的上端坐标值的属性。" csspropertyname="" normalpropertyname="top" />
+      <Property name="width" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Rect对象的宽度的属性。" csspropertyname="" normalpropertyname="width" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Rect对象的所有属性值初始化为0的方法。">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对Rect对象的属性值进行复制并返回新的Rect对象的方法。">
+        <Syntax text="Rect.clone()">
+          <Return type="Object" description="返回对当前Rect对象的值进行复制的新的Rect对象。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的Rect对象的属性值复制到当前Rect对象的属性值的方法。">
+        <Syntax text="Rect.copy( objRect )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="利用Rect对象形态设定需要复制到当前Rect对象的属性中的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前Rect对象与通过参数传递的Rect对象的属性值是否一致的方法。">
+        <Syntax text="Rect.equals( objRect )">
+          <Return type="Boolean" description="在当前Rect对象与通过参数传递的Rect对象的属性值均一致时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在当前Rect对象中的至少一个与通过参数传递的Rect对象的属性值不一致时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="利用Rect对象形态设定与当前Rect对象的属性值进行比较的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Rect对象的下端坐标值的方法。">
+        <Syntax text="Rect.getBottom()">
+          <Return type="Number" description="利用pixel单位的整数返回Rect对象的下端坐标值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Rect对象的右侧坐标值的方法。">
+        <Syntax text="Rect.getRight()">
+          <Return type="Number" description="以pixel单位的整数返回Rect对象的右侧坐标值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前Rect对象与通过参数传递的Rect对象的宽度以及高度是否一致的方法。">
+        <Syntax text="Rect.isSameSize( objRect )">
+          <Return type="Boolean" description="在当前Rect对象与通过参数传递的Rect对象的宽度以及高度均一致时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在当前Rect对象中的至少一个与通过参数传递的Rect对象的宽度或高度不一致时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="设定需要与当前Rect对象的宽度、高度进行比较的Rect对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

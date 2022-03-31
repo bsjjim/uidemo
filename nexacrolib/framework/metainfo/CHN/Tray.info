@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Tray">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.Tray" shorttypename="Tray" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onrbuttonup" requirement="Windows NRE,macOS NRE" description="作为在应用中使用的系统托盘，可以对多重托盘进行注册。" />
+    <PropertyInfo>
+      <Property name="icon" group="" subgroup="" refreshinfo="" edittype="StringEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Icon" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定显示在任务栏中的Tray的图标图像的属性。" csspropertyname="" normalpropertyname="icon" />
+      <Property name="items" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="包含注册到Tray中的TrayPopupMenu对象的信息的只读属性。" csspropertyname="" normalpropertyname="items" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定Tray的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="tooltip" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定在将鼠标指针移动到Tray图标时显示的气球帮助信息的属性。" csspropertyname="" normalpropertyname="tooltip" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于向Tray的items属性添加TrayPopupMenu对象的方法。">
+        <Syntax text="Tray.addItem(strID,objPopupMenu)">
+          <Return type="Number" description="返回添加到items属性中的TrayPopupMenu对象的索引。&#xD;&#xA;&#xD;&#xA;在添加TrayPopupMenu对象失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="设定需要添加到Tray的items属性中的TrayPopupMenu对象。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加到Tray的Items属性中的TrayPopupMenu对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于删除注册到Tray的items属性中的TrayPopupMenu对象的方法。">
+        <Syntax text="Tray.deleteItem( strID )">
+          <Return type="Number" description="返回从items属性中删除的TrayPopupMenu对象的索引。&#xD;&#xA;&#xD;&#xA;在删除TrayPopupMenu对象失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要从Tray的Items属性中进行删除的TrayPopupMenu对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于删除通过脚本动态生成的Tray的方法。">
+        <Syntax text="Tray.destroy()">
+          <Return type="Boolean" description="在Tray被正常删除时，将返回&quot;true&quot;。&#xD;&#xA;在Tray没有被正常删除时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于返回注册到Tray的items属性中的特定TrayPopupMenu对象的索引的方法。">
+        <Syntax text="Tray.findItem(strID)">
+          <Return type="Number" description="返回注册到items属性中的strID的索引。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定注册到items属性中的TrayPopupMenu对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于返回注册到Tray的items属性中的TrayPopupMenu对象数量的方法。">
+        <Syntax text="Tray.getItemCount()">
+          <Return type="Number" description="返回注册到items属性中的TrayPopupMenu对象的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hideBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="">
+        <Syntax text="Tray.hideBalloonTip()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于在通过脚本动态生成Tray之后进行初始化的方法。">
+        <Syntax text="Tray.init(strID, icon, tooltip);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="icon" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Tray中使用的Icon。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定动态生成的Tray的ID。" />
+            <Argument name="tooltip" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Tray的气球帮助信息中显示的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于向Tray的items属性的特定位置添加TrayPopupMenu对象的方法。">
+        <Syntax text="Tray.insertItem(nIndex, strID, objPopupMenu)">
+          <Return type="Number" description="返回添加TrayPopupMenu对象的位置的索引。&#xD;&#xA;&#xD;&#xA;在添加TrayPopupMenu对象失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要添加TrayPopupMenu对象的位置的索引。" />
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="设定需要添加的TrayPopupMenu对象。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定TrayPopupMenu对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="用于将通过脚本动态生成的Tray显示在任务栏中的方法。">
+        <Syntax text="Tray.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于在Tray中显示气球帮助信息的方法。">
+        <Syntax text="Tray.showBalloonTip(strTitleIcon, strTitle, strText [, bNoSound])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bNoSound" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为“true”时，在显示气球提示的同时不播放声音。&#xD;&#xA;在设定为“false”时，在显示气球提示的同时播放声音。&#xD;&#xA;&#xD;&#xA;在省略值时适用“false”。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在气球提示中的文本。" />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在气球提示中的标题。" />
+            <Argument name="strTitleIcon" type="String" in="false" out="false" option="false" variable="false" description="设定显示在气球提示的标题左侧的图标的名称以及路径。&#xD;&#xA;&#xD;&#xA;可以作为图标使用的系统图标包括“information”、“warning”、“error”、“none”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onballoontipclick" group="" deprecated="false" unused="false" requirement="Windows NRE" description="点击在Tray上显示的气球提示时触发的事件。">
+        <Syntax text="Tray.onballoontipclick(obj:nexacro.Tray,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onballoontiphide" group="" deprecated="false" unused="false" requirement="Windows NRE" description="在Tray中显示的气球提示被隐藏时触发的事件。">
+        <Syntax text="Tray.onballoontiphide(obj:nexacro.Tray,e:nexacro.TrayBalloonTipHideEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="TrayBalloonTipHideEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onballoontipshow" group="" deprecated="false" unused="false" requirement="Windows NRE" description="在Tray中显示气球提示时触发的事件。">
+        <Syntax text="Tray.onballoontipshow(obj:nexacro.Tray,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="在利用鼠标左键双击Tray图标时触发的事件。">
+        <Syntax text="Tray.ondblclick(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="在Tray图标中点击鼠标左键时触发的事件。">
+        <Syntax text="Tray.onlbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="在Tray图标中点击鼠标右键时触发的事件。">
+        <Syntax text="Tray.onrbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

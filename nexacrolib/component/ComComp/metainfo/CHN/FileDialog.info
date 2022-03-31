@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDialog">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDialog" shorttypename="FileDialog" csstypename="FileDialog" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="可供用户选择需要打开或保存文件的路径的文件选择对话框组件。" />
+    <PropertyInfo>
+      <Property name="accept" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要适用于FileDialog的文件格式的属性。" csspropertyname="" normalpropertyname="accept" />
+      <Property name="defaultextension" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定是否在文件名中包含在FileDialog中选择的文件格式扩展名的属性。" csspropertyname="" normalpropertyname="defaultextension" />
+      <Property name="filter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定需要适用于FileDialog的文件格式的属性。" csspropertyname="" normalpropertyname="filter" />
+      <Property name="filterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于以索引值设定需要在FileDialog中默认显示的文件格式的属性。" csspropertyname="" normalpropertyname="filterindex" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定FileDialog的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定FileDialog的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含FileDialog的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="SELFOLDER" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="SELFOLDER" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于向FileDialog的特定事件添加句柄函数的方法。">
+        <Syntax text="FileDialog.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于对函数进行检索并作为句柄函数添加到FileDialog的特定事件中的方法。">
+        <Syntax text="FileDialog.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="FileDialog.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于在FileDialog的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="FileDialog.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回FileDialog的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="FileDialog.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示FileDialog的方法。">
+        <Syntax text="FileDialog.open( strTitle, constOpenMode [, strInitialPath [, strFileName [, nWidth [, nHeight ]]]] )">
+          <Return type="Boolean" description="在执行方法成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在参数值设定错误或执行方法失败时，将返回false。" />
+          <Arguments>
+            <Argument name="constOpenMode" type="Constant" in="false" out="false" option="false" variable="false" description="设定所显示的FileDialog的类型。&#xA;&#xA;在设定为“FileDialog.LOAD”或1时，显示可以读取一个文件的FileDialog。&#xA;在设定为“FileDialog.SAVE”或2时，显示可以写入一个文件的FileDialog。&#xA;在设定为“FileDialog.MULTILOAD”或3时，显示可以读取多个文件的FileDialog。&#xA;在设定为“FileDialog.SELFOLDER”或4时，显示可以选择文件夹的FileDialog。&#xA;&#xA;在设定为错误的值时，适用“FileDialog.LOAD”。&#xA;&#xA;* Desktop WRE 是只能在&quot;FileDialog.LOAD&quot;与&quot;FileDialog.MULTILOAD&quot;可以设定。&#xA;* 在Mobile的情况下，只能在 iOS/iPadOS WRE或iOS/iPad NRE(超过iOS/iPadOS 14)可以设定为&quot;FileDialog.MULTILOAD&quot; 。" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定FileDialog的高度。&#xD;&#xA;&#xD;&#xA;在不设定值或设定小于356的值时，将适用356或最后显示的高度。&#xD;&#xA;在设定大于显示器高度的值时，将适用显示器的高度值。&#xD;&#xA;&#xD;&#xA;* 只有在Windows NRE中适用设定值。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定FileDialog的宽度。&#xD;&#xA;&#xD;&#xA;在不设定值或设定小于648的值时，将适用648或最后显示的宽度。&#xD;&#xA;在设定大于显示器宽度的值时，将适用显示器的宽度值。&#xD;&#xA;&#xD;&#xA;* 只有在Windows NRE中适用设定值。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="设定需要在显示FileDialog时默认指定的文件名。&#xA;&#xA;当constOpenMode值为“FileDialog.SELFOLDER”时将对本参数进行忽略。&#xA;&#xA;* 在web runtime environment中不会适用设定值。" />
+            <Argument name="strInitialPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要在显示FileDialog时默认选择的文件夹。&#xA;使用绝对路径或Alias进行设定。&#xA;&#xA;* 在移动设备NRE中不会适用设定值。&#xA;* 在WRE中不会适用设定值。" />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="显示需要在File Dialog的TitleBar中显示的字符串。&#xD;&#xA;&#xD;&#xA;* 在macOS NRE以及web runtime environment中不会适用设定值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于从FileDialog的特定事件中删除句柄函数的方法。">
+        <Syntax text="FileDialog.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于从FileDialog的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="FileDialog.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于变更FileDialog的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="FileDialog.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于将FileDialog的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="FileDialog.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在关闭FileDialog时触发的事件。">
+        <Syntax text="FileDialog.onclose(obj:nexacro.FileDialog,e:nexacro.FileDialogEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDialogEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

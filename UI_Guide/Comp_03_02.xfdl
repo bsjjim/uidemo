@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Button" width="1528" height="1685" titletext="버튼 유형 모음. (정리필요)">
+    <Layouts>
+      <Layout height="1685" mobileorientation="landscape" width="1528">
+        <Button id="Button00_00_01_00_03_00_00_01_02" taborder="0" text="확장" top="79" width="60" height="24" cssclass="btn_Block_collapse2" right="620"/>
+        <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="1" top="79" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="1436"/>
+        <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="2" top="79" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="1388"/>
+        <Button id="Button00_00_01_00_02_02_00_02_00" taborder="3" top="79" width="44" height="24" cssclass="btn_Block_fileUp" textPadding="0px" tooltiptext="파일업로드" right="1340"/>
+        <Button id="Button00_00_01_00_02_02_00_01_00_00" taborder="4" top="79" width="44" height="24" cssclass="btn_Block_fileDown" textPadding="0px" tooltiptext="파일다운로드" right="1292"/>
+        <Button id="Button00_00_01_00_02_02_01" taborder="5" text="커스텀팝업" top="79" width="100" height="24" cssclass="btn_Block_popup" right="1188"/>
+        <Button id="Button00_00_01_00_03_02" taborder="6" text="커스텀" top="79" width="62" height="24" cssclass="btn_Block" right="1122"/>
+        <Button id="Button00_00_01_00_03_00" taborder="7" text="행추가" top="79" width="76" height="24" cssclass="btn_Block_addRow" right="1042"/>
+        <Button id="Button00_00_01_00_03_00_02" taborder="8" text="행복사" top="79" width="76" height="24" cssclass="btn_Block_copyRow" right="962"/>
+        <Button id="Button00_00_01_00_03_00_02_00" taborder="9" text="행삭제" top="79" width="76" height="24" cssclass="btn_Block_delRow" right="882"/>
+        <Button id="Button00_00_01_00_03_00_00" taborder="10" text="행취소" top="79" width="76" height="24" cssclass="btn_Block_reset" right="802"/>
+        <Button id="Button00_00_01_00_03_01" taborder="11" text="저장" top="79" width="50" height="24" cssclass="btn_Block" right="748"/>
+        <Button id="Button00_00_01_00_03_00_00_01" taborder="12" text="접기" top="79" width="60" height="24" cssclass="btn_Block_collapse" right="684"/>
+        <Static id="Static01_00_00_00" taborder="13" text="6" top="103" cssclass="sta_Guide" width="70" left="782" height="6" visible="false"/>
+        <Button id="Button00_00_01_00_02_02_01_00_00" taborder="14" text="파일삭제" top="245" width="76" height="24" cssclass="btn_Block" right="1267"/>
+        <Button id="Button00_00_01_00_02_02_01_00" taborder="15" text="아래로" top="45" width="76" height="24" cssclass="btn_Block_rowDown" right="974"/>
+        <Button id="Button00_00_01_00_02_02_01_01" taborder="16" text="위로" top="45" width="64" height="24" cssclass="btn_Block_rowUp" right="1054"/>
+        <Button id="Button00_00_01_00_02_02_01_01_00" taborder="17" text="파일추가" top="245" width="76" height="24" cssclass="btn_Block" right="1347"/>
+        <Button id="Button00_00_01_00_03_02_00" taborder="18" text="계약서출력" top="398" width="84" height="24" cssclass="btn_Block" right="1344"/>
+        <Button id="Button00_00_01_00_02_02_00_00_00_00_00_00_00" taborder="19" top="290" width="98" height="24" cssclass="btn_Block" textPadding="0px" right="1326" text="양식다운로드"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00" taborder="20" text="일괄번호등록 엑셀양식다운로드" top="319" width="194" height="24" cssclass="btn_Block" right="1230"/>
+        <Button id="Button00_00_01_00_02_02_00_00_00_00_00_01" taborder="21" top="348" width="150" height="24" cssclass="btn_Block" textPadding="0px" right="1274" text="호텔지점 엑셀다운로드"/>
+        <Button id="Button00_01_00_00" taborder="22" text="SMS발송" width="88" height="28" cssclass="btn_Comm_func" top="1132" right="671"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_00" taborder="23" text="초기화" top="153" width="62" height="24" cssclass="btn_Block" right="1362"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_01" taborder="24" text="탈퇴처리" top="211" width="74" height="24" cssclass="btn_Block" right="1348"/>
+        <Button id="Button00_01_00_00_00" taborder="25" text="도움말" width="76" height="28" cssclass="btn_Comm_func" top="1032" right="1376"/>
+        <Button id="Button00_01_00" taborder="26" text="초기화" width="76" height="28" cssclass="btn_Comm_func" top="1032" right="1296"/>
+        <Button id="Button00_00_00" taborder="27" text="탈퇴처리" width="88" height="28" cssclass="btn_Comm_func" top="1032" right="1204"/>
+        <Button id="Button00_00_01_00_03_00_02_00_00" taborder="28" text="도움말" top="153" width="62" height="24" cssclass="btn_Block" right="1294"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_00_00" taborder="29" text="이력조회" top="688" width="74" height="24" cssclass="btn_Block" right="1361"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_02" taborder="30" text="휴면처리" top="688" width="74" height="24" cssclass="btn_Block" right="1283"/>
+        <Button id="Button00_00_01_00_03_02_00_00" taborder="31" text="복원처리" top="688" width="74" height="24" cssclass="btn_Block" right="1205"/>
+        <Button id="Button00_00_01_00_03_02_00_01" taborder="32" text="연장요청" top="688" width="74" height="24" cssclass="btn_Block" right="1127"/>
+        <Button id="Button00_00_01_00_03_02_01" taborder="33" text="탈퇴처리" top="688" width="74" height="24" cssclass="btn_Block" right="1049"/>
+        <Button id="Button00_01_00_01" taborder="34" text="이력조회" width="88" height="28" cssclass="btn_Comm_func" top="1094" right="1363"/>
+        <Button id="Button00_01" taborder="35" text="휴면처리" width="88" height="28" cssclass="btn_Comm_func" top="1094" right="1271"/>
+        <Button id="Button00" taborder="36" text="복원처리" width="88" height="28" cssclass="btn_Comm_func" top="1094" right="1179"/>
+        <Button id="Button00_00_01" taborder="37" text="연장요청" width="88" height="28" cssclass="btn_Comm_func" top="1094" right="1087"/>
+        <Button id="Button00_00_00_00" taborder="38" text="탈퇴처리" width="88" height="28" cssclass="btn_Comm_func" top="1094" right="995"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_00_01" taborder="39" text="초기화" top="722" width="62" height="24" cssclass="btn_Block" right="1373"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_03" taborder="40" text="임의탈퇴처리" top="722" width="98" height="24" cssclass="btn_Block" right="1271"/>
+        <Button id="Button00_00_01_00_03_02_00_00_01" taborder="41" text="임의탈퇴취소" top="722" width="98" height="24" cssclass="btn_Block" right="1169"/>
+        <Button id="Button00_00_01_00_03_02_00_02" taborder="42" text="연장요청" top="722" width="74" height="24" cssclass="btn_Block" right="1091"/>
+        <Button id="Button00_00_01_00_03_02_02" taborder="43" text="연장요청취소" top="722" width="98" height="24" cssclass="btn_Block" right="989"/>
+        <Button id="Button00_01_00_02" taborder="44" text="초기화" width="76" height="28" cssclass="btn_Comm_func" top="1132" right="1376"/>
+        <Button id="Button00_01_01" taborder="45" text="임의탈퇴처리" width="112" height="28" cssclass="btn_Comm_func" top="1132" right="1260"/>
+        <Button id="Button00_02" taborder="46" text="임의탈퇴취소" width="112" height="28" cssclass="btn_Comm_func" top="1132" right="1144"/>
+        <Button id="Button00_00_02" taborder="47" text="연장요청" width="88" height="28" cssclass="btn_Comm_func" top="1132" right="1052"/>
+        <Button id="Button00_00_00_01" taborder="48" text="연장요청취소" width="112" height="28" cssclass="btn_Comm_func" top="1132" right="936"/>
+        <Button id="Button00_00_01_00_03_02_00_03" taborder="49" text="대량구매의뢰" top="158" width="98" height="24" cssclass="btn_Block" right="1002"/>
+        <Button id="Button00_00_01_00_03_02_03" taborder="50" text="대량구매의뢰취소" top="158" width="122" height="24" cssclass="btn_Block" right="876"/>
+        <Button id="Button00_00_01_00_03_02_04" taborder="51" text="비밀번호초기화" top="199" width="110" height="24" cssclass="btn_Block" right="773"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_00_02" taborder="52" text="저장" top="199" width="50" height="24" cssclass="btn_Block" right="720"/>
+        <Button id="Button00_00_00_02" taborder="53" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="1132" right="532"/>
+        <Button id="Button00_00_00_00_00" taborder="54" text="근무시간관리" top="1170" width="112" height="28" cssclass="btn_Comm_func" right="1340"/>
+        <Button id="Button00_00_00_01_00" taborder="55" text="DS가능지역" top="1170" width="102" height="28" cssclass="btn_Comm_func" right="1234"/>
+        <Button id="Button00_00_01_00_03_02_05" taborder="56" text="사용자등록" top="192" width="86" height="24" cssclass="btn_Block" right="1014"/>
+        <Button id="Button00_00_01_00_03_02_00_04" taborder="57" text="삭제" top="192" width="50" height="24" cssclass="btn_Block" right="960"/>
+        <Button id="Button00_00_00_00_01" taborder="58" text="사용자등록" width="100" height="28" cssclass="btn_Comm_func" top="1208" right="1351"/>
+        <Button id="Button00_00_01_00_03_02_00_04_00" taborder="59" text="출력" top="226" width="50" height="24" cssclass="btn_Block" right="1050"/>
+        <Button id="Button00_00_01_00_03_02_00_00_02" taborder="60" text="양식다운로드" top="260" width="98" height="24" cssclass="btn_Block" right="998"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_04" taborder="61" text="세금계산서발행" top="260" width="110" height="24" cssclass="btn_Block" right="884"/>
+        <Static id="sta00" taborder="62" text="테이블 우측상단" left="93" top="648" width="120" height="24" cssclass="sta_WF_title1"/>
+        <Static id="sta00_00" taborder="63" text="그리드 우측상단" left="94" top="119" width="120" height="24" cssclass="sta_WF_title1"/>
+        <Button id="Button00_00_01_00" taborder="64" text="취소" height="28" cssclass="btn_Comm_func" top="1070" right="768" width="64"/>
+        <Button id="Button00_00_00_01_00_00" taborder="65" text="인쇄" top="1070" width="79" height="28" cssclass="btn_Comm_func_pop" right="685"/>
+        <Div id="div00_00" taborder="66" text="div00" left="82" top="966" width="1204" height="48" cssclass="div_footer">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00_01_00_00_03_00" taborder="0" text="10" top="0" cssclass="sta_Guide" width="100" height="10" visible="false" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00" taborder="1" text="10" cssclass="sta_Guide" width="100" height="10" visible="false" bottom="0" right="0"/>
+              <Button id="Button00_02" taborder="2" text="OO정산" top="10" width="88" height="28" cssclass="btn_Comm_func" right="646"/>
+              <Button id="Button00_02_00" taborder="3" text="OO등록" top="10" width="88" height="28" cssclass="btn_Comm_func" right="554"/>
+              <Button id="Button00" taborder="4" text="신규입력" top="10" width="88" height="28" cssclass="btn_Comm_func" right="462"/>
+              <Button id="Button00_00" taborder="5" text="저장" top="10" width="64" height="28" cssclass="btn_Comm_func" right="394"/>
+              <Button id="Button00_00_00" taborder="6" text="처리" top="10" width="64" height="28" cssclass="btn_Comm_func" right="326"/>
+              <Button id="Button00_00_00_04" taborder="7" text="취소" top="10" width="64" height="28" cssclass="btn_Comm_func" right="258"/>
+              <Button id="Button00_00_00_01" taborder="8" text="삭제" top="10" width="64" height="28" cssclass="btn_Comm_func" right="190"/>
+              <Button id="Button00_00_00_02" taborder="9" text="결재요청" top="10" width="103" height="28" cssclass="btn_Comm_func_pop" right="83"/>
+              <Button id="Button00_00_00_01_00" taborder="10" text="인쇄" top="10" width="79" height="28" cssclass="btn_Comm_func_pop" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="Button00_00_01_00_03_02_06" taborder="67" text="설비오류수정" top="294" width="98" height="24" cssclass="btn_Block" right="996"/>
+        <Button id="Button00_00_03" taborder="68" text="처분등록" height="28" cssclass="btn_Comm_func" top="1276" right="1365" width="88"/>
+        <Button id="Button00_00_01_01" taborder="69" text="판매등록" height="28" cssclass="btn_Comm_func" top="1276" right="1273" width="88"/>
+        <Button id="Button00_00_00_00_02" taborder="70" text="초기화" top="756" width="62" height="24" right="1372" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_00_00" taborder="71" text="출발등록" top="756" width="74" height="24" right="1294" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_01_00" taborder="72" text="경유지등록" top="756" width="86" height="24" right="1204" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_03" taborder="73" text="초기화" top="790" width="62" height="24" right="1301" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_00_01" taborder="74" text="도착등록" top="790" width="74" height="24" right="1223" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_01_01" taborder="75" text="운행비용등록" top="790" width="98" height="24" right="1121" cssclass="btn_Block"/>
+        <Button id="Button00_00_00_00_02_00" taborder="76" text="KM상동" top="790" width="67" height="24" right="1367" cssclass="btn_Block"/>
+        <Button id="Button00_00_01_00_02_02_01_03" taborder="77" text="SMS전송" top="353" width="74" height="24" cssclass="btn_Block" right="1022"/>
+        <Button id="Button00_00_01_00_03_02_07" taborder="78" text="타지점대차" top="353" width="86" height="24" cssclass="btn_Block" right="932"/>
+        <Button id="Button00_00_01_00_03_02_00_05" taborder="79" text="배차교체" top="353" width="74" height="24" cssclass="btn_Block" right="854"/>
+        <Button id="Button00_00_01_00_03_02_00_00_03" taborder="80" text="배차취소" top="353" width="74" height="24" cssclass="btn_Block" right="776"/>
+        <Static id="sta01_00" taborder="81" text="2" left="120" top="1236" width="22" height="24"/>
+        <Button id="Button00_00_00_03_00" taborder="82" text="삭제" width="64" height="28" cssclass="btn_Comm_func" top="1208" right="1283"/>
+        <Static id="sta01_00_00" taborder="83" text="3" left="206" top="1236" width="22" height="24"/>
+        <Button id="Button00_00_00_00_04" taborder="84" text="활성" width="64" height="28" cssclass="btn_Comm_func" top="1341" right="1391"/>
+        <Button id="Button00_00_00_03" taborder="85" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="1341" right="1323"/>
+        <Button id="Button00_00_00_01_01" taborder="86" text="확정" width="64" height="28" cssclass="btn_Comm_func" top="1341" right="1255"/>
+        <Button id="Button00_00_04" taborder="87" text="SafeKey 조회" width="137" height="28" cssclass="btn_Comm_func_pop" top="1246" right="890"/>
+        <Button id="Button00_00_00_00_05" taborder="88" text="영업기회등록" width="112" height="28" cssclass="btn_Comm_func" top="1246" right="774"/>
+        <Button id="Button00_00_00_04" taborder="89" text="인증" width="64" height="28" cssclass="btn_Comm_func" top="1246" right="706"/>
+        <Static id="sta01_00_01" taborder="90" text="2" left="561" top="1274" width="22" height="24"/>
+        <Button id="Button00_00_01_02" taborder="91" text="그래프" width="91" height="28" cssclass="btn_Comm_func_pop" top="1369" right="939"/>
+        <Button id="Button00_00_01_02_00_00_00_00_00_01" taborder="92" text="영업매니저 지정" top="1170" width="124" height="28" cssclass="btn_Comm_func" right="1057"/>
+        <Button id="Button00_00_01_00_03_02_08" taborder="93" text="계약서출력" top="348" width="84" height="24" cssclass="btn_Block" right="1186"/>
+        <Button id="Button00_00_01_00_03_02_09" taborder="94" text="전기취소" top="353" width="74" height="24" cssclass="btn_Block" right="663"/>
+        <Button id="Button00_00_01_00_03_02_10" taborder="95" text="상품복사" top="269" width="74" height="24" cssclass="btn_Block" right="708"/>
+        <Button id="Button00_00_01_02_02_00_00_01_00" taborder="96" text="카피등록" width="88" height="28" cssclass="btn_Comm_func" right="825" bottom="248"/>
+        <Button id="Button00_00_01_02_02_00" taborder="97" text="확정취소" width="88" height="28" cssclass="btn_Comm_func" right="1160" bottom="316"/>
+        <Button id="Button00_00_00_05" taborder="98" text="변경신청서출력" width="124" height="28" cssclass="btn_Comm_func" top="1194" right="674"/>
+        <Button id="Button00_01_00_00_00_00" taborder="99" text="등록" width="64" height="28" cssclass="btn_Comm_func" top="1308" right="959"/>
+        <Button id="Button00_01_00_00_01_00" taborder="100" text="등록삭제" width="88" height="28" cssclass="btn_Comm_func" top="1308" right="867"/>
+        <Static id="sta01_00_01_00" taborder="101" text="3" left="240" top="1369" width="22" height="24"/>
+        <Button id="Button00_00_01_00_00" taborder="102" text="계좌검증" height="28" cssclass="btn_Comm_func" top="1445" right="940" width="88"/>
+        <Button id="Button00_00_01_00_00_00" taborder="103" text="전표생성" height="28" cssclass="btn_Comm_func" top="1445" right="848" width="88"/>
+        <Button id="Button00_00_01_00_00_00_00" taborder="104" text="지급계좌등록" height="28" cssclass="btn_Comm_func" top="1445" right="732" width="112"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_05" taborder="105" text="반납협의일 일괄등록" top="446" width="138" height="24" cssclass="btn_Block" right="1288"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_00_03" taborder="106" text="인수형상품" top="446" width="86" height="24" cssclass="btn_Block" right="1198"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_01_00" taborder="107" text="만기예정통지서 일괄발송" top="446" width="162" height="24" cssclass="btn_Block" right="1032"/>
+        <Button id="Button00_00_01_00_03_02_00_00_04" taborder="108" text="매각대상 일괄취소" top="446" width="126" height="24" cssclass="btn_Block" right="902"/>
+        <Button id="Button00_00_01_00_03_02_00_06" taborder="109" text="매각대상 일괄등록" top="446" width="126" height="24" cssclass="btn_Block" right="772"/>
+        <Button id="Button00_00_01_00_03_02_11" taborder="110" text="만기관리 일괄등록" top="446" width="126" height="24" cssclass="btn_Block" right="642"/>
+        <Button id="Button00_00_00_06" taborder="111" text="만기예정통지서 일괄발송" width="176" height="28" cssclass="btn_Comm_func" top="1488" right="599"/>
+        <Button id="Button00_00_00_00_06" taborder="112" text="인수형상품" width="100" height="28" cssclass="btn_Comm_func" top="1488" right="779"/>
+        <Button id="Button00_00_00_00_00_02" taborder="113" text="반납협의일 일괄등록" width="152" height="28" cssclass="btn_Comm_func" top="1488" right="883"/>
+        <Button id="Button00_00_00_01_02" taborder="114" text="상신" top="1417" width="64" height="28" cssclass="btn_Comm_func" right="1387"/>
+        <Button id="Button00_00" taborder="115" text="입고처리" top="1417" width="88" height="28" cssclass="btn_Comm_func" right="1295"/>
+        <Button id="Button00_00_01_00_02_02_01_02" taborder="116" text="대량업로드" top="245" width="86" height="24" cssclass="btn_Block" right="1171"/>
+        <Button id="Button00_00_01_02_00_00_00_00_00_00_00" taborder="117" text="명의이전완료" top="1409" width="112" height="28" cssclass="btn_Comm_func" right="918"/>
+        <Static id="sta01_00_00_00" taborder="118" text="2" left="186" top="1060" width="22" height="24"/>
+        <Static id="sta01_00_01_01" taborder="119" text="많음" left="953" top="1170" width="37" height="24"/>
+        <Static id="sta01_00_01_02" taborder="120" text="3" left="798" top="1098" width="22" height="24"/>
+        <Button id="Button00_00_01_00_03_02_00_07" taborder="121" text="장기계약서입출고" top="824" width="122" height="24" cssclass="btn_Block" right="1311"/>
+        <Button id="Button00_00_01_00_03_02_00_00_05" taborder="122" text="구매진행현황" top="824" width="98" height="24" cssclass="btn_Block" right="1209"/>
+        <Button id="Button00_00_01_00_03_02_00_00_00_06" taborder="123" text="탁송요청" top="824" width="74" height="24" cssclass="btn_Block" right="1131"/>
+        <Static id="sta01_00_01_02_00" taborder="124" text="3" left="798" top="1158" width="22" height="24"/>
+        <Button id="Button00_01_00_00_01" taborder="125" text="지연입고결제" width="127" height="28" cssclass="btn_Comm_func_pop" top="1526" right="906"/>
+        <Button id="Button00_00_01_02_00_00_01" taborder="126" text="영업확인" top="1526" width="88" height="28" cssclass="btn_Comm_func" right="814"/>
+        <Button id="Button00_00_05" taborder="127" text="렌탈청구내역" height="28" cssclass="btn_Comm_func" top="1564" right="915" width="112"/>
+        <Button id="Button00_00_01_03" taborder="128" text="청구서생성" height="28" cssclass="btn_Comm_func" top="1564" right="811" width="100"/>
+        <Static id="sta01_00_01_03" taborder="129" text="2" left="526" top="1341" width="22" height="24"/>
+        <Button id="Button00_00_01_04" taborder="130" text="메일전송" height="28" cssclass="btn_Comm_func" top="1070" right="846" width="88"/>
+        <Button id="Button00_00_01_00_02_02_01_04" taborder="131" text="물건수령확인" top="475" width="112" height="24" cssclass="btn_Block_popup" right="1310"/>
+        <Button id="Button00_00_01_00_02_02_01_00_01" taborder="132" text="출고 SMS 이력조회" top="475" width="136" height="24" cssclass="btn_Block_popup" right="1171"/>
+        <Button id="Button00_00_01_00_03_02_12" taborder="133" text="출고문서" top="475" width="74" height="24" cssclass="btn_Block" right="1094"/>
+        <Button id="Button00_00_01_00_03_02_00_08" taborder="134" text="개별요청" top="475" width="74" height="24" cssclass="btn_Block" right="1017"/>
+        <Button id="Button00_00_01_00_02" taborder="135" text="접수" width="64" height="28" cssclass="btn_Comm_func" top="1027" right="1053"/>
+        <Button id="Button00_00_01_00_01" taborder="136" text="진행" width="64" height="28" cssclass="btn_Comm_func" top="1027" right="985"/>
+        <Button id="Button00_00_01_05" taborder="137" text="완료등록" width="88" height="28" cssclass="btn_Comm_func" top="1027" right="893"/>
+        <Button id="Button00_00_00_00_00_03" taborder="138" text="의뢰서 인쇄" width="123" height="28" cssclass="btn_Comm_func_pop" top="1027" right="630"/>
+        <Button id="Button00_00_00_07" taborder="139" text="물건수령확인서 인쇄" width="163" height="28" cssclass="btn_Comm_func_pop" top="1027" right="463"/>
+        <Button id="Button00_00_00_00_07" taborder="140" text="물건수령확인서(개별) 인쇄" width="199" height="28" cssclass="btn_Comm_func_pop" top="1027" right="260" onclick="div00_Button00_00_00_00_onclick"/>
+        <Static id="sta01_00_01_02_01" taborder="141" text="4" left="714" top="1103" width="22" height="24"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

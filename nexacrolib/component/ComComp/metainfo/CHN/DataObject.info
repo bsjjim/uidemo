@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.DataObject">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.DataObject" shorttypename="DataObject" csstypename="DataObject" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="true" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对数据进行调用、创建或管理的对象。&#xD;&#xA;支持REST API调用功能以及与Dataset对象的单向绑定。" />
+    <PropertyInfo>
+      <Property name="data" group="Misc." subgroup="" refreshinfo="" edittype="Contents" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含数据信息的对象形态的属性。" csspropertyname="" normalpropertyname="data" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否在DataObject中触发事件的属性。" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定DataObject的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定DataObject的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含DataObject的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="preload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在设定了url属性值的情况下载入数据的时间点的属性。" csspropertyname="" normalpropertyname="preload" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定调用数据的URL的属性。" csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataObject中声明特定事件并添加的方法。">
+        <Syntax text="DataObject.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到DataObject的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向DataObject的特定事件添加句柄函数的方法。">
+        <Syntax text="DataObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到DataObject的特定事件中的方法。">
+        <Syntax text="DataObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="此方法删除所有更改信息。">
+        <Syntax text="DataObject.clearChangedInfo()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="DataObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过脚本动态生成的DataObject的方法。">
+        <Syntax text="DataObject.destroy()">
+          <Return type="Boolean" description="在DataObject被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除DataObject时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataObject的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="DataObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAllResponseHeaders" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在调用request方法之后返回Response header信息的方法。">
+        <Syntax text="DataObject00.getAllResponseHeaders()">
+          <Return type="Object" description="返回由header, value对构成的对象。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="将保存的变更信息返回的方法。">
+        <Syntax text="DataObject.getChangedInfo()">
+          <Return type="Array" description="返回一个 Infoarray 类型的排列。&#xA;Infoarray 的各个属性，请参考下表。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回DataObject的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="DataObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="DataObject00.getObject()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getObjectByPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回利用jsonpath值筛选的数据对象的方法。">
+        <Syntax text="DataObject00.getObjectByPath(strJsonpath)">
+          <Return type="Object" description="返回筛选的数据对象。" />
+          <Arguments>
+            <Argument name="strJsonpath" type="String" in="false" out="false" option="false" variable="false" description="设定jsonpath值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在调用request方法之后返回response data信息的方法。">
+        <Syntax text="DataObject00.getResponse()">
+          <Return type="String" description="返回在数据通信之后从服务器接收到的数据值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getResponseHeader" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在调用request方法之后返回特定的Response header值的方法。">
+        <Syntax text="DataObject.getResponseHeader(strHeaderName)">
+          <Return type="String" description="返回用参数设定的 header 名称所对应的值 。&#xA;返回与设定的 header 名称匹配的值，不区分大小写 。&#xA;如果没有匹配的 header 信息时，则返回 null 。" />
+          <Arguments>
+            <Argument name="strHeaderName" type="String" in="false" out="false" option="false" variable="false" description="设置要返回的 header 名称 。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataObject的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="DataObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向在url属性中设定的服务载入数据的方法。">
+        <Syntax text="DataObject00.load([bAsync])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="设定非同步处理与否。&#xD;&#xA;默认值为true，以非同步方式工作。与数据的载入完成与否无关，执行脚本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="从变更信息中删除特定uid对应的item信息的方法。">
+        <Syntax text="DataObject.removeChangedInfo(uid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="uid" type="String" in="false" out="false" option="false" variable="false" description="设置要删除的更改信息的 uid。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在DataObject中声明的特定事件的方法。">
+        <Syntax text="DataObject.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从DataObject删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataObject的特定事件中删除句柄函数的方法。">
+        <Syntax text="DataObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataObject的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="DataObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="request" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于按照设定的属性值对通信进行处理的方法。">
+        <Syntax text="DataObject00.request(strServiceid, strMethod, strUrl[, objParam])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objParam" type="Object" in="false" out="false" option="false" variable="false" description="设定存储有header、postdata、async信息的JSON对象。&#xD;&#xA;JSON对象可以按照如下所述的格式进行处理。&#xD;&#xA;var json_param = {&#xD;&#xA;    &quot;httpheader&quot; : header,&#xD;&#xA;    &quot;postdata&quot; : &quot;test&quot;,&#xD;&#xA;    &quot;async&quot; : true&#xD;&#xA;}&#xD;&#xA;在不设定async信息时，将处理为true。" />
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="设定在请求时进行处理的方法。&#xD;&#xA;可以指定下述方法。&#xD;&#xA;GET, POST, PUT, DELETE, HEAD, PATCH" />
+            <Argument name="strServiceid" type="String" in="false" out="false" option="false" variable="false" description="设定服务ID值。" />
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="设定用于调用JSON数据的URL。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="serializeToString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串形态返回数据的方法。">
+        <Syntax text="DataObject00.serializeToString([funcReplacer | arrReplacer[, strSpace | nSpace]])">
+          <Return type="String" description="对数据进行转换的字符串" />
+          <Arguments>
+            <Argument name="arrReplacer" type="Array" in="false" out="false" option="false" variable="false" description="利用数组设定需要包含到字符串结果中的属性名称。" />
+            <Argument name="funcReplacer" type="Object" in="false" out="false" option="false" variable="false" description="设定需要根据将key、value值作为变量接收的函数的返回值包含到字符串结果中的属性。" />
+            <Argument name="nSpace" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在输出字符串时使用的空格字符数。&#xD;&#xA;在大于10的情况下设定为10。" />
+            <Argument name="strSpace" type="String" in="false" out="false" option="false" variable="false" description="设定在输出字符串时用于替代空格的字符串。&#xD;&#xA;当字符串的长度大于10时，仅使用第10个字符为止的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHadlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataObject的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="DataObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更DataObject的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="DataObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondatachanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="当 DataObject 对象的数据以 Row 单位发生变更时触发的事件。">
+        <Syntax text="DataObject.ondatachanged(obj:nexacro.DataObject,e:nexacro.DataObjectDataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DataObjectDataChangedEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在调用request方法之后通信失败时触发的事件。">
+        <Syntax text="DataObject.onerror(obj:nexacro.DataObject,e:nexacro.DataObjectErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DataObjectErrorEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在完成数据载入之后触发的事件。">
+        <Syntax text="DataObject.onload(obj:nexacro.DataObject,e:nexacro.DataObjectLoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DataObjectLoadEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在调用request方法之后通信成功时触发的事件。">
+        <Syntax text="DataObject.onsuccess(obj:nexacro.DataObject,e:nexacro.DataObjectEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DataObjectEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvaluechanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject Object的 value 值( JSON 数据中特定键对应的值) 变更时发生的事件。">
+        <Syntax text="DataObject.onvaluechanged(obj:nexacro.DataObject,e:nexacro.DataObjectValueChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DataObjectValueChangedEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+    <ContentsInfo contentsformat="json" contentseditor="auto" contentstype="contents" showpreview="false" showobjtree="false" showproperties="false" />
+  </Object>
+</MetaInfo>

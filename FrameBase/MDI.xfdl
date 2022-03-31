@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="MDI" width="1568" height="35" titletext="New Form" scrolltype="none" cssclass="frm_MDI">
+    <Layouts>
+      <Layout height="35" width="1568">
+        <Static id="Static00" taborder="1" left="0" height="1" background="#D3D3D3" bottom="0" right="0" visible="true"/>
+        <Tab id="Tab00" taborder="0" tabindex="0" left="40" height="29" right="40" selectchangetype="down" showextrabutton="true" cssclass="tab_MDI" bottom="-1" tabbuttonheight="29" visible="true" tabbuttongap="4">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="Tabpage1"/>
+            <Tabpage id="Tabpage2" text="Tabpage2"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01" taborder="2" left="0" top="0" height="2" background="linear-gradient(to bottom,rgba(0,0,0,0.15) 0%,transparent 100%)" right="0"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

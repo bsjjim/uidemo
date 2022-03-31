@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Dataset">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.NormalDataset" shorttypename="Dataset" csstypename="Dataset" csscontrolname="" group="Object" subgroup="Dataset" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="dataset" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="onload" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将数据存储成表形态的对象。&#xD;&#xA;&#xD;&#xA;与引擎密切相关，而且在内部使用的数据采用Dataset形态。&#xD;&#xA;利用与组件绑定的Dataset共享数据的变更事项。 &#xD;&#xA;在通信时也以收发数据的形式使用。 &#xD;&#xA;&#xD;&#xA;支持对Dataset的Column或记录进行添加/删除/修改的方法、记录分组、排序、筛选功能、统计方法（Sum, Max, Min, Avg, Count）。&#xD;&#xA;此外，还支持与其他Dataset合并、添加或复制的功能。&#xD;&#xA;&#xD;&#xA;当在filterstr属性中指定Expression时，对Dataset中的记录进行筛选。&#xD;&#xA;可以利用k" />
+    <PropertyInfo>
+      <Property name="arguments" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要向在DataSet的url属性中设定的Business Service进行传递的参数的属性。" csspropertyname="" normalpropertyname="arguments" />
+      <Property name="binddataobject" group="Binding" subgroup="" refreshinfo="" edittype="DataObjectID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定与DataSet对象绑定的DataObject对象的ID的属性。" csspropertyname="" normalpropertyname="binddataobject" />
+      <Property name="colcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在DataSet中定义的Column数量的属性。" csspropertyname="" normalpropertyname="colcount" />
+      <Property name="colinfos" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="以Collection形态包含在DataSet中定义的Column信息的只读属性。" csspropertyname="" normalpropertyname="colinfos" />
+      <Property name="collation" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CollationType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="设置确定数据排序方式的类型的属性。" csspropertyname="" normalpropertyname="collation" />
+      <Property name="constcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在DataSet中定义的Const Column（常数列）数量的属性。" csspropertyname="" normalpropertyname="constcount" />
+      <Property name="dataobjectbindmode" group="Binding" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Dataobjectbindmode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="此属性设置与绑定的 DataObject 对象的通信方法。" csspropertyname="" normalpropertyname="dataobjectbindmode" />
+      <Property name="dataobjectpath" group="Binding" subgroup="" refreshinfo="" edittype="DataObjectPath" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在所绑定的DataObject对象的整体数据路径上指定新的根信息。" csspropertyname="" normalpropertyname="dataobjectpath" />
+      <Property name="enableevent" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否在DataSet中触发事件的属性。" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="filterstr" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定对载入到DataSet中的数据进行筛选的条件式的属性。" csspropertyname="" normalpropertyname="filterstr" />
+      <Property name="keystring" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定对载入到Dataset对象中的数据进行Group page或排序的基准条件式的属性。" csspropertyname="" normalpropertyname="keystring" />
+      <Property name="loadfiltermode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在将数据载入到DataSet或执行事务时的filterstr属性值的适用方法的属性。" csspropertyname="" normalpropertyname="loadfiltermode" />
+      <Property name="loadkeymode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在将数据载入到DataSet或执行事务时的keystring属性值的适用方法的属性。" csspropertyname="" normalpropertyname="loadkeymode" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Dataset的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="preload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在设定了DataSet的url属性值的情况下在DataSet中载入数据的时间点的属性。" csspropertyname="" normalpropertyname="preload" />
+      <Property name="progressload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在以Chunked方式从服务器分多次接收数据时的处理方式的属性。" csspropertyname="" normalpropertyname="progressload" />
+      <Property name="reversesubsum" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在通过keystring属性对DataSet进行分组时显示分组小计的位置的属性。" csspropertyname="" normalpropertyname="reversesubsum" />
+      <Property name="rowcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含载入到DataSet中的数据数量的只读属性。" csspropertyname="" normalpropertyname="rowcount" />
+      <Property name="rowposition" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在DataSet中当前选择的数据的Row索引的属性。" csspropertyname="" normalpropertyname="rowposition" />
+      <Property name="saveinfinity" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定对DataSet中存储到类型为INT、FLOAT、BIGDECIMAL的Column中的Infinity值进行处理的方法的属性。" csspropertyname="" normalpropertyname="saveinfinity" />
+      <Property name="saveinvaliddate" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定DataSet中存储到类型为DATE、TIME、DATETIME的Column中的错误日期值的处理方法的属性。" csspropertyname="" normalpropertyname="saveinvaliddate" />
+      <Property name="savenan" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定对DataSet中存储到类型为INT、FLOAT、BIGDECIMAL的Column中的NaN值进行处理的方法的属性。" csspropertyname="" normalpropertyname="savenan" />
+      <Property name="serverdatasetid" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在通过DataSet的url属性中所设定的Business Service传递的DataSet中需要实际使用的DataSet ID的属性。" csspropertyname="" normalpropertyname="serverdatasetid" />
+      <Property name="updatecontrol" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在DataSet的数据被Insert/Update/Delete时是否自动变更各个RowType的属性。" csspropertyname="" normalpropertyname="updatecontrol" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在将DataSet与Business Service连接时的相应服务的路径(URL)的属性。" csspropertyname="" normalpropertyname="url" />
+      <Property name="useclientlayout" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否适用通过执行事务接收到的DataSet的Column Layout的属性。" csspropertyname="" normalpropertyname="useclientlayout" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向DataSet添加Column的方法。">
+        <Syntax text="Dataset.addColumn( strColID, strColType [,nColSize [, strDatapath]] )">
+          <Return type="Number" description="返回添加到DataSet中的Column的索引。&#xD;&#xA;在添加Column失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nColSize" type="Number" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的Column的数据长度。&#xD;&#xA;&#xD;&#xA;在省略值时适用“256”。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到DataSet的Column的ID。" />
+            <Argument name="strColType" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的Column的类型。" />
+            <Argument name="strDatapath" type="String" in="false" out="false" option="false" variable="false" description="设定需要从数据读取到Column值的datapath。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet中使用ColumnInfo对象添加Column的方法。">
+        <Syntax text="Dataset.addColumnInfo( strID, objColInfo )">
+          <Return type="Number" description="返回添加到DataSet中的Column的索引。&#xD;&#xA;在添加Column失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objColInfo" type="Object" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的ColumnInfo对象。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到DataSet的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向DataSet添加Const Column（常数列）的方法。">
+        <Syntax text="Dataset.addConstColumn( strColID, varVal [, strColType [, nColSize [, strDatapath]]] )">
+          <Return type="Number" description="返回添加到DataSet中的Const Column的索引。&#xD;&#xA;&#xD;&#xA;在添加Const Column失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="nColSize" type="Number" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的Const Column的数据长度。&#xD;&#xA;&#xD;&#xA;在省略值时，将不会设定size。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到DataSet的Const Column的ID。&#xD;&#xA;&#xD;&#xA;当已经有与所设定的值相同的Const Column时，对相应Const Column的值进行变更。" />
+            <Argument name="strColType" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的Const Column的类型。&#xD;&#xA;&#xD;&#xA;在省略值时，可能会不设定类型或设定错误的值。" />
+            <Argument name="strDatapath" type="String" in="false" out="false" option="false" variable="false" description="设定需要从JSON数据读取到Column值的datapath。&#xD;&#xA;设定使用$的根路径。&#xD;&#xA;在使用@选择重复数据的情况下，获取第一个值。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要添加到DataSet的Const Column的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Dataset中声明特定事件并添加的方法。">
+        <Syntax text="Dataset.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到Dataset的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Dataset的特定事件添加句柄函数的方法。">
+        <Syntax text="Dataset.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到Dataset的特定事件中的方法。">
+        <Syntax text="Dataset.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向DataSet的最后一个Row之后添加新的数据(Row)的方法。">
+        <Syntax text="Dataset.addRow()">
+          <Return type="Number" description="返回添加到DataSet中的Row的索引。&#xD;&#xA;在添加Row失败时，将返回&quot;-1&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="append" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从通过参数传递的服务器路径(URL)载入数据并添加到当前DataSet的最后一个Row之后的方法。">
+        <Syntax text="Dataset.append([strUrl])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="设定用于载入数据的服务路径（URL）。&#xD;&#xA;关于所容许的格式，请参阅DataSet的url属性。&#xD;&#xA;&#xD;&#xA;在不对值进行设定时，将适用DataSet的url属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="appendData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向当前DataSet的最后一个Row之后添加指定DataSet的数据(Row)的方法。">
+        <Syntax text="Dataset.appendData( objDataset [,bCheckCol [,bUpdateConstCol]] )">
+          <Return type="Number" description="返回包括新添加的数据在内的当前Dataset中的所有Row数量。" />
+          <Arguments>
+            <Argument name="bCheckCol" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，向相同的Column添加数据。&#xD;&#xA;在设定为false时，按照Column顺序添加数据。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="bUpdateConstCol" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，对相同ID的Const Column中的常数值进行修正。&#xD;&#xA;在设定为false时，不对相同ID的Const Column中对常数值进行修正。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定包含需要添加的数据（Row）的DataSet。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="applyChange" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataSet对象的Row的类型变更为&quot;Dataset.ROWTYPE_NORMAL&quot;的方法。">
+        <Syntax text="Dataset.applyChange()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="assign" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于赋予在当前DataSet中指定的DataSet的Row、Column信息以及所有数据的方法。">
+        <Syntax text="Dataset.assign( objDataset )">
+          <Return type="Number" description="返回被赋予到当前DataSet中的Row的数量。" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要获取Row、Column信息以及所有数据的DataSet。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除DataSet的所有Row, Column信息以及数据的方法。">
+        <Syntax text="Dataset.clear()">
+          <Return type="Number" description="返回所删除的数据（Row）的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除DataSet中除Column信息之外的所有数据（Row）的方法。">
+        <Syntax text="Dataset.clearData()">
+          <Return type="Number" description="返回所删除的数据（Row）的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="Dataset.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将指定DataSet的数据(Row)复制到当前DataSet中的方法。">
+        <Syntax text="Dataset.copyData( objDataset [, bFilteredOnly] )">
+          <Return type="Number" description="返回所复制的数据(Row)的数量。&#xD;&#xA;在没有复制的数据(Row)时，将返回&quot;null&quot;。" />
+          <Arguments>
+            <Argument name="bFilteredOnly" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为“true”时，如果已经对objDataset进行筛选，则仅对筛选的数据进行复制。&#xD;&#xA;在设定为“false”时，与objDataset的筛选与否无关，对所有数据进行复制。&#xD;&#xA;&#xD;&#xA;在省略值时适用“false”。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定包含需要复制的数据（Row）的DataSet。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将当前DataSet的特定数据(Row)更新成指定DataSet的数据(Row)的方法。">
+        <Syntax text="Dataset.copyRow( nToRow, objDataset, nFromRow [,strColInfo] )">
+          <Return type="Boolean" description="在执行方法成功时，将返回true。&#xD;&#xA;在执行方法失败时，将返回false。" />
+          <Arguments>
+            <Argument name="nFromRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要从objDataset复制的Row的索引。" />
+            <Argument name="nToRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要利用新数据更新的当前Dataset的Row索引。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定包括需要复制的数据的DataSet。" />
+            <Argument name="strColInfo" type="String" in="false" out="false" option="false" variable="false" description="设定在对数据进行更新时以“ToColumnID=FromColumnID,ToColumnID1=FromColumnID1”的格式对Column进行匹配的条件。&#xD;&#xA;&#xD;&#xA;在省略值时，将仅对具有相同的Column ID的数据进行更新。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内由满足设定条件的Row构成的Dataset的方法。">
+        <Syntax text="Dataset.createDataset( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="返回由满足设定条件的Row构成的Dataset。&#xD;&#xA;&#xD;&#xA;在无法生成Dataset时，将返回null。" />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要新生成的Dataset的Column结构以及数据生成方法。&#xD;&#xA;&#xD;&#xA;在数组的各个因子中可以按照如下所述的形式进行定义。&#xD;&#xA;“ColID”：在新的Dataset中以“ColID”生成Column并设定原始Dataset的“ColID”值。&#xD;&#xA;             当原始Dataset中没有名字与“ColID”相同的Column时，数据被设定为null值。&#xD;&#xA;“NewColID : OldColID”：在新的Dataset中以“NewColID”生成Column并设定原始Dataset的“OldC" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在原始Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在原始Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="设定需要新生成的Dataset的ID。" />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="设定用于选择需要复制到新生成的Dataset中的Row的条件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDatasetNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内由满足设定条件的Row构成的Dataset的方法。">
+        <Syntax text="Dataset.createDatasetNF( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="返回由满足设定条件的Row构成的Dataset。&#xD;&#xA;&#xD;&#xA;在无法生成Dataset时，将返回null。" />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要新生成的Dataset的Column结构以及数据生成方法。&#xD;&#xA;&#xD;&#xA;在数组的各个因子中可以按照如下所述的形式进行定义。&#xD;&#xA;“ColID”：在新的Dataset中以“ColID”生成Column并设定原始Dataset的“ColID”值。&#xD;&#xA;             当原始Dataset中没有名字与“ColID”相同的Column时，数据被设定为null值。&#xD;&#xA;“NewColID : OldColID”：在新的Dataset中以“NewColID”生成Column并设定原始Dataset的“OldC" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在原始Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在原始Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="设定需要新生成的Dataset的ID。" />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="设定用于选择需要复制到新生成的Dataset中的Row的条件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除DataSet中的所有数据（Row）的方法。">
+        <Syntax text="Dataset.deleteAll()">
+          <Return type="Number" description="返回所删除的数据（Row）的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="deleteColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataSet删除指定的Column或Const Column的方法。">
+        <Syntax text="Dataset.deleteColumn(nCol)&#xD;&#xA;Dataset.deleteColumn(strColID)">
+          <Return type="Boolean" description="在删除Column成功时，将返回&quot;true&quot;。&#xD;&#xA;在删除Column失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="设定需要删除的Column的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteMultiRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于接收由数组构成的Row列表并删除相应Row的方法。">
+        <Syntax text="Dataset.deleteMultiRows( arrRowlist );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrRowlist" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定Row索引值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除DataSet中的指定数据(Row)的方法。">
+        <Syntax text="Dataset.deleteRow(nRow)">
+          <Return type="Boolean" description="在删除数据(Row)成功时，将返回&quot;true&quot;。&#xD;&#xA;在删除数据(Row)失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要删除的数据的Row索引值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exchangeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet中彼此对调指定的两个Row的位置(RowPosition)的方法。">
+        <Syntax text="Dataset.exchangeRow(nRow1,nRow2)">
+          <Return type="Boolean" description="在调换位置成功时，将返回&quot;true&quot;。&#xD;&#xA;在调换位置失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nRow1" type="Number" in="false" out="false" option="false" variable="false" description="设定需要交换位置的第一个数据的Row索引。" />
+            <Argument name="nRow2" type="Number" in="false" out="false" option="false" variable="false" description="设定需要交换位置的第二个数据的Row索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRows" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件表达式的Row的索引数组的方法。">
+        <Syntax text="Dataset.extractRows( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="返回满足所给定的条件表达式的Row的索引数组。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRowsNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件表达式的Row的索引数组的方法。">
+        <Syntax text="Dataset.extractRowsNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="返回满足所给定的条件表达式的Row的索引数组。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filter" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于通过对载入到DataSet中的数据进行筛选而只显示满足条件的数据(Row)的方法。">
+        <Syntax text="Dataset.filter([strFilterExpr])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFilterExpr" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对DataSet中的数据进行筛选的条件。&#xD;&#xA;&#xD;&#xA;在设定为空字符串（&quot;&quot;）时，筛选条件将被解除。&#xD;&#xA;在省略值时，使用在filterstr属性值中设定的条件式。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filterRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet中通过筛选隐藏特定Row的方法。">
+        <Syntax text="Dataset.filterRow(nRow)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行筛选的Row的索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Dataset的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="Dataset.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRow" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Column的数据长度最长的Row的索引的方法。">
+        <Syntax text="Dataset.findMaxLengthRow( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="返回特定Column值中数据长度最长的Row的索引。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRowNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Column的数据长度最长的Row的索引的方法。">
+        <Syntax text="Dataset.findMaxLengthRowNF( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="返回特定Column值中数据长度最长的Row的索引。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findNFRowIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将经过筛选的DataSet的Row索引转换成没有筛选的DataSet的Row索引并返回的方法。">
+        <Syntax text="Dataset.findNFRowIndex( nRowPos )">
+          <Return type="Number" description="返回以没有筛选的数据为基准的Row索引。&#xD;&#xA;&#xD;&#xA;在作为参数传递错误的nRowPos值时，将返回-1。" />
+          <Arguments>
+            <Argument name="nRowPos" type="Number" in="false" out="false" option="false" variable="false" description="设定以所筛选的DataSet为基准的Row索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Column的值与所传递的值一致的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRow( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="返回包含与所传递的值一致的数据的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有一致的数据时，将返回-1。&#xD;&#xA;在作为检索对象的Column为Const Column时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于strColID的Column中进行检索的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Column的值以所传递的值开始的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRowAs( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="返回以所传递的值开始的Column值的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有一致的数据时，将返回-1。&#xD;&#xA;在作为检索对象的Column为Const Column时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于strColID的Column中进行检索的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Column的值以所传递的值开始的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRowAsNF( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="返回以所传递的值开始的Column值的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有一致的数据时，将返回-1。&#xD;&#xA;在作为检索对象的Column为Const Column时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于strColID的Column中进行检索的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExpr" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件表达式的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRowExpr( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="返回满足所给定的条件表达式的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有满足所给定的条件表达式的Row时，将返回-1。&#xD;&#xA;在所给定的条件表达式是以Const Column为对象时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExprNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件表达式的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRowExprNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="返回满足所给定的条件表达式的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有满足所给定的条件表达式的Row时，将返回-1。&#xD;&#xA;在所给定的条件表达式是以Const Column为对象时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Column的值与所传递的值一致的第一个Row的索引的方法。">
+        <Syntax text="Dataset.findRowNF( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="返回包含与所传递的值一致的数据的第一个Row的索引。&#xD;&#xA;&#xD;&#xA;在没有一致的数据时，将返回-1。&#xD;&#xA;在作为检索对象的Column为Const Column时，将返回nStartIdx值。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定Dataset中作为检索对象的Column的ID或索引。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于strColID的Column中进行检索的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定区域的Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getAvg( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回NaN值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Column ID的值。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束计算的Row的索引加1的值。&#xD;&#xA;即，计算至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而计算至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始计算的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始计算。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出平均值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定区域的Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getAvgNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回NaN值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Column ID的值。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束计算的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始计算的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出平均值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件的Row的特定Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getCaseAvg( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回NaN值。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strCmpExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrCmpArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Colum" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strValExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrValArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Colum" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中对对象Row进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出平均值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件的Row的特定Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getCaseAvgNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回NaN值。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strCmpExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrCmpArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Colum" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strValExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrValArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Colum" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中对对象Row进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出平均值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件表达式的Row的总数量的方法。">
+        <Syntax text="Dataset.getCaseCount( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="返回满足所给定的条件表达式的Row的总数量。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件表达式的Row的总数量的方法。">
+        <Syntax text="Dataset.getCaseCountNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="返回满足所给定的条件表达式的Row的总数量。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件的Row的特定Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getCaseMax( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最大值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件的Row的特定Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getCaseMaxNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最大值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件的Row的特定Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getCaseMin( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最小值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件的Row的特定Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getCaseMinNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最小值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内满足条件的Row的特定Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getCaseSum( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的合计值。&#xD;&#xA;&#xD;&#xA;在无法计算出合计值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出合计值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内满足条件的Row的特定Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getCaseSumNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的合计值。&#xD;&#xA;&#xD;&#xA;在无法计算出合计值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strCmpExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrCmpArgs[0]值，而“$2”将被替换成arrCmpArgs[2]值。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strValExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrValArgs[0]值，而“$2”将被替换成arrValArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中进行检索的条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrCmpArgs中定义的值。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出合计值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于获得DataSet中包含Const Column的所有Column数量的方法。">
+        <Syntax text="Dataset.getColCount()">
+          <Return type="Number" description="返回在DataSet中定义的所有Column的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataSet中返回与所传递的索引对应的Column ID的方法。">
+        <Syntax text="Dataset.getColID( nColIdx )">
+          <Return type="String" description="返回与所传递的索引对应的Column ID。&#xD;&#xA;&#xD;&#xA;在没有对应的Column时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出ID的Column的索引。&#xD;&#xA;&#xD;&#xA;可以设定相当于Const Column的索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回与从DataSet传递的ID对应的Column的索引的方法。">
+        <Syntax text="Dataset.getColIndex( strColID )">
+          <Return type="Number" description="返回与所传递的ID对应的Column的索引。&#xD;&#xA;&#xD;&#xA;在没有对应的Column时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要求出索引的一般Column或Const Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定的Row以及Column的当前值的方法。">
+        <Syntax text="Dataset.getColumn( nRow, nColIdx )&#xA;Dataset.getColumn( nRow, strColID )">
+          <Return type="Variant" description="返回所指定的Row以及Column的当前值。&#xD;&#xA;&#xD;&#xA;在所指定的Row以及Column不存在时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataSet返回所指定的Column的ColumnInfo对象的方法。">
+        <Syntax text="Dataset.getColumnInfo( nColIdx )&#xA;Dataset.getColumnInfo( strColName )">
+          <Return type="Object" description="返回与所指定的索引或ID对应的Column的ColumnInfo对象。&#xD;&#xA;&#xD;&#xA;在与所指定的索引或ID对应的Column不存在时，将返回undefined。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Column的索引。" />
+            <Argument name="strColName" type="String" in="false" out="false" option="false" variable="false" description="设定对象Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定的Row以及Column的当前值的方法。">
+        <Syntax text="Dataset.getColumnNF( nRow, nColIdx )&#xA;Dataset.getColumnNF( nRow, strColID )">
+          <Return type="Variant" description="返回所指定的Row以及Column的当前值。&#xD;&#xA;&#xD;&#xA;在所指定的Row以及Column不存在时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataSet中返回与所传递的索引对应的Const Column ID的方法。">
+        <Syntax text="Dataset.getConstColID( nColIdx )">
+          <Return type="String" description="返回与所传递的索引对应的Const Column ID。&#xD;&#xA;&#xD;&#xA;在没有对应的Const Column时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出ID的Const Column的索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从DataSet返回与所传递的ID对应的Const Column的索引的方法。">
+        <Syntax text="Dataset.getConstColIndex( strColID )">
+          <Return type="Number" description="返回与所传递的ID对应的Const Column的索引。&#xD;&#xA;&#xD;&#xA;在没有对应的Const Column时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要求出索引的Const Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于获得在DataSet中指定的Const Column的值的方法。">
+        <Syntax text="Dataset.getConstColumn(nColIdx)&#xD;&#xA;Dataset.getConstColumn(strColID)">
+          <Return type="Variant" description="返回所指定的Const Column的值。&#xD;&#xA;在指定的Const Column不存在时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Const Column的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中求出值的Const Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于获得在DataSet中定义的Const Column数量的方法。">
+        <Syntax text="Dataset.getConstCount()">
+          <Return type="Number" description="返回在DataSet中定义的Const Column的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定的Column包含数据的Row数量的方法。">
+        <Syntax text="Dataset.getCount( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="返回特定Column的值不为null的Row的数量。&#xD;&#xA;&#xD;&#xA;在没有设定Column的ID或索引时，将返回Row的总数量。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始计算。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要对数据的有无进行确认的Column的ID或索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定的Column包含数据的Row数量的方法。">
+        <Syntax text="Dataset.getCountNF( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="返回特定Column的值不为null的Row的数量。&#xD;&#xA;&#xD;&#xA;在没有设定Column的ID或索引时，将返回Row的总数量。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始计算。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要对数据的有无进行确认的Column的ID或索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于获得DataSet中已删除的Row中的指定Row的Column值的方法。">
+        <Syntax text="Dataset.getDeletedColumn(nRow,nColIdx)&#xD;&#xA;Dataset.getDeletedColumn(nRow,strColID)">
+          <Return type="Variant" description="返回与已删除的Row中的指定Row, Column对应的值。&#xD;&#xA;在相应的Row或Column不存在时，将返回&quot;undefined&quot;。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在所删除的Row中进行求值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在所删除的Row中进行求值的Row的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="需要在所删除的行中进行求值的列的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于获得在DataSet中删除的Row数量的方法。">
+        <Syntax text="Dataset.getDeletedRowCount()">
+          <Return type="Number" description="返回在DataSet中删除的Row数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以数组形态返回在DataSet中删除的所有Row的方法。">
+        <Syntax text="Dataset.getDeletedRowset()">
+          <Return type="Array" description="以数组对象形态返回已删除的所有Row的内容。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Dataset的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="Dataset.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet被分组时获取包含分组信息的Row所引用的Row数量的方法。">
+        <Syntax text="Dataset.getGroupRangeCount(nRow)">
+          <Return type="Number" description="返回作为分组小计Row的引用对象的Row的数量。&#xD;&#xA;在所指定的Row不存在时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet被分组时获取包含分组信息的Row所引用的Row的开始索引的方法。">
+        <Syntax text="Dataset.getGroupRangeStart(nRow)">
+          <Return type="Number" description="返回作为分组小计Row的引用对象的Row的开始索引。&#xD;&#xA;在所指定的Row不是包含分组信息的Row时，将返回Row的索引。&#xD;&#xA;在所指定的Row不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定区域的Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getMax( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最大值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定区域的Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getMaxNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最大值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定区域的Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getMin( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最小值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定区域的Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getMinNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束检索的Row的索引加1的值。&#xD;&#xA;即，检索至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而检索至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始检索的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始检索。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出最小值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrValArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定的Row以及Column的初始值的方法。">
+        <Syntax text="Dataset.getOrgColumn( nRow ,nColIdx )&#xA;Dataset.getOrgColumn( nRow ,strColID )">
+          <Return type="Variant" description="返回所指定的Row以及Column的初始值。&#xD;&#xA;&#xD;&#xA;在所指定的Row以及Column不存在时，将返回undefined。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Row的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定的Row以及Column的初始值的方法。">
+        <Syntax text="Dataset.getOrgColumnNF( nRow ,nColIdx )&#xA;Dataset.getOrgColumnNF( nRow ,strColID )">
+          <Return type="Variant" description="返回所指定的Row以及Column的初始值。&#xD;&#xA;&#xD;&#xA;在所指定的Row以及Column不存在时，将返回undefined。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Row的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要求出初始值的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内的Row的总数量的方法。">
+        <Syntax text="Dataset.getRowCount()">
+          <Return type="Number" description="返回DataSet中的Row的总数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内的Row的总数量的方法。">
+        <Syntax text="Dataset.getRowCountNF()">
+          <Return type="Number" description="返回DataSet中的Row的总数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowLevel" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet被分组的情况下获取指定Row的级别的方法。">
+        <Syntax text="Dataset.getRowLevel(nRow)">
+          <Return type="Number" description="返回DataSet中指定Row的级别值。&#xD;&#xA;在没有所指定的Row时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvg" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定%Row的Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getRowsAvg( arrRows, strColExpr [ ,bExcludeNaN [ ,arrArgs ] ] )">
+          <Return type="Number" description="返回特定Row的Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回POSITIVE_INFINITY值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strColExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Column ID的值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出平均值的Row的Index。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出平均值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvgNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Row的Column值或计算值的平均值的方法。">
+        <Syntax text="Dataset.getRowsAvgNF( arrRows, strColExpr [ ,bExcludeNaN [ ,arrArgs ] ] )">
+          <Return type="Number" description="返回特定Row的Column值或计算值的平均值。&#xD;&#xA;&#xD;&#xA;在无法计算出平均值时，将返回POSITIVE_INFINITY值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。&#xD;&#xA;&#xD;&#xA;即使是在数组中设定Column的ID，也不会被替换成Column值。&#xD;&#xA;只有在strColExpr中直接设定Column的ID，才会适用Column值。&#xD;&#xA;即，在arrArgs[0]中设定Column ID时，“$0”被替换成字符串，但是不会被替换成相当于Column ID的值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出平均值的Row的Index。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="设定当Column值或计算值为null、undefined、&quot;&quot;(Empty String)、NaN值时是否需要从平均值的计算中排除。&#xD;&#xA;当包含于平均值计算时，相当于分母的整体数量值将增加。&#xD;&#xA;&#xD;&#xA;在设定为true时，从平均值计算中排除。&#xD;&#xA;在设定为false时，将包含于平均值计算。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出平均值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCount" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定的Row中的Column包含数据的Row数量的方法。">
+        <Syntax text="Dataset.getRowsCount( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row中特定Column的值不为null的Row的数量。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要对特定Column的数据的有无进行确认的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中对数据的有无进行确认的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCountNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定的Row中的Column包含数据的Row数量的方法。">
+        <Syntax text="Dataset.getRowsCountNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row中特定Column的值不为null的Row的数量。&#xD;&#xA;&#xD;&#xA;* 在datatyperule属性值为&quot;2.0&quot;时，返回 undefined、null、EmptyString(&quot;&quot;)、NaN、&quot;invalid date&quot;之外的Row的数量。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要对特定Column的数据的有无进行确认的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中对数据的有无进行确认的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMax" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Row的Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getRowsMax( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出最大值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出最大值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMaxNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Row的Column值或计算值中的最大值的方法。">
+        <Syntax text="Dataset.getRowsMaxNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值中的最大值。&#xD;&#xA;&#xD;&#xA;在无法计算出最大值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出最大值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出最大值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMin" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Row的Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getRowsMin( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出最小值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出最小值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMinNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Row的Column值或计算值中的最小值的方法。">
+        <Syntax text="Dataset.getRowsMinNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值中的最小值。&#xD;&#xA;&#xD;&#xA;在无法计算出最小值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出最小值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出最小值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSum" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Row的Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getRowsSum( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值的合计值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出合计值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出合计值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSumNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Row的Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getRowsSumNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="返回所传递的Row的特定Column值或计算值的合计值。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strColExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="利用数字型数组形态设定需要求出合计值的Row的Index。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在相当于arrRows的Row中求出合计值的Column的ID、Index或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内的指定Row的类型的方法。">
+        <Syntax text="Dataset.getRowType( nRow )">
+          <Return type="Number" description="返回DataSet中指定Row的类型。&#xD;&#xA;&#xD;&#xA;在所指定的Row不存在时，将返回&quot;ROWTYPE_EMPTY&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内的指定Row的类型的方法。">
+        <Syntax text="Dataset.getRowTypeNF( nRow )">
+          <Return type="Number" description="返回DataSet中指定Row的类型。&#xD;&#xA;&#xD;&#xA;在所指定的Row不存在时，将返回&quot;ROWTYPE_EMPTY&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定对象Row的索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内指定区域的Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getSum( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的合计值。&#xD;&#xA;&#xD;&#xA;在无法计算出合计值时，将返回0。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束计算的Row的索引加1的值。&#xD;&#xA;即，计算至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而计算至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始计算的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始计算。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出合计值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内指定区域的Column值或计算值的合计值的方法。">
+        <Syntax text="Dataset.getSumNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="返回特定Column值或计算值的合计值。&#xD;&#xA;&#xD;&#xA;在无法计算出合计值时，将返回0。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用strExpr定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中结束计算的Row的索引加1的值。&#xD;&#xA;即，计算至比所设定的索引值小1的索引的Row。&#xD;&#xA;&#xD;&#xA;需要设定比在nStartIdx中设定的值更大的值。&#xD;&#xA;在设定负数值或省略值时，将适用-1而计算至最后一个Row。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中开始计算的Row的索引。&#xD;&#xA;&#xD;&#xA;在设定负数值或省略值时，将适用0而从第一个Row开始计算。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Dataset中求出合计值的Column的ID或计算式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Dataset的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="Dataset.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet中的指定的Row的位置上插入新的Row的方法。">
+        <Syntax text="Dataset.insertRow(nRow)">
+          <Return type="Number" description="返回插入到DataSet中的Row的索引。&#xD;&#xA;在插入Row失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要插入的位置的Row索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将数据载入到在DataSet的url属性中设定的Business Service的方法。">
+        <Syntax text="Dataset.load( [bAsync [, bBinary]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，以非同步（Async）方式载入数据。&#xD;&#xA;在设定为false时，以同步（Sync）方式载入数据。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="bBinary" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，以Binary形态载入数据。&#xD;&#xA;在设定为false时，以一般形态载入数据。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。&#xD;&#xA;&#xD;&#xA;* 在web runtime environment中只能设定false值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将以Binary格式构成的数据载入到DataSet的方法。">
+        <Syntax text="Dataset.loadBin(varBinData)">
+          <Return type="Number" description="返回载入到Dataset中的数据数量。" />
+          <Arguments>
+            <Argument name="varBinData" type="Object" in="false" out="false" option="false" variable="false" description="设定以Binary格式生成的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将以CSV格式构成的数据载入到DataSet的方法。">
+        <Syntax text="Dataset.loadCSV(varCsvData[,bClear])">
+          <Return type="Number" description="返回载入到DataSet中的数据数量。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，对载入到DataSet中的现有数据进行删除。&#xD;&#xA;在设定为false时，不对载入到DataSet中的现有数据进行删除。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="varCsvData" type="Object" in="false" out="false" option="false" variable="false" description="设定以CSV格式生成的数据。&#xD;&#xA;&#xD;&#xA;以“Dataset:Dataset_id”格式开始，需要设定作为报头包含Column信息的CSV数据。&#xD;&#xA;“Dataset_id”与“Column Infos”利用CR/LF或LF进行区分。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadFromDataObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将设定到binddataobject, dataobjectpath属性中的值立即反映到Dataset对象的方法。">
+        <Syntax text="DataObject00.loadFromDataObject()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="loadJSON" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="将JSON 格式创建的数据加载到 Dataset 对象中的方法。">
+        <Syntax text="Dataset.loadJSON(strJsonData[,bClear]])">
+          <Return type="Number" description="返回加载到 DataSet 中的数据数量。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="设置为 true 时，删除加载到 Dataset 对象中的现有数据。&#xA;设置为 false 时，不删除加载到 Dataset 对象中的现有数据。&#xA;&#xA;如果省略该值，则适用于 true。" />
+            <Argument name="strJsonData" type="String" in="false" out="false" option="false" variable="false" description="设置以 JSON 格式创建的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将以SSV格式构成的数据载入到DataSet的方法。">
+        <Syntax text="Dataset.loadSSV ( varSsvData [,bClear] )">
+          <Return type="Number" description="返回载入到DataSet中的数据数量。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，对载入到DataSet中的现有数据进行删除。&#xD;&#xA;在设定为false时，不对载入到DataSet中的现有数据进行删除。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="varSsvData" type="String" in="false" out="false" option="false" variable="false" description="设定以SSV格式生成的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将以XML格式构成的数据载入到DataSet的方法。">
+        <Syntax text="Dataset.loadXML(strXmlData[,bClear]])">
+          <Return type="Number" description="返回载入到DataSet中的数据数量。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，对载入到DataSet中的现有数据进行删除。&#xD;&#xA;在设定为false时，不对载入到DataSet中的现有数据进行删除。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="strXmlData" type="String" in="false" out="false" option="false" variable="false" description="设定以XML格式生成的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Column的值与所传递的值一致的第一个Row的指定Column值的方法。">
+        <Syntax text="Dataset.lookup( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="返回满足所给定的条件的第一个Row的指定的Column值。&#xD;&#xA;&#xD;&#xA;在无法计算出值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用varCol定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要从varCol值与varCmpVal值一致的Row中获取值的Column的ID。" />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与相当于varCol的Column值进行比较的值。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与varCmpVal值进行比较的Column的ID、index或条件表达式。&#xD;&#xA;&#xD;&#xA;可以使用“$ + 数字”格式的替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在除通过筛选隐藏的Row之外的范围内特定Column的值以所传递的值开始的第一个Row的指定Column值的方法。">
+        <Syntax text="Dataset.lookupAs( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="返回满足所给定的条件的第一个Row的指定的Column值。&#xD;&#xA;&#xD;&#xA;在无法计算出值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用varCol定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要从varCol值以varCmpVal值开始的Row中获取值的Column的ID。" />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与相当于varCol的Column值进行比较的值。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与varCmpVal值进行比较的Column的ID、index或条件表达式。&#xD;&#xA;&#xD;&#xA;可以使用“$ + 数字”格式的替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Column的值以所传递的值开始的第一个Row的指定Column值的方法。">
+        <Syntax text="Dataset.lookupAsNF( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="返回满足所给定的条件的第一个Row的指定的Column值。&#xD;&#xA;&#xD;&#xA;在无法计算出值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用varCol定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要从varCol值以varCmpVal值开始的Row中获取值的Column的ID。" />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与相当于varCol的Column值进行比较的值。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与varCmpVal值进行比较的Column的ID、index或条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在包含通过筛选隐藏的Row的范围内特定Column的值与所传递的值一致的第一个Row的指定Column值的方法。">
+        <Syntax text="Dataset.lookupNF( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="返回满足所给定的条件的第一个Row的指定的Column值。&#xD;&#xA;&#xD;&#xA;在无法计算出值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要在利用varCol定义的替换语句中进行替换的值。&#xD;&#xA;&#xD;&#xA;在“$ + 数字”格式中将数字值作为数组的因数值使用。&#xD;&#xA;即，“$0”将被替换成arrArgs[0]值，而“$2”将被替换成arrArgs[2]值。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要从varCol值与varCmpVal值一致的Row中获取值的Column的ID。" />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与相当于varCol的Column值进行比较的值。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="设定需要在DataSet中与varCmpVal值进行比较的Column的ID、index或条件表达式。&#xD;&#xA;&#xD;&#xA;可以以“$ + 数字”的格式使用替换符。&#xD;&#xA;替换符将被替换成在arrArgs中定义的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mergeData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向当前的Dataset整合指定的Dataset的方法。">
+        <Syntax text="Dataset.mergeData( objDataset )">
+          <Return type="Number" description="在执行方法之后将返回Dataset的Row数量。" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要整合到当前Dataset中的Dataset。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在DataSet中将指定的Row移动到特定位置的方法。">
+        <Syntax text="Dataset.moveRow(nOldRow,nNewRow)">
+          <Return type="Number" description="在移动Row成功时，将返回新位置上的Row索引。&#xD;&#xA;在移动Row失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nNewRow" type="Number" in="false" out="false" option="false" variable="false" description="设定Row移动的目标位置的Row索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+            <Argument name="nOldRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要移动位置的Row的当前索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为“0”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在Dataset中声明的特定事件的方法。">
+        <Syntax text="Dataset.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从Dataset删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Dataset的特定事件中删除句柄函数的方法。">
+        <Syntax text="Dataset.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Dataset的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="Dataset.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataSet中的数据还原成最后的存储状态的方法。">
+        <Syntax text="Dataset.reset()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="saveBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将DataSet的数据转换成Binary格式并返回的方法。">
+        <Syntax text="Dataset.saveBIN( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="返回将DataSet的数据转换成Binary格式的字符串。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在Binary格式的文件内部定义的DataSet ID。&#xD;&#xA;在实际的DataSet ID与需要在存储时使用的ID不同时进行设定。&#xD;&#xA;&#xD;&#xA;在省略值时，适用当前DataSet的ID。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为DATE、TIME、DATETIME的Column中的错误日期值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成“Invalid Date”字符串。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinvaliddate属性值。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的Infinity值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成Infinity值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinfinity属性值。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的NaN值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成NaN值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用savenan属性值。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="设定用于选定需要转换成Binary格式的对象数据的基准。&#xD;&#xA;&#xD;&#xA;在设定为“n”、“N”、“normal”、“Normal”时，对除被Delete的数据之外的数据进行转换。&#xD;&#xA;在设定为“u”、“U”、“update”、“Update”时，仅对被Update的数据进行转换。&#xD;&#xA;在设定为“a”、“A”、“all”、“All”时，对被Insert/Update/Delete的所有数据进行转换。&#xD;&#xA;&#xD;&#xA;在省略值时适用“Normal”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataSet的数据转换成CSV格式并返回的方法。">
+        <Syntax text="Dataset.saveCSV( [strID [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]] )">
+          <Return type="String" description="返回将DataSet的数据转换成CSV格式的字符串。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在CSV格式的文件内部定义的DataSet ID。&#xD;&#xA;在实际的DataSet ID与需要在存储时使用的ID不同时进行设定。&#xD;&#xA;&#xD;&#xA;在省略值时，适用当前DataSet的ID。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为DATE、TIME、DATETIME的Column中的错误日期值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成“Invalid Date”字符串。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinvaliddate属性值。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的Infinity值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成Infinity值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinfinity属性值。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的NaN值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成NaN值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用savenan属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveJSON" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="以 JSON 形式返回 Dataset Offect 数据的方法 。">
+        <Syntax text="Dataset.saveJSON( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="该方法以JSON格式返回Dataset对象的数据。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设置要在 JSON 格式文件中定义的Dataset Object ID。&#xA;实际 Dataset Offect ID 和保存时使用的 ID 不同时设置 。&#xA;&#xA;如果省略该值，则应用当前 Dataset 对象的 ID。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="设置类型为INT、FLOAT或BIGDECIMAL的Column中存储的NaN值的转换方法。&#xA;&#xA;设置“include”时，转换为&quot;Invalid Date&quot;字符串。&#xA;当设置“exclude”时，转换为空字符串（“”）。&#xA;&#xA;如果省略该值，则应用 saveinvaliddate 属性值。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="设置类型为INT、FLOAT或BIGDECIMAL的Column中存储的Infinity值的转换方法。&#xA;&#xA;设置“include”时,转换为Infinity值。&#xA;当设置“exclude”时，转换为空字符串（“”）。&#xA;&#xA;如果省略该值，则应用 saveinfinity 属性值。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="设置类型为INT、FLOAT或BIGDECIMAL的Column中存储的NaN值的转换方法。&#xA;&#xA;设置“include”时转换为NaN值。&#xA;当设置了“exclude”时，它被转换为空字符串（“”）。&#xA;&#xA;如果省略该值，则应用 savenan 属性值。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="设置选择要转换为 JSON 格式的数据的条件。&#xA;&#xA;当设置“n”、“N”、“normal”、“Normal”时，除了被删除的数据之外，它会被转换。&#xA;当设置“u”、“U”、“update”、“Update”时，只转换更新的数据。&#xA;当设置“a”、“A”、“all”、“All”时，所有Insert/Update/Delete 的数据都会被转换。&#xA;当设置“v”、“V”、“view”、“View”时，“Normal”条件下的数据按照Grid中显示的顺序进行转换。&#xA;&#xA;如果省略该值，则应用为&quot;Normal&quot;。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataSet的数据转换成SSV格式并返回的方法。">
+        <Syntax text="Dataset.saveSSV( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="返回将DataSet的数据转换成SSV格式的字符串。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在SSV格式的文件内部定义的DataSet ID。&#xD;&#xA;在实际的DataSet ID与需要在存储时使用的ID不同时进行设定。&#xD;&#xA;&#xD;&#xA;在省略值时，适用当前DataSet的ID。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为DATE、TIME、DATETIME的Column中的错误日期值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成“Invalid Date”字符串。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinvaliddate属性值。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的Infinity值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成Infinity值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinfinity属性值。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的NaN值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成NaN值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用savenan属性值。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="设定用于选定需要转换成SSV格式的对象数据的基准。&#xD;&#xA;&#xD;&#xA;在设定为“n”、“N”、“normal”、“Normal”时，对除被Delete的数据之外的数据进行转换。&#xD;&#xA;在设定为“u”、“U”、“update”、“Update”时，仅对被Update的数据进行转换。&#xD;&#xA;在设定为“a”、“A”、“all”、“All”时，对被Insert/Update/Delete的所有数据进行转换。&#xD;&#xA;在设定为“v”、“V”、“view”、“View”时，按照显示在Grid中的顺序对“Normal”条件的数据进行转换。&#xD;&#xA;&#xD;&#xA;在省略值时适" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将DataSet的数据转换成XML格式并返回的方法。">
+        <Syntax text="Dataset.saveXML( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="返回将DataSet的数据转换成XML格式的字符串。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要在XML格式的文件内部定义的DataSet ID。&#xD;&#xA;在实际的DataSet ID与需要在存储时使用的ID不同时进行设定。&#xD;&#xA;&#xD;&#xA;在省略值时，适用当前DataSet的ID。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为DATE、TIME、DATETIME的Column中的错误日期值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成“Invalid Date”字符串。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinvaliddate属性值。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的Infinity值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成Infinity值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用saveinfinity属性值。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="设定被存储到类型为INT、FLOAT、BIGDECIMAL的Column中的NaN值的转换方法。&#xD;&#xA;&#xD;&#xA;在设定为“include”时，转换成NaN值。&#xD;&#xA;在设定为“exclude”时，转换成空字符串（“”）。&#xD;&#xA;&#xD;&#xA;在省略值时，适用savenan属性值。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="设定用于选定需要转换成XML格式的对象数据的基准。&#xD;&#xA;&#xD;&#xA;在设定为“n”、“N”、“normal”、“Normal”时，对除被Delete的数据之外的数据进行转换。&#xD;&#xA;在设定为“u”、“U”、“update”、“Update”时，仅对被Update的数据进行转换。&#xD;&#xA;在设定为“a”、“A”、“all”、“All”时，对被Insert/Update/Delete的所有数据进行转换。&#xD;&#xA;在设定为“v”、“V”、“view”、“View”时，按照显示在Grid中的顺序对“Normal”条件的数据进行转换。&#xD;&#xA;&#xD;&#xA;在省略值时适" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在除通过筛选隐藏的Row之外的范围内变更特定Row的Column值的方法。">
+        <Syntax text="Dataset.setColumn( nRow, nColIdx, varVal )&#xA;Dataset.setColumn( nRow, strColID, varVal )">
+          <Return type="Boolean" description="在Column值变更成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在Column值变更失败时，将返回false。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的Row索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为0。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的ID。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要变更的Column的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在包含通过筛选隐藏的Row的范围内变更特定Row的Column值的方法。">
+        <Syntax text="Dataset.setColumnNF( nRow, nColIdx, varVal )&#xA;Dataset.setColumnNF( nRow, strColID, varVal )">
+          <Return type="Boolean" description="在Column值变更成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在Column值变更失败时，将返回false。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的索引。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的Row索引。&#xD;&#xA;&#xD;&#xA;第一个Row的索引值为0。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更值的Column的ID。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要变更的Column的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更在DataSet中定义的Const Column的常数值的方法。">
+        <Syntax text="Dataset.setConstColumn(nColIdx,varVal)&#xD;&#xA;Dataset.setConstColumn(strColID,varVal)">
+          <Return type="Boolean" description="在常数值变更成功时，将返回true。&#xD;&#xA;在常数值变更失败时，将返回false。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要对值进行变更的Const Column的索引。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要对值进行变更的Const Column的ID。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要变更的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setContents" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于动态设定Dataset的内部构成内容的方法。">
+        <Syntax text="Dataset.setContents( strContents );">
+          <Return type="Boolean" description="在生成内容成功时，将返回true。&#xD;&#xA;在生成内容失败时，将返回false。&#xD;&#xA;&#xD;&#xA;在对字符串进行解析的过程中发生错误或因为错误的标记（包括错别字）定义而发生错误时，将导致生成内容失败。" />
+          <Arguments>
+            <Argument name="strCont" type="String" in="false" out="false" option="false" variable="false" description="利用XML形态的字符串设定Dataset的内部构成内容信息。&#xD;&#xA;&#xD;&#xA;需要以“&amp;lt;ColumnInfo&amp;gt; ... &amp;lt;/ColumnInfo&amp;gt; &amp;lt;Rows&amp;gt; ... &amp;lt;/Rows&amp;gt;”的形态包含ColumnInfo以及Rows标签进行设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Dataset的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="Dataset.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Dataset的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="Dataset.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更在除通过筛选隐藏的Row之外的范围内的特定Row的类型值的方法。">
+        <Syntax text="Dataset.setRowType( nRow, nRowType )&#xA;Dataset.setRowType( nRow, strRowType )">
+          <Return type="Boolean" description="在变更类型成功时，将返回&quot;true&quot;。&#xD;&#xA;在变更类型失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更类型的Row的索引。" />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要变更的Row类型值。" />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="利用字符设定需要变更的Row类型值。&#xD;&#xA;&#xD;&#xA;在设定为“i”、“I”时，适用“Dataset.ROWTYPE_INSERT”。&#xD;&#xA;在设定为“u”、“U”时，适用“Dataset.ROWTYPE_UPDATE”。&#xD;&#xA;在设定为“d”、“D”时，适用“Dataset.ROWTYPE_DELETE”。&#xD;&#xA;&#xD;&#xA;在设定为其他值时，适用“Dataset.ROWTYPE_NORMAL”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更在包含通过筛选隐藏的Row的范围内的特定Row的类型值的方法。">
+        <Syntax text="Dataset.setRowTypeNF( nRow, nRowType )&#xA;Dataset.setRowTypeNF( nRow, strRowType )">
+          <Return type="Boolean" description="在变更类型成功时，将返回&quot;true&quot;。&#xD;&#xA;在变更类型失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更类型的Row的索引。" />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要变更的Row类型值。" />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="利用字符设定需要变更的Row类型值。&#xD;&#xA;&#xD;&#xA;在设定为“i”、“I”时，适用“Dataset.ROWTYPE_INSERT”。&#xD;&#xA;在设定为“u”、“U”时，适用“Dataset.ROWTYPE_UPDATE”。&#xD;&#xA;在设定为“d”、“D”时，适用“Dataset.ROWTYPE_DELETE”。&#xD;&#xA;&#xD;&#xA;在设定为其他值时，适用“Dataset.ROWTYPE_NORMAL”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更包含Const Column在内的在DataSet中定义的Column ID的方法。">
+        <Syntax text="Dataset.updateColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateColID(strOldColID, strNewColID)">
+          <Return type="Number" description="返回ID发生变更的Column的索引。&#xD;&#xA;在所指定的Column不存在或有相同ID的Column存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更ID的Column的索引。&#xD;&#xA;&#xD;&#xA;第一个Column的索引值为“0”。" />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要变更的Column的新ID。" />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更ID的Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更在DataSet中指定的Const Column的ID的方法。">
+        <Syntax text="Dataset.updateConstColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateConstColID(strOldColID, strNewColID)">
+          <Return type="Number" description="返回ID发生变更的Const Column的索引。&#xD;&#xA;在所指定的Const Column不存在或有相同ID的Const Column存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更ID的Const Column的索引。&#xD;&#xA;&#xD;&#xA;第一个Column的索引值为“0”。" />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要变更的Const Column的新ID。" />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更ID的Const Column的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateSortGroup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对载入到DataSet中的数据进行分组或排序的方法。">
+        <Syntax text="Dataset.updateSortGroup( [strKeyString] )">
+          <Return type="Boolean" description="在分组或排序成功时，将返回true。&#xD;&#xA;在分组或排序失败时，将返回false。&#xD;&#xA;&#xD;&#xA;在指定两个以上的参数时，将返回false。&#xD;&#xA;在没有设定keystring属性值的状态下省略参数时，将返回false。" />
+          <Arguments>
+            <Argument name="strKeyString" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定作为分组或排序基准的条件式。&#xD;&#xA;&#xD;&#xA;在省略值时，条件式适用在keystring属性中设定的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="cancolumnchange" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在DataSet的Column值发生变更时触发的事件。">
+        <Syntax text="Dataset.cancolumnchange(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="Boolean" description="- 在事件中作为返回值返回&quot;true&quot;时，将变更Column值并触发oncolumnchanged事件。&#xD;&#xA;- 在事件中作为返回值返回&quot;false&quot;时，将不会变更Column值且不会触发oncolumnchanged事件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canrowposchange" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在因为Row的选择发生变更而导致DataSet的rowposition属性值变更时触发的事件。">
+        <Syntax text="Dataset.canrowposchange(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回&quot;true&quot;时，将变更rowposition属性值并触发onrowposchanged事件。&#xD;&#xA;在事件中作为返回值返回&quot;false&quot;时，将不会变更rowposition值且不会触发onrowposchanged事件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncolumnchanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在DataSet的Column值发生变更之后触发的事件。">
+        <Syntax text="Dataset.oncolumnchanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在DataSet中完成数据载入之后触发的事件。">
+        <Syntax text="Dataset.onload(obj:nexacro.NormalDataset,e:nexacro.DSLoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSLoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowposchanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在因为Row的选择发生变更而导致DataSet的rowposition属性值变更之后触发的事件。">
+        <Syntax text="Dataset.onrowposchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowsetchanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在DataSet中对数据进行Insert, Delete或Row的位置、状态等发生变更之后触发的事件。">
+        <Syntax text="Dataset.onrowsetchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowsetChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvaluechanged" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在DataSet中对数据进行Insert, Delete, Update或Row的位置、状态等发生变更时最后触发的事件。">
+        <Syntax text="Dataset.onvaluechanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" onload="temp01_onload" titletext="신규계약 매출 및 변동비 확정">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Static id="Static01" taborder="0" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Tab id="Tab00" taborder="1" tabindex="0" left="0" top="84" right="40" bottom="48" tabbuttongap="2" onchanged="Tab00_onchanged">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="매출/변동비" url="BP::BP10170T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="투자물량" url="BP::BP10170T02.xfdl"/>
+            <Tabpage id="Tabpage3" text="고정비 배부" url="BP::BP10170T03.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Div id="div00_00" taborder="2" text="div00" left="0" right="40" cssclass="div_footer" formscrolltype="none" height="48" top="Tab00:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_01" taborder="0" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+              <Static id="Static01_00_01_00_00_00_00" taborder="1" text="10" cssclass="sta_Guide" width="50" visible="false" height="10" left="1394" top="0"/>
+              <Button id="Button00_00_00" taborder="2" text="저장" top="10" width="64" height="28" cssclass="btn_Comm_func" right="0" onclick="div00_00_Button00_00_00_onclick"/>
+              <Button id="Button00_00_00_00" taborder="3" text="산출" top="10" width="64" height="28" cssclass="btn_Comm_func" right="68" onclick="div00_00_Button00_00_00_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="DivSearch" taborder="3" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Button id="Button02" taborder="0" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_01" taborder="1" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="h11" cssclass="sta_Guide" width="50" visible="false" right="38" bottom="0" height="11"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00" taborder="4" text="계획구분" left="20" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01" taborder="5" text="w40" top="0" cssclass="sta_Guide" width="40" left="211" height="60" visible="false"/>
+              <Combo id="cmb00" taborder="6" text="" left="86" top="18" width="125" height="24" index="-1" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" enable="true">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                </Dataset>
+              </Combo>
+              <Static id="Static00_00" taborder="7" text="버전" left="251" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cmb00_00" taborder="8" text="최종" left="291" top="18" width="70" height="24" index="0" enable="true"/>
+              <Static id="Static01_00_00_01_00_00_00_01" taborder="9" text="10" top="19" cssclass="sta_Guide" width="10" left="76" height="60" visible="false"/>
+              <Static id="Static00_01" taborder="10" text="사업" left="870" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="11" left="910" top="18" height="24" text="오토렌탈" width="115" enable="true"/>
+              <Static id="Static01_00_00_01_00_01" taborder="12" text="10" top="45" cssclass="sta_Guide" width="10" left="281" height="40" visible="false"/>
+              <Static id="Static01" taborder="13" text="수립년도" left="401" top="18" width="63" height="24" cssclass="sta_SA_label" onclick="DivSearch_Static01_onclick"/>
+              <MaskEdit id="MaskEdit00" taborder="14" left="468" top="18" width="43" height="24" textAlign="left"/>
+              <Static id="Static01_00_00_01_01" taborder="15" text="w40" top="0" cssclass="sta_Guide" width="40" left="361" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="16" text="10" top="4" cssclass="sta_Guide" width="10" left="458" height="40" visible="false"/>
+              <Static id="Static01_01" taborder="17" text="수립월" left="567" top="18" width="48" height="24" cssclass="sta_SA_label"/>
+              <MaskEdit id="MaskEdit00_00" taborder="18" left="620" top="18" width="28" height="24" textAlign="left"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="19" text="10" top="4" cssclass="sta_Guide" width="10" left="610" height="40" visible="false"/>
+              <Static id="Static01_02_00" taborder="20" text="기준년도" left="704" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <MaskEdit id="MaskEdit00_01_00" taborder="21" left="770" top="18" width="43" height="24" textAlign="left"/>
+              <Static id="Static02_01_00_00_00_01_00" taborder="22" text="년" left="511" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_01_00_00" taborder="23" text="월" left="648" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_01_00_01" taborder="24" text="년" left="813" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_01_00" taborder="25" text="w40" top="4" cssclass="sta_Guide" width="40" left="527" height="40" visible="false"/>
+              <Static id="Static01_00_00_01_01_00_00" taborder="26" text="w40" top="4" cssclass="sta_Guide" width="40" left="664" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_01_00_00_00" taborder="27" text="w40" top="10" cssclass="sta_Guide" width="40" left="830" height="40" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

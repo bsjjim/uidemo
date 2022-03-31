@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Decimal">
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.Decimal" shorttypename="Decimal" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对decimal数据类型进行处理的对象。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="abs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为绝对值的方法。">
+        <Syntax text="Decimal.abs()">
+          <Return type="Decimal" description="返回变更之后的绝对值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值加上Decimal类型的值的方法。">
+        <Syntax text="Decimal.addDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相加的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值加上数字值的方法。">
+        <Syntax text="Decimal.addDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相加的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为以小数点为基准进行向上舍入的值的方法。">
+        <Syntax text="Decimal.ceil()">
+          <Return type="Decimal" description="返回以小数点为基准进行向上舍入的值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="divDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值除以Decimal类型的值的方法。">
+        <Syntax text="Decimal.divDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相除的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="divDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值除以数字值的方法。">
+        <Syntax text="Decimal.divDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相除的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为以小数点为基准进行向下舍入的值的方法。">
+        <Syntax text="Decimal.floor()">
+          <Return type="Decimal" description="返回以小数点为基准进行向下舍入的值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEqual" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于比较存储在Decimal对象中的值与通过参数传递的Decical对象的值是否一致的方法。">
+        <Syntax text="Decimal.isEqual( objDecimal )">
+          <Return type="Boolean" description="在两个对象的值一致时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在两个对象的值不一致时，将返回“false”。" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要对值进行比较的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isInfinity" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认存储在Decimal对象中的值是否为Infinity值的方法。">
+        <Syntax text="Decimal.isInfinity()">
+          <Return type="Boolean" description="在Decimal对象的值为Infinity值时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在Decimal对象的值不为Infinity值时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认存储在Decimal对象中的值是否为NaN值的方法。">
+        <Syntax text="Decimal.isNaN()">
+          <Return type="Boolean" description="在Decimal对象的值为NaN值时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在Decimal对象的值不为NaN值时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaNOrInf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认存储在Decimal对象中的值是否为Infinity或NaN值的方法。">
+        <Syntax text="Decimal.isNaNOrInf()">
+          <Return type="Boolean" description="在Decimal对象的值为Infinity或NaN值时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在Decimal对象的值不为Infinity、NaN时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNegative" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认存储在Decimal对象中的值是否为负数值的方法。">
+        <Syntax text="Decimal.isNegative()">
+          <Return type="Boolean" description="在Decimal对象的值为负数值时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在Decimal对象的值不为负数值时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isZero" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Decimal对象的值是否为Zero的方法。">
+        <Syntax text="Decimal.isZero()">
+          <Return type="Boolean" description="在Decimal对象的值为0值时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在Decimal对象的值不为0值时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="modDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为除以Decimal类型的值的余值的方法。">
+        <Syntax text="Decimal.modDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相除的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="modDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为除以数字值的余值的方法。">
+        <Syntax text="Decimal.modDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相除的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值乘以Decimal类型的值的方法。">
+        <Syntax text="Decimal.mulDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相乘的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值乘以数字值的方法。">
+        <Syntax text="Decimal.mulDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要与Decimal对象进行相乘的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为以小数点为基准进行四舍五入的值的方法。">
+        <Syntax text="Decimal.round()">
+          <Return type="Decimal" description="返回以小数点为基准进行四舍五入的值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的Decimal对象的值存储到Decimal对象中的方法。">
+        <Syntax text="Decimal.setDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要存储到Decimal对象的其他Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的数字值存储到Decimal对象中的方法。">
+        <Syntax text="Decimal.setDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要存储到Decimal对象的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Decimal对象中存储由数字构成的字符串的方法。">
+        <Syntax text="Decimal.setString( strValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="设定需要存储到Decimal对象的由数字构成的字符串。&#xD;&#xA;&#xD;&#xA;当包含非数字的字符时将无法正常存储。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储在Decimal对象中的值减去Decimal类型的值的方法。">
+        <Syntax text="Decimal.subDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="设定需要从Decimal对象进行相减的Decimal对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储在Decimal对象中的值减去数字值的方法。">
+        <Syntax text="Decimal.subDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="设定需要从Decimal对象进行相减的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串形态返回存储在Decimal对象中的值的方法。">
+        <Syntax text="Decimal.toString()">
+          <Return type="String" description="以字符串形态返回存储在Decimal对象中的值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trunc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Decimal对象中的值变更为以小数点为基准进行删除的值的方法。">
+        <Syntax text="Decimal.trunc()">
+          <Return type="Decimal" description="返回以小数点为基准进行删除的值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

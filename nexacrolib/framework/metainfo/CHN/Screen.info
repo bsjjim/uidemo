@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Screen">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.Screen" shorttypename="Screen" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对需要在应用中使用的屏幕信息进行管理的对象。" />
+    <PropertyInfo>
+      <Property name="id" group="Layout Information" subgroup="" refreshinfo="" edittype="ID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Screen的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="specifiedlocale" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行应用程序时作为Screen选择基准的本地环境（Locale）的属性。" csspropertyname="" normalpropertyname="specifiedlocale" />
+      <Property name="specifiedos" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SystemOs" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行应用程序时作为Screen选择基准的OS的属性。" csspropertyname="" normalpropertyname="specifiedos" />
+      <Property name="type" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScreenType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行应用程序时作为Screen选择基准的设备类型的属性。" csspropertyname="" normalpropertyname="type" />
+      <Property name="userzoom" group="Layout Information" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在移动设备网页浏览器环境下选择的Screen的type属性值为&quot;desktop&quot;时是否使用触摸缩放功能的属性。" csspropertyname="" normalpropertyname="userzoom" />
+      <Property name="zoomfactortype" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="portrait" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Screen_ZoomFactorType" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在移动环境下载入应用程序时适用Zoom的基准的属性。" csspropertyname="" normalpropertyname="zoomfactortype" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

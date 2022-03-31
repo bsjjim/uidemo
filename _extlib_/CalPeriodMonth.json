@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalPeriodMonth",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalPeriodMonth/_metainfo_/CalPeriodMonth.info"
+	],
+	"scripts": [
+    "CalPeriodMonth/CalPeriodMonth.js"
+	],
+	"designscripts": [
+    "CalPeriodMonth/DesignCalPeriodMonth.js"
+	],
+	"help": "",	
+	"xcss": "CalPeriodMonth/_xcss_/CalPeriodMonth.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

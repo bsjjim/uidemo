@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="GridFilter" width="152" height="308" titletext="New Form" background="#ffffff" border="1px solid #dddddd">
+    <Layouts>
+      <Layout height="308" width="152">
+        <ImageViewer id="imv00_01" taborder="3" left="180" top="3" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_sortUp.png')"/>
+        <ImageViewer id="imv00_00_01" taborder="4" left="180" top="30" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_sortDown.png')"/>
+        <ImageViewer id="imv00_00_00_00" taborder="5" left="180" top="58" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grid_colHide.png')"/>
+        <ImageViewer id="imv00_01_00" taborder="6" left="220" top="3" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_sortUp_D.png')"/>
+        <ImageViewer id="imv00_00_01_00" taborder="7" left="220" top="30" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_sortDown_D.png')"/>
+        <ImageViewer id="imv00_00_00_00_00" taborder="8" left="220" top="58" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grid_colHide_D.png')"/>
+        <ImageViewer id="imv00_01_00_00" taborder="0" left="260" top="3" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_filter.png')"/>
+        <ImageViewer id="imv00_01_00_00_00" taborder="1" left="260" top="43" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_filterUp.png')"/>
+        <ImageViewer id="imv00_01_00_00_00_00" taborder="2" left="260" top="73" width="20" height="20" cssclass="img_POP_filterIcon" visible="false" image="url('theme://images/grd_filterDown.png')"/>
+        <Grid id="grd00" taborder="9" left="10" top="136" height="132" binddataset="dsColInfo" autofittype="col" cssclass="grid_WF_list" right="12" autosizebandtype="noleft" oncellclick="grd00_oncellclick">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="25" band="left"/>
+                <Column size="95"/>
+              </Columns>
+              <Rows>
+                <Row size="18"/>
+              </Rows>
+              <Band id="body">
+                <Cell text="bind:_chk" edittype="checkbox" displaytype="checkboxcontrol"/>
+                <Cell col="1" text="bind:data" textAlign="left"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btnSortUp" taborder="10" text="오름차순정렬" left="0" top="0" height="27" right="2" cssclass="btn_POP_filter" onclick="btnSort_onclick"/>
+        <Button id="btnSortDown" taborder="11" text="내림차순 정렬" left="0" top="27" height="27" right="2" cssclass="btn_POP_filter" onclick="btnSort_onclick"/>
+        <Button id="btnColHide" taborder="12" text="열 숨기기 설정" left="0" top="54" height="27" right="2" cssclass="btn_POP_filter" icon="url('imagerc::btn_Block_popup.png')" iconPosition="right" textPadding="0px 5px 0px 0px" onclick="btnColHide_onclick"/>
+        <Static id="sta00" taborder="13" text="열필터링" left="11" top="84" width="95" height="24"/>
+        <Edit id="edtFilter" taborder="14" left="10" top="107" height="24" right="38"/>
+        <Button id="btnSearch" taborder="15" top="107" width="24" height="24" cssclass="btn_Comp_src" right="12" onclick="btnSearch_onclick"/>
+        <Button id="btnSel" taborder="16" text="확인" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="275" right="66" onclick="pdvCal_btnSel_onclick"/>
+        <Button id="btnClose" taborder="17" text="닫기" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="275" right="12" onclick="pdvCal_btnClose_onclick"/>
+        <ImageViewer id="imvSortUp" taborder="18" left="130" top="3" width="20" height="20" cssclass="img_POP_filterIcon" image="url('theme://images/grd_sortUp_D.png')" cursor="default"/>
+        <ImageViewer id="imvDown" taborder="19" left="130" top="30" width="20" height="20" cssclass="img_POP_filterIcon" image="url('theme://images/grd_sortDown_D.png')" cursor="default"/>
+        <ImageViewer id="imvColHide" taborder="20" left="130" top="58" width="20" height="20" cssclass="img_POP_filterIcon" image="url('theme://images/grid_colHide_D.png')" cursor="default"/>
+        <Static id="Static01_00_00_00_00" taborder="21" top="299" cssclass="sta_Guide" width="124" left="15" height="7" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="7"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsColInfo">
+        <ColumnInfo>
+          <Column id="_chk" type="STRING" size="256"/>
+          <Column id="data" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  그리드 필터 팝업Div
+*  @FileName 	: GridFilter.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/02/23
+*  @Desction    : 설명
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/02/23     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+this.fvCurCell;
+this.fvGrid;
+this.fvColumn;
+this.fvCell;
+this.fvDs;
+this.fnInit = function()
+{
+    //소트관련 그리드와 동기화
+    this.fvGrid = this.parent.grid;
+	this.fvCell = this.parent.cellindex;
+	this.fvDs = this.fvGrid.getBindDataset();
+	this.fvColumn = this._gfnGridGetBindColumnNameByIndex(this.fvGrid,this.fvCell);
+	
+	if(this.fvGrid.getCellProperty("head",this.fvCell,"expandshow") == "show")
+	{
+		var sExpandImg = this.fvGrid.getCellProperty("head",this.fvCell,"expandimage");
+		
+		if(sExpandImg.indexOf("Up") > -1)
+		{
+			this.imvSortUp.set_image("theme://images/grd_sortUp.png");
+			this.btnSortUp.set_enable(false);
+		}
+		else
+		{
+			this.imvSortUp.set_image("theme://images/grd_sortUp_D.png");
+			this.btnSortUp.set_enable(true);
+		}
+				
+		if(sExpandImg.indexOf("Down") > -1)
+		{
+			this.imvDown.set_image("theme://images/grd_sortDown.png");
+			this.btnSortDown.set_enable(false);
+		}
+		else
+		{
+			this.imvDown.set_image("theme://images/grd_sortDown_D.png");
+			this.btnSortDown.set_enable(true);
+		}		
+	}
+	else
+	{
+		this.imvSortUp.set_image("theme://images/grd_sortUp_D.png");
+		this.btnSortUp.set_enable(true);
+		this.imvDown.set_image("theme://images/grd_sortDown_D.png");
+		this.btnSortDown.set_enable(true);			
+	}
+	
+	
+	//셀이 변경될때 필터할 항목 새로 가져오기
+	if(this.gfnIsNull(this.fvCurCell) || this.fvCurIdx != this.fvCell)
+	{
+		this.dsColInfo.clearData();
+		var nRow;
+		var sValue;
+		if(!this.gfnIsNull(this.fvColumn))
+		{
+			for(var i=0; i<this.fvDs.getRowCount(); i++)
+			{
+				sValue = this.fvDs.getColumn(i,this.fvColumn);
+				if(this.gfnIsNull(this.dsColInfo.lookup("data",sValue,"_chk")))
+				{
+					nRow = this.dsColInfo.addRow();
+					this.dsColInfo.setColumn(nRow,"_chk","0");
+					this.dsColInfo.setColumn(nRow,"data",sValue);
+				}
+			}
+		}
+		this.fvCurCell = this.fvCell;
+	}
+	
+	//해당 
+	if(!this.gfnIsNull(this.fvDs.filterInfo))
+	{
+		var aFilterData = this.fvDs.filterInfo[this.fvColumn];
+		
+		if(!this.gfnIsNull(aFilterData))
+		{
+			for(var i=0; i<this.dsColInfo.rowcount; i++)
+			{
+				var sVal = this.dsColInfo.getColumn(i,"data");
+				
+				if(aFilterData.indexOf(sVal) > -1) this.dsColInfo.setColumn(i,"_chk","1");
+			}
+		}
+	}
+	
+	this.dsColInfo.set_rowposition(0);
+	
+	var nColCnt = this.fvGrid.getFormatColCount();
+	var nHeadCellCnt = this.fvGrid.getCellCount("head");
+	var formatSizeInfo = this.fvGrid.formatDefaultColSize;
+	
+	if(nColCnt != nHeadCellCnt) this.btnColHide.set_enable(false);
+	
+	this.imvColHide.set_image("theme://images/grid_colHide_D.png");
+	if(!this.gfnIsNull(formatSizeInfo))
+	{
+		for(var i=0; i<formatSizeInfo.length; i++)
+		{
+			if(formatSizeInfo[i].show == 0)
+			{
+			    this.imvColHide.set_image("theme://images/grid_colHide.png");
+				break;
+			}
+		}
+	}
+	
+	
+}
+
+this.fnFilter = function()
+{
+    var oFilterInfo = this.fvDs.filterInfo;
+	
+	var sFilterStr = "";
+	var aFilter;
+	for(var p in oFilterInfo)
+	{
+		aFilter = oFilterInfo[p];
+		if(aFilter.length > 0)
+		{
+		    sFilterStr += (this.gfnIsNull(sFilterStr)) ? "( " : " && ( ";
+			for(var k=0; k<aFilter.length; k++)
+			{
+				sFilterStr += (k == 0) ? p+" == '"+aFilter[k]+"'" : "|| "+p+" == '"+aFilter[k]+"'";
+			}
+			
+			sFilterStr += ") ";
+		}
+	}
+	
+	trace("sFilterStr ==>"+sFilterStr);
+	this.fvDs.filter("");
+	this.fvDs.filter(sFilterStr);
+}
+
+this.btnSort_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if (this.gfnIsNull(this.fvGrid.sortInfos)) this.fvGrid.sortInfos = {};
+	
+	// 정렬대상컬럼 (순서중요)
+	if (this.gfnIsNull(this.fvGrid.sortItems)) this.fvGrid.sortItems = [];
+	
+	sortInfos = this.fvGrid.sortInfos;
+	sortItems = this.fvGrid.sortItems;	
+	sortInfo = sortInfos[this.fvColumn];
+	
+	if ( this.gfnIsNull(sortInfo) )
+	{
+		var headText = this.fvGrid.getCellText(-1, this.fvCell);	
+		var refCell = this._gfnGridGetGridCellObject(this.fvGrid, "head", this.fvCell);
+		sortInfo = sortInfos[this.fvColumn] = { status: 0, text: headText, refCell: refCell};
+	}	
+	
+	for (var p in sortInfos)
+	{
+		if ( sortInfos.hasOwnProperty(p) )
+		{
+			sortInfo = sortInfos[p];
+			if ( p == this.fvColumn ) 
+			{
+				status = (obj.name == "btnSortUp") ? 1 : 2;
+				sortInfo.status = parseInt(status);
+			}
+			else 
+			{
+				sortInfo.status = 0;
+			}
+			if ( sortInfo.status == 0 )
+			{
+				for (var j=0, len2=sortItems.length; j<len2; j++) 
+				{
+					if ( sortItems[j] !== this.fvColumn ) 
+					{
+						sortItems.splice(j, 1);
+						break;
+					}
+				}
+			}
+		}
+	}	
+	
+	var hasItem = false;
+	for (var i=0, len=sortItems.length; i<len; i++) 
+	{
+		if ( sortItems[i] == this.fvColumn ) 
+		{
+			hasItem = true;
+			break;
+		}
+	}	
+	
+	if (!hasItem) sortItems.push(this.fvColumn);
+	
+	this._gfnGridExecuteSort(this.fvGrid);
+	
+	if(this.fvGrid.getCellProperty("head",this.fvCell,"expandshow") == "show")
+	{
+		var sExpandImg = this.fvGrid.getCellProperty("head",this.fvCell,"expandimage");
+		
+		if(sExpandImg.indexOf("Up") > -1)
+		{
+			this.imvSortUp.set_image("theme://images/grd_sortUp.png");
+			this.btnSortUp.set_enable(false);
+		}
+		else
+		{
+			this.imvSortUp.set_image("theme://images/grd_sortUp_D.png");
+			this.btnSortUp.set_enable(true);
+		}
+				
+		if(sExpandImg.indexOf("Down") > -1)
+		{
+			this.imvDown.set_image("theme://images/grd_sortDown.png");
+			this.btnSortDown.set_enable(false);
+		}
+		else
+		{
+			this.imvDown.set_image("theme://images/grd_sortDown_D.png");
+			this.btnSortDown.set_enable(true);
+		}		
+	}	
+	
+	this.parent.closePopup();
+};
+
+this.btnSearch_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(this.gfnIsNull(this.edtFilter.value))
+	{
+		this.dsColInfo.filter("");
+		return;
+	}
+	
+	this.dsColInfo.filter("data.toString().indexOf('"+this.edtFilter.value+"') > -1");
+};
+
+this.pdvCal_btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.parent.closePopup();
+};
+
+this.pdvCal_btnSel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{	
+	
+	oFilterInfo = this.fvDs.filterInfo;
+	if(this.gfnIsNull(oFilterInfo)) oFilterInfo = {};
+	
+	var aFilter = [];
+
+	
+	for(var i=0; i<this.dsColInfo.rowcount; i++)
+	{
+		if(this.dsColInfo.getColumn(i,"_chk") == "1")
+		{
+			aFilter[aFilter.length] = this.dsColInfo.getColumn(i,"data");
+		}
+	}
+	
+	oFilterInfo[this.fvColumn] = aFilter;
+	
+	this.fvDs.filterInfo = oFilterInfo;
+	
+	this.fnFilter();
+	this._gfnGridExecuteSort(this.fvGrid);
+	this.parent.closePopup();
+};
+
+this.btnColHide_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var oForm = this.parent.parent;
+	
+	var oGridColHide = oForm.pdvGridColHide;
+	
+	if(this.gfnIsNull(oGridColHide))
+	{
+		oGridColHide = new PopupDiv("pdvGridColHide", 0, 0, 179, 273, null, null);
+		oForm.addChild("pdvGridColHide", oGridColHide); 
+		oGridColHide.show();
+		oGridColHide.set_async(false);
+		oGridColHide.set_url("Comm::GridColHide.xfdl");
+	}	
+	
+	oGridColHide.grid = this.fvGrid;
+	oGridColHide.cellindex = this.fvCell;
+
+	
+	var oRect = this.fvGrid.getCellRect(this.parent.rowindex,this.fvCell);
+	
+	oGridColHide.form.fnInit();
+	oGridColHide.trackPopupByComponent(this.fvGrid, oRect.left, oRect.bottom);	
+	this.parent.closePopup();
+	
+};
+
+this.grd00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+	if(e.clickitem == "control") return;
+	
+	var sChk = this.dsColInfo.getColumn(e.row,"_chk");
+	
+	if(sChk == "1")
+	{
+		this.dsColInfo.setColumn(e.row,"_chk","0");
+	}
+	else
+	{
+		this.dsColInfo.setColumn(e.row,"_chk","1");
+	}	
+};
+]]></Script>
+  </Form>
+</FDL>

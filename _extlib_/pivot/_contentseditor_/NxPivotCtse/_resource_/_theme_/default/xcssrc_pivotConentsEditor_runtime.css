@@ -1,0 +1,809 @@
+﻿
+        
+.nexainput.nexaleftalign
+{
+  text-align:left;
+}
+.nexainput.nexarightalign
+{
+  text-align:right;
+}
+.nexainput.nexacenteralign
+{
+  text-align:center;
+}
+
+.nexacontentsbox.nexaleftalign
+{
+  text-align:left;
+}
+.nexacontentsbox.nexarightalign
+{
+  text-align:right;
+}
+.nexacontentsbox.nexacenteralign
+{
+  text-align:center;
+}
+.celltreeline
+{
+  border : 1px dotted #999999;
+}
+.Edit, .MaskEdit, .TextArea, .EditControl, .MaskEditControl, .TextAreaControl
+{
+  cursor:text;
+}
+.Button .nexacontentsbox, .ButtonControl .nexacontentsbox
+{
+  text-align:center;
+}
+
+.FileDownload  .nexacontentsbox, .FileDownloadControl .nexacontentsbox
+{
+  text-align:center;
+}
+
+.IconTextControl .nexacontentsbox, .IconControl .nexacontentsbox
+{
+  text-align:center;
+}
+
+.DatePickerDayItemControl .nexacontentsbox, .DatePickerWeekItemControl .nexacontentsbox, .TitleBarButtonControl .nexacontentsbox
+{
+  text-align:center;
+}
+
+.MainFrame, .VScrollBarControl, .HScrollBarControl
+{
+  cursor:default;
+}
+.nexainput
+{
+  cursor:inherit;
+}
+
+.Grid
+{
+	background : #ffffff;
+	border : 1px solid #b7b1b2;
+}
+.Grid .head .row .cell
+{
+	font : bold 12px Gulim;
+	color : #2f2f2f;
+	border : 1px solid #cacaca;
+}
+.Grid .head .row .cell .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell
+{
+	color : #222222;
+	border : 1px solid #dbdee2;
+}
+.Grid .summary
+{
+	border : 1px solid #c8c1c2, 0px none, 0px none, 0px none;
+}
+.Grid .summary .row .cell
+{
+	font : bold 12px Gulim;
+	color : #222222;
+	background : #fdfbe5;
+	border : 1px solid #c8c1c2;
+}
+.Grid .summary .row .cell .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .hscrollbar
+{
+	border : 1px solid #b1b1b1, 0px none, 0px none, 0px none;
+}
+.Grid .vscrollbar
+{
+	border : 0px none, 0px none, 0px none, 1px solid #b1b1b1;
+}
+.GridCellControl .cellbutton
+{
+	font : 12px Gulim;
+	color : #555555;
+	background : linear-gradient(to top,#eaeaea,#ffffff);
+	border : 1px solid #c2c2c2;
+}
+.GridCellControl .cellcalendar
+{
+	font : 12px Gulim;
+}
+.GridCellControl .cellcheckbox
+{
+	font : 12px Gulim;
+}
+.GridCellControl .cellcombo
+{
+	font : 12px Gulim;
+}
+.ListBoxControl.popupGridCellControlcellcombocombolist.dummy.dummy
+{
+	font : 12px Gulim;
+	color : #333333;
+}
+.GridCellControl .celledit
+{
+	font : 12px Gulim;
+	background : #ffffff;
+	border : 1px solid #d5d5d5;
+	padding : 1px 0px 0px 0px;
+}
+.GridCellControl .cellexpandbutton
+{
+	background : #f0f0f0;
+	border : 1px solid #f0f0f0;
+}
+.GridCellControl .cellmaskedit
+{
+	font : 12px Gulim;
+	background : #ffffff;
+	border : 1px solid #d5d5d5;
+	padding : 1px 2px 0px 2px;
+}
+.GridCellControl .cellprogressbar
+{
+	font : 12px Gulim;
+}
+.GridCellControl .celltextarea
+{
+	font : 12px Gulim;
+}
+.GridCellControl .celltreeitem .treeitemtext
+{
+	font : 12px/normal "Segoe UI";
+	color : #222222;
+}
+.GridCellControl .celltreeline
+{
+	border : 1px dotted #909090;
+}
+.Grid .body .row .cell.cell_item_status_up
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_asc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_down
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_desc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_filter.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_SUM
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconSUM.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_SUM .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_CNT
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconCNT.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_CNT .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_AVG
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconAVG.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_AVG .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MAX
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMAX.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MAX .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MIN
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMIN.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MIN .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconFUNC.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid.grid_nxPv_editor .head .row .cell
+{
+	background : #d8d8d8;
+	color : #000000;
+	border : 1px solid #a3a4a8,1px solid #a3a4a8,1px solid #c2c2c2;
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grid_nxPv_editor .body .row .cell .cellcombo
+{
+	border : 0px none;
+	font : 12px/normal "Gulim";
+	color : #222222;
+}
+.Grid.grid_nxPv_editor .body .row .cell .celledit
+{
+	border : 0px none;
+	padding : 0px 2px;
+	font : 12px/normal "Gulim";
+	color : #222222;
+}
+.PopupMenu.popmenu_nxPv_basic
+{
+	background : #f2f2f2;
+	box-shadow : 3px 3px 4px #888888;
+	font : 12px/normal "Segoe UI";
+}
+.PopupMenu.popmenu_nxPv_basic .popupmenuitem
+{
+	background : #f2f2f2;
+	font : 12px/normal "Segoe UI";
+}
+.Button.btn_nxPv_tabBtn
+{
+	background : #ffffff;
+	color : #111111;
+	border : 0px none,1px solid #a8a9af;
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grid_nxPv_editor .body .row .cell.rowDel .cellbutton
+{
+	background : URL('./../../../_resource_/_images_/btn_pvEditor_grdDel.png') no-repeat center #ffffff;
+	border : 0px none;
+}
+.PopupDiv.popdiv_nxPv_basic
+{
+	background : #f2f2f2;
+	border : 2px solid #b5b5b5;
+}
+.Static.sta_nxPv_popTitle
+{
+	font : 12px/normal "Segoe UI";
+}
+.Edit.edit_nxPv_popEdit
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.TextArea.txtarea_nxPv_popTxtarea
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.Grid.grd_nxPv_treeGrid
+{
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv0
+{
+	background : #eeeeee;
+	border : 0px none,0px none,1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv1
+{
+	background : #ffffff;
+	border : 1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell .cellcombo
+{
+	border : 0px none;
+	font : 12px/normal "Segoe UI";
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell .celledit
+{
+	border : 0px none;
+	font : 12px/normal "Segoe UI";
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell
+{
+	font : 12px/normal "Segoe UI";
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .head .row .cell
+{
+	background : #d8d8d8;
+	border : 1px solid #a3a4a8;
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grid_nxPv_editor .body .row .cell
+{
+	font : 12px/normal "Gulim";
+	color : #333333;
+	border : 1px solid #cccccc;
+}
+.ImageViewer.NxPivot_comp_splitterV
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_splitterV.png') no-repeat center;
+	border : 0px none;
+}
+.ImageViewer.NxPivot_comp_splitterH
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_splitterH.png') no-repeat center;
+	border : 0px none;
+}
+.Div.div_nxPv_conBorder
+{
+	border : 1px solid #b7b1b2;
+}
+.Grid .body .row .cell[status=mouseover]
+{
+	background : #f6f6f6;
+}
+.GridCellControl .cellbutton[status=mouseover]
+{
+	background : linear-gradient(to top,#e7e7e7,#fefefe);
+	border : 1px solid #a0a0a0;
+}
+.GridCellControl .cellbutton[status=focused]
+{
+	background : linear-gradient(to top,#e7e7e7,#fefefe);
+	border : 1px solid #a0a0a0;
+}
+.ListBoxControl.popupGridCellControlcellcombocombolist.dummy.dummy .listboxitem[status=mouseover]
+{
+	background : #e8e9ed;
+}
+.GridCellControl .celledit[status=mouseover]
+{
+	border : 1px solid #5a86cd;
+}
+.GridCellControl .celledit[status=focused]
+{
+	border : 1px solid #5a86cd;
+}
+.GridCellControl .cellexpandbutton[status=focused]
+{
+	background : #f0f0f0;
+	border : 1px solid #f0f0f0;
+}
+.GridCellControl .cellexpandbutton[status=mouseover]
+{
+	border : 1px solid #4093e7;
+}
+.GridCellControl .cellmaskedit[status=mouseover]
+{
+	border : 1px solid #5a86cd;
+}
+.GridCellControl .cellmaskedit[status=focused]
+{
+	border : 1px solid #5a86cd;
+}
+.Grid .body .row .cell.cell_item_status_up[status=mouseover]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_asc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_down[status=mouseover]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_desc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_filter.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconSUM.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconCNT.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconAVG.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMAX.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMIN.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[status=mouseover]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconFUNC.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[status=mouseover] .nexacontentsbox
+{
+	text-align : center;
+}
+.Button.btn_nxPv_tabBtn[status=focused]
+{
+	background : #ffffff;
+	color : #111111;
+	border : 0px none,1px solid #a8a9af;
+	font : 12px/normal "Segoe UI";
+}
+.Button.btn_nxPv_tabBtn[status=mouseover]
+{
+	background : #ffffff;
+	color : #111111;
+	border : 0px none,1px solid #a8a9af;
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grid_nxPv_editor .body .row .cell[status=mouseover]
+{
+	background : #ffffff;
+}
+.Edit.edit_nxPv_popEdit[status=focused]
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.Edit.edit_nxPv_popEdit[status=mouseover]
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.TextArea.txtarea_nxPv_popTxtarea[status=mouseover]
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.TextArea.txtarea_nxPv_popTxtarea[status=focused]
+{
+	border : 1px solid #a3a4a8;
+	padding : 2px;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv0[status=focused]
+{
+	background : #eeeeee;
+	border : 0px none,0px none,1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv0[status=mouseover]
+{
+	background : #eeeeee;
+	border : 0px none,0px none,1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv1[status=focused]
+{
+	background : #ffffff;
+	border : 1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv1[status=mouseover]
+{
+	background : #ffffff;
+	border : 1px solid #dbdee2;
+	color : #222222;
+}
+.Grid .body .row .cell[userstatus=selected]
+{
+	background : #f2f9ff;
+}
+.GridCellControl .cellbutton[userstatus=pushed]
+{
+	background : linear-gradient(to top,#fefefe,#e9e9e9);
+}
+.GridCellControl .cellbutton[userstatus=selected]
+{
+	background : linear-gradient(to top,#fefefe,#e9e9e9);
+}
+.GridCellControl .cellexpandbutton[userstatus=pushed]
+{
+	background : #f0f0f0;
+	border : 1px solid #f0f0f0;
+}
+.GridCellControl .cellexpandbutton[userstatus=selected]
+{
+	background : #f0f0f0;
+	border : 1px solid #f0f0f0;
+}
+.GridCellControl .celltreeitem .treeitembutton[userstatus=expand] .nexacontentsbox
+{
+	text-align : left;
+}
+.GridCellControl .celltreeitem .treeitembutton[userstatus=collapse] .nexacontentsbox
+{
+	text-align : left;
+}
+.Grid .body .row .cell[userstatus=blinked]
+{
+	background : #125dae;
+	color : #ffffff;
+}
+.Grid .body .row .cell.cell_item_status_up[userstatus=selected]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_asc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_down[userstatus=selected]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_desc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_filter.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconSUM.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconCNT.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconAVG.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMAX.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMIN.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[userstatus=selected]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconFUNC.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[userstatus=selected] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid.grid_nxPv_editor .body .row .cell[userstatus=selected]
+{
+	background : #ffffff;
+	color : #222222;
+}
+.Button.btn_nxPv_tabBtn[userstatus=pushed]
+{
+	background : #ffffff;
+	color : #111111;
+	border : 0px none,1px solid #a8a9af;
+	font : 12px/normal "Segoe UI";
+}
+.Button.btn_nxPv_tabBtn[userstatus=selected]
+{
+	background : #ffffff;
+	color : #111111;
+	border : 0px none,1px solid #a8a9af;
+	font : 12px/normal "Segoe UI";
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv0[userstatus=selected]
+{
+	background : #eeeeee;
+	border : 0px none,0px none,1px solid #dbdee2;
+	color : #222222;
+}
+.Grid.grd_nxPv_treeGrid .body .row .cell.treeLv1[userstatus=selected]
+{
+	background : #ffffff;
+	border : 1px solid #dbdee2;
+	color : #222222;
+}
+.Grid .head .row .cell[status=disabled]
+{
+	color : #999999;
+}
+.Grid .body .row .cell[status=disabled]
+{
+	color : #999999;
+}
+.GridCellControl .cellbutton[status=disabled]
+{
+	color : #bbbbbb;
+	background : #f5f5f5;
+	border : 1px solid #d9d9d9;
+}
+.GridCellControl .celledit[status=disabled]
+{
+	color : #999999;
+	background : #efefef;
+}
+.GridCellControl .cellmaskedit[status=disabled]
+{
+	color : #999999;
+	background : #efefef;
+}
+.GridCellControl .celltreeitem .treeitemtext[status=disabled]
+{
+	color : #999999;
+}
+.Grid .body .row .cell.cell_item_status_up[status=disabled]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_asc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_down[status=disabled]
+{
+	background : URL('./../../../_resource_/_images_/img_pvGrd_desc.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_filter.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_filter[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconSUM.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_SUM[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconCNT.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_CNT[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconAVG.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_AVG[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMAX.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MAX[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconMIN.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_MIN[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[status=disabled]
+{
+	font : normal bold 12px/normal "Arial";
+	color : #ffffff;
+	background : URL('./../../../_resource_/_images_/img_pvGrd_iconFUNC.png') no-repeat center center;
+}
+.Grid .body .row .cell.cell_item_status_FUNC[status=disabled] .nexacontentsbox
+{
+	text-align : center;
+}
+.Button.btn_nxPv_tabBtn[status=disabled]
+{
+	background : #ffffff;
+	color : #bbbbbb;
+	border : 0px none,1px solid #a8a9af;
+}
+.Grid .body .row .cell[status=disabled][userstatus=selected]
+{
+	background : #f0f0f0;
+}

@@ -1,0 +1,16 @@
+{
+	"name": "extPrototype",
+	"version": "1.0.0.0",
+	"description": "Nexacro N Unified Framework Library",
+	"license": "",
+	"scripts": [
+        "extPrototype/Frame.js",
+        "extPrototype/Util.js",
+        "extPrototype/Comp.js",
+        "extPrototype/Transaction.js",
+        "extPrototype/Grid.js",
+        "extPrototype/Popup.js",
+        "extPrototype/Validation.js"
+        //"extPrototype/Excel.js",
+	]
+}

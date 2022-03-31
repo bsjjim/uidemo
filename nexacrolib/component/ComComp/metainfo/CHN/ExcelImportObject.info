@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelImportObject">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExcelImportObject" shorttypename="ExcelImportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于将Excel或HANCEL文件中的内容Import到DataSet中的对象。" />
+    <PropertyInfo>
+      <Property name="filefilter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于设定适用于在对需要Import的文件进行选择的文件选择窗口中的文件格式的属性。" csspropertyname="" normalpropertyname="filefilter" />
+      <Property name="filefilterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于以索引值设定需要在文件选择窗口中默认显示的文件格式的属性。" csspropertyname="" normalpropertyname="filefilterindex" />
+      <Property name="importfilemode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="local" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImportFileMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于设定需要进行Import的文件的位置以及处理方式的属性。" csspropertyname="" normalpropertyname="importfilemode" />
+      <Property name="importtype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于以常数值设定需要对ExcelImportObject进行Import的文件格式的属性。" csspropertyname="" normalpropertyname="importtype" />
+      <Property name="importurl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于设定需要由ExcelImportObject执行Import的服务器URL的属性。" csspropertyname="" normalpropertyname="importurl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于设定ExcelImportObject的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="quotechar" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportImportQuoteType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行Import时作为限定符使用的值的属性。" csspropertyname="" normalpropertyname="quotechar" />
+      <Property name="separator" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行Import时作为分隔符使用的值的属性。" csspropertyname="" normalpropertyname="separator" />
+      <Property name="userawdatevalue" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于设定在Excel的单元格值为日期或时间类型时是否直接对原始值进行Import的属性。" csspropertyname="" normalpropertyname="userawdatevalue" />
+      <Property name="userawnumbervalue" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于设定在Excel的单元格值为数字类型时是否直接对原始值进行Import的属性。" csspropertyname="" normalpropertyname="userawnumbervalue" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于在ExcelImportObject中声明特定事件并添加的方法。">
+        <Syntax text="ExcelImportObject.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到ExcelImportObject的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于向ExcelImportObject的特定事件添加句柄函数的方法。">
+        <Syntax text="ExcelImportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到ExcelImportObject的特定事件中的方法。">
+        <Syntax text="ExcelImportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="ExcelImportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于删除通过脚本动态生成的ExcelImportObject的方法。">
+        <Syntax text="ExcelImportObject.destroy()">
+          <Return type="Boolean" description="在ExcelImportObject被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除ExcelImportObject时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于在ExcelImportObject的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="ExcelImportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于返回ExcelImportObject的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="ExcelImportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="importData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于将文件Import到DataSet中的方法。">
+        <Syntax text="ExcelImportObject.importData( strSource,strRange,strOutDatasets [,strArgument] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="利用“变量名=变量值”的形态设定import时所需要的信息。&#xD;&#xA;&#xD;&#xA;可以设定1个以上的参数对并利用空格进行区分。&#xD;&#xA;在对设定有密码的Excel文件进行Import时，只有输入“filepassword=Excel文件密码”才能够正常工作。" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="利用“DataSet名=变量名”的格式设定需要对所Import的数据进行存储的DataSet的ID。&#xD;&#xA;&#xD;&#xA;可以设定1个以上的DataSet并利用空格进行区分。&#xD;&#xA;右侧的“变量名”可以设定为在strRange中设定的变量名或如“output1”...的自动生成的变量名。" />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="利用“表单名!单元格区域:单元格区域”格式，或在Import的文件格式为CSV、TXT时，利用“开始区域:结束区域”格式，对需要从在strSource中设定的文件Import到DataSet的区域进行设定。&#xD;&#xA;&#xD;&#xA;当需要指定多个区域时，按照如下所述的格式反复设定。&#xD;&#xA;&#xD;&#xA;strRange ::= '[Command=&amp;lt;strCommand&amp;gt;; Output=&amp;lt;dsName&amp;gt;; Head=&amp;lt;strArea&amp;gt;; Body=&amp;lt;strArea&amp;gt;]'&#xD;&#xA;&#xD;&#xA;&amp;lt;strComm" />
+            <Argument name="strSource" type="String" in="false" out="false" option="false" variable="false" description="利用URL格式的字符串设定需要Import的文件位置。&#xD;&#xA;&#xD;&#xA;在importfilemode属性值为“server”的情况下，利用“http://”、“https://”格式设定文件的位置。&#xD;&#xA;在importfilemode属性值为“server”的情况下，设定相对路径时，以在importurl属性中设定的路径为基准进行处理。&#xD;&#xA;在importfilemode属性值为“local”或没有设定strSource值的情况下，将显示FileDialog并选择文件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="importDataEx" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于通过ID进行区分并将文件Import到DataSet中的方法。">
+        <Syntax text="ExcelImportObject.importDataEx( strImportID, strSource,strRange,strOutDatasets [,strArgument] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="利用“变量名=变量值”的形态设定import时所需要的信息。&#xD;&#xA;&#xD;&#xA;可以设定1个以上的参数对并利用空格进行区分。&#xD;&#xA;在对设定有密码的Excel文件进行Import时，只有输入“filepassword=Excel文件密码”才能够正常工作。" />
+            <Argument name="strImportID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于对Import进行区分的ID。&#xD;&#xA;&#xD;&#xA;设定值在onsuccess事件中被传递到ExcelImportEventInfo对象的importid属性中。" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="利用“DataSet名=变量名”的格式设定需要对所Import的数据进行存储的DataSet的ID。&#xD;&#xA;&#xD;&#xA;可以设定1个以上的DataSet并利用空格进行区分。&#xD;&#xA;右侧的“变量名”可以设定为在strRange中设定的变量名或如“output1”...的自动生成的变量名。" />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="利用“表单名!单元格区域:单元格区域”格式，或在Import的文件格式为CSV、TXT时，利用“开始区域:结束区域”格式，对需要从在strSource中设定的文件Import到DataSet的区域进行设定。&#xD;&#xA;&#xD;&#xA;当需要指定多个区域时，按照如下所述的格式反复设定。&#xD;&#xA;&#xD;&#xA;strRange ::= '[Command=&amp;lt;strCommand&amp;gt;; Output=&amp;lt;dsName&amp;gt;; Head=&amp;lt;strArea&amp;gt;; Body=&amp;lt;strArea&amp;gt;]'&#xD;&#xA;&#xD;&#xA;&amp;lt;strComm" />
+            <Argument name="strSource" type="String" in="false" out="false" option="false" variable="false" description="利用URL格式的字符串设定需要Import的文件位置。&#xD;&#xA;&#xD;&#xA;在importfilemode属性值为“server”的情况下，利用“http://”、“https://”格式设定文件的位置。&#xD;&#xA;在importfilemode属性值为“server”的情况下设定相对路径时，以在importurl属性中设定的路径为基准进行处理。&#xD;&#xA;在importfilemode属性值为“local”或没有设定strSource值的情况下，将显示FileDialog并选择文件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于在ExcelImportObject的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="ExcelImportObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于删除在ExcelImportObject中声明的特定事件的方法。">
+        <Syntax text="ExcelImportObject.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从ExcelImportObject删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于从ExcelImportObject的特定事件中删除句柄函数的方法。">
+        <Syntax text="ExcelImportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于从ExcelImportObject的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="ExcelImportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于变更ExcelImportObject的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="ExcelImportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="用于将ExcelImportObject的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="ExcelImportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="在Import的过程中发生错误时触发的事件。">
+        <Syntax text="ExcelImportObject.onerror(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,Android Default Web Browser" description="在完成Import时触发的事件。">
+        <Syntax text="ExcelImportObject.onsuccess(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

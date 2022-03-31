@@ -1,0 +1,20 @@
+﻿{
+  "Nexacro N": {
+    "os":"framework", 
+    "version":"21.0.0.301", 
+    "type":"framework",
+    "name": "Framework Library",
+    "resources":
+    [
+      {
+        "folder":"component"
+      },
+      {
+        "folder":"framework"
+      },
+      {
+        "folder":"resources"
+      }
+    ]
+  }
+}

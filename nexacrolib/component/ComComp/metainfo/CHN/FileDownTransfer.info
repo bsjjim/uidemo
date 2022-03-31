@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDownTransfer">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDownTransfer" shorttypename="FileDownTransfer" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从服务器下载文件的Invisible对象。" />
+    <PropertyInfo>
+      <Property name="downloadfilename" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="设定需要在下载文件时显示的FileDialog中默认显示的文件名。" csspropertyname="" normalpropertyname="downloadfilename" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定FileDownTransfer的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定FileDownTransfer的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="postdatalist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="以Collection形态包含需要在下载文件时传送到服务器中的数据的只读属性。" csspropertyname="" normalpropertyname="postdatalist" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在FileDownTransfer中下载的文件的服务器路径以及文件名的属性。" csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在FileDownTransfer中声明特定事件并添加的方法。">
+        <Syntax text="FileDownTransfer.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到FileDownTransfer的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向FileDownTransfer的特定事件添加句柄函数的方法。">
+        <Syntax text="FileDownTransfer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到FileDownTransfer的特定事件中的方法。">
+        <Syntax text="FileDownTransfer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="FileDownTransfer.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearPostDataList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在postdatalist属性中设定的所有数据的方法。">
+        <Syntax text="FileDownTransfer.clearPostDataList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过脚本动态生成的FileDownTransfer的方法。">
+        <Syntax text="FileDownTransfer.destroy()">
+          <Return type="Boolean" description="在FileDownTransfer被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除FileDownTransfer时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="download" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从服务器利用HTTP/HTTPS协议的POST方式下载特定文件的方法。">
+        <Syntax text="FileDownTransfer.download( [strUrl [, strTargetpath]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strTargetPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要对所下载的文件进行存储的路径以及文件名。&#xD;&#xA;&#xD;&#xA;在设定值时，不询问存储路径而将文件下载到相应位置。&#xD;&#xA;在指定不存在的路径的情况下不会进行下载。&#xD;&#xA;&#xD;&#xA;当沙箱（SandBox）选项，即Environment的filesecurelevel属性值为“all”时将允许访问所有路径。&#xD;&#xA;在如上所述的情况下，只有在向使用者确认是否允许访问之后，在使用者允许的情况下执行方法。&#xD;&#xA;&#xD;&#xA;* 只有在Windows NRE中支持的参数。" />
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="设定需要下载的文件的路径。&#xD;&#xA;&#xD;&#xA;在省略值时，将适用设定到url属性中的值。&#xD;&#xA;在设定值时，被设定到url属性中的值将被忽略。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在FileDownTransfer的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="FileDownTransfer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回FileDownTransfer的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="FileDownTransfer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从在postdatalist属性中设定的数据中返回与特定Key值对应的数据的方法。">
+        <Syntax text="FileDownTransfer.getPostData( strKey )">
+          <Return type="Variant" description="返回与strKey值对应的数据。&#xD;&#xA;&#xD;&#xA;在没有与strKey值对应的数据时，将返回null。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要返回的数据的Key值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在FileDownTransfer的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="FileDownTransfer.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在FileDownTransfer中声明的特定事件的方法。">
+        <Syntax text="FileDownTransfer.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从FileDownTransfer删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从FileDownTransfer的特定事件中删除句柄函数的方法。">
+        <Syntax text="FileDownTransfer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从FileDownTransfer的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="FileDownTransfer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removePostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从在postdatalist属性中设定的数据中删除与特定Key值对应的数据的方法。">
+        <Syntax text="FileDownTransfer.removePostData( strKey );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的数据的Key值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更FileDownTransfer的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="FileDownTransfer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将FileDownTransfer的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="FileDownTransfer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将需要在请求文件下载时传送到服务器中的数据添加到postdatalist属性中的方法。">
+        <Syntax text="FileDownTransfer.setPostData( strKey, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要传送到服务器中的数据的Key值。&#xD;&#xA;&#xD;&#xA;在有相同的Key值存在的情况下，将变更为新的数据。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要传送到服务器中的数据。&#xD;&#xA;&#xD;&#xA;可以设定基本数据类型（number、string、boolean等）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在文件下载失败或返回错误代码时触发的事件。">
+        <Syntax text="FileDownTransfer.onerror(obj:nexacro.FileDownTransfer,e:nexacro.FileDownTransferErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDownTransferErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在文件下载完成之后返回成功代码时触发的事件。">
+        <Syntax text="FileDownTransfer.onsuccess(obj:nexacro.FileDownTransfer,e:nexacro.FileDownTransferEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDownTransferEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

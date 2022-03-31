@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Popup" width="370" height="207" titletext="New Form" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="207" width="370">
+        <Static id="Static00_00" taborder="0" cssclass="sta_POP_bg" left="0" top="0" right="0" bottom="0"/>
+        <Static id="Static00" taborder="1" text="Error" left="0" top="0" height="30" cssclass="sta_POP_title" right="0"/>
+        <Button id="btnClose" taborder="2" top="1" width="50" height="28" cssclass="btn_POP_close" right="1" onclick="btnClose_onclick"/>
+        <ImageViewer id="imvIcon" taborder="3" left="161" top="50" width="48" height="48" image="url('theme://images/img_error.png')" border="0px none"/>
+        <Static id="Static01_00_00_00" taborder="4" top="30" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static01_00_00_00_00" taborder="5" top="98" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="staMsg" taborder="6" top="106" height="39" textAlign="center" left="10" width="350" fittocontents="both" minwidth="350" maxwidth=""/>
+        <Static id="Static01_00_00_00_00_00" taborder="7" top="132" cssclass="sta_Guide" width="159" left="108" height="24" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static00_00_00" taborder="8" cssclass="sta_POP_bg" left="390" top="0" width="370" height="204" visible="false"/>
+        <Static id="Static00_01" taborder="9" text="Error" left="390" top="0" height="30" cssclass="sta_POP_title" width="370" visible="false"/>
+        <Button id="Button00_00" taborder="10" top="1" width="50" height="28" cssclass="btn_POP_close" left="709" visible="false"/>
+        <ImageViewer id="imv00_00" taborder="11" left="551" top="50" width="48" height="48" image="url('theme://images/img_error.png')" border="0px none" visible="false"/>
+        <Static id="Static01_00_00_00_01" taborder="12" top="30" cssclass="sta_Guide" width="159" left="460" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static01_00_00_00_00_01" taborder="13" top="98" cssclass="sta_Guide" width="159" left="460" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="sta00_00" taborder="14" text="OOO 화면을 불러오는 동안 오류가 발생했습니다." top="106" height="39" textAlign="center" left="400" width="350" visible="false"/>
+        <Static id="Static01_00_00_00_00_00_00" taborder="15" top="132" cssclass="sta_Guide" width="159" left="498" height="24" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Div id="div00_00" taborder="16" text="div00" left="410" top="156" cssclass="div_group" height="28" width="330" visible="false">
+          <Layouts>
+            <Layout>
+              <Button id="btn00" taborder="0" text="확인" left="87" width="76" height="28" cssclass="btn_Block" borderRadius="2px" bottom="0" visible="false"/>
+              <Button id="btn00_00" taborder="1" text="더보기" left="167" width="76" height="28" cssclass="btn_Block" borderRadius="2px" bottom="0" icon="url('theme://images/btn_msg_up.png')" textAlign="left" iconPosition="right" textPadding="0px 5px 0px 0px" onclick="div00_btn00_00_onclick" visible="false"/>
+              <Static id="Static01_00_00_00_00_01" taborder="2" top="236" cssclass="sta_Guide" width="159" left="97" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+              <TextArea id="txt00" taborder="3" left="0" height="236" value="에러입니다." background="#F9FAFB" bottom="49" width="330"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00_00_00_01_00_00" taborder="17" top="184" cssclass="sta_Guide" width="159" left="497" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <TextArea id="txtDetail" taborder="18" left="20" right="20" top="staMsg:11" height="233" visible="false" readonly="true" background="#F9FAFB" border="1px solid #d3d3d3" padding="5px 5px 0px 5px"/>
+        <Button id="btnOk" taborder="19" text="확인" left="97" width="76" height="28" cssclass="btn_Block" borderRadius="2px" onclick="btnOk_onclick" bottom="19"/>
+        <Button id="btnMore" taborder="20" text="더보기" left="btnOk:4" width="76" height="28" cssclass="btn_Block" borderRadius="2px" icon="url('theme://images/btn_msg_down.png')" textAlign="left" iconPosition="right" textPadding="0px 5px 0px 0px" bottom="19" onclick="btnMore_onclick"/>
+        <Static id="Static01_00_00_00_00_01_00" taborder="21" top="441" cssclass="sta_Guide" width="159" left="108" height="19" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static01_00_00_00_00_00_01" taborder="22" top="389" cssclass="sta_Guide" width="159" left="106" height="24" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  Alert메시지용 팝업
+*  @FileName 	: PopupError.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/21
+*  @Desction    : Alert메시지용 팝업
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/21     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+this.fvCurHeight;
+this.fvMoreHeight = 253;
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+	
+	var sMsg = this.gfnGetArgument("pvMsg");
+	var sAddMsg = this.gfnGetArgument("pvAddMsg");
+	this.staMsg.set_text(sMsg);	
+	
+	this.txtDetail.set_visible(false);
+	
+	this.resetScroll();
+	
+	this.fvCurHeight = obj.getOwnerFrame().height;
+	
+	var nBtnWidth = 156;
+	if(this.gfnIsNull(sAddMsg))
+	{
+		this.txtDetail.set_value("");
+		this.btnMore.set_visible(false);
+		nBtnWidth = 76;
+		
+		var nBtnLeft = (obj.getOwnerFrame().width / 2) - Math.round(nBtnWidth / 2);
+		
+ 		this.btnOk.set_left(nBtnLeft);		
+	}
+	else
+	{
+		this.txtDetail.set_value(sAddMsg);
+	}
+	
+	if(this.staMsg._width > 350)
+	{
+	    obj.getOwnerFrame().set_width(this.staMsg._width+20);
+		
+		var curX = this.oApp.mainframe.left;
+		var nLeft   =  curX + (this.oApp.mainframe.width / 2) - Math.round(obj.getOwnerFrame().width / 2);
+		obj.getOwnerFrame().set_left(nLeft);
+		
+ 		var nIconLeft = (obj.getOwnerFrame().width / 2)  - Math.round(48 / 2);
+ 		this.imvIcon.set_left(nIconLeft);
+ 		
+		var nBtnLeft = (obj.getOwnerFrame().width / 2) - Math.round(nBtnWidth / 2);
+		
+ 		this.btnOk.set_left(nBtnLeft);
+	}
+	
+	if(this.staMsg._height > 40)
+	{
+	    obj.getOwnerFrame().set_height(this.staMsg._height+165);
+		
+		var curY = this.oApp.mainframe.top;        
+	    var nTop = curY + (this.oApp.mainframe.height / 2) - Math.round(obj.getOwnerFrame().height / 2);		
+		obj.getOwnerFrame().set_top(nTop);
+		
+		this.fvCurHeight = obj.getOwnerFrame().height;
+	}	
+	
+
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close();
+};
+
+this.btnOk_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close();
+};
+
+this.btnMore_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(obj.icon == "url('theme://images/btn_msg_down.png')")
+	{
+		obj.set_icon("url('theme://images/btn_msg_up.png')");
+		this.txtDetail.set_visible(true);
+		this.getOwnerFrame().set_height(this.fvCurHeight+this.fvMoreHeight);
+	}
+	else
+	{
+		obj.set_icon("url('theme://images/btn_msg_down.png')");
+		this.txtDetail.set_visible(false);
+		this.getOwnerFrame().set_height(this.staMsg._height+165);
+		this.getOwnerFrame().set_height(this.fvCurHeight);
+	}
+	
+	var curY = this.oApp.mainframe.top;        
+	var nTop = curY + (this.oApp.mainframe.height / 2) - Math.round(this.getOwnerFrame().height / 2);		
+	this.getOwnerFrame().set_top(nTop);	
+};
+]]></Script>
+  </Form>
+</FDL>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.XPush">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.XPush" shorttypename="XPush" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="可以接收从X-PUSH服务器传递过来的消息的客户端组件。" />
+    <PropertyInfo>
+      <Property name="controlretry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于设定在X-PUSH服务器上注册/删除Topic的过程中发生错误时的重试次数。" csspropertyname="" normalpropertyname="controlretry" />
+      <Property name="debug" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="在Nexacro Studio的output窗口中设置是否显示调试用 XPush 消息的属性 。" csspropertyname="" normalpropertyname="debug" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含发生错误时的错误代码的只读属性。" csspropertyname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含发生错误时的错误消息的只读属性。" csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="iplist" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要连接的X-PUSH服务器的IP以及Port的属性。" csspropertyname="" normalpropertyname="iplist" />
+      <Property name="keepalivetime" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定为了与X-PUSH服务器维持连接而发送的消息的周期的属性。" csspropertyname="" normalpropertyname="keepalivetime" />
+      <Property name="keeptimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于设定为了与X-PUSH服务器维持连接而发送的消息的响应等待时间的属性。" csspropertyname="" normalpropertyname="keeptimeout" />
+      <Property name="layouturl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Message Layout定义文件的位置的属性。" csspropertyname="" normalpropertyname="layouturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定XPush的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="projectid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在与X-PUSH服务器进行通信时使用的Project ID的属性。" csspropertyname="" normalpropertyname="projectid" />
+      <Property name="protocolversion" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在与X-PUSH服务器进行通信时使用的Protocol版本的属性。" csspropertyname="" normalpropertyname="protocolversion" />
+      <Property name="retry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于设定在尝试连接到X-PUSH服务器的过程中发生错误时的重试次数的属性。" csspropertyname="" normalpropertyname="retry" />
+      <Property name="sessionid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在连接到X-PUSH服务器时使用的Session ID的属性。" csspropertyname="" normalpropertyname="sessionid" />
+      <Property name="timeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于设定为了与X-PUSH服务器建立连接而发送的消息的响应等待时间的属性。" csspropertyname="" normalpropertyname="timeout" />
+      <Property name="userid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在连接到X-PUSH服务器时使用的User ID的属性。" csspropertyname="" normalpropertyname="userid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于向XPush的特定事件添加句柄函数的方法。">
+        <Syntax text="XPush.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于对函数进行检索并作为句柄函数添加到XPush的特定事件中的方法。">
+        <Syntax text="XPush.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="XPush.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于与X-PUSH服务器建立连接的方法。">
+        <Syntax text="XPush.connect( [strUserID [,strSessionID]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSessionID" type="String" in="false" out="false" option="false" variable="false" description="设定用于在连接到X-PUSH服务器时进行认证的Session ID。&#xD;&#xA;&#xD;&#xA;在省略值时适用session属性值。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="设定用于在连接到X-PUSH服务器时进行认证的User ID。&#xD;&#xA;&#xD;&#xA;在省略值时适用userid属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于与X-PUSH服务器断开连接的方法。">
+        <Syntax text="XPush.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于在XPush的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="XPush.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentIP" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前连接的X-PUSH服务器的IP值的方法。">
+        <Syntax text="XPush.getCurrentIP()">
+          <Return type="String" description="返回当前连接的X-PUSH服务器的IP值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPort" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前连接的X-PUSH服务器的Port值的方法。">
+        <Syntax text="XPush.getCurrentPort()">
+          <Return type="Number" description="返回当前连接的X-PUSH服务器的Port值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回XPush的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="XPush.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRegisteredTopics" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="XPush.getRegisteredTopics()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegisteredTopicsWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="该方法请求注册在X-PUSH服务器中的Topic信息，以便特定用户能够接收到可靠性消息。">
+        <Syntax text="XPush.getRegisteredTopicsWithUserID(strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="设置要接收可靠信息的项目 ID 为字符串 。&#xA;省略值时适用 projectid 属性值。&#xA;&#xA;* protocolversion 仅适用于属性值为3的情况。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="设置要接收可靠信息的用户ID为字符串 。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="为了在移动设备中接收Notification而将DeviceToken值注册到X-PUSH服务器的方法。">
+        <Syntax text="XPush.registerDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="registerTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="为了接收可靠性消息而向X-PUSH服务器注册Topic的方法。">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中需要接收的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="设定需要接收的消息的Key值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="为了使特定使用者可以接收可靠性消息而向X-PUSH服务器注册Topic的方法。">
+        <Syntax text="this.XPush00.registerTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在Message Layout文件定义的消息类型中需要接收的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要接收的消息的Key值。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要接收可靠性消息的项目的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，适用projectid属性值。&#xD;&#xA;&#xD;&#xA;* 只有在protocolversion属性值为3的情况下适用。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要接收可靠性消息的使用者的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于从XPush的特定事件中删除句柄函数的方法。">
+        <Syntax text="XPush.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于从XPush的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="XPush.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于请求没有从X-PUSH服务器接收的可靠性消息的方法。">
+        <Syntax text="requestMessage ( strMsgType, strMsgKeys );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMsgKeys" type="String" in="false" out="false" option="false" variable="false" description="设定需要接收的消息的Key值。&#xD;&#xA;&#xD;&#xA;在需要接收的消息为多个时，可以利用逗号（“,”）区分设定多个Key值。" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中需要接收的消息类型。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于请求没有从X-PUSH服务器接收的可靠性消息数量的方法。">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中需要接收数量的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="设定未接收的可靠性消息的Key值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCountWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向X-PUSH服务器请求特定使用者未接收的可靠性消息数量的方法。">
+        <Syntax text="XPush.requestMessageCountWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在Message Layout文件定义的消息类型中需要接收数量的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定未接收的可靠性消息的Key值。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对未接收的可靠性消息数量进行确认的项目的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，适用projectid属性值。&#xD;&#xA;&#xD;&#xA;* 只有在protocolversion属性值为3的情况下适用。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对未接收的可靠性消息数量进行确认的使用者的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于发送与从X-PUSH服务器接收的可靠性消息相关的接收响应的方法。">
+        <Syntax text="XPush.sendResponse(strmsgid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strmsgid" type="String" in="false" out="false" option="false" variable="false" description="设定所接收到的可靠性消息的ID。&#xD;&#xA;&#xD;&#xA;在接收到消息时调用的CallBack函数中，作为“msgid”参数值传递ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于变更XPush的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="XPush.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于将XPush的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="XPush.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向为了接收消息而连接的X-PUSH服务器注册Topic的方法。">
+        <Syntax text="XPush.subscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack[, nRow[, strCheck[, bUseActiveFormCallBack]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bUseActiveFormCallBack" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，只在被激活的Form中调用CallBack函数。&#xD;&#xA;在设定为false时，即使是在未被激活的Form中也会调用CallBack函数。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="设定在strType值为“insert”时需要插入到DataSet中的Row的索引。&#xD;&#xA;&#xD;&#xA;在省略值时适用0。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="设定用于对所接收到的消息进行存储的DataSet的对象。" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="设定需要接收消息的Form的对象。" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在将所接收到的消息存储到DataSet之后进行调用的CallBack函数名。&#xD;&#xA;&#xD;&#xA;CallBack函数以CallBackName(ChangeRow, ChangeCol, ColList, strMsgType, strActionType, strMsgID)的形态进行定义，其参数的含义根据strType参数以及条件而有所不同，具体请参阅下端的注解。" />
+            <Argument name="strCheck" type="String" in="false" out="false" option="false" variable="false" description="在设定为“0”时，将消息无条件地反映到DataSet中。&#xD;&#xA;只有在strCheck中所设定的值与在Message Layout文件中将“check”属性值设定为“true”的字段（Field）值一致的情况下将消息反映到DataSet中。&#xD;&#xA;&#xD;&#xA;在省略值时适用“0”。" />
+            <Argument name="strMsgKey" type="String" in="false" out="false" option="false" variable="false" description="设定需要接收的消息的Key值。" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中需要接收的消息类型。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="设定用于将所接收到的消息存储到DataSet中的方法。&#xD;&#xA;&#xD;&#xA;在设定为“append”时，作为DataSet的最后一个Row添加所接收到的消息。&#xD;&#xA;&#xD;&#xA;在设定为“insert”时，将所接收到的消息添加到利用nRow参数设定的位置。&#xD;&#xA;在不设定nRow参数时适用0。&#xD;&#xA;&#xD;&#xA;在设定为“replace”时，第一个Row被所接收到的消息替换。&#xD;&#xA;在没有Row的情况下，不会将消息添加到DataSet中。&#xD;&#xA;&#xD;&#xA;在设定为“update”时，对DataSet的Row中的Key值相同的第一个Row所接收到的消息进行更新。&#xD;&#xA;当没有可以更新的R" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于删除为了在移动设备中接收Notification而注册到X-PUSH服务器的Device Token值的方法。">
+        <Syntax text="XPush.unregisterDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除为了接收可靠性消息而注册到X-PUSH服务器的Topic的方法。">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中需要停止接收的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="设定需要停止接收的消息的Key值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从X-PUSH服务器删除特定使用者所接收的可靠性消息的Topic的方法。">
+        <Syntax text="XPush.unregisterTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在Message Layout文件定义的消息类型中需要停止接收的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要停止接收的消息的Key值。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要中止接收可靠性消息的项目的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，适用projectid属性值。&#xD;&#xA;&#xD;&#xA;* 只有在protocolversion属性值为3的情况下适用。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要中止接收可靠性消息的使用者的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除为了接收消息而注册到X-PUSH服务器的Topic的方法。">
+        <Syntax text="XPush.unsubscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="设定在注册Topic时设定的DataSet对象。" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="设定在注册Topic时设定的Form对象。" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="设定在注册Topic时设定的CallBack函数名。" />
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="设定在Message Layout文件定义的消息类型中，需要停止接收的Topic的消息类型。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="设定需要停止接收的Topic的Key值。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="设定在注册Topic时设定的消息存储方法。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在XPush请求的作业失败时触发的事件。">
+        <Syntax text="XPush.onerror(obj:nexacro.XPush,e:nexacro.XPushErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeepalive" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="为了维持通信而从X-PUSH服务器接收到消息时触发的事件。">
+        <Syntax text="XPush.onkeepalive(obj:nexacro.XPush,e:nexacro.XPushKeepAliveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushKeepAliveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在XPush请求的作业成功时触发的事件。">
+        <Syntax text="XPush.onsuccess(obj:nexacro.XPush,e:nexacro.XPushEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

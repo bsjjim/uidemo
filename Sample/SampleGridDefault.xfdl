@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleGridDefault" width="1528" height="720" titletext="그리드 기본기능 설정" onload="fnFormOnload" onmousemove="SampleGridDefault_onmousemove">
+    <Layouts>
+      <Layout height="720" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="그리드 기본기능설정 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Div id="Div01" taborder="1" text="Div01" left="0" top="41" height="115" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="1" text="&lt;b v='true'&gt;상태표시 :&lt;/b&gt; 그리드 헤더에             표시가 있는 경우에 자동적용" left="18" top="32" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00" taborder="0" text="그리드 기본기능 자동설정" left="18" top="9" width="1306" height="24" cssclass="sta_txt_descTitle"/>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="10" top="28" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="3" text="10" top="50" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="4" text="15" top="0" cssclass="sta_Guide" width="100" left="78" height="15" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00" taborder="5" text="10" top="72" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static00_00_00" taborder="6" text="&lt;b v='true'&gt;선택 :&lt;/b&gt; 영역의 체크박스 삭제에 정상적으로 적용될려면 컬럼명이 &lt;fc v='red'&gt;&quot;_chk&quot;&lt;/fc&gt;로 설정되어있어야 한다." left="18" top="54" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00" taborder="7" text="&lt;b v='true'&gt;No :&lt;/b&gt; 그리드 헤더의 이름이 &lt;fc v='red'&gt;No&lt;/fc&gt;로 설정된 경우에 자동으로 순번이 적용된다." left="18" top="77" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <ImageViewer id="imv00" taborder="8" left="169" top="36" width="25" height="13" image="url('theme://images/flag.png')" border="0px none"/>
+              <Static id="Static00_00_01" taborder="9" text="기준은 아래와 같으며 반드시 onload이벤트 내에 &lt;fc v='red'&gt;this.gfnFormOnLoad(obj)&lt;/fc&gt; 함수가 적용 되어있어야 한다." left="168" top="12" height="24" usedecorate="true" right="410"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="grdList" taborder="2" left="0" top="205" height="275" binddataset="ds_grid" right="40" selecttype="area" cellmovingtype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="40" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="80"/>
+                <Column size="201"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="48"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="theme://images/flag.png" displaytype="imagecontrol"/>
+                <Cell col="1" text="선택"/>
+                <Cell col="2" text="Calendar"/>
+                <Cell col="3" text="Combo"/>
+                <Cell col="4" text="Edit"/>
+                <Cell col="5" text="MaskEdit(String)"/>
+                <Cell col="6" text="MaskEdit(Number)"/>
+                <Cell col="7" text="Button"/>
+                <Cell col="8" text="Expand"/>
+                <Cell col="9" text="상태"/>
+                <Cell col="10" text="Column8"/>
+                <Cell col="11" text="Column9"/>
+                <Cell col="12"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column10" displaytype="imagecontrol"/>
+                <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox" text="bind:_chk"/>
+                <Cell col="2" text="bind:Column1" displaytype="calendarcontrol" edittype="date" calendardateformat="yyyy-MM-dd"/>
+                <Cell col="3" text="bind:Column2" displaytype="combocontrol" edittype="combo" combodataset="ds_comb" combodatacol="Column0" combocodecol="Column0"/>
+                <Cell col="4" text="bind:Column3" displaytype="editcontrol" edittype="normal"/>
+                <Cell col="5" edittype="mask" displaytype="maskeditcontrol" maskeditformat="###-##-#####" text="bind:Column11" maskedittype="string"/>
+                <Cell col="6" text="bind:Column4" displaytype="maskeditcontrol" edittype="normal" textAlign="right" maskeditformat="#,###"/>
+                <Cell col="7" text="bind:Column5" displaytype="buttoncontrol" edittype="button"/>
+                <Cell col="8" text="bind:Column6" displaytype="editcontrol" edittype="normal" expandshow="show" expandsize="24"/>
+                <Cell col="9" text="bind:Column7" displaytype="imagecontrol"/>
+                <Cell col="10" text="bind:Column8"/>
+                <Cell col="11" text="bind:Column9"/>
+                <Cell col="12"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btnCancel" taborder="3" text="행취소" width="76" height="24" cssclass="btn_Block_reset" right="43" top="175" onclick="btnCancel_onclick"/>
+        <Button id="btnDel" taborder="4" text="행삭제" width="76" height="24" cssclass="btn_Block_delRow" right="123" top="175" onclick="btnDel_onclick"/>
+        <Button id="btnAdd" taborder="5" text="행추가" width="76" height="24" cssclass="btn_Block_addRow" right="203" top="175" onclick="btnAdd_onclick"/>
+        <Grid id="grdList2" taborder="6" left="6" top="490" binddataset="ds_grid" right="34" selecttype="row" bottom="20">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="80"/>
+                <Column size="201"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="48"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No" displaytype="normal"/>
+                <Cell col="1" text="Calendar"/>
+                <Cell col="2" text="Combo"/>
+                <Cell col="3" text="Edit"/>
+                <Cell col="4" text="MaskEdit(String)"/>
+                <Cell col="5" text="MaskEdit(Number)"/>
+                <Cell col="6" text="Button"/>
+                <Cell col="7" text="Expand"/>
+                <Cell col="8" text="상태"/>
+                <Cell col="9" text="Column8"/>
+                <Cell col="10" text="Column9"/>
+                <Cell col="11"/>
+              </Band>
+              <Band id="body">
+                <Cell/>
+                <Cell col="1" text="bind:Column1" displaytype="date" calendardateformat="yyyy-MM-dd"/>
+                <Cell col="2" text="bind:Column2" displaytype="combotext" combodataset="ds_comb" combodatacol="Column0" combocodecol="Column0"/>
+                <Cell col="3" text="bind:Column3" displaytype="normal"/>
+                <Cell col="4" displaytype="normal" maskeditformat="###-##-#####" text="bind:Column11" maskedittype="string"/>
+                <Cell col="5" text="bind:Column4" displaytype="none" textAlign="right" maskeditformat="#,###"/>
+                <Cell col="6" text="bind:Column5" displaytype="buttoncontrol" edittype="button"/>
+                <Cell col="7" text="bind:Column6" displaytype="normal" expandshow="show" expandsize="24"/>
+                <Cell col="8" text="bind:Column7" displaytype="imagecontrol"/>
+                <Cell col="9" text="bind:Column8"/>
+                <Cell col="10" text="bind:Column9"/>
+                <Cell col="11"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  그리드 기본기능 설정
+*  @FileName 	: SampleGridDefault.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/20
+*  @Desction    : 그리드 기본기능 설정
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/20     	        작성자                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+}
+ 
+this.fnClose = function()
+{
+	return this.gfnDsIsUpdated(this.ds_grid);
+}
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+this.btnAdd_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnAddRow(this.ds_grid);
+};
+
+this.btnDel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnDeleteRow(this.ds_grid);
+};
+
+this.btnCancel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnResetRow(this.ds_grid,this.ds_grid.rowposition);	
+};]]></Script>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="_chk" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">버튼</Col>
+            <Col id="Column4">3000</Col>
+            <Col id="Column3">텍스트</Col>
+            <Col id="Column2">선택</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_add.png</Col>
+            <Col id="Column11">1231212345</Col>
+            <Col id="No">1</Col>
+            <Col id="Column7">theme://images/state_gray.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">수정</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_del.png</Col>
+            <Col id="No">2</Col>
+            <Col id="Column7">theme://images/state_yellow.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">저장</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_mod.png</Col>
+            <Col id="No">3</Col>
+            <Col id="Column7">theme://images/state_green.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="No">4</Col>
+            <Col id="Column7">theme://images/state_orange.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="No">5</Col>
+            <Col id="Column7">theme://images/state_blue.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column7">theme://images/state_red.png</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

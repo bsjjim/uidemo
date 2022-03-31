@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefinition version="3.0">
+  <Modules>
+    <Module url="CompBase.json"/>
+    <Module url="ComComp.json"/>
+    <Module url="Grid.json"/>
+    <Module url="ListView.json"/>
+    <Module url="DeviceAPI.json"/>
+    <Module url="extPrototype.json"/>
+    <Module url="extlib::MultiCombo.json"/>
+    <Module url="extlib::CalMonth.json"/>
+    <Module url="extlib::CalPeriod.json"/>
+    <Module url="extlib::CalPeriodMonth.json"/>
+    <Module url="extlib::CalPeriodQuater.json"/>
+    <Module url="extlib::CalPeriodDay.json"/>
+    <Module url="extlib::CalPeriodTime.json"/>
+    <Module url="extlib::CalTime.json"/>
+    <Module url="extlib::pivot.json"/>
+  </Modules>
+  <Components>
+    <Component type="JavaScript" id="Button" classname="nexacro.Button" defaultheight="24" defaultwidth="50" prefixid="btn"/>
+    <Component type="JavaScript" id="Combo" classname="nexacro.Combo" defaultheight="24" defaultwidth="120" prefixid="cmb"/>
+    <Component type="JavaScript" id="Edit" classname="nexacro.Edit" defaultheight="24" defaultwidth="120" prefixid="edt"/>
+    <Component type="JavaScript" id="MaskEdit" classname="nexacro.MaskEdit" defaultheight="24" defaultwidth="120" prefixid="mae"/>
+    <Component type="JavaScript" id="TextArea" classname="nexacro.TextArea" defaultheight="50" defaultwidth="300" prefixid="txt"/>
+    <Component type="JavaScript" id="Static" classname="nexacro.Static" defaultheight="24" prefixid="sta"/>
+    <Component type="JavaScript" id="Div" classname="nexacro.Div" defaultheight="300" defaultwidth="734" prefixid="div"/>
+    <Component type="JavaScript" id="PopupDiv" classname="nexacro.PopupDiv" prefixid="pdv"/>
+    <Component type="JavaScript" id="Radio" classname="nexacro.Radio" defaultheight="24" defaultwidth="200" prefixid="rad"/>
+    <Component type="JavaScript" id="CheckBox" classname="nexacro.CheckBox" defaultheight="24" defaultwidth="120" prefixid="chk"/>
+    <Component type="JavaScript" id="ListBox" classname="nexacro.ListBox" defaultwidth="120" prefixid="lsb"/>
+    <Component type="JavaScript" id="Grid" classname="nexacro.Grid" defaultwidth="734" defaultheight="300" prefixid="grd"/>
+    <Component type="JavaScript" id="Spin" classname="nexacro.Spin" defaultheight="24" defaultwidth="120" prefixid="spn"/>
+    <Component type="JavaScript" id="Menu" classname="nexacro.Menu" defaultwidth="734" prefixid="mnu"/>
+    <Component type="JavaScript" id="PopupMenu" classname="nexacro.PopupMenu" defaultwidth="120" prefixid="pmu"/>
+    <Component type="JavaScript" id="Tab" classname="nexacro.Tab" defaultwidth="734" defaultheight="300" prefixid="tab"/>
+    <Component type="JavaScript" id="GroupBox" classname="nexacro.GroupBox" prefixid="gbx"/>
+    <Component type="JavaScript" id="Calendar" classname="nexacro.Calendar" defaultheight="24" defaultwidth="120" prefixid="cal"/>
+    <Component type="JavaScript" id="ImageViewer" classname="nexacro.ImageViewer" defaultwidth="120" prefixid="imv"/>
+    <Component type="JavaScript" id="ProgressBar" classname="nexacro.ProgressBar" prefixid="pgb"/>
+    <Component type="JavaScript" id="Plugin" classname="nexacro.Plugin" prefixid="pln"/>
+    <Component type="JavaScript" id="Dataset" classname="nexacro.NormalDataset" prefixid="ds"/>
+    <Component type="JavaScript" id="ListView" classname="nexacro.ListView" prefixid="lsv"/>
+    <Component type="JavaScript" id="DataObject" classname="nexacro.DataObject" prefixid="dto"/>
+    <Component type="JavaScript" id="FileDialog" classname="nexacro.FileDialog"/>
+    <Component type="JavaScript" id="FileUpTransfer" classname="nexacro.FileUpTransfer"/>
+    <Component type="JavaScript" id="FileDownTransfer" classname="nexacro.FileDownTransfer"/>
+    <Component type="JavaScript" id="ExcelExportObject" classname="nexacro.ExcelExportObject"/>
+    <Component type="JavaScript" id="ExcelImportObject" classname="nexacro.ExcelImportObject"/>
+    <Component type="JavaScript" id="VirtualFile" classname="nexacro.VirtualFile"/>
+    <Component type="JavaScript" id="View" classname="nexacro.View"/>
+    <Component type="JavaScript" id="MultiCombo" classname="nexacro.MultiCombo" defaultwidth="120" defaultheight="24" iconindex="401" iconextra="true"/>
+    <Component type="JavaScript" id="CalMonth" classname="nexacro.CalMonth" defaultwidth="90" defaultheight="24"/>
+    <Component type="JavaScript" id="CalPeriod" classname="nexacro.CalPeriod" defaultwidth="210" defaultheight="24"/>
+    <Component type="JavaScript" id="CalPeriodMonth" classname="nexacro.CalPeriodMonth" defaultwidth="170" defaultheight="24"/>
+    <Component type="JavaScript" id="CalPeriodQuater" classname="nexacro.CalPeriodQuater" defaultwidth="210" defaultheight="24"/>
+    <Component type="JavaScript" id="CalPeriodDay" classname="nexacro.CalPeriodDay" defaultwidth="240" defaultheight="24"/>
+    <Component type="JavaScript" id="CalPeriodTime" classname="nexacro.CalPeriodTime" defaultwidth="310" defaultheight="24"/>
+    <Component type="JavaScript" id="CalTime" classname="nexacro.CalTime" defaultwidth="155" defaultheight="24"/>
+    <Component type="JavaScript" id="NxPivot" classname="nexacro.NxPivot" defaultwidth="840" defaultheight="500"/>
+  </Components>
+  <Services>
+    <Service prefixid="theme" type="resource" url="./_resource_/_theme_/" version="0" cachelevel="session" include_subdir="true"/>
+    <Service prefixid="initvalue" type="resource" url="./_resource_/_initvalue_/" version="0" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="xcssrc" type="resource" url="./_resource_/_xcss_/" version="0" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="imagerc" type="resource" url="./_resource_/_images_/" version="0" cachelevel="session" include_subdir="true"/>
+    <Service prefixid="font" type="resource" url="./_resource_/_font_/" version="0" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="extPrototype" type="js" url="./nexacrolib/component/extPrototype/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="Lib" type="js" url="./Lib/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="Frame" type="form" url="./Frame/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="Comm" type="form" url="./Comm/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="FrameBase" type="form" url="./FrameBase/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="UI_Guide" type="form" url="./UI_Guide/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="UI_Template" type="form" url="./UI_Template/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="Sample" type="form" url="./Sample/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="abc" type="form" url="./abc/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="Presets" type="form" url="./Presets/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="BP" type="form" url="./BP/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="CM" type="form" url="./CM/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="CO" type="form" url="./CO/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="CS" type="form" url="./CS/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="FI" type="form" url="./FI/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="HR" type="form" url="./HR/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="MC" type="form" url="./MC/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="MM" type="form" url="./MM/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="PM" type="form" url="./PM/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="SB" type="form" url="./SB/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="SD" type="form" url="./SD/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="TR" type="form" url="./TR/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="WebCss" type="file" url="./WebCss/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="svcUrl" type="JSP" version="0" cachelevel="none" include_subdir="false" communicationversion="0" url="http://erpq.lotterental.net:8004/ktrerp/xp/"/>
+  </Services>
+  <Protocols/>
+  <DeviceAdaptors/>
+  <Update/>
+</TypeDefinition>

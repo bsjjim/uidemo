@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SD10210T01" width="734" height="591" titletext="유류단가관리_T02">
+    <Layouts>
+      <Layout height="591" mobileorientation="landscape" width="734">
+        <Div id="divGridWapper" taborder="0" text="Div00" left="0" top="0" cssclass="div_group" bottom="0" width="100.00%">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00_01_00_00_03_01" taborder="3" text="15" top="13" cssclass="sta_Guide" width="15" left="1158" height="35" visible="false"/>
+              <Static id="Static00" taborder="0" text="타이틀영역" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid3" initvalueid="iv_Grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="차량번호"/>
+                      <Cell col="2" text="차종"/>
+                      <Cell col="3" text="연료구분"/>
+                      <Cell col="4" text="탱크용량"/>
+                      <Cell col="5" text="부족량에 따른 요금"/>
+                      <Cell col="6" text="1"/>
+                      <Cell col="7" text="2"/>
+                      <Cell col="8" text="3"/>
+                      <Cell col="9" text="4"/>
+                      <Cell col="10" text="5"/>
+                      <Cell col="11" text="6"/>
+                      <Cell col="12" text="7"/>
+                      <Cell col="13" text="8"/>
+                      <Cell col="14" text="9"/>
+                      <Cell col="15" text="10"/>
+                      <Cell col="16" text="11"/>
+                      <Cell col="17" text="12"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="4" text="6" top="44" cssclass="sta_Guide" width="100" left="1234" height="6" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="5" text="12" top="38" cssclass="sta_Guide" width="100" left="1115" height="12" visible="false"/>
+              <Static id="Static01_00_01_00_00_00" taborder="6" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" left="0" top="39"/>
+              <Button id="Button00_00_01_00_03_02" taborder="7" text="출력" top="20" width="50" height="24" cssclass="btn_Block" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid3">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

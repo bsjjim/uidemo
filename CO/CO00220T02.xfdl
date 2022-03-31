@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CO00050T01" width="1528" height="752" titletext="월별">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="0" cssclass="div_group" bottom="0" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00" taborder="0" text="h50" top="0" cssclass="sta_Guide" width="100" left="130" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" binddataset="ds_grid" bottom="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="계정코드/계정명"/>
+                      <Cell col="2" text="본부코드/본부명"/>
+                      <Cell col="3" text="부서코드/부서명"/>
+                      <Cell col="4" text="구분"/>
+                      <Cell col="5" text="총계"/>
+                      <Cell col="6" text="1월"/>
+                      <Cell col="7" text="2월"/>
+                      <Cell col="8" text="3월"/>
+                      <Cell col="9" text="4월"/>
+                      <Cell col="10" text="5월"/>
+                      <Cell col="11" text="6월"/>
+                      <Cell col="12" text="7월"/>
+                      <Cell col="13" text="8월"/>
+                      <Cell col="14" text="9월"/>
+                      <Cell col="15" text="10월"/>
+                      <Cell col="16" text="11월"/>
+                      <Cell col="17" text="12월"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1" text="bind:Column0"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column4"/>
+                      <Cell col="6" text="bind:Column5"/>
+                      <Cell col="7" text="bind:Column6"/>
+                      <Cell col="8" text="bind:Column7"/>
+                      <Cell col="9" text="bind:Column8"/>
+                      <Cell col="10" text="bind:Column9"/>
+                      <Cell col="11" text="bind:Column10"/>
+                      <Cell col="12" text="bind:Column11"/>
+                      <Cell col="13" text="bind:Column12"/>
+                      <Cell col="14" text="bind:Column13"/>
+                      <Cell col="15" text="bind:Column14"/>
+                      <Cell col="16" text="bind:Column15"/>
+                      <Cell col="17" text="bind:Column16"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="2" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Static id="Static00" taborder="3" text="월별 예산집행 현황" left="0" top="20" width="261" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static02_00" taborder="4" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="72"/>
+              <Static id="Static02_02_00" taborder="5" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="57"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="6" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column12" type="STRING" size="256"/>
+          <Column id="Column13" type="STRING" size="256"/>
+          <Column id="Column14" type="STRING" size="256"/>
+          <Column id="Column15" type="STRING" size="256"/>
+          <Column id="Column16" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

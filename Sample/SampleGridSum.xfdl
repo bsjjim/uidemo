@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleGridSum" width="1528" height="720" titletext="그리드 합계 샘플">
+    <Layouts>
+      <Layout height="720" width="1528">
+        <Static id="Static00" taborder="0" text="Suppress" left="0" top="155" width="328" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Grid id="Grid00" taborder="1" left="0" top="187" width="550" height="251" binddataset="dsSample">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="63"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="Column0"/>
+                <Cell col="1" text="Column1"/>
+                <Cell col="2" text="Column2"/>
+                <Cell col="3" text="Column3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column0" suppress="1"/>
+                <Cell col="1" text="bind:Column1" suppress="2"/>
+                <Cell col="2" text="bind:Column2"/>
+                <Cell col="3" text="bind:Column3"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01" taborder="2" text="소계,합계" left="570" top="155" width="328" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Grid id="Grid01" taborder="3" left="572" top="187" width="462" height="325" binddataset="dsSample00" autofittype="col" selecttype="row">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="64"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="rowLevel"/>
+                <Cell col="1" text="Column0"/>
+                <Cell col="2" text="Column1"/>
+                <Cell col="3" text="Column2"/>
+                <Cell col="4" text="Column3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:dataset.getRowLevel(currow)"/>
+                <Cell col="1" text="bind:Column0" suppress="1"/>
+                <Cell col="2" text="bind:Column1" suppress="2"/>
+                <Cell col="3" text="expr:dataset.getRowLevel(currow) == 0 ? Column2 : '소계'"/>
+                <Cell col="4" text="bind:Column3" displaytype="number"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1" colspan="3" text="합계" textAlign="right"/>
+                <Cell col="4" text="expr:dataset.getSum('Column3')" displaytype="number"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static02" taborder="4" text="Auto Size" left="0" top="593" width="278" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Grid id="grd00" taborder="5" left="0" top="637" width="912" height="145" binddataset="dsSize" autosizingtype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="칼럼0"/>
+                <Cell col="1" text="칼럼2"/>
+                <Cell col="2" text="칼럼3" autosizecol="limitmin"/>
+                <Cell col="3" text="칼럼1"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column0"/>
+                <Cell col="1" text="bind:Column2"/>
+                <Cell col="2" text="bind:Column3" autosizecol="limitmin"/>
+                <Cell col="3" text="bind:Column1"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Grid id="grd01" taborder="6" left="0" top="817" width="912" height="265" binddataset="dsSize" autosizingtype="both" extendsizetype="row">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="칼럼0"/>
+                <Cell col="1" text="칼럼1"/>
+                <Cell col="2" text="칼럼2"/>
+                <Cell col="3" text="칼럼3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column0"/>
+                <Cell col="1" text="bind:Column1"/>
+                <Cell col="2" text="bind:Column2"/>
+                <Cell col="3" text="bind:Column3"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Grid id="Grid02" taborder="7" left="1050" top="187" width="434" height="325" binddataset="dsSample00" autofittype="col" selecttype="row" extendsizetype="row">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="64"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="rowLevel"/>
+                <Cell col="1" text="Column0"/>
+                <Cell col="2" text="Column1"/>
+                <Cell col="3" text="Column2"/>
+                <Cell col="4" text="Column3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:dataset.getRowLevel(currow)"/>
+                <Cell col="1" text="bind:Column0" suppress="1"/>
+                <Cell col="2" text="bind:Column1" suppress="2"/>
+                <Cell col="3" text="expr:dataset.getRowLevel(currow) == 0 ? Column2 : '소계'"/>
+                <Cell col="4" text="bind:Column3" displaytype="number"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1" colspan="3" text="합계" textAlign="right"/>
+                <Cell col="4" text="expr:dataset.getSum('Column3')" displaytype="number"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btnSubRowHidden" taborder="8" text="소계 ROW 표시안하기" left="1050" top="161" width="157" height="21" onclick="btnSubRowHidden_onclick"/>
+        <Static id="Static45_00_00_01" taborder="9" text="그리드 합계 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Div id="Div01" taborder="10" text="Div01" left="0" top="41" height="105" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="1" text="&lt;b v='true'&gt;Suppress :&lt;/b&gt; Row의 값이 같을 경우 하나의 값으로 표현해주는 기능" left="18" top="32" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00" taborder="0" text="그리드 속성 정의" left="18" top="9" width="320" height="24" cssclass="sta_txt_descTitle"/>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="10" top="28" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="3" text="10" top="50" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="4" text="15" top="0" cssclass="sta_Guide" width="100" left="78" height="15" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00" taborder="5" text="10" top="72" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static00_00_00" taborder="6" text="&lt;b v='true'&gt;소계,합계 :&lt;/b&gt; 그리드 의 소계, 합계 샘플" left="18" top="54" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00" taborder="7" text="&lt;b v='true'&gt;Auto Size :&lt;/b&gt; 그리드의 Column, Row, 를 AutoSize 설정 샘플" left="18" top="77" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static02_00" taborder="11" text="Col Size Auto" left="0" top="613" width="278" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title3"/>
+        <Static id="Static02_00_00" taborder="12" text="Row Size Auto" left="0" top="793" width="278" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title3"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsSample">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="INT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">warm</Col>
+            <Col id="Column2">red</Col>
+            <Col id="Column3">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">warm</Col>
+            <Col id="Column2">yellow</Col>
+            <Col id="Column3">1200</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">cool</Col>
+            <Col id="Column2">blue</Col>
+            <Col id="Column3">3</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">cool</Col>
+            <Col id="Column2">navy</Col>
+            <Col id="Column3">4</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">acid</Col>
+            <Col id="Column2">lemon</Col>
+            <Col id="Column3">5</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">acid</Col>
+            <Col id="Column2">orange</Col>
+            <Col id="Column3">1600</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">test</Col>
+            <Col id="Column3">7</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">strawberry</Col>
+            <Col id="Column3">8</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">banana</Col>
+            <Col id="Column3">9</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsSample00" keystring="G:Column0">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="INT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">warm</Col>
+            <Col id="Column2">red</Col>
+            <Col id="Column3">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">warm</Col>
+            <Col id="Column2">yellow</Col>
+            <Col id="Column3">1200</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">cool</Col>
+            <Col id="Column2">blue</Col>
+            <Col id="Column3">3</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">color</Col>
+            <Col id="Column1">cool</Col>
+            <Col id="Column2">navy</Col>
+            <Col id="Column3">4</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">acid</Col>
+            <Col id="Column2">lemon</Col>
+            <Col id="Column3">5</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">acid</Col>
+            <Col id="Column2">orange</Col>
+            <Col id="Column3">1600</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">test</Col>
+            <Col id="Column3">7</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">strawberry</Col>
+            <Col id="Column3">8</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">fruits</Col>
+            <Col id="Column1">sweet</Col>
+            <Col id="Column2">banana</Col>
+            <Col id="Column3">9</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsSize">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="INT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">가</Col>
+            <Col id="Column1">band 속성값이 "body"인 Row 의 높이가 자동조절됩니다.</Col>
+            <Col id="Column2">red</Col>
+            <Col id="Column3">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나</Col>
+            <Col id="Column1">band 속성값이 "body"인 Row 의 높이가 자동조절됩니다.
+Row 중 가장 높이가 큰 Row에 맞게 모든 Row의 높이가 설정됩니다.
+</Col>
+            <Col id="Column2">yellow</Col>
+            <Col id="Column3">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다</Col>
+            <Col id="Column1">band 속성값이 "body"인 Row 의 높이가 자동조절됩니다.
+Row 중 가장 높이가 큰 Row에 맞게 모든 Row의 높이가 설정됩니다.
+band 속성값이 "head", "summary" 인 Row 의 높이는 자동조절하지 않고, 디자인 시 설정한 크기로 유지합니다.
+</Col>
+            <Col id="Column2">blue</Col>
+            <Col id="Column3">3</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다라</Col>
+            <Col id="Column1">band 속성값이 "body"인 Row 의 높이가 자동조절됩니다.
+Row 중 가장 높이가 큰 Row에 맞게 모든 Row의 높이가 설정됩니다.
+band 속성값이 "head", "summary" 인 Row 의 높이는 자동조절하지 않고, 디자인 시 설정한 크기로 유지합니다.
+
+band 속성값이 "body"인 Column 의 너비가 자동조절됩니다.
+각 Column 별로 가장 너비가 큰 Cell 에 맞게 Column의 너비가 따로 설정됩니다.
+band 속성값이 "left", "right" 인 Column 의 너비는 자동조절하지 않고, 디자인 시 설정한 크기로 유지합니다.</Col>
+            <Col id="Column2">navy</Col>
+            <Col id="Column3">4</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  그리드 소계,합계 샘플
+*  @FileName 	: SampleGridSum.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/20
+*  @Desction    : 그리드 소계,합계 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/20     	        양경호                 최초 생성 
+*******************************************************************************
+*/]]></Script>
+  </Form>
+</FDL>

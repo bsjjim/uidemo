@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Button" width="1528" height="702" titletext="ETC - Progressbar, ImageViewer, Menu">
+    <Layouts>
+      <Layout height="702" mobileorientation="landscape" width="1528">
+        <Static id="Static45_00" taborder="0" text="기타 컴포넌트" left="0" top="6" width="270" height="24" cssclass="sta_WF_title1"/>
+        <Static id="Static01_00_00_01_00_00" taborder="1" text="h35" top="0" cssclass="sta_Guide" width="100" left="473" height="35" visible="false"/>
+        <Static id="Static26_02_00" taborder="2" text="Progressbar" left="0" top="35" width="130" height="66" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_00" taborder="3" left="129" top="35" height="66" cssclass="sta_DA_data" right="40"/>
+        <Static id="Static00" taborder="4" text="enabled" left="169" top="53" width="55" height="24"/>
+        <Static id="Static00_00" taborder="5" text="disabled" left="476" top="53" width="65" height="24"/>
+        <ProgressBar id="ProgressBar00" taborder="6" max="100" min="0" left="235" top="58" width="200" height="15" pos="50"/>
+        <ProgressBar id="ProgressBar00_00" taborder="7" max="100" min="0" left="535" top="58" width="200" height="15" pos="50"/>
+        <Static id="Static26_02_00_00" taborder="8" text="ImageViewer" left="0" top="100" width="130" height="166" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_00_00" taborder="9" left="129" top="100" height="166" cssclass="sta_DA_data" right="40"/>
+        <Static id="Static00_02" taborder="10" text="enabled" left="169" top="114" width="55" height="24"/>
+        <Static id="Static00_00_01" taborder="11" text="disabled" left="407" top="114" width="65" height="24"/>
+        <Static id="Static00_00_00_01" taborder="12" text="stretch = &#13;&#10;&quot;none&quot;" left="653" top="114" width="75" height="44"/>
+        <Static id="Static00_00_00_00_00" taborder="13" text="stretch =&#13;&#10;&quot;fit&quot;" left="895" top="114" width="90" height="39"/>
+        <Static id="Static00_01_03_00" taborder="14" text="stretch = &#13;&#10;&quot;fixaspectratio&quot;" left="1121" top="114" width="110" height="39"/>
+        <ImageViewer id="ImageViewer00" taborder="15" left="235" top="119" width="130" height="125" image="url('imagerc::imageViewSample.jpg')"/>
+        <ImageViewer id="ImageViewer00_00" taborder="16" left="475" top="119" width="130" height="125" image="url('imagerc::imageViewSample.jpg')"/>
+        <ImageViewer id="ImageViewer00_01" taborder="17" left="720" top="119" width="130" height="125" image="url('imagerc::imageViewSample.jpg')"/>
+        <ImageViewer id="ImageViewer00_01_00" taborder="18" left="960" top="119" width="130" height="125" image="url('imagerc::imageViewSample.jpg')" stretch="fit"/>
+        <ImageViewer id="ImageViewer00_01_00_00" taborder="19" left="1240" top="119" width="130" height="125" image="url('imagerc::imageViewSample.jpg')" stretch="fixaspectratio"/>
+        <Static id="Static26_02_00_00_00" taborder="20" text="PopupMenu" left="0" top="265" width="130" height="191" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_00_00_00" taborder="21" left="129" top="265" height="191" cssclass="sta_DA_data" right="40"/>
+        <Static id="Static26_02_00_00_00_00" taborder="22" text="GroupBox" left="0" top="455" width="130" height="166" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_00_00_00_00" taborder="23" left="129" top="455" height="166" cssclass="sta_DA_data" right="40"/>
+        <GroupBox id="GroupBox00" taborder="24" text="GroupBox00" left="167" top="476" width="300" height="120"/>
+        <PopupMenu id="PopupMenu00" left="170" top="310" width="140" height="124" innerdataset="ds_menu" captioncolumn="Caption" idcolumn="idx" levelcolumn="lev" userdatacolumn="UserData" enablecolumn="enable" hotkeycolumn="hotkey"/>
+        <Button id="Button00" taborder="25" text="PopupMenu Show" onclick="Button00_onclick" left="167" top="285" width="145" height="23"/>
+        <Static id="Static01" taborder="26" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="57" visible="false"/>
+        <Static id="Static26_02_01_00_00" taborder="27" text="Div" left="0" top="676" width="130" height="130" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_01_00_00" taborder="28" left="129" top="676" height="130" cssclass="sta_DA_data" right="40" text=""/>
+        <Static id="Static01_00_00_01_00_00_00" taborder="29" text="h50" top="621" cssclass="sta_Guide" width="100" left="405" height="55" visible="false"/>
+        <Static id="Static45_00_00" taborder="30" text="Div, PopupDiv" left="0" top="646" width="270" height="24" cssclass="sta_WF_title1"/>
+        <Static id="Static26_02_01_00_00_00" taborder="31" text="PopupDiv" left="753" top="676" width="130" height="130" cssclass="sta_DA_label"/>
+        <Div id="Div00" taborder="32" text="클래스 div_group" left="152" top="692" width="200" height="100" cssclass="div_group"/>
+        <Static id="Static00_01" taborder="33" text="컴포넌트를 그룹화하여 리사이징 또는 위치조정하는 데 사용한다.&#13;&#10;박스의 bg 컬러는 브라우저 실행 시 보이지 않음." left="363" top="690" width="362" height="39" cssclass="sta_txt_desc"/>
+        <Button id="Button00_00" taborder="34" text="호출" left="894" top="691" width="50" height="24" onclick="Button00_onclick"/>
+        <PopupDiv id="PopupDiv00" text="PopupDiv00" visible="false" left="955" top="691" width="220" height="100" border="1px solid #dddddd"/>
+        <Static id="Static00_00_01_00" taborder="35" text="※  Div, PopupDiv 는 모두 외부 Form 링크가 가능.  Div로 팝업을 호출할 경우 닫기 버튼을 누르지 않으면 팝업이 닫히지 않는 반면, PopupDiv는 focus가 빠질경우 자동으로 팝업이 닫힘." left="133" top="647" width="1002" height="24" cssclass="sta_WF_colorBlue"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_menu" firefirstcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="idx" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+          <Column id="UserData" type="STRING" size="256"/>
+          <Column id="Caption" type="STRING" size="256"/>
+          <Column id="enable" type="STRING" size="256"/>
+          <Column id="hotkey" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="lev">0</Col>
+            <Col id="UserData">인사관리</Col>
+            <Col id="Caption">인사관리</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1000</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인사마스터생성</Col>
+            <Col id="Caption">인사마스터생성</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1001</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인적사항</Col>
+            <Col id="Caption">인적사항</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="hotkey">Alt+K</Col>
+            <Col id="idx">1002</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">개인사진등록 신청</Col>
+            <Col id="Caption">개인사진등록 신청</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1003</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">개인사진등록 관리(승인 )</Col>
+            <Col id="Caption">개인사진등록 관리(승인 )</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1004</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">보훈자 관리</Col>
+            <Col id="Caption">보훈자 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1005</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">징계 관리</Col>
+            <Col id="Caption">징계 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1006</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">포상 등록 신청</Col>
+            <Col id="Caption">포상 등록 신청</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">0</Col>
+            <Col id="idx">1007</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">포상 관리(승인 )</Col>
+            <Col id="Caption">포상 관리(승인 )</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1008</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">신원보증관리</Col>
+            <Col id="Caption">신원보증관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1009</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">증명서 관리</Col>
+            <Col id="Caption">증명서 관리</Col>
+            <Col id="lev">2</Col>
+            <Col id="enable">0</Col>
+            <Col id="idx">1010</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">개인정보(특이사항) 관리</Col>
+            <Col id="Caption">개인정보(특이사항) 관리</Col>
+            <Col id="lev">2</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1011</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인원현황</Col>
+            <Col id="Caption">인원현황</Col>
+            <Col id="lev">2</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1012</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인원현황 보고서</Col>
+            <Col id="Caption">인원현황 보고서</Col>
+            <Col id="lev">2</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1013</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">재고용대상자</Col>
+            <Col id="Caption">재고용대상자</Col>
+            <Col id="lev">2</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1014</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">연령별인원현황</Col>
+            <Col id="Caption">연령별인원현황</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1015</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인사기록카드 출력</Col>
+            <Col id="Caption">인사기록카드 출력</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1016</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">기념일 조회</Col>
+            <Col id="Caption">기념일 조회</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">0</Col>
+            <Col id="idx">1017</Col>
+          </Row>
+          <Row>
+            <Col id="lev">0</Col>
+            <Col id="UserData">인사관리(개인)</Col>
+            <Col id="Caption">인사관리(개인)</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1100</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인적사항(개인)</Col>
+            <Col id="Caption">인적사항(개인)</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1101</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">증명서인쇄</Col>
+            <Col id="Caption">증명서인쇄</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1102</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">재고용신청서</Col>
+            <Col id="Caption">재고용신청서</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1103</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">조직 및 사원조회</Col>
+            <Col id="Caption">조직 및 사원조회</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1104</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">개인사진등록 신청</Col>
+            <Col id="Caption">개인사진등록 신청</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">0</Col>
+            <Col id="idx">1105</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">포상 등록 신청</Col>
+            <Col id="Caption">포상 등록 신청</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1106</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인사정보조회</Col>
+            <Col id="Caption">인사정보조회</Col>
+            <Col id="lev">0</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1200</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인적사항(인사위)</Col>
+            <Col id="Caption">인적사항(인사위)</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1201</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령관리</Col>
+            <Col id="Caption">발령관리</Col>
+            <Col id="lev">0</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1300</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령코드관리</Col>
+            <Col id="Caption">발령코드관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1301</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">일괄발령 관리</Col>
+            <Col id="Caption">일괄발령 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1302</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">연례호봉발령 관리</Col>
+            <Col id="Caption">연례호봉발령 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1303</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">승진발령 관리</Col>
+            <Col id="Caption">승진발령 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1304</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">승진자 DM주소 출력</Col>
+            <Col id="Caption">승진자 DM주소 출력</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="hotkey">Alt+O</Col>
+            <Col id="idx">1305</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">특별호봉승급 관리</Col>
+            <Col id="Caption">특별호봉승급 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1306</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">재계약 대상자 관리</Col>
+            <Col id="Caption">재계약 대상자 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1307</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령 추천서 작성</Col>
+            <Col id="Caption">발령 추천서 작성</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1308</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령 추천자 지정</Col>
+            <Col id="Caption">발령 추천자 지정</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1309</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령 추천서 승인</Col>
+            <Col id="Caption">발령 추천서 승인</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1310</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">재고용추천</Col>
+            <Col id="Caption">재고용추천</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1311</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">개별발령 관리</Col>
+            <Col id="Caption">개별발령 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1312</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">자매사 발령 관리</Col>
+            <Col id="Caption">자매사 발령 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1313</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">발령조회(전사원)</Col>
+            <Col id="Caption">발령조회(전사원)</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1314</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사외파견</Col>
+            <Col id="Caption">사외파견</Col>
+            <Col id="lev">0</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1400</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사외파견 인력관리</Col>
+            <Col id="Caption">사외파견 인력관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1401</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">노조관리</Col>
+            <Col id="Caption">노조관리</Col>
+            <Col id="lev">0</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1500</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">인적사항(노조)</Col>
+            <Col id="Caption">인적사항(노조)</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1501</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">노조원 관리</Col>
+            <Col id="Caption">노조원 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1502</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">노조원직책 관리</Col>
+            <Col id="Caption">노조원직책 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1503</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">노조비공제 현황</Col>
+            <Col id="Caption">노조비공제 현황</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1504</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">노조원 현황</Col>
+            <Col id="Caption">노조원 현황</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1505</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사내공모</Col>
+            <Col id="Caption">사내공모</Col>
+            <Col id="lev">0</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1600</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사내공모 공고 관리</Col>
+            <Col id="Caption">사내공모 공고 관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1601</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사내공모  신청</Col>
+            <Col id="Caption">사내공모  신청</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1602</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사내공모  관리</Col>
+            <Col id="Caption">사내공모  관리</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1603</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">사내공모 이력 조회</Col>
+            <Col id="Caption">사내공모 이력 조회</Col>
+            <Col id="lev">1</Col>
+            <Col id="enable">1</Col>
+            <Col id="idx">1604</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">통계정보</Col>
+            <Col id="Caption">통계정보</Col>
+            <Col id="lev">0</Col>
+            <Col id="idx">1700</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	 this.PopupMenu00.trackPopupByComponent( obj, 0, obj.getOffsetHeight(), "right bottom");
+};
+]]></Script>
+  </Form>
+</FDL>

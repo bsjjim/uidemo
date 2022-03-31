@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Temp01_04" width="1528" height="752" titletext="CSP현황_본부별">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="63" cssclass="div_group" right="40" bottom="0" formscrolltype="none">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="본부별" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="320" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" initvalueid="iv_Grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                      <Row size="24" band="summ"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" text="해당월"/>
+                      <Cell col="2" rowspan="2" text="본부"/>
+                      <Cell col="3" colspan="3" suppressalign="first" text="건수"/>
+                      <Cell col="6" colspan="3" text="CSP부과건수"/>
+                      <Cell col="9" colspan="4" text="CSP기본점수"/>
+                      <Cell col="13" colspan="4" text="CSP점수"/>
+                      <Cell row="1" col="3" text="고객불만"/>
+                      <Cell row="1" col="4" text="조치요청"/>
+                      <Cell row="1" col="5" text="고객칭찬"/>
+                      <Cell row="1" col="6" text="고객불만"/>
+                      <Cell row="1" col="7" text="조치요청"/>
+                      <Cell row="1" col="8" text="고객칭찬"/>
+                      <Cell row="1" col="9" text="CSP 기본(-)"/>
+                      <Cell row="1" col="10" text="CSP 기본(+)"/>
+                      <Cell row="1" col="11" text="기본소계"/>
+                      <Cell row="1" col="12" text="기본증감"/>
+                      <Cell row="1" col="13" text="CSP(-)"/>
+                      <Cell row="1" col="14" text="CSP(+)"/>
+                      <Cell row="1" col="15" text="소계"/>
+                      <Cell row="1" col="16" text="증감"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11" text="bind:Column8"/>
+                      <Cell col="12" text="bind:Column9"/>
+                      <Cell col="13" text="bind:Column9"/>
+                      <Cell col="14" text="bind:Column9"/>
+                      <Cell col="15" text="bind:Column9"/>
+                      <Cell col="16" text="bind:Column9"/>
+                    </Band>
+                    <Band id="summary">
+                      <Cell/>
+                      <Cell col="1" colspan="2" text="합계" textAlign="center"/>
+                      <Cell col="3" displaytype="number" textAlign="center"/>
+                      <Cell col="4" displaytype="number" textAlign="center"/>
+                      <Cell col="5" displaytype="number" textAlign="center"/>
+                      <Cell col="6" displaytype="number" textAlign="center"/>
+                      <Cell col="7" displaytype="number" textAlign="center"/>
+                      <Cell col="8" displaytype="number" textAlign="center"/>
+                      <Cell col="9" displaytype="number" textAlign="center"/>
+                      <Cell col="10" displaytype="number" textAlign="center"/>
+                      <Cell col="11" displaytype="number" textAlign="center"/>
+                      <Cell col="12" displaytype="number" textAlign="center"/>
+                      <Cell col="13" displaytype="number" textAlign="center"/>
+                      <Cell col="14" displaytype="number" textAlign="center"/>
+                      <Cell col="15" displaytype="number" textAlign="center"/>
+                      <Cell col="16" displaytype="number" textAlign="center"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_02" taborder="3" text="11" top="39" cssclass="sta_Guide" width="80" left="0" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="1" text="40" top="0" cssclass="sta_Guide" width="40" right="0" bottom="-5" visible="false"/>
+        <Div height="63" cssclass="div_SA" text="" formscrolltype="none" id="div00" left="0" top="0" taborder="2" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_01" taborder="0" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="1" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="32" bottom="0"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00" taborder="4" text="조회기간" left="20" top="18" width="59" height="24" cssclass="sta_SA_label_req"/>
+              <CalPeriod id="CalPeriod00" taborder="5" left="86" top="18" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

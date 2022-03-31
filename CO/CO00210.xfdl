@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="부서별/계정별 예산집행" onload="temp01_onload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Static id="Static01" taborder="0" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static01_00" taborder="1" text="40" top="63" cssclass="sta_Guide" width="40" right="0" bottom="57" visible="false"/>
+        <Div id="DivSearch" taborder="2" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="년도" left="20" top="18" width="43" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="1" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_01" taborder="2" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="3" text="h11" cssclass="sta_Guide" width="50" visible="false" right="38" bottom="0" height="11"/>
+              <Static id="Static01_00" taborder="4" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00_00_01" taborder="5" text="10" top="4" cssclass="sta_Guide" width="10" left="52" height="50" visible="false"/>
+              <MaskEdit id="MaskEdit00" taborder="6" left="62" top="18" width="43" height="24" value="2022" textAlign="left"/>
+              <Edit id="Edit00_01_00_02_00_01_00" taborder="7" left="883" top="18" width="35" height="24" text="A06"/>
+              <Button id="Button00_01_00_01_00_00" taborder="8" left="920" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00_01_00" taborder="9" left="947" top="18" height="24" text="전략기획팀" width="155"/>
+              <Static id="Static00_00" taborder="10" text="부서" left="843" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00_01_00" taborder="11" text="10" top="4" cssclass="sta_Guide" width="10" left="873" height="50" visible="false"/>
+              <Static id="Static01_00_00_00" taborder="12" text="w40" top="0" cssclass="sta_Guide" width="40" left="803" height="60" visible="false"/>
+              <Static id="Static01_02_01" taborder="13" left="341" top="18" width="63" height="24" cssclass="sta_SA_label" text="조회구분"/>
+              <Combo id="Combo01" taborder="14" text="비용예산" left="407" top="18" width="70" height="24" value="비용예산" index="0" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">본부별</Col>
+                      <Col id="datacolumn">본부별</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">부서별</Col>
+                      <Col id="datacolumn">부서별</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Static id="Static01_00_00_00_01_00_00" taborder="15" text="10" top="4" cssclass="sta_Guide" width="10" left="216" height="50" visible="false"/>
+              <Static id="Static01_00_00_01" taborder="16" text="w40" top="0" cssclass="sta_Guide" width="40" left="301" height="60" visible="false"/>
+              <Edit id="Edit00_01_00_02_00_01_00_00" taborder="17" left="584" top="18" width="35" height="24" text="A06"/>
+              <Button id="Button00_01_00_01_00_00_00" taborder="18" left="621" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00_01_00_00" taborder="19" left="648" top="18" height="24" text="전략기획팀" width="155"/>
+              <Static id="Static00_00_00" taborder="20" text="부서그룹" left="517" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00_01_00_01" taborder="21" text="10" top="4" cssclass="sta_Guide" width="10" left="574" height="50" visible="false"/>
+              <Static id="Static01_02_01_00" taborder="22" left="160" top="18" width="63" height="24" cssclass="sta_SA_label" text="조회범위"/>
+              <Combo id="Combo01_00" taborder="23" text="월별" left="226" top="18" width="75" height="24" value="월별" index="0" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">월별</Col>
+                      <Col id="datacolumn">월별</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">분기별</Col>
+                      <Col id="datacolumn">분기별</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Static id="Static01_00_00_00_01_00_00_00" taborder="24" text="10" top="4" cssclass="sta_Guide" width="10" left="397" height="50" visible="false"/>
+              <Static id="Static01_00_00_01_00" taborder="25" text="w40" top="0" cssclass="sta_Guide" width="40" left="477" height="60" visible="false"/>
+              <Static id="Static02_01_00_00_00_01_00" taborder="26" text="년" left="104" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00" taborder="27" text="w40" top="0" cssclass="sta_Guide" width="40" left="120" height="60" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Tab id="Tab00" taborder="3" tabindex="0" left="0" top="DivSearch:20" right="40" bottom="0" tabbuttongap="2" onchanged="Tab00_onchanged">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="분기별" url="CO::CO00210T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="월별" url="CO::CO00210T02.xfdl"/>
+          </Tabpages>
+        </Tab>
+      </Layout>
+    </Layouts>
+    <Objects/>
+  </Form>
+</FDL>

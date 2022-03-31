@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="WorkFormComm" width="1488" height="50" titletext="업무영역헤더" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="50" width="1488">
+        <Static id="staTitle" taborder="0" text="심사등록(개별) [4120]" left="0" top="10" width="260" height="38" cssclass="sta_WF_pageTitle" fittocontents="width" wordWrap="none"/>
+        <Button id="btnExtPop" taborder="1" width="24" height="24" right="56" padding="0px" bottom="13" cssclass="btn_TF_collapse" onclick="btnExtPop_onclick"/>
+        <Button id="btnHelp" taborder="2" width="24" height="24" right="28" bottom="13" cssclass="btn_TF_help" onclick="btnHelp_onclick"/>
+        <Button id="btnClose" taborder="3" width="24" height="24" right="0" bottom="13" cssclass="btn_TF_close" onclick="btnClose_onclick"/>
+        <Static id="staNavi" taborder="4" top="20" width="658" height="30" right="100" cssclass="sta_TF_breadcrumb"/>
+        <Button id="btnFav" taborder="5" left="staTitle:10" top="16" width="28" height="28" cssclass="btn_TF_fav" onclick="btnFav_onclick"/>
+        <Button id="btnReload" taborder="6" left="btnFav:6" width="28" height="28" cssclass="btn_TF_reset" bottom="6" onclick="btnReload_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  업무영역 화면 헤더
+*  @FileName 	: WorkFormCommHeader.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/18
+*  @Desction    : 업무영역 화면 헤더
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/18     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+
+}
+ 
+ /************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+ 
+ /************************************************************************************************
+ * CRUD 및 TRANSACTION 서비스 호출 처리
+ ************************************************************************************************/
+ 
+  /************************************************************************************************
+ * 사용자 FUNCTION 영역
+ ************************************************************************************************/
+
+ /************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+ ************************************************************************************************/
+
+
+this.btnFav_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.btnReload_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.getOwnerFrame().form.divWork.reload();
+};
+
+this.btnHelp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.getOwnerFrame().form.fnClose();
+};
+
+this.btnExtPop_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sTitle = this.gfnGetArgument("menuNm");
+
+	var oArg = {
+	    pvMenuNo:this.gfnGetArgument("menuNo"),
+		pvMenuNm:this.gfnGetArgument("menuNm"),
+		pvMenuId:this.gfnGetArgument("menuId"),
+	    pvPageUrl:this.gfnGetArgument("pageUrl")
+		};
+
+	var oOption = {title:sTitle,popuptype:"modeless",width:1570,height:815};	//top, left를 지정하지 않으면 가운데정렬 //"top=20,left=370"
+	
+	this.gfnOpenPopup(this.gfnGetArgument("menuId"),"Frame::WorkFormPopup.xfdl",oArg,oOption);	
+	
+	//this.getOwnerFrame().form.fnClose();
+};
+]]></Script>
+  </Form>
+</FDL>

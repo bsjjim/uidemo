@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="정비이력조회">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="DivSearch" taborder="1" left="0" top="0" height="97" cssclass="div_SA" right="40" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="차량번호" left="20" top="18" width="93" height="24" cssclass="sta_SA_label_select"/>
+              <Button id="Button02" taborder="1" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_00" taborder="2" text="w40" top="0" cssclass="sta_Guide" width="40" left="568" height="60" visible="false"/>
+              <Static id="Static01_01" taborder="3" text="말소여부" left="841" top="18" width="79" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="4" text="w40" top="0" cssclass="sta_Guide" width="40" left="801" height="45" visible="false"/>
+              <Static id="Static01_00_00_01_00" taborder="5" text="w10" top="4" cssclass="sta_Guide" width="10" left="101" height="60" visible="false"/>
+              <Static id="Static01_00" taborder="6" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="7" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_01_00_00" taborder="8" text="정비접수번호" left="20" top="52" width="84" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00" taborder="9" text="정비유형" left="608" top="18" width="88" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_01_01_00_00" taborder="10" left="919" top="52" height="24" text="P12345" width="202"/>
+              <Static id="Static01_01_00_00_00" taborder="11" text="정비종료기간" left="253" top="52" width="84" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01" taborder="12" text="w40" top="0" cssclass="sta_Guide" width="40" left="213" height="60" visible="false"/>
+              <Static id="Static00_01" taborder="13" text="고객번호" left="253" top="18" width="68" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00" taborder="14" text="정비항목코드" left="608" top="52" width="88" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_00" taborder="15" text="정비항목명" left="841" top="52" width="79" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_00_00_00" taborder="16" left="111" top="18" width="76" height="24" text="123허1234" value="123허1234" cssclass="input_select"/>
+              <Button id="Button00_00_00_00" taborder="17" left="189" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_00_00_00_00" taborder="18" left="111" top="52" width="76" height="24" text="123허1234"/>
+              <Button id="Button00_00_00_00_00" taborder="19" left="189" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_00_00" taborder="20" left="344" top="18" width="80" height="24" text="123406789" value="123406789"/>
+              <Button id="Button00_01_00_00_00" taborder="21" left="426" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="22" left="453" top="18" height="24" text="김나나" width="115" value="김나나"/>
+              <CalPeriod id="CalPeriod00" taborder="23" left="344" top="52" width="210" height="24"/>
+              <Combo id="cmb00" taborder="24" text="전체" left="700" top="18" width="101" height="24" value="" index="-1"/>
+              <Edit id="Edit00_00_00_00_00_00" taborder="25" left="700" top="52" width="76" height="24" text="123허1234"/>
+              <Button id="Button00_00_00_00_00_00" taborder="26" left="778" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Combo id="cmb00_00" taborder="27" text="전체" left="919" top="18" width="101" height="24" value="" index="-1"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00" taborder="2" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" height="295" right="794">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="정비차량번호" left="0" top="20" width="215" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="차량번호"/>
+                      <Cell col="2" text="차종명"/>
+                      <Cell col="3" text="차량등록일시"/>
+                      <Cell col="4" text="차대번호"/>
+                      <Cell col="5" text="말소일자"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column2"/>
+                      <Cell col="2" text="bind:Column3"/>
+                      <Cell col="3" text="bind:Column4"/>
+                      <Cell col="4" text="bind:Column5"/>
+                      <Cell col="5" text="bind:Column6"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00" taborder="3" text="10" top="3" cssclass="sta_Guide" width="10" left="99" height="50" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelUp" tooltiptext="엑셀업로드" right="48"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="5" top="20" width="44" height="24" cssclass="btn_Block_excelDown" tooltiptext="엑셀다운로드" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="0" text="40" top="0" cssclass="sta_Guide" width="40" right="0" bottom="0" visible="false"/>
+        <Div id="Div00_00" taborder="3" text="Div00" left="0" top="Div00:0" cssclass="div_group" bottom="50" right="794">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="정비이력정보" left="0" top="20" width="215" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text=" "/>
+                      <Cell col="2" text=" "/>
+                      <Cell col="3" text=" "/>
+                      <Cell col="4" text=" "/>
+                      <Cell col="5" text=" "/>
+                      <Cell col="6"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column2"/>
+                      <Cell col="2" text="bind:Column3"/>
+                      <Cell col="3" text="bind:Column4"/>
+                      <Cell col="4" text="bind:Column5"/>
+                      <Cell col="5" text="bind:Column6"/>
+                      <Cell col="6"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00" taborder="3" text="10" top="3" cssclass="sta_Guide" width="10" left="99" height="50" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelUp" tooltiptext="엑셀업로드" right="48"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="5" top="20" width="44" height="24" cssclass="btn_Block_excelDown" tooltiptext="엑셀다운로드" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00" taborder="5" text="h50" top="97" cssclass="sta_Guide" width="100" left="1155" height="50" visible="false"/>
+        <Div text="Div01" width="734" height="346" cssclass="div_group" id="div00" top="390" taborder="6" right="39">
+          <Layouts>
+            <Layout>
+              <Static id="Static27_03" taborder="0" left="129" top="84" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26" taborder="1" text="정비상품" left="0" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="2" left="129" top="51" height="34" cssclass="sta_DA_data" right="0" text=""/>
+              <Static id="Static26_02" taborder="3" text="일반타이어" left="0" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00" taborder="4" text="일반정비" left="0" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00" taborder="5" left="129" top="117" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static00" taborder="7" text="정비옵션정보" left="0" top="20" width="211" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00_00_01" taborder="8" text="11" top="39" cssclass="sta_Guide" width="145" left="-4" height="11" visible="false"/>
+              <Static id="Static26_02_00_00" taborder="9" text="검사정비" left="366" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01" taborder="10" text="대차제공서비스" left="366" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00" taborder="11" text="순회정비주기" left="366" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static01" taborder="6" left="0" top="50" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static27_03_01" taborder="12" left="129" top="150" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_02" taborder="13" text="타이어펑크" left="0" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01" taborder="14" text="스노우타이어" left="0" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00" taborder="15" left="129" top="183" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_00_00_00" taborder="16" text="체인" left="366" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_00" taborder="17" text="긴급출동횟수" left="366" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01_00" taborder="18" text="차대번호" left="0" top="216" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00_00" taborder="19" left="129" top="216" height="34" cssclass="sta_DA_data" right="0"/>
+              <Edit id="Edit00_01_00_01_00_00_00_00" taborder="20" left="134" top="122" height="24" text="홍길순" width="228" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00" taborder="21" left="134" top="89" height="24" text="홍길순" width="228" readonly="true"/>
+              <Edit id="Edit00" taborder="22" left="134" top="56" width="228" height="24" text="2021012012" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00_00_00" taborder="23" left="134" top="221" height="24" text="홍길순" width="228" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00_01" taborder="24" left="134" top="188" height="24" text="OOOO / OOOOEA" width="228" readonly="true" value="OOOO / OOOOEA"/>
+              <Edit id="Edit00_00" taborder="25" left="134" top="155" width="228" height="24" text="2021012012" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00_01_00" taborder="26" left="500" top="188" height="24" text="OOOO / OOOOEA" width="228" readonly="true" value="OOOO / OOOOEA"/>
+              <Edit id="Edit00_00_00" taborder="27" left="500" top="155" width="228" height="24" text="2021012012" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00_00_01" taborder="28" left="500" top="122" height="24" text="홍길순" width="228" readonly="true"/>
+              <Edit id="Edit00_01_00_01_00_00_00_02" taborder="29" left="500" top="89" height="24" text="홍길순" width="228" readonly="true"/>
+              <Edit id="Edit00_01" taborder="30" left="500" top="56" width="228" height="24" text="2021012012" readonly="true"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div text="Div01" height="50" cssclass="div_group" id="div00_00" left="0" taborder="7" right="794" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static26" taborder="0" text="사고정비" left="0" top="16" width="78" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="1" left="77" top="16" height="34" cssclass="sta_DA_data" right="0" text=""/>
+              <Static id="Static01_00_00_01_00_00_03_00_00" taborder="3" text="15" top="0" cssclass="sta_Guide" width="100" left="438" height="15" visible="false"/>
+              <Static id="Static26_02_01_00" taborder="4" text="일반정비" left="147" top="16" width="78" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00_00_00" taborder="5" left="82" top="21" width="45" height="24" format="#,##9.##" value="30" readonly="true"/>
+              <Static id="Static02_00_00_00_00_00_00" taborder="6" text="건" left="123" top="21" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00" taborder="7" text="3" top="16" cssclass="sta_Guide" width="3" left="127" height="35" visible="false"/>
+              <Static id="Static26_00" taborder="8" text="순회정비" left="294" top="16" width="78" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_00_00" taborder="9" text="긴급출동" left="441" top="16" width="78" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_00" taborder="10" text="8" top="16" cssclass="sta_Guide" width="8" left="139" height="35" visible="false"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00_00_00_00" taborder="11" left="229" top="21" width="45" height="24" format="#,##9.##" value="30" readonly="true"/>
+              <Static id="Static02_00_00_00_00_00_00_00" taborder="12" text="건" left="270" top="21" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_01" taborder="13" text="3" top="16" cssclass="sta_Guide" width="3" left="274" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_00_00" taborder="14" text="8" top="16" cssclass="sta_Guide" width="8" left="286" height="35" visible="false"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00_00_00_00_00" taborder="15" left="376" top="21" width="45" height="24" format="#,##9.##" value="30" readonly="true"/>
+              <Static id="Static02_00_00_00_00_00_00_00_00" taborder="16" text="건" left="417" top="21" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_01_00" taborder="17" text="3" top="16" cssclass="sta_Guide" width="3" left="421" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_00_00_00" taborder="18" text="8" top="16" cssclass="sta_Guide" width="8" left="433" height="35" visible="false"/>
+              <Static id="Static26_02_01_00_00_00" taborder="19" text="긴급출동" left="588" top="16" width="78" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00_00_00_00_00_00" taborder="20" left="523" top="21" width="45" height="24" format="#,##9.##" value="30" readonly="true"/>
+              <Static id="Static02_00_00_00_00_00_00_00_00_00" taborder="21" text="건" left="564" top="21" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_01_00_00" taborder="22" text="3" top="16" cssclass="sta_Guide" width="3" left="568" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_00_00_00_00" taborder="23" text="8" top="16" cssclass="sta_Guide" width="8" left="580" height="35" visible="false"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00_00_00_00_00_00_00" taborder="24" left="670" top="21" width="45" height="24" format="#,##9.##" value="30" readonly="true"/>
+              <Static id="Static02_00_00_00_00_00_00_00_00_00_00" taborder="25" text="건" left="711" top="21" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_01_00_00_00" taborder="26" text="3" top="16" cssclass="sta_Guide" width="3" left="715" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00_00_00_00_00_00_00_00_00" taborder="27" text="8" top="16" cssclass="sta_Guide" width="8" left="727" height="35" visible="false"/>
+              <Static id="Static01" taborder="2" left="0" top="15" height="2" cssclass="sta_DA_topBorder" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Tab id="tab00" taborder="4" tabindex="0" top="118" height="283" right="40" initvalueid="iv_Tab_1Depth" width="734">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="차량정보">
+              <Layouts>
+                <Layout>
+                  <Div text="Div01" width="734" height="247" cssclass="div_group" id="div00" left="0" top="0" taborder="0">
+                    <Layouts>
+                      <Layout>
+                        <Static id="Static27_03" taborder="0" left="129" top="44" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26" taborder="1" text="차량번호" left="0" top="11" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27" taborder="2" left="129" top="11" height="34" cssclass="sta_DA_data" right="0" text=""/>
+                        <Static id="Static26_02" taborder="3" text="계약자명" left="0" top="44" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_00" taborder="4" text="운전자명" left="0" top="77" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_00" taborder="5" left="129" top="77" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static01_00_00_01_00_00_03_00_00" taborder="7" text="10" top="0" cssclass="sta_Guide" width="100" left="435" height="10" visible="false"/>
+                        <Static id="Static26_02_00_00" taborder="8" text="계약지점" left="366" top="77" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_01" taborder="9" text="연락처" left="366" top="44" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_01" taborder="10" left="129" top="110" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26_02_02" taborder="11" text="소재지주소" left="0" top="110" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_00_01" taborder="12" text="타이어스펙(앞)" left="0" top="175" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_00_00" taborder="13" left="129" top="175" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static27_03_01_00" taborder="14" left="129" top="208" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26_02_02_00" taborder="15" text="순회차량" left="0" top="208" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Edit id="Edit00" taborder="16" left="134" top="16" width="228" height="24" text="2021012012" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00" taborder="17" left="134" top="49" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00" taborder="18" left="134" top="82" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_00" taborder="19" left="500" top="82" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_01" taborder="20" left="500" top="49" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_01" taborder="21" left="134" top="115" height="24" text="홍길순" width="594" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_01_01" taborder="22" left="134" top="213" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Static id="Static26_02_01_00" taborder="23" text="차종" left="366" top="11" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static01" taborder="6" left="0" top="10" height="2" cssclass="sta_DA_topBorder" right="0"/>
+                        <Static id="Static26_02_00_02" taborder="24" text="고객담담자명" left="0" top="142" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_00_01" taborder="25" left="129" top="142" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26_02_00_00_00" taborder="26" text="연락처" left="366" top="142" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_02" taborder="27" left="134" top="147" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_00_00" taborder="28" left="500" top="147" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Static id="Static26_02_00_00_00_00" taborder="29" text="타이어스펙(뒤)" left="366" top="175" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_00_00_00_00_00" taborder="30" text="최종주행거리" left="366" top="208" width="130" height="34" cssclass="sta_DA_label"/>
+                        <MaskEdit id="MaskEdit00_00_00_00_00_00_00" taborder="31" left="645" top="213" width="60" height="24" format="#,##9.##" value="30" readonly="true"/>
+                        <Static id="Static02_00_00_00_00_00" taborder="32" text="km" left="701" top="213" width="30" height="24" cssclass="sta_WF_unit"/>
+                        <Static id="Static01_00_00_01_00_00_03_00_00_00" taborder="33" text="8" top="205" cssclass="sta_Guide" width="8" left="725" height="35" visible="false"/>
+                        <Static id="Static01_00_00_01_00_00_03_00_00_00_00" taborder="34" text="3" top="205" cssclass="sta_Guide" width="3" left="705" height="35" visible="false"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_00_00_00" taborder="35" left="500" top="180" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_02_00" taborder="36" left="134" top="180" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_01_00" taborder="37" left="500" top="16" height="24" text="홍길순" width="228" readonly="true"/>
+                      </Layout>
+                    </Layouts>
+                  </Div>
+                </Layout>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage2" text="계약정보">
+              <Layouts>
+                <Layout>
+                  <Div text="Div01" width="734" height="238" cssclass="div_group" id="div00" left="0" top="0" taborder="0">
+                    <Layouts>
+                      <Layout>
+                        <Static id="Static27_03" taborder="0" left="129" top="44" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26" taborder="1" text="계약번호" left="0" top="11" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27" taborder="2" left="129" top="11" height="34" cssclass="sta_DA_data" right="0" text=""/>
+                        <Static id="Static26_02" taborder="3" text="계약구분" left="0" top="44" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_00" taborder="4" text="보유지점" left="0" top="77" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_00" taborder="5" left="129" top="77" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static01_00_00_01_00_00_03_00_00" taborder="7" text="10" top="0" cssclass="sta_Guide" width="100" left="435" height="10" visible="false"/>
+                        <Static id="Static26_02_00_00" taborder="8" text="계약지점" left="366" top="77" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_01" taborder="9" text="영업매니저" left="366" top="44" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static01" taborder="6" left="0" top="10" height="2" cssclass="sta_DA_topBorder" right="0"/>
+                        <Static id="Static27_03_01" taborder="10" left="129" top="110" height="62" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26_02_02" taborder="11" text="위탁기간" left="0" top="110" width="130" height="62" cssclass="sta_DA_label"/>
+                        <Static id="Static26_02_00_01" taborder="12" text="차량등록일자" left="0" top="171" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Static id="Static27_03_00_00" taborder="13" left="129" top="171" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static27_03_01_00" taborder="14" left="129" top="204" height="34" cssclass="sta_DA_data" right="0"/>
+                        <Static id="Static26_02_02_00" taborder="15" text="LDW" left="0" top="204" width="130" height="34" cssclass="sta_DA_label"/>
+                        <Edit id="Edit00" taborder="16" left="134" top="16" width="228" height="24" text="2021012012" value="2021012012" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00" taborder="17" left="134" top="49" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00" taborder="18" left="134" top="82" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_00" taborder="19" left="500" top="82" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_01" taborder="20" left="500" top="49" height="24" text="홍길순" width="228" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_01" taborder="21" left="134" top="115" height="24" text="홍길순" width="594" readonly="true"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_01_00_00" taborder="22" left="134" top="143" height="24" text="30개월 OOOO" width="364" readonly="true" value="30개월 OOOO"/>
+                        <MaskEdit id="mae00" taborder="23" left="134" top="176" width="120" height="24" format="####-##-##" type="string" readonly="true" value="20221010"/>
+                        <Edit id="Edit00_01_00_01_00_00_00_00_01_01" taborder="24" left="134" top="209" height="24" text="홍길순" width="596" readonly="true"/>
+                      </Layout>
+                    </Layouts>
+                  </Div>
+                </Layout>
+              </Layouts>
+            </Tabpage>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01_00_00_01_00_00_03_00_00" taborder="8" text="h50" top="390" cssclass="sta_Guide" width="100" left="1174" height="50" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

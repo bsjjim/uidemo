@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.BluetoothLE">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.BluetoothLE" shorttypename="BluetoothLE" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于提供与外部设备的Bluetooth方式连接的对象。" />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定BluetoothLE的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定BluetoothLE的名称的属性。" csspropertyname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于与Peripheral设备执行连接的方法。">
+        <Syntax text="BluetoothLE.connect( strAddress )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定Peripheral设备的地址。&#xD;&#xA;&#xD;&#xA;Windows NRE以及Android NRE使用MAC Address。&#xD;&#xA;macOS NRE使用OS分配的UUID。&#xD;&#xA;iOS/iPadOS NRE使用所检索到的设备列表的Index。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于解除与Peripheral设备的连接的方法。">
+        <Syntax text="BluetoothLE.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="discoverService" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于请求所连接的Peripheral设备提供的服务UUID的方法。">
+        <Syntax text="BluetoothLE.discoverService()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="readCharacteristic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向所连接的Peripheral设备请求特定服务的Characteristic值的方法。">
+        <Syntax text="BluetoothLE.readCharacteristic( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要获取值的Characteristic的UUID。" />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对Characteristic做出定义的服务的UUID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scanStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于开始检索正在通告(Advertisement)中的Peripheral设备的方法。">
+        <Syntax text="BluetoothLE.scanStart( [nDuration [, strSvcUUID]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nDuration" type="Number" in="false" out="false" option="false" variable="false" description="利用微秒（Milliseconds）单位的数字设定需要持续检索的时间。&#xD;&#xA;&#xD;&#xA;在省略值时适用2000。" />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要查找的特定服务的UUID。&#xD;&#xA;&#xD;&#xA;在省略值时，对处于通告（Advertisement）状态的所有Peripheral设备进行检索。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scanStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于结束检索正在通告(Advertisement)中的Peripheral设备的方法。">
+        <Syntax text="BluetoothLE.scanStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在特定服务的Characteristic值发生变更时向所连接的Peripheral设备请求Notification的方法。">
+        <Syntax text="BluetoothLE.subscribe( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要请求Notification的Characteristic的UUID。&#xD;&#xA;&#xD;&#xA;在Characteristic的值发生变更时，将从服务器传递Notification。" />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对Characteristic做出定义的服务的UUID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向所连接的Peripheral设备请求解除Notification的方法。">
+        <Syntax text="BluetoothLE.unsubscribe( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要请求解除Notification的Characteristic的UUID。" />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对Characteristic做出定义的服务的UUID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="writeCharacteristic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向所连接的Peripheral设备存储特定服务的Characteristic值的方法。">
+        <Syntax text="BluetoothLE.writeCharacteristic( strSvcUUID, strCharUUID, strVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对值进行存储的Characteristic的UUID。" />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定对Characteristic做出定义的服务的UUID。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要存储到Characteristic中的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在BluetoothLE请求的作业失败时触发的事件。">
+        <Syntax text="BluetoothLE.onerror(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onscanresult" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在使用scanStart()方法查找到提供特定服务的设备时触发的事件。">
+        <Syntax text="BluetoothLE.onscanresult(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEScanDeviceEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEScanDeviceEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsubscriberesult" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在从与BluetoothLE连接的设备中传递Notification时触发的事件。">
+        <Syntax text="BluetoothLE.onsubscriberesult(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在BluetoothLE请求的作业成功时触发的事件。">
+        <Syntax text="BluetoothLE.onsuccess(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

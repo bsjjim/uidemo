@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="GridFilter" width="179" height="273" titletext="New Form" background="#ffffff" border="1px solid #dddddd">
+    <Layouts>
+      <Layout height="273" width="179">
+        <Grid id="grd00" taborder="0" left="10" top="40" height="194" binddataset="dsHeadInfo" autofittype="col" cssclass="grid_WF_list" right="10" autosizebandtype="noleft" oncellclick="grd00_oncellclick">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="25" band="left"/>
+                <Column size="95"/>
+              </Columns>
+              <Rows>
+                <Row size="18"/>
+              </Rows>
+              <Band id="body">
+                <Cell text="bind:_chk" edittype="checkbox" displaytype="checkboxcontrol"/>
+                <Cell col="1" text="bind:data" textAlign="left"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01_00_00_00_00" taborder="1" top="265" cssclass="sta_Guide" width="124" left="43" height="7" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="7"/>
+        <Static id="Static01_00_00_00" taborder="2" top="234" cssclass="sta_Guide" width="159" left="43" height="7" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="7"/>
+        <Button id="btnSel" taborder="3" text="확인" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="241" right="65" onclick="pdvCal_btnSel_onclick"/>
+        <Button id="btnClose" taborder="4" text="닫기" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="241" right="11" onclick="pdvCal_btnClose_onclick"/>
+        <Static id="Static00" taborder="5" text="열숨기기 설정" left="0" top="0" height="30" cssclass="sta_POP_title" right="0"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsHeadInfo">
+        <ColumnInfo>
+          <Column id="_chk" type="STRING" size="256"/>
+          <Column id="data" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  그리드 열숨기기 기능
+*  @FileName 	: GridColHide.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/02/23
+*  @Desction    : 설명
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/02/23     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+this.fvCurCell;
+this.fvGrid;
+this.fvCurGrid;
+this.fvFormatSizeInfo;
+this.fnInit = function()
+{
+    this.fvGrid = this.parent.grid;
+	this.fvCell = this.parent.cellindex;
+	
+	var nColCnt = this.fvGrid.getFormatColCount();	
+	
+	this.fvFormatSizeInfo = this.fvGrid.formatDefaultColSize;
+	
+	if(this.gfnIsNull(this.fvFormatSizeInfo))
+	{
+		this.fvFormatSizeInfo = [];
+		
+		for(var i=0; i<nColCnt; i++)
+		{
+			 sText = this.fvGrid.getCellProperty("head",i,"text");
+			 this.fvFormatSizeInfo[i] = {text:sText,size:this.fvGrid.getFormatColSize(i),show:1};
+		}		
+		
+		this.fvGrid.formatDefaultColSize = this.fvFormatSizeInfo;
+	}
+
+	this.dsHeadInfo.clearData();
+	var nRow;
+	var sText;
+	var oDetail;
+	for(var i=0; i<nColCnt; i++)
+	{
+		 nRow = this.dsHeadInfo.addRow();
+		 sText = this.fvGrid.getCellProperty("head",i,"text");
+		 oDetail = this.fvFormatSizeInfo.find(({text}) => text === sText);
+		 this.dsHeadInfo.setColumn(nRow,"_chk",oDetail.show);
+		 this.dsHeadInfo.setColumn(nRow,"data",sText);			 
+	}
+}
+
+this.pdvCal_btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.parent.closePopup();
+};
+
+this.pdvCal_btnSel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+ 	var sText;
+	var oDetail;
+	
+	if(this.dsHeadInfo.getCaseCount("_chk == '1'") == 0) return;
+	
+	for(var i=0; i<this.dsHeadInfo.rowcount; i++)
+	{
+		sText = this.fvGrid.getCellProperty("head",i,"text");
+		oDetail = this.fvFormatSizeInfo.find(({text}) => text === sText);
+		if(this.dsHeadInfo.getColumn(i,"_chk") == "0")
+		{
+			oDetail.show = 0;
+			this.fvGrid.setFormatColProperty(i,"size",0);
+		}
+		else
+		{
+		    oDetail.show = 1;
+			this.fvGrid.setFormatColProperty(i,"size",oDetail.size);
+		}
+	}
+	
+	this.parent.closePopup();
+};
+
+this.grd00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+	if(e.clickitem == "control") return;
+	
+	var sChk = this.dsHeadInfo.getColumn(e.row,"_chk");
+	
+	if(sChk == "1")
+	{
+		this.dsHeadInfo.setColumn(e.row,"_chk","0");
+	}
+	else
+	{
+		this.dsHeadInfo.setColumn(e.row,"_chk","1");
+	}	
+};
+]]></Script>
+  </Form>
+</FDL>

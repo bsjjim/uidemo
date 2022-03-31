@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Commperiod" width="170" height="24" titletext="기간캘린더(월)" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="24" width="170">
+        <MaskEdit id="maeCalFrom" taborder="1" left="0" top="0" height="24" format="####-##" textAlign="left" type="string" width="65" maskchar=" " oninput="maeCal_oninput"/>
+        <Static id="Static02" taborder="0" text="~" left="maeCalFrom:0" top="0" width="18" cssclass="sta_WF_unit" height="24"/>
+        <MaskEdit id="maeCalTo" taborder="2" left="Static02:2" top="0" height="24" format="####-##" textAlign="left" type="string" width="85" maskchar=" " oninput="maeCal_oninput"/>
+        <Button id="btnCal" taborder="3" top="0" width="25" height="24" cssclass="btn_WF_cal" left="145" onclick="btnCal_onclick"/>
+        <PopupDiv id="pdvCal" text="PopupDiv00" visible="false" left="0" top="24" width="354" height="207" background="#ffffff" border="1px solid #dddddd">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00_01_00_00_00_01" taborder="0" text="10" top="0" cssclass="sta_Guide" width="100" left="32" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00" taborder="1" text="10" top="10" cssclass="sta_Guide" width="10" left="0" height="100" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00_00" taborder="2" text="8" top="15" cssclass="sta_Guide" width="8" left="172" height="100" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00_00_00" taborder="3" text="10" top="215" cssclass="sta_Guide" width="100" left="184" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00" taborder="4" text="10" top="14" cssclass="sta_Guide" width="10" left="342" height="100" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00_00_00_00" taborder="5" text="10" top="161" cssclass="sta_Guide" width="100" left="113" height="10" visible="false"/>
+              <Button id="btnClear" taborder="6" text="초기화" width="62" height="24" cssclass="cal_Pop_BottomBtn" top="171" right="118" onclick="pdvCal_btnClear_onclick"/>
+              <Button id="btnSel" taborder="7" text="선택" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="171" right="64" onclick="pdvCal_btnSel_onclick"/>
+              <Button id="btnClose" taborder="8" text="닫기" width="50" height="24" cssclass="cal_Pop_BottomBtn" top="171" right="10" onclick="pdvCal_btnClose_onclick"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00_00_00_00_00" taborder="9" text="10" top="195" cssclass="sta_Guide" width="100" left="113" height="10" visible="false"/>
+              <Div id="divFrom" taborder="10" text="div00" left="10" top="10" width="161" height="151" border="1px solid #dddddd" background="#ffffff">
+                <Layouts>
+                  <Layout>
+                    <Button id="btn1" taborder="0" text="1" left="12" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn2" taborder="1" text="2" left="47" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn3" taborder="2" text="3" left="82" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn4" taborder="3" text="4" left="117" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn5" taborder="4" text="5" left="12" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn6" taborder="5" text="6" left="47" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn7" taborder="6" text="7" left="82" top="77" width="27" height="27" cssclass="cal_Pop_Mon_Select" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn8" taborder="7" text="8" left="117" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn9" taborder="8" text="9" left="12" top="111" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn10" taborder="9" text="10" left="47" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn11" taborder="10" text="11" left="82" top="111" width="27" height="27" cssclass="cal_Pop_Mon_Today" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn12" taborder="11" text="12" left="117" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btnNext" taborder="12" top="11" width="18" height="18" cssclass="cal_Pop_Next" right="7" onclick="pdvCal_btnNext_onclick"/>
+                    <Static id="staYy" taborder="13" text="9999" left="29" top="9" width="101" height="24" textAlign="center"/>
+                    <Button id="btnPrev" taborder="14" left="5" top="11" width="18" height="18" cssclass="cal_Pop_Prev" fittocontents="none" rtl="true" onclick="pdvCal_btnPrev_onclick"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+              <Div id="divTo" taborder="11" text="div00" left="181" top="10" width="161" height="151" border="1px solid #dddddd" background="#ffffff">
+                <Layouts>
+                  <Layout>
+                    <Button id="btn1" taborder="0" text="1" left="12" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn2" taborder="1" text="2" left="47" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn3" taborder="2" text="3" left="82" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn4" taborder="3" text="4" left="117" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn5" taborder="4" text="5" left="12" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn6" taborder="5" text="6" left="47" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn7" taborder="6" text="7" left="82" top="77" width="27" height="27" cssclass="cal_Pop_Mon_Select" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn8" taborder="7" text="8" left="117" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn9" taborder="8" text="9" left="12" top="111" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn10" taborder="9" text="10" left="47" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn11" taborder="10" text="11" left="82" top="111" width="27" height="27" cssclass="cal_Pop_Mon_Today" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btn12" taborder="11" text="12" left="117" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+                    <Button id="btnNext" taborder="12" top="11" width="18" height="18" cssclass="cal_Pop_Next" right="7" onclick="pdvCal_btnNext_onclick"/>
+                    <Static id="staYy" taborder="13" text="9999" left="29" top="9" width="101" height="24" textAlign="center"/>
+                    <Button id="btnPrev" taborder="14" left="5" top="11" width="18" height="18" cssclass="cal_Pop_Prev" fittocontents="none" rtl="true" onclick="pdvCal_btnPrev_onclick"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+              <Div id="divMsg" taborder="12" text="div00" left="0" top="0" visible="false" right="0" bottom="0">
+                <Layouts>
+                  <Layout>
+                    <Static id="sta00" taborder="0" text="시작월이 종료월보다 이후입니다." left="30" top="30" right="30" bottom="30" verticalAlign="middle" textAlign="center" background="#e2e2e2" borderRadius="10px"/>
+                    <Button id="btnDivClose" taborder="1" text="닫기" left="154" top="143" width="50" height="24" onclick="pdvCal_divMsg_btnDivClose_onclick"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+            </Layout>
+          </Layouts>
+        </PopupDiv>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  기간월달력 컴포지트
+*  @FileName 	: CalMonth.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/19
+*  @Desction    : 기간월달력 컴포지트
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/19     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+this.fvToday;
+this.fvFromYm;
+this.fvToYm;
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+    this.fvToday = this.gfnGetDate();
+	this.fnInit();
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+//초기화
+this.fnInit = function()
+{
+	this.maeCalFrom.set_value("");
+	this.maeCalTo.set_value("");
+}
+
+//필수 표시
+this.fnSetRequired = function(bAct)
+{
+    if(bAct)
+	{
+	   this.maeCalFrom.set_cssclass("input_req");
+	   this.maeCalTo.set_cssclass("input_req");
+	}
+	else
+	{
+	   this.maeCalFrom.set_cssclass("");
+	   this.maeCalTo.set_cssclass("");
+	}
+}
+
+//선택필수 표시
+this.fnSetSelect = function(bAct)
+{
+    if(bAct)
+	{
+	   this.maeCalFrom.set_cssclass("input_select");
+	   this.maeCalTo.set_cssclass("input_select");
+	}
+	else
+	{
+	   this.maeCalFrom.set_cssclass("");
+	   this.maeCalTo.set_cssclass("");
+	}	
+}
+
+//컴포넌트 활성 비활성화
+this.fnSetEnable = function(bValue)
+{
+	this.maeCalFrom.set_enable(bValue);
+	this.maeCalTo.set_enable(bValue);
+	this.btnCal.set_enable(bValue);
+};
+
+//컴포넌트 Readonly셋팅
+this.fnSetReadonly = function(bValue)
+{
+	this.maeCalFrom.set_readonly(bValue);
+	this.maeCalTo.set_readonly(bValue);	
+	this.btnCal.set_visible(!bValue);
+};
+
+//컴포넌트 날짜값 셋팅
+this.fnSetValue = function(sDate)
+{
+
+	var sFromYm = "";
+	var sToYm = "";
+    
+	if(!this.gfnIsNull(sDate))
+	{
+	    if(sDate.indexOf(",") > -1)
+		{
+		    var aDate = sDate.split(",");
+			sFromYm = aDate[0];
+			sToYm = aDate[1];		
+		}
+		else
+		{
+			sFromYm = sDate;
+		}
+	}
+	
+	this.maeCalFrom.set_value(sFromYm);
+	this.maeCalTo.set_value(sToYm);	
+}
+
+//컴포넌트 날짜값 반환
+this.fnGetValue = function(sDate)
+{
+    var sRtnDt = (this.gfnIsNull(this.maeCalFrom.value) && this.gfnIsNull(this.maeCalTo.value)) ? "" : this.maeCalFrom.value+","+this.maeCalTo.value;
+   	return sRtnDt;
+}
+
+this.fnSetCalendar = function(oDiv,sDate)
+{
+	if(this.gfnIsNull(sDate)) sDate = this.fvToday;
+
+	var sToYear = this.fvToday.substr(0,4);
+	var sToMonth = this.fvToday.substr(4,2);
+	var sSelYear = sDate.substr(0,4).trim().padLeft(4,"0");
+	var sSelMonth = sDate.substr(4,2).trim().padLeft(2,"0");
+	
+	if(sSelYear == "0000") sSelYear = sToYear;
+	if(sSelMonth == "00") sSelMonth = sToMonth;
+	
+	if(parseInt(sSelYear) < 1900) sSelYear = "1900"; //1900년보다 작으면 1900년도로 고정
+	
+	oDiv.staYy.set_text(sSelYear);
+	
+	//버튼 Css초기화
+	for(var i=1; i<13; i++)
+	{
+	    oDiv.components["btn"+i].set_cssclass("cal_Pop_Mon");
+	}
+	
+	if(sToYear == sSelYear)	oDiv.components["btn"+parseInt(sToMonth)].set_cssclass("cal_Pop_Mon_Today");
+    
+	if(sToMonth != sSelMonth) oDiv.components["btn"+parseInt(sSelMonth)].set_cssclass("cal_Pop_Mon_Select");
+	
+	if(oDiv.parent.name == "divFrom")
+	{
+		this.fvFromYm = sSelYear+sSelMonth;
+	}
+	else
+	{
+		this.fvToYm = sSelYear+sSelMonth;
+	}
+}
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+
+this.btnCal_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSetCalendar(this.pdvCal.form.divFrom.form,this.maeCalFrom.value);
+	this.fnSetCalendar(this.pdvCal.form.divTo.form,this.maeCalTo.value);
+	
+	this.pdvCal.trackPopupByComponent(this.maeCalFrom,this.maeCalFrom.left,this.maeCalFrom.height);
+};
+
+this.pdvCal_btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var oDiv = obj.parent;
+	var sYm = oDiv.staYy.text + obj.text.padLeft(2, '0');
+	if(oDiv.parent.name == "divFrom")
+	{
+		this.fvFromYm = sYm;
+	}
+	else
+	{
+		this.fvToYm = sYm;
+	}	
+	
+	this.fnSetCalendar(oDiv,sYm);
+};
+
+this.pdvCal_btnPrev_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var oDiv = obj.parent;
+	var nDate = nexacro.toNumber(oDiv.staYy.text);
+	    nDate = (nDate <= 1900) ? 1900 : nDate-1; //1900년보다 작으면 1900년도로 고정
+	var sDate = nDate.toString().padLeft(4,"0");
+
+	if(oDiv.parent.name == "divFrom") 
+	{
+		this.fvFromYm = sDate+this.fvFromYm.substr(4,2);
+	}
+	else
+	{
+		this.fvToYm = sDate+this.fvToYm.substr(4,2);
+	}
+	
+	oDiv.staYy.set_text(sDate);	
+};
+
+this.pdvCal_btnNext_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var oDiv = obj.parent;
+	var nDate = nexacro.toNumber(oDiv.staYy.text)+1;
+	var sDate = nDate.toString().padLeft(4,"0");
+	
+	if(oDiv.parent.name == "divFrom") 
+	{
+		this.fvFromYm = sDate+this.fvFromYm.substr(4,2);
+	}
+	else
+	{
+		this.fvToYm = sDate+this.fvToYm.substr(4,2);
+	}
+	
+	oDiv.staYy.set_text(sDate);	
+};
+
+this.maeCal_oninput = function(obj:nexacro.MaskEdit,e:nexacro.InputEventInfo)
+{
+	  var sOrgVal = obj.value;
+	  var sDt = sOrgVal.substr(4,2);
+	  sDt = sDt.trim();
+  
+      //입력한 월이 12월이 넘어가는 경우 12월 이상입력안되게 처리
+	  if(!this.gfnIsNull(sDt) && parseInt(sDt) > 12)
+	  {
+	      obj.set_value(sOrgVal.substr(0,5));
+		  obj.setCaretPos(6)
+	  }
+};
+
+this.pdvCal_btnClear_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSetCalendar(this.pdvCal.form.divFrom.form,this.maeCalFrom.value);
+	this.fnSetCalendar(this.pdvCal.form.divTo.form,this.maeCalTo.value);
+};
+
+this.pdvCal_btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.pdvCal.closePopup();
+};
+
+this.pdvCal_btnSel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    //날짜 선택시 시작일이 종료일 보다 큰경우 DivMsg보여주고 리턴
+    if(parseInt(this.fvFromYm) > parseInt(this.fvToYm))
+	{
+	   this.pdvCal.form.divMsg.set_visible(true);
+	   return;
+	}
+	this.maeCalFrom.set_value(this.fvFromYm);
+	this.maeCalTo.set_value(this.fvToYm);	
+	this.pdvCal.closePopup();		
+};
+
+this.pdvCal_divMsg_btnDivClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.pdvCal.form.divMsg.set_visible(false);
+};
+]]></Script>
+  </Form>
+</FDL>

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="단말기조회">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="DivSearch" taborder="1" left="0" top="0" height="131" cssclass="div_SA" right="40" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="단말기상태" left="20" top="18" width="73" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01" taborder="1" text="단말기 TYPE" left="354" top="18" width="83" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_00" taborder="3" text="w40" top="0" cssclass="sta_Guide" width="40" left="314" height="60" visible="false"/>
+              <Static id="Static01_01" taborder="4" text="단말기 S/N" left="694" top="18" width="84" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="5" text="w40" top="0" cssclass="sta_Guide" width="40" left="654" height="110" visible="false"/>
+              <Static id="Static00_00" taborder="6" text="단말기 CTN" left="20" top="52" width="78" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01_00" taborder="7" text="w10" top="4" cssclass="sta_Guide" width="10" left="94" height="60" visible="false"/>
+              <Static id="Static01_02" taborder="8" text="장착기간" left="354" top="52" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_00" taborder="9" text="개통기간" left="694" top="52" width="59" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00_00" taborder="10" text="w40" top="-2" cssclass="sta_Guide" width="40" left="1004" height="60" visible="false"/>
+              <Static id="Static01_01_01" taborder="11" text="단말 IMEI" left="1044" top="18" width="74" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_01_00" taborder="12" text="계약번호" left="1044" top="52" width="74" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00" taborder="13" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="14" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Edit id="Edit00" taborder="15" left="1123" top="18" width="128" height="24" text="123456789"/>
+              <Button id="Button00" taborder="16" left="1253" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static00_01" taborder="17" text="계약기간" left="20" top="86" width="73" height="24" cssclass="sta_SA_label"/>
+              <CalPeriod id="CalPeriod00_00" taborder="18" left="104" top="86" width="210" height="24"/>
+              <Combo id="cmb00" taborder="19" text="A/S교체" left="104" top="18" width="120" height="24" value="" index="-1"/>
+              <Edit id="Edit00_00" taborder="20" left="104" top="52" width="94" height="24" text="123456789"/>
+              <Button id="Button00_00" taborder="21" left="200" top="52" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <CalPeriod id="CalPeriod00_00_00" taborder="22" left="444" top="52" width="210" height="24"/>
+              <Static id="Static01_01_00_00" taborder="23" text="차량번호" left="694" top="86" width="59" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_00_00" taborder="24" left="444" top="86" width="80" height="24" text="123406789" value="123406789"/>
+              <Button id="Button00_01_00_00_00_00" taborder="25" left="526" top="86" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="26" left="553" top="86" height="24" text="김나나" width="101" value="김나나"/>
+              <Static id="Static01_02_00" taborder="27" text="고객번호" left="354" top="86" width="58" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_00_00_00" taborder="28" left="776" top="86" width="76" height="24" text="123허1234" value="123허1234"/>
+              <Button id="Button00_00_00_00" taborder="29" left="854" top="86" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00_00" taborder="30" left="881" top="86" height="24" text="P12345" width="123"/>
+              <Combo id="cmb00_00" taborder="31" text="전체" left="443" top="18" width="86" height="24" value="" index="-1"/>
+              <Edit id="Edit00_01_00_00_01" taborder="32" left="776" top="18" width="201" height="24" text="P12345"/>
+              <Button id="Button00_01_00_00_00" taborder="33" left="979" top="18" width="25" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01" taborder="34" left="1123" top="52" width="85" height="24" text="2021012012" value="2021012012"/>
+              <Button id="Button00_01" taborder="35" left="1210" top="52" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_01_01_00_00" taborder="36" text="사용목적" left="1044" top="86" width="74" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cmb01" taborder="37" left="1123" top="86" width="111" height="24"/>
+              <CalPeriod id="CalPeriod00_00_00_00" taborder="38" left="776" top="52" width="210" height="24"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00" taborder="2" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" bottom="397" width="48.04%">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="단말기 목록" left="0" top="20" width="215" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="40" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2" text="생산일자"/>
+                      <Cell col="3" text="입고일자"/>
+                      <Cell col="4" text="물류장소"/>
+                      <Cell col="5" text="단말 TYPE"/>
+                      <Cell col="6" text="단말 S/N"/>
+                      <Cell col="7" text="단말 IMEI"/>
+                      <Cell col="8" text="단말 CTN"/>
+                      <Cell col="9" text="단말 Ver"/>
+                      <Cell col="10" text="약정기간"/>
+                      <Cell col="11" text="개통일자"/>
+                      <Cell col="12" text="계약종료일자"/>
+                      <Cell col="13" text="잔여약정기간"/>
+                      <Cell col="14" text="단말기상태"/>
+                      <Cell col="15" text="장착여부"/>
+                      <Cell col="16" text="장착/등록지"/>
+                      <Cell col="17" text="장착일시"/>
+                      <Cell col="18" text="장착자명"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column4"/>
+                      <Cell col="6" text="bind:Column5"/>
+                      <Cell col="7" text="bind:Column6"/>
+                      <Cell col="8" text="bind:Column7"/>
+                      <Cell col="9" text="bind:Column8"/>
+                      <Cell col="10" text="bind:Column9"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00" taborder="3" text="10" top="3" cssclass="sta_Guide" width="10" left="99" height="50" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div text="Div01" cssclass="div_group" id="div00_00" left="Div00:20" taborder="6" height="217" top="DivSearch:0" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static27_03" taborder="0" left="129" top="84" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26" taborder="1" text="계약번호" left="0" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="2" left="129" top="51" height="34" cssclass="sta_DA_data" right="0" text=""/>
+              <Static id="Static26_02" taborder="3" text="차대번호" left="0" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00" taborder="4" text="고객" left="0" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00" taborder="5" left="129" top="117" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00" taborder="7" text="h50" top="0" cssclass="sta_Guide" width="42" left="149" height="50" visible="false"/>
+              <Static id="Static00" taborder="8" text="계약관리" left="0" top="20" width="145" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00_00_01" taborder="9" text="11" top="39" cssclass="sta_Guide" width="145" left="-4" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_03_02" taborder="10" text="장기계약관리" top="20" width="98" height="24" cssclass="btn_Block" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="11" text="6" top="44" cssclass="sta_Guide" width="100" left="629" height="6" visible="false"/>
+              <Static id="Static26_02_00_00" taborder="12" text="차종명" left="366" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01" taborder="13" text="차량번호" left="366" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00" taborder="14" text="계약상태" left="366" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static01" taborder="6" left="0" top="50" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static27_03_01" taborder="15" left="129" top="150" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_02" taborder="16" text="장착등록지" left="0" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01" taborder="17" text="위치정보수집" left="0" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00" taborder="18" left="129" top="183" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_01_00" taborder="19" text="계약기간" left="366" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Edit id="Edit00" taborder="20" left="134" top="89" width="128" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_00" taborder="21" left="134" top="122" width="128" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_01" taborder="22" left="500" top="56" width="128" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_00_00" taborder="23" left="500" top="89" width="128" height="24" text="123456789" enable="false"/>
+              <Combo id="cmb00_01" taborder="24" text="cmb00" left="134" top="188" width="120" height="24" enable="false"/>
+              <Edit id="Edit00_02" taborder="25" left="134" top="56" width="128" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_00_00_01" taborder="26" left="500" top="122" width="128" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_00_01" taborder="27" left="134" top="155" width="63" height="24" text="123456789" enable="false"/>
+              <Edit id="Edit00_00_01_00" taborder="28" left="199" top="155" width="163" height="24" text="123456789" enable="false"/>
+              <CalPeriod id="CalPeriod00" taborder="29" left="500" top="155" width="210" height="24" enable="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="0" text="40" top="0" cssclass="sta_Guide" width="40" right="0" bottom="0" visible="false"/>
+        <Static id="Static01_00_00_00_00" taborder="3" text="w20" top="147" cssclass="sta_Guide" width="20" left="734" height="60" visible="false"/>
+        <Button id="btnSearchExpand" taborder="4" text="-" left="Div00:-10" top="DivSearch:0" width="40" height="20" cssclass="btn_SA_expand" onclick="btnSearchExpand_onclick"/>
+        <Div text="Div01" width="48.04%" cssclass="div_group" id="div00" left="0" taborder="5" bottom="48" height="349">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00_01_00_03_02_00_00_00" taborder="20" text="단말기 A/S조회" top="20" width="108" height="24" cssclass="btn_Block" right="210"/>
+              <Static id="Static27_03" taborder="0" left="129" top="84" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26" taborder="1" text="단말기 TYPE" left="0" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="2" left="129" top="51" height="34" cssclass="sta_DA_data" right="0" text=""/>
+              <Static id="Static26_02" taborder="3" text="단말 IMEI" left="0" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00" taborder="4" text="단말 Ver" left="0" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00" taborder="5" left="129" top="117" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_00_00" taborder="7" text="h50" top="0" cssclass="sta_Guide" width="42" left="149" height="50" visible="false"/>
+              <Static id="Static00" taborder="8" text="단말기 등록/관리" left="0" top="20" width="145" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00_00_01" taborder="9" text="11" top="39" cssclass="sta_Guide" width="145" left="-4" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_03_02" taborder="10" text="탈거등록" top="20" width="74" height="24" cssclass="btn_Block" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="11" text="6" top="44" cssclass="sta_Guide" width="100" left="629" height="6" visible="false"/>
+              <Static id="Static26_02_00_00" taborder="12" text="생산일자" left="366" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01" taborder="13" text="단말 CTN" left="366" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00" taborder="14" text="단말 S/N" left="366" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static01" taborder="6" left="0" top="50" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Combo id="cmb00" taborder="15" text="cmb00" left="134" top="56" width="120" height="24"/>
+              <Button id="Button00_00_01_00_03_02_00" taborder="16" text="단말기리셋" top="20" width="86" height="24" cssclass="btn_Block" right="447"/>
+              <Button id="Button00_00_01_00_03_02_00_00" taborder="17" text="위치정보수집 Y/N" top="20" width="121" height="24" cssclass="btn_Block" right="322"/>
+              <Static id="Static01_00_00_01_00_00_03_01_01_00" taborder="18" text="14" top="20" cssclass="sta_Guide" width="14" height="50" visible="false" right="429"/>
+              <Static id="Static01_00_00_01_00_00_03_01_01_00_00" taborder="19" text="14" top="20" cssclass="sta_Guide" width="14" height="50" visible="false" right="304"/>
+              <Button id="Button00_00_01_00_03_02_01" taborder="21" text="수정" top="20" width="50" height="24" cssclass="btn_Block" right="156"/>
+              <Button id="Button00_00_01_00_03_02_02" taborder="22" text="계약해지" top="20" width="74" height="24" cssclass="btn_Block" right="78"/>
+              <Static id="Static27_03_01" taborder="23" left="129" top="150" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_02" taborder="24" text="입고일자" left="0" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01" taborder="25" text="단말기상태" left="0" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00" taborder="26" left="129" top="183" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_00_00_00" taborder="27" text="개통종료일자" left="366" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_00" taborder="28" text="물류장소" left="366" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00" taborder="29" left="129" top="216" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_02_00" taborder="30" text="약정기간" left="0" top="216" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01_00" taborder="31" text="잔여약정기간" left="0" top="249" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00_00" taborder="32" left="129" top="249" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_00_00_00_00" taborder="33" text="A/S여부" left="366" top="249" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_00_00" taborder="34" text="개통일자" left="366" top="216" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00" taborder="35" left="129" top="282" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_02_00_00" taborder="36" text="장착일시" left="0" top="282" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_01_00_00" taborder="37" text="커넥트핀정보" left="0" top="315" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00_00_00" taborder="38" left="129" top="315" height="34" cssclass="sta_DA_data" right="0"/>
+              <Static id="Static26_02_01_00_00_00" taborder="39" text="게이트웨이유무" left="366" top="282" width="130" height="34" cssclass="sta_DA_label"/>
+              <Edit id="Edit00" taborder="40" left="134" top="89" width="128" height="24" text="123456789"/>
+              <Edit id="Edit00_00" taborder="41" left="134" top="122" width="128" height="24" text="123456789"/>
+              <Calendar id="cal00" taborder="42" left="134" top="155" width="120" height="24"/>
+              <Calendar id="cal00_00" taborder="43" left="500" top="122" width="120" height="24"/>
+              <Edit id="Edit00_01" taborder="44" left="500" top="56" width="128" height="24" text="123456789"/>
+              <Edit id="Edit00_00_00" taborder="45" left="500" top="89" width="128" height="24" text="123456789"/>
+              <Edit id="Edit00_00_00_00" taborder="46" left="500" top="155" width="128" height="24" text="123456789"/>
+              <Calendar id="cal00_00_00" taborder="47" left="500" top="188" width="120" height="24"/>
+              <Calendar id="cal00_00_00_00" taborder="48" left="500" top="221" width="120" height="24"/>
+              <Combo id="cmb00_00" taborder="49" text="cmb00" left="500" top="254" width="120" height="24"/>
+              <Combo id="cmb00_00_00" taborder="50" text="cmb00" left="500" top="287" width="120" height="24"/>
+              <Combo id="cmb00_01" taborder="51" text="cmb00" left="134" top="188" width="120" height="24"/>
+              <MaskEdit id="MaskEdit00_00_00_00" taborder="52" left="134" top="221" width="60" height="24" format="#,##9.##" value="30"/>
+              <Static id="Static02_00_00_00" taborder="53" text="개월" left="194" top="221" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_00_00_00_00" taborder="54" text="개월" left="194" top="254" width="30" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00" taborder="55" left="134" top="254" width="60" height="24" format="#,##9.##" value="30"/>
+              <CalTime id="CalTime00" taborder="56" left="134" top="287" width="155" height="24"/>
+              <Edit id="Edit00_00_01" taborder="57" left="134" top="320" width="128" height="24" text="123456789"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00" taborder="7" text="Div00" left="div00:20" top="div00_00:0" cssclass="div_group" bottom="48" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="단말기 이력" left="0" top="20" width="215" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="변경구분"/>
+                      <Cell col="2" text="변경항목"/>
+                      <Cell col="3" text="변경일자"/>
+                      <Cell col="4" text="변경 전 내용"/>
+                      <Cell col="5" text="변경 후 내용"/>
+                      <Cell col="6" text="수정자"/>
+                      <Cell col="7" text="수정부서"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00" taborder="3" text="10" top="3" cssclass="sta_Guide" width="10" left="99" height="50" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="div00_00_00" taborder="8" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="div00:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_01" taborder="0" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+              <Button id="Button00_00_00" taborder="1" text="정책관리" width="88" height="28" cssclass="btn_Comm_func" top="10" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="3" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+              <Button id="Button00_00_00_00" taborder="4" text="단말해지관리" width="112" height="28" cssclass="btn_Comm_func" top="10" right="92"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

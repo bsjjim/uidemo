@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="조회그리드" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="divSearch" taborder="0" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="매각일자" left="20" top="18" width="58" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="차량번호" left="336" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Button id="btnSearch" taborder="2" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38" text="" onclick="divSearch_btnSearch_onclick"/>
+              <Static id="Static01_00_00" taborder="3" text="w40" top="0" cssclass="sta_Guide" width="40" left="296" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="4" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="5" text="h11" cssclass="sta_Guide" width="50" visible="false" right="32" bottom="0" height="11"/>
+              <Static id="Static01_01" taborder="6" text="상태" left="554" top="18" width="39" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="7" text="w40" top="0" cssclass="sta_Guide" width="40" left="514" height="60" visible="false"/>
+              <Combo id="cboStats" taborder="8" text="선택" left="594" top="18" width="150" height="24" value="선택" index="-1"/>
+              <Static id="Static01_00_00_00_00" taborder="9" text="w40" top="0" cssclass="sta_Guide" width="40" left="744" height="60" visible="false"/>
+              <Static id="Static01_01_00" taborder="10" text="매각유형" left="782" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cboSale" taborder="11" text="선택" left="848" top="18" width="150" height="24" value="선택" index="-1"/>
+              <Static id="Static01_00" taborder="12" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Edit id="edtCarNo" taborder="13" left="403" top="18" width="85" height="24" text="123허1234"/>
+              <Button id="btnCarNoPop" taborder="14" left="490" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Static id="Static01_00_00_00_01" taborder="15" text="10" top="4" cssclass="sta_Guide" width="10" left="76" height="50" visible="false"/>
+              <Static id="Static01_00_00_00_02" taborder="16" text="10" top="5" cssclass="sta_Guide" width="10" left="393" height="50" visible="false"/>
+              <Static id="Static01_00_00_00_02_00" taborder="17" text="10" top="6" cssclass="sta_Guide" width="10" left="584" height="50" visible="false" onclick="DivSearch_Static01_00_00_00_02_00_onclick"/>
+              <Static id="Static01_00_00_00_02_00_00" taborder="18" text="10" top="5" cssclass="sta_Guide" width="10" left="838" height="50" visible="false" onclick="DivSearch_Static01_00_00_00_02_00_onclick"/>
+              <CalPeriod id="calPredSaleDt" taborder="19" left="86" top="18" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="divSearch:0" cssclass="div_group" right="40" bottom="48">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00_01_00_00_03_01" taborder="6" text="15" top="13" cssclass="sta_Guide" width="15" left="1211" height="35" visible="false"/>
+              <Static id="Static00" taborder="0" text="매각현황리스트" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="35" binddataset="dsGrid" initvalueid="iv_Grid" oncelldblclick="divGridWapper_Grid00_oncelldblclick" oncellclick="divGridWapper_Grid00_oncellclick">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="250"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="150"/>
+                      <Column size="120"/>
+                      <Column size="150"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="설비번호"/>
+                      <Cell col="2" text="차량번호"/>
+                      <Cell col="3" text="차량명"/>
+                      <Cell col="4" text="등록일"/>
+                      <Cell col="5" text="매각일"/>
+                      <Cell col="6" text="상태값"/>
+                      <Cell col="7" text="보험해지일자"/>
+                      <Cell col="8" text="매각유형"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1" cssclass="cell_link"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3" textAlign="left"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00_00" taborder="3" text="15" top="606" cssclass="sta_Guide" width="100" left="50" height="15" visible="false"/>
+              <Button id="Button00_00_01_00_03_02" taborder="4" text="블럭버튼" top="20" width="74" height="24" cssclass="btn_Block" right="0"/>
+              <Button id="Button00_00_01_00_02_02_01" taborder="5" text="팝업버튼" top="20" width="88" height="24" cssclass="btn_Block_popup" right="78"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00" taborder="7" text="4" top="14" cssclass="sta_Guide" width="4" left="1318" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="8" text="6" top="44" cssclass="sta_Guide" width="100" left="1234" height="6" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="9" text="12" top="38" cssclass="sta_Guide" width="100" left="1164" height="12" visible="false"/>
+              <Static id="Static01_00_00_01_00_00" taborder="10" text="11" top="39" cssclass="sta_Guide" width="100" left="0" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01" taborder="11" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="218"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00" taborder="12" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="170"/>
+              <Static id="Static01_00_00_00" taborder="13" text="10" top="3" cssclass="sta_Guide" width="10" left="113" height="50" visible="false"/>
+              <Static id="Static00_00" taborder="14" text="※ 업무 진행 시 반드시 숙지해야 할 안내문은 타이틀 우측에 배치." left="123" top="20" width="512" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+              <Static id="Static01_00_00_00_00_00" taborder="15" text="30" cssclass="sta_Guide" width="100" left="810" height="35" visible="false" bottom="0"/>
+              <Static id="Static00_00_00" taborder="16" text="※ 일반적인 안내문은 영역 좌측 하단에 배치합니다. / 또는 타이틀 옆에 도움말이 위치하기에 공간이 협소한 경우, 예외적으로 하단에 위치할 수 있습니다." left="0" width="842" height="24" cssclass="sta_txt_desc" bottom="2" initvalueid="iv_fc_blue"/>
+              <Static id="Static02_02" taborder="17" text="[단위:원]" top="20" width="50" height="24" cssclass="sta_WF_gridUnit" right="274"/>
+              <Static id="Static02_02_00" taborder="18" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="331"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00" taborder="19" text="10" top="13" cssclass="sta_Guide" width="10" left="1155" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_01" taborder="20" text="4" top="14" cssclass="sta_Guide" width="4" left="1143" height="35" visible="false"/>
+              <Static id="Static02_00" taborder="21" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="346"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="2" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static01_00_00_00_00_00" taborder="3" text="h48" cssclass="sta_Guide" width="100" left="849" visible="false" bottom="0" height="48"/>
+        <Div id="div00" taborder="4" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="divGridWapper:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_01" taborder="0" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsGrid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="dsGridSpare">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1</Col>
+            <Col id="Column1">10045537</Col>
+            <Col id="Column2">10허4089</Col>
+            <Col id="Column3">LOTZE (L) 2.0</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">2</Col>
+            <Col id="Column1">10045537</Col>
+            <Col id="Column2">02허3684</Col>
+            <Col id="Column3">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0">3</Col>
+            <Col id="Column1">10139805</Col>
+            <Col id="Column2">02허3684</Col>
+            <Col id="Column3">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">경매</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">4</Col>
+            <Col id="Column1">10139805</Col>
+            <Col id="Column2">77허6329</Col>
+            <Col id="Column3">STAREX (D) 2.6 12인승</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">5</Col>
+            <Col id="Column1">10074192</Col>
+            <Col id="Column2">28허3310</Col>
+            <Col id="Column3">NEW SM5 (L) 2.0</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">6</Col>
+            <Col id="Column1">10049209</Col>
+            <Col id="Column2">08허5193</Col>
+            <Col id="Column3">YF SONATA (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column3">PRIDE (G) 1.4 5DOOR 디럭스</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column8">R2B</Col>
+            <Col id="Column0">7</Col>
+            <Col id="Column1">10139474</Col>
+            <Col id="Column2">17허8312</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">8</Col>
+            <Col id="Column1">10139474</Col>
+            <Col id="Column2">17허8312</Col>
+            <Col id="Column3">PRIDE (G) 1.4 5DOOR 디럭스</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">경매</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">9</Col>
+            <Col id="Column1">10139470</Col>
+            <Col id="Column2">17허8349</Col>
+            <Col id="Column3">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">인수형매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">10</Col>
+            <Col id="Column1">10187237</Col>
+            <Col id="Column2">30호1881</Col>
+            <Col id="Column3">SPORTAGE R (D) 2.0 2WD PRESTIGE</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">경매</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">11</Col>
+            <Col id="Column1">10096033</Col>
+            <Col id="Column2">12허5036</Col>
+            <Col id="Column3">YF SONATA (L) 2.0 렌터카 TOP</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">12</Col>
+            <Col id="Column1">10186273</Col>
+            <Col id="Column2">30호1252</Col>
+            <Col id="Column3">TUCSON IX (D) 2.0 2WD SMART SPECIAL</Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">13</Col>
+            <Col id="Column1">10045514</Col>
+            <Col id="Column2">47허1675</Col>
+            <Col id="Column3">LOTZE (L) 2.0 </Col>
+            <Col id="Column4">2021-12-01</Col>
+            <Col id="Column5">2021-12-08　</Col>
+            <Col id="Column6">명의이전완료</Col>
+            <Col id="Column7">2021-12-08　</Col>
+            <Col id="Column8">입찰매각</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsCodeCm001">
+        <ColumnInfo>
+          <Column id="BUKRS" type="STRING" size="4"/>
+          <Column id="DOMNAME" type="STRING" size="30"/>
+          <Column id="FIELDCODE" type="STRING" size="30"/>
+          <Column id="FIELDNAME" type="STRING" size="40"/>
+          <Column id="TEXT" type="STRING" size="255"/>
+          <Column id="DDTEXT" type="STRING" size="60"/>
+          <Column id="SORD" type="INT" size="1"/>
+          <Column id="CODE1" type="STRING" size="30"/>
+          <Column id="ETC1V" type="STRING" size="40"/>
+          <Column id="ETC1N" type="STRING" size="40"/>
+          <Column id="ETC2V" type="STRING" size="40"/>
+          <Column id="ETC2N" type="STRING" size="40"/>
+          <Column id="ETC3V" type="STRING" size="40"/>
+          <Column id="ETC3N" type="STRING" size="40"/>
+          <Column id="ETC4V" type="STRING" size="40"/>
+          <Column id="ETC4N" type="STRING" size="40"/>
+          <Column id="ETC5V" type="STRING" size="40"/>
+          <Column id="ETC5N" type="STRING" size="40"/>
+          <Column id="ETC6V" type="STRING" size="40"/>
+          <Column id="ETC6N" type="STRING" size="40"/>
+          <Column id="ETC7V" type="STRING" size="40"/>
+          <Column id="ETC7N" type="STRING" size="40"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3000</Col>
+            <Col id="FIELDNAME">KT렌탈 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3100</Col>
+            <Col id="FIELDNAME">오토리스 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3200</Col>
+            <Col id="FIELDNAME">KT오토케어 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">MB3000</Col>
+            <Col id="FIELDNAME">모바일시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">OT3000</Col>
+            <Col id="FIELDNAME">KT렌탈 대외 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">OT3100</Col>
+            <Col id="FIELDNAME">오토리스 대외 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">RE1000</Col>
+            <Col id="FIELDNAME">일반렌탈 MOBILE 시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">RE2000</Col>
+            <Col id="FIELDNAME">렌탈 매니저 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsImp" onrowsetchanged="dsImp_onrowsetchanged" oncolumnchanged="dsImp_oncolumnchanged">
+        <ColumnInfo>
+          <Column type="string" id="I_SALE_DT" size="11"/>
+          <Column type="string" id="I_CAR_NO" size="20"/>
+          <Column type="string" id="I_STATUS" size="75"/>
+          <Column type="string" id="I_SALE_TYPE" size="9"/>
+        </ColumnInfo>
+        <Rows>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  조회그리드 샘플
+*  @FileName 	: SampleGridSearch.xfdl
+*  @Creator 	: 양경호
+*  @CreateDate 	: 2022/03/17
+*  @Desction    : 조회그리드 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/03/17     	        양경호                 최초 생성
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+    //공통 Onload함수
+    this.gfnFormOnLoad(obj);
+	
+	this.divSearch.form.calPredSaleDt.setFocus();
+	
+	this.fnSetValidation();
+}
+ 
+this.fnSetValidation = function()
+{
+
+	// Validation 체크 Rule의 종류
+	// required - 필수 체크
+	// length:7 - 길이가 7자리인지 체크
+	// rangelength:2:3 - 길이가 2 ~ 3 자리인지 체크
+	// maxlength:7 - 길이가 7보다 작은지 체크
+	// minlength:3 - 길이가 3보다 큰지 체크
+	// maxlengthbyte:7 - byte의 길이가 7보다 작은지 체크
+	// minlengthbyte:3 - byte의 길이가 3보다 큰지 체크
+	// digits - 숫자여부 체크
+	// min:7 - 값이 7보다 작은지 체크
+	// max:7 - 값이 7보다 큰지 체크
+	// declimit:3 - 소수점의 자리수가 3자리인지 체크
+	// date - 년월일형태의 날짜가 맞는지 체크
+	// dateym - 년월형태의 날짜가 맞는지 체크
+	// range:40:100 - 값이 40 ~ 100 사이의 값인지 체크
+	// code:1:2:3 - 값이 1,2,3 의 값인지 체크
+	// equalto:NAME - NAME 칼럼의 값과 같은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "equalto:NAME");
+	// fromto:ID - 등록된 날짜가 ID의 칼럼의 값 보다 큰지 예) this.gfnSetValidation(this.dsList, "NAME", "종료일,시작일", "fromto:ID");
+	// comparebig:NAME - NAME 칼럼의 값보다 큰지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparebig:NAME");
+	// comparesmall:NAME - NAME 칼럼의 값보다 작은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparesmall:NAME");
+	// isssn - 공통함수 gfnIsSSN로 주민번호 체크
+	// isfrn - 공통함수 gfnIsFrnrIdNo로 외국인등록번호 체크
+	// isbzid - 공통함수 gfnIsBzIdNo로 사업자등록번호 체크
+	// isfirmid - 공통함수 gfnIsFirmIdNo로 법인등록번호 체크
+	// iscardno - 공통함수 gfnIsCardNo로 신용카드번호 체크
+	// isemail - 공통함수 gfnIsEmail로 이메일 체크
+	
+
+	this.gfnSetValidation(this.divSearch.form.calPredSaleDt, "", "매각일자", "required");
+	
+}
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnCallback = function(sSvcId, nErrCode, sErrMsg)
+{
+    switch(sSvcId)
+    {
+    	case "searchSD10040" :
+    	break;
+    	default:
+		break;
+    }
+}
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+this.fnSearch = function()
+{
+
+	if(!this.gfnValidation(this.divSearch)) return;
+ 
+    /*
+    var oArgs  = {
+			  svcId 	: 	"searchSD10040",
+			  rfcName 	: 	"ZCM_WEB_PRO_LIST",
+			  inDs 		: 	"dsImp=dsImp"
+						  +" dsImp_IS_LOGIN=dsImp_IS_LOGIN",
+			  outDs 	: 	"dsExp_ES_RETURN=dsExp_ES_RETURN"
+						  +" dsTbl_T_DATA=dsTbl_T_DATA",
+			  svcType 	: 	"R"
+	}	
+
+	// 공통 트랜잭션 호출
+	this.gfnTransaction(oArgs);
+	*/
+	
+	this.dsGrid.copyData(this.dsGridSpare);
+}
+
+/************************************************************************************************
+ * 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+
+
+
+this.divSearch_btnSearch_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSearch();
+};
+
+
+this.divGridWapper_Grid00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+	var sColNm = this._gfnGridGetBindColumnNameByIndex(obj, e.cell);
+	
+	if(sColNm == "Column1")
+	{
+	    this.gfnCall("Sample::SampleDefaultCRUD.xfdl",{pCode:"aaaaa"});
+	}	
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="divSearch.form.calPredSaleDt" propid="value" datasetid="dsImp" columnid="I_SALE_DT"/>
+      <BindItem id="item1" compid="divSearch.form.edtCarNo" propid="value" datasetid="dsImp" columnid="I_CAR_NO"/>
+      <BindItem id="item2" compid="divSearch.form.cboStats" propid="value" datasetid="dsImp" columnid="I_STATUS"/>
+      <BindItem id="item3" compid="divSearch.form.cboSale" propid="value" datasetid="dsImp" columnid="I_SALE_TYPE"/>
+    </Bind>
+  </Form>
+</FDL>

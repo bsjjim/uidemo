@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Sms">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.Sms" shorttypename="Sms" csstypename="Sms" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="用于支持短消息服务（SMS）的对象，对短消息的收发进行处理。" />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定Sms的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="message" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定需要从移动设备传送到对方的消息的属性。" csspropertyname="" normalpropertyname="message" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定Sms的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含Sms的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="phonenumber" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定在移动设备中传送消息的对方电话号码的属性。" csspropertyname="" normalpropertyname="phonenumber" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Sms的特定事件添加句柄函数的方法。">
+        <Syntax text="Sms.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="Sms.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="用于从存储在移动设备中的SMS中删除指定消息的方法。">
+        <Syntax text="Sms.deleteMessage(nSmsid)">
+          <Return type="Boolean" description="当nSmsid被省略或使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="nSmsid" type="Number" in="false" out="false" option="false" variable="false" description="设定所存储的SMS中需要进行删除的消息的索引值。&#xD;&#xA;&#xD;&#xA;在使用readMessageList()方法返回的SMS列表中确认索引值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Sms的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="Sms.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Sms的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="Sms.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readMessageList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="用于返回存储在移动设备中的SMS列表的方法。">
+        <Syntax text="Sms.readMessageList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="recvStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="用于设定为在移动设备中接收到SMS时触发事件的方法。">
+        <Syntax text="Sms.recvStart()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="recvStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="用于停止通过recvStart()方法设定的事件触发功能的方法。">
+        <Syntax text="Sms.recvStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Sms的特定事件中删除句柄函数的方法。">
+        <Syntax text="Sms.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于在移动设备中为了传送文字消息而显示SMS创建画面的方法。">
+        <Syntax text="Sms.sendMessage([strNumber [,strMessage]])">
+          <Return type="Boolean" description="在参数中使用了不允许的字符时，将返回false。&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strMessage" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要发送给对方的消息。&#xD;&#xA;&#xD;&#xA;在省略值时，适用message属性值。" />
+            <Argument name="strNumber" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要发送消息的对方的电话号码。&#xD;&#xA;&#xD;&#xA;在省略值时，适用phonenumber属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Sms的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="Sms.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="cansendmessage" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在移动设备中传送SMS消息时触发的事件。">
+        <Syntax text="Sms.cansendmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回&quot;true&quot;时，将对消息进行传送。&#xD;&#xA;在事件中作为返回值返回“false”时，将不对消息进行传送。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeletemessage" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在对存储在移动设备中的SMS进行删除时触发的事件。">
+        <Syntax text="Sms.ondeletemessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在移动设备中的SMS相关处理失败时触发的事件。">
+        <Syntax text="Sms.onerror(obj:nexacro.Sms,e:nexacro.SmsErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onreadmessagelist" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在对存储在移动设备中的SMS列表进行查询时触发的事件。">
+        <Syntax text="Sms.onreadmessagelist(obj:nexacro.Sms,e:nexacro.SmsMessageListEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsMessageListEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvmessage" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在移动设备中接收SMS消息时触发的事件。">
+        <Syntax text="Sms.onrecvmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsendmessage" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在移动设备中传送SMS消息之后触发的事件。">
+        <Syntax text="Sms.onsendmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

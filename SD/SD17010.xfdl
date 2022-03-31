@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="752" titletext="예약소 별 보험대차 SP 사용자 관리">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Tab id="Tab00" taborder="0" tabindex="0" left="0" top="0" right="40" tabbuttongap="2" bottom="0">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="보험대차SP" url="SD::SD17010T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="일반지점원" url="SD::SD17010T02.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01" taborder="1" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="305" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_02" taborder="2" text="h35" top="35" cssclass="sta_Guide" width="100" left="680" height="30" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

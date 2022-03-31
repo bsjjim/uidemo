@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsEllipse">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsShape" classname="nexacro.GraphicsEllipse" shorttypename="GraphicsEllipse" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Graphics组件上显示圆形或椭圆形时使用的对象。" />
+    <PropertyInfo>
+      <Property name="fillstyle" group="Appearance" subgroup="" refreshinfo="" edittype="ChartFillStyle" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定填充到GraphicsEllipse的内部区域的形式以及颜色的属性。" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="height" group="Position" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsEllipse区域的垂直直径的属性。" csspropertyname="" normalpropertyname="height" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsEllipse的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsEllipse区域的透明度的属性。" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含GraphicsEllipse的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Appearance" subgroup="" refreshinfo="" edittype="Line" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定适用于GraphicsEllipse的轮廓线中的颜色以及形式的属性。" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsEllipse是否显示在画面中的属性。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="height" group="Position" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsEllipse区域的水平直径的属性。" csspropertyname="" normalpropertyname="height" />
+      <Property name="x" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定以父级对象为基准的需要显示GraphicsEllipse的x轴中心坐标值的属性。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定以父级对象为基准的需要显示GraphicsEllipse的y轴中心坐标值的属性。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从内存中彻底删除GraphicsEllipse的方法。">
+        <Syntax text="GraphicsEllipse.destroy()">
+          <Return type="Boolean" description="在GraphicsEllipse被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除GraphicsEllipse时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以Graphics组件为基准返回包含Border区域的显示GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getBoundRect( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsEllipse有Border时，所返回的区域信息中包含Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回父级与GraphicsEllipse相同的Graphics对象中的下一个对象的方法。">
+        <Syntax text="GraphicsEllipse.getNextSibling()">
+          <Return type="Object" description="返回父级相同的下一个Graphics对象。&#xD;&#xA;&#xD;&#xA;在没有下一个Graphics对象时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以父级对象为基准返回包含Border区域的显示GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getOffsetBoundRect( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsEllipse有Border时，所返回的区域信息中包含Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以父级对象为基准返回显示GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getOffsetRect( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;即使是在GraphicsEllipse有Border的情况下，也会与Border区域无关地返回GraphicsEllipse的实际区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以父级对象为基准且排除Border区域的显示GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getOffsetRegion( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsEllipse有Border时，所返回的区域信息中排除Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回父级与GraphicsEllipse相同的Graphics对象中的上一个对象的方法。">
+        <Syntax text="GraphicsEllipse.getPreviousSibling()">
+          <Return type="Object" description="返回父级相同的上一个Graphics对象。&#xD;&#xA;&#xD;&#xA;在没有上一个Graphics对象时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以Graphics组件基准返回GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getRect( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;即使是在GraphicsEllipse有Border的情况下，也会与Border区域无关地返回GraphicsEllipse的实际区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以Graphics组件为基准且排除Border区域的显示GraphicsEllipse的区域信息的方法。">
+        <Syntax text="GraphicsEllipse.getRegion( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsEllipse有Border时，所返回的区域信息中排除Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEmptyRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回是否在GraphicsEllipse中设定了区域的方法。">
+        <Syntax text="GraphicsEllipse.isEmptyRect()">
+          <Return type="Boolean" description="在GraphicsEllipse中没有设定区域时，将返回true。&#xD;&#xA;&#xD;&#xA;在GraphicsEllipse中设定了区域时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的坐标位置是否包含于GraphicsEllipse区域的方法。">
+        <Syntax text="GraphicsEllipse.isHitTest( nX, nY )">
+          <Return type="Boolean" description="在通过参数传递的坐标位置包含于GraphicsEllipse区域时，将返回true。&#xD;&#xA;&#xD;&#xA;在通过参数传递的坐标位置没有包含于GraphicsEllipse区域时，将返回false。" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要进行确认的位置的x坐标值。&#xD;&#xA;&#xD;&#xA;设定值将以Graphics组件为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要进行确认的位置的y坐标值。&#xD;&#xA;&#xD;&#xA;设定值将以Graphics组件为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsEllipse适用旋转效果的方法。">
+        <Syntax text="GraphicsEllipse.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要从当前状态旋转的角度。&#xD;&#xA;&#xD;&#xA;在设定为正数时，向顺时针方向旋转。&#xD;&#xA;在设定为负数时，向逆时针方向旋转。" />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为旋转中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为旋转中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsEllipse适用放大/缩小效果的方法。">
+        <Syntax text="GraphicsEllipse.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为放大/缩小中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为放大/缩小中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的横向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsEllipse将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsEllipse将被缩小。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的纵向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsEllipse将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsEllipse将被缩小。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定为了仅显示GraphicsEllipse的一部分区域而进行Clipping的区域坐标的方法。">
+        <Syntax text="GraphicsEllipse.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的高度。&#xD;&#xA;&#xD;&#xA;设定值将以nY参数值为基准进行处理。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的宽度。&#xD;&#xA;&#xD;&#xA;设定值将以nX参数值为基准进行处理。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的x坐标。&#xD;&#xA;&#xD;&#xA;设定值将GraphicsEllipse的x属性值的位置假定为0进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的y坐标。&#xD;&#xA;&#xD;&#xA;设定值将GraphicsEllipse的y属性值的位置假定为0进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以GraphicsEllipse的原始位置为基准连续适用Transform相关效果的方法。">
+        <Syntax text="GraphicsEllipse.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="利用“,”区分设定需要适用于GraphicsEllipse的Transform相关方法。&#xD;&#xA;可以使用translate()、scale()、rotate()、shear()方法。&#xD;&#xA;在设定为null值时，将以没有指定transform效果的状态进行初始化。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsEllipse适用扭曲效果的方法。">
+        <Syntax text="GraphicsEllipse.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为扭曲中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为扭曲中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以x轴为基准扭曲的角度。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以y轴为基准扭曲的角度。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串形态返回GraphicsEllipse的类型的方法。">
+        <Syntax text="GraphicsEllipse.toString();">
+          <Return type="String" description="通常返回&quot;[object GraphicsEllipse]&quot;形态的字符串。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsEllipse适用Transform相关效果的方法。">
+        <Syntax text="GraphicsEllipse.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的横向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsEllipse将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsEllipse将被缩小。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的纵向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsEllipse将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsEllipse将被缩小。" />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以x轴为基准扭曲的角度。" />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以y轴为基准扭曲的角度。" />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向x轴方向移动的距离。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向y轴方向移动的距离。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于适用GraphicsEllipse的位置移动效果的方法。">
+        <Syntax text="GraphicsEllipse.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向x轴方向移动的距离。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向y轴方向移动的距离。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

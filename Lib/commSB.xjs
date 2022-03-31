@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script version="1.0" type="xscript5.1"><![CDATA[/********************************************************************
+*  업무공통 스크립트 파일
+* 업무공통 스크립트는 반드시 화면에 include를 적용하여 사용
+* EX) include "Lib::commSB.xjs";
+*  @FileName 	: commSB.xjs
+*/
+
+
+/**
+* 녹취 리스트 조회(예시)
+* @param {string} sName - 이름
+* @param {string} sKunnr - sKunnr
+* @param {string} sCtrNo - sCtrNo
+* @param {string} sExten - sExten
+* @return N/A
+* @example 
+* this.lfn_comonIpnoLis(this);
+*/
+this.lfn_comonIpnoLis = function(sName,sKunnr,sCtrNo,sExten)
+{
+
+}
+]]></Script>

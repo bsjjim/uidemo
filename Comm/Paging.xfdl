@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CommPaging" width="476" height="26" titletext="페이징" onsize="CommPaging_onsize">
+    <Layouts>
+      <Layout height="26" width="476">
+        <Button id="btn01" taborder="0" text="1" left="80" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn02" taborder="1" text="2" left="112" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn03" taborder="2" text="3" left="144" top="0" width="28" height="26" cssclass="btn_WF_pagingS" visible="false"/>
+        <Button id="btn04" taborder="3" text="4" left="176" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn05" taborder="4" text="5" left="208" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn06" taborder="5" text="6" left="240" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn07" taborder="6" text="7" left="272" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn08" taborder="7" text="8" left="304" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn09" taborder="8" text="9" left="336" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btn10" taborder="9" text="10" left="368" top="0" width="28" height="26" cssclass="btn_WF_paging" visible="false"/>
+        <Button id="btnFirst" taborder="10" left="0" top="0" width="28" height="26" cssclass="btn_WF_pagingFirst" visible="false"/>
+        <Button id="btnPrev" taborder="11" left="32" top="0" width="28" height="26" cssclass="btn_WF_pagingPrev" visible="false"/>
+        <Static id="Static01_00_00_00_00" taborder="12" top="8" cssclass="sta_Guide" width="20" left="60" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Button id="btnNext" taborder="13" left="416" top="0" width="28" height="26" cssclass="btn_WF_pagingNext" visible="false"/>
+        <Button id="btnLast" taborder="14" left="448" top="0" width="28" height="26" cssclass="btn_WF_pagingLast" visible="false"/>
+        <Static id="Static01_00_00_00_00_00" taborder="15" top="8" cssclass="sta_Guide" width="20" left="396" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  페이징 컴포넌트
+*  @FileName 	: Paging.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/24
+*  @Desction    : 페이징 컴포넌트
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/24     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+this.fvPageLeft=0; 			// div가운데 위치시키기 위한 left값
+this.fvFnCallback = "";// 조회함수
+this.fvRecords=0;			// 목록수
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+    //공통 Onload함수
+    this.gfnFormOnLoad(obj);
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 사용자 FUNCTION 영역
+************************************************************************************************/
+// page초기화
+this.fnInitPage = function()
+{
+	if (this.isValidObject("divPage")) this.removeChild("divPage");
+};
+
+//nCreatePage page갯수에 맞게 버튼 생성
+this.fnCreatePage = function(sFnCallback, nTotalCount, nRecords, nPage, nPageCount)
+{
+	this.fvRecords = nRecords;		// 목록수
+	this.fvFnCallback = sFnCallback;	// 조회함수
+	var nTotalPageC; 					// 전체페이지갯수
+	
+	//전체페이지갯수 계산
+	if( Math.floor( nTotalCount % nRecords ) > 0 )
+	{
+        nTotalPageC = Math.floor( nTotalCount / nRecords ) + 1;
+    }else 
+    {
+        nTotalPageC = Math.floor( nTotalCount / nRecords );
+    }
+	
+    // 실제 페이지 갯수는 MAX 10개로 조정
+	var nPageScaleC = 10;
+
+	var nTermBtn = 2;		 //버튼사이
+    var nTerm = 14;   		 //큰버튼과 숫자사이
+    var nTernLastNum = 12; 	 //마지막숫자버튼과 뒤로버튼사이
+    
+	var nLeft = 3;
+	var nTop = 1;
+    var nWidth = 28;
+    var nNumWidth = 28;
+    var nHeight = 26;
+    
+    var objBtnPage;
+    var sPageView = this.pageview;
+      
+    if (this.gfnIsNull(sPageView)) 	 sPageView = "all";
+    if (this.gfnIsNull(nRecords)) 	 nRecords = 50;
+    if (this.gfnIsNull(nPage)) 		 nPage = 0;
+    if (this.gfnIsNull(nPageScaleC)) nPageScaleC = 10;
+    if( nPageScaleC > 10 ) nPageScaleC = 10;
+    
+    //DIV 초기화
+    if (this.isValidObject("divPage"))
+	{
+		this.divPage.destroy(); 
+		this.removeChild("divPage");
+    }
+    
+    this.set_scrollbartype("none");
+    nPage = nPage + 1;
+	
+	//현재페이지
+    var uint = Math.floor( ( nexacro.toNumber( nPage ) - 1 ) / nexacro.toNumber( nPageScaleC ) );
+        uint = ( uint * nPageScaleC ) + 1;      
+   //다음페이지
+    var nextUnit = nexacro.toNumber( uint + nPageScaleC );
+	if( nextUnit > nTotalPageC) nextUnit = nTotalPageC + 1;
+	
+	//div생성
+    var objDivPaging = new Div();
+	objDivPaging.init("divPage", 0, 0, 800, 28, null, null);
+    this.addChild(objDivPaging.name, objDivPaging);
+    objDivPaging.show();    
+/*     var objDivPaging = this.divPage;*/
+    //컨트롤버튼생성
+    if (sPageView == "all" || sPageView == "number")
+    {
+        
+		/************************************************************************
+		 * 첫페이지(<<) 버튼생성
+		 ************************************************************************/
+		var objBtnFirst = new Button("btnFirst", nLeft, nTop, nWidth, nHeight, null, null);   
+		objDivPaging.addChild(objBtnFirst.name, objBtnFirst);
+		objBtnFirst.set_cssclass("btn_WF_pagingFirst");
+		//objBtnFirst.set_text("<<");
+		objBtnFirst.page = 1;
+		objBtnFirst.addEventHandler("onclick", this.fnMovePage, this);
+		objBtnFirst.set_enable(true);
+		
+		// 현재페이지가 '1'이면 비활성화
+		if( nPage == 1 ) objBtnFirst.set_enable(false);
+		objBtnFirst.show();
+		nLeft = nLeft + nWidth + nTermBtn;	//left값 계산	
+		
+
+		/************************************************************************
+		 * 앞으로(<) 버튼생성
+		 ************************************************************************/
+		var objBtnBefore = new Button("btnBefore", nLeft, nTop, nWidth, nHeight, null, null);   
+		objDivPaging.addChild(objBtnBefore.name, objBtnBefore);
+		objBtnBefore.set_cssclass("btn_WF_pagingPrev");
+		//objBtnBefore.set_text("<");
+		objBtnBefore.page = nPage - 1;
+		objBtnBefore.addEventHandler("onclick", this.fnMovePage, this);	
+		objBtnBefore.set_enable(true);
+		// 현재페이지가 '1'이면 비활성화
+		if( nPage == 1) objBtnBefore.set_enable(false);
+		nLeft = nLeft + nWidth + nTerm;	//left값 계산
+		objBtnBefore.show();
+		
+		/************************************************************************
+		 *페이징[1 2 3 4 5 6 7 8 9 10] 버튼생성
+		 ************************************************************************/
+		for(var i=uint; i<nextUnit; i++ )
+		{         
+			if(i > nTotalPageC ) break; //페이지갯수만큼만 생성
+			
+			objBtnPage = new Button("btnPage"+i,  nLeft, nTop, nNumWidth, nHeight, null, null);   
+			objDivPaging.addChild(objBtnPage.name, objBtnPage);
+			objBtnPage.set_cssclass("btn_WF_paging");
+			objBtnPage.set_text(i);
+			objBtnPage.page = i;
+			objBtnPage.addEventHandler("onclick", this.fnMovePage, this);
+		
+			if(i == nPage) objBtnPage.set_cssclass("btn_WF_pagingS"); //누름표시
+			objBtnPage.show();
+			
+			nLeft = nLeft + nNumWidth + nTermBtn; //left값 계산
+		}    
+		nLeft = nLeft + nTernLastNum;//left값 계산
+		/************************************************************************
+		 * 뒤로(>) 버튼생성
+		 ************************************************************************/
+		var objBtnNext = new Button("btnNext", nLeft, nTop, nWidth, nHeight, null, null);   
+		objDivPaging.addChild(objBtnNext.name, objBtnNext);
+		objBtnNext.set_cssclass("btn_WF_pagingNext");
+		//objBtnNext.set_text(">");
+		objBtnNext.addEventHandler("onclick", this.fnMovePage, this);
+		objBtnNext.set_enable(true);
+		objBtnNext.page = nPage +1;
+		//현재페이지가 전체페이지갯수만큼이면 비활성화
+		if( nPage >= nTotalPageC) objBtnNext.set_enable(false);
+		objBtnNext.show();
+		nLeft = nLeft + nWidth + nTermBtn; //left값 계산
+		
+		/************************************************************************
+		 * 마지막페이지(>>) 버튼생성
+		 ************************************************************************/	
+		var objBtnEnd = new Button("btnEnd", nLeft, nTop, nWidth, nHeight, null, null);   
+		objDivPaging.addChild(objBtnEnd.name, objBtnEnd);
+		objBtnEnd.set_cssclass("btn_WF_pagingLast");
+		//objBtnEnd.set_text(">>");
+		objBtnEnd.addEventHandler("onclick", this.fnMovePage, this);
+		objBtnEnd.page = nTotalPageC;
+		//현재페이지가 전체페이지갯수만큼이면 비활성화
+		if( nPage == nTotalPageC) objBtnEnd.set_enable(false);
+		objBtnEnd.show();
+		nLeft = nLeft + nWidth ;	//left값 계산
+	}
+		
+	//생성된 컴포넌트 갯수에 따른 div의 Width 조절
+	objDivPaging.set_width(nLeft + 6);
+	
+	//가운데로
+	this.fvPageLeft = ((800 - nLeft) / 2);
+	this.fnSetCenter(this);
+};
+
+// page이동함수
+this.fnMovePage = function(obj)
+{
+	var nPage = nexacro.toNumber(obj.page)-1; 						//누른페이지
+	var nRecordOffset = nPage * nexacro.toNumber(this.fvRecords);	//시작데이터rownum계산
+	//callback함수호출
+	this.lookupFunc(this.fvFnCallback).call(nPage,nRecordOffset);
+};
+
+// pagingDiv가 가운데오도록
+this.fnSetCenter = function(obj)
+{
+	var orgLeft = this.fvPageLeft;
+	var orgWidth = 800;	
+	var diffWidth = nexacro.toNumber(obj.getOffsetWidth()) - orgWidth;
+	
+ 	this.divPage.move((parseFloat(orgLeft) + parseFloat(diffWidth/2)),5);
+};
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+// CommPaging_onsize page size가 변경될때 호출
+
+this.CommPaging_onsize = function(obj:nexacro.Form,e:nexacro.SizeEventInfo)
+{
+	//가운데로
+	if (this.fvFnCallback != "") this.fnSetCenter(obj);	
+};
+]]></Script>
+  </Form>
+</FDL>

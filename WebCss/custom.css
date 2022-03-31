@@ -1,0 +1,184 @@
+/* 
+  Custom Styles 
+  브라우저에서만 적용됩니다.
+  custom.css 를 별도로 업로드해야 합니다.
+*/
+
+/*Static 텍스트 잘림 방지*/
+.Static {
+	overflow: visible;
+}
+
+.MainFrame .Div.div_group,
+.MainFrame .Div.div_footer{
+  background: #ffffff;
+}
+
+/* input 요소가 readonly 일 때 border 및 padding 제거 */
+
+.MainFrame #nexacontainer .MaskEdit[status=readonly],
+.MainFrame #nexacontainer .Edit[status=readonly],
+.MainFrame #nexacontainer .TextArea[status=readonly],
+.MainFrame #nexacontainer .Spin[status=readonly],
+.MainFrame #nexacontainer .Combo[status=readonly],
+.MainFrame #nexacontainer .Calendar[status=readonly] {
+  border: 1px dashed transparent;
+}
+
+.MainFrame #nexacontainer .MaskEdit[status=readonly] .nexainput,
+.MainFrame #nexacontainer .Edit[status=readonly] .nexainput,
+.MainFrame #nexacontainer .TextArea[status=readonly] .nexainput,
+.MainFrame #nexacontainer .Spin .spinedit[status=readonly] .nexainput,
+.MainFrame #nexacontainer .Combo .comboedit[status=readonly] .nexainput,
+.MainFrame #nexacontainer .Calendar .calendaredit[status=readonly] .nexainput {
+  padding: 0;
+}
+
+.Spin[status=readonly] .spinupbutton, 
+.Spin[status=readonly] .spindownbutton,
+.Combo[status=readonly] .dropbutton,
+.Calendar[status=readonly] .dropbutton {
+  display: none;
+}
+
+
+/* 조회영역 접기/펼치기 */
+.nexacontainer .Div.div_SA_collapse::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  background: #f5f7f9;
+}
+
+.btn_SA_src {
+	z-index: 1;
+}
+
+/* 그리드 소계 셀 타이틀 가운데 정렬 */
+.cell_sub_summ .nexaleftalign  {
+	text-align: center !important;
+}
+
+
+
+/*탭 스타일 개선*/
+#nexacontainer .tabbuttonitemTab[userstatus=selected] {
+  text-shadow: 0 0 1px rgba(0, 0, 0,0.6);
+}
+
+#nexacontainer .Tab.tab_WF_second .TabButtonItemControl::after {
+  content: '';
+  width: 1px;
+  height: 17px;
+  background: #c4c4c4;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+#nexacontainer .Tab.tab_WF_second .TabButtonItemControl:nth-last-child(3)::after {
+  content: none;
+}
+
+/* LNB 트리 디자인 커스터마이징 */
+.grd_LF_Menu .treeitembutton {
+  left: 170px !important;
+ /* z-index: 99;*/
+}
+
+.grd_LF_Menu .treeitemimage {
+  transform: translateX(-17px);
+}
+
+.grd_LF_Menu .treeitemtext {
+  transform: translateX(-17px);
+}
+
+/* 트리아이템 ellipsis 처리 */
+.grd_LF_Menu .treeitemtext .nexacontentsbox {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    line-height: 30px;
+}
+
+/* Step */
+.btn_WF_step, .btn_WF_step_done, .btn_WF_stepS, .btn_WF_step_lastS {
+	overflow: visible;
+}
+
+.btn_WF_step::after, .btn_WF_step_done::after, .btn_WF_stepS::after, .btn_WF_step_lastS::after {
+	content: '';
+	width: 44px;
+	height: 44px;
+	background: #EBECED;
+	border-right: 1px solid #B4B6BB;
+	border-top: 1px solid #B4B6BB;
+	border-radius: 6px;
+	position: absolute;
+	right:-12px;
+	top: -1px;
+	transform-origin: center;
+	transform: rotate(45deg);
+}
+
+.btn_WF_stepS::after, .btn_WF_step_lastS::after {
+	background:#666;
+}
+
+/* 셀테스트 
+#nexacontainer .grid_test .cellcalendar, #nexacontainer .grid_test .cellcalendar[status="mouseover"],
+#nexacontainer .grid_test .cellcombo, #nexacontainer .grid_test .cellcombo[status="mouseover"],
+#nexacontainer .grid_test .celledit, #nexacontainer .grid_test .celledit[status="mouseover"]{
+	border: 1px solid transparent !important;
+	background: transparent !important;
+}
+
+#nexacontainer .grid_test [userstatus="selected"] .cellcalendar[status="focused"], 
+#nexacontainer .grid_test [userstatus="selected"] .cellcalendar[status="focused"][status="mouseover"],
+#nexacontainer .grid_test [userstatus="selected"] .cellcombo[status="focused"], 
+#nexacontainer .grid_test [userstatus="selected"] .cellcombo[status="focused"][status="mouseover"],
+#nexacontainer .grid_test [userstatus="selected"] .celledit[status="focused"], 
+#nexacontainer .grid_test [userstatus="selected"] .celledit[status="focused"][status="mouseover"]{
+	border: 1px solid red !important;
+	background: #ffffff !important;
+}
+
+
+#nexacontainer .grid_test .celledit, #nexacontainer .grid_test .celledit {
+	background-image: url(/_resource_/_theme_/nxui/images/ico_flag_mod.png) !important;
+	background-position: right 10px center !important;
+	background-repeat: no-repeat !important;
+}
+*/
+
+.sta_WF_gridCountNum {
+white-space: nowrap;
+}
+
+
+/* LNB Show/hide 버튼 보이도록 처리 */
+
+.frm_left, 
+.frm_left > #nexacontainer,
+.frm_left, .frm_left > #nexacontainer > .Form, 
+.frm_left > #nexacontainer > .Form > .nexacontainer{
+	overflow: visible;
+}
+
+
+.frm_left {
+	z-index: 200 !important;
+}
+.btn_LF_show, .btn_LF_hide {
+	z-index: 9999;
+}
+
+/* MaskEdit String 타입 넥사크로 툴과 브라우저에서 align 다르게 나오는 버그 수정*/
+.MaskEdit .nexainput.nexaleftalign {
+	text-align: left;
+}

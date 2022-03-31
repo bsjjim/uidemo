@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="752" titletext="탭">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="1뎁스 탭과 여백규정" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static01_00_00_01_00_00_03" taborder="1" text="h35" top="0" cssclass="sta_Guide" width="100" left="473" height="35" visible="false"/>
+        <Tab id="Tab00" taborder="2" tabindex="0" left="0" top="35" height="350" right="40" initvalueid="iv_Tab_1Depth">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="탭 내 조회" url="UI_Guide::Comp_05_01.xfdl"/>
+            <Tabpage id="Tabpage2" text="타이틀/버튼영역이 있을 경우" url="UI_Guide::Comp_05_02.xfdl"/>
+            <Tabpage id="Tabpage3" text="타이틀/버튼영역이 없을 경우" url="UI_Guide::Comp_05_03.xfdl"/>
+            <Tabpage id="Tabpage4" text="탭 내 스크롤이 생길 경우" url="UI_Guide::Comp_05_04.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static45_00_00_01_00" taborder="3" text="2뎁스 탭" left="0" top="418" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Tab id="Tab00_00" taborder="4" tabindex="0" left="0" top="451" height="350" right="40" initvalueid="iv_Tab_2Depth">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="탭 내 조회" url="UI_Guide::Comp_05_01.xfdl"/>
+            <Tabpage id="Tabpage2" text="타이틀/버튼영역이 있을 경우" url="UI_Guide::Comp_05_02.xfdl"/>
+            <Tabpage id="Tabpage3" text="타이틀/버튼영역이 없을 경우" url="UI_Guide::Comp_05_03.xfdl"/>
+            <Tabpage id="Tabpage4" text="탭 내 스크롤이 생길 경우" url="UI_Guide::Comp_05_04.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01" taborder="5" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="305" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_02" taborder="6" text="h35" top="35" cssclass="sta_Guide" width="100" left="680" height="30" visible="false"/>
+        <Static id="Static05_00_00_01_00_00" taborder="7" text="※ initvaluid = iv_Tab_1Depth" usedecorate="true" left="162" top="10" width="437" height="18" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static05_00_00_01_00_00_00" taborder="8" text="※ initvaluid = iv_Tab_2Depth (여백규정은 1뎁스와 동일)" usedecorate="true" left="77" top="421" width="437" height="18" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

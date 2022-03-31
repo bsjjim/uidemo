@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDownloadEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDownloadEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="EventInfo" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="被传递到在利用FileDownload组件成功下载文件时所触发的事件中的EventInfo对象。" />
+    <PropertyInfo>
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含事件ID的只读属性。" csspropertyname="" normalpropertyname="eventid" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含作为事件触发原因的组件的属性。" csspropertyname="" normalpropertyname="fromobject" />
+      <Property name="fromreferenceobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含作为事件触发原因的组件或子控件的属性。" csspropertyname="" normalpropertyname="fromreferenceobject" />
+      <Property name="targetfullpath" group="" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含所下载的文件的整体路径值的属性。" csspropertyname="" normalpropertyname="targetfullpath" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含需要下载的文件的URL值的属性。" csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

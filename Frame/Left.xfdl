@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Left" width="290" height="852" titletext="New Form" scrolltype="none" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="852" width="290">
+        <Grid id="grdLeft" taborder="11" top="5" width="200" cssclass="grd_LF_Menu" autofittype="col" autosizingtype="none" extendsizetype="row" binddataset="dsMenu" treeinitstatus="expand,all" treeusecheckbox="false" treeuseimage="true" treeuseline="false" oncellclick="div_left_grd_menu_oncellclick" mouseovertype="cell" scrolltype="vertical" scrollbartype="none fixed" scrollbarsize="10" right="8" bottom="5">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="216"/>
+              </Columns>
+              <Rows>
+                <Row size="30"/>
+              </Rows>
+              <Band id="body">
+                <Cell text="bind:MENUNM" displaytype="treeitemcontrol" edittype="tree" treelevel="bind:MENULV" autosizerow="limitmin" wordWrap="char" cssclass="expr:comp.parent.fnGridSetCss(currow);" treestartlevel="2"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static00" taborder="8" left="0" top="0" width="70" bottom="0" cssclass="sta_LF_menuBg"/>
+        <Button id="btnLeft01" taborder="0" text="My&#13;&#10;Menu" left="0" top="1" width="70" height="60" onclick="btnLeft_onclick" cssclass="btn_LF_menu" menuId="MYCONTENTS"/>
+        <Button id="btnLeft02" taborder="1" text="고객" left="0" top="61" width="70" height="60" cssclass="btn_LF_menu" menuId="F10" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft03" taborder="2" text="자산" left="0" top="121" width="70" height="60" cssclass="btn_LF_menu" menuId="F20" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft04" taborder="3" text="영업" left="0" top="181" width="70" height="60" cssclass="btn_LF_menu" menuId="F30" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft05" taborder="4" text="구매" left="0" top="241" width="70" height="60" cssclass="btn_LF_menu" menuId="F40" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft06" taborder="5" text="채권" left="0" top="301" width="70" height="60" cssclass="btn_LF_menu" menuId="F50" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft07" taborder="6" text="서비스" left="0" top="361" width="70" height="60" cssclass="btn_LF_menu" menuId="F60" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft08" taborder="7" text="HR" left="0" top="421" width="70" height="60" cssclass="btn_LF_menu" menuId="F80" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft09" taborder="9" text="재무" left="0" top="481" width="70" height="60" cssclass="btn_LF_menu" menuId="F90" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft10" taborder="10" text="System" left="0" top="541" width="70" height="60" cssclass="btn_LF_menu" menuId="SYS" onclick="btnLeft_onclick"/>
+        <Button id="btnLeft11" taborder="12" text="UI&#13;&#10;Guide" left="0" top="601" width="70" height="60" cssclass="btn_LF_menu" menuId="XX0" onclick="btnLeft_onclick"/>
+        <Button id="btnLf" taborder="13" top="390" width="20" height="73" cssclass="btn_LF_show" onclick="btnLf_onclick" left="grdLeft:8"/>
+        <Button id="Button00_02" taborder="14" text="Menu&#13;&#10;Normal" left="440" top="80" width="70" height="60" onclick="Button00_onclick" cssclass="btn_LF_menu" visible="false"/>
+        <Button id="Button00_02_00" taborder="15" text="Menu&#13;&#10;Selected" left="440" top="150" width="70" height="60" onclick="Button00_onclick" cssclass="btn_LF_menuS" visible="false"/>
+        <Static id="Static01" taborder="16" left="0" top="0" height="2" background="linear-gradient(to bottom,rgba(0,0,0,0.15) 0%,transparent 100%)" right="0"/>
+        <Button id="Button00_01_00_00" taborder="17" left="355" top="390" width="20" height="73" onclick="Button00_onclick" visible="false" cssclass="btn_LF_show"/>
+        <Static id="Static02" taborder="18" top="0" width="2" background="#000000" right="0" bottom="0"/>
+        <Static id="Static01_00_00_01_00_00_00" taborder="19" text="15" top="71" cssclass="sta_Guide" width="15" left="70" height="65" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_00_00" taborder="20" text="15" top="111" cssclass="sta_Guide" width="15" left="273" height="65" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_00_00_00" taborder="21" text="5" top="201" cssclass="sta_Guide" width="5" left="283" height="65" visible="false"/>
+        <Static id="sta00" taborder="22" top="14" width="40" height="35" background="#e9e9e9" right="-150" border="0px none, 0px none, 1px solid #d3d3d3, 0px none" visible="false"/>
+        <Static id="Static01_00" taborder="23" top="0" height="2" background="linear-gradient(to bottom,rgba(0,0,0,0.15) 0%,transparent 100%)" right="0" width="40" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  레프트 메뉴 영역 화면
+*  @FileName 	: Left.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/13
+*  @Desction    : 레프트 메뉴 영역 화면
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/13     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+   this.btnLeft11.click();
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+ this.fnGridSetCss = function(nRow)
+ {
+     var nMenuLv = parseInt(this.dsMenu.getColumn(nRow,this.jvMenuLv));
+	 
+	 var rtnVal = "";
+	
+	 switch(nMenuLv)
+	 {
+	     case 2 : rtnVal = "cell_LF_Depth1"; break;
+		 case 3 : rtnVal = "cell_LF_Depth2"; break;
+		default : rtnVal = ""; break;
+	 }
+	 
+	 return rtnVal;
+ }
+ 
+
+ /************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+ ************************************************************************************************/
+this.div_left_grd_menu_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+
+// 	var sApp = nexacro.getApplication();
+// 	var objFrame = sApp.mainframe.VFrameSet1.HFrameSet.VFrameSet2.FrameSet.WorkFrame;
+// 	var srtUrl = this.ds_SubMenu.getColumn(e.row, "FormUrl");
+// 	var srtTitle = this.ds_SubMenu.getColumn(e.row, "MenuName");
+// 	console.log("srtTitle", objFrame.form.CommHeader.form.Title)
+// 
+// 	if (srtUrl) objFrame.form.divWork.set_url(srtUrl);
+// 	if (srtTitle) objFrame.form.CommHeader.form.Title.set_text(srtTitle);
+// 	objFrame.form.CommHeader.form.resetScroll();
+    var sMenuId = this.dsMenu.getColumn(e.row,this.jvMenuId);
+	
+	this.gfnCall(sMenuId);
+
+};
+
+
+this.btnLf_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    if(obj.cssclass == "btn_LF_hide")
+    {
+    	obj.set_cssclass("btn_LF_show");
+		this.oApp.mainframe.VFrameSet1.HFrameSet.set_separatesize("70,*");
+		this.grdLeft.set_visible(false);
+    }
+    else
+    {
+    	obj.set_cssclass("btn_LF_hide");
+		this.oApp.mainframe.VFrameSet1.HFrameSet.set_separatesize("290,*");    	
+		this.grdLeft.set_visible(true);
+    }
+};
+
+this.btnLeft_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(obj.cssclass == "btn_LF_menuS") return;
+	
+	var sBtnId = "";
+	for(var i=1; i<12; i++)
+	{
+	    sBtnId = "btnLeft"+i.toString().padLeft(2, '0');
+	    this.components[sBtnId].set_cssclass("btn_LF_menu");
+	}
+	
+	obj.set_cssclass("btn_LF_menuS");
+	
+	
+	this.dsMenu.clearData();
+	
+	this.oApp.gdsMenu.filter("UPR_ID.indexOf('"+obj.menuId+"') > -1 && MENULV != 1");
+	
+	this.dsMenu.copyData(this.oApp.gdsMenu,true);
+	
+	this.oApp.gdsMenu.filter("");
+	this.dsMenu.updateSortGroup("S:-LUPORD");
+	if(this.btnLf.cssclass == "btn_LF_show") this.btnLf.click();
+};
+
+]]></Script>
+    <Objects>
+      <Dataset id="ds_SubMenu" firefirstcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Level" type="STRING" size="256"/>
+          <Column id="MenuName" type="STRING" size="256"/>
+          <Column id="FormUrl" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Level">0</Col>
+            <Col id="MenuName">컴포넌트</Col>
+            <Col id="FormUrl"/>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Stiatc, Information</Col>
+            <Col id="FormUrl">UI_Guide::Comp_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">폼요소 - Edit 등</Col>
+            <Col id="FormUrl">UI_Guide::Comp_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Button</Col>
+            <Col id="FormUrl">UI_Guide::Comp_03.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Grid - 사이즈규정</Col>
+            <Col id="FormUrl">UI_Guide::Comp_04_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Grid - 컬럼별 텍스트정렬과 기준너비</Col>
+            <Col id="FormUrl">UI_Guide::Comp_04_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Grid - 편집모드,  셀클래스</Col>
+            <Col id="FormUrl">UI_Guide::Comp_04_03.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Grid - 셀클래스, 포인트컬러</Col>
+            <Col id="FormUrl">UI_Guide::Comp_04_04.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Tab</Col>
+            <Col id="FormUrl">UI_Guide::Comp_05.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">ETC - Progress 등</Col>
+            <Col id="FormUrl">UI_Guide::Comp_06.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">0</Col>
+            <Col id="MenuName">영역별 레이아웃</Col>
+            <Col id="FormUrl"/>
+          </Row>
+          <Row>
+            <Col id="MenuName">조회영역 - 클래스, 유형</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_01_01.xfdl</Col>
+            <Col id="Level">1</Col>
+          </Row>
+          <Row>
+            <Col id="MenuName">조회영역 - 영역 내 간격</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_01_02.xfdl</Col>
+            <Col id="Level">1</Col>
+          </Row>
+          <Row>
+            <Col id="MenuName">테이블 - 클래스, 포인트컬러</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_02_01.xfdl</Col>
+            <Col id="Level">1</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">테이블 - 입력형/출력형</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_02_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">테이블 - 데이터 입력 표준</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_02_03.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">스텝</Col>
+            <Col id="FormUrl">UI_Guide::LayOut_03_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">0</Col>
+            <Col id="MenuName">템플릿</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드</Col>
+            <Col id="FormUrl">UI_Template::Temp01_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드(상하배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드(좌우배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_03.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드+상세(상하배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_04.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드+상세(좌우배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_05.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드+상세(좌우7:3)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_06.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+그리드+탭(좌우배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_07.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+상세(하프-좌배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_08.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+상세(더블-좌우배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp01_09.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">조회+탭</Col>
+            <Col id="FormUrl">UI_Template::Temp02_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">탭 내 조회</Col>
+            <Col id="FormUrl">UI_Template::Temp02_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">스텝</Col>
+            <Col id="FormUrl">UI_Template::Temp03_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Shuttle(좌우배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp04_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">Shuttle(상하배치)</Col>
+            <Col id="FormUrl">UI_Template::Temp04_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">영역확장/축소 - 조회영역</Col>
+            <Col id="FormUrl">UI_Template::Temp05_01.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">영역확장/축소 - 좌우확장</Col>
+            <Col id="FormUrl">UI_Template::Temp05_02.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">영역확장/축소 - 상하확장</Col>
+            <Col id="FormUrl">UI_Template::Temp05_03.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="MenuName">영역확장/축소 - 영역접기</Col>
+            <Col id="FormUrl">UI_Template::Temp05_04.xfdl</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsMenu">
+        <ColumnInfo>
+          <Column id="SYS_CD" type="STRING" size="20"/>
+          <Column id="MENUID" type="STRING" size="20"/>
+          <Column id="MENUNO" type="STRING" size="4"/>
+          <Column id="MENUNM" type="STRING" size="75"/>
+          <Column id="UPR_ID" type="STRING" size="20"/>
+          <Column id="UPR_NM" type="STRING" size="75"/>
+          <Column id="MENUTY" type="STRING" size="9"/>
+          <Column id="MENUDC" type="STRING" size="9"/>
+          <Column id="MENULV" type="BIGDECIMAL" size="22"/>
+          <Column id="MOD_ID" type="STRING" size="20"/>
+          <Column id="ALL_PH" type="STRING" size="255"/>
+          <Column id="USETIP" type="STRING" size="100"/>
+          <Column id="M_DES" type="STRING" size="255"/>
+          <Column id="LUPORD" type="BIGDECIMAL" size="22"/>
+          <Column id="MUL_YN" type="STRING" size="1"/>
+          <Column id="USE_YN" type="STRING" size="1"/>
+          <Column id="FIX_YN" type="STRING" size="1"/>
+          <Column id="LOG_YN" type="STRING" size="1"/>
+          <Column id="CLA_NM" type="STRING" size="255"/>
+          <Column id="ERNAM" type="STRING" size="12"/>
+          <Column id="ERDAT" type="DATE" size="8"/>
+          <Column id="AENAM" type="STRING" size="12"/>
+          <Column id="AEDAT" type="DATE" size="8"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="dsMenuTemp">
+        <ColumnInfo>
+          <Column id="SYS_CD" type="STRING" size="20"/>
+          <Column id="MENUID" type="STRING" size="20"/>
+          <Column id="MENUNO" type="STRING" size="4"/>
+          <Column id="MENUNM" type="STRING" size="75"/>
+          <Column id="UPR_ID" type="STRING" size="20"/>
+          <Column id="UPR_NM" type="STRING" size="75"/>
+          <Column id="MENUTY" type="STRING" size="9"/>
+          <Column id="MENUDC" type="STRING" size="9"/>
+          <Column id="MENULV" type="BIGDECIMAL" size="22"/>
+          <Column id="MOD_ID" type="STRING" size="20"/>
+          <Column id="ALL_PH" type="STRING" size="255"/>
+          <Column id="USETIP" type="STRING" size="100"/>
+          <Column id="M_DES" type="STRING" size="255"/>
+          <Column id="LUPORD" type="BIGDECIMAL" size="22"/>
+          <Column id="MUL_YN" type="STRING" size="1"/>
+          <Column id="USE_YN" type="STRING" size="1"/>
+          <Column id="FIX_YN" type="STRING" size="1"/>
+          <Column id="LOG_YN" type="STRING" size="1"/>
+          <Column id="CLA_NM" type="STRING" size="255"/>
+          <Column id="ERNAM" type="STRING" size="12"/>
+          <Column id="ERDAT" type="DATE" size="8"/>
+          <Column id="AENAM" type="STRING" size="12"/>
+          <Column id="AEDAT" type="DATE" size="8"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

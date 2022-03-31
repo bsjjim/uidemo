@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="마스터관리" onload="temp01_onload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="DivSearch" taborder="0" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="사업" left="20" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="1" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_01" taborder="2" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="3" text="h11" cssclass="sta_Guide" width="50" visible="false" right="32" bottom="0" height="11"/>
+              <Static id="Static01_00" taborder="4" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00_00_01" taborder="5" text="10" top="4" cssclass="sta_Guide" width="10" left="52" height="50" visible="false"/>
+              <Edit id="Edit00_01_00_01_01_00_01_00" taborder="6" left="62" top="18" height="24" text="전략기획팀" width="155"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" right="40" bottom="48">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00_01_00_00_03_01" taborder="3" text="15" top="13" cssclass="sta_Guide" width="15" left="1381" height="35" visible="false"/>
+              <Static id="Static00" taborder="0" text="타이틀영역" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="재무계정코드"/>
+                      <Cell col="2" text="재무계정명"/>
+                      <Cell col="3" text="계획계정명"/>
+                      <Cell col="4" text="계획계정명LV1"/>
+                      <Cell col="5" text="계획계정명LV2"/>
+                      <Cell col="6" text="계획계정명LV3"/>
+                      <Cell col="7" text="계획계정명LV4"/>
+                      <Cell col="8" text="계획계정코드"/>
+                      <Cell col="9" text="계획개정LV1"/>
+                      <Cell col="10" text="계획개정LV2"/>
+                      <Cell col="11" text="계획개정LV3"/>
+                      <Cell col="12" text="계획개정LV4"/>
+                      <Cell col="13" text="사업유형명"/>
+                      <Cell col="14" text="사업유형코드"/>
+                      <Cell col="15" text="상품LV1명"/>
+                      <Cell col="16" text="상품LV2명"/>
+                      <Cell col="17" text="상품코드"/>
+                      <Cell col="18" text="상품LV1"/>
+                      <Cell col="19" text="상품LV2"/>
+                      <Cell col="20" text="귀속/배부"/>
+                      <Cell col="21" text="간접비월별배부"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1" cssclass="cell_link"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3" textAlign="left"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                      <Cell col="21"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="4" text="6" top="44" cssclass="sta_Guide" width="100" left="1388" height="6" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="5" text="12" top="38" cssclass="sta_Guide" width="100" left="1338" height="12" visible="false"/>
+              <Static id="Static01_00_00_01_00_00" taborder="6" text="11" top="39" cssclass="sta_Guide" width="100" left="0" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01" taborder="7" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="48"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00" taborder="8" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+              <Static id="Static02_02_00" taborder="9" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="105"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_01" taborder="10" text="4" top="14" cssclass="sta_Guide" width="4" left="1369" height="35" visible="false"/>
+              <Static id="Static02_00" taborder="11" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="120"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="2" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static01_00_00_00_00_00" taborder="3" text="h48" cssclass="sta_Guide" width="100" left="849" visible="false" bottom="0" height="48"/>
+        <Div id="div00" taborder="4" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="divGridWapper:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_01" taborder="0" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+              <Button id="Button00_00" taborder="1" text="저장" top="10" width="64" height="28" cssclass="btn_Comm_func" right="1"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[    
+this.DivSearch_Static01_00_00_00_02_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

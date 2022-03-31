@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp03" width="1528" height="752" titletext="보조금 현황 조회">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Tab id="Tab00" taborder="0" tabindex="0" left="0" top="0" right="40" bottom="48" tabbuttongap="2">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="지역.차종별 보조금현황" url="SD::SD17080T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="지역별 보조금현황" url="SD::SD17080T02.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01_00" taborder="1" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="57" visible="false"/>
+        <Div id="div00" taborder="2" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="Tab00:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00" taborder="0" text="영업정책업로드" width="128" height="28" cssclass="btn_Comm_func" top="10" right="144"/>
+              <Button id="Button00_00_00" taborder="1" text="영업정책 다운로드" width="140" height="28" cssclass="btn_Comm_func" top="10" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="3" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+              <Button id="Button00_01" taborder="4" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+              <Static id="Static01_00_01_00_00_00_00" taborder="5" text="10" cssclass="sta_Guide" width="50" visible="false" height="10" left="0" top="0"/>
+              <Static id="Static01_00_01_00_00_00_00_00" taborder="6" text="10" cssclass="sta_Guide" width="50" visible="false" height="10" left="0" bottom="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[     ]]></Script>
+  </Form>
+</FDL>

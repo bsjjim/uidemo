@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp03" width="1528" height="752" titletext="마이메뉴관리">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="Div01" taborder="1" text="Div01" left="0" top="63" width="47.05%" cssclass="div_group" bottom="48">
+          <Layouts>
+            <Layout>
+              <Grid id="Grid00" taborder="0" left="0" top="50" binddataset="ds_grid" bottom="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="40" band="left"/>
+                      <Column size="100"/>
+                      <Column size="200"/>
+                      <Column size="301"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="전체" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2" text="메뉴ID "/>
+                      <Cell col="3" text="메뉴명"/>
+                      <Cell col="4" text="분류"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:No"/>
+                      <Cell col="1" text="bind:전체" edittype="checkbox" displaytype="checkboxcontrol"/>
+                      <Cell col="2" text="bind:메뉴ID"/>
+                      <Cell col="3" text="bind:메뉴명" textAlign="left"/>
+                      <Cell col="4" text="bind:분류" textAlign="left"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static00" taborder="1" text="메뉴목록" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="2" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="3" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Static id="Static02" taborder="4" text="" top="18" width="60" height="24" cssclass="sta_WF_gridCount" right="1"/>
+              <Static id="Static02_00" taborder="5" text="건" top="18" width="15" height="24" cssclass="sta_WF_gridCount" right="55"/>
+              <Static id="Static02_02" taborder="6" text="[단위:원]" top="18" width="50" height="24" cssclass="sta_WF_gridCount" right="0"/>
+              <Static id="Static01_00_01_01_00" taborder="7" text="w15" top="6" cssclass="sta_Guide" width="5" height="47" visible="false" right="66"/>
+              <Static id="Static01_00_01_01" taborder="8" text="w10" top="1" cssclass="sta_Guide" width="10" height="47" visible="false" right="47"/>
+              <Static id="Static02_01" taborder="9" text="0" top="18" width="50" height="24" cssclass="sta_WF_gridCountNum" right="71"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00" taborder="2" text="Div00" left="Div01:15" width="20" height="225" cssclass="div_group" top="35.22%">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" left="0" top="62" width="20" height="100" cssclass="btn_WF_shuttleR"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div02" taborder="3" text="Div02" left="Div01:51" top="63" cssclass="div_group" right="40" bottom="48">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="0" text="마이메뉴" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="130" height="50" visible="false"/>
+              <Grid id="Grid00_00" taborder="2" top="50" binddataset="ds_grid1" bottom="0" left="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="40" band="left"/>
+                      <Column size="100"/>
+                      <Column size="200"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="전체" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="1" text="구분"/>
+                      <Cell col="2" text="폴더명"/>
+                      <Cell col="3" text="정렬순서"/>
+                      <Cell col="4" text="자동오픈여부"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:전체"/>
+                      <Cell col="1" text="bind:메뉴ID"/>
+                      <Cell col="2" text="bind:메뉴명"/>
+                      <Cell col="3" text="bind:분류"/>
+                      <Cell col="4"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_01_00_00" taborder="3" text="h11" top="49" cssclass="sta_Guide" width="50" height="11" visible="false" right="-720"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="4" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_03_02" taborder="5" text="폴더추가" top="20" width="74" height="24" cssclass="btn_Block" right="54"/>
+              <Button id="Button00_00_01_00_03_02_00" taborder="6" text="삭제" top="20" width="50" height="24" cssclass="btn_Block" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="DivSearch" taborder="0" left="0" top="0" height="63" cssclass="div_SA" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="메뉴ID" left="20" top="18" width="53" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01" taborder="1" text="메뉴명" left="265" top="18" width="48" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_00" taborder="3" text="w40" top="0" cssclass="sta_Guide" width="40" left="205" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="4" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00" taborder="5" text="h11" top="0" cssclass="sta_Guide" width="50" height="11" visible="false" right="27"/>
+              <Static id="Static01_00_01_00_00" taborder="6" text="h11" top="49" cssclass="sta_Guide" width="50" height="11" visible="false" right="32"/>
+              <Static id="Static01_00" taborder="7" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Edit id="Edit00" taborder="8" left="75" top="19" width="130" height="24"/>
+              <Edit id="Edit00_00" taborder="9" left="318" top="19" width="199" height="24"/>
+              <Static id="Static01_00_01_00_01" taborder="10" text="10" top="2" cssclass="sta_Guide" width="10" height="60" visible="false" right="1411"/>
+              <Static id="Static01_00_01_00_02" taborder="11" text="10" top="7" cssclass="sta_Guide" width="10" height="60" visible="false" right="1168"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00_00_00" taborder="4" text="15" top="260" cssclass="sta_Guide" width="15" left="718" height="70" visible="false"/>
+        <Static id="Static01_00_00_00_00_00" taborder="5" text="15" top="258" cssclass="sta_Guide" width="15" left="753" height="70" visible="false"/>
+        <Static id="Static01" taborder="6" text="20" top="0" cssclass="sta_Guide" width="40" right="0" bottom="0" visible="false"/>
+        <Static id="Static01_00_00_00_00_01" taborder="7" text="50" top="118" cssclass="sta_Guide" width="50" left="718" height="70" visible="false"/>
+        <Div id="div00" taborder="8" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" bottom="0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00_00" taborder="0" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="10" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="1" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="2" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="전체" type="STRING" size="256"/>
+          <Column id="메뉴ID" type="STRING" size="256"/>
+          <Column id="메뉴명" type="STRING" size="256"/>
+          <Column id="분류" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="No">1</Col>
+            <Col id="전체">0</Col>
+            <Col id="메뉴ID">SB20110</Col>
+            <Col id="메뉴명">환불관리</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 기타수납</Col>
+          </Row>
+          <Row>
+            <Col id="No">2</Col>
+            <Col id="전체">0</Col>
+            <Col id="메뉴ID">SB20120</Col>
+            <Col id="메뉴명">감면등록</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 기타수납</Col>
+          </Row>
+          <Row>
+            <Col id="No">3</Col>
+            <Col id="전체">1</Col>
+            <Col id="메뉴ID">SB20140</Col>
+            <Col id="메뉴명">KICC정산</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+          </Row>
+          <Row>
+            <Col id="No">4</Col>
+            <Col id="전체">1</Col>
+            <Col id="메뉴ID">SB20150</Col>
+            <Col id="메뉴명">가수금정산</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+          </Row>
+          <Row>
+            <Col id="No">5</Col>
+            <Col id="전체">1</Col>
+            <Col id="메뉴ID">SB20160</Col>
+            <Col id="메뉴명">통합 정산</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+          </Row>
+          <Row>
+            <Col id="No">6</Col>
+            <Col id="전체">0</Col>
+            <Col id="메뉴ID">SB20170</Col>
+            <Col id="메뉴명">보증/선납/선수 수기정산</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+          </Row>
+          <Row>
+            <Col id="메뉴명">보증 수기정산</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="No">7</Col>
+            <Col id="전체">0</Col>
+            <Col id="메뉴ID">SB20170B</Col>
+          </Row>
+          <Row>
+            <Col id="No">8</Col>
+            <Col id="메뉴ID">SB20180</Col>
+            <Col id="메뉴명">보증금현황</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">9</Col>
+            <Col id="메뉴ID">SB20190</Col>
+            <Col id="메뉴명">선납금현황</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">10</Col>
+            <Col id="메뉴ID">SB20200</Col>
+            <Col id="메뉴명">선수금현황</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">1</Col>
+          </Row>
+          <Row>
+            <Col id="No">11</Col>
+            <Col id="메뉴ID">SB20210</Col>
+            <Col id="메뉴명">CMS/카드자동이체 결과조회</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">1</Col>
+          </Row>
+          <Row>
+            <Col id="No">12</Col>
+            <Col id="메뉴ID">SB20220</Col>
+            <Col id="메뉴명">감면신청현환조회</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">13</Col>
+            <Col id="메뉴ID">SB20240</Col>
+            <Col id="메뉴명">수납실적 마감관리</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">14</Col>
+            <Col id="메뉴ID">SB20250</Col>
+            <Col id="메뉴명">수납실적 현황</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">15</Col>
+            <Col id="메뉴ID">SB20260</Col>
+            <Col id="메뉴명">대외계 수납처리 사번 매칭</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">16</Col>
+            <Col id="메뉴ID">SB20270</Col>
+            <Col id="메뉴명">보증/선납/선수 수기정산(대량)</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">17</Col>
+            <Col id="메뉴ID">SB20290</Col>
+            <Col id="메뉴명">미처리예금 조회</Col>
+            <Col id="분류">채권 &gt; 수납 &gt; 정산</Col>
+            <Col id="전체">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_grid1">
+        <ColumnInfo>
+          <Column id="전체" type="STRING" size="256"/>
+          <Column id="메뉴ID" type="STRING" size="256"/>
+          <Column id="메뉴명" type="STRING" size="256"/>
+          <Column id="분류" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

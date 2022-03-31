@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="WorkFormComm" width="1568" height="48" titletext="New Form" background="#ffffff">
+    <Layouts>
+      <Layout height="48" width="1568">
+        <Button id="Button00_01_02" taborder="0" text="연계팝업" top="10" width="102" height="28" left="40" cssclass="btn_Comm_popup" iconPosition="left"/>
+        <Button id="Button00_00_01_01" taborder="1" text="연계팝업" top="10" width="102" height="28" left="146" cssclass="btn_Comm_popup"/>
+        <Button id="Button00_01_02_00" taborder="2" text="연계화면" top="10" width="92" height="28" left="252" cssclass="btn_Comm_link" iconPosition="left"/>
+        <Button id="Button00_00_01_01_00" taborder="3" text="연계화면" top="10" width="92" height="28" left="348" cssclass="btn_Comm_link"/>
+        <Button id="Button00_00_00_00_00" taborder="4" text="연계화면" top="10" width="92" height="28" left="444" cssclass="btn_Comm_link"/>
+        <Combo id="Combo00" taborder="5" text="연계화면 바로가기" left="541" top="10" width="200" height="28" value="0" index="0" cssclass="cmb_Comm_link" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">연계화면 바로가기</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">연계화면1</Col>
+                <Col id="codecolumn">1</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">연계화면2</Col>
+                <Col id="codecolumn">2</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">연계화면3</Col>
+                <Col id="codecolumn">3</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Button id="Button00" taborder="6" text="신규입력" top="10" width="88" height="28" cssclass="btn_Comm_func" right="434"/>
+        <Button id="Button00_00" taborder="7" text="복사" top="10" width="64" height="28" cssclass="btn_Comm_func" right="366"/>
+        <Button id="Button00_00_00" taborder="8" text="저장" top="10" width="64" height="28" cssclass="btn_Comm_func" right="298"/>
+        <Button id="Button00_00_00_01" taborder="9" text="삭제" top="10" width="64" height="28" cssclass="btn_Comm_func" right="230"/>
+        <Button id="Button00_00_00_02" taborder="10" text="결재요청" top="10" width="103" height="28" cssclass="btn_Comm_func_pop" right="123"/>
+        <Button id="Button00_00_00_01_00" taborder="11" text="인쇄" top="10" width="79" height="28" cssclass="btn_Comm_func_pop" right="40"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

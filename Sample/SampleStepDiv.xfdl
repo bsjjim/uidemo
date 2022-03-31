@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="bbbbbb" width="1528" height="752" titletext="New Form">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Div id="div00" taborder="0" text="div00" left="10" top="54" url="Sample::SampleStep.xfdl" right="10" bottom="10"/>
+        <Button id="btn00" taborder="1" text="1번스텝" left="9" top="19" width="70" height="24" onclick="btn00_onclick"/>
+        <Button id="btn01" taborder="2" text="2번스텝" left="82" top="19" width="70" height="24" onclick="btn01_onclick"/>
+        <Button id="btn02" taborder="3" text="3번스텝" left="156" top="19" width="70" height="24" onclick="btn02_onclick"/>
+        <MaskEdit id="mae00" taborder="4" left="830" top="249" width="120" height="24" format="#,##9" value="0"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.btn00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div00.form.setStepIndex(0);
+};
+
+this.btn01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div00.form.setStepIndex(1);
+};
+
+this.btn02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div00.form.setStepIndex(2);
+};
+]]></Script>
+  </Form>
+</FDL>

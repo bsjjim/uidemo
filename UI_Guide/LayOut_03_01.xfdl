@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="LayOut_02_01" width="1528" height="752" titletext="Step">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static01_00_00_01_00_00" taborder="0" text="h35" top="0" cssclass="sta_Guide" width="100" left="528" height="35" visible="false"/>
+        <Static id="Static01" taborder="1" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static00" taborder="2" text="Step(클릭 가능)" left="0" top="5" width="315" height="24" cssclass="sta_WF_title1"/>
+        <Div id="Div00" taborder="3" left="0" top="35" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="Step1" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="Step2" top="0" width="25%" height="42" cssclass="btn_WF_step" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Step3" top="0" width="25%" height="42" cssclass="btn_WF_step" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Step4" top="0" height="42" cssclass="btn_WF_step_last" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00" taborder="4" left="0" top="140" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="처음선택" left="0" top="0" width="25%" height="42" cssclass="btn_WF_stepS" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Next Step" top="0" height="42" cssclass="btn_WF_step_last" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_00" taborder="5" left="0" top="233" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="완료됨" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step_done" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="중간선택" top="0" width="25%" height="42" cssclass="btn_WF_stepS" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Next Step" top="0" height="42" cssclass="btn_WF_step_last" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_00_00" taborder="6" left="0" top="297" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00_00" taborder="1" text="완료됨" top="0" width="25%" height="42" cssclass="btn_WF_step_done" enable="true" left="742"/>
+              <Button id="Button00_00_00_00" taborder="2" text="마지막스텝 선택" top="0" height="42" cssclass="btn_WF_step_lastS" enable="true" left="Button00_00_00:0" right="0"/>
+              <Button id="Button00_00" taborder="3" text="완료됨" top="0" width="25%" height="42" cssclass="btn_WF_step_done" enable="true" left="371"/>
+              <Button id="Button00" taborder="0" text="완료됨" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step_done" edge=" " enable="true"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00_00" taborder="7" text="Step(Read only)" left="0" top="385" width="315" height="24" cssclass="sta_WF_title1"/>
+        <Static id="Static00_00_00_00" taborder="8" text="※ 클래스는 위와 동일 / Button enable &gt; false" left="146" top="386" width="334" height="24" cssclass="sta_txt_desc"/>
+        <Static id="Static21_00_00_01_00" taborder="9" left="180" top="79" width="385" height="21" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static21_00_00_01_00_00" taborder="11" left="565" top="79" width="385" height="21" border="0px none, 1px solid red, 1px solid red, 1px solid red"/>
+        <Static id="Static21_00_00_01_00_00_00_00_00" taborder="12" left="1219" top="79" width="26" height="21" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static22_00_00_01_00_00" taborder="13" text="버튼 클래스 : btn_WF_step_last" left="1254" top="88" width="196" height="24"/>
+        <Static id="Static22_00_00_01_00" taborder="10" text="버튼 클래스 : btn_WF_step" left="486" top="90" width="161" height="24" background="#ffffff" textAlign="center"/>
+        <Static id="Static21_00_00_01_00_00_00_00_00_00" taborder="14" left="1220" top="341" width="26" height="21" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static22_00_00_01_00_00_00" taborder="15" text="버튼 클래스 : btn_WF_step_lastS" left="1255" top="350" width="196" height="24"/>
+        <Static id="Static21_00_00_01_00_01" taborder="16" left="180" top="183" width="385" height="21" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static21_00_00_01_00_00_00" taborder="17" left="564" top="203" width="1" height="31" border="0px none, 1px solid red, 1px solid red, 1px solid red"/>
+        <Static id="Static22_00_00_01_00_01" taborder="18" text="버튼 클래스 : btn_WF_stepS" left="539" top="195" width="171" height="24" background="#ffffff" textAlign="center"/>
+        <Div id="Div00_01" taborder="19" left="0" top="420" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="Step1" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step" edge=" " enable="false"/>
+              <Button id="Button00_00" taborder="1" text="Step2" top="0" width="25%" height="42" cssclass="btn_WF_step" enable="false" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Step3" top="0" width="25%" height="42" cssclass="btn_WF_step" enable="false" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Step4" top="0" height="42" cssclass="btn_WF_step_last" enable="false" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_01" taborder="20" left="0" top="484" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="처음선택" left="0" top="0" width="25%" height="42" cssclass="btn_WF_stepS" edge=" " enable="false"/>
+              <Button id="Button00_00" taborder="1" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" enable="false" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" enable="false" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Next Step" top="0" height="42" cssclass="btn_WF_step_last" enable="false" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_00_01" taborder="21" left="0" top="548" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="완료됨" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step_done" edge=" " enable="false"/>
+              <Button id="Button00_00" taborder="1" text="중간선택" top="0" width="25%" height="42" cssclass="btn_WF_stepS" enable="false" left="Button00:0"/>
+              <Button id="Button00_00_00" taborder="2" text="Next Step" top="0" width="25%" height="42" cssclass="btn_WF_step" enable="false" left="Button00_00:0"/>
+              <Button id="Button00_00_00_00" taborder="3" text="Next Step" top="0" height="42" cssclass="btn_WF_step_last" enable="false" left="Button00_00_00:0" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_00_00_00" taborder="22" left="0" top="612" height="44" cssclass="div_step" formscrollbartype="none none" right="40" enable="false">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00_00" taborder="1" text="완료됨" top="0" width="25%" height="42" cssclass="btn_WF_step_done" enable="false" left="742"/>
+              <Button id="Button00_00_00_00" taborder="2" text="마지막스텝 선택" top="0" height="42" cssclass="btn_WF_step_lastS" enable="false" left="Button00_00_00:0" right="0"/>
+              <Button id="Button00_00" taborder="3" text="완료됨" top="0" width="25%" height="42" cssclass="btn_WF_step_done" enable="false" left="371"/>
+              <Button id="Button00" taborder="0" text="완료됨" left="0" top="0" width="25%" height="42" cssclass="btn_WF_step_done" edge=" " enable="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00_01" taborder="23" text="단 별 버튼 사이즈 예제" left="0" top="698" width="315" height="24" cssclass="sta_WF_title1"/>
+        <Div id="Div00_00_02" taborder="24" left="0" top="735" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="33%" left="0" top="0" width="33%" height="42" cssclass="btn_WF_stepS" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="33%" left="Button00:0" top="0" width="33%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00_00" taborder="2" text="마지막 Step은 좌우 앵커" left="Button00_00:0" top="0" height="42" cssclass="btn_WF_step_last" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_02_00" taborder="25" left="0" top="795" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="25%" left="0" top="0" width="25%" height="42" cssclass="btn_WF_stepS" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="25%" left="Button00:0" top="0" width="25%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00" taborder="2" text="25%" left="Button00_00:0" top="0" width="25%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00_00" taborder="3" text="마지막 Step은 좌우 앵커" left="Button00_00_00:0" top="0" height="42" cssclass="btn_WF_step_last" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_02_00_00" taborder="26" left="0" top="860" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="20%" left="0" top="0" width="20%" height="42" cssclass="btn_WF_stepS" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="20%" left="Button00:0" top="0" width="20%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00" taborder="2" text="20%" left="Button00_00:0" top="0" width="20%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00_01" taborder="4" text="20%" left="Button00_00_00:0" top="0" width="20%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00_00" taborder="3" text="마지막 Step은 좌우 앵커" left="Button00_00_00_01:0" top="0" height="42" cssclass="btn_WF_step_last" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00_02_00_00_00" taborder="27" left="0" top="925" height="44" cssclass="div_step" formscrollbartype="none none" right="40">
+          <Layouts>
+            <Layout>
+              <Button id="Button00" taborder="0" text="16.62%" left="0" top="0" width="16.66%" height="42" cssclass="btn_WF_stepS" edge=" "/>
+              <Button id="Button00_00" taborder="1" text="16.62%" left="Button00:0" top="0" width="16.62%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_01" taborder="4" text="16.62%" left="Button00_00:0" top="0" width="16.62%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_01_00" taborder="5" text="16.62%" left="Button00_00_01:0" top="0" width="16.62%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00" taborder="2" text="16.62%" left="Button00_00_01_00:0" top="0" width="16.62%" height="42" cssclass="btn_WF_step"/>
+              <Button id="Button00_00_00_00" taborder="3" text="마지막 Step은 좌우 앵커" left="Button00_00_00:0" top="0" height="42" cssclass="btn_WF_step_last" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

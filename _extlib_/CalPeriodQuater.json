@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalPeriodQuater",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalPeriodQuater/_metainfo_/CalPeriodQuater.info"
+	],
+	"scripts": [
+    "CalPeriodQuater/CalPeriodQuater.js"
+	],
+	"designscripts": [
+    "CalPeriodQuater/DesignCalPeriodQuater.js"
+	],
+	"help": "",	
+	"xcss": "CalPeriodQuater/_xcss_/CalPeriodQuater.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

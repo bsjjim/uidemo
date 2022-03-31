@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Point">
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.Point" shorttypename="" csstypename="Point" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对坐标信息进行处理的对象。" />
+    <PropertyInfo>
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Point对象的x坐标的属性。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Point对象的y坐标的属性。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对Point对象的属性值进行复制并返回新的Point对象的方法。">
+        <Syntax text="Point.clone()">
+          <Return type="Object" description="返回对当前Point对象的值进行复制的新的Point对象。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的值复制到Point对象的x, y属性值的方法。">
+        <Syntax text="Point.copy( objPoint )&#xA;Point.copy( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字形态设定需要复制到Point对象的x属性值中的值。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字形态设定需要复制到Point对象的y属性值中的值。" />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="利用Point对象形态设定需要复制到当前Point对象的x、y属性值中的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前Point对象的属性值与通过参数传递的值是否一致的方法。">
+        <Syntax text="Point.equals( objPoint )&#xA;Point.equals( arrVal )&#xA;Point.equals( nX, nY )">
+          <Return type="Boolean" description="在存储于Point对象中的x, y属性值与通过参数传递的值均一致时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在存储于Point对象中的x, y属性值中的至少一个与通过参数传递的值不一致时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="arrVal" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定需要与Point对象的x、y属性值进行比较的值。&#xD;&#xA;&#xD;&#xA;将x、y属性值分别与第一个、第二个元素进行比较。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字形态设定需要与Point对象的x属性值进行比较的值。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字形态设定需要与Point对象的y属性值进行比较的值。" />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="利用Point对象形态设定需要与Point对象的x、y属性值进行比较的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="2.0">
+  <Application id="Application_Desktop" screenid="Desktop_screen" onload="Application_onload">
+    <Layout>
+      <MainFrame id="mainframe" showtitlebar="true" showstatusbar="false" left="0" top="0" width="1858" height="937" titletext="FullFrame">
+        <VFrameSet id="VFrameSet1" separatesize="60, *, 25,0" showstatusbar="false" statusbarheight="25">
+          <Frames>
+            <ChildFrame id="TopFrame" formurl="Frame::Top.xfdl" showtitlebar="false" dragmovetype="none"/>
+            <HFrameSet id="HFrameSet" separatesize="130,*" showtitlebar="false">
+              <Frames>
+                <ChildFrame id="LeftFrame" formurl="Frame::Left.xfdl" dragmovetype="none" showtitlebar="false" cssclass="frm_left"/>
+                <VFrameSet id="VFrameSet2" separatesize="35, *" showtitlebar="false">
+                  <Frames>
+                    <ChildFrame id="MdiFrame" formurl="Frame::Mdi.xfdl" dragmovetype="none" showtitlebar="false"/>
+                    <FrameSet id="WorkFrame" showtitlebar="false" enable="true">
+                      <Frames/>
+                    </FrameSet>
+                  </Frames>
+                </VFrameSet>
+              </Frames>
+            </HFrameSet>
+            <ChildFrame id="StatusFrame" formurl="Frame::Statusbar.xfdl" showtitlebar="false"/>
+            <ChildFrame id="LoginFrame" formurl=""/>
+          </Frames>
+        </VFrameSet>
+      </MainFrame>
+    </Layout>
+    <Style url="xcssrc::MultiCombo.xcss"/>
+  </Application>
+  <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  Application 초기 스크립트 적용
+*  @FileName 	: Application
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/14
+*  @Desction    : 설명
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/14     	     양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * application 변수 선언 영역
+************************************************************************************************/
+this.avTopFrame    = "";
+this.avWorkFrame   = "";
+this.avMainFrame   = "";
+this.avMdiFrame    = "";
+this.avLeftFrame = "";
+this.avStatusFrame = "";
+
+this.Application_onload = function(obj:nexacro.Application,e:nexacro.LoadEventInfo)
+{
+	var objApp = nexacro.getApplication();
+	
+	this.avTopFrame    = objApp.mainframe.VFrameSet1.TopFrame;
+	this.avStatusFrame = objApp.mainframe.VFrameSet1.StatusFrame;
+	//this.avMainFrame   = objApp.mainframe.VFrameSet1.HFrameSet.VFrameSet2;
+	this.avLeftFrame   = objApp.mainframe.VFrameSet1.HFrameSet.LeftFrame;
+	this.avMdiFrame    = objApp.mainframe.VFrameSet1.HFrameSet.VFrameSet2.MdiFrame;	
+	this.avWorkFrame   = objApp.mainframe.VFrameSet1.HFrameSet.VFrameSet2.WorkFrame;
+};
+]]></Script>
+</ADL>

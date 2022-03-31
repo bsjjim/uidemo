@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CO00050T01" width="1488" height="592" titletext="버전마스터">
+    <Layouts>
+      <Layout height="592" mobileorientation="landscape" width="1488">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="0" cssclass="div_group" bottom="0" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00" taborder="0" text="h50" top="0" cssclass="sta_Guide" width="100" left="130" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" binddataset="ds_grid" bottom="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="150"/>
+                      <Column size="150"/>
+                      <Column size="150"/>
+                      <Column size="150"/>
+                      <Column size="150"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="버전코드"/>
+                      <Cell col="2" text="버전코드명"/>
+                      <Cell col="3" text="계획구분"/>
+                      <Cell col="4" text="계획구분명"/>
+                      <Cell col="5" text="전사계획수립부서용"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1" text="bind:Column0"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column4"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="2" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Static id="Static00" taborder="3" text="타이틀영역" left="0" top="20" width="261" height="24" cssclass="sta_WF_title1"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="224"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="5" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="272"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00_00" taborder="6" top="20" width="114" height="24" cssclass="btn_Block" textPadding="0px" right="106" text="마스터 다운로드"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00_00_00" taborder="7" top="20" width="102" height="24" cssclass="btn_Block" textPadding="0px" right="0" text="마스터 업로드"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

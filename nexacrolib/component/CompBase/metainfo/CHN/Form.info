@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Form">
+    <ObjectInfo finalclass="true" inheritance="nexacro.Component" classname="nexacro.Form" shorttypename="Form" csstypename="Form" csscontrolname="" group="Form" subgroup="ContainerComponent" csspseudo="true" container="true" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form作为构成画面的基本单位，可以通过在其内部配置各个组件而构成所需要的画面。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时通过Accessibility输出的Action的属性。" csspropertyname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时是否输出下级组件的Accessibility的属性。" csspropertyname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时通过Accessibility输出的Description的属性。" csspropertyname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时是否输出Accessibility相关属性值的属性。" csspropertyname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时通过Accessibility输出的Label的属性。" csspropertyname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Form时通过Accessibility输出的Role的属性。" csspropertyname="" normalpropertyname="accessibilityrole" />
+      <Property name="all" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含注册到Form中的所有组件的只读属性。" csspropertyname="" normalpropertyname="all" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的背景区域的属性。" csspropertyname="background" normalpropertyname="background" />
+      <Property name="binds" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含注册到Form中的Component以及DataSet的绑定信息的只读属性。" csspropertyname="" normalpropertyname="binds" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的角落形状的属性。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的阴影效果的属性。" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Form中的文本颜色的属性。" csspropertyname="color" normalpropertyname="color" />
+      <Property name="components" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含注册到Form中的所有组件的只读属性。" csspropertyname="" normalpropertyname="components" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Form的Style设定为在XCSS文件中定义的class的属性。" csspropertyname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form区域显示的鼠标指针类型的属性。" csspropertyname="cursor" normalpropertyname="cursor" />
+      <Property name="dragscrolltype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DragScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中进行触摸之后通过拖曳发生滚动时的滚动方向的属性。" csspropertyname="" normalpropertyname="dragscrolltype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的可使用与否的属性。" csspropertyname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否在Form中触发事件的属性。" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中使用的字体的属性。" csspropertyname="font" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的高度的属性。" csspropertyname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定执行Form的基本动作用的快捷键的属性。" csspropertyname="" normalpropertyname="hotkey" />
+      <Property name="hscrollbar" group="Appearance" subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含Form的子控件即水平滚动条的对象的只读属性。" csspropertyname="" normalpropertyname="hscrollbar" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含Form的固有标识符的只读属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定适用于Form的InitValue的ID的属性。" csspropertyname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的字符的间隔（字间距）的属性。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要适用于Form的国家以及语言（locale）的属性。" csspropertyname="" normalpropertyname="locale" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的边框的属性。" csspropertyname="-nexa-border" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在Form的边框(Border)内侧显示的Edge图像的属性。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form区域的内侧留白的属性。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+      <Property name="objects" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含注册到Form中的所有Invisible Object的只读属性。" csspropertyname="" normalpropertyname="objects" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form区域的透明度的属性。" csspropertyname="opacity" normalpropertyname="opacity" />
+      <Property name="opener" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在画面中执行的Form的父级Form的只读属性。" csspropertyname="" normalpropertyname="opener" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含Form的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="positionstep" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="right" />
+      <Property name="rtl" group="Action" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Form中设定内部内容或组件的显示基准的属性。" csspropertyname="" normalpropertyname="rtl" />
+      <Property name="scrollbarbarminsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动条的TrackBar的最小大小的属性。" csspropertyname="" normalpropertyname="scrollbarbarminsize" />
+      <Property name="scrollbarbaroutsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form的滚动条中隐藏TrackBar的基准大小的属性。" csspropertyname="" normalpropertyname="scrollbarbaroutsize" />
+      <Property name="scrollbardecbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动条的减小按钮（DecButton）大小的属性。" csspropertyname="" normalpropertyname="scrollbardecbuttonsize" />
+      <Property name="scrollbarincbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动条的增加按钮（IncButton）大小的属性。" csspropertyname="" normalpropertyname="scrollbarincbuttonsize" />
+      <Property name="scrollbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动条的大小的属性。" csspropertyname="" normalpropertyname="scrollbarsize" />
+      <Property name="scrollbartrackbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动条的TrackBar的大小的属性。" csspropertyname="" normalpropertyname="scrollbartrackbarsize" />
+      <Property name="scrollbartype" group="Action" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在XComponen中显示滚动条的形式的属性。" csspropertyname="" normalpropertyname="scrollbartype" />
+      <Property name="scrollindicatorsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的滚动指示条的大小的属性。" csspropertyname="" normalpropertyname="scrollindicatorsize" />
+      <Property name="scrolltype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中使用的滚动条类型的属性。" csspropertyname="" normalpropertyname="scrolltype" />
+      <Property name="statustext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在上级Frame的StatusBar中的文本的属性。" csspropertyname="" normalpropertyname="statustext" />
+      <Property name="stepalign" group="Appearance" subgroup="" refreshinfo="" edittype="Enum2" defaultvalue="center bottom" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="VerticalAlign" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form被画面分割时显示子控件即Step控件的位置的属性。" csspropertyname="" normalpropertyname="stepalign" />
+      <Property name="stepitemgap" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form被画面分割时显示在StepControl中的单选钮的间隔的属性。" csspropertyname="" normalpropertyname="stepitemgap" />
+      <Property name="stepitemsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form被画面分割时显示在StepControl中的单选钮的大小的属性。" csspropertyname="" normalpropertyname="stepitemsize" />
+      <Property name="stepselector" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在Form中使用画面分割功能时表示当前画面索引的Step控件的只读属性。" csspropertyname="" normalpropertyname="stepselector" />
+      <Property name="stepshowtype" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StepShowType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form的画面被分割时在画面中显示Step控件的条件的属性。" csspropertyname="" normalpropertyname="stepshowtype" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Form中的文本的属性。" csspropertyname="" normalpropertyname="text" />
+      <Property name="titletext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在上级Frame的TitleBar中的文本的属性。" csspropertyname="" normalpropertyname="titletext" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="用于设定在将鼠标指针移动到Form时显示的气球帮助信息的属性。" csspropertyname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于设定在Form中显示气球帮助信息的位置以及方式的属性。" csspropertyname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form是否显示在画面中的属性。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="vscrollbar" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含Form的子控件即垂直滚动条的对象的只读属性。" csspropertyname="" normalpropertyname="vscrollbar" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form宽度的属性。" csspropertyname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Form中的文本的单词之间的间隔的属性。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的背景区域的属性。" csspropertyname="background" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的角落形状的属性。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的阴影效果的属性。" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Form中的文本颜色的属性。" csspropertyname="color" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form区域显示的鼠标指针类型的属性。" csspropertyname="cursor" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中使用的字体的属性。" csspropertyname="font" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form中显示的字符的间隔（字间距）的属性。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form的边框的属性。" csspropertyname="-nexa-border" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在Form的边框(Border)内侧显示的Edge图像的属性。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form区域的内侧留白的属性。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+        <Property name="-nexa-rtl-background-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form的rtl属性中适用true时显示在背景中的图像的属性。" csspropertyname="-nexa-rtl-background-image" normalpropertyname="" />
+        <Property name="-nexa-rtl-edge-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Form的rtl属性中适用true时显示在边框(Border)内侧的Edge图像的属性。" csspropertyname="-nexa-rtl-edge-image" normalpropertyname="" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Form区域的透明度的属性。" csspropertyname="opacity" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Form中的文本的单词之间的间隔的属性。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="contents" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="hscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="vscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="stepselector" classname="nexacro.StepControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="hscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="vscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将在脚本中动态生成的组件作为Form的子组件进行添加的方法。">
+        <Syntax text="Form.addChild( strChildID, objComp )">
+          <Return type="Number" description="返回所添加的子组件的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定需要作为子组件添加的组件的对象。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="设定需要作为子组件添加的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Form的特定事件添加句柄函数的方法。">
+        <Syntax text="Form.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到Form的特定事件中的方法。">
+        <Syntax text="Form.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示警告对话框的方法。">
+        <Syntax text="Form.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框中的文本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Form显示在画面的最前方。">
+        <Syntax text="Form.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Form提前一步显示在画面上。">
+        <Syntax text="Form.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于停止正在执行的事务的方法。">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要中止的事务的ID。&#xD;&#xA;在执行transaction()方法时设定的ID值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="Form.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于关闭所执行的Form的方法。">
+        <Syntax text="Form.close( [strReturn] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strReturn" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在Form结束时传递到对自身进行调用的父级Form中的值。&#xD;&#xA;&#xD;&#xA;只能指定基本型（Primitive Type）数据类型。&#xD;&#xA;尤其是，因为在Form结束时，在Form中定义的对象（Component、DataSet等）也将被注销，因此无法设定为相应的对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示选择对话框的方法。">
+        <Syntax text="Form.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="在所显示的选择对话框中选择“确认”按钮时，将返回&quot;true&quot;。&#xD;&#xA;在所显示的选择对话框中选择“取消”按钮时，将返回“false”。" />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框的TitleBar中的文本。&#xD;&#xA;&#xD;&#xA;- 在WRE中不支持的参数。&#xD;&#xA;  在WRE中将对所设定的值进行忽略处理。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框中的文本。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要显示在对话框的左侧区域的图标类型。&#xD;&#xA;&#xD;&#xA;在设定为“error”时，显示红色“X”形状的图标。&#xD;&#xA;在设定为“question”时，显示问号（“?”）形状的图标。&#xD;&#xA;在设定为“warning”时，显示黄底感叹号（“!”）形状的图标。&#xD;&#xA;在设定为“information”时，显示蓝底感叹号（“!”）形状的图标。&#xD;&#xA;&#xD;&#xA;在不设定值时，将不显示图标。&#xD;&#xA;&#xD;&#xA;- 在WRE中不支持的参数。&#xD;&#xA;  在WRE中将对所设定的值进行忽略处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过脚本动态生成的Form的方法。">
+        <Syntax text="Form.destroy()">
+          <Return type="Boolean" description="在Form被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除Form时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Form的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="Form.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentLayoutID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form中定义的不居中显示在当前画面中的布局的name属性值的方法。">
+        <Syntax text="Form.getCurrentLayoutID()">
+          <Return type="String" description="返回当前布局的name属性值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form中显示的文本值的方法。">
+        <Syntax text="Form.getDisplayText()">
+          <Return type="String" description="返回在Form中显示的文本值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Form的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="Form.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFirstComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form中利用Tab键移动焦点时最早获得焦点的组件的方法。">
+        <Syntax text="Form.getFirstComponent( [bStepIn] )">
+          <Return type="Object" description="返回最早获得焦点的组件。" />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在最初获取到焦点的组件为容器组件时是否对子组件进行检索。&#xD;&#xA;在设定为“true”时，对容器组件的子组件进行检索。&#xD;&#xA;在设定为“false”时，返回容器组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Form的子组件中当前具有焦点的组件的方法。">
+        <Syntax text="Form.getFocus()">
+          <Return type="Object" description="在有具有焦点的子组件时，将返回相应组件。&#xD;&#xA;&#xD;&#xA;在没有具有焦点的子组件时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回显示在Form中的水平滚动条的TrackBar位置值的方法。">
+        <Syntax text="Form.getHScrollPos()">
+          <Return type="Number" description="返回水平滚动条的当前的TrackBar位置值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getLastComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form中利用Tab键移动焦点时最后获得焦点的组件的方法。">
+        <Syntax text="Form.getLastComponent( [bStepIn] )">
+          <Return type="Object" description="返回最后获得焦点的组件。" />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在最后获取到焦点的组件为容器组件时是否对子组件进行检索。&#xD;&#xA;在设定为“true”时，对容器组件的子组件进行检索。&#xD;&#xA;在设定为“false”时，返回容器组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getLayoutInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form中定义的不居中的特定布局的属性值的方法。">
+        <Syntax text="Form.getLayoutInfo ( strLayoutID, strPropID )">
+          <Return type="String" description="返回设定到strPropID属性中的值。" />
+          <Arguments>
+            <Argument name="strLayoutID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定布局的名称。" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要获取值的属性的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getNextComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form的特定组件中输入Tab键时焦点移动的组件的方法。">
+        <Syntax text="Form.getNextComponent( objComp [, bStepIn] )">
+          <Return type="Object" description="返回在objComp组件中通过Tab键移动焦点的组件。" />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在焦点所移动的组件为容器组件时是否对子组件进行检索。&#xD;&#xA;在设定为“true”时，对容器组件的子组件进行检索。&#xD;&#xA;在设定为“false”时，返回容器组件。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定作为焦点移动时的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回以父级组件的Top位置为基准的Form的bottom值的方法。">
+        <Syntax text="Form.getOffsetBottom();">
+          <Return type="Number" description="以像素单位的数字返回以父级组件的Top位置为基准的Form的bottom值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回Form的高度的方法。">
+        <Syntax text="Form.getOffsetHeight();">
+          <Return type="Number" description="将Form的高度转换成像素单位的数字并返回。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getOffsetLeft()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getOffsetRight()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getOffsetTop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回Form的宽度的方法。">
+        <Syntax text="Form.getOffsetWidth();">
+          <Return type="Number" description="将Form的宽度转换成像素单位的数字并返回。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Form所属的父级Frame的方法。">
+        <Syntax text="Form.getOwnerFrame()">
+          <Return type="Object" description="返回Form所属的父级Frame。&#xD;&#xA;在没有Form所属的Frame时，将返回&quot;null&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的bottom属性值的方法。">
+        <Syntax text="Form.getPixelBottom();">
+          <Return type="Number" description="以像素单位返回Form的bottom属性值。&#xD;&#xA;&#xD;&#xA;在没有设定bottom属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的height属性值的方法。">
+        <Syntax text="Form.getPixelHeight();">
+          <Return type="Number" description="以像素单位返回Form的height属性值。&#xD;&#xA;&#xD;&#xA;在没有设定height属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的left属性值的方法。">
+        <Syntax text="Form.getPixelLeft();">
+          <Return type="Number" description="以像素单位返回Form的left属性值。&#xD;&#xA;&#xD;&#xA;在没有设定left属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的right属性值的方法。">
+        <Syntax text="Form.getPixelRight();">
+          <Return type="Number" description="以像素单位返回Form的right属性值。&#xD;&#xA;&#xD;&#xA;在没有设定right属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的top属性值的方法。">
+        <Syntax text="Form.getPixelTop();">
+          <Return type="Number" description="以像素单位返回Form的top属性值。&#xD;&#xA;&#xD;&#xA;在没有设定top属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Form的width属性值的方法。">
+        <Syntax text="Form.getPixelWidth();">
+          <Return type="Number" description="以像素单位返回Form的width属性值。&#xD;&#xA;&#xD;&#xA;在没有设定width属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPrevComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Form的特定组件中输入Shift+Tab键时焦点移动的组件的方法。">
+        <Syntax text="Form.getPrevtComponent( objComp [, bStepIn] )">
+          <Return type="Object" description="返回在objComp组件中通过Shift+Tab键移动焦点的组件。" />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在焦点所移动的组件为容器组件时是否对子组件进行检索。&#xD;&#xA;在设定为“true”时，对容器组件的子组件进行检索。&#xD;&#xA;在设定为“false”时，返回容器组件。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定作为焦点移动时的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Form的画面被分割时的画面数量的方法。">
+        <Syntax text="Form.getStepCount();">
+          <Return type="Number" description="返回所分割的画面数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以索引返回在Form的画面被分割时当前显示的画面索引的方法。">
+        <Syntax text="Form.getStepIndex()">
+          <Return type="Number" description="返回当前显示的画面的索引值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回显示在Form中的垂直滚动条的TrackBar位置值的方法。">
+        <Syntax text="Form.getVScrollPos()">
+          <Return type="Number" description="返回垂直滚动条的当前的TrackBar位置值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="go" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于载入通过参数传递的Form并替代画面中显示的Form的方法。">
+        <Syntax text="Form.go( strURL )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要载入到画面中的Form（xfdl文件）的URL。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="hasPopupFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认在当前Form中是否有通过脚本执行的Form的方法。">
+        <Syntax text="Form.hasPopupFrame()">
+          <Return type="Boolean" description="在当前Form中有通过脚本执行的Form时，将返回&quot;true&quot;。&#xD;&#xA;在当前Form中没有通过脚本执行的Form时，将返回&quot;false&quot;。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在通过脚本动态生成Form之后进行初始化的方法。">
+        <Syntax text="Form.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定Form的ID。" />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的bottom属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vTop、vHeight值时，vBottom值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的top属性值为基准决定Form的bottom。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的bottom。单位设定时，以基准组件的top属性值为基准决定Form的bottom" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的height属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的height。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的left属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的right属性值为基准决定Form的left。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的left。" />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Form的最大高度值。&#xD;&#xA;&#xD;&#xA;当设定为小于vMinHeight的值时，将设定为vMinHeight值。" />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Form的最大宽度值。&#xD;&#xA;&#xD;&#xA;当设定为小于vMinWidth的值时，将设定为vMinWidth值。" />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Form的最小高度值。" />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Form的最小宽度值。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的right属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vLeft、vWidth值时，vRight值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的left属性值为基准决定Form的right。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的right。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的top属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的bottom属性值为基准决定Form的top。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的top。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的width属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过脚本动态生成的组件作为Form的子组件添加到特定顺序中的方法。">
+        <Syntax text="Form.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="返回所添加的子组件的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要添加到父级组件中的顺序。&#xD;&#xA;在设定为“-1”时，添加到子组件中的最后位置。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定需要作为子组件添加的组件的对象。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="设定需要作为子组件添加的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Form的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="Form.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于确认Form中是否有特定对象存在的方法。">
+        <Syntax text="Form.isValidObject( objName )&#xA;Form.isValidObject( strName )">
+          <Return type="Boolean" description="在Component中有通过参数传递的对象存在时，将返回&quot;true&quot;。&#xD;&#xA;在Component中没有通过参数传递的对象存在时，将返回&quot;false&quot;。&#xD;&#xA;在作为参数传递了错误的值时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="objName" type="Object" in="false" out="false" option="false" variable="false" description="设定需要对存在与否进行确认的对象。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对存在与否进行确认的对象的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="killTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过setTimer()方法生成的定时器的方法。">
+        <Syntax text="Form.killTimer( nTimerID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定在setTimer()方法中生成定时器时所设定的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Form区域开始向上述区域检索通过参数传递的对象并返回的方法。">
+        <Syntax text="Form.lookup( strObjectID )">
+          <Return type="Object" description="返回所检索到的对象。" />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要进行检索的对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Form的位置以及大小的方法。">
+        <Syntax text="Form.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的bottom属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vTop、vHeight值时，vBottom值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的top属性值为基准决定Form的bottom。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的bottom。单位设定时，以基准组件的top属性值为基准决定Form的bottom" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的height属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的height。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的left属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的right属性值为基准决定Form的left。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的left。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的right属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vLeft、vWidth值时，vRight值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的left属性值为基准决定Form的right。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的right。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的top属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的bottom属性值为基准决定Form的top。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的top。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的width属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，与通过参数传递的组件相比将Form在后一层显示在画面上。">
+        <Syntax text="Form.moveToNext( objComp )&#xA;Form.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定作为基准的组件。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定作为基准的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，与通过参数传递的组件相比将Form在前一层显示在画面上。">
+        <Syntax text="Form.moveToPrev( objComp )&#xA;Form.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定作为基准的组件。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定作为基准的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reload" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于重新载入当前画面的方法。">
+        <Syntax text="Form.reload()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除动态添加到Form中的组件的方法。">
+        <Syntax text="Form.removeChild( strChildID )">
+          <Return type="Object" description="在删除组件成功时，将返回所删除的组件的对象。&#xD;&#xA;在删除组件失败时，将返回&quot;null&quot;。" />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的子组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Form的特定事件中删除句柄函数的方法。">
+        <Syntax text="Form.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Form的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="Form.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resetScroll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于根据当前画面状态对Form的滚动条以及内部组件进行更新的方法。">
+        <Syntax text="Form.resetScroll()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Form的大小的方法。">
+        <Syntax text="Form.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的height属性值。&#xD;&#xA;无法设定负数值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Form的height。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Form的width属性值。&#xD;&#xA;无法设定负数值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Form的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Form的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将显示在Form中的滚动条从当前位置移动通过参数传递的值的方法。">
+        <Syntax text="Form.scrollBy( nHoffsetpos, nVoffsetpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定将水平滚动条的滚动块从当前位置进行移动的值。&#xD;&#xA;&#xD;&#xA;在设定为负数时，滚动块的位置将减少。&#xD;&#xA;在设定为正数时，滚动块的位置将增加。&#xD;&#xA;&#xD;&#xA;在适用值之后的值小于水平滚动条的min属性值时将适用min值。&#xD;&#xA;在适用值之后的值大于水平滚动条的max属性值时将适用max值。" />
+            <Argument name="nVoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定将垂直滚动条的滚动块从当前位置进行移动的值。&#xD;&#xA;&#xD;&#xA;在设定为负数时，滚动块的位置将减少。&#xD;&#xA;在设定为正数时，滚动块的位置将增加。&#xD;&#xA;&#xD;&#xA;在适用值之后的值小于垂直滚动条的min属性值时将适用min值。&#xD;&#xA;在适用值之后的值大于垂直滚动条的max属性值时将适用max值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将显示在Form中的滚动条移动到特定位置的方法。">
+        <Syntax text="Form.scrollTo( nHpos, nVpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHpos" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定水平滚动条的滚动块所位于的位置。&#xD;&#xA;&#xD;&#xA;在设定值小于水平滚动条的min属性值时将适用min值。&#xD;&#xA;在设定值大于水平滚动条的max属性值时将适用max值。" />
+            <Argument name="nVpos" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定垂直滚动条的滚动块所位于的位置。&#xD;&#xA;&#xD;&#xA;在设定值小于垂直滚动条的min属性值时将适用min值。&#xD;&#xA;在设定值大于垂直滚动条的max属性值时将适用max值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Form显示在画面的最后方。">
+        <Syntax text="Form.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Form推后一步显示在画面上。">
+        <Syntax text="Form.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Form的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="Form.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Form的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="Form.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Form赋予焦点的方法。">
+        <Syntax text="Form.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="返回在Form获得焦点之前拥有焦点的组件。&#xD;&#xA;&#xD;&#xA;在没有拥有焦点的组件或执行方法失败时，将返回null。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在Form为容器组件时是否将焦点移动到子组件。&#xD;&#xA;&#xD;&#xA;在设定为true时，将焦点移动到子组件中可以接收焦点的第一个组件。&#xD;&#xA;在设定为false时，将焦点移动到Form。&#xD;&#xA;&#xD;&#xA;在Form为容器组件的情况下，如果没有设定值时，以true工作。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="用于设定在父级组件中有滚动条的情况下，是否以Form为基准移动滚动条。&#xD;&#xA;&#xD;&#xA;在设定为true时，以Form显示在画面中的方式移动滚动条。&#xD;&#xA;在设定为false时，无论Form的位置如何都不移动滚动条。&#xD;&#xA;&#xD;&#xA;在不设定值时以true工作。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Top位置为基准的Form的bottom值的方法。">
+        <Syntax text="Form.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Top位置为基准的Form的bottom值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定Form的高度的方法。">
+        <Syntax text="Form.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定Form的高度。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Left位置为基准的Form的left值的方法。">
+        <Syntax text="Form.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Left位置为基准的Form的left值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setOffsetRight(nRight)">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setOffsetTop(nTop)">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setOffsetWidth(nWidth)">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定为将当前布局的画面分割成指定的数量。">
+        <Syntax text="Form.setStepCount(nStepcount)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nStepcount" type="Number" in="false" out="false" option="false" variable="false" description="设定需要分割的画面数量。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以索引设定在Form的画面被分割时进行显示的画面的方法。">
+        <Syntax text="Form.setStepIndex( nIndex )">
+          <Return type="Boolean" description="在移动到所分割的画面成功时，将返回&quot;true&quot;。&#xD;&#xA;在移动到所分割的画面失败时，将返回“false”。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定所分割的画面中需要显示的画面的索引。&#xA;&#xA;索引从“0”开始，最大可以设定为“stepcount属性值 - 1”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于为了周期性地触发ontimer事件而生成定时器的方法。">
+        <Syntax text="Form.setTimer( nTimerID, nElapse )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nElapse" type="Number" in="false" out="false" option="false" variable="false" description="利用微秒（milliseconds）单位的数字设定需要触发ontimer事件的周期。" />
+            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定用于对触发ontimer事件的定时器进行区分的ID。&#xD;&#xA;ID值可以设定为“0~65535”之间的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setWaitCursor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示或解除Wait Cursor的方法。">
+        <Syntax text="Form.setWaitCursor( [bWaitFlag [, bForcely]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bForcely" type="Boolean" in="false" out="false" option="false" variable="false" description="设定是否需要与Environment的usewaitcursor属性值无关，执行方法。&#xD;&#xA;&#xD;&#xA;在设定为true时，与userwaitcursor属性值无关，显示/解除Wait Cursor。&#xD;&#xA;在设定为false时，在usewaitcursor属性值为true的情况下显示/解除Wait Cursor。&#xD;&#xA;在设定为false时，在usewaitcursor属性值为false的情况下不执行方法。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="bWaitFlag" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在画面中是否显示Wait Cursor。&#xD;&#xA;&#xD;&#xA;在设定为true时，在画面中显示Wait Cursor。&#xD;&#xA;在设定为false时，解除显示在画面中的Wait Cursor。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在画面上显示通过脚本动态生成的Form的方法。">
+        <Syntax text="Form.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sleep" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在所设定的时间内停止执行脚本的方法。">
+        <Syntax text="Form.sleep( nMilliseconds )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nMilliseconds" type="Number" in="false" out="false" option="false" variable="false" description="利用微秒（milliseconds）单位的数字设定需要停止脚本执行的时间。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="调用为了更新 DataSet 的数据服务，待 Transaction完成后执行回调函数的方法 。">
+        <Syntax text="Form.transaction( strSvcID, strURL, strInDatasets, strOutDatasets, strArgument, strCallbackFunc [,bAsync [,nDataType [,bCompress]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="设定是否需要以非同步（ASync）方式处理transaction。&#xA;&#xA;在设定为“true”时，将transaction以非同步（ASync）方式进行处理，与transaction处理的完成与否无关，执行脚本。&#xA;在设定为“false”时，将transaction以同步（Sync）方式进行处理，在完成transaction处理之前中断脚本的执行。&#xA;&#xA;在不设定值时，适用“true”。" />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在transaction处理过程中是否对数据进行压缩。&#xA;&#xA;在设定为“true”时，压缩数据之后进行收发。&#xA;在设定为“false”时，不压缩数据进行收发。&#xA;&#xA;在不设定值时，适用“false”。" />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="设定在 transaction 处理过程中，向服务器传送的数据形态。&#xA;&#xA;&quot;0&quot; : XML 形式&#xA;&quot;1&quot; : Binary 形式&#xA;&quot;2&quot; : SSV 形式&#xA;&quot;3&quot; : JSON 形式&#xA;&#xA;&#xA;在不设定值时适用“0”。" />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="将要发送到服务器页面的信息设置为字符串 。&#xA;可以按照“变量ID=变量值”的格式进行设定，并利用空格区分传送多个参数值。&#xA;&#xA;ex) &quot;argu0=test argu1=30&quot;" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定，接收transaction结果时，调用的回调函数名。&#xA;回调函数需要在Form区域或Application区域做出定义。" />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="为了处理数据，将发送至服务器的DataSet ID设置为字符串。&#xA;DataSet需要在Form区域或Application的AppVariables区域做出定义。&#xA;可以按照“输入ID=DataSet ID”的格式进行设定，并利用空格区分传送多个DataSet。&#xA;&#xA;ex) &quot;input1=DataSet00 input2=DataSet01&quot;&#xA;&#xA;Container Component（Div、View等）的Dataset对象可以设置如下。&#xA;&#xA;ex) &quot;input1=View00.form.Dataset00 input2=Div00.form.Dataset01&quot;" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于接收从服务器传送过来的数据的DataSet的ID。&#xA;DataSet需要在Form区域或Application的AppVariables区域做出定义。&#xA;可以按照“DataSet ID=输出ID”的格式进行设定，并利用空格区分接收多个DataSet。&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output1&quot;&#xA;&#xA;如下列格式，可以在多个 Dataset 中接收一个 Ouput Dataset (输出 ID) 。&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output0&quot;&#xA;&#xA;Container Component（Div、View等）的Dataset对象可以设置如下。&#xA;&#xA;ex) &quot;View00.form.Dataset00=ouput0 Div00.form.Dataset01=output1&quot;" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定为了区分transaction的ID。" />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要请求transaction的服务器页面地址。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="canlayoutchange" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的Layout发生变更时触发的事件。">
+        <Syntax text="Form.canlayoutchange(obj:nexacro.Form,e:nexacro.LayoutChangeEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回ture时，Form的Layout将发生变更。&#xD;&#xA;在事件中作为返回值返回false时，Form的Layout不会发生变更。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用true。" />
+          <Arguments>
+            <Argument name="e" type="LayoutChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canstepchange" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在设定了画面分割的Form中显示的画面发生变更时触发的事件。">
+        <Syntax text="Form.canstepchange(obj:nexacro.Form,e:nexacro.StepChangeEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回&quot;true&quot;时，所显示的画面将发生变更。&#xD;&#xA;在事件中作为返回值返回“false”时，所显示的画面不会发生变更。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="e" type="StepChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onactivate" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form被激活时触发的事件。">
+        <Syntax text="Form.onactivate(obj:nexacro.Form,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeclose" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form被关闭之前触发的事件。">
+        <Syntax text="Form.onbeforeclose(obj:nexacro.Form,e:nexacro.CloseEventInfo);">
+          <Return type="String" description="在事件中作为返回值设定字符串时，将显示询问是否关闭Form的确认窗口。&#xD;&#xA;在事件中作为返回值设定的字符串，将在询问是否关闭的确认窗口中使用。&#xD;&#xA;&#xD;&#xA;在事件中返回省略值或设定为null, undefined, &quot;&quot;(Empty String)时，不会显示确认窗口。" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbindingvaluechanged" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在因为DataSet的数据变更而导致所绑定的组件发生变更时触发的事件。">
+        <Syntax text="Form.onbindingvaluechanged(obj:nexacro.Form,e:nexacro.BindingValueChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BindingValueChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内点击鼠标左键时触发的事件。">
+        <Syntax text="Form.onclick(obj:nexacro.Form,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form被关闭或发生画面转换时触发的事件。">
+        <Syntax text="Form.onclose(obj:nexacro.Form,e:nexacro.CloseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域点击鼠标右键或维持触摸一定时间时触发的事件。">
+        <Syntax text="Form.oncontextmenu(obj:nexacro.Form,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="Form.ondblclick(obj:nexacro.Form,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeactivate" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form被禁用时触发的事件。">
+        <Syntax text="Form.ondeactivate(obj:nexacro.Form,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondevicebuttonup" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在移动设备中按下设备按钮时触发的事件。">
+        <Syntax text="Form.ondevicebuttonup(obj:nexacro.Form,e:nexacro.DeviceButtonEventInfo);">
+          <Return type="Boolean" description="在返回true时，不会将事件传播到上级组件。&#xD;&#xA;在返回false时，将事件传播到上级组件。&#xD;&#xA;在省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DeviceButtonEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内利用鼠标左键执行拖曳时触发的事件。">
+        <Syntax text="Form.ondrag(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，将进入拖曳状态，且不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将取消拖曳状态，并将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针进入到Form区域内时触发的事件。">
+        <Syntax text="Form.ondragenter(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针移出到Form区域外时触发的事件。">
+        <Syntax text="Form.ondragleave(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针在Form区域内移动时触发的事件。">
+        <Syntax text="Form.ondragmove(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内释放拖曳状态的鼠标按钮时触发的事件。">
+        <Syntax text="Form.ondrop(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form中执行的Transaction发生错误时触发的事件。">
+        <Syntax text="Form.onerror(obj:nexacro.Form,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，&#xD;&#xA;  &gt; 不会将事件传播到Environment的onerror。&#xD;&#xA;  &gt; 不停止而是维持正在执行的Transaction。&#xD;&#xA;&#xD;&#xA;在事件中作为返回值返回false时，&#xD;&#xA;  &gt; 将事件传播到Environment的onerror。&#xD;&#xA;  &gt; 正在执行的Transaction的停止与否在Environment的onerror中通过返回值决定。&#xD;&#xA;  &gt; 在Environment中没有定义onerror事件时，将停止正在执行的Transaction。&#xD;&#xA;&#xD;&#xA;当省略事件的返回值时，将适用f" />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onextendedcommand" group="" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="在从DeviceAdaptors中所定义的设备传递事件时触发的事件。">
+        <Syntax text="Form.onextendedcommand(obj:nexacro.Form,e:nexacro.ExtendedCommandEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExtendedCommandEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onhscroll" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的水平滚动条发生滚动时触发的事件。">
+        <Syntax text="Form.onhscroll(obj:nexacro.Form,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninit" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在完成Form的初始化时触发的事件。">
+        <Syntax text="Form.oninit(obj:nexacro.Form,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="Form.oninput(obj:nexacro.Form,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form获得焦点的状态下按下键盘中的按键时触发的事件。">
+        <Syntax text="Form.onkeydown(obj:nexacro.Form,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form获得焦点的状态下原来被按下的按键被释放时触发的事件。">
+        <Syntax text="Form.onkeyup(obj:nexacro.Form,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在焦点从Form移出时触发的事件。">
+        <Syntax text="Form.onkillfocus(obj:nexacro.Form,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlayoutchanged" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的Layout发生变更之后触发的事件。">
+        <Syntax text="Form.onlayoutchanged(obj:nexacro.Form,e:nexacro.LayoutChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LayoutChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内按下鼠标左键时触发的事件。">
+        <Syntax text="Form.onlbuttondown(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内释放被按下的鼠标左键时触发的事件。">
+        <Syntax text="Form.onlbuttonup(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在完成注册到Form中的所有组件以及数据的载入之后触发的事件。">
+        <Syntax text="Form.onload(obj:nexacro.Form,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在鼠标指针进入到Form区域内时触发的事件。">
+        <Syntax text="Form.onmouseenter(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在鼠标指针移出到Form区域外时触发的事件。">
+        <Syntax text="Form.onmouseleave(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内移动鼠标指针时触发的事件。">
+        <Syntax text="Form.onmousemove(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内旋转鼠标的滚轮按钮时触发的事件。">
+        <Syntax text="Form.onmousewheel(obj:nexacro.Form,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，将对滚轮按钮旋转值进行忽略，且不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将对滚轮按钮旋转值进行处理，并将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的位置发生移动时触发的事件。">
+        <Syntax text="Form.onmove(obj:nexacro.Form,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onorientationchange" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在移动设备的画面方向发生变更时触发的事件。">
+        <Syntax text="Form.onorientationchange(obj:nexacro.Form,e:nexacro.OrientationChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="OrientationChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内按下鼠标右键时触发的事件。">
+        <Syntax text="Form.onrbuttondown(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内释放鼠标右键时触发的事件。">
+        <Syntax text="Form.onrbuttonup(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在焦点移入到Form时触发的事件。">
+        <Syntax text="Form.onsetfocus(obj:nexacro.Form,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的大小发生变更时触发的事件。">
+        <Syntax text="Form.onsize(obj:nexacro.Form,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onstepchanged" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在设定了画面分割的Form中显示的画面发生变更之后触发的事件。">
+        <Syntax text="Form.onstepchanged(obj:nexacro.Form,e:nexacro.StepChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="StepChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontimer" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在通过setTimer()方法生成的定时器的每个时间间隔触发的事件。">
+        <Syntax text="Form.ontimer(obj:nexacro.Form,e:nexacro.TimerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="TimerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内释放触摸时触发的事件。">
+        <Syntax text="Form.ontouchend(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内维持触摸状态并移动时触发的事件。">
+        <Syntax text="Form.ontouchmove(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form区域内开始触摸时触发的事件。">
+        <Syntax text="Form.ontouchstart(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Form的垂直滚动条发生滚动时触发的事件。">
+        <Syntax text="Form.onvscroll(obj:nexacro.Form,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

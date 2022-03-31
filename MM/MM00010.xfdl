@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Temp01_04" width="1528" height="752" titletext="모델카달로그등록">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="63" cssclass="div_group" formscrolltype="none" bottom="48" right="794">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="모델목록" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="320" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" initvalueid="iv_Grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="제조회사"/>
+                      <Cell col="2" text="모델코드"/>
+                      <Cell col="3" text="모델명"/>
+                      <Cell col="4" text="영문명"/>
+                      <Cell col="5" text="국산외산"/>
+                      <Cell col="6" text="차량생산지"/>
+                      <Cell col="7" text="공급업체"/>
+                      <Cell col="8" text="공급업체명"/>
+                      <Cell col="9" text="탁송코드"/>
+                      <Cell col="10" text="탁송구분"/>
+                      <Cell col="11" text="등록자"/>
+                      <Cell col="12" text="등록일시"/>
+                      <Cell col="13" text="수정자"/>
+                      <Cell col="14" text="수정일시"/>
+                      <Cell col="15" text="사용여부"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3" textAlign="left"/>
+                      <Cell col="4" text="bind:Column3" textAlign="left"/>
+                      <Cell col="5" text="bind:Column3"/>
+                      <Cell col="6" text="bind:Column3"/>
+                      <Cell col="7" text="bind:Column3"/>
+                      <Cell col="8" text="bind:Column3"/>
+                      <Cell col="9" text="bind:Column3"/>
+                      <Cell col="10" text="bind:Column3"/>
+                      <Cell col="11" text="bind:Column3"/>
+                      <Cell col="12" text="bind:Column3"/>
+                      <Cell col="13" text="bind:Column3"/>
+                      <Cell col="14" text="bind:Column3"/>
+                      <Cell col="15" text="bind:Column3"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_02" taborder="3" text="11" top="39" cssclass="sta_Guide" width="80" left="0" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+              <Static id="Static02_02_00" taborder="5" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="57"/>
+              <Static id="Static02_00" taborder="6" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="72"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="1" text="40" top="0" cssclass="sta_Guide" width="40" right="0" bottom="-5" visible="false"/>
+        <Div height="63" cssclass="div_SA" text="" formscrolltype="none" id="div00" left="0" top="0" taborder="2" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_01" taborder="0" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="1" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="32" bottom="0"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00" taborder="4" text="제조회사" left="20" top="18" width="58" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01_00_00_01" taborder="5" text="w40" top="0" cssclass="sta_Guide" width="40" left="236" height="60" visible="false"/>
+              <Static id="Static00_00_00_01" taborder="6" text="모델명" left="276" top="18" width="45" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01_00_00_00" taborder="7" text="w40" top="0" cssclass="sta_Guide" width="40" left="726" height="60" visible="false"/>
+              <Static id="Static00_00_00" taborder="8" text="국/외구분" left="766" top="18" width="64" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cmb00" taborder="9" text="전체" left="86" top="18" width="150" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" value="전체" cssclass="input_req">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">전체</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">GENERAL MOTORS</Col>
+                      <Col id="datacolumn">GENERAL MOTORS</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Combo id="cmb01" taborder="10" text="전체" left="840" top="18" width="60" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" value="전체">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">전체</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">국산</Col>
+                      <Col id="datacolumn">국산</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">외산</Col>
+                      <Col id="datacolumn">외산</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Static id="Static01_00_00_00_00" taborder="11" text="w40" top="0" cssclass="sta_Guide" width="40" left="900" height="60" visible="false"/>
+              <Static id="Static00_00_00_00" taborder="12" text="사용여부" left="940" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Edit id="edt00" taborder="13" left="331" top="18" width="150" height="24" cssclass="input_req"/>
+              <Static id="Static00_00_00_01_00" taborder="14" text="영문명" left="521" top="18" width="45" height="24" cssclass="sta_SA_label_req"/>
+              <Edit id="edt00_00" taborder="15" left="576" top="18" width="150" height="24" cssclass="input_req"/>
+              <Static id="Static01_00_00_01_00" taborder="16" text="w40" top="0" cssclass="sta_Guide" width="40" left="481" height="60" visible="false"/>
+              <Radio id="Radio00" taborder="17" left="1008" top="18" width="204" height="24" initvalueid="iv_Radio" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="예" text="예" index="1" onitemchanged="div00_Radio00_onitemchanged">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">전체</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">예</Col>
+                      <Col id="datacolumn">예</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">아니요</Col>
+                      <Col id="datacolumn">아니요</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Radio>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div01_00" taborder="3" text="Div01" top="63" cssclass="div_group" formscrolltype="none" bottom="48" width="734" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="카달로그 목록" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="320" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" initvalueid="iv_Grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="40" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2" text="파일번호"/>
+                      <Cell col="3" text="순번"/>
+                      <Cell col="4" text="파일명"/>
+                      <Cell col="5" text="파일크기"/>
+                      <Cell col="6" text="사용여부"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column3"/>
+                      <Cell col="6" text="bind:Column3"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_02" taborder="3" text="11" top="39" cssclass="sta_Guide" width="80" left="0" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_03_02_00" taborder="4" text="파일삭제" top="20" width="74" height="24" cssclass="btn_Block" right="0"/>
+              <Static id="Static02_00" taborder="5" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="176"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00" taborder="6" text="4" top="14" cssclass="sta_Guide" width="4" left="1279" height="35" visible="false"/>
+              <Static id="Static02_02_00" taborder="7" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="160"/>
+              <Static id="Static01_00_00_01_00_00_03_01" taborder="8" text="15" top="13" cssclass="sta_Guide" width="15" left="1291" height="35" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_02_00" taborder="9" top="20" width="74" height="24" cssclass="btn_Block" textPadding="0px" right="78" text="파일추가"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="div00_00" taborder="4" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="Div01:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00_00" taborder="0" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="10" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="1" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="2" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.div00_Radio00_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Work" width="1568" height="812" titletext="Form_Work" scrollbartype="auto auto">
+    <Layouts>
+      <Layout width="1568" height="812" screenid="Desktop_screen">
+        <Div id="CommHeader" taborder="0" text="Div00" left="40" top="0" height="60" right="40" url="FrameBase::WorkFormCommHeader.xfdl" formscrolltype="none" visible="true" minwidth="1488" maxwidth=""/>
+        <Div id="divWork" taborder="1" text="Div01" left="40" top="60" bottom="50" visible="true" right="0" maxwidth="" maxheight="" minwidth="1528" minheight="702" url="UI_Template::Temp01_01.xfdl"/>
+        <Div id="Div00_00" taborder="2" text="Div00" left="0" right="0" url="FrameBase::WorkFormCommFooter.xfdl" height="49" minwidth="1568" maxwidth="" minheight="49" maxheight="" bottom="0"/>
+        <Button id="Button00_01_00" taborder="3" left="0" top="340" width="20" height="73" onclick="Button00_onclick" cssclass="btn_LF_hide"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

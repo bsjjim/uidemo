@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalPeriod",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalPeriod/_metainfo_/CalPeriod.info"
+	],
+	"scripts": [
+    "CalPeriod/CalPeriod.js"
+	],
+	"designscripts": [
+    "CalPeriod/DesignCalPeriod.js"
+	],
+	"help": "",	
+	"xcss": "CalPeriod/_xcss_/CalPeriod.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

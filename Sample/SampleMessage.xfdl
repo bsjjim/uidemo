@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleMessage" width="1528" height="752" titletext="메시지 팝업 샘플">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="메시지 팝업 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Div id="Div01" taborder="1" text="Div01" left="0" top="41" height="175" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="1" text="&lt;b v='true'&gt;gdsMessage :&lt;/b&gt; 글로벌 메시지 데이터셋 공통적으로 사용하는 메시지는 해당 데이터셋에 등록하여 사용" left="18" top="32" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00" taborder="0" text="공통 메시지" left="18" top="9" width="1306" height="24" cssclass="sta_txt_descTitle"/>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="10" top="28" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="3" text="10" top="50" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="4" text="15" top="0" cssclass="sta_Guide" width="100" left="78" height="15" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00" taborder="5" text="10" top="72" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static00_00_00" taborder="6" text="&lt;b v='true'&gt;gfnMsg :&lt;/b&gt; 메시지 관련 함수이며 this.gfnMsg(sMsgId,aArgs)로 호출하여 사용한다.  글로벌 데이터셋에 등록되어있는 메시지만 사용가능" left="18" top="54" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00" taborder="7" text="&lt;b v='true'&gt;gfnMsgPopup :&lt;/b&gt; 기본 통합메시지 팝업 함수 이며 기본 콜백함수명은 fnMsgCallback으로 반환된다." left="18" top="77" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00_00" taborder="8" text="&lt;b v='true'&gt;gfnAlert :&lt;/b&gt; Alert 메시지 팝업 함수 이며 기본 콜백함수명은 fnMsgCallback으로 반환된다." left="18" top="99" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00_01" taborder="9" text="&lt;b v='true'&gt;gfnConfirm :&lt;/b&gt; Confirm메시지 팝업 함수 이며 기본 콜백함수명은 fnMsgCallback으로 반환된다." left="18" top="121" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00_02" taborder="10" text="&lt;b v='true'&gt;gfnError :&lt;/b&gt; Error메시지 팝업 함수 이며 기본 콜백함수명은 fnMsgCallback으로 반환된다." left="18" top="143" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00" taborder="2" text="gdsMessage" left="0" top="225" width="328" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Grid id="grd00" taborder="3" left="0" top="254" binddataset="gdsMessage" autofittype="col" width="898" bottom="20">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="202"/>
+                <Column size="456"/>
+                <Column size="54"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="msgId"/>
+                <Cell col="1" text="msgText"/>
+                <Cell col="2" text="msgType"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:msgId" textAlign="left" displaytype="editcontrol" edittype="readonly"/>
+                <Cell col="1" text="bind:msgText" textAlign="left"/>
+                <Cell col="2" text="bind:msgType"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01" taborder="4" text="gfnMsg" left="930" top="225" width="328" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Static id="Static26_02_00_00_00" taborder="5" text="사용방법" left="930" top="254" width="130" height="200" cssclass="sta_DA_label"/>
+        <Static id="Static27_03_00_00_00" taborder="6" left="1059" top="254" height="200" cssclass="sta_DA_data" right="40" verticalAlign="top" usedecorate="true"/>
+        <Static id="sta00" taborder="7" text="메시지ID" left="1078" top="265" width="60" height="24"/>
+        <Static id="sta00_00" taborder="8" text="아규먼트1" left="1079" top="294" width="60" height="24"/>
+        <Edit id="edtArg0" taborder="9" left="1144" top="294" width="90" height="24" value="항목1" text="항목1"/>
+        <Edit id="edtArg1" taborder="10" left="1144" top="324" width="90" height="24" value="항목2" text="항목2"/>
+        <Edit id="edtArg2" taborder="11" left="1145" top="354" width="90" height="24" value="항목3" text="항목3"/>
+        <Static id="sta00_00_00" taborder="12" text="아규먼트2" left="1079" top="324" width="60" height="24"/>
+        <Static id="sta00_00_00_00" taborder="13" text="아규먼트3" left="1079" top="354" width="60" height="24"/>
+        <Static id="sta01" taborder="14" text="결과" left="1089" top="384" width="50" height="24"/>
+        <Static id="staMsg" taborder="15" left="1089" top="411" width="380" height="34" border="1px solid #555555"/>
+        <Button id="btnMsg" taborder="16" text="확인" left="1415" top="350" width="50" height="24" onclick="btnMsg_onclick"/>
+        <Static id="Static01_00" taborder="17" text="gfnMsgPopup" left="930" top="465" width="328" height="28" font="bold 10pt &quot;맑은 고딕&quot;" cssclass="sta_WF_title2"/>
+        <Static id="Static26_02_00_00_00_00" taborder="18" text="사용방법" left="930" top="494" width="130" cssclass="sta_DA_label" height="323"/>
+        <Static id="Static27_03_00_00_00_00" taborder="19" left="1059" top="494" cssclass="sta_DA_data" right="40" verticalAlign="top" usedecorate="true" height="323" text=""/>
+        <Static id="sta00_01" taborder="20" text="메시지ID" left="1078" top="505" width="60" height="24"/>
+        <Static id="sta00_00_01" taborder="21" text="아규먼트1" left="1079" top="616" width="60" height="24"/>
+        <Edit id="edtMsgArg0" taborder="22" left="1144" top="616" width="90" height="24" value="선택항목" text="선택항목"/>
+        <Edit id="edtMsgArg1" taborder="23" left="1144" top="646" width="90" height="24"/>
+        <Edit id="edtMsgArg2" taborder="24" left="1145" top="676" width="90" height="24"/>
+        <Static id="sta00_00_00_01" taborder="25" text="아규먼트2" left="1079" top="646" width="60" height="24"/>
+        <Static id="sta00_00_00_00_00" taborder="26" text="아규먼트3" left="1079" top="676" width="60" height="24"/>
+        <Combo id="cmbMsgId" taborder="27" left="1145" top="264" width="260" height="24" value="msg.server.error" index="0" innerdataset="gdsMessage" codecolumn="msgId" datacolumn="msgText" text="서버 오류입니다.\n관리자에게 문의하세요."/>
+        <Static id="sta00_00_00_00_00_00" taborder="28" text="타입" left="1079" top="752" width="60" height="24"/>
+        <Combo id="cmbMsgType" taborder="29" left="1145" top="705" width="90" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" text="선택" value="">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="datacolumn">선택</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">A</Col>
+                <Col id="datacolumn">Alert</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">C</Col>
+                <Col id="datacolumn">Confirm</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">E</Col>
+                <Col id="datacolumn">Error</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Button id="btnMsgPopup" taborder="30" text="메시지호출" left="1073" top="754" width="80" height="24" onclick="btnMsgPopup_onclick"/>
+        <TextArea id="txtMsgId" taborder="31" left="1143" top="505" width="300" height="50" value="msg.noselect"/>
+        <TextArea id="txtAddMsg" taborder="32" left="1143" top="561" width="300" height="50"/>
+        <Static id="sta00_01_00" taborder="33" text="추가메시지&#13;&#10;(error)" left="1078" top="561" width="60" height="34"/>
+        <Button id="btnAlert" taborder="34" text="Alert" left="1074" top="784" width="60" height="24" onclick="btnAlert_onclick"/>
+        <Button id="btnConfirm" taborder="35" text="Confirm" left="1140" top="784" width="70" height="24" onclick="btnConfirm_onclick"/>
+        <Button id="btnError" taborder="36" text="Error" left="1215" top="784" width="70" height="24" onclick="btnError_onclick"/>
+        <Button id="btnMsgPopupCallback" taborder="37" text="메시지호출(함수내콜백)" left="1158" top="754" width="150" height="24" onclick="btnMsgPopupCallback_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  메시지 관련 샘플
+*  @FileName 	: SampleMessage.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/21
+*  @Desction    : 메시지 관련 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/21     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnMsgCallback = function(sId,sVal)
+{
+    if(sId == "test")
+	{
+		trace("==콜백함수==")
+	    trace("sId ==>"+sVal);
+	    trace("sVal ==>"+sVal);
+	}
+}
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.btnMsg_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.cmbMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtArg"+i].value))	aArgs[aArgs.length] = this.components["edtArg"+i].value;
+	}
+	
+	var sMsg = this.gfnMsg(this.cmbMsgId.value,aArgs);
+	
+	this.staMsg.set_text(sMsg);
+	
+};
+
+this.btnMsgPopup_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.txtMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtMsgArg"+i].value)) aArgs[aArgs.length] = this.components["edtMsgArg"+i].value;
+	}
+	
+	this.gfnMsgPopup(this.txtMsgId.value,aArgs,this.cmbMsgType.value,"fnMsgCallback","test",this.txtAddMsg.value);
+};
+
+this.btnMsgPopupCallback_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.txtMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtMsgArg"+i].value)) aArgs[aArgs.length] = this.components["edtMsgArg"+i].value;
+	}
+	
+	this.gfnMsgPopup(this.txtMsgId.value,aArgs,this.cmbMsgType.value,
+	function(sId,sVal)
+	{
+	   trace("==함수내콜백==")
+	   trace("sId ==>"+sId)
+	   trace("sVal ==>"+sVal)
+	},"test",this.txtAddMsg.value);	
+};
+
+this.btnAlert_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.txtMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtMsgArg"+i].value)) aArgs[aArgs.length] = this.components["edtMsgArg"+i].value;
+	}
+	
+	this.gfnAlert(this.txtMsgId.value,aArgs);	
+};
+
+this.btnConfirm_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.txtMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtMsgArg"+i].value)) aArgs[aArgs.length] = this.components["edtMsgArg"+i].value;
+	}
+	
+	this.gfnConfirm(this.txtMsgId.value,aArgs);	
+};
+
+this.btnError_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var aArgs = [];
+	
+	if(this.gfnIsNull(this.txtMsgId.value)) return;
+	
+	for(var i=0; i<3; i++)
+	{
+		if(!this.gfnIsNull(this.components["edtMsgArg"+i].value)) aArgs[aArgs.length] = this.components["edtMsgArg"+i].value;
+	}
+	
+	this.gfnError(this.txtMsgId.value,this.txtAddMsg.value,aArgs);	
+};
+
+
+]]></Script>
+  </Form>
+</FDL>

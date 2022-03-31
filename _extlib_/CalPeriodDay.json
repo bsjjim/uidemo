@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalPeriodDay",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalPeriodDay/_metainfo_/CalPeriodDay.info"
+	],
+	"scripts": [
+    "CalPeriodDay/CalPeriodDay.js"
+	],
+	"designscripts": [
+    "CalPeriodDay/DesignCalPeriodDay.js"
+	],
+	"help": "",	
+	"xcss": "CalPeriodDay/_xcss_/CalPeriodDay.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="LayOut_01_01" width="1528" height="910" titletext="조회영역 #01 - 클래스, 유형 ">
+    <Layouts>
+      <Layout height="910" width="1528">
+        <Static id="Static58_00_00_00" taborder="65" left="1" top="776" width="424" height="1" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Div id="DivSearch" taborder="0" left="0" top="85" height="63" cssclass="div_SA" right="40" formscrolltype="none">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="매각일" left="20" top="18" width="58" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="차량번호" left="324" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00" taborder="2" left="391" top="18" width="80" height="24" text="10허4048"/>
+              <Button id="Button00" taborder="3" left="473" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_00" taborder="4" text="w40" top="0" cssclass="sta_Guide" width="40" left="284" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="5" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00" taborder="6" text="h11" top="0" cssclass="sta_Guide" width="50" height="11" visible="false" right="27"/>
+              <Static id="Static01_00_01_00_00" taborder="7" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="32" bottom="0"/>
+              <Static id="Static01_01" taborder="8" text="상태" left="537" top="18" width="39" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="9" text="w40" top="0" cssclass="sta_Guide" width="40" left="497" height="60" visible="false"/>
+              <Combo id="Combo00" taborder="10" text="전체" left="578" top="18" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_00_00_00_00" taborder="11" text="w40" top="0" cssclass="sta_Guide" width="40" left="728" height="60" visible="false"/>
+              <Static id="Static01_01_00" taborder="12" text="매각유형" left="768" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00" taborder="13" text="전체" left="834" top="18" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_00" taborder="14" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Button id="Button02" taborder="15" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <CalPeriod id="CalPeriod00" taborder="16" left="74" top="18" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static21" taborder="1" left="353" top="60" width="13" height="46" border="1px solid red, 0px none rgba(128,128,128,1), 0px none #808080, 1px solid red"/>
+        <Static id="Static22" taborder="2" text=" label 클래스 : sta_SA_label" left="373" top="53" width="231" height="15"/>
+        <Static id="Static21_00" taborder="3" left="44" top="60" width="13" height="46" border="1px solid red, 0px none rgba(128,128,128,1), 0px none #808080, 1px solid red"/>
+        <Static id="Static22_00" taborder="4" text="필수입력 label 클래스 : sta_SA_label_req" left="64" top="53" width="266" height="15"/>
+        <Static id="Static25_00" taborder="5" top="132" width="23" height="47" border="0px none , 1px solid red, 1px solid red, 0px none" right="85"/>
+        <Static id="Static22_01" taborder="6" text="조회버튼 클래스 : btn_SA_src" top="169" width="181" height="15" right="99"/>
+        <Button id="btnSearchExpand" taborder="7" left="48.00%" top="147" width="42" height="22" onclick="Button01_onclick" cssclass="btn_SA_collapse"/>
+        <Static id="Static25_01" taborder="8" left="btnSearchExpand:-21" top="btnSearchExpand:1" width="23" height="32" border="0px none rgba(128,128,128,1), 0px none rgba(128,128,128,1), 1px solid red, 1px solid red"/>
+        <Button id="btnSearchExpand00" taborder="9" left="btnSearchExpand:40.48%" top="191" width="42" height="22" onclick="Button01_onclick" cssclass="btn_SA_collapse"/>
+        <Button id="btnSearchExpand00_00" taborder="10" left="btnSearchExpand:40.48%" top="223" width="42" height="22" onclick="Button01_onclick" cssclass="btn_SA_expand"/>
+        <Static id="Static27_00" taborder="11" text="조회영역 축소 : btn_SA_collapse" left="btnSearchExpand00:10" top="195" width="216" height="15"/>
+        <Static id="Static27_00_00" taborder="12" text="조회영역 확장 : btn_SA_expand" left="btnSearchExpand00_00:10" top="226" width="216" height="15"/>
+        <Static id="Static00_00_00_00_00" taborder="13" text="조회영역이 3줄 이상일 경우에만 사용한다.(하프형 5줄 이상)" left="btnSearchExpand:19" top="161" width="421" height="24" cssclass="sta_txt_desc"/>
+        <Static id="Static00_01" taborder="14" text="1뎁스 조회영역 클래스(.div_SA)" left="0" top="15" width="390" height="30" cssclass="sta_WF_title1"/>
+        <Static id="Static01" taborder="15" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static00_01_01" taborder="16" text="2뎁스 조회영역 클래스(.div_SA2)-  팝업/서브탭에서 사용" left="0" top="266" width="385" height="30" cssclass="sta_WF_title1"/>
+        <Div id="DivSearch02_00" taborder="17" left="0" top="302" height="52" cssclass="div_SA2" right="40" formscrolltype="none">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="매각일" left="20" top="13" width="58" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="차량번호" left="324" top="13" width="63" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00" taborder="2" left="391" top="13" width="80" height="24" text="10허4048"/>
+              <Button id="Button00" taborder="3" left="473" top="13" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_00" taborder="4" text="w40" top="0" cssclass="sta_Guide" width="40" left="284" height="49" visible="false"/>
+              <Static id="Static01_00_01" taborder="5" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_01" taborder="6" text="상태" left="537" top="13" width="39" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00" taborder="7" text="전체" left="578" top="13" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_01_00" taborder="8" text="매각유형" left="768" top="13" width="63" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00" taborder="9" text="전체" left="834" top="13" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_00" taborder="10" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="49" visible="false"/>
+              <Button id="Button02" taborder="11" height="30" cssclass="btn_SA_src2" right="20" width="30" bottom="10"/>
+              <Static id="Static01_00_00_00" taborder="12" text="w40" top="0" cssclass="sta_Guide" width="40" left="497" height="49" visible="false"/>
+              <Static id="Static01_00_00_00_00" taborder="13" text="w40" top="0" cssclass="sta_Guide" width="40" left="728" height="49" visible="false"/>
+              <CalPeriod id="CalPeriod00" taborder="14" left="74" top="13" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static22_01_00" taborder="18" text="조회버튼 클래스 : btn_SA_src2" top="370" width="181" height="15" right="99"/>
+        <Static id="Static25_00_00" taborder="19" top="343" width="23" height="37" border="0px none , 1px solid red, 1px solid red, 0px none" right="75"/>
+        <Static id="Static25_02" taborder="20" left="74" top="352" width="23" height="27" border="0px none rgba(128,128,128,1), 0px none rgba(128,128,128,1), 1px solid red, 1px solid red"/>
+        <Static id="Static27_01" taborder="21" text="조회영역 박스  클래스 : div_SA2" left="106" top="370" width="216" height="15"/>
+        <Static id="Static01_01_00" taborder="22" text="※ 조회영역 박스와, 조회버튼을 제외한 나머지 클래스는 동일. " left="398" top="270" width="682" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static58_00" taborder="23" left="0" top="429" height="5" border="1px dotted rgba(177,192,203,1), 0px none , 0px none , 0px none " right="40"/>
+        <Div id="DivSearch00" taborder="24" left="0" top="498" height="63" cssclass="div_SA" right="40" text="" formscrolltype="none">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="매각일자" left="20" top="18" width="63" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="차량번호" left="337" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00" taborder="2" left="404" top="18" width="90" height="24" text="10허4048"/>
+              <Button id="Button00" taborder="3" left="496" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_01_00" taborder="4" text="h11" top="0" cssclass="sta_Guide" width="50" height="11" visible="false" right="27"/>
+              <Static id="Static01_00_01_00_00" taborder="5" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="32" bottom="0"/>
+              <Static id="Static01_01" taborder="6" text="상태" left="560" top="18" width="39" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00" taborder="7" text="전체" left="601" top="18" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_01_00" taborder="8" text="매각유형" left="791" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00" taborder="9" text="전체" left="851" top="18" width="150" height="24" value="" index="-1"/>
+              <Button id="Button02" taborder="10" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_01" taborder="11" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <CalPeriod id="CalPeriod00" taborder="12" left="86" top="18" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static58_00_00" taborder="25" left="0" top="584" width="1002" height="1" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static74_00_00_00_00_01_00_00" taborder="26" left="791" top="523" width="213" height="78" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static74_00_00_00_00_01_00" taborder="27" left="561" top="523" width="191" height="78" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static00_01_00" taborder="28" text="조회영역(와이드형)" left="0" top="468" width="187" height="30" cssclass="sta_WF_title1"/>
+        <Static id="Static74_00_00_00_00" taborder="29" left="20" top="529" width="278" height="70" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text="" initvalueid=""/>
+        <Static id="Static01_00_00_01_00" taborder="30" text="1단" left="148" top="577" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static00_00_00_00" taborder="31" text="※  4단 컬럼을 기준으로 한다.  bg 영역을 리사이징 한다, 내부 컴포넌트는 리사이징 하지 않으며, 조회버튼은 우측으로 Anchor" left="152" top="471" width="958" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static74_00_00_00_00_00" taborder="32" left="0" top="529" width="21" height="70" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static74_00_00_00_00_01" taborder="33" left="337" top="533" width="184" height="68" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+        <Static id="Static01_00_00_01_00_00" taborder="34" text="2단" left="401" top="573" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static01_00_00_01_00_00_00" taborder="35" text="3단" left="635" top="573" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static01_00_00_01_00_00_00_00" taborder="36" text="4단" left="880" top="573" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static01_00_00_01_00_01" taborder="37" text="20px" left="0" top="572" width="30" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00" taborder="38" text="40px" left="301" top="572" width="35" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00_00" taborder="39" text="40px" left="524" top="572" width="35" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00_00_00" taborder="40" text="40px" left="755" top="572" width="35" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_00_00" taborder="41" left="76" top="524" width="11" height="35" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static01_00_00_01_00_01_01" taborder="42" text="10px" left="69" top="551" width="30" height="19" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_00_00_00" taborder="43" left="395" top="521" width="11" height="35" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static01_00_00_01_00_01_01_00" taborder="44" text="10px" left="388" top="548" width="30" height="19" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_01_00_00_00_00" taborder="45" left="995" top="499" width="52" height="19" border=" 1px dotted rgba(177,192,203,1), 0px none rgba(128,128,128,1)"/>
+        <Static id="Static74_00_00_00_00_01_00_00_00_00_00" taborder="46" left="995" top="541" width="52" height="20" border=" 1px dotted rgba(177,192,203,1), 0px none rgba(128,128,128,1)"/>
+        <Static id="Static01_00_00_01_00_01_00_00_00_00_00" taborder="47" text="18px" left="1009" top="501" width="45" height="14" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00_00_00_00_00_00" taborder="48" text="18px" left="1009" top="542" width="45" height="14" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00_00_00_00_00_00_00" taborder="49" text="24px" left="1009" top="521" width="45" height="14" textAlign="center" background="#ffffff"/>
+        <Div id="DivSearch01_01" taborder="50" left="0" top="682" height="63" cssclass="div_SA" width="734" formscrolltype="none">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약번호" left="20" top="18" width="62" height="24" cssclass="sta_SA_label_req"/>
+              <Button id="Button02" taborder="1" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Edit id="Edit00" taborder="2" left="86" top="18" width="90" height="24" text="123456789" value="123456789" cssclass="input_req"/>
+              <Button id="Button00" taborder="3" left="178" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_01_00_00" taborder="4" text="h11" top="49" cssclass="sta_Guide" width="50" height="11" visible="false" right="32"/>
+              <Static id="Static01" taborder="5" text="차량번호" left="242" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_00" taborder="6" left="309" top="18" width="90" height="24" text="10허4048"/>
+              <Button id="Button00_00" taborder="7" left="401" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_01" taborder="8" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00" taborder="51" text="조회영역 (하프형)" left="0" top="647" width="145" height="30" cssclass="sta_WF_title1"/>
+        <Static id="Static01_00_00" taborder="52" text="하프 너비 w734" top="688" cssclass="sta_Guide_info" width="190" left="765" height="50"/>
+        <Static id="Static01_00" taborder="53" text="※ 2단 컬럼을 기준으로 한다. 하프 형태 레이아웃에서는 리사이징 하지 않음. " left="142" top="650" width="633" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static01_00_00_01_00_02" taborder="54" text="1단" left="91" top="767" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static01_00_00_01_00_00_01" taborder="55" text="2단" left="321" top="763" width="40" height="24" textAlign="center" background="#ffffff" color="red"/>
+        <Static id="Static01_00_00_01_00_01_02" taborder="56" text="20px" left="0" top="762" width="30" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static01_00_00_01_00_01_00_01" taborder="57" text="40px" left="210" top="762" width="30" height="24" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_00_01" taborder="58" left="0" top="719" width="21" height="70" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+        <Static id="Static01_00_00_01_00_01_01_01" taborder="59" text="10px" left="70" top="741" width="30" height="19" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_00_00_01" taborder="60" left="77" top="714" width="11" height="35" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+        <Static id="Static74_00_00_00_00_02" taborder="61" left="20" top="719" width="183" height="70" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text="" initvalueid=""/>
+        <Static id="Static74_00_00_00_00_01_01" taborder="62" left="245" top="723" width="181" height="68" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+        <Static id="Static01_00_00_01_00_01_01_00_00" taborder="63" text="10px" left="293" top="738" width="30" height="19" textAlign="center" background="#ffffff"/>
+        <Static id="Static74_00_00_00_00_00_00_00_00" taborder="64" left="300" top="711" width="11" height="35" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

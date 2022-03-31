@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SamplePaging" width="1528" height="752" titletext="New Form" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Grid id="grdList2" taborder="0" left="0" top="200" binddataset="dsList" right="40" selecttype="row" bottom="70">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="80"/>
+                <Column size="201"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="48"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No" displaytype="normal"/>
+                <Cell col="1" text="Calendar"/>
+                <Cell col="2" text="Combo"/>
+                <Cell col="3" text="Edit"/>
+                <Cell col="4" text="MaskEdit(String)"/>
+                <Cell col="5" text="MaskEdit(Number)"/>
+                <Cell col="6" text="Button"/>
+                <Cell col="7" text="Expand"/>
+                <Cell col="8" text="상태"/>
+                <Cell col="9" text="Column8"/>
+                <Cell col="10" text="Column9"/>
+                <Cell col="11"/>
+              </Band>
+              <Band id="body">
+                <Cell/>
+                <Cell col="1" text="bind:Column1" displaytype="date" calendardateformat="yyyy-MM-dd"/>
+                <Cell col="2" text="bind:Column2" displaytype="combotext" combodataset="ds_comb" combodatacol="Column0" combocodecol="Column0"/>
+                <Cell col="3" text="bind:Column3" displaytype="normal"/>
+                <Cell col="4" displaytype="normal" maskeditformat="###-##-#####" text="bind:Column11" maskedittype="string"/>
+                <Cell col="5" text="bind:Column4" displaytype="none" textAlign="right" maskeditformat="#,###"/>
+                <Cell col="6" text="bind:Column5" displaytype="buttoncontrol" edittype="button"/>
+                <Cell col="7" text="bind:Column6" displaytype="normal" expandshow="show" expandsize="24"/>
+                <Cell col="8" text="bind:Column7" displaytype="imagecontrol"/>
+                <Cell col="9" text="bind:Column8"/>
+                <Cell col="10" text="bind:Column9"/>
+                <Cell col="11"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static45_00_00_01" taborder="1" text="그리드 페이징 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Div id="Div01" taborder="2" text="Div01" left="0" top="41" height="115" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="1" text="Div생성후 Url에 &lt;b v='true'&gt;Comm::Paging.xfdl&lt;/b&gt; 화면을 연결한다." left="18" top="32" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00" taborder="0" text="페이징 기본 설정" left="18" top="9" width="1306" height="24" cssclass="sta_txt_descTitle"/>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="10" top="28" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="3" text="10" top="50" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="4" text="15" top="0" cssclass="sta_Guide" width="100" left="78" height="15" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_01_00_00" taborder="5" text="10" top="72" cssclass="sta_Guide" width="100" left="61" height="10" visible="false"/>
+              <Static id="Static00_00_00" taborder="6" text="&lt;b v='true'&gt;페이징관련 화면 변수 셋팅 :&lt;/b&gt; this.fvRecords(목록갯수),this.fvPage(페이지번호),this.fvTotalCount(전체데이터건수),this.fvPageCount(페이징네비게이션 표현건수)" left="18" top="54" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+              <Static id="Static00_00_00_00" taborder="7" text="&lt;b v='true'&gt;페이징생성 :&lt;/b&gt; fnPagingSetting 함수및 fnPagingCallback 함수 참조" left="18" top="77" height="24" cssclass="sta_txt_descDot" usedecorate="true" right="20"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divPage" taborder="3" text="div00" left="0" right="40" bottom="20" height="35" url="Comm::Paging.xfdl"/>
+        <Static id="Static01_00_00_01_00_00_00_00" taborder="4" text="20" cssclass="sta_Guide" width="100" left="98" visible="false" bottom="0" height="20"/>
+        <Button id="btnSearch" taborder="5" text="조회" top="169" width="50" height="24" onclick="btnSearch_onclick" right="40"/>
+        <Static id="Static01_00_00_01_00_00_00_00_00" taborder="6" text="15" cssclass="sta_Guide" width="100" left="298" visible="false" bottom="55" height="15"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsList">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="_chk" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="dsListSpare">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="_chk" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">버튼</Col>
+            <Col id="Column4">3000</Col>
+            <Col id="Column3">텍스트</Col>
+            <Col id="Column2">선택</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_add.png</Col>
+            <Col id="Column11">1231212345</Col>
+            <Col id="Column7">theme://images/state_gray.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">수정</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_del.png</Col>
+            <Col id="Column7">theme://images/state_yellow.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">저장</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_mod.png</Col>
+            <Col id="Column7">theme://images/state_green.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column7">theme://images/state_orange.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column7">theme://images/state_blue.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column7">theme://images/state_red.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  그리드 페이징 샘플
+*  @FileName 	: SamplePaging.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/24
+*  @Desction    : 그리드 페이징 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/24     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+this.fvRecords=10; 			//목록갯수
+this.fvPage=0;	 			//페이지번호
+this.fvTotalCount=0;		//전체데이터갯수
+this.fvPageCount=0; 		//실제표출페이지갯수
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnCallback = function(sSvcId,nErrCode,nErrMsg)
+{
+   this.dsList.assign(this.dsListSpare)
+   this.fnPagingSetting();
+}
+
+//페이징콜백 페이징화면에서 눌린페이지 넘겨줌
+this.fnPagingCallback = function(nPage, nRecordsOffset)
+{
+	this.fvPage = nPage; 				
+	
+	//조회함수호출
+	this.fnSearch();
+};
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+this.fnSearch = function()
+{
+	this.fnCallback();
+}
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+//페이징만들기
+this.fnPagingSetting = function ()
+{
+	this.fvTotalCount = 125;
+	//create page 
+	this.divPage.form.fnCreatePage("fnPagingCallback",
+									this.fvTotalCount,
+									this.fvRecords,
+									this.fvPage,
+									this.fvPageCount);	
+};
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.btnSearch_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSearch();
+};
+]]></Script>
+  </Form>
+</FDL>

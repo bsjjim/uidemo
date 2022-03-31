@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GlobalPropInitvalueDefinition version="1.0">
+  <nexacro.Grid>
+    <initvalueid id="iv_Grid" autosizingtype="" cellsizingtype="col" nodatatext="조회된 내용이 없습니다." cellsizebandtype="noleft" autoenter="select"/>
+    <initvalueid id="iv_Grid_table" cssclass="grd_WF_table" autofittype="col" scrolltype="both" scrollbartype="none none"/>
+  </nexacro.Grid>
+  <nexacro.Static>
+    <initvalueid id="iv_fc_blue" color="#2378bb"/>
+    <initvalueid id="iv_fc_orange" color="#f8711f"/>
+    <initvalueid id="iv_fc_red" color="#e80000"/>
+    <initvalueid id="iv_tbl_sub_summ" background="#eeeeee"/>
+    <initvalueid id="iv_tbl_summ" background="#dedede" font="13px &quot;NotoKr-Medium&quot;"/>
+    <initvalueid id="iv_tbl_bg1" background="#F4FBFE"/>
+    <initvalueid id="iv_tbl_bg2" background="#FEF8E7"/>
+    <initvalueid id="iv_tbl_bg3" background="#ffe7e4"/>
+    <initvalueid id="iv_tbl_bg4" background="#f1fbe5"/>
+    <initvalueid id="iv_tbl_bg5" background="#f1ecfa"/>
+  </nexacro.Static>
+  <nexacro.Radio>
+    <initvalueid id="iv_Radio" codecolumn="" columncount="-1" direction="horizontal" rowcount="-1"/>
+  </nexacro.Radio>
+  <nexacro.FileUpload>
+    <initvalueid id="iv_FileUpload_single" buttontext="파일찾기" scrolltype="none" itemcount="1" buttonsize="72"/>
+    <initvalueid id="iv_FileUpload_multi" buttontext="파일찾기" buttonsize="72" itemcount="3" itemheight="24" multiselect="true"/>
+  </nexacro.FileUpload>
+  <nexacro.Tab>
+    <initvalueid id="iv_Tab_1Depth" tabbuttongap="2"/>
+    <initvalueid id="iv_Tab_2Depth" cssclass="tab_WF_second"/>
+  </nexacro.Tab>
+</GlobalPropInitvalueDefinition>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CO00050T01" width="1528" height="752" titletext="비용예산">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="0" cssclass="div_group" bottom="0" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00" taborder="0" text="h50" top="0" cssclass="sta_Guide" width="100" left="130" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" binddataset="ds_grid" bottom="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="40" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" edittype="checkbox" displaytype="checkboxcontrol"/>
+                      <Cell col="2" rowspan="2" text="연도"/>
+                      <Cell col="3" rowspan="2" text="예산유형"/>
+                      <Cell col="4" rowspan="2" text="부서코드"/>
+                      <Cell col="5" rowspan="2" text="부서명"/>
+                      <Cell col="6" rowspan="2" text="요청일자"/>
+                      <Cell col="7" rowspan="2" text="요청자"/>
+                      <Cell col="8" rowspan="2" text="변경구분"/>
+                      <Cell col="9" rowspan="2" text="요청금액"/>
+                      <Cell col="10" rowspan="2" text="신청구분"/>
+                      <Cell col="11" rowspan="2" text="승인여부"/>
+                      <Cell col="12" rowspan="2" text="승인금액"/>
+                      <Cell col="13" rowspan="2" text="승인일자"/>
+                      <Cell col="14" colspan="7" text="From"/>
+                      <Cell col="21" colspan="7" text="To"/>
+                      <Cell col="28" rowspan="2" text="처리결과"/>
+                      <Cell col="29" rowspan="2" text="처리내역"/>
+                      <Cell row="1" col="14" text="부서코드"/>
+                      <Cell row="1" col="15" text="부서명"/>
+                      <Cell row="1" col="16" text="예산월"/>
+                      <Cell row="1" col="17" text="계정코드"/>
+                      <Cell row="1" col="18" text="계정명"/>
+                      <Cell row="1" col="19" text="통제기간"/>
+                      <Cell row="1" col="20" text="가용예산액"/>
+                      <Cell row="1" col="21" text="부서코드"/>
+                      <Cell row="1" col="22" text="부서명"/>
+                      <Cell row="1" col="23" text="예산월"/>
+                      <Cell row="1" col="24" text="계정코드"/>
+                      <Cell row="1" col="25" text="계정명"/>
+                      <Cell row="1" col="26" text="가용예산액"/>
+                      <Cell row="1" col="27" text="적요"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1"/>
+                      <Cell col="2" text="bind:Column0"/>
+                      <Cell col="3" text="bind:Column1"/>
+                      <Cell col="4" text="bind:Column2"/>
+                      <Cell col="5" text="bind:Column3"/>
+                      <Cell col="6" text="bind:Column4"/>
+                      <Cell col="7" text="bind:Column5"/>
+                      <Cell col="8" text="bind:Column6"/>
+                      <Cell col="9" text="bind:Column7"/>
+                      <Cell col="10" text="bind:Column8"/>
+                      <Cell col="11" text="bind:Column9"/>
+                      <Cell col="12" text="bind:Column10"/>
+                      <Cell col="13" text="bind:Column11"/>
+                      <Cell col="14" text="bind:Column12"/>
+                      <Cell col="15" text="bind:Column13"/>
+                      <Cell col="16" text="bind:Column14"/>
+                      <Cell col="17" text="bind:Column15"/>
+                      <Cell col="18" text="bind:Column16"/>
+                      <Cell col="19" text="bind:Column17"/>
+                      <Cell col="20" text="bind:Column18"/>
+                      <Cell col="21" text="bind:Column19"/>
+                      <Cell col="22" text="bind:Column20"/>
+                      <Cell col="23" text="bind:Column21"/>
+                      <Cell col="24" text="bind:Column22"/>
+                      <Cell col="25" text="bind:Column23"/>
+                      <Cell col="26" text="bind:Column24"/>
+                      <Cell col="27" text="bind:Column25"/>
+                      <Cell col="28" text="bind:Column26"/>
+                      <Cell col="29"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="2" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Static id="Static00" taborder="3" text="타이틀영역" left="0" top="20" width="261" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static02_00" taborder="4" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="768"/>
+              <Static id="Static02_02_00" taborder="5" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="753"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00" taborder="6" text="10" top="20" cssclass="sta_Guide" width="15" left="733" height="35" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="7" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="696"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="8" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="648"/>
+              <Button id="Button00_00_01_00_03_00" taborder="9" text="행추가" top="20" width="76" height="24" cssclass="btn_Block_addRow" right="568"/>
+              <Button id="Button00_00_01_00_03_00_02" taborder="10" text="행복사" top="20" width="76" height="24" cssclass="btn_Block_copyRow" right="488"/>
+              <Button id="Button00_00_01_00_03_00_02_00" taborder="11" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="408"/>
+              <Button id="Button00_00_01_00_03_00_00" taborder="12" text="행취소" top="20" width="76" height="24" cssclass="btn_Block_reset" right="328"/>
+              <Button id="Button00_00_01_00_03_01_00" taborder="13" text="그룹웨어 결재" top="20" width="102" height="24" cssclass="btn_Block" right="222"/>
+              <Button id="Button00_00_01_00_03_01_00_00" taborder="14" text="결재불요건신청" top="20" width="110" height="24" cssclass="btn_Block" right="108"/>
+              <Button id="Button00_00_01_00_03_01_00_00_00" taborder="15" text="반려" top="20" width="50" height="24" cssclass="btn_Block" right="0"/>
+              <Button id="Button00_00_01_00_03_01_00_01" taborder="16" text="승인" top="20" width="50" height="24" cssclass="btn_Block" right="54"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

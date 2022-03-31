@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="752" titletext="사고통합집계현황 - 지점별">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static01" taborder="0" text="40" top="1" cssclass="sta_Guide" width="40" right="0" bottom="242" visible="false"/>
+        <Div height="63" cssclass="div_SA" text="" formscrolltype="none" id="div00" left="0" top="0" taborder="3" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_01" taborder="0" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="1" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="36" bottom="0"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="23" width="38" bottom="11"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00_01" taborder="4" text="w40" top="0" cssclass="sta_Guide" width="40" left="296" height="60" visible="false"/>
+              <Static id="Static00_00_00_01" taborder="5" text="사고기간" left="20" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00" taborder="6" text="보유대수" left="336" top="18" width="65" height="24" cssclass="sta_SA_label"/>
+              <CalPeriod id="CalPeriod00" taborder="7" left="86" top="18" width="210" height="24"/>
+              <Edit id="Edit00_00_00_00" taborder="8" left="404" top="18" width="60" height="24" text="123허1234"/>
+              <Static id="Static01_00_00_00_01_00" taborder="9" text="w40" top="0" cssclass="sta_Guide" width="40" left="464" height="60" visible="false"/>
+              <MaskEdit id="MaskEdit00_00_00_00" taborder="10" left="726" top="18" width="60" height="24" format="#,##9.##"/>
+              <Static id="Static00_00_00_02" taborder="11" text="사고건수" left="504" top="18" width="65" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_00_00_00_00" taborder="12" left="571" top="18" width="60" height="24" text="123허1234"/>
+              <Static id="Static01_00_00_00_01_00_00" taborder="13" text="w40" top="0" cssclass="sta_Guide" width="40" left="631" height="60" visible="false"/>
+              <Static id="Static00_00_00_02_00" taborder="14" text="사고율" left="671" top="18" width="55" height="24" cssclass="sta_SA_label"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Tab id="Tab00" taborder="1" tabindex="0" top="div00:21" bottom="0" tabbuttongap="2" left="0" right="40">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="장단기" url="MM::MM20125T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="연령별" url="MM::MM20125T02.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01_00_00" taborder="2" text="h50" top="63" cssclass="sta_Guide" width="100" left="1180" height="50" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid3" saveinvaliddate="exclude">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.divGridWapper_Static01_00_00_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

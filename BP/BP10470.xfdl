@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" onload="temp01_onload" titletext="인건비 외 고정비 업로드">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Static id="Static01" taborder="0" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Div id="DivSearch" taborder="2" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Button id="Button02" taborder="0" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_01" taborder="1" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="h11" cssclass="sta_Guide" width="50" visible="false" right="38" bottom="0" height="11"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00" taborder="4" text="계획구분" left="20" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01" taborder="5" text="w40" top="0" cssclass="sta_Guide" width="40" left="211" height="60" visible="false"/>
+              <Combo id="cmb00" taborder="6" text="" left="86" top="18" width="125" height="24" index="-1" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" enable="true">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                </Dataset>
+              </Combo>
+              <Static id="Static00_00" taborder="7" text="버전" left="251" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cmb00_00" taborder="8" text="최종" left="291" top="18" width="70" height="24" index="0" enable="true"/>
+              <Static id="Static01_00_00_01_00_00_00_01" taborder="9" text="10" top="19" cssclass="sta_Guide" width="10" left="76" height="60" visible="false"/>
+              <Static id="Static00_01" taborder="10" text="사업" left="870" top="18" width="38" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="11" left="910" top="18" height="24" text="오토렌탈" width="115" enable="true"/>
+              <Static id="Static01" taborder="12" text="수립년도" left="401" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <MaskEdit id="MaskEdit00" taborder="13" left="468" top="18" width="43" height="24" textAlign="left"/>
+              <Static id="Static01_00_00_01_01" taborder="14" text="w40" top="0" cssclass="sta_Guide" width="40" left="361" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="15" text="10" top="4" cssclass="sta_Guide" width="10" left="458" height="40" visible="false"/>
+              <Static id="Static01_01" taborder="16" text="수립월" left="567" top="18" width="48" height="24" cssclass="sta_SA_label"/>
+              <MaskEdit id="MaskEdit00_00" taborder="17" left="620" top="18" width="28" height="24" textAlign="left"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="18" text="10" top="4" cssclass="sta_Guide" width="10" left="610" height="40" visible="false"/>
+              <Static id="Static01_02_00" taborder="19" text="기준년도" left="704" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <MaskEdit id="MaskEdit00_01_00" taborder="20" left="770" top="18" width="43" height="24" textAlign="left"/>
+              <Static id="Static02_01_00_00_00_01_00" taborder="21" text="년" left="511" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_01_00_00" taborder="22" text="월" left="648" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_01_00_01" taborder="23" text="년" left="813" top="18" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_01_00" taborder="24" text="w40" top="4" cssclass="sta_Guide" width="40" left="527" height="40" visible="false"/>
+              <Static id="Static01_00_00_01_01_00_00" taborder="25" text="w40" top="4" cssclass="sta_Guide" width="40" left="664" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_01_00_00_00" taborder="26" text="w40" top="10" cssclass="sta_Guide" width="40" left="830" height="40" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" bottom="0" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="타이틀영역" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" colspan="4" text="계획정보"/>
+                      <Cell col="5" colspan="2" text="계획계정"/>
+                      <Cell col="7" colspan="3" text="계획수립단위" cssclass="cell_fix"/>
+                      <Cell col="10" text="년"/>
+                      <Cell col="11" text="년"/>
+                      <Cell col="12" colspan="12" text="년"/>
+                      <Cell col="24" colspan="12" text="년"/>
+                      <Cell row="1" col="1" text="수립년도"/>
+                      <Cell row="1" col="2" text="수립월"/>
+                      <Cell row="1" col="3" text="기준년도"/>
+                      <Cell row="1" col="4" text="버전"/>
+                      <Cell row="1" col="5" text="계획계정코드"/>
+                      <Cell row="1" col="6" text="계획계정명"/>
+                      <Cell row="1" col="7" text="조직코드"/>
+                      <Cell row="1" col="8" text="조직Lv1"/>
+                      <Cell row="1" col="9" text="조직Lv2" cssclass="cell_fix"/>
+                      <Cell row="1" col="10" text="합계"/>
+                      <Cell row="1" col="11" text="합계"/>
+                      <Cell row="1" col="12" text="1월"/>
+                      <Cell row="1" col="13" text="2월"/>
+                      <Cell row="1" col="14" text="3월"/>
+                      <Cell row="1" col="15" text="4월"/>
+                      <Cell row="1" col="16" text="5월"/>
+                      <Cell row="1" col="17" text="6월"/>
+                      <Cell row="1" col="18" text="7월"/>
+                      <Cell row="1" col="19" text="8월"/>
+                      <Cell row="1" col="20" text="9월"/>
+                      <Cell row="1" col="21" text="10월"/>
+                      <Cell row="1" col="22" text="11월"/>
+                      <Cell row="1" col="23" text="12월"/>
+                      <Cell row="1" col="24" text="1월"/>
+                      <Cell row="1" col="25" text="2월"/>
+                      <Cell row="1" col="26" text="3월"/>
+                      <Cell row="1" col="27" text="4월"/>
+                      <Cell row="1" col="28" text="5월"/>
+                      <Cell row="1" col="29" text="6월"/>
+                      <Cell row="1" col="30" text="7월"/>
+                      <Cell row="1" col="31" text="8월"/>
+                      <Cell row="1" col="32" text="9월"/>
+                      <Cell row="1" col="33" text="10월"/>
+                      <Cell row="1" col="34" text="11월"/>
+                      <Cell row="1" col="35" text="12월"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1"/>
+                      <Cell col="2"/>
+                      <Cell col="3"/>
+                      <Cell col="4"/>
+                      <Cell col="5"/>
+                      <Cell col="6"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                      <Cell col="21"/>
+                      <Cell col="22"/>
+                      <Cell col="23"/>
+                      <Cell col="24"/>
+                      <Cell col="25"/>
+                      <Cell col="26"/>
+                      <Cell col="27"/>
+                      <Cell col="28"/>
+                      <Cell col="29"/>
+                      <Cell col="30"/>
+                      <Cell col="31"/>
+                      <Cell col="32"/>
+                      <Cell col="33"/>
+                      <Cell col="34"/>
+                      <Cell col="35"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="12" top="39" cssclass="sta_Guide" width="100" left="0" height="12" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01" taborder="3" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="205"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="157"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="5" top="20" width="98" height="24" cssclass="btn_Block" textPadding="0px" right="55" text="양식다운로드"/>
+              <Button id="Button00_00_01_00_03_01" taborder="6" text="저장" top="20" width="50" height="24" cssclass="btn_Block" right="1"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid"/>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

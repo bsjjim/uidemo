@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="aaaaaaaa" width="1528" height="752" titletext="New Form">
+    <Layouts>
+      <Layout height="752" width="1528" stepcount="3" stepindex="0">
+        <Button id="btn00" taborder="0" text="btn00" left="62" top="122" width="643" height="429"/>
+        <Button id="btn01" taborder="1" text="btn01" left="182" top="172" width="718" height="459" positionstep="1"/>
+        <Button id="btn02" taborder="2" text="btn02" left="693" top="393" width="706" height="303" positionstep="2"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[ ]]></Script>
+  </Form>
+</FDL>

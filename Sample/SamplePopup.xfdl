@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SamplePopup" width="1528" height="720" titletext="팝업 샘플">
+    <Layouts>
+      <Layout height="720" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="팝업 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static26_02_00" taborder="4" text="콜백 정보" left="0" top="85" width="130" cssclass="sta_DA_label" bottom="20"/>
+        <Static id="Static27_03_00" taborder="5" left="129" top="85" cssclass="sta_DA_data" verticalAlign="top" right="40" bottom="20"/>
+        <Button id="btnModal2" taborder="1" text="ModalPopup" top="54" width="100" height="24" right="497" onclick="btnModalPopup_onclick"/>
+        <Button id="btnModalPopupCallBack" taborder="2" text="ModalPopup : 함수내콜백" top="54" width="170" height="24" right="167" onclick="btnModalPopupCallBack_onclick"/>
+        <Button id="btnModeless" taborder="3" text="ModelessPopup" top="54" width="120" height="24" right="42" onclick="btnModeless_onclick"/>
+        <TextArea id="txt00" taborder="6" left="135" top="91" right="45" bottom="25"/>
+        <Button id="btnModal3" taborder="7" text="ModalPopup : 상태바" top="54" width="150" height="24" right="342" onclick="btnModal3_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  팝업 샘플 화면
+*  @FileName 	: SamplePopup.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/20
+*  @Desction    : 팝업 샘플 화면
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/20     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnPopupCallback = function(sId,sVal)
+{
+	// json Object 리턴받는 예제
+	if (sId == "SamplePopupTarget") {
+	    if(this.gfnIsNull(sVal)) return;
+		var oRtn = JSON.parse(sVal);
+		trace("oRtn.name : " + oRtn.name);
+		trace("oRtn.rowData : " + oRtn.rowData);
+		
+		this.txt00.set_value(oRtn.name+"\n\n"+oRtn.rowData);
+	}
+}
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+this.btnModalPopup_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sTitle = "팝업타이틀";
+	var oArg = {pvName:"테스트", pvName2:"테스트2", pvDataset:this.dsTest};
+	var oOption = {title:sTitle};
+	
+	this.gfnOpenPopup("SamplePopupTarget","Sample::SamplePopupTarget.xfdl",oArg,oOption);
+};
+
+this.btnModal3_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sTitle = "팝업타이틀";
+	var oArg = {pvName:"테스트", pvName2:"테스트2", pvDataset:this.dsTest};
+	var oOption = {title:sTitle,statusbar:"true"};	//top, left를 지정하지 않으면 가운데정렬 //"top=20,left=370"
+	
+	this.gfnOpenPopup("SamplePopupTarget","Sample::SamplePopupTarget.xfdl",oArg,oOption);	
+};
+
+
+this.btnModalPopupCallBack_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sTitle = "팝업타이틀";
+	var oArg = {pvName:"테스트", pvName2:"테스트2", pvDataset:this.dsTest};
+	var oOption = {title:sTitle};	
+	
+	this.gfnOpenPopup("SamplePopupTarget","Sample::SamplePopupTarget.xfdl",oArg,oOption,
+	  function(sId,sVal)
+	  {
+			var oRtn = JSON.parse(sVal);
+			trace("oRtn.name : " + oRtn.name);
+			trace("oRtn.rowData : " + oRtn.rowData);
+			
+			this.txt00.set_value(oRtn.name+"\n\n"+oRtn.rowData);	  
+	  }
+	);	
+};
+
+this.btnModeless_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sTitle = "팝업타이틀";
+	var oArg = {pvName:"테스트", pvName2:"테스트2", pvDataset:this.dsTest};
+
+	var oOption = {title:sTitle,popuptype:"modeless",width:900,height:551};	//top, left를 지정하지 않으면 가운데정렬 //"top=20,left=370"
+	
+	this.gfnOpenPopup("SamplePopupTarget","Sample::SamplePopupTarget.xfdl",oArg,oOption);	
+};
+
+
+
+]]></Script>
+    <Objects>
+      <Dataset id="dsTest">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1</Col>
+            <Col id="Column1">명칭1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">2</Col>
+            <Col id="Column1">명칭2</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

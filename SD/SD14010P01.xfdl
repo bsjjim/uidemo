@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp03" width="900" height="551" titletext="홈쇼핑 주문등록_P01">
+    <Layouts>
+      <Layout height="551" mobileorientation="landscape" width="900">
+        <Button id="btnSel" taborder="0" text="등록" left="746" top="503" width="64" height="28" onclick="btnSel_onclick" cssclass="btn_Pop_func"/>
+        <Button id="btnClose" taborder="1" text="닫기" left="814" top="503" width="64" height="28" onclick="btnClose_onclick" cssclass="btn_Pop_func"/>
+        <Static id="Static01_00" taborder="2" text="w20" top="20" cssclass="sta_Guide" width="20" left="0" visible="false" bottom="20"/>
+        <Static id="Static01_00_00" taborder="3" text="w20" top="20" cssclass="sta_Guide" visible="false" width="20" right="0" bottom="20"/>
+        <Static id="Static01_00_01" taborder="4" text="w20" top="0" cssclass="sta_Guide" left="0" height="20" visible="false" right="0"/>
+        <Static id="Static01_00_01_00" taborder="5" text="w20" cssclass="sta_Guide" left="0" height="20" visible="false" bottom="0" right="0"/>
+        <Static id="Static01_00_00_02_00" taborder="6" text="15" top="488" cssclass="sta_Guide" width="80" left="764" height="15" visible="false"/>
+        <Div id="Div00" taborder="7" text="Div00" left="20" top="20" cssclass="div_group" bottom="63" right="20">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="MC고객등록" left="0" top="21" width="370" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static26" taborder="1" text="방송일자" left="0" top="51" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27" taborder="2" left="129" top="51" height="34" cssclass="sta_DA_data" text="" onclick="Static27_onclick" right="0"/>
+              <Static id="Static01_00_00_01" taborder="3" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Static id="Static26_00" taborder="4" text="방송회차" left="429" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01" taborder="5" text="홈쇼핑채널" left="0" top="84" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27_00" taborder="6" left="129" top="84" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static26_00_00" taborder="7" text="방송사고객번호" left="429" top="84" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static26_02" taborder="8" text="주문번호" left="0" top="117" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27_01" taborder="9" left="129" top="117" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static26_00_01" taborder="10" text="고객명" left="429" top="117" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Edit id="Edit00_01_00_00" taborder="11" left="563" top="122" width="115" height="24" text="영업점" readonly="false"/>
+              <Static id="Static01" taborder="12" left="0" top="50" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00_01_00" taborder="13" text="h11" top="40" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static26_01_00" taborder="14" text="전화번호1" left="0" top="150" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27_00_00" taborder="15" left="129" top="150" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static26_00_00_00" taborder="16" text="전화번호2" left="429" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00" taborder="17" text="지역명" left="0" top="183" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27_01_00" taborder="18" left="129" top="183" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static26_00_01_00" taborder="19" text="MC유효기간" left="429" top="183" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static26_01_00_00" taborder="20" text="주소" left="0" top="216" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_00_00" taborder="21" left="129" top="216" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static26_02_00_00" taborder="22" text="고객요청사항" left="0" top="249" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_00" taborder="23" left="129" top="249" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Calendar id="Calendar00_00" taborder="24" left="134" top="56" width="105" height="24" dateformat="yyyy-MM-dd " value="20221001"/>
+              <Edit id="Edit00_01_00_00_01" taborder="25" left="563" top="56" width="218" height="24" text="영업점" readonly="false"/>
+              <Combo id="Combo00_00_01" taborder="26" left="134" top="89" width="135" height="24" text="KRW" value="" index="0" displaynulltext="선택"/>
+              <MaskEdit id="MaskEdit00_00_01" taborder="27" left="563" top="89" width="95" height="24" textAlign="left" type="string" format="#########" maskchar=" " value="123456789"/>
+              <MaskEdit id="MaskEdit00_00_01_00" taborder="28" left="134" top="122" width="197" height="24" textAlign="left" type="string" format="##############-#####" maskchar=" " value="123456789123456789123"/>
+              <Edit id="edt00_00" taborder="29" left="134" top="155" width="104" height="24" text="010-1234-1234"/>
+              <Edit id="edt00_00_00" taborder="30" left="563" top="155" width="104" height="24" text="010-1234-1234"/>
+              <Combo id="Combo00_00_01_00" taborder="31" left="135" top="188" width="135" height="24" text="KRW" value="" index="0" displaynulltext="선택"/>
+              <CalPeriod id="CalPeriod00" taborder="32" left="563" top="188" width="210" height="24"/>
+              <MaskEdit id="MaskEdit00_00_00_00_00_00" taborder="33" left="134" top="221" width="50" height="24" textAlign="left" type="number" format="######"/>
+              <Button id="Button00_01_00_01_00_00" taborder="34" left="186" top="221" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00_00" taborder="35" left="213" top="221" height="24" text="P12345" width="242" enable="false"/>
+              <Edit id="Edit00_01_00_01_01_00_00_00" taborder="36" left="457" top="221" height="24" text="P12345" width="363"/>
+              <Edit id="Edit00_01_00_01_01_00_00_00_00" taborder="37" left="134" top="254" height="24" text="P12345" width="686"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="계약상태" type="STRING" size="256"/>
+          <Column id="계약번호" type="STRING" size="256"/>
+          <Column id="예약일" type="STRING" size="256"/>
+          <Column id="고객번호" type="STRING" size="256"/>
+          <Column id="고객명" type="STRING" size="256"/>
+          <Column id="예약모델명" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="No">1</Col>
+            <Col id="계약상태">취소</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">김유리</Col>
+            <Col id="예약모델명">LOTZE (L) 2.0</Col>
+          </Row>
+          <Row>
+            <Col id="No">2</Col>
+            <Col id="계약상태">반납</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">홍길동</Col>
+            <Col id="예약모델명">K5 (L) 2.0 렌터카 DELUXE</Col>
+          </Row>
+          <Row>
+            <Col id="No">3</Col>
+            <Col id="계약상태">일반</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">임동주</Col>
+            <Col id="예약모델명">STAREX (D) 2.6 12인승</Col>
+          </Row>
+          <Row>
+            <Col id="No">4</Col>
+            <Col id="계약상태">일반</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">김지유</Col>
+            <Col id="예약모델명">NEW SM5 (L) 2.0</Col>
+          </Row>
+          <Row>
+            <Col id="No">5</Col>
+            <Col id="계약상태">보증대차</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">아무개</Col>
+            <Col id="예약모델명">YF SONATA (L) 2.0 렌터카 DELUXE</Col>
+          </Row>
+          <Row>
+            <Col id="No">6</Col>
+            <Col id="계약상태">취소</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">김순이</Col>
+            <Col id="예약모델명">PRIDE (G) 1.4 5DOOR 디럭스</Col>
+          </Row>
+          <Row>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">김유리</Col>
+            <Col id="예약모델명">PRIDE (G) 1.4 5DOOR 디럭스</Col>
+            <Col id="No">7</Col>
+            <Col id="계약상태">반납</Col>
+            <Col id="계약번호">2122002203</Col>
+          </Row>
+          <Row>
+            <Col id="No">8</Col>
+            <Col id="계약상태">일반</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">홍길동</Col>
+            <Col id="예약모델명">K5 (L) 2.0 렌터카 DELUXE</Col>
+          </Row>
+          <Row>
+            <Col id="No">9</Col>
+            <Col id="계약상태">일반</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">임동주</Col>
+            <Col id="예약모델명">SPORTAGE R (D) 2.0 2WD PRESTIGE</Col>
+          </Row>
+          <Row>
+            <Col id="No">10</Col>
+            <Col id="계약상태">반납</Col>
+            <Col id="계약번호">2122002203</Col>
+            <Col id="예약일">2021-12-01</Col>
+            <Col id="고객번호">113383560</Col>
+            <Col id="고객명">김순</Col>
+            <Col id="예약모델명">LOTZE (L) 2.0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

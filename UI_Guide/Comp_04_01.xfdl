@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="1395" titletext="Grid  - 사이즈규정 Row">
+    <Layouts>
+      <Layout height="1395" width="1528">
+        <Grid id="Grid00" taborder="0" left="0" top="35" binddataset="ds_grid" height="259" width="734" initvalueid="iv_Grid">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="120"/>
+                <Column size="250"/>
+                <Column size="150"/>
+                <Column size="133"/>
+                <Column size="65"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="정형데이터"/>
+                <Cell col="1" text="비정형데이터"/>
+                <Cell col="2" text="금액"/>
+                <Cell col="3" text="Column1"/>
+                <Cell col="4"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column3"/>
+                <Cell col="1" text="bind:Column4" textAlign="left"/>
+                <Cell col="2" text="bind:Column5" textAlign="right" displaytype="number"/>
+                <Cell col="3" text="bind:Column1"/>
+                <Cell col="4"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="2" text="합계" textAlign="center"/>
+                <Cell col="2" text="1100000" displaytype="number"/>
+                <Cell col="3"/>
+                <Cell col="4"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static76" taborder="1" onclick="Static76_onclick" left="730" top="36" width="117" height="30" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static05" taborder="2" text="Head &lt;b v=&quot;true&quot;&gt;H30&lt;/b&gt;" usedecorate="true" left="765" top="43" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static06" taborder="3" text="Body H30" left="765" top="103" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00" taborder="4" onclick="Static76_onclick" left="730" top="95" width="117" height="31" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static01_00_00_01_00_00_03" taborder="5" text="h35" top="0" cssclass="sta_Guide" width="100" left="473" height="35" visible="false"/>
+        <Static id="Static06_00" taborder="6" text="Summ H30" left="760" top="270" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00_00" taborder="7" onclick="Static76_onclick" left="736" top="262" width="96" height="31" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Grid id="Grid00_00" taborder="8" left="0" top="353" binddataset="ds_grid" height="259" width="734" initvalueid="iv_Grid">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="120"/>
+                <Column size="250"/>
+                <Column size="150"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+                <Row size="30" band="summ"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell colspan="3" text="구분"/>
+                <Cell col="3" text="Column1"/>
+                <Cell row="1" text="정형데이터"/>
+                <Cell row="1" col="1" text="비정형데이터"/>
+                <Cell row="1" col="2" text="금액"/>
+                <Cell row="1" col="3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column3"/>
+                <Cell col="1" text="bind:Column4" textAlign="left"/>
+                <Cell col="2" text="bind:Column5" textAlign="right" displaytype="number"/>
+                <Cell col="3" text="bind:Column1"/>
+              </Band>
+              <Band id="summary">
+                <Cell rowspan="2" colspan="2" text="합계" textAlign="center"/>
+                <Cell col="2" text="1100000" displaytype="number"/>
+                <Cell col="3"/>
+                <Cell row="1" col="2"/>
+                <Cell row="1" col="3"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static45_00_00" taborder="9" text="Head, Summary 가 여러줄일 때" left="-1" top="324" width="300" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static76_00" taborder="10" onclick="Static76_onclick" left="721" top="354" width="111" height="30" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static05_01" taborder="11" text="Head &lt;b v=&quot;true&quot;&gt;H30&lt;/b&gt;" usedecorate="true" left="765" top="361" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static06_01" taborder="12" text="Body H30" left="765" top="451" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00_01" taborder="13" onclick="Static76_onclick" left="721" top="443" width="111" height="31" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static06_00_00" taborder="14" text="Summ H30" left="765" top="572" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00_00_00" taborder="15" onclick="Static76_onclick" left="721" top="564" width="111" height="31" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static05_01_00" taborder="16" text="Head &lt;b v=&quot;true&quot;&gt;H30&lt;/b&gt;" usedecorate="true" left="765" top="390" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static76_00_00" taborder="17" onclick="Static76_onclick" left="721" top="383" width="111" height="30" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static06_00_00_00" taborder="18" text="Summ H30" left="765" top="542" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00_00_00_00" taborder="19" onclick="Static76_onclick" left="721" top="534" width="111" height="31" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Grid id="Grid00_00_00" taborder="20" left="0" top="673" binddataset="ds_grid" height="259" width="734" initvalueid="iv_Grid">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="150"/>
+                <Column size="250"/>
+                <Column size="150"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="45" band="head"/>
+                <Row size="60" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell colspan="2" text="두줄 타이틀&#13;&#10;두줄 타이틀"/>
+                <Cell col="2" text="금액"/>
+                <Cell col="3"/>
+                <Cell row="1" text="세줄타이틀&#13;&#10;세줄타이틀&#13;&#10;세줄타이틀"/>
+                <Cell row="1" col="1" text="세줄타이틀&#13;&#10;세줄타이틀&#13;&#10;세줄타이틀"/>
+                <Cell row="1" col="2" text="세줄타이틀&#13;&#10;세줄타이틀&#13;&#10;세줄타이틀"/>
+                <Cell row="1" col="3"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column3"/>
+                <Cell col="1" text="bind:Column4" textAlign="left"/>
+                <Cell col="2" text="bind:Column5" textAlign="right" displaytype="number"/>
+                <Cell col="3" text="bind:Column1"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static45_00_00_00" taborder="21" text="한 Row에서 텍스트를 줄바꿈 하는 경우" left="-1" top="644" width="300" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static76_00_01" taborder="22" onclick="Static76_onclick" left="721" top="674" width="111" height="45" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static05_01_01" taborder="23" text="Head &lt;b v=&quot;true&quot;&gt;H45&lt;/b&gt;" usedecorate="true" left="765" top="687" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static00_02_00_00_00_00" taborder="24" text="※ 타이틀 줄바꿈의 경우 되도록 2줄을 초과하지 않도록 한다.  텍스트 줄바꿈 (Ctrl+Enter)" left="267" top="644" width="593" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_red"/>
+        <Static id="Static76_00_01_00" taborder="25" onclick="Static76_onclick" left="721" top="718" width="111" height="61" border="1px dotted rgba(177,192,203,1), 0px none #808080"/>
+        <Static id="Static05_01_01_00" taborder="26" text="Head &lt;b v=&quot;true&quot;&gt;H60&lt;/b&gt;" usedecorate="true" left="765" top="738" width="67" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" font="8pt Dotum"/>
+        <Static id="Static45_00_00_01" taborder="27" text="기본유형" left="0" top="5" width="300" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static05_00_00_01" taborder="28" text="※ 그리드 기본 initvalueid 를 iv_Grid로 설정" usedecorate="true" left="81" top="10" width="832" height="15" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static45_00_00_00_00" taborder="29" text="Body의 데이터가 잘리지 않고 Row의 높이가 자동으로 변경되어 모든 텍스트를 보여주어야 하는 경우 (예외적인 케이스)" left="0" top="967" width="860" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Grid id="Grid00_00_00_00" taborder="30" left="0" top="994" binddataset="ds_grid" height="259" width="347" initvalueid="iv_Grid" autosizingtype="row" extendsizetype="row" autofittype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="250"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="타이틀"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column4" textAlign="left" autosizerow="limitmin" wordWrap="char"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01" taborder="31" text="그리드 속성&#13;&#10;autosizingtype :  row&#13;&#10;extendsizetype : row&#13;&#10;&#13;&#10;셀속성&#13;&#10;autosizerow: limitmin&#13;&#10;wordwrap: char" left="380" top="1042" width="193" height="135" verticalAlign="top"/>
+        <Static id="Static01_00_00_01_00_01" taborder="32" text="사용여부 미정(임의사용금지)" top="1029" cssclass="sta_Guide_info" width="652" left="6" height="208" visible="true" verticalAlign="middle" textAlign="center" background="rgba(255,0,0,0.60)" color="#ffffff" font="20px &quot;NotoKr-Regular&quot;"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="Flag" type="STRING" size="256"/>
+          <Column id="Delete" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="No">1</Col>
+            <Col id="Flag">theme://images/ico_flag_add.png</Col>
+            <Col id="Delete">1</Col>
+            <Col id="Column4">비정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">1260000000</Col>
+          </Row>
+          <Row>
+            <Col id="No">2</Col>
+            <Col id="Column4">비정형데이터 비정형데이터비정형데이터 비비정형데이터 비정형데이터비정형데이터 비정형데이터정형데이터 비정형데이터정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">0</Col>
+            <Col id="Flag">theme://images/ico_flag_del.png</Col>
+          </Row>
+          <Row>
+            <Col id="No">3</Col>
+            <Col id="Column4">비정형데이터 비정형데이터 비정형데이터 비정형데이터 비정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">9900000</Col>
+            <Col id="Flag">theme://images/ico_flag_mod.png</Col>
+          </Row>
+          <Row>
+            <Col id="No">4</Col>
+            <Col id="Column4">비정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">150000</Col>
+          </Row>
+          <Row>
+            <Col id="No">5</Col>
+            <Col id="Column4">비정형데이터 비정형데이터 비정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">0</Col>
+          </Row>
+          <Row>
+            <Col id="No">6</Col>
+            <Col id="Column4">비정형데이터</Col>
+            <Col id="Column3">123-12-12345</Col>
+            <Col id="Column5">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

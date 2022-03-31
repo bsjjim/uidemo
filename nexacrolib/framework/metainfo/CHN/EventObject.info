@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.EventObject">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.EventObject" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在组件中声明的事件的原型对象。" />
+    <PropertyInfo>
+      <Property name="length" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在事件中定义的事件处理函数数量的只读属性。" csspropertyname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定EventObject的名称的属性。" csspropertyname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="通过调用在事件中定义的句柄函数而触发事件的方法。">
+        <Syntax text="EventObject.fireEvent( objFireComp, objEventInfo [, bCancelable] )">
+          <Return type="Boolean" description="在bCancelable参数为true且在执行句柄函数的过程中返回false时，将返回false。&#xD;&#xA;在bCancelable参数为true且在执行句柄函数的过程中没有返回false时，将返回true。&#xD;&#xA;&#xD;&#xA;在bCancelable参数为false时，将返回从最后一个句柄函数返回的值。&#xD;&#xA;在bCancelable参数为false且最后一个句柄函数没有返回值时，将返回空值。" />
+          <Arguments>
+            <Argument name="bCancelable" type="Boolean" in="false" out="false" option="false" variable="false" description="设定是否需要根据事件句柄函数的返回值中止函数的执行。&#xD;&#xA;&#xD;&#xA;在设定为true时，在从句柄函数返回false的情况下中止所有句柄函数的执行。&#xD;&#xA;在设定为true时，在从句柄函数返回true的情况下执行下一个句柄函数。&#xD;&#xA;&#xD;&#xA;在设定为false时，在从句柄函数返回true/false值的情况下执行下一个句柄函数。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="设定需要传递到事件句柄函数的EventInfo对象。" />
+            <Argument name="objFireComp" type="Object" in="false" out="false" option="false" variable="false" description="设定需要传递到事件句柄函数的组件。&#xD;&#xA;&#xD;&#xA;通常，将触发事件的组件设定为相同的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

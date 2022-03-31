@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="752" titletext="정비비관리">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static01" taborder="0" text="40" top="1" cssclass="sta_Guide" width="40" right="0" bottom="242" visible="false"/>
+        <Div id="DivSearch" taborder="1" left="0" top="0" height="131" cssclass="div_SA" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약시작기간" left="20" top="18" width="85" height="24" cssclass="sta_SA_label_req"/>
+              <Button id="Button02" taborder="1" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_01" taborder="2" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00" taborder="3" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00" taborder="4" text="10" top="5" cssclass="sta_Guide" width="10" left="102" height="75" visible="false"/>
+              <Static id="Static01_00_00_00" taborder="5" text="40" top="10" cssclass="sta_Guide" width="40" left="322" height="60" visible="false"/>
+              <Static id="Static00_00" taborder="6" text="본부" left="20" top="52" width="68" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00_01_00" taborder="7" left="112" top="52" width="210" height="24" value="" index="-1" text="전체"/>
+              <Static id="Static00_00_00" taborder="8" text="사업장" left="362" top="52" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00_00" taborder="9" text="고유번호" left="362" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01" taborder="10" text="10" top="11" cssclass="sta_Guide" width="10" left="431" height="60" visible="false"/>
+              <Combo id="Combo00_00_01_00_00_00" taborder="11" left="441" top="18" width="80" height="24" value="고객번호" index="0" text="고객번호" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">고객번호</Col>
+                      <Col id="datacolumn">고객번호</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">차량번호</Col>
+                      <Col id="datacolumn">차량번호</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">계약번호</Col>
+                      <Col id="datacolumn">계약번호</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">견적번호</Col>
+                      <Col id="datacolumn">견적번호</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Static id="Static01_00_00_00_00" taborder="12" text="40" top="10" cssclass="sta_Guide" width="40" left="747" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_00" taborder="13" text="10" top="11" cssclass="sta_Guide" width="10" left="857" height="60" visible="false"/>
+              <Static id="Static00_00_00_01_00" taborder="14" text="장기구분" left="787" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00_01_00_00_00_00" taborder="15" left="867" top="18" width="90" height="24" index="-1" text="선택" value=""/>
+              <Static id="Static01_00_00_00_00_00" taborder="16" text="40" top="10" cssclass="sta_Guide" width="40" left="1093" height="60" visible="false"/>
+              <Static id="Static00_00_00_01_00_00" taborder="17" text="계약상태" left="1133" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01_00_00" taborder="18" text="10" top="11" cssclass="sta_Guide" width="10" left="1202" height="60" visible="false"/>
+              <Combo id="Combo00_00_01_00_00_00_00_01" taborder="19" left="1212" top="18" width="115" height="24" index="-1" text="선택" value=""/>
+              <CalPeriod id="CalPeriod00" taborder="20" left="112" top="18" width="210" height="24" cssclass="input_req"/>
+              <Static id="Static00_01" taborder="21" text="계약승인기간" left="20" top="86" width="85" height="24" cssclass="sta_SA_label"/>
+              <CalPeriod id="CalPeriod00_00" taborder="22" left="112" top="86" width="210" height="24"/>
+              <Edit id="Edit00_01_00_00_00" taborder="23" left="523" top="18" width="80" height="24" text="123406789" value="123406789"/>
+              <Button id="Button00_01_00_00_00" taborder="24" left="605" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="25" left="632" top="18" height="24" text="김나나" width="115" value="김나나"/>
+              <Edit id="Edit00_01_00_00_00_00" taborder="26" left="441" top="52" width="80" height="24" text="123406789"/>
+              <Button id="Button00_01_00_00_00_00" taborder="27" left="523" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00_00" taborder="28" left="550" top="52" height="24" text="김나나" width="197"/>
+              <Static id="Static00_00_00_01_00_01" taborder="29" text="계약지점" left="787" top="52" width="63" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_02_00" taborder="30" left="867" top="52" width="42" height="24" text="3666" value="3666"/>
+              <Button id="Button00_01_00_01_00" taborder="31" left="911" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00" taborder="32" left="938" top="52" height="24" text="서울중앙MOT 강북 Part" width="155" value="서울중앙MOT 강북 Part"/>
+              <Static id="Static00_00_00_01_00_00_00" taborder="33" text="영업매니저" left="1133" top="52" width="78" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_00" taborder="34" left="1212" top="52" width="57" height="24" text="P12345" value="P12345"/>
+              <Button id="Button00_01_00_00" taborder="35" left="1271" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00" taborder="36" left="1298" top="52" height="24" text="홍길순" width="115" value="홍길순"/>
+              <Edit id="Edit00_01" taborder="37" left="441" top="86" width="86" height="24" text="21YHOTY" value="21YHOTY"/>
+              <Button id="Button00_01" taborder="38" left="529" top="86" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Edit id="Edit00_01_00_01_00_00_00_00" taborder="39" left="556" top="86" height="24" text="홍길순" width="191"/>
+              <Static id="Static00_00_00_01" taborder="40" text="프로모션명" left="362" top="86" width="73" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00_01_00_01_00" taborder="41" text="상품군코드" left="787" top="86" width="73" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_00_00_01" taborder="42" left="867" top="86" width="90" height="24" text="123406789"/>
+              <Button id="Button00_01_00_00_00_01" taborder="43" left="959" top="86" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Static id="Static00_00_00_01_00_00_00_00" taborder="44" text="운전자범위" left="1133" top="86" width="78" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00_01_00_00_00_00_01_00" taborder="45" left="1212" top="86" width="115" height="24" index="-1" text="선택" value=""/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="2" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" right="40" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="장기계약목록" left="0" top="20" width="150" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="698" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid3" initvalueid="iv_Grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="110"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="90"/>
+                      <Column size="90"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" text="계약번호"/>
+                      <Cell col="2" rowspan="2" text="견적번호"/>
+                      <Cell col="3" rowspan="2" text="고객유형"/>
+                      <Cell col="4" rowspan="2" text="FLEET구분"/>
+                      <Cell col="5" rowspan="2" text="고객번호"/>
+                      <Cell col="6" rowspan="2" text="고객"/>
+                      <Cell col="7" rowspan="2" text="운용리스&#13;&#10;여부"/>
+                      <Cell col="8" rowspan="2" text="차량번호"/>
+                      <Cell col="9" rowspan="2" text="차대번호"/>
+                      <Cell col="10" rowspan="2" text="차종"/>
+                      <Cell col="11" rowspan="2" text="계약기간"/>
+                      <Cell col="12" rowspan="2" text="투입일시"/>
+                      <Cell col="13" rowspan="2" text="계약시작일자"/>
+                      <Cell col="14" rowspan="2" text="반납일시"/>
+                      <Cell col="15" rowspan="2" text="종료예정일자"/>
+                      <Cell col="16" rowspan="2" text="계약종료일자"/>
+                      <Cell col="17" rowspan="2" text="차량가"/>
+                      <Cell col="18" rowspan="2" text="보증금액"/>
+                      <Cell col="19" rowspan="2" text="보증증권금액"/>
+                      <Cell col="20" rowspan="2" text="선납금"/>
+                      <Cell col="21" rowspan="2" text="월대여료&#13;&#10;(VAT포함)"/>
+                      <Cell col="22" rowspan="2" text="월대여료&#13;&#10;(VAT별도)"/>
+                      <Cell col="23" rowspan="2" text="본부"/>
+                      <Cell col="24" rowspan="2" text="사업장"/>
+                      <Cell col="25" rowspan="2" text="계약지점"/>
+                      <Cell col="26" rowspan="2" text="계약구분"/>
+                      <Cell col="27" rowspan="2" text="이전계약번호"/>
+                      <Cell col="28" rowspan="2" text="장기구분"/>
+                      <Cell col="29" rowspan="2" text="계약상태"/>
+                      <Cell col="30" rowspan="2" text="상품군명"/>
+                      <Cell col="31" rowspan="2" text="정비상품"/>
+                      <Cell col="32" rowspan="2" text="운전자범위&#13;&#10;(계약조건)"/>
+                      <Cell col="33" colspan="6" text="보험조건"/>
+                      <Cell col="39" rowspan="2" text="면책금"/>
+                      <Cell col="40" rowspan="2" text="위약금구분"/>
+                      <Cell col="41" rowspan="2" text="위약률"/>
+                      <Cell col="42" text="실운전자"/>
+                      <Cell col="43" rowspan="2" text="영업매니저"/>
+                      <Cell col="44" rowspan="2" text="결제담당자"/>
+                      <Cell col="45" rowspan="2" text="연락처"/>
+                      <Cell col="46" rowspan="2" text="계산서&#13;&#10;발행일자"/>
+                      <Cell col="47" rowspan="2" text="결제월"/>
+                      <Cell col="48" rowspan="2" text="결제일자"/>
+                      <Cell col="49" rowspan="2" text="결제방법"/>
+                      <Cell col="50" rowspan="2" text="순회정비주소"/>
+                      <Cell col="51" rowspan="2" text="범칙금주소"/>
+                      <Cell col="52" rowspan="2" text="영업채널"/>
+                      <Cell col="53" rowspan="2" text="채널상세유형"/>
+                      <Cell col="54" rowspan="2" text="신차장멤버십&#13;&#10;최초인입일자"/>
+                      <Cell col="55" rowspan="2" text="신차장멤버십&#13;&#10;계약인증일자"/>
+                      <Cell row="1" col="33" text="임직원특약(실보험)"/>
+                      <Cell row="1" col="34" text="연령"/>
+                      <Cell row="1" col="35" text="대인/대물"/>
+                      <Cell row="1" col="36" text="자손"/>
+                      <Cell row="1" col="37" text="무보험차"/>
+                      <Cell row="1" col="38" text="보험종료일자"/>
+                      <Cell row="1" col="42" text="성명"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column3"/>
+                      <Cell col="3" text="bind:Column4"/>
+                      <Cell col="4" text="bind:Column5"/>
+                      <Cell col="5" text="bind:Column6"/>
+                      <Cell col="6" text="bind:Column7"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                      <Cell col="21"/>
+                      <Cell col="22"/>
+                      <Cell col="23"/>
+                      <Cell col="24"/>
+                      <Cell col="25"/>
+                      <Cell col="26"/>
+                      <Cell col="27"/>
+                      <Cell col="28"/>
+                      <Cell col="29"/>
+                      <Cell col="30"/>
+                      <Cell col="31"/>
+                      <Cell col="32"/>
+                      <Cell col="33"/>
+                      <Cell col="34"/>
+                      <Cell col="35"/>
+                      <Cell col="36"/>
+                      <Cell col="37"/>
+                      <Cell col="38"/>
+                      <Cell col="39"/>
+                      <Cell col="40"/>
+                      <Cell col="41"/>
+                      <Cell col="42"/>
+                      <Cell col="43"/>
+                      <Cell col="44"/>
+                      <Cell col="45"/>
+                      <Cell col="46"/>
+                      <Cell col="47"/>
+                      <Cell col="48"/>
+                      <Cell col="49"/>
+                      <Cell col="50"/>
+                      <Cell col="51"/>
+                      <Cell col="52"/>
+                      <Cell col="53"/>
+                      <Cell col="54"/>
+                      <Cell col="55"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_01_00_00_00" taborder="3" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" left="0" top="39"/>
+              <Static id="sta00" taborder="4" text="※ 계약번호 클릭 시, 장기계약관리(3232) 화면으로 이동하여, 상세 계약정보를 확인할 수 있습니다." left="110" top="20" width="685" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+              <Static id="Static01_00_00_00" taborder="5" text="10" top="0" cssclass="sta_Guide" width="10" left="99" height="50" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00_01" taborder="3" text="화면접기 기능 사용하지 않음. 예외화면" top="270" cssclass="sta_Guide_info" width="301" left="300" height="40" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid3">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column0"/>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.divGridWapper_Static01_00_00_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

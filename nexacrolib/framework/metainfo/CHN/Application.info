@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Application">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.Application" shorttypename="Application" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="使用Nexocro制作的应用程序的基本信息和初期创建时处理给定环境信息的基础对象。" />
+    <PropertyInfo>
+      <Property name="all" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含注册到Application中的所有对象的只读属性。" csspropertyname="" normalpropertyname="all" />
+      <Property name="licenseurl" group="" subgroup="" refreshinfo="" edittype="FileName" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="是在设定包含许可证信息的文件的路径的属性。" csspropertyname="" normalpropertyname="licenseurl" />
+      <Property name="mainframe" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含属于Application下级的MainFrame的只读属性。" csspropertyname="" normalpropertyname="mainframe" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Application的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="onlyone" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="" csspropertyname="" normalpropertyname="onlyone" />
+      <Property name="screenid" group="Information" subgroup="" refreshinfo="" edittype="ScreenID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定执行Application的屏幕ID的属性。" csspropertyname="" normalpropertyname="screenid" />
+      <Property name="trays" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="包含注册到Application中的Tray对象的信息的只读属性。" csspropertyname="" normalpropertyname="trays" />
+      <Property name="version" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Application的版本的属性。" csspropertyname="" normalpropertyname="version" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Application的特定事件添加句柄函数的方法。">
+        <Syntax text="Application.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到Application的特定事件中的方法。">
+        <Syntax text="Application.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于将动态生成的Tray添加到Application的方法。">
+        <Syntax text="Application.addTray(strTrayID, objTray)">
+          <Return type="Number" description="返回添加到trays属性中的Tray对象的索引。&#xD;&#xA;&#xD;&#xA;在添加Tray对象失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTray" type="Object" in="false" out="false" option="false" variable="false" description="设定需要添加到Application中的Tray对象。" />
+            <Argument name="strTrayID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加到Application中的Tray对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Application的AppVariables区域添加变量的方法。">
+        <Syntax text="Application.addVariable( strID, varValue )">
+          <Return type="Number" description="在添加变量成功时，将返回&quot;1&quot;。&#xD;&#xA;在添加变量失败时，将返回&quot;0&quot;。&#xD;&#xA;在有相同的变量存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量的ID。" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示Application的警告对话框的方法。">
+        <Syntax text="Application.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框中的文本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于停止正在执行的事务的方法。">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="设定需要中止的事务的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，按照与在事务处理过程中输入ESC键时相同的方式强制中止通信。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="Application.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于显示Application的选择对话框的方法。">
+        <Syntax text="Application.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="在所显示的选择对话框中选择“确认”按钮时，将返回&quot;true&quot;。&#xD;&#xA;在所显示的选择对话框中选择“取消”按钮时，将返回“false”。" />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框的TitleBar中的文本。&#xD;&#xA;&#xD;&#xA;- 在WRE中不支持的参数。&#xD;&#xA;  在WRE中将对所设定的值进行忽略处理。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在对话框中的文本。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要显示在对话框的左侧区域的图标类型。&#xD;&#xA;&#xD;&#xA;在设定为“error”时，显示红色“X”形状的图标。&#xD;&#xA;在设定为“question”时，显示问号（“?”）形状的图标。&#xD;&#xA;在设定为“warning”时，显示黄底感叹号（“!”）形状的图标。&#xD;&#xA;在设定为“information”时，显示蓝底感叹号（“!”）形状的图标。&#xD;&#xA;&#xD;&#xA;在不设定值时，将不显示图标。&#xD;&#xA;&#xD;&#xA;- 在WRE中不支持的参数。&#xD;&#xA;  在WRE中将对所设定的值进行忽略处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="enableOnlyOne" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="">
+        <Syntax text="[application.]enableOnlyOne()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于关闭正在执行的Nexacro应用程序的方法。">
+        <Syntax text="Application.exit()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Application的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="Application.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回需要在事件中查找的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Application中当前被激活的Form对象的方法。">
+        <Syntax text="Application.getActiveForm()">
+          <Return type="Object" description="返回当前获得焦点的组件的父级Frame。&#xD;&#xA;&#xD;&#xA;在如Div等容器组件中所包含的组件具有焦点时，将返回Div的父级Form。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Application中当前被激活的Frame对象的方法。">
+        <Syntax text="Application.getActiveFrame()">
+          <Return type="Object" description="返回当前获得焦点的Form的父级Frame。&#xD;&#xA;&#xD;&#xA;返回包括Modal、Modeless子Frame在内的当前获得焦点的Frame。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Application的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="Application.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回&quot;null&quot;。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;索引从“0”开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getTrustDomainList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="">
+        <Syntax text="[application.]getTrustDomainList()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTrustPathList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="">
+        <Syntax text="[application.]getTrustPathList()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Application的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="Application.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Application的AppVariables区域中是否有特定变量存在的方法。">
+        <Syntax text="Application.isExistVariable( strID );">
+          <Return type="Boolean" description="在AppVariables区域中有变量存在时，将返回&quot;true&quot;。&#xD;&#xA;在AppVariables区域中没有变量存在时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要对存在与否进行确认的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Application整体作为对象检索通过参数传递的对象并返回的方法。">
+        <Syntax text="Application.lookup( strObjectID )">
+          <Return type="Object" description="返回所检索到的对象。" />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要进行检索的对象的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Application的特定事件中删除句柄函数的方法。">
+        <Syntax text="Application.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回&quot;1&quot;。&#xD;&#xA;在删除句柄函数失败时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Application的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="Application.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回&quot;1&quot;。&#xD;&#xA;在删除句柄函数失败时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于删除被注册到Application的trays属性中的Tray对象的方法。">
+        <Syntax text="application.removeTray([strID]);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strId" type="String" in="false" out="false" option="false" variable="false" description="设定需要从Application的trays属性中进行删除的Tray对象的ID。&#xD;&#xA;&#xD;&#xA;在不设定值时，将对所注册的整体Tray对象进行删除。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Application的AppVariables区域删除变量的方法。">
+        <Syntax text="Application.removeVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Application的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="Application.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回&quot;0&quot;。&#xD;&#xA;在变更第一个句柄函数失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Application的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="Application.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回&quot;0&quot;。&#xD;&#xA;在变更第一个句柄函数失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Application的AppVariables区域中添加变量或设定值的方法。">
+        <Syntax text="Application.setVariable( strID, varValue )">
+          <Return type="Number" description="在添加变量成功时，将返回&quot;1&quot;。&#xD;&#xA;在添加变量失败时，将返回&quot;0&quot;。&#xD;&#xA;在有相同的变量存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量名。" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于保留跟踪日志的方法。">
+        <Syntax text="Application.trace( strLog )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strLog" type="String" in="false" out="false" option="false" variable="false" description="设定需要输出到日志中的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于调用对在Application区域中定义的Dataset的数据进行更新的服务，并在完成事务之后执行回调函数的方法。">
+        <Syntax text="Application.transaction(strSvcID,strURL,strInDatasets,strOutDatasets,strArgument,strCallbackFunc[,bAsync[,nDataType[,bCompress]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="设定是否需要以非同步（ASync）方式处理事务。&#xD;&#xA;&#xD;&#xA;在设定为“true”时，将事务以非同步（ASync）方式进行处理，与事务处理的完成与否无关，执行脚本。&#xD;&#xA;在设定为“false”时，将事务以同步（Sync）方式进行处理，在完成事务处理之前中断脚本的执行。&#xD;&#xA;&#xD;&#xA;在不设定值时适用“true”。" />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在事务处理过程中是否对数据进行压缩。&#xD;&#xA;&#xD;&#xA;在设定为“true”时，在压缩数据之后进行收发。&#xD;&#xA;在设定为“false”时，不压缩数据进行收发。&#xD;&#xA;&#xD;&#xA;在不设定值时适用“false”。" />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="设定在 transaction 处理过程中，从客户端向服务器传输数据的形态。&#xA;&#xA;&quot;0&quot; : XML 形式&#xA;&quot;1&quot; : Binary 形式&#xA;&quot;2&quot; : SSV 形式&#xA;&quot;3&quot; : JSON 形式&#xA;&#xA;在不设定值时适用“0”。" />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要传送到服务器页面中的信息。&#xD;&#xA;可以按照“变量ID=变量值”的格式进行设定，并利用空格区分传送多个因数值。&#xD;&#xA;&#xD;&#xA;ex) &quot;argu0=test argu1=30&quot;" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在接收事务处理结果时进行调用的回调函数名。&#xD;&#xA;回调函数需要在Application区域做出定义。" />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定为了进行数据处理而需要传送到服务器中的DataSet的ID。&#xA;DataSet需要在Application的AppVariables区域做出定义。&#xA;可以按照“输入ID=DataSet ID”的格式进行设定，并利用空格区分传送多个DataSet。&#xA;&#xA;ex) &quot;input1=DataSet00 input2=DataSet01&quot;&#xA;&#xA;Application下位对象的Dataset对象可以如下设置。 &#xA;&#xA;ex) &quot;input1=mainframe.frame.form.Dataset00 input2=Dataset01&quot;" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于接收从服务器传送过来的数据的DataSet的ID。&#xA;DataSet需要在Application的AppVariables区域做出定义。&#xA;可以按照“DataSet ID=输出ID”的格式进行设定，并利用空格区分接收多个DataSet。&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output1”&#xA;&#xA;可以按照如下所述的格式利用多个Dataset接收Output Dataset（输出ID）。&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output0&quot;&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output0&quot;&#xA;&#xA;Application下级对象的Dataset对象可以如下设置。 &#xA;&#xA;ex) &quot;mainframe.frame.form.Dataset00=ouput0 Dataset01=output1&quot;" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定用于对事物进行区分的ID。" />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要请求事务的服务器页面地址。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onafteruserconfirm" group="" deprecated="false" unused="false" requirement="Windows NRE,Android NRE" description="在关闭UserConfirm窗口之后触发的事件。">
+        <Syntax text="Application.onafteruserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeexit" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Application被关闭之前触发的事件。">
+        <Syntax text="Application.onbeforeexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="String" description="在事件中作为返回值设定字符串时，将显示询问是否关闭Application的确认窗口。&#xD;&#xA;作为返回值设定的字符串将在结束确认窗口中使用。&#xD;&#xA;&#xD;&#xA;在事件中返回省略值或设定为null, undefined, 空字符串(&quot;&quot;)时，不会显示确认窗口。" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeuserconfirm" group="" deprecated="false" unused="false" requirement="Windows NRE,Android NRE" description="在显示UserConfirm窗口之前触发的事件。">
+        <Syntax text="Application.onbeforeuserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onduplicateexecution" group="" deprecated="false" unused="false" requirement="Windows NRE" description="在重复运行被设定为不可重复运行的应用时触发的事件。">
+        <Syntax text="Application.onduplicateexecution(obj:nexacro.Application,e:nexacro.DuplicateExecutionEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DuplicateExecutionEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Application中执行的Transaction发生错误时触发的事件。">
+        <Syntax text="Application.onerror(obj:nexacro.Application,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，&#xD;&#xA;  &gt; 不会将事件传播到Environment的onerror。&#xD;&#xA;  &gt; 不停止而是维持正在执行的Transaction。&#xD;&#xA;&#xD;&#xA;在事件中作为返回值返回false时，&#xD;&#xA;  &gt; 将事件传播到Environment的onerror。&#xD;&#xA;  &gt; 正在执行的Transaction的停止与否在Environment的onerror中通过返回值决定。&#xD;&#xA;  &gt; 在Environment中没有定义onerror事件时，将停止正在执行的Transaction。&#xD;&#xA;&#xD;&#xA;当省略事件的返回值时，将适用f" />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onexit" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Application被关闭时触发的事件。">
+        <Syntax text="Application.onexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在完成注册到Application中所有的对象以及数据的载入之后触发的事件。">
+        <Syntax text="Application.onload(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadforms" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在关联到ChildFrame中的所有Form被载入时触发的事件。">
+        <Syntax text="Application.onloadforms(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadingappvariables" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Application的AppVariables区域中定义的对象全部生成之后触发的事件。">
+        <Syntax text="Application.onloadingappvariables(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnotification" group="" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在从移动设备接收到与Nexacro platform相关的Notification时触发的事件。">
+        <Syntax text="Application.onnotification(obj:nexacro.Application,e:nexacro.NotificationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="NotificationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

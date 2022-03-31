@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalMonth",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalMonth/_metainfo_/CalMonth.info"
+	],
+	"scripts": [
+    "CalMonth/CalMonth.js"
+	],
+	"designscripts": [
+    "CalMonth/DesignCalMonth.js"
+	],
+	"help": "",	
+	"xcss": "CalMonth/_xcss_/CalMonth.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

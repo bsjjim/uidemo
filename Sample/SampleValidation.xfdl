@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleValidation" width="1528" height="1300" titletext="밸리데이션 샘플" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="1300" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="컴포넌트 밸리데이션 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Div id="Div01" taborder="1" text="Div01" left="0" top="41" height="729" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="1.Validation 공통함수는 아래와 같이 3개의 함수가 제공된다.&#13;&#10;  1) Component에 설정된 정합성체크 RuleSet을 Clear한다.&#13;&#10;       this.gfnClearValidation(this.grdVali);&#13;&#10;  2) 그리드인경우 바인드된 컬럼별로 정합성체크 Rule을 등록한다.&#13;&#10;       this.gfnSetValidation(this.grdVali, &quot;ID&quot;, &quot;아이디&quot;, &quot;required,length:5&quot;);&#13;&#10;  3) Component에 등록된 데이터 정합성체크 RuleSet에의해 정합성을 체크를 하고 이상여부를 리턴한다.&#13;&#10;       this.gfnValidation(this.grdVali,this.divVali);&#13;&#10;&#13;&#10;2. gfnSetValidation에 등록할 수 있는 Validation 체크 Rule의 종류&#13;&#10;  예) this.gfnSetValidation(this.grdVali, &quot;ID&quot;, &quot;아이디&quot;, &quot;required,equalto:NAME&quot;);&#13;&#10;  required - 필수 체크&#13;&#10;  length:7 - 길이가 7자리인지 체크&#13;&#10;  rangelength:2:3 - 길이가 2 ~ 3 자리인지 체크&#13;&#10;  maxlength:7 - 길이가 7보다 작은지 체크&#13;&#10;  minlength:3 - 길이가 3보다 큰지 체크&#13;&#10;  maxlengthbyte:7 - byte의 길이가 7보다 작은지 체크&#13;&#10;  minlengthbyte:3 - byte의 길이가 3보다 큰지 체크&#13;&#10;  digits - 숫자여부 체크&#13;&#10;  min:7 - 값이 7보다 작은지 체크&#13;&#10;  max:7 - 값이 7보다 큰지 체크&#13;&#10;  declimit:3 - 소수점의 자리수가 3자리인지 체크&#13;&#10;  date - 년월일형태의 날짜가 맞는지 체크&#13;&#10;  dateym - 년월형태의 날짜가 맞는지 체크&#13;&#10;  range:40:100 - 값이 40 ~ 100 사이의 값인지 체크&#13;&#10;  code:1:2:3 - 값이 1,2,3 의 값인지 체크&#13;&#10;  equalto:NAME - NAME 칼럼의 값과 같은지 체크 예) this.gfnSetValidation(this.grdVali, &quot;ID&quot;, &quot;아이디&quot;, &quot;required,equalto:NAME&quot;);&#13;&#10;  fromto:DATE_FROM - 등록된 날짜가 DATE_TO의 칼럼의 값 보다 큰지 예) this.gfnSetValidation(this.grdVali, &quot;DATE_TO&quot;, &quot;종료일자,시작일자&quot;, &quot;required,date,fromto:DATE_FROM&quot;);&#13;&#10;  comparebig:NAME - NAME 칼럼의 값보다 큰지 체크 예) this.gfnSetValidation(this.grdVali, &quot;ID&quot;, &quot;아이디&quot;, &quot;required,comparebig:NAME&quot;);&#13;&#10;  comparesmall:NAME - NAME 칼럼의 값보다 작은지 체크 예) this.gfnSetValidation(this.grdVali, &quot;ID&quot;, &quot;아이디&quot;, &quot;required,comparesmall:NAME&quot;);&#13;&#10;  isssn - 공통함수 gfnIsSSN로 주민번호 체크&#13;&#10;  isfrn - 공통함수 gfnIsFrnrIdNo로 외국인등록번호 체크&#13;&#10;  isbzid - 공통함수 gfnIsBzIdNo로 사업자등록번호 체크&#13;&#10;  isfirmid - 공통함수 gfnIsFirmIdNo로 법인등록번호 체크&#13;&#10;  iscardno - 공통함수 gfnIsCardNo로 신용카드번호 체크&#13;&#10;  isemail - 공통함수 gfnIsEmail로 이메일 체크" left="18" top="15" cssclass="sta_txt_descTitle" right="18" bottom="15" verticalAlign="top"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="1" text="15" top="0" cssclass="sta_Guide" width="100" left="78" height="15" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divVali" taborder="2" left="20" top="1064" height="166" right="40" border="1px solid black">
+          <Layouts>
+            <Layout>
+              <Static id="Static03" taborder="2" text="필수(Edit)" left="506" top="6" width="61" height="29" cssclass="sta_WF_LabelE"/>
+              <Edit id="edt01" taborder="3" left="570" top="10" width="196" height="21" cssclass="input_req"/>
+              <Static id="Static08" taborder="0" text="필수(날짜)" left="6" top="8" width="81" height="29" cssclass="sta_WF_LabelE"/>
+              <Static id="Static30" taborder="5" text="최대값100" left="7" top="36" width="81" height="29" cssclass="sta_WF_Label"/>
+              <Edit id="edtMax" taborder="6" left="124" top="40" width="166" height="21"/>
+              <Static id="Static29" taborder="7" text="최소값10" left="507" top="36" width="61" height="29" cssclass="sta_WF_Label"/>
+              <Edit id="edtMin" taborder="8" left="571" top="40" width="216" height="21"/>
+              <Static id="Static20" taborder="10" text="최소길이3" left="7" top="68" width="81" height="29" cssclass="sta_WF_Label"/>
+              <Edit id="edtLegthMin" taborder="11" left="124" top="72" width="166" height="21"/>
+              <Static id="Static54" taborder="12" text="범위(1~5)" left="507" top="68" width="61" height="29" cssclass="sta_WF_Label"/>
+              <Edit id="edtRange" taborder="13" left="571" top="72" width="156" height="21"/>
+              <Calendar id="calDt" taborder="1" left="124" top="9" width="120" height="24" dateformat="yyyy-MM-dd" cssclass="input_req"/>
+              <Static id="Static03_00" taborder="4" text="월달력컴포지트" left="896" top="6" width="91" height="29" cssclass="sta_WF_LabelE"/>
+              <Static id="Static03_00_00" taborder="9" text="기간력컴포지트" left="896" top="38" width="91" height="29" cssclass="sta_WF_LabelE"/>
+              <Div id="divSub" taborder="14" left="7" top="105" width="1337" height="55" border="1px solid black">
+                <Layouts>
+                  <Layout>
+                    <Static id="Static08" taborder="0" text="필수(날짜)" left="6" top="15" width="81" height="29" cssclass="sta_WF_LabelE"/>
+                    <Calendar id="calDt" taborder="1" left="124" top="16" width="120" height="24" dateformat="yyyy-MM-dd" cssclass="input_req"/>
+                    <Static id="Static03" taborder="2" text="필수(Edit)" left="506" top="13" width="61" height="29" cssclass="sta_WF_LabelE"/>
+                    <Edit id="edt01" taborder="3" left="570" top="17" width="196" height="21" cssclass="input_req"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+              <CalMonth id="CalMonth00" taborder="15" left="994" top="10" width="90" height="24" cssclass="input_req"/>
+              <CalPeriodDay id="CalPeriodDay00" taborder="16" left="994" top="40" width="240" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="grdVali" taborder="3" left="20" top="805" height="220" right="40" autofittype="col" nodatatext="No Data" binddataset="dsList" autoenter="select">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="148"/>
+                <Column size="135"/>
+                <Column size="118"/>
+                <Column size="80"/>
+                <Column size="115"/>
+                <Column size="137"/>
+                <Column size="137"/>
+                <Column size="137"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="아이디" cssclass="cell_req"/>
+                <Cell col="1" text="주민등록번호" cssclass="cell_req"/>
+                <Cell col="2" text="시작일"/>
+                <Cell col="3" text="종료일"/>
+                <Cell col="4" text="최대값"/>
+                <Cell col="5" text="소숫점"/>
+                <Cell col="6" text="비교1"/>
+                <Cell col="7" text="비교2"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:ID" edittype="normal" editautoselect="true"/>
+                <Cell col="1" text="bind:SSN" edittype="normal" editautoselect="true"/>
+                <Cell col="2" text="bind:DATE_FROM" edittype="normal" editautoselect="true"/>
+                <Cell col="3" text="bind:DATE_TO" edittype="normal" editautoselect="true"/>
+                <Cell col="4" text="bind:MAX_NUM" edittype="mask" maskeditautoselect="true"/>
+                <Cell col="5" text="bind:DECIMAL" edittype="mask" maskeditautoselect="true"/>
+                <Cell col="6" text="bind:COMPARE_1" edittype="mask" maskeditautoselect="true"/>
+                <Cell col="7" text="bind:COMPARE_2" edittype="mask" maskeditautoselect="true"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btnGrdCheck" taborder="4" text="체크" top="779" width="53" height="21" right="40" cssclass="btn_WF_GridControl" onclick="btn_grdVali_onclick"/>
+        <Button id="btnDivCheck" taborder="5" text="체크" top="1041" width="49" height="21" right="40" cssclass="btn_WF_GridControl" onclick="btn_compVali_onclick"/>
+        <Static id="Static00" taborder="6" text="1) Grid Validation Check" left="20" top="780" width="178" height="28" font="bold 10pt &quot;맑은 고딕&quot;"/>
+        <Static id="Static01" taborder="7" text="2) Component Validation Check" left="21" top="1041" width="228" height="28" font="bold 10pt &quot;맑은 고딕&quot;"/>
+        <Static id="Static02" taborder="8" text="3) Grid와 Component Validation Check" left="21" top="1236" width="268" height="28" font="bold 10pt &quot;맑은 고딕&quot;"/>
+        <Button id="btnAll" taborder="9" text="전체체크" top="1240" width="79" height="21" cssclass="btn_WF_GridControl" onclick="btnAll_onclick" left="280"/>
+        <Button id="btnAdd" taborder="10" text="추가" top="779" height="21" onclick="fnAdd" right="155" width="53"/>
+        <Button id="btnDel" taborder="11" text="삭제" top="779" height="21" onclick="fnDel" right="97" width="53"/>
+      </Layout>
+    </Layouts>
+    <Bind>
+      <BindItem id="item1" compid="divVali.form.edt01" propid="value" datasetid="dsList2" columnid="EDIT"/>
+      <BindItem id="item2" compid="divVali.form.edtMax" propid="value" datasetid="dsList2" columnid="MAX_NUM"/>
+      <BindItem id="item3" compid="divVali.form.edtMin" propid="value" datasetid="dsList2" columnid="MIN_NUM"/>
+      <BindItem id="item4" compid="divVali.form.edtLegthMin" propid="value" datasetid="dsList2" columnid="LENGTH_MIN"/>
+      <BindItem id="item5" compid="divVali.form.edtRange" propid="value" datasetid="dsList2" columnid="RANGE"/>
+    </Bind>
+    <Objects>
+      <Dataset id="dsList">
+        <ColumnInfo>
+          <Column id="ID" type="STRING" size="256"/>
+          <Column id="SSN" type="STRING" size="256"/>
+          <Column id="DATE_FROM" type="STRING" size="256"/>
+          <Column id="DATE_TO" type="STRING" size="256"/>
+          <Column id="MAX_NUM" type="FLOAT" size="256"/>
+          <Column id="DECIMAL" type="BIGDECIMAL" size="256"/>
+          <Column id="COMPARE_1" type="STRING" size="256"/>
+          <Column id="COMPARE_2" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="ID">kimyk</Col>
+            <Col id="DATE_FROM">20220125</Col>
+            <Col id="DATE_TO">20220120</Col>
+            <Col id="MAX_NUM">15</Col>
+            <Col id="DECIMAL">1.253</Col>
+            <Col id="COMPARE_1">20</Col>
+            <Col id="COMPARE_2">10</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsList2">
+        <ColumnInfo>
+          <Column id="DATE" type="STRING" size="256"/>
+          <Column id="EDIT" type="STRING" size="256"/>
+          <Column id="MAX_NUM" type="INT" size="256"/>
+          <Column id="MIN_NUM" type="INT" size="256"/>
+          <Column id="LENGTH_MIN" type="STRING" size="256"/>
+          <Column id="RANGE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  컴포넌트 밸리데이션 샘플
+*  @FileName 	: SampleValidation.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/02/03
+*  @Desction    : 컴포넌트 밸리데이션 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/02/03     	      양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+	
+	
+	this.fnSetValidation();
+}
+
+
+this.fnSetValidation = function()
+{
+
+	// Validation 체크 Rule의 종류
+	// required - 필수 체크
+	// length:7 - 길이가 7자리인지 체크
+	// rangelength:2:3 - 길이가 2 ~ 3 자리인지 체크
+	// maxlength:7 - 길이가 7보다 작은지 체크
+	// minlength:3 - 길이가 3보다 큰지 체크
+	// maxlengthbyte:7 - byte의 길이가 7보다 작은지 체크
+	// minlengthbyte:3 - byte의 길이가 3보다 큰지 체크
+	// digits - 숫자여부 체크
+	// min:7 - 값이 7보다 작은지 체크
+	// max:7 - 값이 7보다 큰지 체크
+	// declimit:3 - 소수점의 자리수가 3자리인지 체크
+	// date - 년월일형태의 날짜가 맞는지 체크
+	// dateym - 년월형태의 날짜가 맞는지 체크
+	// range:40:100 - 값이 40 ~ 100 사이의 값인지 체크
+	// code:1:2:3 - 값이 1,2,3 의 값인지 체크
+	// equalto:NAME - NAME 칼럼의 값과 같은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "equalto:NAME");
+	// fromto:ID - 등록된 날짜가 ID의 칼럼의 값 보다 큰지 예) this.gfnSetValidation(this.dsList, "NAME", "종료일,시작일", "fromto:ID");
+	// comparebig:NAME - NAME 칼럼의 값보다 큰지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparebig:NAME");
+	// comparesmall:NAME - NAME 칼럼의 값보다 작은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparesmall:NAME");
+	// isssn - 공통함수 gfnIsSSN로 주민번호 체크
+	// isfrn - 공통함수 gfnIsFrnrIdNo로 외국인등록번호 체크
+	// isbzid - 공통함수 gfnIsBzIdNo로 사업자등록번호 체크
+	// isfirmid - 공통함수 gfnIsFirmIdNo로 법인등록번호 체크
+	// iscardno - 공통함수 gfnIsCardNo로 신용카드번호 체크
+	// isemail - 공통함수 gfnIsEmail로 이메일 체크
+	
+	// 정합성 체크 설정
+	this.gfnSetValidation(this.grdVali, "ID", "", "required,length:5");	// 아이디
+	this.gfnSetValidation(this.grdVali, "SSN", "주민번호", "required,isssn");	// 주민번호	
+	this.gfnSetValidation(this.grdVali, "DATE_FROM", "시작일자", "date");	// 시작일자
+	this.gfnSetValidation(this.grdVali, "DATE_TO", "종료일자,시작일자", "date,fromto:DATE_FROM"); // 종료일자,시작일자
+	this.gfnSetValidation(this.grdVali, "MAX_NUM",  "최대값", "digits,max:10");  // 최대값
+	this.gfnSetValidation(this.grdVali, "DECIMAL",  "금리", "digits,declimit:2");  // 금리
+	this.gfnSetValidation(this.grdVali, "COMPARE_1",  "첫번째값", "digits");	  // 1번째값
+	this.gfnSetValidation(this.grdVali, "COMPARE_2", "2번째값,1번째값", "digits,comparebig:COMPARE_1");  // 2번째값,1번째값
+	
+	this.gfnSetValidation(this.divVali.form.calDt, "", "날짜", "required,date");
+	this.gfnSetValidation(this.divVali.form.edt01, "", "필수", "required");	
+	this.gfnSetValidation(this.divVali.form.CalMonth1, "", "월달력", "required");	
+	this.gfnSetValidation(this.divVali.form.CalPeriodDay1, "", "기간달력", "required");	
+	this.gfnSetValidation(this.divVali.form.edtMax, "", "최대값", "digits,max:100");
+	this.gfnSetValidation(this.divVali.form.edtMin, "", "최소값", "digits,min:10");	
+	this.gfnSetValidation(this.divVali.form.edtLegthMin, "", "최소길이", "minlength:3");
+	this.gfnSetValidation(this.divVali.form.edtRange, "", "범위", "digits,range:1:5");	
+	this.gfnSetValidation(this.divVali.form.divSub.form.calDt, "", "날짜", "required,date");
+	this.gfnSetValidation(this.divVali.form.divSub.form.edt01, "", "필수", "required");		
+	
+}
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnCallback = function(sSvcId,nErrCode,nErrMsg)
+{
+   this.dsList.assign(this.dsListSpare)
+   this.fnPagingSetting();
+}
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+this.fnSearch = function()
+{
+
+}
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+
+this.fnAdd = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.dsList.addRow();
+};
+
+this.fnDel = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.dsList.deleteRow(this.dsList.rowposition);
+};
+
+this.btn_grdVali_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+    if(!this.gfnValidation(this.grdVali)) return;
+	
+	this.gfnAlert("Validation이 통과 되었습니다.");	
+	
+};
+
+this.btn_compVali_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    if(!this.gfnValidation(this.divVali)) return;
+	
+	this.gfnAlert("Validation이 통과 되었습니다.");	
+};
+
+this.btnAll_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+	if(!this.gfnValidation(this.grdVali)) return;
+
+ 	if(!this.gfnValidation(this.divVali)) return;
+	
+	this.gfnAlert("Validation이 통과 되었습니다.");	
+};
+]]></Script>
+  </Form>
+</FDL>

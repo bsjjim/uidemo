@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1488" height="318" titletext="Tab - 탭내 조회">
+    <Layouts>
+      <Layout height="318" width="1488">
+        <Div id="DivSearch" taborder="0" left="0" top="10" height="63" cssclass="div_SA" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="매각일" left="40" top="18" width="58" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="차량번호" left="364" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00" taborder="2" left="431" top="18" width="80" height="24" text="10허4048"/>
+              <Button id="Button00" taborder="3" left="513" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_01" taborder="4" text="w30" top="-6" cssclass="sta_Guide" width="30" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00" taborder="5" text="h11" top="0" cssclass="sta_Guide" width="50" height="11" visible="false" right="27"/>
+              <Static id="Static01_00_01_00_00" taborder="6" text="h11" cssclass="sta_Guide" width="50" height="11" visible="false" right="32" bottom="0"/>
+              <Static id="Static01_01" taborder="7" text="상태" left="597" top="18" width="39" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00" taborder="8" text="전체" left="638" top="18" width="150" height="24" value="" index="-1"/>
+              <Static id="Static01_01_00" taborder="9" text="매각유형" left="848" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_00" taborder="10" text="전체" left="914" top="18" width="150" height="24" value="" index="-1"/>
+              <Button id="Button02" taborder="11" top="11" height="38" cssclass="btn_SA_src" right="30" width="38"/>
+              <CalPeriod id="CalPeriod00" taborder="12" left="94" top="18" width="210" height="24" cssclass="input_req"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00" taborder="1" text="10" top="0" cssclass="sta_Guide" width="120" left="285" height="10" visible="false"/>
+        <Grid id="Grid00" taborder="2" left="0" top="123" binddataset="ds_grid" height="194" initvalueid="iv_Grid" right="0">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="40" band="left"/>
+                <Column size="150"/>
+                <Column size="250"/>
+                <Column size="150"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="theme://images/flag.png" displaytype="imagecontrol"/>
+                <Cell col="1" text="선택"/>
+                <Cell col="2" text="정형데이터"/>
+                <Cell col="3" text="비정형데이터"/>
+                <Cell col="4" text="금액"/>
+                <Cell col="5" text="Column1"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Flag" displaytype="imagecontrol"/>
+                <Cell col="1" text="bind:Delete" edittype="checkbox" displaytype="checkboxcontrol"/>
+                <Cell col="2" text="bind:Column3"/>
+                <Cell col="3" text="bind:Column4" textAlign="left"/>
+                <Cell col="4" text="bind:Column5" textAlign="right" displaytype="number"/>
+                <Cell col="5" text="bind:Column1"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="2" text="합계" textAlign="center"/>
+                <Cell col="2"/>
+                <Cell col="3"/>
+                <Cell col="4" text="1100000" displaytype="number"/>
+                <Cell col="5"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01_00_00_01_00_00_03" taborder="3" text="h50" top="73" cssclass="sta_Guide" width="100" left="473" height="50" visible="false"/>
+        <Static id="Static00" taborder="4" text="타이틀" left="0" top="93" width="120" height="24" cssclass="sta_WF_title1"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="summ" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="summ">0</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">150000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">1000000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

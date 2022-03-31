@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XFONT version="1.0"><![CDATA[/********************************************************************
+@font-face {
+  font-family : 'NanumGothic';
+  font-style : normal;
+  font-weight : 400;
+  src : local("NanumGothic");
+  src : url(./_resource_/_font_/NanumGothic.eot);
+  src : url(./_resource_/_font_/NanumGothic.eot?#iefix) format('embedded-opentype'),
+    url(./_resource_/_font_/NanumGothic.woff2) format('woff2'),
+    url(./_resource_/_font_/NanumGothic.woff) format('woff'),
+    url(./_resource_/_font_/NanumGothic.ttf) format('truetype');
+}
+@font-face {
+  font-family : 'NanumGothicBold';
+  font-style : normal;
+  font-weight : 700;
+  src : local("NanumGothicBold");
+  src : url(./_resource_/_font_/NanumGothicBold.eot);
+  src : url(./_resource_/_font_/NanumGothicBold.eot?#iefix) format('embedded-opentype'),
+    url(./_resource_/_font_/NanumGothicBold.woff2) format('woff2'),
+    url(./_resource_/_font_/NanumGothicBold.woff) format('woff'),
+    url(./_resource_/_font_/NanumGothicBold.ttf) format('truetype');
+}
+********************************************************************/
+@import url("./WebCSS/custom.css");
+
+@font-face {
+  font-family: 'NotoKR-Regular';
+  src : local("NotoKR-Regular");
+  src : url(./_resource_/_font_/notokr-regular.woff2) format('woff2'),
+        url(./_resource_/_font_/notokr-regular.woff) format('woff'),
+        url(./_resource_/_font_/notokr-regular.ttf) format('turetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*기본 bold*/
+@font-face {
+  font-family: 'NotoKR-Medium';
+  src : local("NotoKR-Medium");
+  src : url(./_resource_/_font_/notokr-medium.woff2) format('woff2'),
+        url(./_resource_/_font_/notokr-medium.woff) format('woff'),
+        url(./_resource_/_font_/notokr-medium.ttf) format('turetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*bold*/
+@font-face {
+  font-family: 'NotoKR-Bold';
+  src : local("NotoKR-Bold");
+  src : url(./_resource_/_font_/notokr-bold.woff2) format('woff2'),
+        url(./_resource_/_font_/notokr-bold.woff) format('woff'),
+        url(./_resource_/_font_/notokr-bold.ttf) format('turetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*custom styles*/
+
+
+]]></XFONT>

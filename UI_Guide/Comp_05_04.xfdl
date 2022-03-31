@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1488" height="318" titletext="Tab - 탭 내 스크롤이 생길경우">
+    <Layouts>
+      <Layout height="318" width="1488">
+        <Div id="Div00" taborder="0" text="Div00" left="0" top="0" cssclass="div_group" right="10" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="마스터그리드" left="0" top="18" width="120" height="30" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="60" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="Column1"/>
+                      <Cell col="2" text="Column2"/>
+                      <Cell col="3" text="Column3"/>
+                      <Cell col="4" text="Column4"/>
+                      <Cell col="5" text="Column5"/>
+                      <Cell col="6" text="Column6"/>
+                      <Cell col="7" text="Column7"/>
+                      <Cell col="8" text="Column8"/>
+                      <Cell col="9" text="Column9"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static02" taborder="3" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="307"/>
+              <Static id="Static02_00" taborder="4" text="4" top="20" width="70" height="24" cssclass="sta_WF_gridCountNum" right="323"/>
+              <Static id="Static01_00_01" taborder="5" text="w15" top="-2" cssclass="sta_Guide" width="15" height="60" visible="false" right="236"/>
+              <Static id="Static02_02" taborder="6" text="[단위:원]" top="20" width="50" height="24" cssclass="sta_WF_gridCount" right="250"/>
+              <Static id="Static01_00_01_01" taborder="7" text="w15" top="3" cssclass="sta_Guide" width="10" height="47" visible="false" right="298"/>
+              <Static id="Static01_00_01_01_00" taborder="8" text="w15" top="8" cssclass="sta_Guide" width="5" height="47" visible="false" right="318"/>
+              <Button id="Button00_00_01_00_03_00" taborder="9" text="행추가" top="20" width="76" height="24" cssclass="btn_Block_addRow" right="160"/>
+              <Button id="Button00_00_01_00_03_00_02" taborder="10" text="행복사" top="20" width="76" height="24" cssclass="btn_Block_copyRow" right="80"/>
+              <Button id="Button00_00_01_00_03_00_02_00" taborder="11" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00_00" taborder="1" text="Div00" left="0" top="319" cssclass="div_group" right="10" bottom="-319">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="마스터그리드" left="0" top="18" width="120" height="30" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" binddataset="ds_grid" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="60" band="left"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="Column1"/>
+                      <Cell col="2" text="Column2"/>
+                      <Cell col="3" text="Column3"/>
+                      <Cell col="4" text="Column4"/>
+                      <Cell col="5" text="Column5"/>
+                      <Cell col="6" text="Column6"/>
+                      <Cell col="7" text="Column7"/>
+                      <Cell col="8" text="Column8"/>
+                      <Cell col="9" text="Column9"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static02" taborder="3" text="건" top="20" width="15" height="24" cssclass="sta_WF_gridCount" right="307"/>
+              <Static id="Static02_00" taborder="4" text="4" top="20" width="70" height="24" cssclass="sta_WF_gridCountNum" right="323"/>
+              <Static id="Static01_00_01" taborder="5" text="w15" top="-2" cssclass="sta_Guide" width="15" height="60" visible="false" right="236"/>
+              <Static id="Static02_02" taborder="6" text="[단위:원]" top="20" width="50" height="24" cssclass="sta_WF_gridCount" right="250"/>
+              <Static id="Static01_00_01_01" taborder="7" text="w15" top="3" cssclass="sta_Guide" width="10" height="47" visible="false" right="298"/>
+              <Static id="Static01_00_01_01_00" taborder="8" text="w15" top="8" cssclass="sta_Guide" width="5" height="47" visible="false" right="318"/>
+              <Button id="Button00_00_01_00_03_00" taborder="9" text="행추가" top="20" width="76" height="24" cssclass="btn_Block_addRow" right="160"/>
+              <Button id="Button00_00_01_00_03_00_02" taborder="10" text="행복사" top="20" width="76" height="24" cssclass="btn_Block_copyRow" right="80"/>
+              <Button id="Button00_00_01_00_03_00_02_00" taborder="11" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_01" taborder="2" text="10" top="8" cssclass="sta_Guide" width="10" height="392" visible="false" right="0"/>
+        <Static id="Static01_00_00_01_00" taborder="3" text="세로 스크롤이 생기는 탭은 탭페이지 우측에 10px 여백을 둔다.&#13;&#10;탭 내 가로스크롤을 허용하지 않는다." top="105" cssclass="sta_Guide_info" width="435" left="820" height="60" visible="true"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="summ" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="summ">0</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">150000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">1000000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

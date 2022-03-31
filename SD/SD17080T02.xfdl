@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SD17080T01" width="1488" height="675" titletext="지역별 보조금현황">
+    <Layouts>
+      <Layout height="675" mobileorientation="landscape" width="1488">
+        <Div id="DivSearch" taborder="0" left="0" top="10" height="63" cssclass="div_SA" right="0" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Button id="Button02" taborder="0" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_01" taborder="1" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="h11" cssclass="sta_Guide" width="50" visible="false" right="32" bottom="0" height="11"/>
+              <Static id="Static01_01" taborder="3" text="보조금지역" left="20" top="18" width="79" height="24" cssclass="sta_SA_label_req"/>
+              <Combo id="Combo00" taborder="4" text="선택" left="99" top="18" width="150" height="24" value="선택" index="-1" cssclass="input_req"/>
+              <Static id="Static01_00" taborder="5" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00_00_02_00" taborder="6" text="10" top="6" cssclass="sta_Guide" width="10" left="89" height="50" visible="false" onclick="DivSearch_Static01_00_00_00_02_00_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" right="0" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="보조금 현황" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" text="보조금지역"/>
+                      <Cell col="2" rowspan="2" text="보조금"/>
+                      <Cell col="3" colspan="3" text="전체"/>
+                      <Cell col="6" colspan="2" text="당사"/>
+                      <Cell col="8" rowspan="2" text="업데이트날짜"/>
+                      <Cell row="1" col="3" text="보급대수"/>
+                      <Cell row="1" col="4" text="접수대수"/>
+                      <Cell row="1" col="5" text="잔여대수"/>
+                      <Cell row="1" col="6" text="제한대수"/>
+                      <Cell row="1" col="7" text="잔여대수"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1" cssclass="cell_link"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3" textAlign="left"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5"/>
+                      <Cell col="6"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_00_00" taborder="3" text="15" top="606" cssclass="sta_Guide" width="100" left="50" height="15" visible="false"/>
+              <Static id="Static01_00_00_01_00_00" taborder="4" text="11" top="39" cssclass="sta_Guide" width="100" left="0" height="11" visible="false"/>
+              <Static id="Static01_00_00_00" taborder="5" text="10" top="3" cssclass="sta_Guide" width="10" left="113" height="50" visible="false"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01" taborder="6" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="48"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00" taborder="7" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

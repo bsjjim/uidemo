@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Popup" width="370" height="205" titletext="New Form" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="205" width="370">
+        <Static id="Static00_00" taborder="0" cssclass="sta_POP_bg" left="0" top="0" right="0" bottom="0"/>
+        <Static id="Static00" taborder="1" text="Confirm" left="0" top="0" height="30" cssclass="sta_POP_title" right="0"/>
+        <Button id="btnClose" taborder="2" top="1" width="50" height="28" cssclass="btn_POP_close" onclick="btnClose_onclick" right="1"/>
+        <ImageViewer id="imvIcon" taborder="3" left="161" top="50" width="48" height="48" image="url('theme://images/img_question.png')" border="0px none"/>
+        <Static id="Static01_00_00_00" taborder="4" top="30" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static01_00_00_00_00" taborder="5" top="98" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="staMsg" taborder="6" top="106" height="39" textAlign="center" left="10" width="350" fittocontents="both" minwidth="350" maxwidth=""/>
+        <Button id="btnOk" taborder="7" text="예" left="107" width="76" height="28" cssclass="btn_Block" borderRadius="2px" onclick="btnOk_onclick" bottom="21"/>
+        <Button id="btnCancel" taborder="8" text="아니오" left="btnOk:4" width="76" height="28" cssclass="btn_Block" borderRadius="2px" bottom="21" onclick="btnCancel_onclick"/>
+        <Static id="Static01_00_00_00_00_00" taborder="9" top="184" cssclass="sta_Guide" width="159" left="110" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  Alert메시지용 팝업
+*  @FileName 	: PopupAlert.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/21
+*  @Desction    : Alert메시지용 팝업
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/21     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(obj);
+	
+	var sMsg = this.gfnGetArgument("pvMsg");
+
+	this.staMsg.set_text(sMsg);	
+	
+	this.resetScroll();
+	
+	if(this.staMsg._width > 350)
+	{
+	    obj.getOwnerFrame().set_width(this.staMsg._width+20);
+		
+		var curX = this.oApp.mainframe.left;
+		var nLeft   =  curX + (this.oApp.mainframe.width / 2) - Math.round(obj.getOwnerFrame().width / 2);
+		obj.getOwnerFrame().set_left(nLeft);
+		
+ 		var nIconLeft = (obj.getOwnerFrame().width / 2)  - Math.round(48 / 2);
+ 		this.imvIcon.set_left(nIconLeft);
+ 		
+		var nBtnLeft = (obj.getOwnerFrame().width / 2) - Math.round(156 / 2);
+		
+ 		this.btnOk.set_left(nBtnLeft);
+	}
+	
+	if(this.staMsg._height > 40)
+	{
+	    obj.getOwnerFrame().set_height(this.staMsg._height+165);
+		
+		var curY = this.oApp.mainframe.top;        
+	    var nTop = curY + (this.oApp.mainframe.height / 2) - Math.round(obj.getOwnerFrame().height / 2);		
+		obj.getOwnerFrame().set_top(nTop);
+	}	
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.btnClose_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close(false);
+};
+
+this.btnOk_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close(true);
+};
+
+this.btnCancel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close(false);
+};
+]]></Script>
+  </Form>
+</FDL>

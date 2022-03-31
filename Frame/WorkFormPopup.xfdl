@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="WorkFormPopup" width="1568" height="812" titletext="New Form" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="812" width="1568">
+        <Div id="divCommHeader" taborder="0" text="Div00" left="40" top="0" height="60" right="40" url="Frame::WorkFormCommHeader.xfdl" formscrolltype="none" visible="true" minwidth="1488" maxwidth=""/>
+        <Div id="divWork" taborder="1" left="40" top="60" bottom="0" right="0" maxwidth="" maxheight="" minwidth="1528" minheight="752" async="false"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  업무영역 공통팝업 화면
+*  @FileName 	: WorkFormPopup.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/27
+*  @Desction    : 업무영역 공통팝업 화면
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/27     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	var sMenuId = this.gfnGetArgument("pvMenuId");
+	var sMenuNo = this.gfnGetArgument("pvMenuNo");
+	var sMenuNm = this.gfnGetArgument("pvMenuNo");
+	var sPageUrl = this.gfnGetArgument("pvPageUrl");
+	
+	this.divWork.set_url(sPageUrl);
+	
+	if(!this.gfnIsNull(sMenuNo)) sMenuNm = sMenuNm+" ["+sMenuNo+"]";
+	
+	this.fnSetNavi(sMenuId);
+	
+	this.divCommHeader.form.staTitle.set_text(sMenuNm);
+	this.divCommHeader.form.btnExtPop.set_visible(false);
+	this.divCommHeader.form.staNavi.set_right(70);
+	
+	this.divCommHeader.form.resetScroll();
+	var oForm = this.getOwnerFrame().opener.getOwnerFrame().form;
+	var oWorkForm = oForm.divWork.form;
+	var oDs;
+	
+	//Dataset에 assign할때 데이터셋 오브젝트 역순으로 assign적용
+	for(var i=oWorkForm.objects.length-1; i>-1; i--)
+	{		
+		if(this.gfnTypeOf(oWorkForm.objects[i]) == "Dataset")
+		{		    			
+			oDs = oWorkForm.objects[i];
+		    oTgDs = this.divWork.form.objects[oDs.name];
+			
+			oTgDs.set_enableevent(false);
+		    oTgDs.assign(oDs);
+			oTgDs.set_enableevent(true);
+		}
+	}
+	
+	oForm.fnClose();
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+ 
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+/*
+ *화면 헤더 네비게이션 영역 추가 설정
+ */
+this.fnSetNavi = function(sMenuId)
+{
+   var gdsMenu = this.oApp.gdsMenu;
+   
+   var sUpMenuId = gdsMenu.lookup(this.jvMenuId,sMenuId,"UPR_ID"); //상위 메뉴 가져오기
+   
+   var sNavePath = "";
+   
+   while(!this.gfnIsNull(sUpMenuId)) //상위메뉴가 없으면 While문 종료
+   {
+       var sMenuNm = gdsMenu.lookup(this.jvMenuId,sUpMenuId,this.jvMenuNm);
+	   sUpMenuId = gdsMenu.lookup(this.jvMenuId,sUpMenuId,"UPR_ID");
+	   sNavePath = (this.gfnIsNull(sNavePath)) ? sMenuNm : sMenuNm +" > " +sNavePath;
+   }
+   
+   this.divCommHeader.form.staNavi.set_text(sNavePath);
+}
+
+/*
+ *화면 닫기
+ */
+this.fnClose = function()
+{
+	this.close();
+}
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.Form_Work_onactivate = function(obj:nexacro.Form,e:nexacro.ActivateEventInfo)
+{
+
+	
+};
+]]></Script>
+  </Form>
+</FDL>

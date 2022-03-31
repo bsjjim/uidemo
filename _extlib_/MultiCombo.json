@@ -1,0 +1,29 @@
+﻿{
+	"name": "MultiCombo",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "MultiCombo/_metainfo_/CommonInfo.info",
+    "MultiCombo/_metainfo_/MultiCombo.info"
+	],
+	"scripts": [
+    "MultiCombo/MultiCombo.js"
+	],
+	"designscripts": [
+    "MultiCombo/DesignMultiCombo.js"
+	],
+	"help": "",	
+	"xcss": "MultiCombo/_xcss_/MultiCombo.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "MultiCombo/_icons_/",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

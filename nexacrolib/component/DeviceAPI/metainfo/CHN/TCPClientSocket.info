@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TCPClientSocket">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.TCPClientSocket" shorttypename="TCPClientSocket" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="可以使用TCP通信连接到服务器并对信息进行收发的客户端组件。" />
+    <PropertyInfo>
+      <Property name="address" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含所连接的服务器的地址值的只读属性。" csspropertyname="" normalpropertyname="address" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含在TCPClientSocket中请求的作业失败时发生的错误代码值的只读属性。" csspropertyname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含在TCPClientSocket中请求的作业失败时发生的错误消息值的只读属性。" csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="isopen" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含与服务器连接的状态值的只读属性。" csspropertyname="" normalpropertyname="isopen" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定TCPClientSocket的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="port" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含所连接的服务器的Port值的只读属性。" csspropertyname="" normalpropertyname="port" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在TCPClientSocket中声明特定事件并添加的方法。">
+        <Syntax text="TCPClientSocket.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到TCPClientSocket的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向TCPClientSocket的事件添加句柄函数的方法。">
+        <Syntax text="TCPClientSocket.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将所检索到的函数作为句柄函数添加到TCPClientSocket的事件中的方法。">
+        <Syntax text="TCPClientSocket.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;&#xD;&#xA;当相应区域中没有定义句柄函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于删除注册到TCPClientSocket的事件中的所有句柄函数的方法。">
+        <Syntax text="TCPClientSocket.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向所连接的服务器请求解除连接的方法。">
+        <Syntax text="TCPClientSocket.close()">
+          <Return type="Boolean" description="在解除连接请求被正常执行时，将返回true。&#xD;&#xA;&#xD;&#xA;在解除连接请求没有被正常执行时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在TCPClientSocket的事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="TCPClientSocket.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回需要在事件中查找的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于返回TCPClientSocket的事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="TCPClientSocket.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;索引从“0”开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在TCPClientSocket的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="TCPClientSocket.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于以TCP方式向服务器请求套接字连接的方法。">
+        <Syntax text="TCPClientSocket.open( strAddress, nPort )">
+          <Return type="Boolean" description="在连接请求被正常执行时，将返回true。&#xD;&#xA;&#xD;&#xA;在连接请求没有被正常执行时，将返回false。" />
+          <Arguments>
+            <Argument name="nPort" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要连接的服务器的Port值。" />
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要连接的域名或IPv4格式的IP。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于从所连接的服务器接收数据的方法。">
+        <Syntax text="TCPClientSocket.read( nSize [, nTimeOut [, strCharSet]] )">
+          <Return type="Array" description="以数组形态返回数据的接收成功与否以及所接收到的数据。&#xD;&#xA;&#xD;&#xA;在数组的第一个元素中，利用Boolean值返回数据的接收成功与否。&#xD;&#xA;在数组的第二个元素中，返回所接收到的数据。" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="以字节单位的数字设定需要接收的数据的最大大小。&#xD;&#xA;&#xD;&#xA;设定值作为所接收的数据的最大大小适用，实际接收到的数据可以小于设定值。&#xD;&#xA;&#xD;&#xA;在设定为0时，仅执行是否有需要接收的数据的检查。&#xD;&#xA;在设定为负数值时，在执行方法时处理为失败。" />
+            <Argument name="nTimeOut" type="Number" in="false" out="false" option="false" variable="false" description="以秒单位的数字设定接收数据时的等待时间。&#xD;&#xA;&#xD;&#xA;在设定0以下的值时，等待时间将适用无限大。&#xD;&#xA;&#xD;&#xA;在省略值时适用0。" />
+            <Argument name="strCharSet" type="String" in="false" out="false" option="false" variable="false" description="设定需要在接收数据时适用的字符集。&#xD;&#xA;&#xD;&#xA;在省略值时，适用系统的字符集。&#xD;&#xA;&#xD;&#xA;推荐只在特别需要对字符集进行转换时设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于以行为单位从所连接的服务器接收数据的方法。">
+        <Syntax text="TCPClientSocket.readLine( nSize [, nTimeOut [, strCharSet]] )">
+          <Return type="Array" description="以数组形态返回数据的接收成功与否以及所接收到的数据。&#xD;&#xA;&#xD;&#xA;在数组的第一个元素中，利用Boolean值返回数据的接收成功与否。&#xD;&#xA;在数组的第二个元素中，返回所接收到的数据。" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="以字节单位的数字设定需要接收的数据的最大大小。&#xD;&#xA;&#xD;&#xA;设定值作为所接收的数据的最大大小适用，实际接收到的数据可以小于设定值。&#xD;&#xA;&#xD;&#xA;在设定为0以下的值时，无法正常执行方法。" />
+            <Argument name="nTimeOut" type="Number" in="false" out="false" option="false" variable="false" description="以秒单位的数字设定接收数据时的等待时间。&#xD;&#xA;&#xD;&#xA;当所接收的数据中没有换行符时，将重新适用等待时间，因此在设定值时应加以注意。&#xD;&#xA;&#xD;&#xA;在设定0以下的值时，等待时间将适用无限大。&#xD;&#xA;在不设定值时适用0。" />
+            <Argument name="strCharSet" type="String" in="false" out="false" option="false" variable="false" description="设定需要在接收数据时适用的字符集。&#xD;&#xA;&#xD;&#xA;在省略值时，适用系统的字符集。&#xD;&#xA;&#xD;&#xA;推荐只在特别需要对字符集进行转换时设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于删除在TCPClientSocket中声明的特定事件的方法。">
+        <Syntax text="TCPClientSocket.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从TCPClientSocket删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于删除从TCPClientSocket的事件传递的句柄函数的方法。">
+        <Syntax text="TCPClientSocket.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回&quot;1&quot;。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于从在TCPClientSocket的事件中定义的句柄函数删除所检索到的函数的方法。">
+        <Syntax text="TCPClientSocket.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回&quot;1&quot;。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于变更TCPClientSocket的事件中的第一个句柄函数的方法。">
+        <Syntax text="TCPClientSocket.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回&quot;0&quot;。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将在TCPClientSocket的事件中定义的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="TCPClientSocket.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回&quot;0&quot;。&#xD;&#xA;在变更第一个句柄函数失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于向所连接的服务器发送数据的方法。">
+        <Syntax text="TCPClientSocket.write( strData [, strCharset] )">
+          <Return type="Boolean" description="在开始向所连接的服务器发送数据时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;在无法开始向所连接的服务器发送数据时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="设定需要传送到所连接的服务器中的数据的字符集。&#xD;&#xA;&#xD;&#xA;当不设定值时，将设定为系统的字符集。&#xD;&#xA;&#xD;&#xA;推荐只在特别需要对数据的字符集进行转换时设定。" />
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="设定需要传送到所连接的服务器中的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondataarrived" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在所连接的服务器中有可接收的数据时触发的事件。">
+        <Syntax text="TCPClientSocket.ondataarrived(obj:nexacro.TCPClientSocket,e:nexacro.SocketReceiveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketReceiveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在TCPClientSocket请求的作业失败时触发的事件。">
+        <Syntax text="TCPClientSocket.onerror(obj:nexacro.TCPClientSocket,e:nexacro.SocketErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="在TCPClientSocket请求的作业成功时触发的事件。">
+        <Syntax text="TCPClientSocket.onsuccess(obj:nexacro.TCPClientSocket,e:nexacro.SocketEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

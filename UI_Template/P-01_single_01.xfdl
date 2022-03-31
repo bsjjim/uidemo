@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp03" width="1528" height="752" titletext="단건(더블)">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Static id="Static26_01_00" taborder="0" text="예약모델" left="0" top="-188" width="130" height="34" cssclass="sta_DA_label"/>
+        <Static id="Static27_00_00" taborder="1" left="129" top="-188" width="625" height="34" cssclass="sta_DA_data" text=""/>
+        <Div id="DivSearch" taborder="2" left="0" top="0" height="63" cssclass="div_SA" width="734">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약번호" left="20" top="18" width="62" height="24" cssclass="sta_SA_label_req"/>
+              <Button id="Button02" taborder="1" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Edit id="Edit00" taborder="2" left="86" top="18" width="85" height="24" text="123456789" cssclass="input_req"/>
+              <Button id="Button00" taborder="3" left="173" top="18" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00" taborder="4" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="5" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="6" text="h11" top="49" cssclass="sta_Guide" width="50" height="11" visible="false" right="32"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00_01_00_01" taborder="3" text="20" top="105" cssclass="sta_Guide" width="20" left="734" height="180" visible="false"/>
+        <Div id="Div03" taborder="4" text="Div03" left="754" top="0" height="799" cssclass="div_group" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static27_00_01_02_00_00" taborder="0" left="129" top="699" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static27_00_01_02_00_00_00" taborder="1" left="129" top="732" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static27_00_01_02_00_00_00_00" taborder="2" left="129" top="765" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static27_01_00_02_00_00_01" taborder="3" left="294" top="548" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static27_01_00_02_00_01" taborder="4" left="294" top="515" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static00_01" taborder="5" text="운행내역" left="0" top="6" width="370" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static26_04" taborder="6" text="구분" left="0" top="36" width="130" height="34" cssclass="sta_DA_labelTop" initvalueid="" textAlign="center"/>
+              <Static id="Static01_00_00_01_00" taborder="7" text="h35" top="0" cssclass="sta_Guide" width="100" left="338" height="35" visible="false"/>
+              <Static id="Static26_01_02" taborder="8" text="시간" left="0" top="69" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_01" taborder="9" left="129" top="69" width="150" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_01" taborder="10" text="거리" left="0" top="102" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00" taborder="11" left="129" top="102" width="150" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static26_04_00" taborder="12" text="차고출발" left="129" top="36" width="150" height="34" cssclass="sta_DA_labelTop_req" textAlign="center"/>
+              <Static id="Static26_04_00_00" taborder="13" text="차고도착" left="278" top="36" width="150" height="34" cssclass="sta_DA_labelTop_req" textAlign="center"/>
+              <Static id="Static26_04_00_00_00" taborder="14" text="청구 출발일시" left="427" top="36" width="155" height="34" cssclass="sta_DA_labelTop_req" textAlign="center"/>
+              <Static id="Static26_04_00_00_00_00" taborder="15" left="580" top="36" height="34" cssclass="sta_DA_labelTop_req" textAlign="center" right="0"/>
+              <Static id="Static01_00_00_01_00_00" taborder="16" text="h6" top="29" cssclass="sta_Guide" width="100" left="630" height="6" visible="false"/>
+              <Static id="Static27_00_01_00" taborder="17" left="278" top="69" width="150" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static27_01_00_00" taborder="18" left="278" top="102" width="150" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static27_00_01_00_00" taborder="19" left="427" top="69" width="155" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static27_01_00_00_00" taborder="20" left="427" top="102" width="155" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static27_00_01_00_00_00" taborder="21" left="580" top="69" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static27_01_00_00_00_00" taborder="22" left="580" top="102" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <MaskEdit id="MaskEdit00_01_01_01" taborder="23" left="134" top="74" width="140" height="24" format="##:##" type="string" textAlign="left" cssclass="input_req"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00" taborder="24" left="134" top="107" width="60" height="24" cssclass="input_req"/>
+              <Static id="Static02_01_00_00_00_00_00" taborder="25" text="km" left="194" top="107" width="35" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_00" taborder="26" left="283" top="107" width="60" height="24" cssclass="input_req"/>
+              <Static id="Static02_01_00_00_00_00_00_00" taborder="27" text="km" left="343" top="107" width="35" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_01_01_00" taborder="28" left="283" top="74" width="140" height="24" format="##:##" type="string" textAlign="left" cssclass="input_req"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_01" taborder="29" left="432" top="107" width="60" height="24" cssclass="input_req"/>
+              <Static id="Static02_01_00_00_00_00_00_01" taborder="30" text="km" left="492" top="107" width="35" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_00_00" taborder="31" left="585" top="107" width="60" height="24" cssclass="input_req"/>
+              <Static id="Static02_01_00_00_00_00_00_00_00" taborder="32" text="km" left="645" top="107" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Calendar id="Calendar00" taborder="33" left="432" top="74" width="144" height="24" cssclass="input_req"/>
+              <Calendar id="Calendar00_00" taborder="34" left="585" top="74" width="144" height="24" cssclass="input_req"/>
+              <Static id="Static00_01_00" taborder="35" text="운행상세내역" left="0" top="157" width="370" height="24" cssclass="sta_WF_title2"/>
+              <Static id="Static26_01_02_00" taborder="36" text="운행시간" left="0" top="187" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_01_01" taborder="37" left="129" top="187" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static26_02_01_00" taborder="38" text="운행거리" left="0" top="220" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_01" taborder="39" left="129" top="220" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="40" text="h6" top="180" cssclass="sta_Guide" width="100" left="630" height="6" visible="false"/>
+              <MaskEdit id="MaskEdit00_01_01_01_01" taborder="41" left="134" top="192" width="60" height="24" format="##:##" type="string" textAlign="left"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02" taborder="42" left="134" top="225" width="60" height="24" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02" taborder="43" text="km" left="194" top="225" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_02" taborder="44" text="h50" top="136" cssclass="sta_Guide" width="100" left="306" height="50" visible="false"/>
+              <Static id="Static26_01_02_00_00" taborder="45" text="초과시간" left="235" top="186" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_00_00" taborder="46" text="초과거리" left="235" top="220" width="130" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_00" taborder="47" left="369" top="225" width="60" height="24" enable="false"/>
+              <MaskEdit id="MaskEdit00_01_01_01_01_00" taborder="48" left="369" top="192" width="60" height="24" format="##:##" type="string" textAlign="left" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00" taborder="49" text="km" left="429" top="225" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static26_02_01_00_00_00" taborder="50" text="거리초과요금" left="465" top="220" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_02_00_00_00" taborder="51" text="시간초과요금" left="465" top="186" width="130" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_02" taborder="52" left="599" top="192" width="110" height="24" format="#,###" value="0" enable="false"/>
+              <Static id="Static02_02" taborder="53" text="원" left="709" top="192" width="20" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_02_00" taborder="54" left="599" top="225" width="110" height="24" format="#,###" value="0" enable="false"/>
+              <Static id="Static02_02_00" taborder="55" text="원" left="709" top="225" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static26_02_01_00_01" taborder="56" text="기사적용시간" left="0" top="253" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_01_00" taborder="57" left="129" top="253" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01" taborder="58" left="134" top="258" width="60" height="24"/>
+              <Static id="Static02_01_00_00_00_00_00_02_01" taborder="59" text="시간" left="194" top="258" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static26_02_01_00_00_00_00" taborder="60" text="초과요금" left="465" top="253" width="130" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_02_00_00" taborder="61" left="599" top="258" width="110" height="24" format="#,###" value="0" enable="false"/>
+              <Static id="Static02_02_00_00" taborder="62" text="원" left="709" top="258" width="20" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_01_00" taborder="63" text="(운행일수 표시)" left="231" top="258" width="95" height="24" cssclass="sta_txt_desc"/>
+              <Static id="Static01_00_00_01_02_00_00" taborder="64" text="7" top="228" cssclass="sta_Guide" width="7" left="429" height="35" visible="false"/>
+              <Static id="Static26_02_01_00_01_00" taborder="65" text="운행내역" left="0" top="286" width="130" height="79" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_01_00_00" taborder="66" left="129" top="286" height="79" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <TextArea id="TextArea00" taborder="67" left="134" top="291" height="69" enable="false" right="5"/>
+              <Static id="Static00_01_00_00" taborder="68" text="추가비용" left="0" top="386" width="370" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00_01_02_01" taborder="69" text="h50" top="365" cssclass="sta_Guide" width="100" left="306" height="50" visible="false"/>
+              <Static id="Static26_04_01" taborder="70" text="구분" left="0" top="416" width="130" height="34" cssclass="sta_DA_labelTop" initvalueid="" textAlign="center"/>
+              <Static id="Static26_01_02_01" taborder="71" text="통행료" left="0" top="449" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_01_02" taborder="72" left="129" top="449" width="166" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_01_01" taborder="73" text="거리" left="0" top="482" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_02" taborder="74" left="129" top="482" width="166" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static26_04_00_01" taborder="75" text="고객청구" left="129" top="416" width="166" height="34" cssclass="sta_DA_labelTop" textAlign="center"/>
+              <Static id="Static26_04_00_00_01" taborder="76" text="기사지급" left="294" top="416" width="156" height="34" cssclass="sta_DA_labelTop" textAlign="center"/>
+              <Static id="Static26_04_00_00_00_01" taborder="77" text="구분" left="449" top="416" width="130" height="34" cssclass="sta_DA_labelTop" textAlign="center"/>
+              <Static id="Static26_04_00_00_00_00_00" taborder="78" left="578" top="416" height="34" cssclass="sta_DA_labelTop" textAlign="center" right="0"/>
+              <Static id="Static27_00_01_00_01" taborder="79" left="294" top="449" width="156" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static27_01_00_00_01" taborder="80" left="294" top="482" width="156" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static27_00_01_00_00_00_00" taborder="81" left="578" top="449" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static27_01_00_00_00_00_00" taborder="82" left="578" top="482" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true" right="0"/>
+              <Static id="Static26_01_02_01_00" taborder="83" text="유류비" left="449" top="449" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_01_00" taborder="84" text="유류량" left="449" top="482" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_01_01" taborder="85" text="숙박비" left="0" top="515" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_00_02_00" taborder="86" left="129" top="515" width="166" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static27_01_00_02_00_00" taborder="87" left="129" top="548" width="166" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static26_02_01_01_01_00" taborder="88" text="식대" left="0" top="548" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_01_01_00_00" taborder="89" text="청구비용" left="0" top="581" width="129" height="34" cssclass="sta_DA_data" initvalueid="iv_tbl_summ"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00" taborder="90" left="134" top="520" width="131" height="24" format="#,###"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00" taborder="91" left="134" top="553" width="131" height="24" format="#,###"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00_00" taborder="92" left="134" top="454" width="131" height="24" format="#,###"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00_00_00" taborder="93" left="299" top="454" width="121" height="24" format="#,###" enable="false"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_01" taborder="94" left="299" top="487" width="121" height="24" enable="false"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_01" taborder="95" left="299" top="520" width="121" height="24" format="#,###" enable="false"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00_01" taborder="96" left="299" top="553" width="121" height="24" format="#,###" enable="false"/>
+              <Static id="Static26_02_01_01_01_00_00_00" taborder="97" text="" left="129" top="581" height="34" cssclass="sta_DA_data" initvalueid="iv_tbl_summ" right="0"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00_02" taborder="98" left="134" top="586" width="131" height="24" format="#,###" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_00" taborder="99" text="원" left="265" top="586" width="25" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_02_00_01" taborder="100" text="20" top="581" cssclass="sta_Guide" width="20" left="281" height="35" visible="false"/>
+              <CheckBox id="CheckBox00" taborder="101" text="부가세별도" left="301" top="586" width="150" height="24"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_00_00_00_00_00" taborder="102" left="583" top="454" width="121" height="24" format="#,###" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01" taborder="103" text="km" left="420" top="487" width="30" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_01_01" taborder="104" left="134" top="487" width="131" height="24"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00" taborder="105" text="km" left="265" top="487" width="30" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00_00_02_01_00_01_00" taborder="106" left="583" top="487" width="121" height="24" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_01" taborder="107" text="ℓ" left="704" top="487" width="25" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static00_01_00_00_00" taborder="108" text="결재구분" left="0" top="636" width="370" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00_01_02_01_00" taborder="109" text="h50" top="615" cssclass="sta_Guide" width="100" left="306" height="50" visible="false"/>
+              <Static id="Static26_01_02_01_01" taborder="110" text="결제구분" left="0" top="666" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static27_00_01_02_00" taborder="111" left="129" top="666" height="34" cssclass="sta_DA_data" text="" right="0"/>
+              <Static id="Static26_02_01_01_02" taborder="112" text="결제 특이사항" left="0" top="699" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_01_01_01" taborder="113" text="통합청구" left="0" top="732" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_01_01_01_00_01" taborder="114" text="결제담당자" left="0" top="765" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_02_01_01_00" taborder="115" text="결제고객" left="380" top="666" width="130" height="34" cssclass="sta_DA_label_req"/>
+              <Static id="Static26_02_01_01_01_01_00" taborder="116" text="통합청구요청자" left="380" top="732" width="130" height="34" cssclass="sta_DA_label"/>
+              <Combo id="Combo01" taborder="117" text="선택" left="134" top="671" width="180" height="24" cssclass="input_req" index="-1" value=""/>
+              <Edit id="Edit00_01_00_01" taborder="118" left="515" top="671" width="95" height="24" text="P12345" cssclass="input_req"/>
+              <Button id="Button00_01_00" taborder="119" left="612" top="671" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00" taborder="120" left="639" top="671" height="24" text="P12345" width="89" enable="false"/>
+              <Edit id="Edit02" taborder="121" left="134" top="704" width="594" height="24"/>
+              <Button id="Button00_00" taborder="122" text="통합청구" left="135" top="737" width="88" height="24" cssclass="btn_Comp_popup"/>
+              <CheckBox id="CheckBox00_00" taborder="123" left="243" top="737" width="15" height="24"/>
+              <Edit id="Edit00_01_00_01_01" taborder="124" left="266" top="737" width="110" height="24" text="P12345" enable="false"/>
+              <Edit id="Edit00_01_00_01_01_00" taborder="125" left="515" top="737" width="213" height="24" text="P12345" enable="false"/>
+              <Edit id="Edit00_01_00_01_01_00_00" taborder="126" left="134" top="771" width="243" height="24" text="P12345" enable="false"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00" taborder="127" text="원" left="265" top="454" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00_00" taborder="128" text="원" left="265" top="520" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00_00_00" taborder="129" text="원" left="265" top="553" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00_01" taborder="130" text="원" left="420" top="454" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00_00_01" taborder="131" text="원" left="420" top="520" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_00_00_00_00_00" taborder="132" text="원" left="420" top="553" width="30" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static02_01_00_00_00_00_00_02_00_01_01_00" taborder="133" text="원" left="704" top="454" width="27" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_02_00_01_00" taborder="134" text="20" top="729" cssclass="sta_Guide" width="20" left="223" height="35" visible="false"/>
+              <Static id="Static01" taborder="135" left="0" top="35" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00" taborder="136" left="0" top="186" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00" taborder="137" left="0" top="415" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00_00" taborder="138" left="0" top="665" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00_01_00_01" taborder="139" text="h11" top="25" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_02" taborder="140" text="h11" top="176" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_02_00" taborder="141" text="h11" top="405" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_02_01" taborder="142" text="h11" top="655" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_02_00_00_00" taborder="143" text="10" top="259" cssclass="sta_Guide" width="10" left="223" height="35" visible="false"/>
+              <Static id="sta00" taborder="144" text="청구 도착일시" left="620" top="41" width="80" height="24"/>
+              <Static id="sta00_00" taborder="145" text="기사지급" left="632" top="421" width="80" height="24"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00" taborder="5" text="Div00" left="0" top="63" width="734" height="717" cssclass="div_group">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="기본계약정보 " left="0" top="21" width="370" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static26" taborder="1" text="계약상태" left="0" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="2" left="129" top="51" width="605" height="34" cssclass="sta_DA_data" text="" onclick="Static27_onclick"/>
+              <Static id="Static01_00_00_01" taborder="3" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Static id="Static26_00" taborder="4" text="계약번호" left="376" top="51" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01" taborder="5" text="대여지점" left="0" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00" taborder="6" left="129" top="84" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_00" taborder="7" text="대여기간" left="376" top="84" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02" taborder="8" text="배차시간" left="0" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01" taborder="9" left="129" top="117" width="605" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static26_00_01" taborder="10" text="배차장소" left="376" top="117" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_00" taborder="11" text="기사" left="0" top="183" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_00_00" taborder="12" left="129" top="183" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Edit id="Edit00_01" taborder="13" left="134" top="56" width="140" height="24" value="정상" text="정상" readonly="true"/>
+              <Edit id="Edit00_01_00" taborder="14" left="134" top="89" width="238" height="24" value="강남영업소" text="강남영업소" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01" taborder="15" left="134" top="122" width="60" height="24" format="##:##" value="1200" enable="true" type="string" textAlign="left" readonly="true"/>
+              <Edit id="Edit00_01_00_00" taborder="16" left="510" top="122" width="218" height="24" value="영업점" text="영업점" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01_00" taborder="17" left="510" top="89" width="217" height="24" format="####-##-## ~ ####-##-##" value="2021102120211212" enable="true" type="string" textAlign="left" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01_00_00" taborder="18" left="510" top="56" width="217" height="24" format="#########" value="123456789" enable="true" type="string" textAlign="left" readonly="true"/>
+              <Static id="Static26_01_00_00_01" taborder="19" text="예약모델" left="0" top="150" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_00_00_00" taborder="20" left="129" top="150" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Edit id="Edit00_01_00_00_00" taborder="21" left="134" top="155" width="60" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00" taborder="22" left="196" top="155" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_00" taborder="23" left="388" top="155" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_00_00" taborder="24" left="388" top="188" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_01" taborder="25" left="196" top="188" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_01" taborder="26" left="134" top="188" width="60" height="24" text="영업점" readonly="true"/>
+              <Static id="Static00_00" taborder="27" text="운행계약정보" left="0" top="238" width="345" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static26_03" taborder="28" text="고객명" left="0" top="268" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03" taborder="29" left="129" top="268" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02" taborder="30" text="전화번호" left="376" top="268" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01" taborder="31" text="운행구분" left="0" top="301" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02" taborder="32" left="129" top="301" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_00_00" taborder="33" text="지역" left="376" top="301" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00" taborder="34" text="운행장소" left="0" top="334" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01" taborder="35" left="129" top="334" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00" taborder="36" text="운행거리" left="376" top="334" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_01" taborder="37" text="기본요금" left="0" top="367" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_00_00" taborder="38" text="대여료" left="0" top="400" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_01_00" taborder="39" text="시간초과요금" left="0" top="433" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_00_00_00" taborder="40" text="거리초과요금" left="0" top="466" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00" taborder="41" left="129" top="367" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_00" taborder="42" text="호텔수수료" left="376" top="367" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_00" taborder="43" left="129" top="400" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_00_00_00" taborder="44" text="호텔할인율" left="376" top="400" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_00" taborder="45" left="129" top="433" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_00" taborder="46" text="기준시간" left="376" top="433" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_00_00" taborder="47" left="129" top="466" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_00_00" taborder="48" text="기준거리" left="376" top="466" width="130" height="34" cssclass="sta_DA_label"/>
+              <Edit id="Edit00" taborder="49" left="134" top="273" width="140" height="24" enable="false"/>
+              <Combo id="Combo00" taborder="50" left="135" top="306" width="144" height="24"/>
+              <Button id="Button00" taborder="51" text="고객별 약정" left="281" top="306" width="90" height="24"/>
+              <Edit id="Edit00_00" taborder="52" left="135" top="339" width="237" height="24" enable="false"/>
+              <MaskEdit id="MaskEdit00" taborder="53" left="135" top="372" width="120" height="24" format="#,###" enable="false"/>
+              <Static id="Static02" taborder="54" text="원" left="255" top="372" width="20" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_00" taborder="55" left="135" top="405" width="120" height="24" format="#,###" enable="false"/>
+              <Static id="Static02_00" taborder="56" text="원" left="255" top="405" width="20" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_00_00" taborder="57" left="135" top="438" width="120" height="24" format="#,###" enable="false"/>
+              <Static id="Static02_00_00" taborder="58" text="원/시간" left="255" top="438" width="85" height="24" cssclass="sta_WF_unit" padding="0px 0px 0px 6px"/>
+              <MaskEdit id="MaskEdit00_00_00_00" taborder="59" left="135" top="471" width="120" height="24" format="#,###" enable="false"/>
+              <Static id="Static02_00_00_00" taborder="60" text="원/1Km" left="255" top="471" width="85" height="24" cssclass="sta_WF_unit" padding="0px 0px 0px 6px"/>
+              <Edit id="Edit01" taborder="61" left="510" top="273" width="110" height="24" value="010-1234-1234" text="010-1234-1234" enable="false"/>
+              <Combo id="Combo00_00" taborder="62" left="510" top="306" width="150" height="24" text="지역 ↔ 인천공항" value="" index="-1"/>
+              <Combo id="Combo00_00_00" taborder="63" left="510" top="339" width="150" height="24" enable="false"/>
+              <MaskEdit id="MaskEdit00_01" taborder="64" left="510" top="372" width="60" height="24" format="#,###.##" value="30" enable="false"/>
+              <Static id="Static02_01" taborder="65" text="%" left="570" top="372" width="20" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00" taborder="66" left="510" top="405" width="60" height="24" format="#,###.##" value="15" enable="false"/>
+              <Static id="Static02_01_00" taborder="67" text="%" left="570" top="405" width="20" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00" taborder="68" left="510" top="438" width="60" height="24" enable="false"/>
+              <Static id="Static02_01_00_00" taborder="69" text="시간" left="570" top="438" width="35" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00" taborder="70" left="613" top="438" width="60" height="24" enable="false"/>
+              <Static id="Static02_01_00_00_00" taborder="71" text="시간" left="673" top="438" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_01_00_00" taborder="72" text="15" top="435" cssclass="sta_Guide" width="15" left="598" height="75" visible="false"/>
+              <MaskEdit id="MaskEdit00_01_00_00_01" taborder="73" left="510" top="471" width="60" height="24" enable="false"/>
+              <Static id="Static02_01_00_00_01" taborder="74" text="km" left="570" top="471" width="35" height="24" cssclass="sta_WF_unit"/>
+              <MaskEdit id="MaskEdit00_01_00_00_00_00" taborder="75" left="613" top="471" width="60" height="24" enable="false"/>
+              <Static id="Static02_01_00_00_00_00" taborder="76" text="km" left="673" top="471" width="35" height="24" cssclass="sta_WF_unit"/>
+              <Static id="Static01_00_00_01_01" taborder="77" text="h50" top="217" cssclass="sta_Guide" width="100" left="365" height="50" visible="false"/>
+              <Static id="Static00_00_00" taborder="78" text="예약정보" left="0" top="521" width="345" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static26_03_00" taborder="79" text="예약자명" left="0" top="551" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01" taborder="80" left="129" top="551" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01" taborder="81" text="전화번호" left="376" top="551" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00" taborder="82" text="이메일" left="0" top="584" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01" taborder="83" left="129" top="584" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00" taborder="84" text="탑승자명" left="0" top="617" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01" taborder="85" left="129" top="617" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01" taborder="86" text="운행거리" left="376" top="617" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_01_01" taborder="87" text="운행일정" left="0" top="650" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_00_00_01" taborder="88" text="특이사항" left="0" top="683" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_00_00" taborder="89" left="129" top="650" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static27_00_02_00_00" taborder="90" left="129" top="683" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Edit id="Edit00_02" taborder="91" left="134" top="556" width="237" height="24" readonly="true" value="홍길동" text="홍길동"/>
+              <Edit id="Edit01_00" taborder="92" left="510" top="556" width="110" height="24" value="02-0000-0000" text="02-0000-0000" enable="true" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_01_00" taborder="93" left="134" top="655" width="595" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_01_00_00" taborder="94" left="134" top="688" width="595" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_01_00_01" taborder="95" left="134" top="589" width="595" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit01_00_00" taborder="96" left="510" top="622" width="110" height="24" value="02-0000-0000" text="02-0000-0000" enable="true" readonly="true"/>
+              <Edit id="Edit00_02_00" taborder="97" left="134" top="622" width="237" height="24" readonly="true" value="홍길동" text="홍길동"/>
+              <Static id="Static01_00_00_01_01_01" taborder="98" text="h50" top="500" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Static id="Static01" taborder="99" left="0" top="50" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00" taborder="100" left="0" top="267" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00" taborder="101" left="0" top="550" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00_01_00" taborder="102" text="h11" top="40" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00" taborder="103" text="h11" top="257" cssclass="sta_Guide" width="100" left="2" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_01" taborder="104" text="h11" top="540" cssclass="sta_Guide" width="100" left="0" height="10" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00" taborder="6" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Div id="div00" taborder="7" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="Div03:0">
+          <Layouts>
+            <Layout>
+              <Button id="Button00_00" taborder="0" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="10" right="65"/>
+              <Button id="Button00_00_00" taborder="1" text="삭제" width="64" height="28" cssclass="btn_Comm_func" top="10" right="-3"/>
+              <Static id="Static01_00_01_00_00" taborder="2" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="3" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+              <Button id="Button00_01" taborder="4" text="신규입력" top="1121" width="88" height="28" cssclass="btn_Comm_func" left="160"/>
+              <Button id="Button00_00_01" taborder="5" text="신규입력" width="88" height="28" cssclass="btn_Comm_func" top="10" right="133"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00_00_01_00_01_00" taborder="8" text="10" top="7" cssclass="sta_Guide" width="10" left="78" height="51" visible="false"/>
+        <Static id="Static01_00_00_00" taborder="9" text="&lt;fc v=&quot;red&quot;&gt;(ReadOnly 출력 테이블 영역)&lt;/fc&gt;&#13;&#10;출력전용영역에 Disable과 Readonly 혼용금지" top="218" cssclass="sta_Guide_info" width="421" left="280" height="56" usedecorate="true"/>
+        <Static id="Static01_00_00_00_00" taborder="10" text="&lt;fc v=&quot;red&quot;&gt;(입력 테이블 영역)&lt;/fc&gt;&#13;&#10;입력테이블 영역에서 입력 불가 항목은 Disable 처리" top="559" cssclass="sta_Guide_info" width="421" left="313" height="56" usedecorate="true"/>
+        <Static id="Static01_00_00" taborder="11" text="하프 너비 w754" top="281" cssclass="sta_Guide_info" width="190" left="490" height="50"/>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[
+this.Div00_Combo00_00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

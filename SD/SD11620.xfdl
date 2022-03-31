@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="계약발주진행현황" onload="temp01_onload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="divSearch" taborder="2" left="0" top="0" height="198" cssclass="div_SA" formscrolltype="none" text="" right="794">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약지점" left="20" top="18" width="60" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01" taborder="1" text="조회기간" left="369" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_01_00" taborder="3" text="h11" cssclass="sta_Guide" width="50" visible="false" right="27" height="11" bottom="0"/>
+              <Static id="Static01_00" taborder="4" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00_00" taborder="5" text="번호선택" left="20" top="52" width="60" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_02" taborder="6" text="영업매니저" left="369" top="52" width="83" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00" taborder="7" text="고객번호" left="20" top="86" width="60" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_02_00" taborder="8" text="구매진행상태" left="369" top="86" width="93" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static00_00_00_00" taborder="9" text="원본계약서" left="20" top="120" width="80" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_02_00_00" taborder="10" text="스캔여부" left="369" top="120" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_01" taborder="11" text="w40" top="5" cssclass="sta_Guide" width="40" left="329" height="100" visible="false"/>
+              <Static id="Static01_01_00_00_00_00_00" taborder="12" text="계약상태" left="20" top="153" width="68" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_02_00_00_00" taborder="13" text="장기구분" left="369" top="153" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00" taborder="14" text="10" top="5" cssclass="sta_Guide" width="10" left="90" height="175" visible="false"/>
+              <Edit id="Edit00_01_00_02_00" taborder="15" left="100" top="18" width="42" height="24" text="3666"/>
+              <Button id="Button00_01_00_01_00" taborder="16" left="144" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00" taborder="17" left="171" top="18" height="24" text="서울중앙MOT 강북 Part" width="155"/>
+              <Combo id="Combo00_00_01" taborder="18" left="100" top="52" width="110" height="24" text="선택" value="" index="-1"/>
+              <Edit id="Edit00_01" taborder="19" left="212" top="52" width="80" height="24" text="123456789"/>
+              <Edit id="Edit00_01_00_00_00" taborder="20" left="100" top="86" width="85" height="24" text="1234067890"/>
+              <Button id="Button00_01_00_00_00" taborder="21" left="187" top="86" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="22" left="214" top="86" height="24" text="김나나" width="115"/>
+              <Combo id="Combo00_00_01_00" taborder="23" left="100" top="120" width="110" height="24" text="선택" value="" index="-1"/>
+              <Combo id="Combo00_00_01_00_00" taborder="24" left="100" top="153" width="110" height="24" text="선택" value="" index="-1"/>
+              <Static id="Static01_00_00_00" taborder="25" text="10" top="8" cssclass="sta_Guide" width="10" left="451" height="175" visible="false"/>
+              <Combo id="Combo00_00_01_01" taborder="26" left="461" top="15" width="110" height="24" text="선택" value="" index="-1"/>
+              <Edit id="Edit00_01_00_00" taborder="27" left="461" top="52" width="57" height="24" text="P12345" value="P12345"/>
+              <Button id="Button00_01_00_00" taborder="28" left="520" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00" taborder="29" left="547" top="52" height="24" text="홍길순" width="115" value="홍길순"/>
+              <Combo id="Combo00_00_01_02" taborder="30" left="461" top="86" width="110" height="24" text="선택" value="" index="-1"/>
+              <Combo id="Combo00_00_01_02_00" taborder="31" left="461" top="120" width="110" height="24" text="선택" value="" index="-1"/>
+              <Combo id="Combo00_00_01_02_00_00" taborder="32" left="461" top="153" width="110" height="24" text="선택" value="" index="-1"/>
+              <CalPeriod id="CalPeriod00" taborder="33" left="573" top="15" width="210" height="24"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="divSearch:0" cssclass="div_group" bottom="0" right="794">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="타이틀영역" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="360" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="신/중고차"/>
+                      <Cell col="2" text="계약진행상태"/>
+                      <Cell col="3" text="장기구분"/>
+                      <Cell col="4" text="계약지점"/>
+                      <Cell col="5" text="영업매니저"/>
+                      <Cell col="6" text="견적번호"/>
+                      <Cell col="7" text="견적일자"/>
+                      <Cell col="8" text="거래처명"/>
+                      <Cell col="9" text="처종명"/>
+                      <Cell col="10" text="월대여료"/>
+                      <Cell col="11" text="계약서번호"/>
+                      <Cell col="12" text="진행단계"/>
+                      <Cell col="13" text="공급사"/>
+                      <Cell col="14" text="구매의뢰일자"/>
+                      <Cell col="15" text="구매의뢰번호"/>
+                      <Cell col="16" text="발주일자"/>
+                      <Cell col="17" text="발주번호"/>
+                      <Cell col="18" text="CM계약번호"/>
+                      <Cell col="19" text="원본계약서상태"/>
+                      <Cell col="20" text="스캔여부"/>
+                      <Cell col="21" text="출고승인요청일"/>
+                      <Cell col="22" text="최종출고승인확인"/>
+                      <Cell col="23" text="최종출고승인일"/>
+                      <Cell col="24" text="출고요청일"/>
+                      <Cell col="25" text="출고보류일"/>
+                      <Cell col="26" text="출고일자"/>
+                      <Cell col="27" text="일고일자"/>
+                      <Cell col="28" text="검수일"/>
+                      <Cell col="29" text="경유지"/>
+                      <Cell col="30" text="차대번호"/>
+                      <Cell col="31" text="임시차량번호"/>
+                      <Cell col="32" text="차량번호"/>
+                      <Cell col="33" text="등록일자(구청)"/>
+                      <Cell col="34" text="등록일차(전산)"/>
+                      <Cell col="35" text="차량준비완료예정일"/>
+                      <Cell col="36" text="차량준비완료일"/>
+                      <Cell col="37" text="차량투입일"/>
+                      <Cell col="38" text="계약서이관일"/>
+                      <Cell col="39" text="서고입고일"/>
+                      <Cell col="40" text="계약취소일"/>
+                      <Cell col="41" text="구매전달사항"/>
+                      <Cell col="42" text="생산예정일"/>
+                      <Cell col="43" text="차량배정일"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                      <Cell col="21"/>
+                      <Cell col="22"/>
+                      <Cell col="23"/>
+                      <Cell col="24"/>
+                      <Cell col="25"/>
+                      <Cell col="26"/>
+                      <Cell col="27"/>
+                      <Cell col="28"/>
+                      <Cell col="29"/>
+                      <Cell col="30"/>
+                      <Cell col="31"/>
+                      <Cell col="32"/>
+                      <Cell col="33"/>
+                      <Cell col="34"/>
+                      <Cell col="35"/>
+                      <Cell col="36"/>
+                      <Cell col="37"/>
+                      <Cell col="38"/>
+                      <Cell col="39"/>
+                      <Cell col="40"/>
+                      <Cell col="41"/>
+                      <Cell col="42"/>
+                      <Cell col="43"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Button id="Button00_00_01_00_02_02_00_00_01" taborder="3" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="49"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="1"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btnSearchExpand" taborder="0" text="-" left="23.69%" top="divSearch:0" width="40" height="20" cssclass="btn_SA_expand" onclick="btnSearchExpand_onclick"/>
+        <Static id="Static01" taborder="3" text="20" top="0" cssclass="sta_Guide" width="40" right="0" bottom="0" visible="false"/>
+        <Div id="Div00" taborder="4" text="Div00" right="40" width="734" top="0" cssclass="div_group" height="763">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_00" taborder="0" text="상세정보" left="0" top="2" width="120" height="30" cssclass="sta_WF_title2"/>
+              <Static id="Static01_00_00_00" taborder="1" text="35" top="0" cssclass="sta_Guide" width="100" left="360" height="35" visible="false"/>
+              <Static id="Static26_03_00" taborder="2" text="진행단계" left="0" top="36" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01" taborder="3" left="129" top="36" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01" taborder="4" text="계약지점" left="373" top="36" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00" taborder="5" text="영업매니저" left="0" top="69" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01" taborder="6" left="129" top="69" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00" taborder="7" text="차종" left="0" top="102" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01" taborder="8" left="129" top="102" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_00" taborder="9" text="거래처명" left="373" top="69" width="135" height="34" cssclass="sta_DA_label"/>
+              <Edit id="Edit00_01_00_00_00" taborder="10" left="134" top="41" width="95" height="24" text="1234067890"/>
+              <Static id="Static01" taborder="11" left="0" top="35" height="2" cssclass="sta_DA_topBorder" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="12" text="11" top="24" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Button id="Button00_00_01_00_03_02_00" taborder="13" text="장기계약서입출고" top="5" width="122" height="24" cssclass="btn_Block" right="180"/>
+              <Button id="Button00_00_01_00_03_02_00_00" taborder="14" text="구매진행현황" top="5" width="98" height="24" cssclass="btn_Block" right="78"/>
+              <Button id="Button00_00_01_00_03_02_00_00_00" taborder="15" text="탁송요청" top="5" width="74" height="24" cssclass="btn_Block" right="0"/>
+              <Static id="Static26_03_00_00" taborder="16" text="공급사" left="0" top="135" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00" taborder="17" left="129" top="135" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00" taborder="18" text="월대여료" left="373" top="135" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00" taborder="19" text="계약번호" left="0" top="168" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00" taborder="20" left="129" top="168" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00" taborder="21" text="발주일자" left="0" top="201" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00" taborder="22" left="129" top="201" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01" taborder="23" text="구매의뢰번호" left="373" top="201" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00_01_00_01_00_00" taborder="24" text="구매의뢰일" left="373" top="168" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_03_00_00_00" taborder="25" text="CM계약번호" left="0" top="234" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00" taborder="26" left="129" top="234" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00_00" taborder="27" text="발주번호" left="373" top="234" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00_00" taborder="28" text="원본계약서상태" left="0" top="267" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00_00" taborder="29" left="129" top="267" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00_00" taborder="30" text="출고승인요청일" left="0" top="300" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00" taborder="31" left="129" top="300" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01_00" taborder="32" text="최종출고승인확인" left="373" top="300" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00_01_00_01_00_00_00" taborder="33" text="스캔여부" left="373" top="267" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_03_00_00_00_00" taborder="34" text="최종출고승인일" left="0" top="333" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00_00" taborder="35" left="129" top="333" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00_00_00" taborder="36" text="출고요청일" left="373" top="333" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00_00_00" taborder="37" text="출고보류일" left="0" top="366" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00_00_00" taborder="38" left="129" top="366" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00_00_00" taborder="39" text="출고일자" left="0" top="399" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00_00" taborder="40" left="129" top="399" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01_00_00" taborder="41" text="입고일자" left="373" top="399" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00_01_00_01_00_00_00_00" taborder="42" text="출고예정일" left="373" top="366" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_03_00_00_00_01" taborder="43" text="경유지" left="0" top="432" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00_01" taborder="44" left="129" top="432" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00_00_01" taborder="45" text="차대번호" left="373" top="432" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00_00_01" taborder="46" text="임시차량번호" left="0" top="465" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00_00_01" taborder="47" left="129" top="465" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00_00_01" taborder="48" text="등록일자(구청)" left="0" top="498" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00_01" taborder="49" left="129" top="498" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01_00_01" taborder="50" text="등록일자(전산)" left="373" top="498" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00_01_00_01_00_00_00_01" taborder="51" text="차량번호" left="373" top="465" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_03_00_00_00_00_00" taborder="52" text="보험사" left="0" top="531" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00_00_00" taborder="53" left="129" top="531" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00_00_00_00" taborder="54" text="검수일" left="373" top="531" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00_00_00_00" taborder="55" text="차량투입일" left="0" top="564" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00_00_00_00" taborder="56" left="129" top="564" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00_00_00_00" taborder="57" text="차량준비완료일" left="0" top="597" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00_00_00" taborder="58" left="129" top="597" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_00_00_00_00_00" taborder="59" text="차량준비완료예정일" left="373" top="564" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02_00_00_00_00_01_00" taborder="60" text="계약서이관일" left="0" top="630" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00_01_00" taborder="61" left="129" top="630" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01_00_01_00" taborder="62" text="문서고입고일" left="373" top="630" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_03_00_00_00_00_00_00" taborder="63" text="외장색상" left="0" top="663" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_03_01_00_00_00_00_00" taborder="64" left="129" top="663" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_02_01_00_00_00_00_00" taborder="65" text="내장색상" left="373" top="663" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_01_00_00_00_00_00_00" taborder="66" text="지점→본사" left="0" top="696" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_02_01_00_00_00_00_00" taborder="67" left="129" top="696" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_02_00_00_00_00_00_00_00" taborder="68" text="계약지점" left="0" top="729" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01_01_01_00_00_00_00_00" taborder="69" left="129" top="729" width="605" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_01_00_01_01_00_00_00_00" taborder="70" text="본사→지점" left="373" top="729" width="135" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_00_01_00_01_00_00_00_00_00_00" taborder="71" text="본사→CM" left="373" top="696" width="135" height="34" cssclass="sta_DA_label"/>
+              <MaskEdit id="MaskEdit00_00_01" taborder="72" left="516" top="173" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00" taborder="73" left="134" top="206" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00" taborder="74" left="134" top="305" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00" taborder="75" left="134" top="338" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00" taborder="76" left="134" top="371" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00" taborder="77" left="134" top="404" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_01" taborder="78" left="516" top="338" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_01" taborder="79" left="516" top="371" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_00" taborder="80" left="516" top="404" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01" taborder="81" left="134" top="569" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_00" taborder="82" left="516" top="569" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_01" taborder="83" left="134" top="602" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_01_00" taborder="84" left="134" top="635" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_01_00_00" taborder="85" left="516" top="635" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_02" taborder="86" left="134" top="503" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_02_00" taborder="87" left="516" top="503" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <MaskEdit id="MaskEdit00_00_01_00_00_00_00_00_01_02_00_00" taborder="88" left="516" top="536" width="95" height="24" textAlign="left" type="string" format="####-##-##" maskchar=" "/>
+              <Edit id="Edit00_01_00_00_00_00" taborder="89" left="134" top="74" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_00" taborder="90" left="516" top="74" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_00_00" taborder="91" left="516" top="41" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_01" taborder="92" left="134" top="107" width="200" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02" taborder="93" left="134" top="140" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00" taborder="94" left="516" top="140" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_01" taborder="95" left="134" top="173" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00" taborder="96" left="516" top="206" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00" taborder="97" left="516" top="239" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00" taborder="98" left="134" top="239" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01" taborder="99" left="516" top="272" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00" taborder="100" left="134" top="272" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_00" taborder="101" left="516" top="305" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00" taborder="102" left="134" top="437" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_01" taborder="103" left="516" top="437" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00_00" taborder="104" left="134" top="470" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_01_00" taborder="105" left="516" top="470" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00_00_00" taborder="106" left="134" top="536" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00_00_01" taborder="107" left="134" top="668" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_01_00_00" taborder="108" left="516" top="668" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00_00_01_00" taborder="109" left="134" top="701" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_01_00_00_00" taborder="110" left="516" top="701" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_00_00_00_00_01_00_00" taborder="111" left="134" top="734" width="95" height="24" text="1234067890"/>
+              <Edit id="Edit00_01_00_00_00_00_02_00_00_00_01_01_00_00_00_00" taborder="112" left="516" top="734" width="95" height="24" text="1234067890"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.temp01_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnDivSearchExpand(this.btnSearchExpand,this.divSearch);
+};
+
+
+
+this.Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+
+this.btnSearchExpand_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    this.gfnDivSearchExpand(obj,this.divSearch);	
+};
+]]></Script>
+  </Form>
+</FDL>

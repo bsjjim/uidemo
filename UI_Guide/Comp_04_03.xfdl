@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="1296" titletext="Grid  - 편집모드, 클래스">
+    <Layouts>
+      <Layout height="1296" width="1528">
+        <Grid id="Grid00" taborder="0" left="0" top="35" height="186" binddataset="ds_grid" right="40" initvalueid="iv_Grid" selecttype="row">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="40" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="140"/>
+                <Column size="80"/>
+                <Column size="201"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="48"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="theme://images/flag.png" displaytype="imagecontrol"/>
+                <Cell col="1" text="선택"/>
+                <Cell col="2" text="Calendar"/>
+                <Cell col="3" text="Combo"/>
+                <Cell col="4" text="Edit"/>
+                <Cell col="5" text="MaskEdit(String)"/>
+                <Cell col="6" text="MaskEdit(Number)"/>
+                <Cell col="7" text="Button"/>
+                <Cell col="8" text="Expand"/>
+                <Cell col="9" text="상태"/>
+                <Cell col="10" text="Column8"/>
+                <Cell col="11" text="Column9"/>
+                <Cell col="12"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column10" displaytype="imagecontrol"/>
+                <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox" text="bind:Column0"/>
+                <Cell col="2" text="bind:Column1" displaytype="calendarcontrol" edittype="date" calendardateformat="yyyy-MM-dd"/>
+                <Cell col="3" text="bind:Column2" displaytype="combocontrol" edittype="combo" combodataset="ds_comb" combodatacol="Column0" combocodecol="Column0"/>
+                <Cell col="4" text="bind:Column3" displaytype="editcontrol" edittype="normal"/>
+                <Cell col="5" edittype="mask" displaytype="maskeditcontrol" maskeditformat="###-##-#####" text="bind:Column11" maskedittype="string"/>
+                <Cell col="6" text="bind:Column4" displaytype="maskeditcontrol" edittype="normal" textAlign="right" maskeditformat="#,###"/>
+                <Cell col="7" text="bind:Column5" displaytype="buttoncontrol" edittype="button"/>
+                <Cell col="8" text="bind:Column6" displaytype="editcontrol" edittype="normal" expandshow="show" expandsize="24"/>
+                <Cell col="9" text="bind:Column7" displaytype="imagecontrol"/>
+                <Cell col="10" text="bind:Column8"/>
+                <Cell col="11" text="bind:Column9"/>
+                <Cell col="12"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static45_00_00_01" taborder="1" text="기본 편집모드" left="0" top="7" width="220" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static01_00_00_01_00_00_03" taborder="2" text="h35" top="0" cssclass="sta_Guide" width="100" left="183" height="35" visible="false"/>
+        <Div id="Div01" taborder="3" text="Div01" left="0" top="286" height="154" cssclass="div_WF_infobox" right="40">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="Cell 설정값" left="20" top="7" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00_00" taborder="1" text="선택, CheckBox : displaytype(checkboxcontrol), edittype(checkbox)" left="20" top="30" width="698" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static00_00_00" taborder="2" text="플래그, 상태, Image : displaytype (imagecontrol)" left="20" top="52" width="613" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static01_00_00_01_00_00" taborder="3" text="10" top="26" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="4" text="10" top="48" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="5" text="10" top="70" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static00_00_00_00" taborder="6" text="Calendar : displaytype (calendarcontrol), edittype(date), calendardateformat(yyyy-MM-dd)" left="20" top="74" width="613" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static00_00_00_00_00" taborder="7" text="Combo : displaytype (combocontrol), edittype(combo)" left="20" top="97" width="613" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static01_00_00_01_00_00_00_00_00" taborder="8" text="10" top="93" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00_00_00_00" taborder="9" text="10" top="116" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static00_00_00_00_00_00" taborder="10" text="Edit : displaytype (editcontrol), edittype(normal)" left="20" top="120" width="613" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static00_00_00_00_00_00_00" taborder="11" text="MaskEdit(String) : displaytype (maskeditcontrol), edittype(mask), maskeditformat(###-##-#####), maskedittype(string)" left="654" top="30" width="748" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static00_00_00_00_00_00_00_00" taborder="12" text="MaskEdit(Number) : displaytype (maskeditcontrol), edittype(mask), maskeditformat(#,###)" left="654" top="52" width="748" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static00_00_00_00_00_00_00_00_00" taborder="13" text="Button : displaytype (buttoncontrol), edittype(button)" left="654" top="74" width="748" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static00_00_00_00_00_00_00_00_00_00" taborder="14" text="Expand : displaytype (editcontrol), edittype(normal), expandshow(show), expandsize(24)" left="654" top="97" width="748" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static01_00_00_01_00_00_01" taborder="15" text="15" cssclass="sta_Guide" width="100" left="63" height="15" visible="false" top="137"/>
+              <Static id="Static01_00_00_01_00_00_01_00" taborder="16" text="15" cssclass="sta_Guide" width="100" left="33" height="15" visible="false" top="-2"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="Grid00_00" taborder="4" left="0" top="490" height="281" binddataset="ds_grid2" initvalueid="iv_Grid" right="609">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="200"/>
+                <Column size="150"/>
+                <Column size="120"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="80"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="TextArea"/>
+                <Cell col="1" text="Decoratetext"/>
+                <Cell col="2" text="필수입력 컬럼" cssclass="cell_req"/>
+                <Cell col="3" text="링크"/>
+                <Cell col="4" text="Column0"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column5" displaytype="textareacontrol" edittype="textarea"/>
+                <Cell col="1" text="bind:Column4" displaytype="decoratetext"/>
+                <Cell col="2" text="bind:Column3" displaytype="editcontrol" edittype="normal"/>
+                <Cell col="3" text="bind:Column2" cssclass="cell_link"/>
+                <Cell col="4" text="bind:Column0"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01_00_00_01_00_00_03_00" taborder="5" text="h50" top="440" cssclass="sta_Guide" width="100" left="473" height="50" visible="false"/>
+        <Static id="Static45_00_00_01_00" taborder="6" text="TextArea, Decoratetext, 셀클래스" left="0" top="462" width="360" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static45_00_00_01_00_00" taborder="7" text="Tree" top="462" width="220" height="24" cssclass="sta_WF_title1" usedecorate="true" right="369"/>
+        <Grid id="Grid00_00_00" taborder="8" top="490" height="281" binddataset="ds_tree" initvalueid="iv_Grid" width="549" treeusecheckbox="false" treeinitstatus="expand,all" right="40">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="150"/>
+                <Column size="314"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="data"/>
+                <Cell col="1" text="Column0"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:data" displaytype="treeitemcontrol" edittype="tree" treelevel="bind:lev"/>
+                <Cell col="1" text="bind:Column0" textAlign="left"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Div id="Div01_00" taborder="9" text="Div01" left="0" top="786" height="115" cssclass="div_WF_infobox" right="609">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="Cell 설정값" left="20" top="7" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00_00" taborder="1" text="TextArea : displaytype(textareacontrol), edittype(textarea)" left="20" top="29" width="698" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static00_00_00" taborder="2" text="Dacoratetext : displaytype (decoratetextcontrol)" left="20" top="53" width="613" height="24" cssclass="sta_txt_descDot" usedecorate="true"/>
+              <Static id="Static01_00_00_01_00_00" taborder="3" text="10" top="26" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="4" text="10" top="48" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_01" taborder="5" text="13" top="71" cssclass="sta_Guide" width="100" left="63" height="13" visible="false"/>
+              <Static id="Static00_01" taborder="6" text="필수입력 헤더셀 클래스 .req  / 선택필수 헤더셀 클래스 .select / 링크 셀 클래스. cell_link" left="20" top="77" width="508" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div01_00_00" taborder="10" text="Div01" top="786" height="115" cssclass="div_WF_infobox" right="40" width="549">
+          <Layouts>
+            <Layout>
+              <Static id="Static00_01" taborder="5" text="Cell 설정값" left="20" top="55" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00" taborder="0" text="Grid 설정값" left="20" top="7" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00_00" taborder="1" text="treeinitstatus(expand, all), treeusecheckbox(false)" left="20" top="30" width="463" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static01_00_00_01_00_00" taborder="2" text="10" top="26" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="3" text="13" top="48" cssclass="sta_Guide" width="100" left="63" height="13" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_01" taborder="4" text="13" top="98" cssclass="sta_Guide" width="100" left="63" height="13" visible="false"/>
+              <Static id="Static00_00_01" taborder="6" text="Tree cell : displaytype(treeitemcontrol), edittype(tree)" left="20" top="78" width="443" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static01_00_00_01_00_00_00_00" taborder="7" text="10" top="74" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="11" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="305" visible="false"/>
+        <Static id="Static00_00_01" taborder="12" onclick="Static76_onclick" left="0" top="260" width="90" height="1" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static74_00_00_00_00_00" taborder="13" left="0" top="162" width="82" height="113" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text="" onclick="Static74_00_00_00_00_00_onclick"/>
+        <Static id="Static74_00_00_00_00_00_00" taborder="14" left="35" top="162" width="6" height="98" border="0px none, 1px dotted rgba(177,192,203,1), 0px none, 0px none" text=""/>
+        <Static id="Static05_00_00" taborder="15" text="40" usedecorate="true" left="9" top="230" width="27" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" textAlign="center"/>
+        <Static id="Static05_00_00_00" taborder="16" text="40" usedecorate="true" left="50" top="230" width="27" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" textAlign="center"/>
+        <Static id="Static05_00_00_01" taborder="17" text="좌측 고정 컬럼" usedecorate="true" left="0" top="254" width="87" height="15" background="rgba(255,255,255,1)" textAlign="center" color="red"/>
+        <Button id="Button00_00_01_00_02_02_00" taborder="18" top="5" width="44" height="24" cssclass="btn_Block_fileUp" right="632" tooltiptext="파일업로드"/>
+        <Button id="Button00_00_01_00_02_02_00_00" taborder="19" top="5" width="44" height="24" cssclass="btn_Block_excelUp" right="728" tooltiptext="엑셀업로드"/>
+        <Button id="Button00_00_01_00_02_02_00_00_00" taborder="20" top="5" width="44" height="24" cssclass="btn_Block_excelDown" right="680" tooltiptext="엑셀다운로드"/>
+        <Button id="Button00_00_01_00_03_00" taborder="21" text="행추가" top="5" width="76" height="24" cssclass="btn_Block_addRow" right="334"/>
+        <Button id="Button00_00_01_00_03_00_00" taborder="22" text="행취소" top="5" width="76" height="24" cssclass="btn_Block_reset" right="94"/>
+        <Button id="Button00_00_01_00_03_01" taborder="23" text="저장" top="5" width="50" height="24" cssclass="btn_Block" right="40"/>
+        <Button id="Button00_00_01_00_03_02" taborder="24" text="커스텀" top="5" width="62" height="24" cssclass="btn_Block" right="414"/>
+        <Static id="Static02" taborder="25" text="0" top="5" width="50" height="24" cssclass="sta_WF_gridCountNum" right="855"/>
+        <Static id="Static02_02" taborder="26" text="[단위:원]" top="5" width="50" height="24" cssclass="sta_WF_gridUnit" right="784"/>
+        <Button id="Button00_00_01_00_02_02_01" taborder="27" text="커스텀팝업" top="5" width="100" height="24" cssclass="btn_Block_popup" right="480"/>
+        <Static id="Static02_02_00" taborder="28" text="건" top="5" width="17" height="24" cssclass="sta_WF_gridCount" right="836"/>
+        <Button id="Button00_00_01_00_02_02_00_01" taborder="29" top="5" width="44" height="24" cssclass="btn_Block_fileDown" right="584" tooltiptext="파일다운로드"/>
+        <Button id="Button00_00_01_00_03_00_02" taborder="30" text="행복사" top="5" width="76" height="24" cssclass="btn_Block_copyRow" right="254"/>
+        <Static id="Static01_00_00_01_00_00_03_01" taborder="31" text="15" top="0" cssclass="sta_Guide" width="15" left="741" height="35" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_01_00" taborder="32" text="10" top="0" cssclass="sta_Guide" width="10" left="685" height="35" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_01_00_00" taborder="33" text="4" top="0" cssclass="sta_Guide" width="4" left="673" height="35" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_01_00_00_00" taborder="34" text="4" top="0" cssclass="sta_Guide" width="4" left="800" height="35" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="35" text="6" top="29" cssclass="sta_Guide" width="100" left="1163" height="6" visible="false"/>
+        <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="36" text="12" top="23" cssclass="sta_Guide" width="100" left="698" height="12" visible="false"/>
+        <Static id="Static01_00_00_01_00_01" taborder="37" text="사용여부 미정" top="490" cssclass="sta_Guide_info" width="144" left="201" height="280" visible="true" verticalAlign="middle" textAlign="center" background="rgba(255,0,0,0.60)" color="#ffffff" font="20px &quot;NotoKr-Regular&quot;"/>
+        <Button id="Button00_00_01_00_03_00_02_00" taborder="38" text="행삭제" top="5" width="76" height="24" cssclass="btn_Block_delRow" right="174"/>
+        <Static id="Static45_00_00_01_00_01" taborder="39" text="테이블 타입 그리드" left="0" top="923" width="360" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static01_00_00_01_00_00_03_00_00" taborder="40" text="h50" top="901" cssclass="sta_Guide" width="100" left="473" height="50" visible="false"/>
+        <Grid id="Grid00_01" taborder="41" left="0" top="951" binddataset="ds_table" height="92" initvalueid="iv_Grid_table" width="734">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="150"/>
+                <Column size="150"/>
+                <Column size="150"/>
+                <Column size="150"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="타이틀"/>
+                <Cell col="1" text="타이틀"/>
+                <Cell col="2" text="타이틀"/>
+                <Cell col="3" text="타이틀"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column0" cssclass="cell_header"/>
+                <Cell col="1" text="bind:Column1"/>
+                <Cell col="2" text="bind:Column2"/>
+                <Cell col="3" text="bind:Column3"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static05_00_00_01_00" taborder="42" text="※ initvalueid = iv_Grid_table" usedecorate="true" left="321" top="928" width="197" height="15" background="rgba(255,255,255,1)" textAlign="center" color="red"/>
+        <Static id="sta00" taborder="43" text="(마우스 hover, select 없는 형태)" left="142" top="923" width="180" height="24"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1</Col>
+            <Col id="Column5">버튼</Col>
+            <Col id="Column4">3000</Col>
+            <Col id="Column3">텍스트</Col>
+            <Col id="Column2">선택</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_add.png</Col>
+            <Col id="Column11">1231212345</Col>
+            <Col id="No">1</Col>
+            <Col id="Column7">theme://images/state_gray.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">수정</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_del.png</Col>
+            <Col id="No">2</Col>
+            <Col id="Column7">theme://images/state_yellow.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column5">저장</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="Column10">theme://images/ico_flag_mod.png</Col>
+            <Col id="No">3</Col>
+            <Col id="Column7">theme://images/state_green.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="No">4</Col>
+            <Col id="Column7">theme://images/state_orange.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">2020-12-12</Col>
+            <Col id="No">5</Col>
+            <Col id="Column7">theme://images/state_blue.png</Col>
+          </Row>
+          <Row>
+            <Col id="Column7">theme://images/state_red.png</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_comb">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">선택1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">선택2</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">선택3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_grid2">
+        <ColumnInfo>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column5">TextArea1, TextArea2, TextArea3, TextArea4, TextArea5, TextArea6, TextArea7, TextArea8, </Col>
+            <Col id="Column4">&lt;fc v='#f48a06'&gt;폰트컬러 &lt;/fc&gt;를 변경합니다.</Col>
+            <Col id="Column2">링크</Col>
+          </Row>
+          <Row>
+            <Col id="Column4">&lt;b v='true'&gt;굵은글씨&lt;/b&gt;로 변경합니다.</Col>
+            <Col id="Column2">링크</Col>
+          </Row>
+          <Row>
+            <Col id="Column4">&lt;u v='true'&gt;언더라인&lt;/u&gt; 밑줄을 칩니다.</Col>
+            <Col id="Column2">링크</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_tree">
+        <ColumnInfo>
+          <Column id="lev" type="STRING" size="256"/>
+          <Column id="data" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="lev">0</Col>
+            <Col id="data">1뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">1</Col>
+            <Col id="data">2뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">2</Col>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">2</Col>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">0</Col>
+            <Col id="data">1뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">1</Col>
+            <Col id="data">2뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">2</Col>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">2</Col>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">1뎁스메뉴</Col>
+            <Col id="lev">0</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">2뎁스메뉴</Col>
+            <Col id="lev">1</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="lev">2</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+          <Row>
+            <Col id="lev">2</Col>
+            <Col id="data">3뎁스메뉴</Col>
+            <Col id="Column0">텍스트 텍스트</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_table">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">소타이틀</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">소타이틀</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.Static74_00_00_00_00_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

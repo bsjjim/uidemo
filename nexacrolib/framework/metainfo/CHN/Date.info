@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Date">
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.Date" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对Date信息进行处理的对象。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的日(Day)的方法。">
+        <Syntax text="Date.addDate(nDays)">
+          <Return type="Number" description="返回在存储于Date对象中的日期加上所指定的日的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nDays" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的日期（Day）数。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的日期（Day）数。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的小时(Hour)的方法。">
+        <Syntax text="Date.addHours(nHours)">
+          <Return type="Number" description="返回在存储于Date对象中的日期加上所指定的小时的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的时值（Hour）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的时值（Hour）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的微秒(MilliSecond)的方法。">
+        <Syntax text="Date.addMilliseconds(nMsec)">
+          <Return type="Number" description="返回在存储于Date对象中的日期加上所指定的微秒的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nMsec" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的微秒值（MilliSecond）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的微秒值（MilliSecond）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的分钟(Minutes)的方法。">
+        <Syntax text="Date.addMinutes(nMinutes)">
+          <Return type="Number" description="返回在存储于Data对象的日期上加上所指定的分钟(Minutes)的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的分钟值（Minutes）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的分钟值（Minutes）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的月(Month)的方法。">
+        <Syntax text="Date.addMonth(nMonths)">
+          <Return type="Number" description="返回在存储于Data对象的日期上加上所指定的月(Month)的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的月值（Month）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的月值（Month）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的秒数(Second)的方法。">
+        <Syntax text="Date.addSeconds(nSeconds)">
+          <Return type="Number" description="返回在存储于Data对象的日期上加上所指定的秒数(Second)的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的秒值（Second）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的秒值（Second）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Date对象加上所指定的年(Year)的方法。">
+        <Syntax text="Date.addYear(nYears)">
+          <Return type="Number" description="返回在存储于Data对象的日期上加上所指定的年(Year)的日期。&#xD;&#xA;&#xD;&#xA;返回从UTC（协调世界时）的1970年01月01日子夜开始以微秒单位存储的时间值。" />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要与Date对象进行相加的年数值（Year）。&#xD;&#xA;&#xD;&#xA;在设定为负数时，将从Date对象减去所设定的年数值（Year）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回日(Day)值的方法。">
+        <Syntax text="Date.getDate()">
+          <Return type="Number" description="返回1到31之间的日值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回星期值的方法。">
+        <Syntax text="Date.getDay()">
+          <Return type="Number" description="返回从0（星期日）到6（星期六）之间的星期代码值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回四位年度(Year)值的方法。">
+        <Syntax text="Date.getFullYear()">
+          <Return type="Number" description="返回四位年度(Year)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回小时(Hour)值的方法。">
+        <Syntax text="Date.getHours()">
+          <Return type="Number" description="返回从0到23之间的小时(Hour)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象的值中返回微秒(MilliSecond)值的方法。">
+        <Syntax text="Date.getMilliseconds()">
+          <Return type="Number" description="返回0到999之间的微秒（MilliSecond）值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回分钟(Minute)值的方法。">
+        <Syntax text="Date.getMinutes()">
+          <Return type="Number" description="返回从0到59之间的分钟(Minute)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象的值中返回月(Month)值的方法。">
+        <Syntax text="Date.getMonth()">
+          <Return type="Number" description="返回从0（1月）到11（12月）之间的月（Month）代码值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回秒(Second)值的方法。">
+        <Syntax text="Date.getSeconds()">
+          <Return type="Number" description="返回0到59之间的秒(Second)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将存储在Date对象中的值以微秒(MilliSecond)值返回的方法。">
+        <Syntax text="Date.getTime()">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTimezoneOffset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以分钟(Minute)值返回存储在Date对象中的值与UTC（协调世界时）之间的时间差的方法。">
+        <Syntax text="Date.getTimezoneOffset()">
+          <Return type="Number" description="以分钟(Minute)值返回存储在Date对象中的值与UTC（协调世界时）之间的时间差。&#xD;&#xA;&#xD;&#xA;当存储在Date对象中的值如太平洋夏季时间（PDT）等晚于UTC时将包含正数值，而在如韩国或日本等早于UTC时将包含负数值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回日(Day)的方法。">
+        <Syntax text="Date.getUTCDate()">
+          <Return type="Number" description="返回1到31之间的日值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回星期值的方法。">
+        <Syntax text="Date.getUTCDay()">
+          <Return type="Number" description="返回从0（星期日）到6（星期六）之间的星期代码值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象的值中返回四位年度(Year)的方法。">
+        <Syntax text="Date.getUTCFullYear()">
+          <Return type="Number" description="返回四位年度(Year)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回小时(Hour)值的方法。">
+        <Syntax text="Date.getUTCHours()">
+          <Return type="Number" description="返回从0到23之间的小时(Hour)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准在存储于Date对象中的值中返回微秒(MilliSecond)值的方法。">
+        <Syntax text="Date.getUTCMilliseconds()">
+          <Return type="Number" description="返回0到999之间的微秒（MilliSecond）值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回分钟(Minute)值的方法。">
+        <Syntax text="Date.getUTCMinutes()">
+          <Return type="Number" description="返回从0到59之间的分钟(Minute)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回月(Month)值的方法。">
+        <Syntax text="Date.getUTCMonth()">
+          <Return type="Number" description="返回从0（1月）到11（12月）之间的月（Month）代码值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中返回秒(Second)值的方法。">
+        <Syntax text="Date.getUTCSeconds()">
+          <Return type="Number" description="返回0到59之间的秒(Second)值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中返回年度(Year)值的方法。">
+        <Syntax text="Date.getYear()">
+          <Return type="Number" description="从1900年到1999年为止的日期将返回两位年度(Year)值。&#xD;&#xA;除上述日期之外的日期将返回四位年度(Year)值。&#xD;&#xA;&#xD;&#xA;例如，1996年将返回96，而1825年或2025年将直接返回四位数。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="parse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于通过对包含日期的字符串进行分析而利用微秒返回从1970年01月01日子夜开始到当前日期之间的时间的静态方法。">
+        <Syntax text="Date.parse(strDate)">
+          <Return type="Number" description="以微秒(MilliSecond)返回1970年01月01日子夜与所指定的日期之间的时间。" />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="设定日期格式的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中变更日(Day)值的方法。">
+        <Syntax text="Date.setDate(nDate)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到Date对象中变更的日期为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要变更的日期（Day）。&#xD;&#xA;&#xD;&#xA;当设定大于当前月（Month）的最后一个日期（Day）的数时，将整体日期值变更为下个月。&#xD;&#xA;在设定为0时，将整体日期值变更为前一个月的最后一天。&#xD;&#xA;在设定为负数时，以从前一个月的最后一天开始逆向计算日期（Day）的方式对整体日期值进行变更。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在存储在Date对象中的值中变更年度(Year)或整体日期的方法。">
+        <Syntax text="Date.setFullYear(nYear[, nMonth[, nDate]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的日期（Day）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对日期（Day）进行变更。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的0（1月）到11（12月）之间的月（Month）代码值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对月（Month）进行变更。" />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的年度（Year）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在存储于Date对象中的值中变更小时(Hour)或整体事件的方法。">
+        <Syntax text="Date.setHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储于Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的时间（Hour）值。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的分钟（Minute）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对分钟（Minute）进行变更。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对秒（Second）进行变更。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象的值中变更微秒(MilliSecond)值的方法。">
+        <Syntax text="Date.setMilliseconds(nMilliSecond)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储于Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMilliSecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中变更分钟(Minute)值的方法。">
+        <Syntax text="Date.setMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的分钟（Minute）值。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对秒（Second）进行变更。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中变更月份(Month)值的方法。">
+        <Syntax text="Date.setMonth(nMonth[, nDate])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的日期（Day）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对日期（Day）进行变更。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的0（1月）到11（12月）之间的月（Month）代码值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象的值中变更秒(Second)值的方法。">
+        <Syntax text="Date.setSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储于Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以微秒(MilliSecond)值向Date对象设定日期以及时间的方法。">
+        <Syntax text="Date.setTime(nMs)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="利用微秒（MilliSecond）值设定从1970年01月01日午夜12点开始到所设定的日期为止的时间。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中变更日(Day)的方法。">
+        <Syntax text="Date.setUTCDate(nDate)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储于Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的日期（Day）。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准从存储于Date对象中的值中变更年度(Year)或整体日期的方法。">
+        <Syntax text="Date.setUTCFullYear(nYears[, nMonths[, nDate]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的日期（Day）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对日期（Day）进行变更。" />
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的0（1月）到11（12月）之间的月（Month）代码值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对月（Month）进行变更。" />
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的年度（Year）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）在存储在Date对象中的值中变更小时(Hour)或整体时间的方法。">
+        <Syntax text="Date.setUTCHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的时间（Hour）值。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的分钟（Minute）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对分钟（Minute）进行变更。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对秒（Second）进行变更。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）在存储在Date对象中的值中变更微秒(MilliSecond)的方法。">
+        <Syntax text="Date.setUTCMilliseconds(nMs)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）在存储在Date对象中的值中变更分钟(Minute)值的方法。">
+        <Syntax text="Date.setUTCMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的分钟（Minute）值。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对秒（Second）进行变更。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）在存储在Date对象中的值中变更月(Month)值的方法。">
+        <Syntax text="Date.setUTCMonth(nMonth[, nDate])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的日期（Day）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对日期（Day）进行变更。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的0（1月）到11（12月）之间的月（Month）代码值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）在存储在Date对象中的值中变更秒(Second)的方法。">
+        <Syntax text="Date.setUTCSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的微秒（MilliSecond）值。&#xD;&#xA;&#xD;&#xA;在不设定值时，不会对微秒（MilliSecond）进行变更。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的秒（Second）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从存储于Date对象中的值中变更年度(Year)值的方法。">
+        <Syntax text="Date.setYear(nYears)">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="设定需要变更的年度（Year）值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串返回存储于Date对象中的日期的方法。">
+        <Syntax text="Date.toDateString()">
+          <Return type="String" description="返回转换成字符串的日期。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toGMTString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以GMT（格林威治时间）为基准将存储在Date对象中的日期以及时间转换成字符串的方法。">
+        <Syntax text="Date.toGMTString()">
+          <Return type="String" description="返回转换成字符串的日期以及时间。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以特定本地设定值形式的字符串返回存储在Date对象中的日期的方法。">
+        <Syntax text="Date.toLocaleDateString( [strLocale] )">
+          <Return type="String" description="以字符串形态返回按照特定本地设定值格式转换的日期。" />
+          <Arguments>
+            <Argument name="strLocale" type="String" in="false" out="false" option="false" variable="false" description="利用“语言[_国家]”格式的字符串设定在ISO 639-1中定义的2-字母语言代码以及在ISO 3166-1中定义的2-字母国家代码的组合。&#xD;&#xA;&#xD;&#xA;在省略值时，适用Environment的local属性值。&#xD;&#xA;在没有设定Environment的local属性值的情况下，适用系统的本地设定值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toLocaleString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以特定本地设定值形式的字符串返回存储在Date对象中的日期以及时间的方法。">
+        <Syntax text="Date.toLocaleString( [strLocale] )">
+          <Return type="String" description="以字符串形态返回按照特定本地设定值形式进行转换的日期以及时间。" />
+          <Arguments>
+            <Argument name="strLocale" type="String" in="false" out="false" option="false" variable="false" description="利用“语言[_国家]”格式的字符串设定在ISO 639-1中定义的2-字母语言代码以及在ISO 3166-1中定义的2-字母国家代码的组合。&#xD;&#xA;&#xD;&#xA;在省略值时，适用Environment的local属性值。&#xD;&#xA;在没有设定Environment的local属性值的情况下，适用系统的本地设定值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toLocaleTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以特定本地设定值形式的字符串返回存储在Date对象中的时间的方法。">
+        <Syntax text="Date.toLocaleTimeString( [strLocale] )">
+          <Return type="String" description="以特定本地设定值形式的字符串形式进行转换的时间。" />
+          <Arguments>
+            <Argument name="strLocale" type="String" in="false" out="false" option="false" variable="false" description="利用“语言[_国家]”格式的字符串设定在ISO 639-1中定义的2-字母语言代码以及在ISO 3166-1中定义的2-字母国家代码的组合。&#xD;&#xA;&#xD;&#xA;在省略值时，适用Environment的local属性值。&#xD;&#xA;在没有设定Environment的local属性值的情况下，适用系统的本地设定值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串返回存储在Date对象中的日期以及时间值的方法。">
+        <Syntax text="Date.toString()">
+          <Return type="String" description="以字符串返回存储在Date对象中的日期以及时间。&#xD;&#xA;&#xD;&#xA;在Date对象中只包含日期值时，将返回8位日期格式。&#xD;&#xA;在Date对象中只包含时间值时，将返回9位时间格式。&#xD;&#xA;在Date对象中同时包含日期以及时间值时，将返回17位日期时间格式。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串返回存储在Date对象中的时间的方法。">
+        <Syntax text="Date.toTimeString()">
+          <Return type="String" description="返回转换成字符串的时间。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toUTCString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以UTC（协调世界时）为基准将存储在Date对象中的日期以及时间转换成字符串的方法。">
+        <Syntax text="Date.toUTCString()">
+          <Return type="String" description="返回转换成字符串的日期以及时间。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="UTC" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以微秒(MilliSeconds)值返回以UTC（协调世界时）或GMT（格林威治标准时）为基准的从1970年01月01日子夜开始到所传递的日期为止的时间的静态方法。">
+        <Syntax text="Date.UTC(nYear, nMonth, nDay[, nHours[, nMinutes[, nSeconds[,nMillisecond]]]])">
+          <Return type="Number" description="利用微秒(MilliSecond)值返回从1970年01月01日子夜开始到存储在Date对象中的值为止的时间。" />
+          <Arguments>
+            <Argument name="nDay" type="Number" in="false" out="false" option="false" variable="false" description="设定1到31之间的日期值。" />
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="设定0到23之间的时间（Hour）值。&#xD;&#xA;&#xD;&#xA;0代表午夜12点，23代表下午11点。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="设定0到999之间的微秒（MilliSecond）值。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="设定0到59之间的分钟（Minute）值。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="设定0（1月）到11（12月）之间的月（Month）代码值。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="设定0到59之间的秒（Second）值。" />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="设定四位数年度（Year）值。&#xD;&#xA;&#xD;&#xA;在输入0到99为止的值时，将处理为加上1900的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="valueOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串返回存储在Date对象中的日期以及时间值的方法。">
+        <Syntax text="Date.valueOf()">
+          <Return type="String" description="以字符串返回存储在Date对象中的日期以及时间。&#xD;&#xA;&#xD;&#xA;在Date对象中只包含日期值时，将返回8位日期格式。&#xD;&#xA;在Date对象中只包含时间值时，将返回9位时间格式。&#xD;&#xA;在Date对象中同时包含日期以及时间值时，将返回17位日期时间格式。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

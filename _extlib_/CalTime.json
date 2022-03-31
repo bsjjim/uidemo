@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalTime",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalTime/_metainfo_/CalTime.info"
+	],
+	"scripts": [
+    "CalTime/CalTime.js"
+	],
+	"designscripts": [
+    "CalTime/DesignCalTime.js"
+	],
+	"help": "",	
+	"xcss": "CalTime/_xcss_/CalTime.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="계약서류 최종확인" onload="temp01_onload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="divSearch" taborder="2" left="0" top="0" height="131" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="본부" left="20" top="18" width="60" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01" taborder="1" text="사업장" left="341" top="18" width="63" height="24" cssclass="sta_SA_label"/>
+              <Button id="Button02" taborder="2" height="38" cssclass="btn_SA_src" right="20" width="38" bottom="11"/>
+              <Static id="Static01_00_01" taborder="3" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_01" taborder="4" text="계약지점" left="675" top="18" width="69" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_00" taborder="5" text="영업매니저" left="1033" top="18" width="78" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00" taborder="6" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static00_00" taborder="7" text="서류검토자" left="20" top="52" width="80" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_02" taborder="8" text="견적번호" left="341" top="52" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_01" taborder="9" text="계약번호" left="675" top="52" width="69" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_00_00" taborder="10" text="장기구분" left="1033" top="52" width="63" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_01_01_00" taborder="11" text="서류검토상태" left="675" top="86" width="89" height="24" cssclass="sta_SA_label"/>
+              <Combo id="Combo00_01_00" taborder="12" text="선택" left="100" top="18" width="201" height="24" value="" index="-1"/>
+              <Static id="Static01_00_00_01" taborder="13" text="w40" top="5" cssclass="sta_Guide" width="40" left="301" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_00" taborder="14" text="w40" top="5" cssclass="sta_Guide" width="40" left="634" height="60" visible="false"/>
+              <Static id="Static01_00_00_01_00_00" taborder="15" text="w40" top="8" cssclass="sta_Guide" width="40" left="993" height="60" visible="false"/>
+              <Static id="Static01_00_00" taborder="16" text="10" top="5" cssclass="sta_Guide" width="10" left="90" height="110" visible="false"/>
+              <Static id="Static00_00_00" taborder="17" text="조회기간" left="20" top="86" width="80" height="24" cssclass="sta_SA_label"/>
+              <Edit id="Edit00_01_00_00" taborder="18" left="100" top="52" width="57" height="24" text="P12345"/>
+              <Button id="Button00_01_00_00" taborder="19" left="159" top="52" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00" taborder="20" left="186" top="52" height="24" text="홍길순" width="115"/>
+              <Combo id="Combo00_01_00_00" taborder="21" text="계약서류확인일자" left="100" top="86" width="130" height="24" value="" index="-1"/>
+              <Static id="Static01_00_00_00" taborder="22" text="10" top="6" cssclass="sta_Guide" width="10" left="398" height="70" visible="false"/>
+              <Edit id="Edit00_01_00_02_00" taborder="23" left="408" top="18" width="42" height="24" text="3666"/>
+              <Button id="Button00_01_00_01_00" taborder="24" left="452" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00" taborder="25" left="479" top="18" height="24" text="서울중앙MOT 강북 Part" width="155"/>
+              <Edit id="Edit00" taborder="26" left="408" top="52" width="80" height="24" text="123456789"/>
+              <Button id="Button00" taborder="27" left="490" top="52" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Static id="Static01_00_00_00_00" taborder="28" text="10" top="9" cssclass="sta_Guide" width="10" left="757" height="100" visible="false"/>
+              <Edit id="Edit00_01_00_02_00_00" taborder="29" left="767" top="18" width="42" height="24" text="3666"/>
+              <Button id="Button00_01_00_01_00_00" taborder="30" left="811" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_01_00_00" taborder="31" left="838" top="18" height="24" text="서울중앙MOT 강북 Part" width="155"/>
+              <Edit id="Edit00_00" taborder="32" left="767" top="52" width="80" height="24" text="123456789"/>
+              <Button id="Button00_00" taborder="33" left="849" top="52" width="24" height="24" cssclass="btn_Comp_src" text=""/>
+              <Combo id="Combo00_00_00_00" taborder="34" text="선택" left="767" top="86" width="130" height="24" value="" index="-1"/>
+              <Static id="Static01_00_00_00_00_00" taborder="35" text="10" top="9" cssclass="sta_Guide" width="10" left="1102" height="85" visible="false"/>
+              <Edit id="Edit00_01_00_00_00" taborder="36" left="1112" top="18" width="57" height="24" text="P12345"/>
+              <Button id="Button00_01_00_00_00" taborder="37" left="1171" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00_00" taborder="38" left="1198" top="18" height="24" text="홍길순" width="115"/>
+              <Combo id="Combo00_00_00_00_00" taborder="39" text="선택" left="1112" top="52" width="130" height="24" value="" index="-1"/>
+              <CalPeriod id="CalPeriod00" taborder="40" left="232" top="86" width="210" height="24"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper00" taborder="4" text="Div00" top="divSearch:0" cssclass="div_group" bottom="268" right="40" width="734">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약정보" left="0" top="20" width="120" height="24" cssclass="sta_WF_title2"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="고객분류"/>
+                      <Cell col="2" text="거래처명"/>
+                      <Cell col="3" text="계약번호"/>
+                      <Cell col="4" text="차종명"/>
+                      <Cell col="5" text="월대여료"/>
+                      <Cell col="6" text="운전면허번호"/>
+                      <Cell col="7" text="보증증권금액"/>
+                      <Cell col="8" text="보증증권번호"/>
+                      <Cell col="9" text="납부방법"/>
+                      <Cell col="10" text="CMS계좌번호"/>
+                      <Cell col="11" text="카드자동이체 카드번호"/>
+                      <Cell col="12" text="보증인 생년월일"/>
+                      <Cell col="13" text="보증인 성별"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1" text="bind:Column0"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column4"/>
+                      <Cell col="6" text="bind:Column5"/>
+                      <Cell col="7" text="bind:Column6"/>
+                      <Cell col="8" text="bind:Column7"/>
+                      <Cell col="9" text="bind:Column8"/>
+                      <Cell col="10" text="bind:Column9"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="divSearch:0" cssclass="div_group" right="794" bottom="48">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="계약서류 확인" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="OCR결과"/>
+                      <Cell col="2" text="계약서류확인일"/>
+                      <Cell col="3" text="본부"/>
+                      <Cell col="4" text="사업장"/>
+                      <Cell col="5" text="계약지점"/>
+                      <Cell col="6" text="영업매니저"/>
+                      <Cell col="7" text="견적번호"/>
+                      <Cell col="8" text="계약건수"/>
+                      <Cell col="9" text="계약번호(시작)"/>
+                      <Cell col="10" text="계약번호(끝)"/>
+                      <Cell col="11" text="서류검토자"/>
+                      <Cell col="12" text="최종확인일"/>
+                      <Cell col="13" text="서류보완요청일"/>
+                      <Cell col="14" text="실행차수"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static02_00_00" taborder="2" text="건" top="20" width="10" height="24" cssclass="sta_WF_gridCount" right="190"/>
+              <Static id="Static01_00_01_01_00" taborder="3" text="w15" top="9" cssclass="sta_Guide" width="5" height="47" visible="false" right="197"/>
+              <Static id="Static02_00" taborder="4" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="201"/>
+              <Button id="btn00" taborder="5" text="최종확인" top="20" width="74" height="24" cssclass="btn_Block" right="102"/>
+              <Button id="btn00_00" taborder="6" text="서류보완요청" top="20" width="98" height="24" cssclass="btn_Block" right="0"/>
+              <Static id="Static01_00_00_01_00" taborder="7" text="15" top="10" cssclass="sta_Guide" width="15" left="544" height="35" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btnSearchExpand" taborder="0" text="-" left="47.38%" top="divSearch:0" width="40" height="20" cssclass="btn_SA_expand" onclick="btnSearchExpand_onclick"/>
+        <Static id="Static01" taborder="3" text="20" top="0" cssclass="sta_Guide" width="40" right="0" bottom="0" visible="false"/>
+        <Div id="div00" taborder="5" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" top="divGridWapper:0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_01_00_00" taborder="0" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="1" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="73" height="10"/>
+              <Button id="Button00_00_01" taborder="2" text="서류보완요청" height="28" cssclass="btn_Comm_func" top="10" right="0" width="112"/>
+              <Button id="Button00_00_01_00" taborder="3" text="최종확인" height="28" cssclass="btn_Comm_func" top="10" right="116" width="88"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper00_00" taborder="6" text="Div00" cssclass="div_group" right="40" width="734" height="220" top="divGridWapper00:0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="주소정보" left="0" top="20" width="120" height="24" cssclass="sta_WF_title2"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="200"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="200"/>
+                      <Column size="120"/>
+                      <Column size="120"/>
+                      <Column size="200"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" text="계약번호"/>
+                      <Cell col="2" colspan="3" text="고객주소"/>
+                      <Cell col="5" colspan="3" text="순회정비주소"/>
+                      <Cell col="8" colspan="3" text="범칙금주소"/>
+                      <Cell row="1" col="2" text="우편번호"/>
+                      <Cell row="1" col="3" text="주소"/>
+                      <Cell row="1" col="4" text="상세주소"/>
+                      <Cell row="1" col="5" text="우편번호"/>
+                      <Cell row="1" col="6" text="주소"/>
+                      <Cell row="1" col="7" text="상세주소"/>
+                      <Cell row="1" col="8" text="우편번호"/>
+                      <Cell row="1" col="9" text="주소"/>
+                      <Cell row="1" col="10" text="상세주소"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell text="bind:Column0"/>
+                      <Cell col="1" text="bind:Column1"/>
+                      <Cell col="2" text="bind:Column2"/>
+                      <Cell col="3" text="bind:Column3"/>
+                      <Cell col="4" text="bind:Column4"/>
+                      <Cell col="5" text="bind:Column5"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                      <Cell col="10"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.temp01_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnDivSearchExpand(this.btnSearchExpand,this.divSearch);
+};
+
+
+
+this.Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+
+this.btnSearchExpand_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    this.gfnDivSearchExpand(obj,this.divSearch);	
+};
+]]></Script>
+  </Form>
+</FDL>

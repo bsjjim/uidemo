@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Work" width="1568" height="817" titletext="Form_Work" scrollbartype="auto auto" onload="fnFormOnload" onactivate="Form_Work_onactivate">
+    <Layouts>
+      <Layout width="1568" height="817" screenid="Desktop_screen">
+        <Div id="divCommHeader" taborder="0" text="Div00" left="40" top="0" height="50" right="40" url="Frame::WorkFormCommHeader.xfdl" formscrolltype="none" visible="true" minwidth="1488" maxwidth=""/>
+        <Div id="divWork" taborder="1" left="40" top="50" bottom="10" visible="true" right="0" maxwidth="" maxheight="" minwidth="1528" minheight="752"/>
+        <Div id="divCommFooter" taborder="2" text="Div00" left="0" right="0" url="Frame::WorkFormCommFooter.xfdl" height="49" minwidth="1568" maxwidth="" minheight="49" maxheight="" bottom="-75" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  업무영역 공통 화면
+*  @FileName 	: WorkForm.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/14
+*  @Desction    : 업무영역 공통 화면
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/14     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	var sMenuNo = this.gfnGetArgument("menuNo");
+	var sMenuNm = this.gfnGetArgument("menuNm");
+	var sPageUrl = this.gfnGetArgument("pageUrl");
+	var sMenuId = this.gfnGetArgument("menuId");
+	this.divWork.set_url(sPageUrl);
+	
+	if(!this.gfnIsNull(sMenuNo)) sMenuNm = sMenuNm+" ["+sMenuNo+"]";
+	
+	this.fnSetNavi(sMenuId);
+	
+	this.divCommHeader.form.staTitle.set_text(sMenuNm);
+	this.divCommHeader.form.resetScroll();
+	
+	
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+ 
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+ 
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+//화면 헤더 네비게이션 영역 추가 설정
+this.fnSetNavi = function(sMenuId)
+{
+   var gdsMenu = this.oApp.gdsMenu;
+   
+   var sUpMenuId = gdsMenu.lookup(this.jvMenuId,sMenuId,"UPR_ID"); //상위 메뉴 가져오기
+   
+   var sNavePath = "";
+   
+   while(!this.gfnIsNull(sUpMenuId)) //상위메뉴가 없으면 While문 종료
+   {
+       var sMenuNm = gdsMenu.lookup(this.jvMenuId,sUpMenuId,this.jvMenuNm);
+	   sUpMenuId = gdsMenu.lookup(this.jvMenuId,sUpMenuId,"UPR_ID");
+	   sNavePath = (this.gfnIsNull(sNavePath)) ? sMenuNm : sMenuNm +" > " +sNavePath;
+   }
+   
+   this.divCommHeader.form.staNavi.set_text(sNavePath);
+}
+
+this.fnModifyYn = function()
+{
+	 var bModify = false;
+	 
+	try{ bModify = this.divWork.form.fnClose();} catch(e) {};
+	
+	return bModify;
+}
+
+this.fnClose = function(bCheck)
+{
+   
+	var sWinId = this.gfnGetArgument("winId");
+	
+	bCheck = (this.gfnIsNull(bCheck)) ? false : bCheck;
+	
+	if(bCheck == true)
+	{
+		this.oApp.avMdiFrame.form.fnDelTab(sWinId);
+		return;
+	}
+	
+	if(this.fnModifyYn() == false)
+	{	
+		this.oApp.avMdiFrame.form.fnDelTab(sWinId);
+	}
+	else
+	{
+		this.gfnConfirm("confirm.before.movepage","",
+			function(sId,sVal)
+			{
+			    if(sVal == true)
+				{
+					this.fnClose(true);
+				}
+			}		
+		);	
+	}
+	
+	
+}
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.Form_Work_onactivate = function(obj:nexacro.Form,e:nexacro.ActivateEventInfo)
+{
+	trace("== Form_Work_onactivate ==");
+	var sWinId = this.gfnGetArgument("winId");
+	
+	this.oApp.avMdiFrame.form.fnActiveFrame(sWinId);
+	
+};
+]]></Script>
+  </Form>
+</FDL>

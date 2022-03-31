@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Statusbar" width="1858" height="25" cssclass="frm_Statusbar">
+    <Layouts>
+      <Layout height="25" width="1858">
+        <Static id="staStatusText" taborder="0" left="13" top="3" width="397" height="18"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

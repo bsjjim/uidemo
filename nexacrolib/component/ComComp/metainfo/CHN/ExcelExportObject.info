@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelExportObject">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExcelExportObject" shorttypename="ExcelExportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将显示在Grid中的内容Export到Excel或HANCEL文件的对象。" />
+    <PropertyInfo>
+      <Property name="commcompress" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定在为了执行Export而与服务器进行通信时是否对PostData进行压缩的属性。" csspropertyname="" normalpropertyname="commcompress" />
+      <Property name="commdataformat" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="xml" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在为了执行Export而将数据传送到服务器时所使用的通信形式的属性。" csspropertyname="" normalpropertyname="commdataformat" />
+      <Property name="exportactivemode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="noactive" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportActiveMode" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于设定在完成Export之后是否自动打开所生成的文件的属性。" csspropertyname="" normalpropertyname="exportactivemode" />
+      <Property name="exporteventtype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportEventType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定执行Export的过程中的信息显示方式以及onprogress事件触发方式的属性。" csspropertyname="" normalpropertyname="exporteventtype" />
+      <Property name="exportfilename" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在完成Export之后生成的文件名的属性。" csspropertyname="" normalpropertyname="exportfilename" />
+      <Property name="exportfilepassword" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="用于设定适用于在完成Export之后生成的文件中的密码的属性。" csspropertyname="" normalpropertyname="exportfilepassword" />
+      <Property name="exportfilepath" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于以绝对路径设定在完成Export之后生成文件的位置的属性。" csspropertyname="" normalpropertyname="exportfilepath" />
+      <Property name="exportmessagealert" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在Export之前所显示的警告对话框中进行输出的文本的属性。" csspropertyname="" normalpropertyname="exportmessagealert" />
+      <Property name="exportmessagecomplete" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在exportuitype属性值为&quot;exportprogress&quot;的情况下完成Export之后显示在进度条中的文本的属性。" csspropertyname="" normalpropertyname="exportmessagecomplete" />
+      <Property name="exportmessageprocess" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在exportuitype属性值为&quot;exportprogress&quot;的情况下在执行Export的过程中显示在进度条中的文本格式的属性。" csspropertyname="" normalpropertyname="exportmessageprocess" />
+      <Property name="exportmessageready" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在exportuitype属性值为&quot;exportprogress&quot;的情况下在执行Export之前显示在进度条中的文本的属性。" csspropertyname="" normalpropertyname="exportmessageready" />
+      <Property name="exporttype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="利用常数值设定需要通过对ExcelExportObject执行Export而生成的文件格式的属性。" csspropertyname="" normalpropertyname="exporttype" />
+      <Property name="exportuitype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportUIType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行Export时显示进展状态的方式的属性。" csspropertyname="" normalpropertyname="exportuitype" />
+      <Property name="exporturl" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要执行ExcelExportObject的Export的服务器URL的属性。" csspropertyname="" normalpropertyname="exporturl" />
+      <Property name="exportwordwrap" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Export时是否在Cell中适用文本换行设定的属性。" csspropertyname="" normalpropertyname="exportwordwrap" />
+      <Property name="filefilter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于设定适用于在对Export时所生成的文件进行设定的文件选择窗口中的文件格式的属性。" csspropertyname="" normalpropertyname="filefilter" />
+      <Property name="filefilterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于以索引值设定需要在文件选择窗口中默认显示的文件格式的属性。" csspropertyname="" normalpropertyname="filefilterindex" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定ExcelExportObject的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="quotechar" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportImportQuoteType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行Export时作为限定符使用的值的属性。" csspropertyname="" normalpropertyname="quotechar" />
+      <Property name="separator" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在执行Export时作为分隔符使用的值的属性。" csspropertyname="" normalpropertyname="separator" />
+      <Property name="transferrowcount" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="500" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Export时需要向服务器分割传送的Row的数量。" csspropertyname="" normalpropertyname="transferrowcount" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在ExcelExportObject中声明特定事件并添加的方法。">
+        <Syntax text="ExcelExportObject.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到ExcelExportObject的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向ExcelExportObject的特定事件添加句柄函数的方法。">
+        <Syntax text="ExcelExportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到ExcelExportObject的特定事件中的方法。">
+        <Syntax text="ExcelExportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将需要Export的Item添加到ExcelExportObject的方法。">
+        <Syntax text="ExcelExportObject.addExportItem( constExportItemType, objExportItem )&#xA;ExcelExportObject.addExportItem( constExportItemType, varExportSource, strRange [,strExportHead [,strExportSelect [,strExportMerge [,strExportValue [,strExportImage [,strExceptStyle [,strExportSize [,arrCellIndex]]]]]]]])">
+          <Return type="Number" description="返回被添加到ExcelExportObject中的Item的索引。&#xD;&#xA;&#xD;&#xA;在添加失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="arrCellIndex" type="Array" in="false" out="false" option="false" variable="false" description="利用数组设定需要在Export时适用所绑定的Column值的Cell的索引。&#xD;&#xA;&#xD;&#xA;关于设定索引的Cell，将对所绑定的Column值而不是所显示的文本值进行Export。&#xD;&#xA;&#xD;&#xA;没有设定Index的Cell，其结果可能会根据所使用的Method而有所不同。&#xD;&#xA;* exportData()：根据nOrgValue参数值决定Export值。&#xD;&#xA;* exportDataEx()：对在Cell中显示的文本值进行Export。" />
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定作为Export对象的组件的类型。&#xD;&#xA;&#xD;&#xA;只能对当前Grid进行Export，需要设定为“nexacro.ExportItemTypes.GRID”。" />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="设定对Export信息进行设定的ExportItem对象。" />
+            <Argument name="strExceptStyle" type="String" in="false" out="false" option="false" variable="false" description="设定在适用于Grid的Cell的CSS相关属性中需要在Export时排除的属性。&#xD;&#xA;&#xD;&#xA;在设定为“none”时，没有在Export时排除的属性。&#xD;&#xA;在设定为“align”时，与Align相关的-nexa-text-align、-nexa-vertical-align属性值将在Export时排除。&#xD;&#xA;在设定为“background”时，与background的color相关的属性值将在Export时排除。&#xD;&#xA;在设定为“color”时，color属性值将在Export时排除。&#xD;&#xA;在设定为“font”时，font属性值将在" />
+            <Argument name="strExportHead" type="String" in="false" out="false" option="false" variable="false" description="设定Grid的Head、Summary区域的Export方式。&#xD;&#xA;&#xD;&#xA;在设定为“allband”时，对Head、Summary区域均进行Export。&#xD;&#xA;在设定为“nohead”时，不对Head区域进行Export而仅对Summary区域进行Export。&#xD;&#xA;在设定为“nosumm”时，仅对Head区域进行Export而不对Summary区域进行Export。&#xD;&#xA;在设定为“nohead,nosumm”时，对Head、Summary区域均不进行Export。&#xD;&#xA;&#xD;&#xA;在省略值时，如果strExportSelect值为“al" />
+            <Argument name="strExportImage" type="String" in="false" out="false" option="false" variable="false" description="设定在Grid的Cell中设定的图像的Export方式。&#xD;&#xA;&#xD;&#xA;在设定为“none”时，忽略所设定的图像信息而以空格进行Export。&#xD;&#xA;在设定为“url”时，将所设定的图像的位置信息以及URL格式的字符串进行Export。&#xD;&#xA;在设定为“image”时，只有在所设定的图像的位置是以“http://”、“https://”开始的互联网URL路径的情况下，直接对图像进行Export。&#xD;&#xA;&#xD;&#xA;在省略值时适用“none”。" />
+            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="设定在Grid中与格式无关，进行逻辑合并的Cell的Export方式。&#xD;&#xA;在将strExportSelect值设定为“selectrecord”时始终适用“nosuppress”。&#xD;&#xA;&#xD;&#xA;在设定为“suppress”时按照合并结果仅对1个Cell的值进行Export。&#xD;&#xA;剩余的Cell不会被合并且全部处理为空格。&#xD;&#xA;&#xD;&#xA;在设定为“nosuppress”时忽略所合并的结果而对各个Cell的值全部进行Export。&#xD;&#xA;&#xD;&#xA;在设定为“merge”时按照合并结果仅对1个Cell的值进行Export。&#xD;&#xA;剩余的Cell将进行合并处理" />
+            <Argument name="strExportSelect" type="String" in="false" out="false" option="false" variable="false" description="设定对Grid中的选择区域的Export方式。&#xD;&#xA;&#xD;&#xA;在设定为“allrecord”时，与选择区域无关，对所有Row进行Export。&#xD;&#xA;在设定为“selectrecord”时，仅对所选择的Row、Cell、Area进行Export。&#xD;&#xA;&#xD;&#xA;在省略值时适用“allrecord”。" />
+            <Argument name="strExportSize" type="String" in="false" out="false" option="false" variable="false" description="设定是否将Grid Cell的width、height属性值适用于Excel。&#xD;&#xA;&#xD;&#xA;在设定为“width”时，以相同的宽度进行Export。&#xD;&#xA;在设定为“height”时，以相同的高度进行Export。&#xD;&#xA;在设定为“both”时，以相同的宽度以及高度进行Export。&#xD;&#xA;&#xD;&#xA;在省略值时适用“width”。" />
+            <Argument name="strExportValue" type="String" in="false" out="false" option="false" variable="false" description="设定在以Excel文件格式进行Export时，所Export的内容以及格式。&#xD;&#xA;&#xD;&#xA;在设定为“allstyle”时，如果有选择的区域，则不会对因为选择而变更的属性进行Export。&#xD;&#xA;在设定为“selectstyle”时，如果有选择的区域，则同时会对因为选择而变更的属性进行Export。&#xD;&#xA;&#xD;&#xA;在设定值时，对value、format、calendardateformat、font、color、background(color)、-nexa-text-aign、-nexa-vertical-align、-nexa-b" />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="指定以“表单名!单元格区域”或“单元格区域”的形态对对象内容进行Export的位置。&#xD;&#xA;&#xD;&#xA;* 在添加2个以上的Item的情况下，在指定参数时应该避免各个数据的Row位置发生重叠。&#xD;&#xA;无法在相同的表单内将重复的Row指定为strRange参数。&#xD;&#xA;例如，在如下所示的代码中，当在第一行代码中将第二行Row(A1)指定为Export位置时，在下一行代码中，即使是列不同，也无法指定第二行Row(P2)。&#xD;&#xA;addExportItem(nexacro.ExportItemTypes.GRID, this.Grid00, &quot;" />
+            <Argument name="varExportSource" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定作为Export对象的组件。&#xD;&#xA;&#xD;&#xA;只能对当前Grid进行Export，需要设定为“this.Grid00”形态。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除添加到ExcelExportObject中的所有Item的属性。">
+        <Syntax text="ExcelExportObject.clear()">
+          <Return type="Number" description="返回所删除的Item的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="ExcelExportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="用于只删除ExcelExportObject中的指定类型的Item的方法。">
+        <Syntax text="ExcelExportObject.clearExportItems(constExportItemType)">
+          <Return type="Number" description="返回所删除的item的数量。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定作为删除对象的Item的类型。&#xD;&#xA;&#xD;&#xA;因为只能将当前Grid添加为Item，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回注册到ExcelExportObject中的Item数量的方法。">
+        <Syntax text="ExcelExportObject.count()">
+          <Return type="Number" description="返回所有item的数量。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回ExcelExportObject中的指定类型的Item数量的方法。">
+        <Syntax text="ExcelExportObject.countExportItems(constExportItemType)">
+          <Return type="Number" description="返回指定类型的item数量。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定需要对数量进行确认的Item的类型。&#xD;&#xA;&#xD;&#xA;因为只能将当前Grid添加为Item，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在ExcelExportObject中指定类型的特定Item的方法。">
+        <Syntax text="ExcelExportObject.delExportItem(constExportItemType,nItemIndex)">
+          <Return type="Boolean" description="在删除Item成功时，将返回&quot;true&quot;。&#xD;&#xA;在参数无效或删除Item失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定作为删除对象的Item的类型。&#xD;&#xA;&#xD;&#xA;因为只能将当前Grid添加为Item，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要删除的Item的索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过脚本动态生成的ExcelExportObject的方法。">
+        <Syntax text="ExcelExportObject.destroy()">
+          <Return type="Boolean" description="在ExcelExportObject被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除ExcelExportObject时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对设定到ExcelExportObject中的所有Item进行Export的方法。">
+        <Syntax text="ExcelExportObject.exportData( [strParam, strParamDS, nOrgValue, bFileDown] ) ;">
+          <Return type="Number" description="返回Export请求成功的Item的数量。&#xD;&#xA;&#xD;&#xA;在没有需要Export的Item时，将返回0。&#xD;&#xA;&#xD;&#xA;在参数为无效值时，将返回-1。" />
+          <Arguments>
+            <Argument name="bFileDown" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在完成Export之后生成的文件的下载与否。&#xD;&#xA;&#xD;&#xA;在设定为true时，自动下载文件。&#xD;&#xA;在设定为false时，不自动下载文件。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="nOrgValue" type="Number" in="false" out="false" option="false" variable="false" description="设定在Export时作为Cell值进行处理的对象。&#xD;&#xA;&#xD;&#xA;在设定为0或false时，对显示在Cell中的文本值进行Export。&#xD;&#xA;在设定为1或true时，对绑定到Cell中的Column值进行Export。&#xD;&#xA;在设定为2时，在Cell的displaytype属性值是“date”的情况下适用0，而在不是“date”的情况下适用1。&#xD;&#xA;&#xD;&#xA;在省略值时适用0。&#xD;&#xA;&#xD;&#xA;* 关于在valuetypecellindex属性中设定的Cell，与nOrgValue参数值无关，对所绑定的Column值进行Export。&#xD;&#xA;   关于没有在" />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="设定在与服务器进行通信时作为参数进行传递的值。&#xD;&#xA;&#xD;&#xA;在对如DB key等值进行传递时所使用的扩展功能。" />
+            <Argument name="strParamDS" type="String" in="false" out="false" option="false" variable="false" description="利用“Param_DataSet=export_DataSet”形态设定需要传递到服务器中的DataSet。&#xD;&#xA;&#xD;&#xA;根据开发环境，为了在服务器中实现附加功能而对DataSet进行传递时所使用的扩展功能。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportDataEx" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以显示在Cell中的值为基准对设定到ExcelExportObject中的所有Item进行Export的方法。">
+        <Syntax text="ExcelExportObject.exportDataEx( [strParam, strParamDS, bFileDown] ) ;">
+          <Return type="Number" description="返回Export请求成功的Item的数量。&#xD;&#xA;&#xD;&#xA;在没有需要Export的Item时，将返回0。&#xD;&#xA;&#xD;&#xA;在参数为无效值时，将返回-1。" />
+          <Arguments>
+            <Argument name="bFileDown" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在完成Export之后生成的文件的自动下载与否。&#xD;&#xA;&#xD;&#xA;在设定为true时，自动下载文件。&#xD;&#xA;在设定为true时，可能会根据环境显示用于进行下载的弹出式窗口。&#xD;&#xA;&#xD;&#xA;在设定为false时，不自动下载文件。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。" />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="设定在与服务器进行通信时作为参数进行传递的值。&#xD;&#xA;&#xD;&#xA;在对如DB key等值进行传递时所使用的扩展功能。" />
+            <Argument name="strParamDS" type="String" in="false" out="false" option="false" variable="false" description="利用“Param_DataSet=export_DataSet”形态设定需要传递到服务器中的DataSet。&#xD;&#xA;&#xD;&#xA;根据开发环境，为了在服务器中实现附加功能而对DataSet进行传递时所使用的扩展功能。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于只对ExcelExportObject中的指定类型的Item进行Export的方法。">
+        <Syntax text="ExcelExportObject.exportItems(constExportItemType)">
+          <Return type="Number" description="返回Export请求成功的Item的数量。&#xD;&#xA;在没有需要Export的Item时，将返回&quot;0&quot;。&#xD;&#xA;在参数为无效值时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定需要Export的Item的类型。&#xD;&#xA;&#xD;&#xA;因为只能将当前Grid添加为Item，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在ExcelExportObject的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="ExcelExportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回ExcelExportObject的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="ExcelExportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在ExcelExportObject中指定的类型的特定Item的方法。">
+        <Syntax text="ExcelExportObject.getExportItem(constExportItemType,nItemIndex)">
+          <Return type="Object" description="将与所指定的索引对应的Item作为ExportItem对象返回。&#xD;&#xA;在没有与所指定的索引对应的Item时，返回&quot;null&quot;。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定需要返回的Item的类型。&#xD;&#xA;&#xD;&#xA;因为只能将当前Grid添加为Item，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要返回的Item的索引。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在ExcelExportObject的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="ExcelExportObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在ExcelExportObject中声明的特定事件的方法。">
+        <Syntax text="ExcelExportObject.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从ExcelExportObject删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从ExcelExportObject的特定事件中删除句柄函数的方法。">
+        <Syntax text="ExcelExportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从ExcelExportObject的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="ExcelExportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更ExcelExportObject的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="ExcelExportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将ExcelExportObject的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="ExcelExportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将需要Export的Item添加到ExcelExportObject的特定位置上的方法。">
+        <Syntax text="ExcelExportObject.setExportItem( constExportItemType,nItemIndex,objExportItem )">
+          <Return type="Boolean" description="在添加Item成功时，将返回&quot;true&quot;。&#xD;&#xA;在参数无效或添加Item失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定作为Export对象的组件的类型。&#xD;&#xA;&#xD;&#xA;因为只能对当前Grid进行Export，因此需要设定为“nexacro.ExportItemTypes.GRID”。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要添加的Item的位置的索引。" />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="设定对Export信息进行设定的ExportItem对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Export的过程中发生错误时触发的事件。">
+        <Syntax text="ExcelExportObject.onerror(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Export的过程中根据进展状态触发的事件。">
+        <Syntax text="ExcelExportObject.onprogress(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在完成了所有的Export时触发的事件。">
+        <Syntax text="ExcelExportObject.onsuccess(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

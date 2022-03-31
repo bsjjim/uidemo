@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Sketch">
+    <ObjectInfo finalclass="false" inheritance="nexacro.Component" classname="nexacro.Sketch" shorttypename="Sketch" csstypename="Sketch" csscontrolname="SketchControl" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onload" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="可供用户将简单的图形或签名等直接绘制在画面上的组件。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时通过Accessibility输出的Action的属性。" csspropertyname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时是否输出下级组件的Accessibility的属性。" csspropertyname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时通过Accessibility输出的Description的属性。" csspropertyname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时是否输出Accessibility相关属性值的属性。" csspropertyname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时通过Accessibility输出的Label的属性。" csspropertyname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在选择框移动到Sketch时通过Accessibility输出的Role的属性。" csspropertyname="" normalpropertyname="accessibilityrole" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的背景区域的属性。" csspropertyname="background" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的角落形状的属性。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的下端坐标值的属性。" csspropertyname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的阴影效果的属性。" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本颜色的属性。" csspropertyname="color" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Sketch的Style设定为在XCSS文件中定义的class的属性。" csspropertyname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch区域显示的鼠标指针类型的属性。" csspropertyname="cursor" normalpropertyname="cursor" />
+      <Property name="editmode" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="stroke" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="EditMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在通过鼠标或触摸对Sketch区域进行拖曳时接收输入的方法的属性。" csspropertyname="" normalpropertyname="editmode" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的可使用与否的属性。" csspropertyname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否在Sketch中触发事件的属性。" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="enableredraw" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch发生变更时是否自动重新绘制画面的属性。" csspropertyname="" normalpropertyname="enableredraw" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定动态生成需要显示在Sketchr中的文本的公式的属性。" csspropertyname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch中使用的字体的属性。" csspropertyname="font" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的高度的属性。" csspropertyname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定执行Sketch的基本动作用的快捷键的属性。" csspropertyname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定适用于Sketch的InitValue的ID的属性。" csspropertyname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的左侧坐标值的属性。" csspropertyname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch中显示的字符的间隔（字间距）的属性。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch显示在画面中的最大高度的属性。" csspropertyname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch显示在画面中的最大宽度的属性。" csspropertyname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch显示在画面中的最小高度的属性。" csspropertyname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch显示在画面中的最小宽度的属性。" csspropertyname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的边框的属性。" csspropertyname="-nexa-border" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在Sketch的边框(Border)内侧显示的Edge图像的属性。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch区域的内侧留白的属性。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本或内容的水平排列方式的属性。" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在显示于Sketch的文本中适用的效果的属性。" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本或内容的垂直排列方式的属性。" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch区域的透明度的属性。" csspropertyname="opacity" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含Sketch的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在父级对象使用画面分割功能时用于显示Sketch的画面索引的属性。" csspropertyname="" normalpropertyname="positionstep" />
+      <Property name="readonly" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定是否允许在Sketch中进行编辑的属性。" csspropertyname="" normalpropertyname="readonly" />
+      <Property name="redoable" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含是否可以在Sketch中使用redo()方法的只读属性。" csspropertyname="" normalpropertyname="redoable" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的右侧坐标值的属性。" csspropertyname="" normalpropertyname="right" />
+      <Property name="rtl" group="Action" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Sketch中设定内部内容或组件的显示基准的属性。" csspropertyname="" normalpropertyname="rtl" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在利用Tab键在组件之间移动焦点时的Sketch的顺序的属性。" csspropertyname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在利用Tab键在组件之间移动焦点时是否允许Sketch获得焦点的属性。" csspropertyname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch中没有输入值时显示在画面中的文本的属性。" csspropertyname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="用于设定在将鼠标指针移动到Sketch时显示的气球帮助信息的属性。" csspropertyname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="用于设定在Sketch中显示气球帮助信息的位置以及方式的属性。" csspropertyname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的上端坐标值的属性。" csspropertyname="" normalpropertyname="top" />
+      <Property name="undoable" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含是否可以在Sketch中使用undo()方法的只读属性。" csspropertyname="" normalpropertyname="undoable" />
+      <Property name="usecontextmenu" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch的编辑区域点击鼠标右键时是否显示默认弹出式菜单的属性。" csspropertyname="" normalpropertyname="usecontextmenu" />
+      <Property name="value" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含在Sketch中完成编辑的图像数据的只读属性。" csspropertyname="" normalpropertyname="value" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch是否显示在画面中的属性。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示Sketch的宽度的属性。" csspropertyname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本的单词之间的间隔的属性。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的背景区域的属性。" csspropertyname="background" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的角落形状的属性。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的阴影效果的属性。" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本颜色的属性。" csspropertyname="color" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch区域显示的鼠标指针类型的属性。" csspropertyname="cursor" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch中使用的字体的属性。" csspropertyname="font" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch中显示的字符的间隔（字间距）的属性。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch的边框的属性。" csspropertyname="-nexa-border" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定需要在Sketch的边框(Border)内侧显示的Edge图像的属性。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch区域的内侧留白的属性。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+        <Property name="-nexa-rtl-background-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch的rtl属性中适用true时显示在背景中的图像的属性。" csspropertyname="-nexa-rtl-background-image" normalpropertyname="" />
+        <Property name="-nexa-rtl-edge-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch的rtl属性中适用true时显示在边框(Border)内侧的Edge图像的属性。" csspropertyname="-nexa-rtl-edge-image" normalpropertyname="" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本或内容的水平排列方式的属性。" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在显示于Sketch的文本中适用的效果的属性。" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本或内容的垂直排列方式的属性。" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Sketch区域的透明度的属性。" csspropertyname="opacity" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在Sketch中的文本的单词之间的间隔的属性。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="sketchtextarea" classname="nexacro.TextArea" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Sketch中声明特定事件并添加的方法。">
+        <Syntax text="Sketch.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到Sketch的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Sketch的特定事件添加句柄函数的方法。">
+        <Syntax text="Sketch.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对函数进行检索并作为句柄函数添加到Sketch的特定事件中的方法。">
+        <Syntax text="Sketch.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在事件被触发时执行的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Sketch显示在画面的最前方。">
+        <Syntax text="Sketch.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Sketch提前一步显示在画面上。">
+        <Syntax text="Sketch.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对Sketch的value属性值以及输入状态进行初始化的方法。">
+        <Syntax text="Sketch.clear()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="Sketch.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除通过脚本动态生成的Sketch的方法。">
+        <Syntax text="Sketch.destroy()">
+          <Return type="Boolean" description="在Sketch被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除Sketch时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="drawErase" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以作为参数传递的坐标信息为基础根据Erase对象值进行擦除的方法。">
+        <Syntax text="Sketch.drawErase( nXpos, nYpos [, bStart] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bStart" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为“true”时，将所传递的坐标设定为新的起始点。&#xD;&#xA;在设定为“false”时，在利用假想的线对之前的坐标值与所传递的坐标值进行连接之后，沿着线删除输入值。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的x坐标值。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的y坐标值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="drawStroke" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以作为参数传递的坐标信息为基础根据Brush对象值绘制线条的方法。">
+        <Syntax text="Sketch.drawStroke( nXpos, nYpos [, bStart] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bStart" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，将所传递的坐标设定为新的起始点。&#xD;&#xA;在设定为false时，绘制对之前的坐标值以及所传递的坐标值进行连接的线条。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的x坐标值。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的y坐标值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="drawText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在通过参数传递的坐标位置上根据TextFont对象值显示文本的方法。">
+        <Syntax text="Sketch.drawText( nXpos, nYpos, strText [, bMultiline] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bMultiline" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为“ture”时，对文本内的换行符进行换行处理。&#xD;&#xA;在设定为“false”时，将对文本内的换行符进行忽略而以单行显示。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的x坐标值。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的y坐标值。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在所传递的坐标位置上的文本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Sketch的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="Sketch.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回从特定事件中查找到的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在特定事件中需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="getDisplayText()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回Sketch的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="Sketch.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回null。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;&#xD;&#xA;句柄函数的索引从0开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="Sketch.getFocus()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回以父级组件的Top位置为基准的Sketch的bottom值的方法。">
+        <Syntax text="Sketch.getOffsetBottom();">
+          <Return type="Number" description="以像素单位的数字返回以父级组件的Top位置为基准的Sketch的bottom值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回Sketch的高度的方法。">
+        <Syntax text="Sketch.getOffsetHeight();">
+          <Return type="Number" description="将Sketch的高度转换成像素单位的数字并返回。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回以父级组件的Left位置为基准的Sketch的left值的方法。">
+        <Syntax text="Sketch.getOffsetLeft();">
+          <Return type="Number" description="以像素单位的数字返回以父级组件的Left位置为基准的Sketch的left值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回以父级组件的Left位置为基准的Sketch的right值的方法。">
+        <Syntax text="Sketch.getOffsetRight();">
+          <Return type="Number" description="以像素单位的数字返回以父级组件的Left位置为基准的Sketch的right值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回以父级组件的Top位置为基准的Sketch的top值的方法。">
+        <Syntax text="Sketch.getOffsetTop();">
+          <Return type="Number" description="以像素单位的数字返回以父级组件的Top位置为基准的Sketch的top值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位的数字返回Sketch的宽度的方法。">
+        <Syntax text="Sketch.getOffsetWidth();">
+          <Return type="Number" description="将Sketch的宽度转换成像素单位的数字并返回。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的bottom属性值的方法。">
+        <Syntax text="Sketch.getPixelBottom();">
+          <Return type="Number" description="以像素单位返回Sketch的bottom属性值。&#xD;&#xA;&#xD;&#xA;在没有设定bottom属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的height属性值的方法。">
+        <Syntax text="Sketch.getPixelHeight();">
+          <Return type="Number" description="以像素单位返回Sketch的height属性值。&#xD;&#xA;&#xD;&#xA;在没有设定height属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的left属性值的方法。">
+        <Syntax text="Sketch.getPixelLeft();">
+          <Return type="Number" description="以像素单位返回Sketch的left属性值。&#xD;&#xA;&#xD;&#xA;在没有设定left属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的right属性值的方法。">
+        <Syntax text="Sketch.getPixelRight();">
+          <Return type="Number" description="以像素单位返回Sketch的right属性值。&#xD;&#xA;&#xD;&#xA;在没有设定right属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的top属性值的方法。">
+        <Syntax text="Sketch.getPixelTop();">
+          <Return type="Number" description="以像素单位返回Sketch的top属性值。&#xD;&#xA;&#xD;&#xA;在没有设定top属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位返回Sketch的width属性值的方法。">
+        <Syntax text="Sketch.getPixelWidth();">
+          <Return type="Number" description="以像素单位返回Sketch的width属性值。&#xD;&#xA;&#xD;&#xA;在没有设定width属性值时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hideTextEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于隐藏显示在Sketch中的文本输入窗口的方法。">
+        <Syntax text="Sketch.hideTextEditor( [bClear] )">
+          <Return type="String" description="返回已输入到文本输入窗口中的文本值。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为“true”时，删除输入到文本输入窗口中的文本。&#xD;&#xA;在设定为“false”时，保留输入到文本输入窗口中的文本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在通过脚本动态生成Sketch之后进行初始化的方法。">
+        <Syntax text="Sketch.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定Sketch的ID。" />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的bottom属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vTop、vHeight值时，vBottom值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的top属性值为基准决定Sketch的bottom。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的bottom。单位设定时，以基准组件的top属性值为基准决定Sketch的bottom" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的height属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的height。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的left属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的right属性值为基准决定Sketch的left。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的left。" />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Sketch的最大高度值。&#xD;&#xA;&#xD;&#xA;当设定为小于vMinHeight的值时，将设定为vMinHeight值。" />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Sketch的最大宽度值。&#xD;&#xA;&#xD;&#xA;当设定为小于vMinWidth的值时，将设定为vMinWidth值。" />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Sketch的最小高度值。" />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定在画面中显示Sketch的最小宽度值。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的right属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vLeft、vWidth值时，vRight值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的left属性值为基准决定Sketch的right。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的right。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的top属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的bottom属性值为基准决定Sketch的top。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的top。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的width属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在Sketch的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="Sketch.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadSketch" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的图像设定到value属性并显示在画面中的方法。">
+        <Syntax text="Sketch.loadSketch( strData )">
+          <Return type="Boolean" description="在载入图像成功时，将返回true并触发onload事件。&#xD;&#xA;在载入图像失败时，将返回false并触发onerror事件。&#xD;&#xA;&#xD;&#xA;在不支持的文件格式、不存在的文件、通信错误时，将返回false。" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要在Sketch显示的图像的路径或数据。&#xD;&#xA;&#xD;&#xA;利用“theme://images/图像名称”的格式设定在主题中定义的图像。&#xD;&#xA;使用“http://路径/图像名称”、“https://路径/图像名称”的格式设定网络上的图像。&#xD;&#xA;以使用在TypeDefinition区域的Services中定义的Prefix的格式进行设定。 &#xD;&#xA;使用以窗体的位置为基准的“./路径/图像名称”格式的相对路径进行设定。&#xD;&#xA;利用字符串设定通过Base64进行编码的图像数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Sketch的位置以及大小的方法。">
+        <Syntax text="Sketch.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的bottom属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vTop、vHeight值时，vBottom值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的top属性值为基准决定Sketch的bottom。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的bottom。单位设定时，以基准组件的top属性值为基准决定Sketch的bottom" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的height属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的height。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的left属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的right属性值为基准决定Sketch的left。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的left。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的right属性值。&#xD;&#xA;&#xD;&#xA;在同时设定了vLeft、vWidth值时，vRight值将被忽略。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的left属性值为基准决定Sketch的right。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的right。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的top属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，以基准组件的bottom属性值为基准决定Sketch的top。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的top。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的width属性值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，与通过参数传递的组件相比将Sketch在后一层显示在画面上。">
+        <Syntax text="Sketch.moveToNext( objComp )&#xA;Sketch.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定作为基准的组件。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定作为基准的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，与通过参数传递的组件相比将Sketch在前一层显示在画面上。">
+        <Syntax text="Sketch.moveToPrev( objComp )&#xA;Sketch.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定作为基准的组件。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定作为基准的组件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="redo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对在Sketch中执行Undo的输入重新进行处理的方法。">
+        <Syntax text="Sketch.redo()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在Sketch中声明的特定事件的方法。">
+        <Syntax text="Sketch.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从Sketch删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Sketch的特定事件中删除句柄函数的方法。">
+        <Syntax text="Sketch.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Sketch的特定事件中删除与所检索到的函数相同的句柄函数的方法。">
+        <Syntax text="Sketch.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回1。&#xD;&#xA;&#xD;&#xA;在删除句柄函数失败时，将返回0。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要删除的句柄函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Sketch的大小的方法。">
+        <Syntax text="Sketch.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的height属性值。&#xD;&#xA;无法设定负数值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的height。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的height属性值为基准决定Sketch的height。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="利用pixel或比例（“%”）单位的数字设定Sketch的width属性值。&#xD;&#xA;无法设定负数值。&#xD;&#xA;&#xD;&#xA;* 当所设定的值中包含基准组件时：&#xD;&#xA;在以pixel单位设定时，基准组件值将被忽略，并利用pixel值决定Sketch的width。&#xD;&#xA;在以比例（“%”）单位设定时，以基准组件的width属性值为基准决定Sketch的width。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveSketch" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将显示在Sketch中的图像以Base64编码的数据格式存储到value属性中的方法。">
+        <Syntax text="Sketch.saveSketch([strFormat [, nOption]] )">
+          <Return type="Boolean" description="在存储图像成功时，将返回true并触发onsuccess事件。&#xD;&#xA;在存储图像失败时，将返回false并触发onerror事件。" />
+          <Arguments>
+            <Argument name="nOption" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定当文件格式为“JPG”时的压缩比例。&#xD;&#xA;压缩比例可以设定为0~100范围内的整数值。&#xD;&#xA;&#xD;&#xA;在不设定值时适用100。" />
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要存储的文件的格式。&#xD;&#xA;所支持的文件格式请参考Remark项目的表。&#xD;&#xA;&#xD;&#xA;在不设定值时适用“PNG”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveSketchToFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="用于将显示在Sketch中的图像存储成文件的方法。">
+        <Syntax text="Sketch.saveSketchToFile( strPath [, strFormat [, nOption]] )">
+          <Return type="Boolean" description="在存储图像成功时，将返回true并触发onsuccss事件。&#xD;&#xA;在存储图像失败时，将返回false并触发onerror事件。" />
+          <Arguments>
+            <Argument name="nOption" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定当文件格式为“JPG”时的压缩比例。&#xD;&#xA;&#xD;&#xA;压缩比例可以设定为0~100范围内的整数值。&#xD;&#xA;在不设定值时适用100。" />
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的格式。&#xD;&#xA;可以设定为“BMP”、“BMP_MONO”、“JPG”、“TIF”、“TIF_24”、“TIF_MONO”、“GIF”、“PNG”。&#xD;&#xA;&#xD;&#xA;在Android NRE中仅支持“JPG”、“PNG”格式。&#xD;&#xA;在不设定值时适用“BMP”。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要存储的文件的路径以及文件名。&#xD;&#xA;&#xD;&#xA;Windows NRE只能设定文件名，文件将被存储在“我的文档”文件夹中。&#xD;&#xA;在Android NRE中，利用“%USERAPP%”以及“%SD_CARD%” Alias设定路径以及文件名。&#xD;&#xA;不支持iOS/iPadOS NRE。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Sketch显示在画面的最后方。">
+        <Syntax text="Sketch.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在父级相同的组件中，将Sketch推后一步显示在画面上。">
+        <Syntax text="Sketch.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setBrushColor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Brush对象的颜色的方法。">
+        <Syntax text="Sketch.setBrushColor( strColor )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strColor" type="String" in="false" out="false" option="false" variable="false" description="利用预先定义的颜色名称或颜色代码设定Brush对象的颜色。&#xD;&#xA;&#xD;&#xA;利用如“red”、“blue”等字符串设定相应的颜色。&#xD;&#xA;可以利用以“#”符号开始的6位hexadecimal值设定颜色代码。(&quot;#FF00FF&quot;)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setBrushSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Brush对象的大小的方法。">
+        <Syntax text="Sketch.setBrushSize( nSize )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定Brush对象的大小。&#xD;&#xA;无法设定为负数值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setBrushType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Brush对象的形态的方法。">
+        <Syntax text="Sketch.setBrushType( enumType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="利用下述值中的一个设定Brush对象的形态。&#xD;&#xA;当设定错误的值时适用“round”。&#xD;&#xA;&#xD;&#xA;在设定为“round”时，利用圆形绘制Brush对象。&#xD;&#xA;在设定为“square”时，利用矩形绘制Brush对象。&#xD;&#xA;在设定为“butt”时，利用线条绘制Brush对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEraseSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定Erase对象的直径的方法。">
+        <Syntax text="Sketch.setEraseSize( nSize )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定Erase对象的直径。&#xD;&#xA;无法设定为负数值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更Sketch的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="Sketch.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将Sketch的特定事件中的第一个句柄函数变更为所检索到的函数的方法。">
+        <Syntax text="Sketch.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回0。&#xD;&#xA;&#xD;&#xA;在变更第一个句柄函数失败时，将返回-1。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数进行检索的区域。&#xD;&#xA;当相应区域中没有定义函数时，向上级区域进行检索。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用字符串设定用于替代现有句柄函数的函数的名称。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Sketch赋予焦点的方法。">
+        <Syntax text="Sketch.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="返回在Sketch获得焦点之前拥有焦点的组件。&#xD;&#xA;&#xD;&#xA;在没有拥有焦点的组件或执行方法失败时，将返回null。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="设定在Sketch为容器组件时是否将焦点移动到子组件。&#xD;&#xA;&#xD;&#xA;在设定为true时，将焦点移动到子组件中可以接收焦点的第一个组件。&#xD;&#xA;在设定为false时，将焦点移动到Sketch。&#xD;&#xA;&#xD;&#xA;在Sketch为容器组件的情况下，如果没有设定值时，以true工作。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="用于设定在父级组件中有滚动条的情况下，是否以Sketch为基准移动滚动条。&#xD;&#xA;&#xD;&#xA;在设定为true时，以Sketch显示在画面中的方式移动滚动条。&#xD;&#xA;在设定为false时，无论Sketch的位置如何都不移动滚动条。&#xD;&#xA;&#xD;&#xA;在不设定值时以true工作。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Top位置为基准的Sketch的bottom值的方法。">
+        <Syntax text="Sketch.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Top位置为基准的Sketch的bottom值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定Sketch的高度的方法。">
+        <Syntax text="Sketch.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定Sketch的高度。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Left位置为基准的Sketch的left值的方法。">
+        <Syntax text="Sketch.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Left位置为基准的Sketch的left值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Left位置为基准的Sketch的right值的方法。">
+        <Syntax text="Sketch.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Left位置为基准的Sketch的right值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定以父级组件的Top位置为基准的Sketch的top值的方法。">
+        <Syntax text="Sketch.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定以父级组件的Top位置为基准的Sketch的top值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以像素单位设定Sketch的宽度的方法。">
+        <Syntax text="Sketch.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用像素单位的数字设定Sketch的宽度。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTextFont" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在Sketch的文本输入窗口中使用的字体的方法。">
+        <Syntax text="Sketch.setTextFont( strTextFont )&#xA;&#xA;&#xA;strTextFont ::= [&amp;lt;font-style&amp;gt;] [&amp;lt;font-weight&amp;gt;] &amp;lt;font-size&amp;gt; ['/'&amp;lt;line-height&amp;gt;] &amp;lt;font-family&amp;gt;&#xA;&#xA;&amp;lt;font-style&amp;gt; ::= 'normal' | 'italic'&#xA;&amp;lt;font-weight&amp;gt; ::= 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'&#xA;&amp;lt;font-size&amp;gt; ::= &amp;lt;nSize&amp;gt; 'px'|'pt'&#xA;&amp;lt;line-height&amp;gt; ::= 'normal' | &amp;lt;nValue&amp;gt; | &amp;lt;nPixel&amp;gt;'px' | &amp;lt;nPercent&amp;gt;'%'&#xA;&amp;lt;font-family&amp;gt; ::= &amp;lt;font-name&amp;gt; [',' &amp;lt;font-name&amp;gt;]*">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="&amp;lt;font-family&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="利用列表设定字体名称。&#xA;&#xA;可以利用逗号（“,”）区分设定多个字体名称。&#xA;优先适用较早声明的字体。&#xA;当系统中没有声明的字体时，将按照声明的顺序适用可使用的字体。&#xA;当所有声明的字体都不存在时，适用系统基本字体。" />
+            <Argument name="&amp;lt;font-name&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定字体的名称。" />
+            <Argument name="&amp;lt;font-size&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="利用pixel或point单位设定字体的大小。&#xA;&#xA;需要根据单位设定为“px”或“pt”单位。" />
+            <Argument name="&amp;lt;font-style&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定字体的样式。&#xA;&#xA;在设定为“normal”时，不适用样式。&#xA;在设定为“italic”时，适用斜体样式。" />
+            <Argument name="&amp;lt;font-weight&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定字体的粗细。&#xA;&#xA;在设定为“normal”时，不适用粗细。&#xA;在设定为“bold”时，适用粗体。&#xA;&#xA;在设定为“100”~“900”时，以所设定的粗细适用字体。&#xA;在设定为“100”~“900”时，需要定义与所设定的粗细对应的字体。" />
+            <Argument name="&amp;lt;line-height&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定在多行显示文本时的行间距。&#xA;&#xA;无法设定负数值。&#xA;&#xA;在设定为“normal”时，不对行间距进行设定。&#xA;在设定为“normal”时，在不同的网络浏览器中将适用不同的行间距。&#xA;在设定为“normal”时，Nexacro Runtime EXInvironment将以与字体大小相乘的值（&lt;nValue&gt;值）为“1.5”时相同的方式工作。" />
+            <Argument name="&amp;lt;nPercent&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定需要与字体大小相乘的比例值。&#xA;&#xA;将计算结果值作为行间距适用。&#xA;无法省略“%”单位。" />
+            <Argument name="&amp;lt;nPixel&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定行间距。&#xA;&#xA;无法省略“px”单位。" />
+            <Argument name="&amp;lt;nSize&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="利用point单位的整数值设定字体大小。&#xA;&#xA;无法设定负数值。" />
+            <Argument name="&amp;lt;nValue&amp;gt;" type="String" in="false" out="false" option="false" variable="false" description="设定需要与字体大小相乘的值。&#xA;&#xA;将计算结果值作为行间距适用。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在画面上显示通过脚本动态生成的Sketch的方法。">
+        <Syntax text="Sketch.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showTextEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在通过参数传递的坐标位置上显示文本输入窗口的方法。">
+        <Syntax text="Sketch.showTextEditor( nXpos, nYpos, nWidth, nHeight, [strText] )">
+          <Return type="String" description="返回已输入到文本输入窗口中的文本值。" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定文本输入窗口的高度。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定文本输入窗口的宽度。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的x坐标值。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="设定以Sketch的左上端为基准的y坐标值。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在文本输入框中的文本。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="undo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于取消在Sketch中最后输入的值的方法。">
+        <Syntax text="Sketch.undo()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内点击鼠标左键时触发的事件。">
+        <Syntax text="Sketch.onclick(obj:nexacro.Sketch,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域点击鼠标右键或维持触摸一定时间时触发的事件。">
+        <Syntax text="Sketch.oncontextmenu-editable(obj:nexacro.Sketch,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内双击鼠标左键时触发的事件。">
+        <Syntax text="Sketch.ondblclick(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondevicebuttonup" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="在移动设备中按下设备按钮时触发的事件。">
+        <Syntax text="Sketch.ondevicebuttonup(obj:nexacro.Sketch,e:nexacro.DeviceButtonEventInfo);">
+          <Return type="Boolean" description="在返回true时，不会将事件传播到上级组件。&#xD;&#xA;在返回false时，将事件传播到上级组件。&#xD;&#xA;在省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DeviceButtonEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内利用鼠标左键执行拖曳时触发的事件。">
+        <Syntax text="Sketch.ondrag(obj:nexacro.Sketch,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，将进入拖曳状态，且不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将取消拖曳状态，并将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针进入到Sketch区域内时触发的事件。">
+        <Syntax text="Sketch.ondragenter(obj:nexacro.Sketch,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针移出到Sketch区域外时触发的事件。">
+        <Syntax text="Sketch.ondragleave(obj:nexacro.Sketch,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在拖曳状态的鼠标指针在Sketch区域内移动时触发的事件。">
+        <Syntax text="Sketch.ondragmove(obj:nexacro.Sketch,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内释放拖曳状态的鼠标按钮时触发的事件。">
+        <Syntax text="Sketch.ondrop(obj:nexacro.Sketch,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch上执行方法的过程中发生错误时触发的事件。">
+        <Syntax text="Sketch.onerror(obj:nexacro.Sketch,e:nexacro.SketchErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SketchErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch中尝试输入时触发的事件。">
+        <Syntax text="Sketch.oninput(obj:nexacro.Sketch,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch获得焦点的状态下按下键盘中的按键时触发的事件。">
+        <Syntax text="Sketch.onkeydown(obj:nexacro.Sketch,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch获得焦点的状态下原来被按下的按键被释放时触发的事件。">
+        <Syntax text="Sketch.onkeyup(obj:nexacro.Sketch,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在焦点从Sketch移出时触发的事件。">
+        <Syntax text="Sketch.onkillfocus(obj:nexacro.Sketch,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内按下鼠标左键时触发的事件。">
+        <Syntax text="Sketch.onlbuttondown(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内释放被按下的鼠标左键时触发的事件。">
+        <Syntax text="Sketch.onlbuttonup(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在执行loadSketch()方法成功时触发的事件。">
+        <Syntax text="Sketch.onload(obj:nexacro.Sketch,e:nexacro.SketchLoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SketchLoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="当在Sketch区域内按下鼠标左/右键以外的任何按钮时触发的事件。">
+        <Syntax text="Sketch.onmousedown(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在鼠标指针进入到Sketch区域内时触发的事件。">
+        <Syntax text="Sketch.onmouseenter(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在鼠标指针移出到Sketch区域外时触发的事件。">
+        <Syntax text="Sketch.onmouseleave(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内移动鼠标指针时触发的事件。">
+        <Syntax text="Sketch.onmousemove(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在释放除鼠标的左键/右键之外的其他按钮时触发的事件。">
+        <Syntax text="Sketch.onmouseup(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内旋转鼠标的滚轮按钮时触发的事件。">
+        <Syntax text="Sketch.onmousewheel(obj:nexacro.Sketch,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，将对滚轮按钮旋转值进行忽略，且不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将对滚轮按钮旋转值进行处理，并将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch的位置发生移动时触发的事件。">
+        <Syntax text="Sketch.onmove(obj:nexacro.Sketch,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内按下鼠标右键时触发的事件。">
+        <Syntax text="Sketch.onrbuttondown(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内释放鼠标右键时触发的事件。">
+        <Syntax text="Sketch.onrbuttonup(obj:nexacro.Sketch,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传递到上级组件。&#xA;在事件中作为返回值返回false时，将事件传递到上级组件。&#xA;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在焦点移入到Sketch时触发的事件。">
+        <Syntax text="Sketch.onsetfocus(obj:nexacro.Sketch,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch的大小发生变更时触发的事件。">
+        <Syntax text="Sketch.onsize(obj:nexacro.Sketch,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在执行saveSketch()、saveSketchToFile()方法成功时触发的事件。">
+        <Syntax text="Sketch.onsuccess(obj:nexacro.Sketch,e:nexacro.SketchEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SketchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内释放触摸时触发的事件。">
+        <Syntax text="Sketch.ontouchend(obj:nexacro.Sketch,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内维持触摸状态并移动时触发的事件。">
+        <Syntax text="Sketch.ontouchmove(obj:nexacro.Sketch,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Sketch区域内开始触摸时触发的事件。">
+        <Syntax text="Sketch.ontouchstart(obj:nexacro.Sketch,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="在事件中作为返回值返回true时，不会将事件传播到上级组件。&#xD;&#xA;在事件中作为返回值返回false时，将事件传播到上级组件。&#xD;&#xA;&#xD;&#xA;在事件中省略返回值时，将适用false。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

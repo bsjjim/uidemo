@@ -1,0 +1,30 @@
+﻿{
+  "name": "ListView",
+  "version": "21.0.0.301",
+  "description": "Nexacro N Unified Framework Library",
+  "license": "",
+  "scripts": [
+    "ListView.js"
+  ],
+  "objInfo": [
+    "CompBaseEx/metainfo/SimpleComp.info",
+    "CompBaseEx/metainfo/ComplexComp.info",
+    "ListView/metainfo/ListView.info",
+    "ListView/metainfo/ListViewBandControl.info",
+    "ListView/metainfo/ListViewDetailBandControl.info",
+    "ListView/metainfo/ListViewCellControl.info",
+    "ListView/metainfo/ListViewBandExpandbarControl.info",
+    "ListView/metainfo/ListViewBandStatusEventInfo.info",
+    "ListView/metainfo/ListViewClickEventInfo.info",
+    "ListView/metainfo/ListViewDragEventInfo.info",
+    "ListView/metainfo/ListViewMouseEventInfo.info",
+    "ListView/metainfo/ListViewSelectEventInfo.info",
+    "ListView/metainfo/ListViewEditEventInfo.info"
+  ],
+  "designscripts": [
+    "CompBaseEx/Design/DesignSimpleComp.js",
+    "CompBaseEx/Design/DesignComplexComp.js",
+    "ListView/Design/DesignListView.js"
+  ]
+}
+

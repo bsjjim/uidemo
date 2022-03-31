@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsPath">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsObject" classname="nexacro.GraphicsPath" shorttypename="GraphicsPath" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Graphics组件上显示路径时使用的对象。" />
+    <PropertyInfo>
+      <Property name="fillstyle" group="Appearance" subgroup="" refreshinfo="" edittype="ChartFillStyle" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定填充到GraphicsPath的内部区域的形式以及颜色的属性。" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsPath的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="10" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定在strokejoin属性值为&quot;miter&quot;时，在特定条件下以&quot;bevel&quot;适用变更的比例值的属性。" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsPath区域的透明度的属性。" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含GraphicsPath的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="butt" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StrokeCap" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在GraphicsPath中的路径的两侧末端形状的属性。" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="miter" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StrokeJoin" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在GraphicsPath中的路径的连接点形状的属性。" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Misc." subgroup="" refreshinfo="" edittype="Line" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定显示在GraphicsPath中的路径的颜色以及形式的属性。" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsPath是否显示在画面中的属性。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定以父级对象为基准的需要显示GraphicsPath的x轴坐标值的属性。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定以父级对象为基准的需要显示GraphicsPath的y轴坐标值的属性。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="arcTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将从当前位置到通过参数传递的位置为止的椭圆弧路径添加到GraphicsPath中的方法。">
+        <Syntax text="GraphicsPath.arcTo(  nX, nY, nRadiusX, nRadiusY, nRotation, bClockwise, bLarge )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bClockwise" type="Boolean" in="false" out="false" option="false" variable="false" description="设定以椭圆弧路径的开始点以及结束点为基准的需要显示的椭圆弧。&#xD;&#xA;&#xD;&#xA;在设定为true或1时，以从当前位置到nX、nY为止的直线为基准显示位于顺时针方向上的椭圆弧。&#xD;&#xA;在设定为false或0时，以从当前位置到nX、nY为止的直线为基准显示位于逆时针方向上的椭圆弧。" />
+            <Argument name="bLarge" type="Boolean" in="false" out="false" option="false" variable="false" description="设定以椭圆弧路径的开始点以及结束点为基准的需要显示的椭圆弧。&#xD;&#xA;&#xD;&#xA;在设定为true或1时，显示位于bClockwise方向上的椭圆弧中的较大的椭圆弧。&#xD;&#xA;在设定为false或0时，显示位于bClockwise方向上的椭圆弧中的较小的椭圆弧。" />
+            <Argument name="nRadiusX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要显示的椭圆弧的水平半径。" />
+            <Argument name="nRadiusY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要显示的椭圆弧的垂直半径。" />
+            <Argument name="nRotation" type="Number" in="false" out="false" option="false" variable="false" description="设定需要显示的椭圆弧的x轴的旋转角度。&#xD;&#xA;&#xD;&#xA;在设定为180度时，将以与0度时相同的形状显示。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的椭圆弧路径的x坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的x属性值为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的椭圆弧路径的y坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的y属性值为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bezierCurveTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将从当前位置到通过参数传递的位置为止的cubic Bezier曲线路径添加到GraphicsPath中的方法。">
+        <Syntax text="GraphicsPath.bezierCurveTo( nCBeginX, nCBeginY, nCEndX, nCEndY, nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCBeginX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定cubic Bezier曲线的控制点的开始点x坐标位置。" />
+            <Argument name="nCBeginY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定cubic Bezier曲线的控制点的开始点y坐标位置。" />
+            <Argument name="nCEndX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定cubic Bezier曲线的控制点的结束点x坐标位置。" />
+            <Argument name="nCEndY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定cubic Bezier曲线的控制点的结束点y坐标位置。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的cubic Bezier曲线的x坐标位置。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的cubic Bezier曲线的y坐标位置。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在GraphicsPath中设定的所有路径数据的方法。">
+        <Syntax text="GraphicsPath.clear()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="closePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以直线连接在GraphicsPath中设定的路径的结束点以及开始点的方法。">
+        <Syntax text="GraphicsPath.closePath()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从内存中彻底删除GraphicsPath的方法。">
+        <Syntax text="GraphicsPath.destroy()">
+          <Return type="Boolean" description="在GraphicsPath被正常删除时，将返回true。&#xD;&#xA;&#xD;&#xA;在没有正常删除GraphicsPath时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以Graphics组件为基准返回包含Border区域的显示GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getBoundRect( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsPath有Border时，所返回的区域信息中包含Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回父级与GraphicsPath相同的Graphics对象中的下一个对象的方法。">
+        <Syntax text="GraphicsPath.getNextSibling()">
+          <Return type="Object" description="返回父级相同的下一个Graphics对象。&#xD;&#xA;&#xD;&#xA;在没有下一个Graphics对象时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以父级对象为基准返回包含Border区域的显示GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getOffsetBoundRect( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsPath有Border时，所返回的区域信息中包含Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以父级对象为基准返回包含Border区域的显示GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getOffsetBoundRect( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsPath有Border时，所返回的区域信息中包含Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以父级对象为基准且排除Border区域的显示GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getOffsetRegion( );">
+          <Return type="Object" description="利用Rect对象返回以父级对象的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsPath有Border时，所返回的区域信息中排除Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPathData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="利用以SVG格式的字符串返回在GraphicsPath中设定的路径数据的方法。">
+        <Syntax text="GraphicsPath.getPathData()">
+          <Return type="String" description="利用SVG格式的字符串返回路径数据。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回父级与GraphicsPath相同的Graphics对象中的上一个对象的方法。">
+        <Syntax text="GraphicsPath.getPreviousSibling()">
+          <Return type="Object" description="返回父级相同的上一个Graphics对象。&#xD;&#xA;&#xD;&#xA;在没有上一个Graphics对象时，将返回null。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以Graphics组件基准返回GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getRect( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;即使是在GraphicsPath有Border的情况下，也会与Border区域无关地返回GraphicsPath的实际区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以Graphics组件为基准且排除Border区域的显示GraphicsPath的区域信息的方法。">
+        <Syntax text="GraphicsPath.getRegion( );">
+          <Return type="Object" description="利用Rect对象返回以Graphics组件的left, top位置为基准计算出的区域信息。&#xD;&#xA;在GraphicsPath有Border时，所返回的区域信息中排除Border区域。&#xD;&#xA;&#xD;&#xA;* Rect对象包含&quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot;属性。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hasSegments" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回是否在GraphicsPath中设定了路径数据的方法。">
+        <Syntax text="GraphicsPath.hasSegments()">
+          <Return type="Boolean" description="在GraphicsPath中设定了路径数据时，将返回true。&#xD;&#xA;&#xD;&#xA;在GraphicsPath中没有设定路径数据时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的坐标位置是否包含于GraphicsPath区域的方法。">
+        <Syntax text="GraphicsPath.isHitTest( nX, nY )">
+          <Return type="Boolean" description="在通过参数传递的坐标位置包含于GraphicsPath区域时，将返回true。&#xD;&#xA;&#xD;&#xA;在通过参数传递的坐标位置没有包含于GraphicsPath区域时，将返回false。" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要进行确认的位置的x坐标值。&#xD;&#xA;&#xD;&#xA;设定值将以Graphics组件为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要进行确认的位置的y坐标值。&#xD;&#xA;&#xD;&#xA;设定值将以Graphics组件为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isPointInPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回特定坐标位置是否包含于GraphicsPath区域的方法。">
+        <Syntax text="GraphicsPath.isPointInPath( objPoint [, nTolerance] )">
+          <Return type="Boolean" description="在objPoint坐标位置包含于GraphicsPath区域时，将返回true。&#xD;&#xA;&#xD;&#xA;在objPoint坐标位置没有包含于GraphicsPath区域时，将返回false。" />
+          <Arguments>
+            <Argument name="nTolerance" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定判定objPoint位置包含于GraphicsPath区域的最大距离。&#xA;&#xA;当objPoint位置与GraphicsPath区域的距离小于设定值时判定为包含。" />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="利用nexacro.Point对象设定对是否包含于GraphicsPath区域进行确认的坐标值。&#xA;&#xA;所设定的坐标值将以Graphics组件为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lineTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将从当前位置到通过参数传递的位置为止的直线路径添加到GraphicsPath中的方法。">
+        <Syntax text="GraphicsPath.lineTo( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的直线路径的x坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的x属性值为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的直线路径的y坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的y属性值为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于移动GraphicsPath的开始位置的方法。">
+        <Syntax text="GraphicsPath.moveBy( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前的开始位置移动x坐标的距离。&#xD;&#xA;&#xD;&#xA;设定值将以当前开始位置的x坐标值为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前的开始位置移动y坐标的距离。&#xD;&#xA;&#xD;&#xA;设定值将以当前开始位置的y坐标值为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定GraphicsPath的开始位置的方法。">
+        <Syntax text="GraphicsPath.moveTo( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定GraphicsPath的开始位置中的x坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的x属性值为基准进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定GraphicsPath的开始位置中的y坐标位置。&#xD;&#xA;&#xD;&#xA;设定值将以GraphicsPath的y属性值为基准进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="quadraticCurveTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将从当前位置到通过参数传递的位置为止的quadratic Bezier曲线路径添加到GraphicsPath中的方法。">
+        <Syntax text="GraphicsPath.quadraticCurveTo( nControlX, nControlY, nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nControlX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定quadratic Bezier曲线的控制点的x坐标位置。" />
+            <Argument name="nControlY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定用于决定quadratic Bezier曲线的控制点的y坐标位置。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的quadratic Bezier曲线的x坐标位置。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定需要添加的quadratic Bezier曲线的y坐标位置。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsPath适用旋转效果的方法。">
+        <Syntax text="GraphicsPath.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要从当前状态旋转的角度。&#xD;&#xA;&#xD;&#xA;在设定为正数时，向顺时针方向旋转。&#xD;&#xA;在设定为负数时，向逆时针方向旋转。" />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为旋转中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为旋转中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsPath适用放大/缩小效果的方法。">
+        <Syntax text="GraphicsPath.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为放大/缩小中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为放大/缩小中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的横向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsPath将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsPath将被缩小。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的纵向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsPath将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsPath将被缩小。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于设定为了仅显示GraphicsPath的一部分区域而进行Clipping的区域坐标的方法。">
+        <Syntax text="GraphicsPath.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的高度。&#xD;&#xA;&#xD;&#xA;设定值将以nY参数值为基准进行处理。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的宽度。&#xD;&#xA;&#xD;&#xA;设定值将以nX参数值为基准进行处理。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的x坐标。&#xD;&#xA;&#xD;&#xA;设定值将GraphicsPath的x属性值的位置假定为0进行处理。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定需要进行Clipping的区域的y坐标。&#xD;&#xA;&#xD;&#xA;设定值将GraphicsPath的y属性值的位置假定为0进行处理。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPathData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在GraphicsPath中以SVG格式设定路径数据的方法。">
+        <Syntax text="GraphicsPath.setPathData( strPath )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="利用SVG格式的字符串设定路径数据。&#xD;&#xA;&#xD;&#xA;可以设定的SVG格式。&#xD;&#xA;- “M x,y”：将开始位置设定为x,y坐标位置。&#xD;&#xA;- “L x,y”：显示从当前位置到x,y坐标位置的线条。&#xD;&#xA;- “H x”:显示从当前位置到x坐标位置的横线。&#xD;&#xA;- “V y”:显示从当前位置到y坐标位置的竖线。&#xD;&#xA;- “Z”：显示从当前位置到开始点的线条。&#xD;&#xA;- “C x1,y1 x2,y2 x,y”：显示从当前位置到x,y坐标位置的cubic Bezier曲线。&#xD;&#xA;- “S x2,y2 x,y”：显示从当前位置到x,y坐标位置的cubic" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以GraphicsPath的原始位置为基准连续适用Transform相关效果的方法。">
+        <Syntax text="GraphicsPath.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="利用“,”区分设定需要适用于GraphicsPath的Transform相关方法。&#xD;&#xA;可以使用translate()、scale()、rotate()、shear()方法。&#xD;&#xA;在设定为null值时，将以没有指定transform效果的状态进行初始化。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsPath适用扭曲效果的方法。">
+        <Syntax text="GraphicsPath.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为扭曲中心的x坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定作为扭曲中心的y坐标。&#xD;&#xA;设定值将以父级对象为基准进行处理。&#xD;&#xA;&#xD;&#xA;在省略值时适用0值。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以x轴为基准扭曲的角度。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以y轴为基准扭曲的角度。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以字符串形态返回GraphicsPath的类型的方法。">
+        <Syntax text="GraphicsPath.toString();">
+          <Return type="String" description="通常返回&quot;[object GraphicsPath]&quot;形态的字符串。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向GraphicsPath适用Transform相关效果的方法。">
+        <Syntax text="GraphicsPath.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的横向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsPath将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsPath将被缩小。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="利用实数设定需要从当前大小放大/缩小的纵向比例。&#xD;&#xA;&#xD;&#xA;在设定大于1.0的值时，GraphicsPath将被放大。&#xD;&#xA;在设定小于1.0的值时，GraphicsPath将被缩小。" />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以x轴为基准扭曲的角度。" />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="利用弧度值设定从当前状态以y轴为基准扭曲的角度。" />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向x轴方向移动的距离。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向y轴方向移动的距离。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于适用GraphicsPath的位置移动效果的方法。">
+        <Syntax text="GraphicsPath.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向x轴方向移动的距离。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定从当前位置向y轴方向移动的距离。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

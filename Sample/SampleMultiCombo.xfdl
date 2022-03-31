@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleMultiCombo" width="1528" height="752" titletext="멀티콤보 샘플">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Static id="Static45_00_00_01" taborder="0" text="멀티콤보 컴포지트 샘플" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Edit id="edtInput" taborder="1" top="99" width="160" height="24" right="958" value="E0009,E0010,E0013" text="E0009,E0010,E0013"/>
+        <Button id="btnComboType" taborder="2" text="콤보타입" top="65" width="70" height="24" right="40" onclick="btn_onclick"/>
+        <Combo id="cmbType" taborder="3" top="64" width="80" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" text="A 타입" value="A" right="114">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">A</Col>
+                <Col id="datacolumn">A 타입</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">B</Col>
+                <Col id="datacolumn">B 타입</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Static id="Static27_03_00" taborder="4" left="129" top="135" height="110" cssclass="sta_DA_data" verticalAlign="top" right="40" text=""/>
+        <Static id="Static26_02_00" taborder="5" text="멀티콤보 컴포지트" left="0" top="135" width="130" height="110" cssclass="sta_DA_label"/>
+        <Button id="btnEnableTrue" taborder="6" text="활성화" top="94" width="60" height="24" right="764" onclick="btn_onclick"/>
+        <Button id="btnEnableFalse" taborder="7" text="비활성화" top="94" width="70" height="24" right="692" onclick="btn_onclick"/>
+        <Button id="btnReadOnlyTrue" taborder="8" text="읽기모드설정" top="94" width="100" height="24" right="590" onclick="btn_onclick"/>
+        <Button id="btnReadOnlyFalse" taborder="9" text="읽기모드해제" top="94" width="100" height="24" right="488" onclick="btn_onclick"/>
+        <Button id="btnRequiredTrue" taborder="10" text="필수표시설정" top="94" width="100" height="24" right="386" onclick="btn_onclick"/>
+        <Button id="btnRequiredFalse" taborder="11" text="필수표시해제" top="94" width="100" height="24" right="284" onclick="btn_onclick"/>
+        <Button id="btnInput" taborder="12" text="값입력" top="94" width="60" height="24" onclick="btn_onclick" right="888"/>
+        <Button id="btnOutput" taborder="13" text="값반환" top="94" width="60" height="24" onclick="btn_onclick" right="826"/>
+        <Button id="btnSelectTrue" taborder="14" text="선택필수표시설정" top="94" width="120" height="24" right="162" onclick="btn_onclick"/>
+        <Button id="btnSelectFalse" taborder="15" text="선택필수표시해제" top="94" width="120" height="24" right="40" onclick="btn_onclick"/>
+        <Edit id="edt00" taborder="16" left="358" top="169" width="120" height="24"/>
+        <MultiCombo id="mcboTest" taborder="17" left="155" top="169" width="170" height="24" cssclass="input_req" viewtype="A" innerdataset="dsCode" codecolumn="ESTAT" datacolumn="TXT30" displaynulltext="전체"/>
+        <Button id="btnDisplay" taborder="18" text="콤보기본텍스트" top="66" width="110" height="24" right="200" onclick="btn_onclick"/>
+        <Combo id="cmbText" taborder="19" top="65" width="80" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" text="A 타입" value="A" right="314">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">전체</Col>
+                <Col id="datacolumn">전체</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">선택</Col>
+                <Col id="datacolumn">선텍</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Edit id="edt01" taborder="20" left="555" top="180" width="120" height="24" value="aaaaa" text="aaaaa" oninput="edt01_oninput"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsCode">
+        <ColumnInfo>
+          <Column id="ESTAT" type="STRING" size="5"/>
+          <Column id="TXT30" type="STRING" size="30"/>
+          <Column id="_chk" type="STRING" size="1"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="ESTAT">E0008</Col>
+            <Col id="TXT30">렌탈가</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0009</Col>
+            <Col id="TXT30">수리중</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0010</Col>
+            <Col id="TXT30">교정중</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0012</Col>
+            <Col id="TXT30">처분</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0013</Col>
+            <Col id="TXT30">출고대기</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0014</Col>
+            <Col id="TXT30">렌탈중</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0015</Col>
+            <Col id="TXT30">입고대기</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0016</Col>
+            <Col id="TXT30">기타</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0018</Col>
+            <Col id="TXT30">삭제</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0019</Col>
+            <Col id="TXT30">수리불가</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0020</Col>
+            <Col id="TXT30">매각대기</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+          <Row>
+            <Col id="ESTAT">E0021</Col>
+            <Col id="TXT30">렌탈불가</Col>
+            <Col id="_chk">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsSearch">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  멀티콤보 컴포지트 샘플
+*  @FileName 	: SampleCalendar.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/02/07
+*  @Desction    : 멀티콤보 컴포지트 샘플
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/02/07     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+this.fvCurComposite;
+
+this.btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+	
+	switch(obj.id)
+	{
+	    case "btnDisplay" : this.mcboTest.set_displaynulltext(this.cmbText.value); break;
+		case "btnComboType" : this.mcboTest.set_viewtype(this.cmbType.value); break;
+	    case "btnClear" : this.mcboTest.init(); break;
+		case "btnEnableTrue" : this.mcboTest.set_enable(true); break;
+		case "btnEnableFalse" : this.mcboTest.set_enable(false); break;
+		case "btnReadOnlyTrue" : this.mcboTest.set_readonly(true); break;
+		case "btnReadOnlyFalse" : this.mcboTest.set_readonly(false); break;
+		case "btnRequiredTrue" : this.mcboTest.set_cssclass("input_req"); break;
+		case "btnRequiredFalse" : this.mcboTest.set_cssclass(""); break;
+		case "btnSelectTrue" : this.mcboTest.set_cssclass("input_select"); break;
+		case "btnSelectFalse" : this.mcboTest.set_cssclass(""); break;				
+		case "btnOutput" : this.gfnAlert(this.mcboTest.value); break;
+		case "btnInput" : this.mcboTest.set_value(this.edtInput.value); break;
+	}
+	
+};
+
+this.edt01_oninput = function(obj:nexacro.Edit,e:nexacro.InputEventInfo)
+{
+	obj.set_value(obj._default_value);
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item1" compid="edt00" propid="value" datasetid="dsSearch" columnid="Column0"/>
+      <BindItem id="item0" compid="mcboTest" propid="value" datasetid="dsSearch" columnid="Column0"/>
+    </Bind>
+  </Form>
+</FDL>

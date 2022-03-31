@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaInfo version="2.0">
+  <EnumInfo id="PivotColTotalPosition" composit="false" description="none | first | last">
+    <Enum name="none" description="column 소계를 표시하지 않는다."/>
+    <Enum name="first" description="column 소계를 처음에 표시한다."/>
+    <Enum name="last" description="column 소계를 마지막에 표시한다."/>
+  </EnumInfo>
+  <EnumInfo id="PivotRowTotalPosition" composit="false" description="none | first | last">
+    <Enum name="none" description="row 소계를 표시하지 않는다."/>
+    <Enum name="first" description="row 소계를 처음에 표시한다."/>
+    <Enum name="last" description="row 소계를 마지막에 표시한다."/>
+  </EnumInfo>
+</MetaInfo>

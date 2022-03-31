@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="WorkFormComm" width="1488" height="60" titletext="New Form">
+    <Layouts>
+      <Layout height="60" width="1488">
+        <Static id="staTitle" taborder="0" text="심사등록(개별) [4120]" left="0" top="15" width="260" height="38" cssclass="sta_WF_pageTitle" fittocontents="width" wordWrap="none"/>
+        <Button id="Button00" taborder="1" width="24" height="24" right="56" padding="0px" bottom="13" cssclass="btn_TF_collapse"/>
+        <Button id="Button00_00" taborder="2" width="24" height="24" right="28" bottom="13" cssclass="btn_TF_help"/>
+        <Button id="btnClose" taborder="3" width="24" height="24" right="0" bottom="13" cssclass="btn_TF_close"/>
+        <Static id="staNavi" taborder="4" text="뎁스1 &gt; 뎁스2 &gt; 뎁스3" top="20" width="358" height="30" right="100" cssclass="sta_TF_breadcrumb"/>
+        <Button id="btnFav" taborder="5" left="staTitle:10" top="21" width="28" height="28" cssclass="btn_TF_fav"/>
+        <Button id="btnReload" taborder="6" left="btnFav:6" width="28" height="28" cssclass="btn_TF_reset" bottom="11"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+  </Form>
+</FDL>

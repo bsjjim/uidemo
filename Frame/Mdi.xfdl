@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="MDI" width="1568" height="35" titletext="New Form" scrolltype="none" cssclass="frm_MDI">
+    <Layouts>
+      <Layout height="35" width="1568">
+        <Static id="Static00" taborder="1" left="0" height="1" background="#D3D3D3" bottom="0" right="0" visible="true"/>
+        <Tab id="tabMdi" taborder="0" tabindex="0" left="40" height="29" right="170" selectchangetype="down" showextrabutton="true" cssclass="tab_MDI" bottom="-1" tabbuttonheight="29" visible="true" tabbuttongap="4" onextrabuttonclick="tabMdi_onextrabuttonclick" onchanged="tabMdi_onchanged">
+          <Tabpages/>
+        </Tab>
+        <Static id="Static01" taborder="2" left="0" top="0" height="2" background="linear-gradient(to bottom,rgba(0,0,0,0.15) 0%,transparent 100%)" right="0"/>
+        <Button id="btnMaximize" taborder="3" top="7" width="27" height="20" cssclass="btn_MDI_maximize" right="137" onclick="btnArrange_onclick"/>
+        <Button id="btnCascade" taborder="4" top="7" width="24" height="20" cssclass="btn_MDI_minimize" right="113" onclick="btnArrange_onclick"/>
+        <Button id="btnTilevertical" taborder="5" top="7" width="24" height="20" cssclass="btn_MDI_horizontal" right="89" onclick="btnArrange_onclick"/>
+        <Button id="btnHorizontal" taborder="6" top="7" width="24" height="20" cssclass="btn_MDI_vertical" right="65" onclick="btnArrange_onclick"/>
+        <Button id="btnCloseAll" taborder="7" top="7" width="27" height="20" cssclass="btn_MDI_close" right="38" onclick="btnArrange_onclick"/>
+        <Button id="btn00_01" taborder="8" top="62" width="27" height="20" cssclass="btn_MDI_maximizeS" right="137" visible="false"/>
+        <Button id="btn00_00_01" taborder="9" top="62" width="24" height="20" cssclass="btn_MDI_minimizeS" right="113" visible="false"/>
+        <Button id="btn00_00_00_01" taborder="10" top="62" width="24" height="20" cssclass="btn_MDI_horizontalS" right="89" visible="false"/>
+        <Button id="btn00_00_00_00_01" taborder="11" top="62" width="24" height="20" cssclass="btn_MDI_verticalS" right="65" visible="false"/>
+        <Button id="btn00_00_00_00_00_00" taborder="12" top="62" width="27" height="20" cssclass="btn_MDI_closeS" right="38" visible="false"/>
+        <Static id="sta00" taborder="13" text="Select 시 클래스 바뀜" left="1447" top="92" width="135" height="24" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  MDI Frame 영역 화면
+*  @FileName 	: Mdi.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/13
+*  @Desction    : MDI Frame 영역 화면
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/13     	        양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+
+}
+ 
+ /************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+ 
+ /************************************************************************************************
+ * CRUD 및 TRANSACTION 서비스 호출 처리
+ ************************************************************************************************/
+ 
+  /************************************************************************************************
+ * 사용자 FUNCTION 영역
+ ************************************************************************************************/
+ //탭 추가
+ this.fnAddTab = function(sWinId,sMenuNm)
+ {
+	var nRow = this.dsTab.findRow(this.jvWinId, sWinId);
+	if (nRow > -1) return nRow;
+
+	nRow = this.dsTab.addRow();
+	this.dsTab.setColumn(nRow, "WIN_ID", sWinId);
+	this.dsTab.setColumn(nRow, "TITLE", sMenuNm);
+
+	this.tabMdi.insertTabpage(sWinId,-1,"",sMenuNm);
+ }
+ 
+ //탭 활성화
+ this.fnActiveFrame = function(sWinId)
+ {
+ 	var nRow = this.dsTab.findRow("WIN_ID", sWinId);
+	if (nRow < 0) 
+	{
+		return false;
+	}
+	this.dsTab.set_rowposition(nRow);
+	this.tabMdi.set_tabindex(nRow);
+
+	var oFrames = this.oApp.avWorkFrame.frames;
+	
+	if(!this.gfnIsNull(oFrames.indexOf(sWinId)) && !this.gfnIsNull(oFrames[sWinId].form))
+	{
+		oFrames[sWinId].form.setFocus();
+	}
+	
+	return true;
+ }
+ 
+ //탭 삭제
+ this.fnDelTab = function(nIdx)
+ {
+	var sWinId;
+	if(typeof(nIdx) == "number")
+	{
+		sWinId = this.dsTab.getColumn(nIdx,this.jvWinId);
+	}
+	else
+	{
+		sWinId =  nIdx;
+		nIdx = this.dsTab.findRow("WIN_ID", nIdx);
+	}
+	
+	var rObj = this.oApp.avWorkFrame.removeChild(sWinId);	
+	rObj.destroy();
+	rObj = null;
+	this.tabMdi.removeTabpage(nIdx);
+	this.oApp.gdsOpenMenu.deleteRow(nIdx);
+	this.dsTab.deleteRow(nIdx);
+	return true;
+ }
+ 
+ 
+ //열려있는 윈도우 화면을 정렬 및 모든창 닫기
+this.fnArrangeWin = function(sType,bAct) 
+{
+    sType = sType.toLowerCase();
+	bAct = (this.gfnIsNull(bAct)) ? false : bAct;
+	
+	// workFrame영역에 open된 childFrame 갯수
+	var nFramesCnt = this.oApp.avWorkFrame.frames.length;
+
+	if (this.oApp.gdsOpenMenu.getRowCount() < 1) return;
+
+	//frame visibe 처리내역 추가(2019.9.5)
+	if (sType != "maximize" ) 
+	{
+		var framesInfo = this.oApp.avWorkFrame.frames;
+		for ( var i = 0 ; i < framesInfo.length ; i++ ) 
+		{
+			framesInfo[i].set_visible(true);
+		}
+	}
+	
+	this.fvArrangeType = sType;
+	
+	switch (sType)
+	{
+		case "maximize" :
+		    var curWinId = this.oApp.avWorkFrame.getActiveFrame().name;
+			for (var i=0; i<nFramesCnt; i++) 
+			{
+				this.oApp.avWorkFrame.frames[i].set_openstatus("maximize");		
+				this.oApp.avWorkFrame.frames[i].set_showtitlebar(false);		
+				this.oApp.avWorkFrame.frames[i].set_border("0px solid #006666");			
+			}        
+
+			this.fnActiveFrame(curWinId);
+			break;
+		
+		case "closeall" :	
+		    var bCloseCheck = true;
+			
+			if(bAct == false)
+			{
+				for (var i=0; i<nFramesCnt; i++) 
+				{	
+					if (this.oApp.avWorkFrame.frames[i].form.fnModifyYn() == true)
+					{
+						bCloseCheck =  false;
+						break;
+					} 
+				}
+			}
+			
+			if (bCloseCheck == true){
+				for (var i=nFramesCnt-1; i>-1; i--) 
+				{	
+					//this.fnTabOnClose(this.oApp.avWorkFrame.frames[i-1].name);
+					this.fnDelTab(i);
+				}			
+			}
+			else 
+			{
+				// 변경된 데이터가 있습니다. 전체 화면을 닫겠습니까?
+				this.gfnConfirm("confirm.before.allmovepage", "",
+					function(sId,sVal)
+					{
+						if(sVal == true)
+						{
+							this.fnArrangeWin("closeall",true);
+						}
+					}
+				);	
+			}			
+			break;
+		
+		case "hidden" :
+			for (var i=0; i<nFramesCnt; i++) 
+			{
+				this.oApp.avWorkFrame.frames[i].set_showtitlebar(true);
+				this.oApp.avWorkFrame.frames[i].set_border("1px solid #7f7f7b");
+				this.oApp.avWorkFrame.frames[i].set_borderRadius("3px 3px");
+				this.oApp.avWorkFrame.frames[i].set_openstatus("minimize");		
+			}			
+			this.oApp.avWorkFrame.arrange(sType);
+			break;
+		
+		default :
+			for (var i=0; i<nFramesCnt; i++)
+			{	
+				this.oApp.avWorkFrame.frames[i].set_showtitlebar(true);
+				this.oApp.avWorkFrame.frames[i].set_border("1px solid #7f7f7b");
+				this.oApp.avWorkFrame.frames[i].set_borderRadius("3px 3px");
+				this.oApp.avWorkFrame.frames[i].set_openstatus("normal");		
+				this.oApp.avWorkFrame.frames[i].set_titlebarheight("30");		
+				//this.oApp.avWorkFrame.frames[i].titlebar.closebutton.set_enable(false);
+				this.oApp.avWorkFrame.frames[i].titlebar.closebutton.setEventHandler("onclick",this.fnClose,this);
+			}
+			this.oApp.avWorkFrame.arrange(sType);
+			break;
+	}
+}
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+this.fnClose = function(obj,e)
+{
+	var sWinId = obj.parent.parent.winId;
+	
+	this.oApp.avMdiFrame.form.fnDelTab(sWinId);	
+	
+}
+this.tabMdi_onextrabuttonclick = function(obj:nexacro.Tab,e:nexacro.TabMouseEventInfo)
+{
+	 this.fnDelTab(e.index);
+};
+
+this.tabMdi_onchanged = function(obj:nexacro.Tab,e:nexacro.TabIndexChangeEventInfo)
+{
+    var sWinId = this.dsTab.getColumn(e.postindex,this.jvWinId);
+	this.fnActiveFrame(sWinId);	
+	this.oApp.avStatusFrame.form.staStatusText.set_text("");
+};
+
+this.btnArrange_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    var sType = obj.name.replace("btn", "");
+	this.fnArrangeWin(sType);	
+};
+]]></Script>
+    <Objects>
+      <Dataset id="dsTab" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="TITLE" type="STRING" size="256"/>
+          <Column id="WIN_ID" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

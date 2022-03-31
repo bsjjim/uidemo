@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ENV version="2.1">
+  <Environment themeid="theme::nxui" datatyperule="2.0" userfontid="font::webfont.xfont" initvaluefileid="initvalue::lotte.xiv">
+    <ScreenDefinition>
+      <Screen id="Desktop_screen" type="desktop" themeid="theme::nxui" initvaluefileid="initvalue::lotte.xiv"/>
+    </ScreenDefinition>
+    <Variables/>
+    <Cookies/>
+    <httpheader/>
+  </Environment>
+  <Script type="xscript5.1"><![CDATA[]]></Script>
+</ENV>

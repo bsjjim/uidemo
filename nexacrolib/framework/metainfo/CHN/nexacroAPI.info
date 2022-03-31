@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.NexacroAPI">
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在Nexacro中对功能进行扩展并追加提供的方法。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向应用程序添加使用者定义的错误消息的方法。">
+        <Syntax text="nexacro.addErrorMessage( enumLang, strCode, strMsg )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumLang" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加错误消息的语言。&#xA;&#xA;在设定为“ko”时，向韩国语区域添加错误消息。&#xA;在设定为“en”时，向英语区域添加错误消息。&#xA;在设定为“ja”时，向日语区域添加错误消息。&#xA;在设定为“zh”时，向中文区域添加错误消息。" />
+            <Argument name="strCode" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加的错误消息的代码。" />
+            <Argument name="strMsg" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的错误消息。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对以Base64格式编码的数据进行解码的方法。">
+        <Syntax text="nexacro.base64Decode( strData )">
+          <Return type="String" description="返回解码的结果数据。" />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="设定以Base64格式编码的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将数据以Base64格式进行编码的方法。">
+        <Syntax text="nexacro.base64Encode( strData )">
+          <Return type="Object" description="返回以Base64格式编码的对象。" />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="设定需要以Base64格式进行编码的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以指定的位数或小数点为基准进行向上舍入的值的方法。">
+        <Syntax text="nexacro.ceil( nVal [,nFractionDigit] );">
+          <Return type="Number" description="返回向上舍入的值。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行向上舍入的位数。&#xD;&#xA;&#xD;&#xA;在设定为“0”时，将小数点位置作为基准。&#xD;&#xA;在设定为正数时，将小数点位置以下作为基准。&#xD;&#xA;在设定为负数时，将小数点位置以上作为基准。&#xD;&#xA;&#xD;&#xA;在省略值时适用“0”。" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行向上舍入的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于删除在应用程序中使用的Cache DB文件以及相关临时文件的方法。">
+        <Syntax text="nexacro.deleteCacheDB()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于在任务栏中使相应应用程序的图标闪烁的方法。">
+        <Syntax text="nexacro.flashWindow( enumType, nCount, [,nInterval] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="设定应用程序图标的闪烁方式。&#xD;&#xA;&#xD;&#xA;在设定为“count”时，在闪烁指定次数之后结束。&#xD;&#xA;在设定为“timer”时，持续闪烁直至利用“stop”值执行flashWindow()方法。&#xD;&#xA;在设定为“timernofg”时，持续闪烁直至相应的应用被激活。&#xD;&#xA;在设定为“stop”时，中止当前的闪烁动作。" />
+            <Argument name="nCount" type="Number" in="false" out="false" option="false" variable="false" description="利用数字设定在enumType值为“count”时的闪烁次数。&#xD;&#xA;&#xD;&#xA;在enumType值不为“count”时，设定值将被忽略。" />
+            <Argument name="nInterval" type="Number" in="false" out="false" option="false" variable="false" description="利用微秒（milliseconds）单位的数字设定应用图标的闪烁间隔。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以指定的位数或小数点为基准进行向下舍入的值的方法。">
+        <Syntax text="nexacro.floor( nVal [,nFractionDigit] );">
+          <Return type="Number" description="返回向下舍入的值。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行向下舍入的位数。&#xD;&#xA;&#xD;&#xA;在设定为“0”时，将小数点位置作为基准。&#xD;&#xA;在设定为正数时，将小数点位置以下作为基准。&#xD;&#xA;在设定为负数时，将小数点位置以上作为基准。&#xD;&#xA;&#xD;&#xA;在省略值时适用“0”。" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行向下舍入的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="gc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于立即删除不在内存中使用的数据的方法。">
+        <Syntax text="nexacro.gc()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前执行的应用程序的Application对象的方法。">
+        <Syntax text="nexacro.getApplication()">
+          <Return type="Object" description="返回Application对象。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Environment的Cookies区域中定义的Cookie值的方法。">
+        <Syntax text="nexacro.getCookieVariable( strID [, bSecure] )">
+          <Return type="String" description="返回在Cookies区域中定义的Cookie变量的值。&#xD;&#xA;&#xD;&#xA;在没有满足条件的Cookie变量时，将返回undefined。" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="根据Secure属性值获取Cookie变量的值。&#xD;&#xA;&#xD;&#xA;在设定为true时，只有在Cookie变量的Secure属性值为true的情况下获取值。&#xD;&#xA;在设定为false时，只有在Cookie变量的Secure属性值为false的情况下获取值。&#xD;&#xA;&#xD;&#xA;在省略值时，与Secure属性值无关，获取Cookie变量的值。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要获取值的Cookie变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于返回指定的Frame所属的window的Zoom功能设定与否的方法。">
+        <Syntax text="nexacro.getEnableWheelZoom( objFrame )">
+          <Return type="Boolean" description="在指定的Frame所属的window中设定了Zoom功能时，将返回true。&#xD;&#xA;&#xD;&#xA;在指定的Frame所属的window中没有设定Zoom功能时，将返回false。" />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定属于需要对Zoom功能设定与否进行确认的window中的Frame。&#xD;&#xA;&#xD;&#xA;无论设定属于相同的window中的哪一个Frame都会返回相同的结果。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回当前执行的应用程序的Environment对象的方法。">
+        <Syntax text="nexacro.getEnvironment()">
+          <Return type="Object" description="返回Environment对象。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Environment的Variables区域中定义的变量值的方法。">
+        <Syntax text="nexacro.getEnvironmentVariable( strID )">
+          <Return type="String" description="返回在Environment的Variable区域中定义的变量值。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要获取值的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Environment的HTTP Header区域中定义的变量值的方法。">
+        <Syntax text="nexacro.getHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要获取值的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getLogFilePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="用于返回在应用中存储日志文件的路径的方法。">
+        <Syntax text="nexacro.getLogFilePath()">
+          <Return type="String" description="以字符串形态返回存储日志文件的路径。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将以通过参数设定的Frame所属的Window为基准弹出的ChildFrame转换成Collection形态的方法。">
+        <Syntax text="nexacro.getPopupFrames( [objFrame] )">
+          <Return type="Array" description="以Collection形态返回在通过参数设定的Frame所属的Window中弹出执行的Frame。&#xD;&#xA;&#xD;&#xA;在objFrame参数中设定null或错误值时，将返回undefined。" />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定基准Frame。&#xD;&#xA;&#xD;&#xA;注意，在省略值时，根据在Remark中说明的条件，所适用的Frame可能会有所不同。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回存储在应用程序中的个人数据的方法。">
+        <Syntax text="nexacro.getPrivateProfile( strKey )">
+          <Return type="Variant" description="以在对与通过参数传递的键值对应的个人数据进行存储时所设定的数据类型返回。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="设定在对个性化数据进行存储时所设定的键值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回应用程序的执行路径的方法。">
+        <Syntax text="nexacro.getProjectPath()">
+          <Return type="String" description="以字符串返回应用程序的执行路径。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于以通过参数传递的值为基准计算出文本显示区域的大小并返回的方法。">
+        <Syntax text="nexacro.getTextSize( strText, strFont [, nLimitWidth, strWordWrap] );">
+          <Return type="Object" description="以对象形态返回以参数值为基准计算出的文本显示区域的大小信息。&#xD;&#xA;&#xD;&#xA;在所返回的对象的&quot;nx&quot;属性中，存储文本的水平大小。&#xD;&#xA;在所返回的对象的&quot;ny&quot;属性中，存储文本的垂直大小。" />
+          <Arguments>
+            <Argument name="nLimitWidth" type="Number" in="false" out="false" option="false" variable="false" description="利用pixel单位的数字设定文本显示区域的最大宽度。&#xD;&#xA;&#xD;&#xA;当strWordWarp值为“none”或“line”时，在nLimitWidth中设定的值将被忽略。&#xD;&#xA;当strWordWrap值为“char”或“english”时，文本将按照nLimitWidth值换行显示。" />
+            <Argument name="strFont" type="String" in="false" out="false" option="false" variable="false" description="以符合font属性格式的方式设定需要适用于文本中的字体信息。&#xD;&#xA;&#xD;&#xA;当在组件的font属性中设定了值时，可以设定font属性。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要显示在画面中的文本。" />
+            <Argument name="strWordWrap" type="String" in="false" out="false" option="false" variable="false" description="设定文本的换行基准。&#xD;&#xA;&#xD;&#xA;在设定为“none”时，将对文本中所包含的换行符以及nLimitWidth值进行忽略而以单行显示。&#xD;&#xA;在设定为“line”时，将对nLimitWidth值进行忽略而以文本中所包含的换行符为基准进行换行。&#xD;&#xA;在设定为“char”时，将以nLimitWidth值为基准按照字符单位进行换行。&#xD;&#xA;在设定为“english”时，将以nLimitWidth值为基准按照字符单位进行换行。&#xD;&#xA;&#xD;&#xA;在设定为“char”、“english”时，还会根据文本中所包含的换行符进行换行。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于返回指定的Frame所属的window的Zoom倍率的方法。">
+        <Syntax text="nexacro.getWheelZoom( objFrame )">
+          <Return type="Number" description="以&quot;%&quot;单位的数字返回指定的Frame所属的window的Zoom倍率。" />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定属于需要对Zoom倍率进行确认的window中的Frame。&#xD;&#xA;&#xD;&#xA;无论设定属于相同的window中的哪一个Frame都会返回相同的结果。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为字母的方法。">
+        <Syntax text="nexacro.isAlpha( nChar )&#xA;nexacro.isAlpha( strChar )">
+          <Return type="Boolean" description="在所传递的字符代码或字符串为字母时，将返回&quot;true&quot;。&#xD;&#xA;在所传递的字符代码或字符串不为字母时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与字母对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否为字母的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为字母或数字的方法。">
+        <Syntax text="nexacro.isAlphaNumeric( nChar )&#xA;nexacro.isAlphaNumeric( strChar )">
+          <Return type="Boolean" description="当所传递的字符代码是字母或数字时，将返回&quot;true&quot;。&#xD;&#xA;当所传递的字符串仅由字母以及数字构成时，将返回&quot;true&quot;。&#xD;&#xA;&#xD;&#xA;当所传递的字符代码不是字母或数字时，将返回“false”。&#xD;&#xA;当所传递的字符串中包括除字母以及数字之外的其他字符时，将返回&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与字母或数字对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否仅由字母以及数字构成的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExistCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在Environment的Cookies区域中是否有特定Cookie变量存在的方法。">
+        <Syntax text="nexacro.isExistCookieVariable( strID [, bSecure] )">
+          <Return type="Boolean" description="在Cookies区域中有Cookie变量存在时，将返回true。&#xD;&#xA;在Cookies区域中没有Cookie变量存在时，将返回false。&#xD;&#xA;&#xD;&#xA;在设定了bSecure时，如果在bSecure中设定的值也相同，将返回true。" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="根据Secure属性值对Cookie变量的存在与否进行确认。&#xD;&#xA;&#xD;&#xA;在设定为true时，只有在Cookie变量存在且Secure属性值为true的情况下返回true。&#xD;&#xA;在设定为false时，只有在Cookie变量存在且Secure属性值为false的情况下返回true。&#xD;&#xA;&#xD;&#xA;在省略值时，与Secure属性值无关，对Cookie变量的存在与否进行确认。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要对存在与否进行确认的Cookie变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为小写字母的方法。">
+        <Syntax text="nexacro.isLower( nChar )&#xA;nexacro.isLower( strChar )">
+          <Return type="Boolean" description="在所传递的字符代码或字符串为小写字母时，将返回&quot;true&quot;。&#xD;&#xA;在所传递的字符代码或字符串不为小写字母时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与小写字母对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否为小写字母的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为数字的方法。">
+        <Syntax text="nexacro.isNumeric( nChar )&#xA;nexacro.isNumeric( strChar )">
+          <Return type="Boolean" description="在所传递的字符代码或字符串为数字时，将返回&quot;true&quot;。&#xD;&#xA;在所传递的字符代码或字符串不为数字时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与数字对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否为数字的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为空白字符的方法。">
+        <Syntax text="nexacro.isSpace( nChar )&#xA;nexacro.isSpace( strChar )">
+          <Return type="Boolean" description="在所传递的字符代码或字符串为空白字符时，将返回&quot;true&quot;。&#xD;&#xA;在所传递的字符代码或字符串不为空白字符时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与空格对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否为空格的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回通过参数传递的字符代码或字符串是否为大写字母的方法。">
+        <Syntax text="nexacro.isUpper( nChar );&#xA;nexacro.isUpper( strChar );">
+          <Return type="Boolean" description="在所传递的字符代码或字符串为大写字母时，将返回&quot;true&quot;。&#xD;&#xA;在所传递的字符代码或字符串不为大写字母时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="设定需要确认是否是与大写字母对应的代码值的10进制数字。" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要确认是否为大写字母的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将XCSS文件载入到应用程序并适用的方法。">
+        <Syntax text="nexacro.loadStyle( strURL )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="利用“xcssrc::[FileID]”格式设定需要适用于应用的XCSS文件路径。&#xD;&#xA;&#xD;&#xA;无法将文件路径中的“xcssrc::”修正为固定Prefix值。&#xD;&#xA;XCSS文件应位于Resource Service区域的“./_resource_/_xcss_”位置。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将动态生成的ChildFrame以Modeless Window显示的方法。">
+        <Syntax text="nexacro.open( strID, strFormURL, objParentFrame, {objArguList}, strOpenStyle, nLeft, nTop [, nWidth, nHeight [, objOpener [, strExtOpenStyle ]]])">
+          <Return type="Boolean" description="在Modeless Window被正常显示时，将返回true。&#xD;&#xA;&#xD;&#xA;在Modeless Window没有被正常显示时，将返回false。" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="设定需要以Modeless Window显示的ChildFrame的height值。" />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="设定需要以Modeless Window显示的ChildFrame的left值。" />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="设定需要以Modeless Window显示的ChildFrame的top值。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="设定需要以Modeless Window显示的ChildFrame的width值。" />
+            <Argument name="objArguList" type="Object" in="false" out="false" option="false" variable="false" description="利用“{变量名称:变量值,变量名称:变量值}”的格式设定需要添加到以Modeless Window显示的ChildFrame中的变量列表。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要设定为opener的Form。&#xD;&#xA;&#xD;&#xA;在省略值时，设定为在objParentFrame参数中设定的Form。" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用Object形态设定需要以Modeless Window显示的ChildFrame的父级Frame。&#xD;&#xA;&#xD;&#xA;在设定为null时，不对父级进行设定。" />
+            <Argument name="strExtOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="利用“属性名1=属性值1 属性名2=属性值2”的格式设定需要在显示ChildFrame时追加适用的属性。&#xD;&#xA;根据环境，可以设定的属性有所不同，各个属性利用空格（Space）进行区分。&#xD;&#xA;&#xD;&#xA;* 仅在IE11网页浏览器环境中支持的属性，在省略时适用网页浏览器默认值。&#xD;&#xA;在“location”属性中利用true/false值设定网页浏览器的地址栏的显示与否。（仅在IE11的一部分版本中支持。）&#xD;&#xA;在“menubar”属性中利用true/false值设定网页浏览器的菜单栏的显示与否。&#xD;&#xA;在“toolbar”属性中利用tru" />
+            <Argument name="strFormURL" type="String" in="false" out="false" option="false" variable="false" description="利用URL设定需要在以Modeless Window显示的ChildFrame中载入的Form。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要以Modeless Window显示的ChildFrame的ID。" />
+            <Argument name="strOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="利用“属性名1=属性值1 属性名2=属性值2”的格式设定需要在以Modeless Window显示的ChildFrame中适用的属性值。&#xD;&#xA;&#xD;&#xA;可以对ChildFrame的一部分属性进行设定，各个属性利用空格（Space）区分。&#xD;&#xA;无法设定ChildFrame的CSS相关属性。（例：Background、-nexa-border、font等）&#xD;&#xA;&#xD;&#xA;“dragmovetype”属性的“all”值只有Windows NRE支持。&#xD;&#xA;“layered”属性只有Windows NRE以及macOS NRE支持。&#xD;&#xA;“open" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于通过对日期格式的字符串进行分析而利用微秒返回从1970年01月01日子夜开始到当前日期之间的时间的方法。">
+        <Syntax text="nexacro.parseDate( strDate )">
+          <Return type="Number" description="利用微秒返回从1970年01月01日子夜开始到通过参数传递的日期为止的时间。&#xD;&#xA;&#xD;&#xA;当因为日期格式无效而被处理成错误时将返回undefined。" />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="设定日期格式的字符串。&#xD;&#xA;&#xD;&#xA;无效的日期格式的字符串将被处理为错误。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Environment的Cookies区域删除Cookie变量的方法。">
+        <Syntax text="nexacro.removeCookieVariable( strID [, bSecure] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="根据Secure属性值删除Cookie变量。&#xD;&#xA;&#xD;&#xA;在设定为true时，只有在Cookie变量的Secure属性值为true的情况下删除Cookie变量。&#xD;&#xA;在设定为false时，只有在Cookie变量的Secure属性值为false的情况下删除Cookie变量。&#xD;&#xA;&#xD;&#xA;在省略值时，与Secure属性值无关，删除Cookie变量。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的Cookie变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在Environment的Variables区域中定义的变量的方法。">
+        <Syntax text="nexacro.removeEnvironmentVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从Environment的HTTP Header区域删除变量的方法。">
+        <Syntax text="nexacro.removeHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的变量的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的字符串中的特定字符串全部转换成新字符串并返回的方法。">
+        <Syntax text="nexacro.replaceAll( strText, strOrgText, strRepText );">
+          <Return type="String" description="返回将特定字符串转换成新字符串之后的字符串。" />
+          <Arguments>
+            <Argument name="strOrgText" type="String" in="false" out="false" option="false" variable="false" description="设定strText值中需要转换成新字符串的字符串。" />
+            <Argument name="strRepText" type="String" in="false" out="false" option="false" variable="false" description="设定需要替换strOrgText值的字符串而进行转换的字符串。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要执行转换的整体字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回以指定的位数或小数点为基准进行四舍五入的值的方法。">
+        <Syntax text="nexacro.round( nVal [,nFractionDigit] );">
+          <Return type="Number" description="返回四舍五入的值。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行四舍五入的位数。&#xD;&#xA;&#xD;&#xA;在设定为“0”时，将小数点位置作为基准。&#xD;&#xA;在设定为正数时，将小数点位置以下作为基准。&#xD;&#xA;在设定为负数时，将小数点位置以上作为基准。&#xD;&#xA;&#xD;&#xA;在省略值时适用“0”。" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要进行四舍五入的数字值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Environment的Cookies区域添加Cookie的方法。">
+        <Syntax text="nexacro.setCookieVariable( strID, varVal [, bSecure] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="设定需要添加的Cookie变量的Secure属性与否。&#xD;&#xA;&#xD;&#xA;在设定为true时，在HTTP通信中不包含Cookie变量。&#xD;&#xA;在设定为true时，在HTTPS通信中包含Cookie变量并对Secure属性进行设定。&#xD;&#xA;在设定为false时，在所有通信中包含没有对Secure属性进行设定的Cookie变量。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的Cookie变量的ID。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的Cookie变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于设定指定的Frame所属的window的Zoom功能的方法。">
+        <Syntax text="nexacro.setEnableWheelZoom( objFrame, bZoom)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bZoom" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，对objFrame所属的window的Zoom功能进行激活。&#xD;&#xA;&#xD;&#xA;在设定为false时，对objFrame所属的window的Zoom功能进行禁用。" />
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定属于需要对Zoom功能进行设定的window中的Frame。&#xD;&#xA;&#xD;&#xA;无论设定属于相同的window中的哪一个Frame都会进行相同的设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Environment的Variables区域添加变量的方法。">
+        <Syntax text="nexacro.setEnvironmentVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量的ID。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向Environment的HTTP Header区域添加变量的方法。">
+        <Syntax text="nexacro.setHTTPHeaderVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的HTTP Header变量的ID。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加的HTTP Header变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在网页浏览器环境中载入应用程序之前对Global区域变量设定值的方法。">
+        <Syntax text="nexacro.setInitialVariable( strType, strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要设定的Global变量的ID。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要进行设定的变量的Global区域位置。&#xA;&#xA;当设定为“environment”时，将变量设定到Environment的Variables区域。&#xA;当设定为“cookie”时，将变量设定到Environment的Cookies区域。&#xA;当设定为“httpheader”时，将变量设定到Environment的HTTPHeader区域。&#xA;当设定为“application”时，将变量设定到Application的Variables区域。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定Global变量的值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在应用程序中对个人数据进行存储的方法。">
+        <Syntax text="nexacro.setPrivateProfile( strKey, varVal )">
+          <Return type="Boolean" description="在存储个人数据成功时，将返回&quot;true&quot;。&#xD;&#xA;在存储个人数据失败时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="设定用于对个性化数据进行存储的键值。&#xD;&#xA;&#xD;&#xA;因为作为XML标签使用，因此无法设定在XML标签名称中禁止使用的字符。&#xD;&#xA;此外，无法设定“:”字符。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="设定需要存储的个性化数据。&#xD;&#xA;&#xD;&#xA;可以设定基本数据类型（integer, float, string, boolean）以及Date。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向在通信中使用的Protocol适配器传递设定值的方法。">
+        <Syntax text="nexacro.setProtocolVar(strName, strKey, strValue) ;">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="设定相当于需要传递到Protocol适配器的设定值的Key值。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="设定在TypeDefinition的Protocols区域定义的Protocol适配器中，用于对设定值进行传递的Protocol的“Protocol ID”。" />
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="设定需要传递到Protocol适配器的设定值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于在Windows NRE中设定渲染方式的方法。">
+        <Syntax text="nexacro.setRenderingType( nType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nType" type="Number" in="false" out="false" option="false" variable="false" description="利用0或1设定Windows Nexacro的渲染方式。&#xA;&#xA;在设定为0时，以RealTime方式（与目前相同）周期性地执行渲染。&#xA;在设定为1时，以Event方式按照内部规则执行渲染。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于设定指定的Frame所属的window的Zoom倍率的方法。">
+        <Syntax text="nexacro.setWheelZoom( objFrame, nZoomScale)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nZoomScale" type="Number" in="false" out="false" option="false" variable="false" description="利用“%”单位的数字设定objFrame所属的window的Zoom倍率。&#xD;&#xA;&#xD;&#xA;需要在50%~200%的范围内以10%为单位进行设定。&#xD;&#xA;当设定值超出范围或不是10%单位时，将不会执行方法。" />
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定属于需要对Zoom倍率进行设定的window中的Frame。&#xD;&#xA;&#xD;&#xA;无论设定属于相同的window中的哪一个Frame都会进行相同的设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从通过参数传递的字符串的两端删除引号之后返回的方法。">
+        <Syntax text="nexacro.stripQuote( strText )">
+          <Return type="String" description="从所传递的字符串的两侧末端删除引号并返回。" />
+          <Arguments>
+            <Argument name="strText" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除引号的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将通过参数传递的字符串转换成数字并返回的方法。">
+        <Syntax text="nexacro.toNumber( varValue [, varNanVal [, varPinfVal [, varNinfVal]]] )">
+          <Return type="Number" description="将字符串转换成数字并返回。" />
+          <Arguments>
+            <Argument name="varNanVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在将varValue转换成数字的结果值为“NaN”时返回的值。&#xD;&#xA;&#xD;&#xA;在省略值时适用“NaN”。" />
+            <Argument name="varNinfVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在将varValue转换成数字的结果值为“NEGATIVE_INFINITY”时返回的值。&#xD;&#xA;&#xD;&#xA;在省略值时适用“NEGATIVE_INFINITY”。" />
+            <Argument name="varPinfVal" type="Number" in="false" out="false" option="false" variable="false" description="设定需要在将varValue转换成数字的结果值为“POSITIVE_INFINITY”时返回的值。&#xD;&#xA;&#xD;&#xA;在省略值时适用“POSITIVE_INFINITY”。" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="设定需要转换成数字的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从通过参数传递的字符串的两端删除空格符或指定的字符之后返回的方法。">
+        <Syntax text="nexacro.trim( strText [,strChar] )">
+          <Return type="String" description="返回从字符串的两端删除空格符或指定的字符之后的字符串。" />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要从字符串的两侧末端删除的字符。&#xD;&#xA;&#xD;&#xA;在省略值时，将从字符串的两侧末端删除空格。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要从两侧末端删除空格或指定字符的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从通过参数传递的字符串的左端删除空格符或指定的字符之后返回的方法。">
+        <Syntax text="nexacro.trimLeft( strText [,strChar] )">
+          <Return type="String" description="返回从字符串的左端删除空格符或指定的字符之后的字符串。" />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="设定需要从字符串的左侧末端删除的字符。&#xD;&#xA;&#xD;&#xA;在省略值时，将从字符串的左侧末端删除空格。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要从左侧末端删除空格或指定字符的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从通过参数传递的字符串的右端删除空格符或指定的字符之后返回的方法。">
+        <Syntax text="nexacro.trimRight( strText [,strChar] )">
+          <Return type="String" description="返回从字符串的右端删除空格符或指定的字符之后的字符串。" />
+          <Arguments>
+            <Argument name="strTarget" type="String" in="false" out="false" option="false" variable="false" description="设定需要从字符串的右侧末端删除的字符。&#xD;&#xA;&#xD;&#xA;在省略值时，将从字符串的右侧末端删除空格。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要从右侧末端删除空格或指定字符的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在通过参数传递的字符串的两侧末端添加双引号并返回的方法。">
+        <Syntax text="nexacro.wrapQuote( strText )">
+          <Return type="String" description="在所传递的字符串的两侧末端添加双引号并返回。" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="设定需要添加双引号的字符串。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

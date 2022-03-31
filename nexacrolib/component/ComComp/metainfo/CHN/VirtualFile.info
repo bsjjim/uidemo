@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.VirtualFile">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.VirtualFile" shorttypename="VirtualFile" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于对本地系统的文件进行读写的虚拟文件对象。" />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="用于设定向VirtualFile请求的作业的工作方式的属性。" csspropertyname="" normalpropertyname="async" />
+      <Property name="filename" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="包含载入到VirtualFile中的文件名的只读属性。" csspropertyname="" normalpropertyname="filename" />
+      <Property name="fullpath" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含在VirtualFile中打开的文件的整体路径信息的只读属性。" csspropertyname="" normalpropertyname="fullpath" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定VirtualFile的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于设定VirtualFile的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含VirtualFile的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="path" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含在VirtualFile中打开的文件的路径信息的只读属性。" csspropertyname="" normalpropertyname="path" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在VirtualFile中声明特定事件并添加的方法。">
+        <Syntax text="VirtualFile.addEvent( strEventID )">
+          <Return type="Boolean" description="在添加事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在添加事件失败或设定了已声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要添加到VirtualFile的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于向VirtualFile的特定事件添加句柄函数的方法。">
+        <Syntax text="VirtualFile.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回添加到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;在没有被正常添加时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要添加句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除注册到特定事件中的所有句柄函数的方法。">
+        <Syntax text="VirtualFile.clearEventHandler( strEventID )">
+          <Return type="Number" description="返回从特定事件中删除的句柄函数的数量。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除所有句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于关闭通过VirtualFile打开的文件的方法。">
+        <Syntax text="VirtualFile.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于在VirtualFile中对特定文件进行复制的方法。">
+        <Syntax text="VirtualFile.copy( strSrc, strDest );">
+          <Return type="Boolean" description="在省略参数或使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strDest" type="String" in="false" out="false" option="false" variable="false" description="设定需要复制生成的文件名以及路径。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+            <Argument name="strSrc" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的文件名以及路径。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在VirtualFile中生成文件夹的方法。">
+        <Syntax text="VirtualFile.createDirectory( strPath, [bAllCreate] )">
+          <Return type="Boolean" description="与文件夹的生成与否无关地返回方法的执行与否。" />
+          <Arguments>
+            <Argument name="bAllCreate" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，将在生成所有中间路径之后生成文件夹。&#xD;&#xA;在设定为false时，将仅在有中间路径存在的情况下生成文件夹。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要生成的文件夹名以及路径。&#xD;&#xA;&#xD;&#xA;在设定如“C:\\TobeSoft\\TestFolder”的绝对路径时，将在相应的位置生成文件夹。&#xD;&#xA;在仅设定如“My_Folder”的文件夹名时，将在“我的文档”位置生成文件夹。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于从VirtualFile删除文件夹的方法。">
+        <Syntax text="VirtualFile.deleteDirectory( strPath [, bAllChild] )">
+          <Return type="Boolean" description="与文件夹的删除与否无关地返回方法的执行与否。" />
+          <Arguments>
+            <Argument name="bAllChild" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，将对所删除的文件夹的下级文件夹以及文件全部进行删除。&#xD;&#xA;在设定为false时，将不对所删除的文件夹的下级文件夹以及文件进行删除。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的文件夹名以及路径。&#xD;&#xA;&#xD;&#xA;在设定如“C:\\TobeSoft\\TestFolder”的绝对路径时，将删除相应的位置上的文件夹。&#xD;&#xA;在仅设定如“My_Folder”的文件夹名时，将删除“我的文档”位置上的文件夹。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在VirtualFile的特定事件中查找句柄函数并返回索引的方法。">
+        <Syntax text="VirtualFile.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="返回需要在事件中查找的句柄函数的索引。&#xD;&#xA;在需要查找的句柄函数不存在时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要查找的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要查找的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要查找句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回VirtualFile的特定事件中与所指定的索引对应的句柄函数的方法。">
+        <Syntax text="VirtualFile.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="返回所指定的索引的句柄函数对象。&#xD;&#xA;在所指定的索引中没有句柄函数存在时，将返回&quot;null&quot;。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取的句柄函数的索引。&#xD;&#xA;索引从“0”开始。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于以列表形态返回特定位置的文件或下级文件夹的方法。">
+        <Syntax text="VirtualFile.getFileList( strPath, strSearchExpr [, constOption] )">
+          <Return type="Boolean" description="在执行方法成功时，将返回true。&#xD;&#xA;在执行方法失败或参数值设定错误时，将返回false。&#xD;&#xA;&#xD;&#xA;与文件或文件夹列表的返回与否无关地返回方法的执行与否。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定构成所返回的文件目录的检索选项。&#xD;&#xA;&#xD;&#xA;在设定为“VirtualFile.findAll”或1(0x01)时，以属于strPath位置上的文件以及文件夹为对象进行检索。&#xD;&#xA;在设定为“VirtualFile.findFileOnly”或2(0x02)时，以属于strPath位置上的文件为对象进行检索。&#xD;&#xA;在设定为“VirtualFile.findDirectoryOnly”或4(0x04)时，以属于strPath位置上的文件夹为对象进行检索。&#xD;&#xA;&#xD;&#xA;在设定为“VirtualFile.findRecursi" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要获取文件或文件夹列表的对象文件夹。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+            <Argument name="strSearchExpr" type="String" in="false" out="false" option="false" variable="false" description="利用正则表达式设定需要包含到所返回的列表中的文件或文件夹的检索条件。&#xD;&#xA;将所设定的正则表达式与文件名称或文件夹名称进行匹配。&#xD;&#xA;&#xD;&#xA;当在正则表达式中使用Escape字符（“\”）时，需要连续输入两次（“\\”）。&#xD;&#xA;Ex) 检索“Text”后包含数字的文件名或文件夹名时，需要设定为“Text\\d”的形态&#xD;&#xA;&#xD;&#xA;因为在正则表达式中“.”字符与除换行符之外的所有字符匹配，因此在需要匹配“.”字符本身时需要设定为“\\.”。&#xD;&#xA;Ex) 在检索扩展名为“txt”的文件名时，需要设定为“\\.txt$”的形态" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回在VirtualFile中打开的文件大小的方法。">
+        <Syntax text="VirtualFile.getFileSize()">
+          <Return type="Boolean" description="与文件大小的返回与否无关地返回方法的执行与否。&#xD;&#xA;&#xD;&#xA;在执行方法成功时，将返回true。&#xD;&#xA;在执行方法失败时，将返回false。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于在VirtualFile的特定事件中将句柄函数插入到指定位置的方法。">
+        <Syntax text="VirtualFile.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="返回插入到事件中的句柄函数的索引。&#xD;&#xA;当已经有相同的句柄函数存在时，返回相应句柄函数的索引。&#xD;&#xA;&#xD;&#xA;在句柄函数没有被正常插入时，将返回-1。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="利用索引设定需要插入句柄函数的位置。&#xD;&#xA;&#xD;&#xA;在设定为-1时，添加到最后的位置。&#xD;&#xA;在设定为比在事件中设定的句柄函数的数量更大的值时，添加到最后的位置。&#xD;&#xA;在输入NaN值时，将根据ECMA的整数转换规则设定为0。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要在事件被触发时执行的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="设定需要插入句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExist" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于返回所指定的文件或文件夹的存在与否的方法。">
+        <Syntax text="VirtualFile.isExist(strPath)">
+          <Return type="Boolean" description="在省略参数或使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="设定需要对存在与否进行确认的文件或文件夹。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="按照条件打开载入到VirtualFile中的文件的方法。">
+        <Syntax text="VirtualFile.open( strFileName ,constOptions )">
+          <Return type="Boolean" description="与文件的打开与否无关地在执行方法成功时，将返回true。&#xD;&#xA;&#xD;&#xA;与文件的打开与否无关地在执行方法失败时，将返回false。&#xD;&#xA;在省略参数或设定了错误的字符时，将返回false。" />
+          <Arguments>
+            <Argument name="constOptions" type="Object" in="false" out="false" option="false" variable="false" description="利用常数值设定打开文件的选项。&#xD;&#xA;各个选项值可以利用OR（“|”）运算符重复设定。&#xD;&#xA;&#xD;&#xA;在设定为VirtualFile.openRead或1时以只读模式打开文件。&#xD;&#xA;当文件不存在时将发生错误。&#xD;&#xA;&#xD;&#xA;在设定为VirtualFile.openWrite或2时以只写模式打开文件。&#xD;&#xA;当文件不存在时将生成文件。&#xD;&#xA;&#xD;&#xA;在设定为VirtualFile.openAppend或16时以读/写模式打开文件。&#xD;&#xA;当文件存在时文件指针将移动到所打开的文件的最后位置。&#xD;&#xA;当文件不存在时将生成文件。&#xD;&#xA;&#xD;&#xA;在设定为VirtualFile.openCr" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="使用绝对路径或Alias设定需要打开的文件名。&#xD;&#xA;&#xD;&#xA;* 只有通过FileUpload、FileUpTransfer、FileDialog或Drag&amp;Drop传递的VirtualFile对象，才可以将strFileName参数值设定为null或空值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于读取在VirtualFile中打开的文件内容的方法。">
+        <Syntax text="VirtualFile.read([nLength [, strCharset]])">
+          <Return type="Boolean" description="在参数中使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="nLength" type="Number" in="false" out="false" option="false" variable="false" description="利用Byte单位的数字设定需要从文件读取的长度。&#xD;&#xA;&#xD;&#xA;在省略值时，将读取整个文件。" />
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="设定适用于需要从文件读取的内容的CharSet。&#xD;&#xA;&#xD;&#xA;只能在Windows NRE中适用，移动设备以“UTF-8”工作。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将在VirtualFile中打开的文件的内容读取到特定位置的方法。">
+        <Syntax text="VirtualFile.readLine([strDelimeter[, strCharset]])">
+          <Return type="Boolean" description="在参数中使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="设定适用于需要从文件读取的内容的CharSet。&#xD;&#xA;&#xD;&#xA;只能在Windows NRE中适用，移动设备以“UTF-8”工作。" />
+            <Argument name="strDelimeter" type="String" in="false" out="false" option="false" variable="false" description="设定在文件中停止读取的界定符。&#xD;&#xA;&#xD;&#xA;在省略值时适用“\n”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="remove" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于从VirtualFile中删除指定文件的方法。">
+        <Syntax text="VirtualFile.remove( strFilePath )&#xA;VirtualFile.remove( objVirtualFile )">
+          <Return type="Boolean" description="在省略参数或使用了不允许的字符时，将返回&quot;false&quot;。&#xD;&#xA;在除此之外的正常情况下，将返回&quot;true&quot;。" />
+          <Arguments>
+            <Argument name="objVirtualFile" type="Object" in="false" out="false" option="false" variable="false" description="设定从FileDialog对象返回的需要删除的VirtualFile对象。&#xD;&#xA;&#xD;&#xA;无法设定为执行方法的VirtualFile对象本身。&#xD;&#xA;在设定为自身时，将触发onerror事件。" />
+            <Argument name="strFilePath" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除的文件名以及路径。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于删除在VirtualFile中声明的特定事件的方法。">
+        <Syntax text="VirtualFile.removeEvent( strEventID )">
+          <Return type="Boolean" description="在删除事件成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在删除事件失败或设定了未声明的事件ID时，将返回false。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要从VirtualFile删除的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于从VirtualFile的特定事件中删除句柄函数的方法。">
+        <Syntax text="VirtualFile.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在删除句柄函数成功时，将返回&quot;1&quot;。&#xD;&#xA;在删除句柄函数失败时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定需要删除的句柄函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要删除的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要删除句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rename" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于在VirtualFile中移动特定文件的位置或变更文件名的方法。">
+        <Syntax text="VirtualFile.rename( strOldname, strNewname );">
+          <Return type="Boolean" description="在省略参数或使用了不允许的字符时，将返回false。&#xA;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strNewname" type="String" in="false" out="false" option="false" variable="false" description="设定需要移动的新位置和文件名以及路径。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+            <Argument name="strOldname" type="String" in="false" out="false" option="false" variable="false" description="设定需要移动位置或变更名称的文件名以及路径。&#xD;&#xA;&#xD;&#xA;使用绝对路径或Alias进行设定。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="renameDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在VirtualFile中变更文件夹名的方法。">
+        <Syntax text="VirtualFile.renameDirectory( strOldName, strNewName )">
+          <Return type="Boolean" description="与文件夹名的变更与否无关地返回方法的执行与否。" />
+          <Arguments>
+            <Argument name="strNewName" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定不包含路径的新的文件夹名。" />
+            <Argument name="strOldName" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更的文件夹名以及路径。&#xD;&#xA;&#xD;&#xA;在设定如“C:\\TobeSoft\\TestFolder”的绝对路径时，将变更相应的位置上的文件夹名。&#xD;&#xA;在仅设定如“My_Folder”的文件夹名时，将变更“我的文档”位置上的文件夹名。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在打开到VirtualFile的文件中移动文件指针位置的方法。">
+        <Syntax text="VirtualFile.seek(nOffset[, constOption])">
+          <Return type="Boolean" description="在参数中使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="利用常数值设定需要在移动文件指针时适用的选项。&#xD;&#xA;&#xD;&#xA;在设定为“VirtualFile.seekBegin”或0时，以文件的开始位置为基准移动文件指针。&#xD;&#xA;在设定为“VirtualFile.seekCurrent”或1时，以当前文件指针的位置为基准移动。&#xD;&#xA;在设定为“VirtualFile.seekEnd”或2时，以文件的结束位置为基准移动文件指针。&#xD;&#xA;&#xD;&#xA;在省略值时适用“VirtualFile.seekCurrent”。" />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="利用Byte单位的数字设定从当前位置移动文件指针的位置。&#xD;&#xA;&#xD;&#xA;在设定为负数值时指针从当前位置向开始位置方向移动。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于变更VirtualFile的特定事件中的第一个句柄函数的方法。">
+        <Syntax text="VirtualFile.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="在变更第一个句柄函数成功时，将返回&quot;0&quot;。&#xD;&#xA;在变更第一个句柄函数失败时，将返回&quot;-1&quot;。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="设定用于替代现有句柄函数的函数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="设定对需要替代的句柄函数做出定义的区域。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="设定需要变更句柄函数的事件的ID。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="用于将数据存储到在VirtualFile中打开的文件中的方法。">
+        <Syntax text="VirtualFile.write( varData [, strCharset] )">
+          <Return type="Boolean" description="在省略必要参数或在参数中使用了不允许的字符时，将返回false。&#xD;&#xA;&#xD;&#xA;在除此之外的正常情况下，将返回true。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="设定适用于需要存储到所打开的文件中的内容的CharSet。&#xD;&#xA;&#xD;&#xA;只能在Windows NRE中适用，移动设备以“UTF-8”工作。" />
+            <Argument name="varData" type="Variant" in="false" out="false" option="false" variable="false" description="利用字符串或Buffer对象形态设定需要存储到所打开的文件中的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在向VirtualFile请求的作业失败时触发的事件。">
+        <Syntax text="VirtualFile.onerror(obj:nexacro.VirtualFile,e:nexacro.VirtualFileErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileErrorEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="在向VirtualFile请求的作业成功时触发的事件。">
+        <Syntax text="VirtualFile.onsuccess(obj:nexacro.VirtualFile,e:nexacro.VirtualFileEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

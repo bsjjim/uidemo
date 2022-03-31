@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaInfo version="2.0">
+  <EnumInfo id="nullText">
+    <Enum name="전체"/>
+    <Enum name="선택"/>
+  </EnumInfo>
+  <EnumInfo id="viewtype">
+    <Enum name="A"/>
+    <Enum name="B"/>
+  </EnumInfo>
+</MetaInfo>

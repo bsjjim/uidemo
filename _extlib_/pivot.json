@@ -1,0 +1,33 @@
+﻿{
+	"name": "pivot",
+	"moduletype": "component",
+	"version": "2019.12.31.1",
+	"minnexacroversion": "17.1.0.100",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "pivot/_metainfo_/NxPivot.info",
+    "pivot/_metainfo_/EnumInfo.info",
+    "pivot/_metainfo_/ToolbarButtonClickEventInfo.info"
+	],
+	"scripts": [
+    "pivot/NxPivot.js",
+    "pivot/NxPivot.message.js",
+    "pivot/NxPivot.pivot.js",
+    "pivot/NxPivot.config.js",
+    "pivot/NxPivot.view.js"
+	],
+	"designscripts": [
+    "pivot/DesignNxPivot.js"
+	],
+	"help": "",	
+	"xcss": "pivot/_xcss_/NxPivot.xcss",
+	"images": "pivot/_images_/",	
+	"contentseditor": [
+    {
+    "classname":"nexacro.NxPivot",
+    "launch":"pivot/_contentseditor_/NxPivotCtse/start.json",
+    "contentsform":"ContentsForm::ContentsEditor.xfdl"
+    }
+	]
+}

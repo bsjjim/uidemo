@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CalMonth" width="90" height="24" titletext="년월 캘린더" onload="fnFormOnload" onsetfocus="CalMonth_onsetfocus">
+    <Layouts>
+      <Layout height="24" width="90">
+        <MaskEdit id="maeCal" taborder="1" left="0" top="0" height="24" format="####-##" textAlign="left" type="string" right="0" maskchar=" " oninput="maeCal_oninput"/>
+        <Button id="btnCal" taborder="0" top="0" width="25" height="24" right="0" cssclass="btn_WF_cal" onclick="btnCal_onclick"/>
+        <PopupDiv id="pdvCal" visible="false" left="0" top="24" width="161" height="151" background="#ffffff" border="1px solid #dddddd" cssclass="cal_Pop_Box">
+          <Layouts>
+            <Layout>
+              <Button id="btn1" taborder="0" text="1" left="12" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn2" taborder="1" text="2" left="btn1:8" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn3" taborder="2" text="3" left="btn2:8" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn4" taborder="3" text="4" left="btn3:8" top="43" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn5" taborder="4" text="5" left="12" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn6" taborder="5" text="6" left="btn5:8" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn7" taborder="6" text="7" left="btn6:8" top="77" width="27" height="27" cssclass="cal_Pop_Mon_Select" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn8" taborder="7" text="8" left="btn7:8" top="77" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn9" taborder="8" text="9" left="12" top="111" width="27" height="27" cssclass="cal_Pop_Mon" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn10" taborder="9" text="10" left="btn9:8" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn11" taborder="10" text="11" left="btn10:8" top="111" width="27" height="27" cssclass="cal_Pop_Mon_Today" textAlign="center" onclick="pdvCal_btn_onclick"/>
+              <Button id="btn12" taborder="11" text="12" left="btn11:8" top="111" width="27" height="27" cssclass="cal_Pop_Mon" textAlign="center" onclick="pdvCal_btn_onclick"/>
+              <Button id="btnPrev" taborder="12" left="5" top="11" width="18" height="18" cssclass="cal_Pop_Prev" fittocontents="none" rtl="true" onclick="pdvCal_btnPrev_onclick"/>
+              <Button id="btnNext" taborder="13" top="11" width="18" height="18" cssclass="cal_Pop_Next" right="5" onclick="pdvCal_btnNext_onclick"/>
+              <Static id="staYy" taborder="14" text="9999" left="29" top="9" width="101" height="24" textAlign="center"/>
+            </Layout>
+          </Layouts>
+        </PopupDiv>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  월달력 컴포지트
+*  @FileName 	: CalMonth.xfdl
+*  @Creator 	: 양경호 
+*  @CreateDate 	: 2022/01/18
+*  @Desction    : 월달력 컴포지트
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/18     	    양경호                 최초 생성 
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+this.fvToday;
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+    this.fvToday = this.gfnGetDate();
+	this.fnInit();
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+/*
+* 초기화
+*/
+this.fnInit = function()
+{
+	this.maeCal.set_value("");
+}
+
+//필수 표시
+this.fnSetRequired = function(bAct)
+{
+    if(bAct)
+	{
+	   this.maeCal.set_cssclass("input_req");
+	}
+	else
+	{
+		this.maeCal.set_cssclass("");
+	}
+}
+
+//선택필수 표시
+this.fnSetSelect = function(bAct)
+{
+    if(bAct)
+	{
+	   this.maeCal.set_cssclass("input_select");
+	}
+	else
+	{
+		this.maeCal.set_cssclass("");
+	}
+}
+
+//컴포넌트 활성 비활성화
+this.fnSetEnable = function(bValue)
+{
+	this.maeCal.set_enable(bValue);
+	this.btnCal.set_enable(bValue);
+};
+
+//컴포넌트 Readonly셋팅
+this.fnSetReadonly = function(bValue)
+{
+	this.maeCal.set_readonly(bValue);
+	this.btnCal.set_visible(!bValue);
+};
+
+//컴포넌트 날짜값 셋팅
+this.fnSetValue = function(sDate)
+{
+   	this.maeCal.set_value(sDate);
+}
+
+//컴포넌트 날짜값 반환
+this.fnGetValue = function(sDate)
+{
+   	return this.maeCal.value.trim();
+}
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+
+this.btnCal_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sDate = this.maeCal.value;
+	if(this.gfnIsNull(sDate)) sDate = this.fvToday;
+	
+	
+	
+	var sToYear = this.fvToday.substr(0,4);
+	var sToMonth = this.fvToday.substr(4,2);
+	var sSelYear = sDate.substr(0,4).trim().padLeft(4,"0");
+	var sSelMonth = sDate.substr(4,2).trim().padLeft(2,"0");
+	
+	if(sSelYear == "0000") sSelYear = sToYear;
+	if(sSelMonth == "00") sSelMonth = sToMonth;
+	
+	if(parseInt(sSelYear) < 1900) sSelYear = "1900"; //1900년보다 작으면 1900년도로 고정
+	
+	this.pdvCal.form.staYy.set_text(sSelYear);
+	
+	//버튼 Css초기화
+	for(var i=1; i<13; i++)
+	{
+	    this.pdvCal.form.components["btn"+i].set_cssclass("cal_Pop_Mon");
+	}
+	
+	if(sToYear == sSelYear)	this.pdvCal.form.components["btn"+parseInt(sToMonth)].set_cssclass("cal_Pop_Mon_Today");
+    
+	if(sToMonth != sSelMonth) this.pdvCal.form.components["btn"+parseInt(sSelMonth)].set_cssclass("cal_Pop_Mon_Select");
+	
+	this.pdvCal.trackPopupByComponent(this.maeCal,this.maeCal.left,this.maeCal.height);
+};
+
+this.pdvCal_btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sDate = this.pdvCal.form.staYy.text + obj.text.padLeft(2, '0');
+	this.maeCal.set_value(sDate);
+	this.pdvCal.closePopup();	
+};
+
+this.pdvCal_btnPrev_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var nDate = nexacro.toNumber(this.pdvCal.form.staYy.text);
+	    nDate = (nDate <= 1900) ? 1900 : nDate-1; //1900년보다 작으면 1900년도로 고정
+	var sDate = nDate.toString().padLeft(4,"0");
+	this.pdvCal.form.staYy.set_text(sDate);	
+};
+
+this.pdvCal_btnNext_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var nDate = nexacro.toNumber( this.pdvCal.form.staYy.text)+1;
+	var sDate = nDate.toString().padLeft(4,"0");
+	this.pdvCal.form.staYy.set_text(sDate);	
+};
+
+this.maeCal_oninput = function(obj:nexacro.MaskEdit,e:nexacro.InputEventInfo)
+{
+	  var sOrgVal = obj.value;
+	  var sDt = sOrgVal.substr(4,2);
+	  sDt = sDt.trim();
+  
+      //입력한 월이 12월이 넘어가는 경우 12월 이상입력안되게 처리
+	  if(!this.gfnIsNull(sDt) && parseInt(sDt) > 12)
+	  {
+	      obj.set_value(sOrgVal.substr(0,5));
+		  obj.setCaretPos(6)
+	  }
+	  
+};
+
+this.CalMonth_onsetfocus = function(obj:nexacro.Form,e:nexacro.SetFocusEventInfo)
+{
+	if(obj.getFocus() == obj)
+	{
+		obj.maeCal.setFocus();
+	}
+};
+]]></Script>
+  </Form>
+</FDL>

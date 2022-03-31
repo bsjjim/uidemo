@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Popup" width="370" height="205" titletext="New Form">
+    <Layouts>
+      <Layout height="205" width="370">
+        <Static id="Static00_00" taborder="0" cssclass="sta_POP_bg" height="205" left="0" top="0" width="370"/>
+        <Static id="Static00" taborder="1" text="Notice" left="0" top="0" height="30" cssclass="sta_POP_title" width="370"/>
+        <Button id="Button00" taborder="2" top="1" width="50" height="28" cssclass="btn_POP_close" left="319"/>
+        <Static id="Static01_00_00" taborder="3" text="컨펌&#13;&#10;타이틀 Question&#13;&#10;&#13;&#10;알럿&#13;&#10;타이틀 Notice&#13;&#10;&#13;&#10;에러&#13;&#10;타이틀 Error&#13;&#10;" top="45" cssclass="sta_Guide" width="274" left="531" height="175" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px"/>
+        <ImageViewer id="imv00" taborder="4" left="161" top="50" width="48" height="48" image="url('theme://images/img_alert.png')" border="0px none"/>
+        <ImageViewer id="imv00_00" taborder="5" left="644" top="107" width="48" height="48" image="url('theme://images/img_alert.png')" border="0px none" visible="false"/>
+        <ImageViewer id="imv00_00_00" taborder="6" left="644" top="160" width="48" height="48" image="url('theme://images/img_error.png')" border="0px none" visible="false"/>
+        <ImageViewer id="imv00_00_00_00" taborder="7" left="644" top="52" width="48" height="48" image="url('theme://images/img_question.png')" border="0px none" visible="false"/>
+        <Static id="Static01_00_00_00" taborder="8" top="30" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="Static01_00_00_00_00" taborder="9" top="98" cssclass="sta_Guide" width="159" left="70" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+        <Static id="sta00" taborder="10" text="선택한 데이터를 삭제하시겠습니까?" top="106" height="39" textAlign="center" left="10" width="350"/>
+        <Button id="btn00" taborder="11" text="예" left="107" top="156" width="76" height="28" cssclass="btn_Block" borderRadius="2px"/>
+        <Button id="btn00_00" taborder="12" text="아니오" left="187" top="156" width="76" height="28" cssclass="btn_Block" borderRadius="2px"/>
+        <Static id="Static01_00_00_00_00_00" taborder="13" top="184" cssclass="sta_Guide" width="159" left="110" height="20" visible="false" onclick="Static01_00_00_onclick" background="red" color="#ffffff" textAlign="left" padding="10px" text="20"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Static01_00_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

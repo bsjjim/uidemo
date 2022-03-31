@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1528" height="752" titletext="Grid  - 포인트컬러, 좌측고정컬럼">
+    <Layouts>
+      <Layout height="752" width="1528">
+        <Grid id="Grid00_01" taborder="7" left="0" top="398" binddataset="ds_grid2" height="214" width="1040" initvalueid="iv_Grid">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="40" band="left"/>
+                <Column size="40" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="theme://images/flag.png" displaytype="imagecontrol"/>
+                <Cell col="1" text="선택"/>
+                <Cell col="2" text="타이틀1"/>
+                <Cell col="3" text="타이틀2"/>
+                <Cell col="4" text="타이틀3"/>
+                <Cell col="5" text="타이틀4"/>
+                <Cell col="6"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Flag" displaytype="imagecontrol"/>
+                <Cell col="1" text="bind:Delete" edittype="checkbox" displaytype="checkboxcontrol"/>
+                <Cell col="2" text="bind:Column3" displaytype="editcontrol" edittype="normal"/>
+                <Cell col="3" text="bind:Column4" textAlign="left" displaytype="calendarcontrol" edittype="date"/>
+                <Cell col="4"/>
+                <Cell col="5"/>
+                <Cell col="6"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static74_00_00_00_00_00" taborder="13" left="0" top="547" width="81" height="113" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+        <Static id="Static45_00_00_01" taborder="0" text="텍스트 포인트 컬러 및 포인트 bg 클래스" left="0" top="7" width="380" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static01_00_00_01_00_00_03" taborder="1" text="h35" top="0" cssclass="sta_Guide" width="100" left="473" height="35" visible="false"/>
+        <Grid id="Grid00" taborder="2" left="0" top="35" binddataset="ds_grid" height="242" initvalueid="iv_Grid" right="40">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="120" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120" band="right"/>
+                <Column size="120" band="right"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="좌측헤더"/>
+                <Cell col="1" text="텍스트 컬러1"/>
+                <Cell col="2" text="텍스트 컬러2"/>
+                <Cell col="3" text="텍스트 컬러3"/>
+                <Cell col="4" text="bg컬러 1"/>
+                <Cell col="5" text="bg컬러 2"/>
+                <Cell col="6" text="bg컬러 3"/>
+                <Cell col="7" text="bg컬러 4"/>
+                <Cell col="8" text="bg컬러 5"/>
+                <Cell col="9" text="소계"/>
+                <Cell col="10" text="합계"/>
+              </Band>
+              <Band id="body">
+                <Cell cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_header&quot;" text="bind:LeftHeader" suppressalign="first" suppress="1"/>
+                <Cell col="1" text="bind:Column5" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_fc_blue&quot;"/>
+                <Cell col="2" text="bind:Column4" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_fc_orange&quot;"/>
+                <Cell col="3" text="bind:Column3" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_fc_red&quot;"/>
+                <Cell col="4" text="bind:Column2" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_bg_1&quot;"/>
+                <Cell col="5" text="bind:Column1" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_bg_2&quot;"/>
+                <Cell col="6" text="bind:Column0" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_bg_3&quot;"/>
+                <Cell col="7" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_bg_4&quot;" text="bind:Column9"/>
+                <Cell col="8" cssclass="expr:LeftHeader=='소계'?&quot;cell_sub_summ&quot;:&quot;cell_bg_5&quot;" text="bind:Column8"/>
+                <Cell col="9" cssclass="cell_sub_summ" text="bind:summ" displaytype="number"/>
+                <Cell col="10" cssclass="cell_summ" text="bind:Column10"/>
+              </Band>
+              <Band id="summary">
+                <Cell text="합계" textAlign="center"/>
+                <Cell col="1"/>
+                <Cell col="2"/>
+                <Cell col="3"/>
+                <Cell col="4"/>
+                <Cell col="5"/>
+                <Cell col="6"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+                <Cell col="10"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static05_00_00_01" taborder="3" text="※ 텍스트에 포인트 컬러 또는 bg 컬러가 필요할 경우 다음 클래스 1번부터 5번까지 순차적으로 사용. (추가 컬러가 필요할 경우, 임의로 값을 넣지 말고, 퍼블리셔에게 요청바랍니다.)" usedecorate="true" left="275" top="12" width="877" height="15" initvalueid="iv_fc_blue" cssclass="sta_txt_desc"/>
+        <Static id="Static01" taborder="4" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Static id="Static45_00_00_01_00" taborder="5" text="편집가능 그리드 고정컬럼" left="0" top="368" width="300" height="24" cssclass="sta_WF_title1" usedecorate="true"/>
+        <Static id="Static05_00_00_01_00" taborder="6" text="※ 편집가능 그리드에 Flag, 선택 컬럼을 추가할 경우, 가로 스크롤 되지 않도록 좌측고정컬럼 처리" usedecorate="false" left="192" top="370" width="747" height="20" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Div id="Div01" taborder="8" text="Div01" left="0" top="672" height="87" cssclass="div_WF_infobox" width="1040">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="좌측 고정 컬럼(가로스크롤 시 스크롤 되지 않는 컬럼)" left="20" top="7" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00_00" taborder="1" text="Flag, 선택(삭제) 이 있을 경우 순서대로 배치한다." left="20" top="30" width="320" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static00_00_00" taborder="2" text="Flag, 선택(삭제)은 그리드 좌측에 고정하여, 그리드 좌우 스크롤 시 스크롤 되지 않도록 한다." left="20" top="52" width="613" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static01_00_00_01_00_00" taborder="3" text="10" top="26" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="4" text="10" top="48" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00_00_01" taborder="9" onclick="Static76_onclick" left="0" top="644" width="80" height="1" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static05_00" taborder="10" text="40" usedecorate="true" left="11" top="614" width="27" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" textAlign="center"/>
+        <Static id="Static05_00_00" taborder="11" text="40" usedecorate="true" left="47" top="614" width="27" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" textAlign="center"/>
+        <Static id="Static05_00_00_01_01" taborder="12" text="좌측 고정 컬럼" usedecorate="true" left="3" top="637" width="87" height="15" background="rgba(255,255,255,1)" textAlign="center" color="red"/>
+        <Grid id="Grid00_01_00" taborder="14" left="0" top="810" binddataset="ds_grid2" height="214" width="1040" initvalueid="iv_Grid">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="50" band="left"/>
+                <Column size="80" band="left"/>
+                <Column size="80" band="left"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No"/>
+                <Cell col="1" text="고정컬럼1"/>
+                <Cell col="2" text="고정컬럼2" cssclass="cell_fix"/>
+                <Cell col="3" text="타이틀1"/>
+                <Cell col="4" text="타이틀2"/>
+                <Cell col="5" text="타이틀3"/>
+                <Cell col="6" text="타이틀4"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+                <Cell col="10"/>
+                <Cell col="11"/>
+              </Band>
+              <Band id="body">
+                <Cell/>
+                <Cell col="1"/>
+                <Cell col="2" cssclass="cell_fix"/>
+                <Cell col="3" text="bind:Column3"/>
+                <Cell col="4" text="bind:Column4" textAlign="left"/>
+                <Cell col="5" text="bind:Column5" textAlign="right" displaytype="number"/>
+                <Cell col="6" text="bind:Column1"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+                <Cell col="10"/>
+                <Cell col="11"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1" colspan="2" text="합계" textAlign="center" cssclass="cell_fix"/>
+                <Cell col="3"/>
+                <Cell col="4"/>
+                <Cell col="5"/>
+                <Cell col="6"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+                <Cell col="10"/>
+                <Cell col="11"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static45_00_00_01_00_00" taborder="15" text="조회 그리드의 좌측고정 컬럼" left="0" top="780" width="300" height="24" cssclass="sta_WF_title2" usedecorate="true"/>
+        <Static id="Static05_00_00_01_00_00" taborder="16" text="※ 일반 조회 그리드에서 일반컬럼 고정시에 고정하는 가장 우측 컬럼에 border 처리. 셀클래스 .cell_fix" usedecorate="false" left="207" top="782" width="747" height="20" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+        <Static id="Static22_00_00_01" taborder="17" text="좌측헤더 데이터 머지가 있을 경우 클래스 : .cell_header" left="57" top="298" width="338" height="24"/>
+        <Static id="Static21_00_00_01" taborder="18" left="9" top="199" width="35" height="106" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static22_00_00_01_00" taborder="19" text="셀옵션 : suppress &gt; 1, suppressalign &gt; first" left="57" top="317" width="343" height="24"/>
+        <Static id="Static21_00_00_01_00" taborder="20" left="868" top="230" width="207" height="81" border="0px none, 0px none, 1px solid red, 1px solid red"/>
+        <Static id="Static21_00_00_01_00_00" taborder="21" left="1260" top="234" width="60" height="81" border="0px none,  1px solid red, 1px solid red, 0px none"/>
+        <Static id="Static22_00_00_01_01" taborder="22" text="소계 클래스: .cell_sub_summ" left="1089" top="300" width="183" height="24"/>
+        <Static id="Static21_00_00_01_00_00_00" taborder="23" left="1262" top="238" width="165" height="101" border="0px none,  1px solid red, 1px solid red, 0px none" text=""/>
+        <Static id="Static22_00_00_01_01_00" taborder="24" text="우측 합계 클래스: .cell_summ" left="1089" top="322" width="178" height="24"/>
+        <Static id="Static22_00_00_01_01_00_00" taborder="25" text="(하단합계는 클래스 없음)" left="1184" top="342" width="178" height="24"/>
+        <Static id="Static01_00_00_01_00_01" taborder="26" text="사용여부 미정&#13;&#10;컬럼별 포인트 BG 컬러 필요 시, UI팀에 문의" top="67" cssclass="sta_Guide_info" width="604" left="480" height="148" visible="true" verticalAlign="middle" textAlign="center" background="rgba(255,0,0,0.60)" color="#ffffff" font="20px &quot;NotoKr-Regular&quot;"/>
+        <Div id="Div01_00" taborder="27" text="Div01" left="0" top="1089" height="87" cssclass="div_WF_infobox" width="1040">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="일반 조회그리드의 좌측 고정컬럼" left="20" top="7" width="428" height="24" cssclass="sta_txt_descTitle" onclick="Div01_Static00_onclick"/>
+              <Static id="Static00_00" taborder="1" text="일반 조회 그리드에 No 컬럼을 두는 것을 원칙으로 한다." left="20" top="30" width="365" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static00_00_00" taborder="2" text="No 컬럼은 항상 좌측 고정 처리한다." left="20" top="52" width="613" height="24" cssclass="sta_txt_descDot"/>
+              <Static id="Static01_00_00_01_00_00" taborder="3" text="10" top="26" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_00" taborder="4" text="10" top="48" cssclass="sta_Guide" width="100" left="63" height="10" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static74_00_00_00_00_00_00" taborder="28" left="0" top="952" width="211" height="113" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+        <Static id="Static00_00_01_00" taborder="29" onclick="Static76_onclick" left="0" top="1049" width="210" height="1" border="1px dotted rgba(177,192,203,1), 0px none #808080" text=""/>
+        <Static id="Static05_00_01" taborder="30" text="50" usedecorate="true" left="11" top="1029" width="27" height="15" background="rgba(255,255,255,1)" color="rgba(177,192,203,1)" textAlign="center"/>
+        <Static id="Static05_00_00_01_01_00" taborder="31" text="좌측 고정 컬럼" usedecorate="true" left="86" top="1039" width="87" height="15" background="rgba(255,255,255,1)" textAlign="center" color="red"/>
+        <Static id="Static74_00_00_00_00_00_00_00" taborder="32" left="0" top="952" width="51" height="113" border="0px none rgba(128,128,128,1), 1px dotted rgba(177,192,203,1)" text=""/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="LeftHeader" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="summ" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="summ">cell_sub_summ</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+            <Col id="Column6">cell_fc_green</Col>
+            <Col id="Column7">cell_fc_purple</Col>
+            <Col id="Column9">cell_bg_4</Col>
+            <Col id="Column8">cell_bg_5</Col>
+            <Col id="Column10">0</Col>
+            <Col id="LeftHeader">헤더1</Col>
+          </Row>
+          <Row>
+            <Col id="summ">1000000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+            <Col id="Column6">cell_fc_green</Col>
+            <Col id="Column7">cell_fc_purple</Col>
+            <Col id="Column9">cell_bg_4</Col>
+            <Col id="Column8">cell_bg_5</Col>
+            <Col id="Column10">150000</Col>
+            <Col id="LeftHeader">헤더1</Col>
+          </Row>
+          <Row>
+            <Col id="LeftHeader">소계</Col>
+            <Col id="Column10">0</Col>
+            <Col id="summ">0</Col>
+            <Col id="Column5">0</Col>
+            <Col id="Column4">0</Col>
+            <Col id="Column3">0</Col>
+            <Col id="Column6">0</Col>
+            <Col id="Column7">0</Col>
+            <Col id="Column2">0</Col>
+            <Col id="Column8">0</Col>
+            <Col id="Column9">0</Col>
+            <Col id="Column0">0</Col>
+            <Col id="Column1">0</Col>
+          </Row>
+          <Row>
+            <Col id="summ">0</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+            <Col id="Column6">cell_fc_green</Col>
+            <Col id="Column7">cell_fc_purple</Col>
+            <Col id="Column9">cell_bg_4</Col>
+            <Col id="Column8">cell_bg_5</Col>
+            <Col id="Column10">1000000</Col>
+            <Col id="LeftHeader">헤더2</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+            <Col id="Column6">cell_fc_green</Col>
+            <Col id="Column7">cell_fc_purple</Col>
+            <Col id="Column9">cell_bg_4</Col>
+            <Col id="Column8">cell_bg_5</Col>
+            <Col id="summ">0</Col>
+            <Col id="LeftHeader">헤더2</Col>
+            <Col id="Column10">0</Col>
+          </Row>
+          <Row>
+            <Col id="LeftHeader">소계</Col>
+            <Col id="summ">1000000</Col>
+            <Col id="Column10">1000000</Col>
+            <Col id="Column5">0</Col>
+            <Col id="Column4">0</Col>
+            <Col id="Column3">0</Col>
+            <Col id="Column6">0</Col>
+            <Col id="Column7">0</Col>
+            <Col id="Column2">0</Col>
+            <Col id="Column9">0</Col>
+            <Col id="Column8">1000000</Col>
+            <Col id="Column1">0</Col>
+            <Col id="Column0">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_grid2">
+        <ColumnInfo>
+          <Column id="No" type="STRING" size="256"/>
+          <Column id="Flag" type="STRING" size="256"/>
+          <Column id="Delete" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="No">1</Col>
+            <Col id="Flag">theme://images/ico_flag_add.png</Col>
+            <Col id="Delete">1</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+          </Row>
+          <Row>
+            <Col id="No">2</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+            <Col id="Flag">theme://images/ico_flag_del.png</Col>
+          </Row>
+          <Row>
+            <Col id="No">3</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+            <Col id="Flag">theme://images/ico_flag_mod.png</Col>
+          </Row>
+          <Row>
+            <Col id="No">4</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+          </Row>
+          <Row>
+            <Col id="No">5</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+          </Row>
+          <Row>
+            <Col id="No">6</Col>
+            <Col id="Column4"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

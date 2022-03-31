@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp03" width="1528" height="752" titletext="SGI보상청구관리">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Tab id="Tab00" taborder="0" tabindex="0" left="0" top="0" right="40" bottom="0" initvalueid="iv_Tab_1Depth">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="청구신청" url="SD::SD17020T01.xfdl"/>
+            <Tabpage id="Tabpage2" text="기각내역" url="SD::SD17020T02.xfdl"/>
+            <Tabpage id="Tabpage3" text="지급내역" url="SD::SD17020T03.xfdl"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static01_00" taborder="1" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="57" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1234567890</Col>
+            <Col id="Column1">1113381258</Col>
+            <Col id="Column2">홍길동</Col>
+            <Col id="Column3">10허1234</Col>
+            <Col id="Column4">LOTZE (L) 2.0</Col>
+            <Col id="Column5">1234-1234-****-****</Col>
+            <Col id="Column6">1</Col>
+            <Col id="Column7">1</Col>
+            <Col id="Column8">1</Col>
+            <Col id="Column9">23/11</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">1234567890</Col>
+            <Col id="Column1">1113381258</Col>
+            <Col id="Column2">홍길동</Col>
+            <Col id="Column3">10허1234</Col>
+            <Col id="Column4">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column5">1234-1234-****-****</Col>
+            <Col id="Column6">4</Col>
+            <Col id="Column7">4</Col>
+            <Col id="Column8">4</Col>
+            <Col id="Column9">23/11</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">1234567890</Col>
+            <Col id="Column1">1113381258</Col>
+            <Col id="Column2">홍길동</Col>
+            <Col id="Column3">10허1234</Col>
+            <Col id="Column4">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column5">1234-1234-****-****</Col>
+            <Col id="Column6">22</Col>
+            <Col id="Column7">22</Col>
+            <Col id="Column8">22</Col>
+            <Col id="Column9">23/11</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">1234567890</Col>
+            <Col id="Column1">1113381258</Col>
+            <Col id="Column2">홍길동</Col>
+            <Col id="Column3">10허1234</Col>
+            <Col id="Column4">K5 (L) 2.0 렌터카 DELUXE</Col>
+            <Col id="Column5">1234-1234-****-****</Col>
+            <Col id="Column6">1</Col>
+            <Col id="Column7">1</Col>
+            <Col id="Column8">1</Col>
+            <Col id="Column9">23/11</Col>
+          </Row>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[     ]]></Script>
+  </Form>
+</FDL>

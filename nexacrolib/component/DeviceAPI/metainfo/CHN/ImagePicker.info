@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ImagePicker">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ImagePicker" shorttypename="ImagePicker" csstypename="ImagePicker" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="通过与移动设备的相册或摄像头应用联动而获取影像或影像路径。" />
+    <PropertyInfo>
+      <Property name="encodingtype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含所获得的图像的类型信息的只读属性。" csspropertyname="" normalpropertyname="encodingtype" />
+      <Property name="gettype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含所读取的图像的传递方式的只读属性。" csspropertyname="" normalpropertyname="gettype" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定ImagePicker的固有标识符的属性。" csspropertyname="" normalpropertyname="id" />
+      <Property name="imageheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定需要读取的图像高度的属性。" csspropertyname="" normalpropertyname="imageheight" />
+      <Property name="imagequality" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定需要读取的图像品质的属性。" csspropertyname="" normalpropertyname="imagequality" />
+      <Property name="imagewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定需要读取的图像宽度的属性。" csspropertyname="" normalpropertyname="imagewidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="用于设定ImagePicker的名称的属性。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含ImagePicker的父级对象的只读属性。" csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于通过驱动移动设备的相册或照相机应用或关联的其他应用而获得图像的方法。">
+        <Syntax text="ImagePicker.open( enumGettype, enumEncodingype )">
+          <Return type="Boolean" description="在执行方法成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在执行方法失败或参数值设定错误时，将返回false。" />
+          <Arguments>
+            <Argument name="enumEncodingtype" type="String" in="false" out="false" option="false" variable="false" description="设定传递图像的文件格式。&#xD;&#xA;&#xD;&#xA;在设定为“JPEG”时，图像将传递为“JPEG”文件。&#xD;&#xA;在设定为“PNG”时，图像将传递为“PNG”文件。&#xD;&#xA;&#xD;&#xA;在执行方法之后，参数值将被存储到encodingtype属性中。" />
+            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="设定传递图像的方法。&#xD;&#xA;&#xD;&#xA;在设定为“url”时，以“URL”形态传递图像的位置信息。&#xD;&#xA;在设定为“imagedata”时，以对象形态传递图像。&#xD;&#xA;&#xD;&#xA;在执行方法之后，参数值将被存储到gettype属性中。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在读取图像失败时触发的事件。">
+        <Syntax text="ImagePicker.onerror(obj:nexacro.ImagePicker,e:nexacro.ImagePickerErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="在读取图像成功时触发的事件。">
+        <Syntax text="ImagePicker.onsuccess(obj:nexacro.ImagePicker,e:nexacro.ImagePickerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,33 @@
+﻿{
+	"name": "NxPivot",
+	"version": "2019.10.23.01",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "NxPivot/metainfo/EnumInfo.info",
+    "NxPivot/metainfo/NxPivot.info",
+    "NxPivot/metainfo/ToolbarButtonClickEventInfo.info"
+	],
+	"scripts": [
+    "NxPivot/NxPivot.js",
+    "NxPivot/NxPivot.message.js",
+    "NxPivot/NxPivot.pivot.js",
+    "NxPivot/NxPivot.config.js",
+    "NxPivot/NxPivot.view.js"
+	],
+	"designscripts": [
+    "NxPivot/Design/DesignNxPivot.js"
+	],
+	"help": "",
+	"resources": "",
+	"xcss": "NxPivot/_xcss_/NxPivot.xcss",
+	"images": "NxPivot/_images_/",	
+	"contentseditor": [
+    {
+    "classname":"nexacro.NxPivot",
+    "launch":"NxPivot/_contentseditor_/start.json",
+    "contentsform":"ContentsForm::ContentsEditor.xfdl"
+    }
+	]
+}
+//# sourceURL=NxPivot.json

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于提供如操作系统、硬件以及输入装置等信息的对象。" />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的NetBIOS名称的只读属性。" csspropertyname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的CPU制造商名称的只读属性。" csspropertyname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的CPU数量的只读属性。" csspropertyname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的CPU类型信息的只读属性。" csspropertyname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的locale代码值的只读属性。" csspropertyname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含登录到执行应用程序的计算机中的用户ID的只读属性。" csspropertyname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的移动设备的当前方向信息的只读属性。" csspropertyname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的移动设备的机型名称的只读属性。" csspropertyname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的计算机的显示器数量的只读属性。" csspropertyname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="包含执行应用程序的Windows Nexacro的引擎类型的只读属性。" csspropertyname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的浏览器信息的只读属性。" csspropertyname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的浏览器的版本的只读属性。" csspropertyname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含用于在执行应用程序的移动设备中接收Push通知的Device Token值的只读属性。" csspropertyname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的环境的操作系统名称以及版本的只读属性。" csspropertyname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="包含执行应用程序的移动设备的TaskBar（Android为IndicatorBar）大小的只读属性。" csspropertyname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera" description="用于在网页浏览器中将利用Nexacro Studio进行Generate的&quot;xfdl&quot;文件载入到使用者DOM中的方法。">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="设定document对象。" />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定所Generate的“xadl”文件的名称。" />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="设定需要对所Generate的“xfdl”文件进行载入的使用者Division的ID。" />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在注册到Application的AppVariables时所使用的Key值。" />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="设定所Generate的“xfdl”文件的名称。" />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="设定window对象。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="checkDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于确认权限设定与否的方法。">
+        <Syntax text="system.checkDevicePermission(arrPermissiontypes);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissiontypes" type="Array" in="false" out="false" option="false" variable="false" description="利用数组形态设定可以对设定与否进行确认的权限列表。&#xD;&#xA;可以指定的值如下所述。&#xD;&#xA;&#xD;&#xA;// 通用&#xD;&#xA;nexacro.DevicePermissionType.CALENDAR: &quot;calendar&quot; &#xD;&#xA;nexacro.DevicePermissionType.CAMERA: &quot;camera&quot; &#xD;&#xA;nexacro.DevicePermissionType.CONTACTS: &quot;contacts&quot; &#xD;&#xA;nexacro.DevicePermissionType.LOCATION: &quot;location&quot; &#xD;&#xA;nexacro.De" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,iOS/iPadOS NRE" description="用于删除存储在系统剪贴板中的内容的方法。">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将组件的客户端基准的x坐标值转换成屏幕基准的x坐标值并返回的方法。">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="返回以屏幕为基准的x坐标值。" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="设定以需要转换的组件为基准的x坐标值。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定作为需要转换的x坐标值的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于将组件的客户端基准的y坐标值转换成屏幕基准的y坐标值并返回的方法。">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="返回以屏幕为基准的y坐标值。" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="设置以需要转换的组件为基准的y坐标值。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设置作为需要转换的y坐标值的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将包含Alias的路径转换成实际绝对路径的方法。">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="返回实际绝对路径。" />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定包含需要转换成绝对路径的Alias的路径。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于根据所传递的字符串信息执行浏览器（或应用）的方法。">
+        <Syntax text="system.execBrowser( strUrl )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定URL路径或用于执行拨打电话、发送邮件功能的信息。&#xD;&#xA;在Android NRE、iOS/iPadOS NRE中可以设定用于执行文件或应用的字符串。请参考Remark项目。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execDefaultBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="将传递的 URL 设为默认应用程序的浏览器中运行的方法。">
+        <Syntax text="system.execDefaultBrowser(strUrl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定网页页面URL路径。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于以所传递的执行路径以及参数值执行Nexacro的方法。">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="设定由选项保留字以及选项值成对构成的执行选项。&#xA;当选项值中包含空格时，需要括在引号（&quot;）中。&#xA;&#xA;-K：设置区分应用程序的密钥值为字符串 。&#xA;-S：设定引导程序路径。&#xA;-C：设定安装有组件的路径。&#xA;-THR：利用数字设定引擎内部通信以及其他Manager的线程数量。&#xA;          线程数量最少为3个，最大为10个，默认值为3。&#xA;-SP：设定Splash Image的路径。&#xA;-SM：在设定为“none”值时，不在Splash Image中显示系统消息。&#xA;         如果在运行应用程序时发生错误，即使设置了值“none”，也会显示错误消息。&#xA;- LF : 设置应用程序的左位置坐标。&#xA;-TP：设置应用程序的顶部位置坐标。&#xA;-WD ：以像素为单位设置应用程序的宽度。&#xA;-HT ：以像素为单位设置应用程序的高度。&#xA;-LG : 设置加载图片的路径。&#xA;-TW ：设置引擎内部Manger thread的等待最长时间。&#xA;-OO : 是否只允许一个相同键的应用程序运行，设置为Boolean。&#xA;-V : 将应用程序启动时追加的Global变量设置为&quot;变量名:类型=值变量名:类型=值&quot;形式。&#xA;       每个变量通过用逗号 (&quot;,&quot;) 字符分隔符来区分设置。&#xA;       当“类型”中设置了“ev”时，会在 Environment 的 Variables区域增加一个变量。&#xA;       当“类型”中设置了“ec”时，会在Environment的Cookies区域增加一个变量。&#xA;       当没有设置“Type”或者设置了“av”时，Application的Variables区域会增加一个变量。&#xA;-SIE：应用程序运行时发生错误时， 提示错误信息并设置为Boolean。&#xA;         如果省略选项值时，则应用为 false。&#xA;-CT ：设置检查初始网络是否连接的最大待机时间。&#xA;         在运行应用程序之前检查网络是否已连接。&#xA;         如果在等待期间未确认网络连接，则应用程序终止。&#xA;-SCR : 设置要在 LayoutManager 中使用的 ScreenID。&#xA;-CC : 设置禁用 V8 引擎的 CodeCache 功能。&#xA;         当设置为“NO”时，不使用 CodeCache 功能。&#xA;         当设置“AL”或省略选项值时，CodeCache 功能被激活。&#xA;-AU ：应用程序运行时设置引擎是否更新。&#xA;         当设置为“auto”时，引擎会更新到最新版本。&#xA;         设置为“手动”时不要更新引擎。&#xA;-NC : 设置应用程序执行时要适用的的Config文件的路径和文件名。&#xA;         只能设置位于本地路径中的 XML 格式文件。&#xA;         如果只设置文件名，则会在与 nexacro.exe 位置相同的路径中找到该文件。&#xA;         如果省略选项值，则在“%USERAPP%\config\”+[Key] 路径中找到“nexacro_config.xml”文件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="向Windows Shell传递设置值的方法。">
+        <Syntax text="system.execShell( strShellCmd )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCmd" type="String" in="false" out="false" option="false" variable="false" description="设置要传递给windows shell的值。&#xA;可用格式如下所示。&#xA;&#xA;(1) 文件路径+文件名&#xA;指定用户 PC 的文件路径和文件名，并在连接的应用程序中运行。&#xA;可以将其设置为Alias或文件路径。&#xA;&#xA;(2) URL&#xA;以“http://”、“https://”开头的字符串作为 URL 值传递并在默认 Web 浏览器中运行。&#xA;&#xA;(3) 电子邮件&#xA;以“mailto:”开头的字符串将在默认电子邮件应用程序中运行。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportPDF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="将指定组件图片转换成PDF 文件的方法 。">
+        <Syntax text="system.exportPDF(objComponent, strFileName)">
+          <Return type="Boolean" description="" />
+          <Arguments>
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="将要转换到 PDF 文件的组件设置为 Object 。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="设置将要转换成PDF的文件名时包括扩展名。&#xA;根据操作系统的安全策略，可以设置的文件名可能会有限制。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将存储在系统的剪贴板中的数据以指定的格式返回。">
+        <Syntax text="system.getClipboard( strFormat [, objCallBackFunc [, objTarget]] )">
+          <Return type="Variant" description="将系统剪贴板中的数据以指定的格式返回。&#xD;&#xA;&#xD;&#xA;* Chrome, Opera浏览器将返回undefined。" />
+          <Arguments>
+            <Argument name="objCallBackFunc" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要返回系统剪贴板中的数据的CallBack函数。&#xD;&#xA;&#xD;&#xA;* 只有在使用Chrome、Opera浏览器的情况下适用的参数。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定对CallBack函数做出定义的区域。&#xD;&#xA;&#xD;&#xA;在省略值时适用window。&#xD;&#xA;&#xD;&#xA;* 只有在使用Chrome、Opera浏览器的情况下适用的参数。" />
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在将数据存储到系统剪贴板时适用的格式。&#xD;&#xA;&#xD;&#xA;在设定为“CF_TEXT”时，将数据以文本格式进行存储。&#xD;&#xA;在设定为“CF_UNICODETEXT”时，将数据以Unicode文本格式进行存储。&#xD;&#xA;在设定为“CF_CSV”时，将数据以CSV格式进行存储。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回鼠标光标所处位置的x坐标值的方法。">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="返回鼠标光标所处位置的x坐标值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="用于返回鼠标光标所处位置的y坐标值的方法。">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="返回鼠标光标所处位置的y坐标值。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在多显示器的情况下返回与所传递的坐标值最接近的显示器编号的方法。">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="返回与坐标对应的显示器编号。" />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="设定屏幕的x坐标值。" />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="设定屏幕的y坐标值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于返回执行应用程序的屏幕高度的方法。">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="返回屏幕高度。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenPrintString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="以 HTML( WRE) 、 Base64( NRE) 字符串形式打印指定组件的方法 。">
+        <Syntax text="system.getScreenPrintString(objComponent)">
+          <Return type="String" description="根据执行环境返回 HTML (WRE) 或 Base64 (NRE) 字符串。&#xA;如果没有任何内容可输出或 objComponent 设置不正确的时候，则返回一个空字符串。" />
+          <Arguments>
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="将要打印的组件设置为Object。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将指定显示器的屏幕信息以Rect对象返回的方法。">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="以Rect对象返回包含通过参数传递的显示器的屏幕信息。&#xD;&#xA;&#xD;&#xA;Rect对象包含&quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;width&quot;, &quot;height&quot;属性。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取屏幕信息的显示器的编号。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于返回指定显示器的分辨率的方法。">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="以字符串形态返回所指定的显示器的分辨率值。&#xD;&#xA;&#xD;&#xA;在输入错误的显示器编号时，将返回&quot;0&quot;。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要获取分辨率的显示器的编号。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于返回执行应用程序的屏幕宽度的方法。">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="返回屏幕宽度。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于在多显示器的情况下返回所指定的显示器是否为主显示器的方法。">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="在所指定的显示器为主显示器时，将返回&quot;true&quot;。&#xD;&#xA;在所指定的显示器不为主显示器时，将返回&quot;false&quot;。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="设定需要判断是否为主显示器的显示器编号。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="用于将指定组件的图像输出到打印机的方法。">
+        <Syntax text="system.print( objComponent [, bHideDialog [, strVAlign [, strHAlign [, bFitOnePage [, strOrientation]]]]] )">
+          <Return type="Boolean" description="在请求输出图像成功时，将返回true。&#xD;&#xA;在请求输出图像失败时，将返回false。&#xD;&#xA;&#xD;&#xA;与实际的打印成功无关地返回方法调用成功与否。" />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，在图像超过一页的情况下缩小至一页进行打印。&#xD;&#xA;在设定为true时，在图像小于一页的情况下按比例放大至一页进行打印。&#xD;&#xA;&#xD;&#xA;在设定为false时，按照图像大小分页打印。&#xD;&#xA;在设定为false时，strVAlign适用“top”，而strHAlign适用“left”。&#xD;&#xA;&#xD;&#xA;在省略值时适用false。&#xD;&#xA;&#xD;&#xA;* 在Desktop WRE中不受支持，始终适用false。" />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="在设定为true时，不显示打印机设定窗口而直接进行打印。&#xD;&#xA;在设定为false时，将在利用打印机进行打印之前显示打印机设定窗口。&#xD;&#xA;&#xD;&#xA;在省略值时适用true。&#xD;&#xA;&#xD;&#xA;* 在Desktop WRE中不受支持，始终适用false。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要利用打印机进行打印的组件。" />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="设定在纸张上打印图像的水平位置。&#xD;&#xA;&#xD;&#xA;在设定为“left”时，将在纸张的左侧打印图像。&#xD;&#xA;在设定为“center”时，将在纸张的中央打印图像。&#xD;&#xA;在设定为“right”时，将在纸张的右侧打印图像。&#xD;&#xA;&#xD;&#xA;在省略值时适用“center”。&#xD;&#xA;&#xD;&#xA;* 在Desktop WRE中不受支持，始终适用“left”。" />
+            <Argument name="strOrientation" type="String" in="false" out="false" option="false" variable="false" description="设定打印用纸的方向。&#xD;&#xA;&#xD;&#xA;在设定为“portrait”时，在纸张上纵向打印。&#xD;&#xA;在设定为“landscape”时，在纸张上横向打印。&#xD;&#xA;&#xD;&#xA;设定值只有在将bHideDialog参数设定为true时才会被适用。&#xD;&#xA;在省略值时适用“portrait”。&#xD;&#xA;&#xD;&#xA;* 只有在Windows NRE中支持的参数。" />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="设定在纸张上打印图像的垂直位置。&#xD;&#xA;&#xD;&#xA;在设定为“top”时，将在纸张的上端打印图像。&#xD;&#xA;在设定为“middle”时，将在纸张的中央打印图像。&#xD;&#xA;在设定为“bottom”时，将在纸张的下端打印图像。&#xD;&#xA;&#xD;&#xA;在省略值时适用“middle”。&#xD;&#xA;&#xD;&#xA;* 在Desktop WRE中不受支持，始终适用“top”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="用于请求所设定的权限的方法。">
+        <Syntax text="system.requestDevicePermission(arrPermissionTypes[, strDescription])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissionTypes" type="Array" in="false" out="false" option="false" variable="false" description="利用数字形式设定需要请求的权限列表。&#xD;&#xA;可以指定的值如下所述。&#xD;&#xA;&#xD;&#xA;// 通用&#xD;&#xA;nexacro.DevicePermissionType.CALENDAR: &quot;calendar&quot; &#xD;&#xA;nexacro.DevicePermissionType.CAMERA: &quot;camera&quot; &#xD;&#xA;nexacro.DevicePermissionType.CONTACTS: &quot;contacts&quot; &#xD;&#xA;nexacro.DevicePermissionType.LOCATION: &quot;location&quot; &#xD;&#xA;nexacro.DevicePer" />
+            <Argument name="strDescription" type="String" in="false" out="false" option="false" variable="false" description="设定与请求权限相关的说明。在请求使用者拒绝的权限时，显示在对话框中。&#xD;&#xA;在iOS操作系统中不支持。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="用于将指定组件的图像转换成以Base64编码的String并返回的方法。">
+        <Syntax text="system.saveToImageBase64String( objComponent [, bWholeForm [,strImageType [,strOptions]]] )">
+          <Return type="String" description="- 将组件图像转换成以Base64编码的字符串并返回。&#xD;&#xA;  在编码失败时将返回空字符串。" />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="只有在组件为Form形态的情况下才会适用所设定的值。&#xD;&#xA;&#xD;&#xA;在设定为true时，将包含因为滚动而没有显示在画面中的区域在内的整体Form作为图像进行打印。&#xD;&#xA;在设定为false时，仅将显示在当前画面中的Form区域作为图像进行打印。&#xD;&#xA;&#xD;&#xA;在不设定值时适用false。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要作为图像进行打印的对象。" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的格式。&#xD;&#xA;默认值设定为“JPG”。&#xD;&#xA;&#xD;&#xA;可以设定为“BMP”、“BMP_MONO”、“JPG”、“TIF”、“TIF_24”、“TIF_MONO”、“GIF”、“PNG”。" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的图像压缩率、图像压缩方式、DPI分辨率。&#xD;&#xA;&#xD;&#xA;压缩率只有在图像格式为“JPG”时支持，以“Compress:压缩比例”的格式进行设定。&#xD;&#xA;压缩比例可以设定为“0~100”范围内的整数值。&#xD;&#xA;当在图像格式为“JPG”的情况下不设定值时将适用50。&#xD;&#xA;&#xD;&#xA;压缩方式只有在图像格式为“TIF”时支持，以“Compress:压缩类型”的格式进行设定。&#xD;&#xA;压缩类型可以设定为“NONE”、“LZW”、“CCITT3”、“CCITT4”中的某一个。&#xD;&#xA;当在图像格式为“TIF”的情况下，不设定值时将适用“LZW”" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="用于以文件输出指定组件的图像的方法。">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions [,bWholeForm]])">
+          <Return type="Boolean" description="在输出图像成功时，将返回true。&#xD;&#xA;&#xD;&#xA;在输出图像失败时，将返回false。" />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="只有在组件为Form形态的情况下才会适用所设定的值。&#xD;&#xA;&#xD;&#xA;在设定为true时，将包含因为滚动而没有显示在画面中的区域在内的整体Form作为图像进行打印。&#xD;&#xA;在设定为false时，仅将显示在当前画面中的Form区域作为图像进行打印。&#xD;&#xA;&#xD;&#xA;在不设定值时适用false。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="利用对象形态设定需要作为图像文件进行打印的对象。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的名称。" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的格式。&#xD;&#xA;可以设定为“BMP”、“BMP_MONO”、“JPG”、“TIF”、“TIF_24”、“TIF_MONO”、“GIF”、“PNG”。&#xD;&#xA;&#xD;&#xA;在Android NRE中仅支持“JPG”、“PNG”格式。" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="设定需要打印的图像文件的图像压缩率、图像压缩方式、DPI分辨率。&#xD;&#xA;&#xD;&#xA;压缩率只有在图像格式为“JPG”时支持，以“Compress:压缩比例”的格式进行设定。&#xD;&#xA;压缩比例可以设定为“0~100”范围内的整数值。&#xD;&#xA;当在图像格式为“JPG”的情况下不设定值时将适用50。&#xD;&#xA;&#xD;&#xA;压缩方式只有在图像格式为“TIF”时支持，以“Compress:压缩类型”的格式进行设定。&#xD;&#xA;压缩类型可以设定为“NONE”、“LZW”、“CCITT3”、“CCITT4”中的某一个。&#xD;&#xA;当在图像格式为“TIF”的情况下不设定值时将适用“LZW”。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将屏幕基准的x坐标值转换成组件的客户端基准的x坐标值并返回的方法。">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="返回组件的客户端基准x坐标值。" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="设定以需要转换的屏幕为基准的x坐标值。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定作为需要转换的x坐标值的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于将屏幕基准的y坐标值转换成组件的客户端基准的y坐标值并返回的方法。">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="返回组件的客户端基准y坐标值。" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="设定以需要转换的屏幕为基准的y坐标值。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="设定作为需要转换的y坐标值的基准的组件。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="用于以指定的格式将数据存储到系统剪贴板的方法。">
+        <Syntax text="system.setClipboard( strFormat, varData )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定在将数据存储到系统剪贴板时适用的格式。&#xD;&#xA;&#xD;&#xA;在设定为“CF_TEXT”时，将数据以文本格式进行存储。&#xD;&#xA;在设定为“CF_UNICODETEXT”时，将数据以Unicode文本格式进行存储。&#xD;&#xA;在设定为“CF_CSV”时，将数据以CSV格式进行存储。" />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="设定需要存储的数据。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于将动态生成的ChildFrame以Sync方式工作的Modal形态显示的方法。">
+        <Syntax text="system.showModalSync( objChildframe [, strID ] , objParentFrame, [{objArguList} [, objOpener]] );">
+          <Return type="Boolean" description="在以Modal显示的ChildFrame结束之后，返回成功/失败与否。" />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="false" out="false" option="false" variable="false" description="利用“{变量名称:变量值,变量名称:变量值}”的格式设定需要添加到以Modal显示的ChildFrame中的变量列表。" />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要以Modal显示的ChildFrame。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要设定为以Modal显示的ChildFrame的Opener的Form。&#xD;&#xA;&#xD;&#xA;在省略值时，设定为在objParentFrame参数中设定的Frame的Form。&#xD;&#xA;在将objParentFrame参数设定为null时，设定为undefined。" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="利用Object形态设定需要以Modal显示的ChildFrame的父级Frame。&#xD;&#xA;&#xD;&#xA;在设定为null时，将MainFrame设定为父级。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="利用字符串设定需要以Modal显示的ChildFrame的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，设定为在objChildFrame中设定的ChildFrame的name属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="用于将动态生成的ChildFrame以单独Modal Window显示的方法。">
+        <Syntax text="system.showModalWindow( objChildFrame [, strID] , objParentFrame[, {objArguList} [, objOpener]] );">
+          <Return type="String" description="返回在以Modal Window显示的ChildFrame中设定到close()方法中的参数值。" />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="true" out="false" option="false" variable="false" description="利用“{变量名称:变量值,变量名称:变量值}”的格式设定需要添加到以Modal Window显示的ChildFrame中的变量列表。" />
+            <Argument name="objChildFrame" type="Object" in="true" out="false" option="false" variable="false" description="利用对象设定需要以Modal Window显示的ChildFrame。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="利用对象设定需要设定为以Modal Window显示的ChildFrame的Opener的Form。&#xD;&#xA;&#xD;&#xA;在省略值时，设定为在objParentFrame中设定的Frame的Form对象。&#xD;&#xA;在将objParentFrame参数设定为null时，设定为undefined。" />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="利用Object形态设定需要以Modal Window显示的ChildFrame的父级Frame。&#xD;&#xA;&#xD;&#xA;在设定为null时，不对父级进行设定。&#xD;&#xA;&#xD;&#xA;在设定ChildFrame之外的Object时，不会显示用于提示无法使用父级Frame的含义的OverLay Color。" />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="利用字符串设定需要以Modal Window显示的ChildFrame的ID。&#xD;&#xA;&#xD;&#xA;在省略值时，设定为在objChildFrame中设定的ChildFrame的name属性值。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

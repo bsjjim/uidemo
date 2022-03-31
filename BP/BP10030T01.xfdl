@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="CO00050T01" width="1488" height="557" titletext="잔존율">
+    <Layouts>
+      <Layout height="557" mobileorientation="landscape" width="1488">
+        <Div id="Div01" taborder="0" text="Div01" left="0" top="0" cssclass="div_group" bottom="0" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_00" taborder="0" text="h50" top="0" cssclass="sta_Guide" width="100" left="130" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="1" left="0" top="50" binddataset="ds_grid" bottom="0" right="0" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="120" band="left"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                      <Column size="60"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="No"/>
+                      <Cell col="1" text="영업부문"/>
+                      <Cell col="2" text="채널Lv1"/>
+                      <Cell col="3" text="채널Lv2"/>
+                      <Cell col="4" text="고객Lv1"/>
+                      <Cell col="5" text="고객Lv2"/>
+                      <Cell col="6" text="상품Lv1"/>
+                      <Cell col="7" text="상품Lv2"/>
+                      <Cell col="8" text="상품Lv3"/>
+                      <Cell col="9" text="상품Lv4"/>
+                      <Cell col="10" text="지표" cssclass="cell_fix"/>
+                      <Cell col="11" text="0차월"/>
+                      <Cell col="12" text="1차월"/>
+                      <Cell col="13" text="2차월"/>
+                      <Cell col="14" text="3차월"/>
+                      <Cell col="15" text="4차월"/>
+                      <Cell col="16" text="5차월"/>
+                      <Cell col="17" text="6차월"/>
+                      <Cell col="18" text="7차월"/>
+                      <Cell col="19" text="8차월"/>
+                      <Cell col="20" text="9차월"/>
+                      <Cell col="21" text="10차월"/>
+                      <Cell col="22" text="11차월"/>
+                      <Cell col="23" text="12차월"/>
+                      <Cell col="24" text="13차월"/>
+                      <Cell col="25" text="14차월"/>
+                      <Cell col="26" text="15차월"/>
+                      <Cell col="27" text="16차월"/>
+                      <Cell col="28" text="17차월"/>
+                      <Cell col="29" text="18차월"/>
+                      <Cell col="30" text="19차월"/>
+                      <Cell col="31" text="20차월"/>
+                      <Cell col="32" text="21차월"/>
+                      <Cell col="33" text="22차월"/>
+                      <Cell col="34" text="23차월"/>
+                      <Cell col="35" text="24차월"/>
+                      <Cell col="36" text="25차월"/>
+                      <Cell col="37" text="26차월"/>
+                      <Cell col="38" text="27차월"/>
+                      <Cell col="39" text="28차월"/>
+                      <Cell col="40" text="29차월"/>
+                      <Cell col="41" text="30차월"/>
+                      <Cell col="42" text="31차월"/>
+                      <Cell col="43" text="32차월"/>
+                      <Cell col="44" text="33차월"/>
+                      <Cell col="45" text="34차월"/>
+                      <Cell col="46" text="35차월"/>
+                      <Cell col="47" text="36차월"/>
+                      <Cell col="48" text="37차월"/>
+                      <Cell col="49" text="38차월"/>
+                      <Cell col="50" text="39차월"/>
+                      <Cell col="51" text="40차월"/>
+                      <Cell col="52" text="41차월"/>
+                      <Cell col="53" text="42차월"/>
+                      <Cell col="54" text="43차월"/>
+                      <Cell col="55" text="44차월"/>
+                      <Cell col="56" text="45차월"/>
+                      <Cell col="57" text="46차월"/>
+                      <Cell col="58" text="47차월"/>
+                      <Cell col="59" text="48차월"/>
+                      <Cell col="60" text="49차월"/>
+                      <Cell col="61" text="50차월"/>
+                      <Cell col="62" text="51차월"/>
+                      <Cell col="63" text="52차월"/>
+                      <Cell col="64" text="53차월"/>
+                      <Cell col="65" text="54차월"/>
+                      <Cell col="66" text="55차월"/>
+                      <Cell col="67" text="56차월"/>
+                      <Cell col="68" text="57차월"/>
+                      <Cell col="69" text="58차월"/>
+                      <Cell col="70" text="59차월"/>
+                      <Cell col="71" text="60차월"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1"/>
+                      <Cell col="2"/>
+                      <Cell col="3"/>
+                      <Cell col="4"/>
+                      <Cell col="5"/>
+                      <Cell col="6"/>
+                      <Cell col="7"/>
+                      <Cell col="8"/>
+                      <Cell col="9"/>
+                      <Cell col="10"/>
+                      <Cell col="11" text="bind:Column0"/>
+                      <Cell col="12" text="bind:Column1"/>
+                      <Cell col="13" text="bind:Column2"/>
+                      <Cell col="14" text="bind:Column3"/>
+                      <Cell col="15" text="bind:Column4"/>
+                      <Cell col="16" text="bind:Column5"/>
+                      <Cell col="17" text="bind:Column6"/>
+                      <Cell col="18" text="bind:Column7"/>
+                      <Cell col="19" text="bind:Column8"/>
+                      <Cell col="20" text="bind:Column9"/>
+                      <Cell col="21" text="bind:Column10"/>
+                      <Cell col="22" text="bind:Column11"/>
+                      <Cell col="23" text="bind:Column12"/>
+                      <Cell col="24" text="bind:Column13"/>
+                      <Cell col="25" text="bind:Column14"/>
+                      <Cell col="26" text="bind:Column15"/>
+                      <Cell col="27" text="bind:Column16"/>
+                      <Cell col="28" text="bind:Column17"/>
+                      <Cell col="29" text="bind:Column18"/>
+                      <Cell col="30" text="bind:Column19"/>
+                      <Cell col="31" text="bind:Column20"/>
+                      <Cell col="32" text="bind:Column21"/>
+                      <Cell col="33" text="bind:Column22"/>
+                      <Cell col="34" text="bind:Column23"/>
+                      <Cell col="35" text="bind:Column24"/>
+                      <Cell col="36" text="bind:Column25"/>
+                      <Cell col="37" text="bind:Column26"/>
+                      <Cell col="38" text="bind:Column27"/>
+                      <Cell col="39" text="bind:Column28"/>
+                      <Cell col="40" text="bind:Column29"/>
+                      <Cell col="41" text="bind:Column30"/>
+                      <Cell col="42" text="bind:Column31"/>
+                      <Cell col="43" text="bind:Column32"/>
+                      <Cell col="44" text="bind:Column33"/>
+                      <Cell col="45" text="bind:Column34"/>
+                      <Cell col="46" text="bind:Column35"/>
+                      <Cell col="47" text="bind:Column36"/>
+                      <Cell col="48" text="bind:Column37"/>
+                      <Cell col="49" text="bind:Column38"/>
+                      <Cell col="50" text="bind:Column39"/>
+                      <Cell col="51" text="bind:Column40"/>
+                      <Cell col="52" text="bind:Column41"/>
+                      <Cell col="53" text="bind:Column42"/>
+                      <Cell col="54" text="bind:Column43"/>
+                      <Cell col="55" text="bind:Column44"/>
+                      <Cell col="56" text="bind:Column45"/>
+                      <Cell col="57" text="bind:Column46"/>
+                      <Cell col="58" text="bind:Column47"/>
+                      <Cell col="59" text="bind:Column48"/>
+                      <Cell col="60" text="bind:Column49"/>
+                      <Cell col="61" text="bind:Column50"/>
+                      <Cell col="62" text="bind:Column51"/>
+                      <Cell col="63" text="bind:Column52"/>
+                      <Cell col="64" text="bind:Column53"/>
+                      <Cell col="65" text="bind:Column54"/>
+                      <Cell col="66" text="bind:Column55"/>
+                      <Cell col="67" text="bind:Column56"/>
+                      <Cell col="68" text="bind:Column57"/>
+                      <Cell col="69" text="bind:Column58"/>
+                      <Cell col="70" text="bind:Column59"/>
+                      <Cell col="71" text="bind:Column60"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00_00" taborder="2" text="11" top="39" cssclass="sta_Guide" width="100" left="2" height="11" visible="false"/>
+              <Static id="Static00" taborder="3" text="타이틀영역" left="0" top="20" width="261" height="24" cssclass="sta_WF_title1"/>
+              <Button id="Button00_00_01_00_02_02_00_00_00_00_00" taborder="4" top="20" width="44" height="24" cssclass="btn_Block_excelDown" textPadding="0px" tooltiptext="엑셀다운로드" right="0"/>
+              <Button id="Button00_00_01_00_02_02_00_00_01_00" taborder="5" top="20" width="44" height="24" cssclass="btn_Block_excelUp" textPadding="0px" tooltiptext="엑셀업로드" right="48"/>
+              <Static id="Static02_00_00_00_00_00_02_00_00" taborder="6" text="지표" top="20" width="38" height="24" right="240" cssclass="sta_SA_label"/>
+              <Combo id="cmb00_00" taborder="7" text="" top="20" width="135" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="-1" right="102">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                </Dataset>
+              </Combo>
+              <MaskEdit id="MaskEdit00_01_00" taborder="8" top="20" width="43" height="24" textAlign="left" right="291"/>
+              <Static id="Static02_01_00_00_00_00" taborder="9" text="~" top="20" width="20" height="24" cssclass="sta_WF_unit" right="334"/>
+              <MaskEdit id="MaskEdit00_01" taborder="10" top="20" width="43" height="24" textAlign="left" right="353"/>
+              <Static id="Static02_00_00_00_00_00_02_00_00_00" taborder="11" text="산출대상년도" top="20" width="88" height="24" right="400" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="12" text="10" top="17" cssclass="sta_Guide" width="10" left="1386" height="30" visible="false"/>
+              <Static id="Static01_00_00_00_00" taborder="13" text="20" top="17" cssclass="sta_Guide" width="20" left="1197" height="30" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column12" type="STRING" size="256"/>
+          <Column id="Column13" type="STRING" size="256"/>
+          <Column id="Column14" type="STRING" size="256"/>
+          <Column id="Column15" type="STRING" size="256"/>
+          <Column id="Column16" type="STRING" size="256"/>
+          <Column id="Column17" type="STRING" size="256"/>
+          <Column id="Column18" type="STRING" size="256"/>
+          <Column id="Column19" type="STRING" size="256"/>
+          <Column id="Column20" type="STRING" size="256"/>
+          <Column id="Column21" type="STRING" size="256"/>
+          <Column id="Column22" type="STRING" size="256"/>
+          <Column id="Column23" type="STRING" size="256"/>
+          <Column id="Column24" type="STRING" size="256"/>
+          <Column id="Column25" type="STRING" size="256"/>
+          <Column id="Column26" type="STRING" size="256"/>
+          <Column id="Column27" type="STRING" size="256"/>
+          <Column id="Column28" type="STRING" size="256"/>
+          <Column id="Column29" type="STRING" size="256"/>
+          <Column id="Column30" type="STRING" size="256"/>
+          <Column id="Column31" type="STRING" size="256"/>
+          <Column id="Column32" type="STRING" size="256"/>
+          <Column id="Column33" type="STRING" size="256"/>
+          <Column id="Column34" type="STRING" size="256"/>
+          <Column id="Column35" type="STRING" size="256"/>
+          <Column id="Column36" type="STRING" size="256"/>
+          <Column id="Column37" type="STRING" size="256"/>
+          <Column id="Column38" type="STRING" size="256"/>
+          <Column id="Column39" type="STRING" size="256"/>
+          <Column id="Column40" type="STRING" size="256"/>
+          <Column id="Column41" type="STRING" size="256"/>
+          <Column id="Column42" type="STRING" size="256"/>
+          <Column id="Column43" type="STRING" size="256"/>
+          <Column id="Column44" type="STRING" size="256"/>
+          <Column id="Column45" type="STRING" size="256"/>
+          <Column id="Column46" type="STRING" size="256"/>
+          <Column id="Column47" type="STRING" size="256"/>
+          <Column id="Column48" type="STRING" size="256"/>
+          <Column id="Column49" type="STRING" size="256"/>
+          <Column id="Column50" type="STRING" size="256"/>
+          <Column id="Column51" type="STRING" size="256"/>
+          <Column id="Column52" type="STRING" size="256"/>
+          <Column id="Column53" type="STRING" size="256"/>
+          <Column id="Column54" type="STRING" size="256"/>
+          <Column id="Column55" type="STRING" size="256"/>
+          <Column id="Column56" type="STRING" size="256"/>
+          <Column id="Column57" type="STRING" size="256"/>
+          <Column id="Column58" type="STRING" size="256"/>
+          <Column id="Column59" type="STRING" size="256"/>
+          <Column id="Column60" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

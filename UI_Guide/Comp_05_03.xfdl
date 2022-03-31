@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Comp_07_01" width="1488" height="318" titletext="Tab - 타이틀/버튼영역이 없을경우">
+    <Layouts>
+      <Layout height="318" width="1488">
+        <Grid id="Grid00" taborder="0" left="0" top="10" right="774" binddataset="ds_grid" bottom="40">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="60" band="left"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="30" band="head"/>
+                <Row size="30"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No"/>
+                <Cell col="1" text="Column1"/>
+                <Cell col="2" text="Column2"/>
+                <Cell col="3" text="Column3"/>
+                <Cell col="4" text="Column4"/>
+                <Cell col="5" text="Column5"/>
+                <Cell col="6" text="Column6"/>
+                <Cell col="7" text="Column7"/>
+                <Cell col="8" text="Column8"/>
+                <Cell col="9" text="Column9"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Column0"/>
+                <Cell col="1" text="bind:Column1"/>
+                <Cell col="2" text="bind:Column2"/>
+                <Cell col="3" text="bind:Column3"/>
+                <Cell col="4" text="bind:Column4"/>
+                <Cell col="5" text="bind:Column5"/>
+                <Cell col="6" text="bind:Column6"/>
+                <Cell col="7" text="bind:Column7"/>
+                <Cell col="8" text="bind:Column8"/>
+                <Cell col="9" text="bind:Column9"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Div id="Div00" taborder="1" text="Div00" top="10" width="754" height="230" cssclass="div_group" right="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static26" taborder="0" text="계약상태" left="0" top="0" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27" taborder="1" left="129" top="0" width="625" height="34" cssclass="sta_DA_data" text="" onclick="Static27_onclick"/>
+              <Static id="Static26_00" taborder="2" text="계약번호" left="376" top="0" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01" taborder="3" text="대여지점" left="0" top="33" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00" taborder="4" left="129" top="33" width="625" height="34" cssclass="sta_DA_data" text=""/>
+              <Static id="Static26_00_00" taborder="5" text="대여기간" left="376" top="33" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_02" taborder="6" text="배차시간" left="0" top="66" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_01" taborder="7" left="129" top="66" width="625" height="34" cssclass="sta_DA_data" text="" enable="false" usedecorate="true"/>
+              <Static id="Static26_00_01" taborder="8" text="배차장소" left="376" top="66" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static26_01_00_00" taborder="9" text="기사" left="0" top="132" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_00_00" taborder="10" left="129" top="132" width="625" height="34" cssclass="sta_DA_data" text=""/>
+              <Edit id="Edit00_01" taborder="11" left="134" top="5" width="140" height="24" value="정상" text="정상" readonly="true"/>
+              <Edit id="Edit00_01_00" taborder="12" left="134" top="38" width="238" height="24" value="강남영업소" text="강남영업소" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01" taborder="13" left="134" top="71" width="60" height="24" format="##:##" value="1200" enable="true" type="string" textAlign="left" readonly="true"/>
+              <Edit id="Edit00_01_00_00" taborder="14" left="510" top="71" width="238" height="24" value="영업점" text="영업점" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01_00" taborder="15" left="510" top="38" width="237" height="24" format="####-##-## ~ ####-##-##" value="2021102120211212" enable="true" type="string" textAlign="left" readonly="true"/>
+              <MaskEdit id="MaskEdit00_01_01_00_00" taborder="16" left="510" top="5" width="237" height="24" format="#########" value="123456789" enable="true" type="string" textAlign="left" readonly="true"/>
+              <Static id="Static26_01_00_00_01" taborder="17" text="예약모델" left="0" top="99" width="130" height="34" cssclass="sta_DA_label"/>
+              <Static id="Static27_00_00_00_00" taborder="18" left="129" top="99" width="625" height="34" cssclass="sta_DA_data" text=""/>
+              <Edit id="Edit00_01_00_00_00" taborder="19" left="134" top="104" width="60" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00" taborder="20" left="196" top="104" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_00" taborder="21" left="388" top="104" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_00_00" taborder="22" left="388" top="137" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_00_01" taborder="23" left="196" top="137" width="190" height="24" text="영업점" readonly="true"/>
+              <Edit id="Edit00_01_00_00_00_01" taborder="24" left="134" top="137" width="60" height="24" text="영업점" readonly="true"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01_00" taborder="2" text="10" top="0" cssclass="sta_Guide" width="120" left="95" height="10" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="summ" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="summ">0</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">150000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="summ">1000000</Col>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+          <Row>
+            <Col id="Column5">cell_fc_blue</Col>
+            <Col id="Column4">cell_fc_orange</Col>
+            <Col id="Column3">cell_fc_red</Col>
+            <Col id="Column2">cell_bg_1</Col>
+            <Col id="Column1">cell_bg_2</Col>
+            <Col id="Column0">cell_bg_3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Div01_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

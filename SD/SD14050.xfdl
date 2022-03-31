@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="temp01" width="1528" height="752" titletext="홈쇼핑 사용자 배분조회" onload="temp01_onload">
+    <Layouts>
+      <Layout height="752" mobileorientation="landscape" width="1528">
+        <Div id="DivSearch" taborder="0" left="0" top="0" cssclass="div_SA" right="40" formscrolltype="none" text="" height="63">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="방송일자" left="20" top="18" width="63" height="24" cssclass="sta_SA_label_req"/>
+              <Static id="Static01" taborder="1" text="채널" left="231" top="18" width="38" height="24" cssclass="sta_SA_label_req"/>
+              <Button id="Button02" taborder="2" cssclass="btn_SA_src" right="20" width="38" bottom="11" height="38"/>
+              <Static id="Static01_00_00" taborder="3" text="w40" top="0" cssclass="sta_Guide" width="40" left="191" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="4" text="w20" top="-6" cssclass="sta_Guide" width="20" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="5" text="h11" cssclass="sta_Guide" width="50" visible="false" right="32" bottom="0" height="11"/>
+              <Static id="Static01_01" taborder="6" text="Sales Partners 번호" left="475" top="18" width="134" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="7" text="w40" top="0" cssclass="sta_Guide" width="40" left="434" height="60" visible="false"/>
+              <Static id="Static01_00" taborder="8" text="w20" top="0" cssclass="sta_Guide" width="20" left="0" height="60" visible="false"/>
+              <Static id="Static01_00_00_00_01" taborder="9" text="10" top="4" cssclass="sta_Guide" width="10" left="76" height="50" visible="false"/>
+              <Static id="Static01_00_00_00_02" taborder="10" text="10" top="0" cssclass="sta_Guide" width="10" left="261" height="55" visible="false"/>
+              <Static id="Static01_00_00_00_02_00" taborder="11" text="10" top="-4" cssclass="sta_Guide" width="10" left="603" height="55" visible="false" onclick="DivSearch_Static01_00_00_00_02_00_onclick"/>
+              <Calendar id="Calendar00_00" taborder="12" left="86" top="18" width="105" height="24" dateformat="yyyy-MM-dd " value="20221001" cssclass="input_req"/>
+              <Combo id="Combo00_01" taborder="13" left="271" top="18" width="150" height="24" value="선택" index="-1" cssclass="input_req"/>
+              <Edit id="Edit00_01_00_00" taborder="14" left="613" top="18" width="80" height="24" text="P12345"/>
+              <Button id="Button00_01_00_00" taborder="15" left="695" top="18" width="24" height="24" cssclass="btn_Comp_src"/>
+              <Edit id="Edit00_01_00_01_00" taborder="16" left="722" top="18" height="24" text="홍길순" width="115"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="DivSearch:0" cssclass="div_group" right="40" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="타이틀영역" left="0" top="20" width="120" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="0" binddataset="ds_grid" initvalueid="iv_Grid">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="50" band="left"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="100"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="30" band="head"/>
+                      <Row size="30" band="head"/>
+                      <Row size="30"/>
+                      <Row size="30" band="summ"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell rowspan="2" text="No"/>
+                      <Cell col="1" rowspan="2" text="SP코드"/>
+                      <Cell col="2" rowspan="2" text="SP명"/>
+                      <Cell col="3" rowspan="2" text="자사"/>
+                      <Cell col="4" rowspan="2" text="팀"/>
+                      <Cell col="5" rowspan="2" text="사용자명"/>
+                      <Cell col="6" colspan="17" text="임시저장"/>
+                      <Cell col="23" colspan="17" text="배분확장전"/>
+                      <Cell col="40" colspan="18" text="배분확장후"/>
+                      <Cell col="58" rowspan="2" text="총계"/>
+                      <Cell row="1" col="6" text="서울"/>
+                      <Cell row="1" col="7" text="경기"/>
+                      <Cell row="1" col="8" text="인천"/>
+                      <Cell row="1" col="9" text="강원"/>
+                      <Cell row="1" col="10" text="충남"/>
+                      <Cell row="1" col="11" text="충북"/>
+                      <Cell row="1" col="12" text="대전/세종"/>
+                      <Cell row="1" col="13" text="콜센터"/>
+                      <Cell row="1" col="14" text="전남"/>
+                      <Cell row="1" col="15" text="전북"/>
+                      <Cell row="1" col="16" text="광주"/>
+                      <Cell row="1" col="17" text="대구"/>
+                      <Cell row="1" col="18" text="경북"/>
+                      <Cell row="1" col="19" text="부산"/>
+                      <Cell row="1" col="20" text="경남"/>
+                      <Cell row="1" col="21" text="울산"/>
+                      <Cell row="1" col="22" text="제주"/>
+                      <Cell row="1" col="23" text="서울"/>
+                      <Cell row="1" col="24" text="경기"/>
+                      <Cell row="1" col="25" text="인천"/>
+                      <Cell row="1" col="26" text="강원"/>
+                      <Cell row="1" col="27" text="충남"/>
+                      <Cell row="1" col="28" text="충북"/>
+                      <Cell row="1" col="29" text="대전/세종"/>
+                      <Cell row="1" col="30" text="콜센터"/>
+                      <Cell row="1" col="31" text="전남"/>
+                      <Cell row="1" col="32" text="전북"/>
+                      <Cell row="1" col="33" text="광주"/>
+                      <Cell row="1" col="34" text="대구"/>
+                      <Cell row="1" col="35" text="경북"/>
+                      <Cell row="1" col="36" text="부산"/>
+                      <Cell row="1" col="37" text="경남"/>
+                      <Cell row="1" col="38" text="울산"/>
+                      <Cell row="1" col="39" text="제주"/>
+                      <Cell row="1" col="40" text="서울"/>
+                      <Cell row="1" col="41" text="경기"/>
+                      <Cell row="1" col="42" text="인천"/>
+                      <Cell row="1" col="43" text="강원"/>
+                      <Cell row="1" col="44" text="충남"/>
+                      <Cell row="1" col="45" text="충북"/>
+                      <Cell row="1" col="46" text="대전/세종"/>
+                      <Cell row="1" col="47" text="콜센터"/>
+                      <Cell row="1" col="48" text="전남"/>
+                      <Cell row="1" col="49" text="전북"/>
+                      <Cell row="1" col="50" text="광주"/>
+                      <Cell row="1" col="51" text="대구"/>
+                      <Cell row="1" col="52" text="경북"/>
+                      <Cell row="1" col="53" text="부산"/>
+                      <Cell row="1" col="54" text="경남"/>
+                      <Cell row="1" col="55" text="울산"/>
+                      <Cell row="1" col="56" text="제주"/>
+                      <Cell row="1" col="57" text="비DB"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1" text="bind:Column0"/>
+                      <Cell col="2" text="bind:Column1"/>
+                      <Cell col="3" text="bind:Column2"/>
+                      <Cell col="4" text="bind:Column3"/>
+                      <Cell col="5" text="bind:Column4"/>
+                      <Cell col="6" text="bind:Column6"/>
+                      <Cell col="7" text="bind:Column7"/>
+                      <Cell col="8" text="bind:Column8"/>
+                      <Cell col="9" text="bind:Column9"/>
+                      <Cell col="10"/>
+                      <Cell col="11"/>
+                      <Cell col="12"/>
+                      <Cell col="13"/>
+                      <Cell col="14"/>
+                      <Cell col="15"/>
+                      <Cell col="16"/>
+                      <Cell col="17"/>
+                      <Cell col="18"/>
+                      <Cell col="19"/>
+                      <Cell col="20"/>
+                      <Cell col="21"/>
+                      <Cell col="22"/>
+                      <Cell col="23"/>
+                      <Cell col="24"/>
+                      <Cell col="25"/>
+                      <Cell col="26"/>
+                      <Cell col="27"/>
+                      <Cell col="28"/>
+                      <Cell col="29"/>
+                      <Cell col="30"/>
+                      <Cell col="31"/>
+                      <Cell col="32"/>
+                      <Cell col="33"/>
+                      <Cell col="34"/>
+                      <Cell col="35"/>
+                      <Cell col="36"/>
+                      <Cell col="37"/>
+                      <Cell col="38"/>
+                      <Cell col="39"/>
+                      <Cell col="40"/>
+                      <Cell col="41"/>
+                      <Cell col="42"/>
+                      <Cell col="43"/>
+                      <Cell col="44"/>
+                      <Cell col="45"/>
+                      <Cell col="46"/>
+                      <Cell col="47"/>
+                      <Cell col="48"/>
+                      <Cell col="49"/>
+                      <Cell col="50"/>
+                      <Cell col="51"/>
+                      <Cell col="52"/>
+                      <Cell col="53"/>
+                      <Cell col="54"/>
+                      <Cell col="55"/>
+                      <Cell col="56"/>
+                      <Cell col="57"/>
+                      <Cell col="58"/>
+                    </Band>
+                    <Band id="summary">
+                      <Cell/>
+                      <Cell col="1"/>
+                      <Cell col="2"/>
+                      <Cell col="3"/>
+                      <Cell col="4"/>
+                      <Cell col="5"/>
+                      <Cell col="6" text="0"/>
+                      <Cell col="7" text="0"/>
+                      <Cell col="8" text="0"/>
+                      <Cell col="9" text="0"/>
+                      <Cell col="10" text="0"/>
+                      <Cell col="11" text="0"/>
+                      <Cell col="12" text="0"/>
+                      <Cell col="13" text="0"/>
+                      <Cell col="14" text="0"/>
+                      <Cell col="15" text="0"/>
+                      <Cell col="16" text="0"/>
+                      <Cell col="17" text="0"/>
+                      <Cell col="18" text="0"/>
+                      <Cell col="19" text="0"/>
+                      <Cell col="20" text="0"/>
+                      <Cell col="21" text="0"/>
+                      <Cell col="22" text="0"/>
+                      <Cell col="23" text="0"/>
+                      <Cell col="24" text="0"/>
+                      <Cell col="25" text="0"/>
+                      <Cell col="26" text="0"/>
+                      <Cell col="27" text="0"/>
+                      <Cell col="28" text="0"/>
+                      <Cell col="29" text="0"/>
+                      <Cell col="30" text="0"/>
+                      <Cell col="31" text="0"/>
+                      <Cell col="32" text="0"/>
+                      <Cell col="33" text="0"/>
+                      <Cell col="34" text="0"/>
+                      <Cell col="35" text="0"/>
+                      <Cell col="36" text="0"/>
+                      <Cell col="37" text="0"/>
+                      <Cell col="38" text="0"/>
+                      <Cell col="39" text="0"/>
+                      <Cell col="40" text="0"/>
+                      <Cell col="41" text="0"/>
+                      <Cell col="42" text="0"/>
+                      <Cell col="43" text="0"/>
+                      <Cell col="44" text="0"/>
+                      <Cell col="45" text="0"/>
+                      <Cell col="46" text="0"/>
+                      <Cell col="47" text="0"/>
+                      <Cell col="48" text="0"/>
+                      <Cell col="49" text="0"/>
+                      <Cell col="50" text="0"/>
+                      <Cell col="51" text="0"/>
+                      <Cell col="52" text="0"/>
+                      <Cell col="53" text="0"/>
+                      <Cell col="54" text="0"/>
+                      <Cell col="55" text="0"/>
+                      <Cell col="56" text="0"/>
+                      <Cell col="57" text="0"/>
+                      <Cell col="58" text="0"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static02_02_00" taborder="3" text="건" top="20" width="17" height="24" cssclass="sta_WF_gridCount" right="0"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00" taborder="4" text="4" top="14" cssclass="sta_Guide" width="4" left="1474" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="5" text="12" top="38" cssclass="sta_Guide" width="100" left="1439" height="12" visible="false"/>
+              <Static id="Static02_00" taborder="6" text="0" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="15"/>
+              <Static id="Static01_00_00_01_00_00" taborder="7" text="11" top="39" cssclass="sta_Guide" width="100" left="0" height="12" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="2" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_grid">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column7"/>
+            <Col id="Column6"/>
+            <Col id="Column8"/>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="Column1"/>
+            <Col id="Column2"/>
+            <Col id="Column3"/>
+            <Col id="Column4"/>
+            <Col id="Column5"/>
+            <Col id="Column6"/>
+            <Col id="Column7"/>
+            <Col id="Column8"/>
+          </Row>
+          <Row/>
+          <Row/>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[    
+this.DivSearch_Static01_00_00_00_02_00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

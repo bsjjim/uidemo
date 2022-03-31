@@ -1,0 +1,28 @@
+﻿{
+	"name": "CalPeriodTime",
+	"moduletype": "component",
+	"version": "0",
+	"minnexacroversion": "",
+	"description": "",
+	"license": "",
+	"objInfo": [	
+    "CalPeriodTime/_metainfo_/CalPeriodTime.info"
+	],
+	"scripts": [
+    "CalPeriodTime/CalPeriodTime.js"
+	],
+	"designscripts": [
+    "CalPeriodTime/DesignCalPeriodTime.js"
+	],
+	"help": "",	
+	"xcss": "CalPeriodTime/_xcss_/CalPeriodTime.xcss",
+	"images": "",	
+	"licensefiles": "",
+	"icons": "",
+	"userfolder": [
+
+	],
+	"contentseditor": [
+
+	]
+}
