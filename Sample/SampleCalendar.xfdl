@@ -96,7 +96,7 @@ this.btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	    this.gfnAlert("선택한 컴포지트가 없습니다.");
 		return;
 	}
-	
+	//fff
 	switch(obj.id)
 	{
 		case "btnEnableTrue" : this.fvCurComposite.set_enable(true); break;
