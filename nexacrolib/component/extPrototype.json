@@ -10,7 +10,7 @@
         "extPrototype/Transaction.js",
         "extPrototype/Grid.js",
         "extPrototype/Popup.js",
-        "extPrototype/Validation.js"
-        //"extPrototype/Excel.js",
+        "extPrototype/Validation.js",
+        "extPrototype/Excel.js",
 	]
 }

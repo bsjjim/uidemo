@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="SampleDefaultCRUD" width="1528" height="707" titletext="작성중 샘플" onload="fnFormOnload">
+    <Layouts>
+      <Layout height="707" mobileorientation="landscape" width="1528">
+        <Div id="divSearch" taborder="0" left="0" top="0" height="63" cssclass="div_SA" right="40" formscrolltype="none" text="">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="샘플ID" left="30" top="18" width="48" height="24" cssclass="sta_SA_label_req"/>
+              <Button id="btnSearch" taborder="1" top="11" cssclass="btn_SA_src" right="30" width="38" bottom="11" onclick="DivSearch_btnSearch_onclick"/>
+              <Static id="Static01_00_00" taborder="2" text="w80" top="0" cssclass="sta_Guide" width="80" left="171" height="60" visible="false"/>
+              <Static id="Static01_00_01" taborder="3" text="w30" top="-6" cssclass="sta_Guide" width="30" height="60" visible="false" right="0"/>
+              <Static id="Static01_00_01_00_00" taborder="4" text="h11" cssclass="sta_Guide" width="50" visible="false" right="107" bottom="0" height="11"/>
+              <Static id="Static01_01" taborder="5" text="샘플타입" left="470" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00" taborder="6" text="w80" top="0" cssclass="sta_Guide" width="80" left="390" height="60" visible="false"/>
+              <Combo id="cmbModTy" taborder="7" text="KT렌탈 WEB시스템" left="532" top="18" width="90" height="24" value="IN3000" index="0" codecolumn="FIELDCODE" datacolumn="FIELDNAME" innerdataset="dsCodeCm002All"/>
+              <Static id="Static01_00_00_00_00" taborder="8" text="w80" top="0" cssclass="sta_Guide" width="80" left="622" height="60" visible="false"/>
+              <Static id="Static01_01_00" taborder="9" text="지역" left="702" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Combo id="cmbModGcd" taborder="10" text="전체" left="763" top="18" width="90" height="24" value="" index="0" innerdataset="dsCodeCm003All" codecolumn="FIELDCODE" datacolumn="FIELDNAME"/>
+              <Static id="Static01_00" taborder="11" text="w30" top="0" cssclass="sta_Guide" width="30" left="0" height="60" visible="false"/>
+              <Edit id="edtModId" taborder="12" left="81" top="18" width="90" height="24"/>
+              <Static id="Static00_00" taborder="13" text="샘플명" left="249" top="18" width="48" height="24" cssclass="sta_SA_label_req"/>
+              <Edit id="edtModNm" taborder="14" left="300" top="18" width="90" height="24" onchanged="divSearch_edtModNm_onchanged"/>
+              <Static id="Static01_00_00_00_00_00" taborder="15" text="w80" top="0" cssclass="sta_Guide" width="80" left="853" height="60" visible="false"/>
+              <Static id="Static01_01_00_00_00" taborder="16" text="사용여부" left="1198" top="18" width="58" height="24" cssclass="sta_SA_label"/>
+              <Static id="Static01_00_00_00_00_00_00" taborder="17" text="w80" top="0" cssclass="sta_Guide" width="80" left="1113" height="60" visible="false"/>
+              <Radio id="radUseYn" taborder="18" left="1261" top="18" width="160" height="24" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" direction="vertical" index="0" text="전체" value="A">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">A</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">X</Col>
+                      <Col id="datacolumn">예</Col>
+                    </Row>
+                    <Row>
+                      <Col id="datacolumn">아니오</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Radio>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divGridWapper" taborder="1" text="Div00" left="0" top="divSearch:0" right="40" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static02_02" taborder="11" text="[단위:원]" top="20" width="50" height="24" cssclass="sta_WF_gridUnit" right="568"/>
+              <Static id="Static01_00_00_01_00_00_03_01" taborder="14" text="15" top="13" cssclass="sta_Guide" width="15" left="917" height="35" visible="false"/>
+              <Static id="Static00" taborder="0" text="프로그램목록리스트" left="0" top="20" width="150" height="24" cssclass="sta_WF_title1"/>
+              <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
+              <Grid id="grd_list" taborder="2" left="0" top="50" right="0" bottom="30" binddataset="dsList" initvalueid="iv_Grid" statecellindex="1">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="30" band="left"/>
+                      <Column size="30" band="left"/>
+                      <Column size="40"/>
+                      <Column size="42"/>
+                      <Column size="86"/>
+                      <Column size="160"/>
+                      <Column size="80"/>
+                      <Column size="150"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell displaytype="imagecontrol" text="theme://images/flag.png"/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                      <Cell col="2"/>
+                      <Cell col="3" text="순번"/>
+                      <Cell col="4" text="샘플ID"/>
+                      <Cell col="5" text="샘플명"/>
+                      <Cell col="6" text="샘플타입"/>
+                      <Cell col="7" text="지역"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell/>
+                      <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox" text="bind:_chk"/>
+                      <Cell col="2"/>
+                      <Cell col="3" expr="currow+1"/>
+                      <Cell col="4" text="bind:id"/>
+                      <Cell col="5" displaytype="normal" edittype="normal" text="bind:name" editautoselect="false" editdisplay="edit" combodataset="dsCode_CM001" combocodecol="FIELDCODE" combodatacol="FIELDNAME"/>
+                      <Cell col="6" displaytype="expr:dataset.getRowType(currow) == 2 ? &quot;editcontrol&quot;:&quot;normal&quot;" edittype="expr:dataset.getRowType(currow) == 2 ? &quot;normal&quot;:&quot;none&quot;" editfilter="upper,digit" text="bind:description" editimemode="alpha" editautoselect="true" combodisplay="edit"/>
+                      <Cell col="7" displaytype="text" edittype="text" style="align:left middle;" text="bind:useYn" editimemode="hangul" editautoselect="true" editdisplay="display" combodisplay="edit"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static00_00" taborder="3" text="※ 업무 진행 시 반드시 숙지해야 할 안내문은 타이틀 우측에 배치." left="163" top="20" width="512" height="24" cssclass="sta_txt_desc" initvalueid="iv_fc_blue"/>
+              <Static id="Static01_00_00_00" taborder="4" text="10" top="3" cssclass="sta_Guide" width="10" left="153" height="50" visible="false"/>
+              <Static id="Static01_00_00_00_00" taborder="5" text="10" top="614" cssclass="sta_Guide" width="100" left="50" height="10" visible="false"/>
+              <Static id="Static01_00_00_00_00_00" taborder="6" text="30" top="614" cssclass="sta_Guide" width="100" left="809" height="30" visible="false"/>
+              <Static id="Static00_00_00" taborder="7" text="※ 일반적인 안내문은 영역 좌측 하단에 배치합니다. / 또는 타이틀 옆에 도움말이 위치하기에 공간이 협소한 경우, 예외적으로 하단에 위치할 수 있습니다." left="0" width="1180" height="24" cssclass="sta_txt_desc" bottom="2" initvalueid="iv_fc_blue"/>
+              <Button id="btn_excelUp" taborder="8" text="엑셀업로드" top="20" width="109" height="24" cssclass="btn_Block_excelUp" right="447" onclick="divGridWapper_btn_excelUp_onclick"/>
+              <Button id="btn_excelDown" taborder="9" text="엑셀다운로드" top="20" width="122" height="24" cssclass="btn_Block_excelDown" right="321" onclick="divGridWapper_btn_excelDown_onclick"/>
+              <Button id="btnAdd" taborder="10" text="행추가" top="20" width="76" height="24" cssclass="btn_Block_addRow" right="240" onclick="divGridWapper_btnAdd_onclick"/>
+              <Static id="Static02_02_00" taborder="12" text="건" top="20" width="17" height="24" cssclass="sta_WF_gridUnit" right="620"/>
+              <Button id="btnCopy" taborder="13" text="행복사" top="20" width="76" height="24" cssclass="btn_Block_copyRow" right="160"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00" taborder="15" text="10" top="13" cssclass="sta_Guide" width="10" left="861" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00" taborder="16" text="4" top="14" cssclass="sta_Guide" width="4" left="849" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00" taborder="17" text="4" top="14" cssclass="sta_Guide" width="4" left="1041" height="35" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="18" text="6" top="44" cssclass="sta_Guide" width="100" left="1234" height="6" visible="false"/>
+              <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="19" text="12" top="38" cssclass="sta_Guide" width="100" left="874" height="12" visible="false"/>
+              <Button id="btnDelete" taborder="20" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="80" onclick="divGridWapper_btnDelete_onclick"/>
+              <Button id="btnCancel" taborder="21" text="행취소" top="20" width="76" height="24" cssclass="btn_Block_reset" right="0" onclick="divGridWapper_btnCancel_onclick"/>
+              <Static id="Static02_00" taborder="22" text="4" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="640"/>
+              <Button id="btnSave" taborder="23" text="저장" top="19" width="50" height="24" right="669" onclick="divGridWapper_btnSave_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static01" taborder="2" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsImp" onrowsetchanged="dsImp_onrowsetchanged" oncolumnchanged="dsImp_oncolumnchanged">
+        <ColumnInfo>
+          <Column type="string" id="id" size="11"/>
+          <Column type="string" id="name" size="20"/>
+          <Column type="string" id="description" size="75"/>
+          <Column type="string" id="useYn" size="9"/>
+          <Column id="regUser" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="id">1</Col>
+            <Col id="name">Runtime Environment</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsCodeCm001">
+        <ColumnInfo>
+          <Column id="BUKRS" type="STRING" size="4"/>
+          <Column id="DOMNAME" type="STRING" size="30"/>
+          <Column id="FIELDCODE" type="STRING" size="30"/>
+          <Column id="FIELDNAME" type="STRING" size="40"/>
+          <Column id="TEXT" type="STRING" size="255"/>
+          <Column id="DDTEXT" type="STRING" size="60"/>
+          <Column id="SORD" type="INT" size="1"/>
+          <Column id="CODE1" type="STRING" size="30"/>
+          <Column id="ETC1V" type="STRING" size="40"/>
+          <Column id="ETC1N" type="STRING" size="40"/>
+          <Column id="ETC2V" type="STRING" size="40"/>
+          <Column id="ETC2N" type="STRING" size="40"/>
+          <Column id="ETC3V" type="STRING" size="40"/>
+          <Column id="ETC3N" type="STRING" size="40"/>
+          <Column id="ETC4V" type="STRING" size="40"/>
+          <Column id="ETC4N" type="STRING" size="40"/>
+          <Column id="ETC5V" type="STRING" size="40"/>
+          <Column id="ETC5N" type="STRING" size="40"/>
+          <Column id="ETC6V" type="STRING" size="40"/>
+          <Column id="ETC6N" type="STRING" size="40"/>
+          <Column id="ETC7V" type="STRING" size="40"/>
+          <Column id="ETC7N" type="STRING" size="40"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3000</Col>
+            <Col id="FIELDNAME">KT렌탈 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3100</Col>
+            <Col id="FIELDNAME">오토리스 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">IN3200</Col>
+            <Col id="FIELDNAME">KT오토케어 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">MB3000</Col>
+            <Col id="FIELDNAME">모바일시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">OT3000</Col>
+            <Col id="FIELDNAME">KT렌탈 대외 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">OT3100</Col>
+            <Col id="FIELDNAME">오토리스 대외 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">RE1000</Col>
+            <Col id="FIELDNAME">일반렌탈 MOBILE 시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM001</Col>
+            <Col id="FIELDCODE">RE2000</Col>
+            <Col id="FIELDNAME">렌탈 매니저 WEB시스템</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">시스템구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsCodeCm002All">
+        <ColumnInfo>
+          <Column id="BUKRS" type="STRING" size="4"/>
+          <Column id="DOMNAME" type="STRING" size="30"/>
+          <Column id="FIELDCODE" type="STRING" size="30"/>
+          <Column id="FIELDNAME" type="STRING" size="40"/>
+          <Column id="TEXT" type="STRING" size="255"/>
+          <Column id="DDTEXT" type="STRING" size="60"/>
+          <Column id="SORD" type="INT" size="1"/>
+          <Column id="CODE1" type="STRING" size="30"/>
+          <Column id="ETC1V" type="STRING" size="40"/>
+          <Column id="ETC1N" type="STRING" size="40"/>
+          <Column id="ETC2V" type="STRING" size="40"/>
+          <Column id="ETC2N" type="STRING" size="40"/>
+          <Column id="ETC3V" type="STRING" size="40"/>
+          <Column id="ETC3N" type="STRING" size="40"/>
+          <Column id="ETC4V" type="STRING" size="40"/>
+          <Column id="ETC4N" type="STRING" size="40"/>
+          <Column id="ETC5V" type="STRING" size="40"/>
+          <Column id="ETC5N" type="STRING" size="40"/>
+          <Column id="ETC6V" type="STRING" size="40"/>
+          <Column id="ETC6N" type="STRING" size="40"/>
+          <Column id="ETC7V" type="STRING" size="40"/>
+          <Column id="ETC7N" type="STRING" size="40"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="FIELDCODE"/>
+            <Col id="FIELDNAME">전체</Col>
+            <Col id="BUKRS"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM002</Col>
+            <Col id="FIELDCODE">mrd</Col>
+            <Col id="FIELDNAME">mrd</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈유형</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM002</Col>
+            <Col id="FIELDCODE">svc</Col>
+            <Col id="FIELDNAME">svc</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈유형</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM002</Col>
+            <Col id="FIELDCODE">task</Col>
+            <Col id="FIELDNAME">task</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈유형</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM002</Col>
+            <Col id="FIELDCODE">xfdl</Col>
+            <Col id="FIELDNAME">xfdl</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈유형</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsCodeCm003All">
+        <ColumnInfo>
+          <Column id="BUKRS" type="STRING" size="4"/>
+          <Column id="DOMNAME" type="STRING" size="30"/>
+          <Column id="FIELDCODE" type="STRING" size="30"/>
+          <Column id="FIELDNAME" type="STRING" size="40"/>
+          <Column id="TEXT" type="STRING" size="255"/>
+          <Column id="DDTEXT" type="STRING" size="60"/>
+          <Column id="SORD" type="INT" size="1"/>
+          <Column id="CODE1" type="STRING" size="30"/>
+          <Column id="ETC1V" type="STRING" size="40"/>
+          <Column id="ETC1N" type="STRING" size="40"/>
+          <Column id="ETC2V" type="STRING" size="40"/>
+          <Column id="ETC2N" type="STRING" size="40"/>
+          <Column id="ETC3V" type="STRING" size="40"/>
+          <Column id="ETC3N" type="STRING" size="40"/>
+          <Column id="ETC4V" type="STRING" size="40"/>
+          <Column id="ETC4N" type="STRING" size="40"/>
+          <Column id="ETC5V" type="STRING" size="40"/>
+          <Column id="ETC5N" type="STRING" size="40"/>
+          <Column id="ETC6V" type="STRING" size="40"/>
+          <Column id="ETC6N" type="STRING" size="40"/>
+          <Column id="ETC7V" type="STRING" size="40"/>
+          <Column id="ETC7N" type="STRING" size="40"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="FIELDCODE"/>
+            <Col id="FIELDNAME">전체</Col>
+            <Col id="BUKRS"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">CM</Col>
+            <Col id="FIELDNAME">공통</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">CO</Col>
+            <Col id="FIELDNAME">관리회계</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">CS</Col>
+            <Col id="FIELDNAME">고객만족(콜센터)</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">FI</Col>
+            <Col id="FIELDNAME">재무회계</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">HR</Col>
+            <Col id="FIELDNAME">인사관리</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">MM</Col>
+            <Col id="FIELDNAME">구매자재관리</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">PM</Col>
+            <Col id="FIELDNAME">설비관리</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">SB</Col>
+            <Col id="FIELDNAME">SD-수납/채권</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">SD</Col>
+            <Col id="FIELDNAME">영업관리</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+          <Row>
+            <Col id="BUKRS">3000</Col>
+            <Col id="DOMNAME">CM003</Col>
+            <Col id="FIELDCODE">TR</Col>
+            <Col id="FIELDNAME">자금관리</Col>
+            <Col id="TEXT"/>
+            <Col id="DDTEXT">모듈구분</Col>
+            <Col id="SORD">0</Col>
+            <Col id="CODE1"/>
+            <Col id="ETC1V">0.0000</Col>
+            <Col id="ETC1N"/>
+            <Col id="ETC2V">0.0000</Col>
+            <Col id="ETC2N"/>
+            <Col id="ETC3V">0.0000</Col>
+            <Col id="ETC3N"/>
+            <Col id="ETC4V"/>
+            <Col id="ETC4N"/>
+            <Col id="ETC5V"/>
+            <Col id="ETC5N"/>
+            <Col id="ETC6V"/>
+            <Col id="ETC6N"/>
+            <Col id="ETC7V">00000000</Col>
+            <Col id="ETC7N"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsList" useclientlayout="true">
+        <ColumnInfo>
+          <Column id="_chk" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="id" type="STRING" size="256"/>
+          <Column id="name" type="STRING" size="256"/>
+          <Column id="description" type="STRING" size="256"/>
+          <Column id="useYn" type="STRING" size="256"/>
+          <Column id="regUser" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="dsImp_IS_LOGIN">
+        <ColumnInfo>
+          <Column id="PERNR" type="INT" size="8"/>
+          <Column id="LOGID" type="STRING" size="30"/>
+          <Column id="ENAME" type="STRING" size="40"/>
+          <Column id="BUKRS" type="STRING" size="4"/>
+          <Column id="SCRNO" type="STRING" size="20"/>
+          <Column id="SYSIP" type="STRING" size="20"/>
+          <Column id="SYS_CD" type="STRING" size="20"/>
+          <Column id="NO_MASK" type="STRING" size="1"/>
+          <Column id="SES_ID" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="PERNR">20573</Col>
+            <Col id="LOGID">P20573</Col>
+            <Col id="ENAME">양경호</Col>
+            <Col id="BUKRS">3000</Col>
+            <Col id="SCRNO">CM10040</Col>
+            <Col id="SYSIP">10.106.7.11</Col>
+            <Col id="SYS_CD">IN3000</Col>
+            <Col id="NO_MASK"/>
+            <Col id="SES_ID">AALjrMwoTJSADhzPKrYsI</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsImp2" onrowsetchanged="dsImp_onrowsetchanged" oncolumnchanged="dsImp_oncolumnchanged">
+        <ColumnInfo>
+          <Column type="string" id="sampleId" size="11"/>
+          <Column type="string" id="sampleNm" size="20"/>
+          <Column type="string" id="sampleType" size="75"/>
+          <Column type="string" id="loc" size="9"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="sampleId">sample001</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/********************************************************************
+*  기본CRUD 샘플
+*  @FileName 	: SampleDefaultCRUD.xfdl
+*  @Creator 	: 양경호
+*  @CreateDate 	: 2022/01/14
+*  @Desction    : 기본CRUD 샘플 페이지
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2022/01/14     	        양경호                 최초 생성
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+************************************************************************************************/
+this.oApp = nexacro.getApplication();
+ 
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+    //공통 Onload함수
+    this.gfnFormOnLoad(obj);
+	
+	this.divSearch.form.cmbModGcd.set_index(0);
+	this.divSearch.form.cmbModTy.set_index(0);
+	this.divSearch.form.cmbSysCd.set_index(0);
+}
+ 
+/************************************************************************************************
+* CALLBACK 콜백 처리부분(Transaction, Popup)
+************************************************************************************************/
+this.fnCallback = function(sSvcId, nErrCode, sErrMsg)
+{
+    switch(sSvcId)
+    {
+    	case "searchSD10040" :
+    	break;
+    	default:
+		break;
+    }
+}
+
+/************************************************************************************************
+* CRUD 및 TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+this.fnSearch = function()
+{
+// 	if(this.gfnIsNull(this.divSearch.form.cmbSysCd.value) ){
+// 		this.gfnAlert("시스템은 필수입력 항목입니다.",
+// 		 function(sId,sVal)
+// 		 {
+// 			this.divSearch.form.cmbSysCd.setFocus();
+// 		 });
+// 		return;
+// 	}
+	
+ 
+    var oArgs  = {
+			  svcId 	: 	"searchSD10040",
+			  /*svcUrl 	: 	"selectsamplelist",*/
+			  svcUrl 	: 	"selectnexacrolist",
+			  inDs 		: 	"dsImp=dsImp",
+			  outDs 	: 	"dsList=dsList",
+			  svcType 	: 	"R"
+	}	
+
+	// 공통 트랜잭션 호출
+	this.gfnTransaction(oArgs);
+}
+
+this.fnSave = function()
+{
+	
+    var oArgs  = {
+			  svcId 	: 	"saveSampleList",
+			  /*svcUrl 	: 	"saveSampleList2.do",*/
+			  svcUrl 	: 	"saveSampleList2.do",
+			  inDs 		: 	"dsList=dsList:A",
+			  outDs 	: 	"",
+			  svcType 	: 	"S"
+	}	
+
+	// 공통 트랜잭션 호출
+	this.gfnTransaction(oArgs);
+}
+/************************************************************************************************
+ * 사용자 FUNCTION 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+this.DivSearch_btnSearch_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSearch();
+};
+
+this.divGridWapper_btnAdd_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var aRow = this.gfnAddRow(this.dsList);
+    for(var i=0; i<aRow.length; i++)
+	{
+		this.dsList.setColumn(aRow[i], "USE_YN", "1");							// 사용여부 디폴트(사용 : 1)
+		this.dsList.setColumn(aRow[i], "SYS_CD", this.divSearch.form.cmbSysCd.value);		// 시스템 디폴트(조회조건의 코드로)
+		this.dsList.setColumn(aRow[i], "MOD_TY", "xfdl");						// 유형:xfdl	
+	}
+
+};
+
+this.divGridWapper_btnDelete_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnDeleteRow(this.dsList);	
+};
+
+this.divGridWapper_btnCancel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnResetRow(this.dsList,this.dsList.rowposition);
+};
+
+this.divGridWapper_btnSave_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnSave();
+};
+
+this.divGridWapper_btn_excelUp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnExcelImport("dsList");
+};
+
+this.divGridWapper_btn_excelDown_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnExcelExport(this.divGridWapper.form.grd_list, "시트명", "엑셀다운로드샘플");
+};]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="divSearch.form.cmbModTy" propid="value" datasetid="dsImp" columnid="description"/>
+      <BindItem id="item1" compid="divSearch.form.edtModId" propid="value" datasetid="dsImp" columnid="id"/>
+      <BindItem id="item2" compid="divSearch.form.edtModNm" propid="value" datasetid="dsImp" columnid="name"/>
+      <BindItem id="item3" compid="divSearch.form.cmbModGcd" propid="value" datasetid="dsImp" columnid="useYn"/>
+      <BindItem id="item5" compid="divSearch.form.radUseYn" propid="value" datasetid="dsImp" columnid="I_USE_YN"/>
+    </Bind>
+  </Form>
+</FDL>

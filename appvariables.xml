@@ -33871,6 +33871,13 @@
           <Col id="CLA_NM">Sample::SampleDefaultCRUD.xfdl</Col>
         </Row>
         <Row>
+          <Col id="MENUID">XX0054</Col>
+          <Col id="MENUNM">샘플 작성중</Col>
+          <Col id="UPR_ID">XX0037</Col>
+          <Col id="MENULV">3</Col>
+          <Col id="CLA_NM">Sample::SampleSample.xfdl</Col>
+        </Row>
+        <Row>
           <Col id="MENUID">XX0041</Col>
           <Col id="MENUNM">캘린더 컴포지트 샘플</Col>
           <Col id="UPR_ID">XX0037</Col>

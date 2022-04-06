@@ -83,7 +83,9 @@ pForm.gfnTransaction = function(oArgs)
 			startTime : nStartTime };
 	
 	// 2. strServiceUrl
-	var sServiceUrl = (this.gfnIsNull(sSvcUrl)) ? "svcUrl::executeds" : sSvcUrl;
+	//var sServiceUrl = (this.gfnIsNull(sSvcUrl)) ? "svcUrl::executeds" : sSvcUrl;
+	var sServiceUrl = "svcUrl::"+sSvcUrl;
+	
 	
 	// 3. strArg
 	var sArguments = "";

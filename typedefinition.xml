@@ -88,7 +88,7 @@
     <Service prefixid="SD" type="form" url="./SD/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
     <Service prefixid="TR" type="form" url="./TR/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
     <Service prefixid="WebCss" type="file" url="./WebCss/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
-    <Service prefixid="svcUrl" type="JSP" version="0" cachelevel="none" include_subdir="false" communicationversion="0" url="http://erpq.lotterental.net:8004/ktrerp/xp/"/>
+    <Service prefixid="svcUrl" type="JSP" version="0" cachelevel="none" include_subdir="false" communicationversion="0" url="http://localhost:8080"/>
   </Services>
   <Protocols/>
   <DeviceAdaptors/>
