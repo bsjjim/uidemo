@@ -29,15 +29,16 @@ pForm.gfnExcelExport = function(objGrid,  sSheetName, sFileName)
 	this.setWaitCursor(true);
 	var objGrid_excel = objGrid;
 	
+	//fileName nullcheck
+	sFileName = this.gfnIsNull(sFileName) ? this.gfnGetArgument("menuNm")+"_"+this.gfnGetDate() : sFileName;
+	//sheetName nullcheck
+	sSheetName = this.gfnIsNull(sSheetName) ? "sheet1" : sSheetName;
+	
 	var regExp = /[?*:\/\[\]]/g;  				//(엑셀에서 지원하지않는 모든 문자)
 	
 	sFileName = sFileName.replace(regExp,"");	//파일명에 특수문자 제거
 	sSheetName = sSheetName.replace(regExp,""); //시트명에 특수문자 제거
 	
-	//fileName nullcheck
-	sFileName = this.gfnIsNull(sFileName) ? this.gfnGetArgument("menuNm")+"_"+this.gfnGetDate() : sFileName;
-	//sheetName nullcheck
-	sSheetName = this.gfnIsNull(sSheetName) ? "sheet1" : sSheetName;
 	//sheetName 30이상일경우 기본시트명
 	if( String(sSheetName).length > 30 ){
 		sSheetName =  "sheet1";
