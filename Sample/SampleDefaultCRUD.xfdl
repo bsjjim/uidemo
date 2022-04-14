@@ -7,7 +7,7 @@
           <Layouts>
             <Layout>
               <Static id="Static00" taborder="0" text="모듈ID" left="30" top="18" width="48" height="24" cssclass="sta_SA_label_req"/>
-              <Button id="btnSearch" taborder="1" top="11" cssclass="btn_SA_src" right="30" width="38" bottom="11" onclick="DivSearch_btnSearch_onclick"/>
+              <Button id="btnSearch" taborder="1" top="11" cssclass="btn_SA_src" right="30" width="38" bottom="11" onclick="DivSearch_btnSearch_onclick" text=""/>
               <Static id="Static01_00_00" taborder="2" text="w80" top="0" cssclass="sta_Guide" width="80" left="171" height="60" visible="false"/>
               <Static id="Static01_00_01" taborder="3" text="w30" top="-6" cssclass="sta_Guide" width="30" height="60" visible="false" right="0"/>
               <Static id="Static01_00_01_00_00" taborder="4" text="h11" cssclass="sta_Guide" width="50" visible="false" right="107" bottom="0" height="11"/>
@@ -18,7 +18,7 @@
               <Static id="Static01_01_00" taborder="9" text="모듈구분" left="702" top="18" width="58" height="24" cssclass="sta_SA_label"/>
               <Combo id="cmbModGcd" taborder="10" text="전체" left="763" top="18" width="90" height="24" value="" index="0" innerdataset="dsCodeCm003All" codecolumn="FIELDCODE" datacolumn="FIELDNAME"/>
               <Static id="Static01_00" taborder="11" text="w30" top="0" cssclass="sta_Guide" width="30" left="0" height="60" visible="false"/>
-              <Edit id="edtModId" taborder="12" left="81" top="18" width="90" height="24"/>
+              <Edit id="edtModId" taborder="12" left="81" top="18" width="90" height="24" imemode="alpha" maxlength="5" inputmode="upper" inputtype="number,alpha"/>
               <Static id="Static00_00" taborder="13" text="모듈명" left="249" top="18" width="48" height="24" cssclass="sta_SA_label_req"/>
               <Edit id="edtModNm" taborder="14" left="300" top="18" width="90" height="24"/>
               <Static id="Static01_00_00_00_00_00" taborder="15" text="w80" top="0" cssclass="sta_Guide" width="80" left="853" height="60" visible="false"/>
@@ -57,7 +57,7 @@
               <Static id="Static01_00_00_01_00_00_03_01" taborder="14" text="15" top="13" cssclass="sta_Guide" width="15" left="1061" height="35" visible="false"/>
               <Static id="Static00" taborder="0" text="프로그램목록리스트" left="0" top="20" width="150" height="24" cssclass="sta_WF_title1"/>
               <Static id="Static01_00_00" taborder="1" text="h50" top="0" cssclass="sta_Guide" width="100" left="334" height="50" visible="false"/>
-              <Grid id="Grid00" taborder="2" left="0" top="50" right="0" bottom="30" binddataset="dsList" initvalueid="iv_Grid" statecellindex="1">
+              <Grid id="grdList" taborder="2" left="0" top="50" right="0" bottom="47" binddataset="dsList" initvalueid="iv_Grid" statecellindex="1">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -83,7 +83,7 @@
                     </Rows>
                     <Band id="head">
                       <Cell displaytype="checkboxcontrol" edittype="checkbox"/>
-                      <Cell col="1"/>
+                      <Cell col="1" text="theme://images/flag.png" displaytype="imagecontrol"/>
                       <Cell col="2" text="순번"/>
                       <Cell col="3" text="시스템"/>
                       <Cell col="4" text="모듈ID"/>
@@ -102,18 +102,18 @@
                       <Cell displaytype="checkboxcontrol" edittype="checkbox" text="bind:_chk"/>
                       <Cell col="1"/>
                       <Cell col="2" expr="currow+1"/>
-                      <Cell col="3" displaytype="expr:dataset.getRowType(currow) == 2 ? &quot;comboconntrol&quot;:&quot;combotext&quot;" edittype="expr:dataset.getRowType(currow) == 2 ? &quot;combo&quot;:&quot;none&quot;" text="bind:SYS_CD" editautoselect="false" editdisplay="edit" combodataset="dsCode_CM001" combocodecol="FIELDCODE" combodatacol="FIELDNAME"/>
-                      <Cell col="4" displaytype="expr:dataset.getRowType(currow) == 2 ? &quot;editcontrol&quot;:&quot;normal&quot;" edittype="expr:dataset.getRowType(currow) == 2 ? &quot;normal&quot;:&quot;none&quot;" editfilter="upper,digit" text="bind:MOD_ID" editimemode="alpha" editautoselect="true" combodisplay="edit"/>
-                      <Cell col="5" displaytype="text" edittype="text" style="align:left middle;" text="bind:MOD_NM" editimemode="hangul" editautoselect="true" editdisplay="display" combodisplay="edit"/>
-                      <Cell col="6" displaytype="combocontrol" edittype="combo" text="bind:MOD_TY" editautoselect="true" editdisplay="display" combodataset="dsCodeCm002" combocodecol="FIELDCODE" combodatacol="FIELDNAME" combodisplay="display"/>
-                      <Cell col="7" displaytype="combocontrol" edittype="combo" text="bind:MOD_GCD" editautoselect="true" editdisplay="display" combodataset="dsCodeCm003" combocodecol="FIELDCODE" combodatacol="FIELDNAME" combodisplayrowcount="10" combodisplay="display"/>
-                      <Cell col="8" displaytype="text" edittype="text" style="align:left middle;" text="bind:CLA_NM" editimemode="alpha" editautoselect="true" editdisplay="display" combodisplay="edit"/>
-                      <Cell col="9" celltype="none" displaytype="checkbox" edittype="checkbox" text="bind:USE_YN" editautoselect="false" editdisplay="edit" combodisplay="display" combotype="dropdown" autosizerow="default" autosizecol="default"/>
-                      <Cell col="10" text="bind:ERNAMT"/>
-                      <Cell col="11" displaytype="date" edittype="none" text="bind:ERDAT" calendardisplaynulltype="nulltext"/>
-                      <Cell col="12" text="bind:AENAMT"/>
-                      <Cell col="13" displaytype="date" edittype="none" text="bind:AEDAT" mask="####-##-## ##:##:##" calendardisplay="edit" calendardisplaynulltype="nulltext"/>
-                      <Cell col="14" style="align:left middle;" text="bind:MESSAGE"/>
+                      <Cell col="3" edittype="expr:dataset.getRowType(currow) == 2 ? &quot;combo&quot;:&quot;none&quot;" text="bind:sysCd" editautoselect="false" editdisplay="edit" combodataset="dsCodeCm001" combocodecol="FIELDCODE" combodatacol="FIELDNAME" displaytype="expr:dataset.getRowType(currow) == 2 ? &quot;combocontrol&quot;:&quot;combotext&quot;"/>
+                      <Cell col="4" displaytype="expr:dataset.getRowType(currow) == 2 ? &quot;editcontrol&quot;:&quot;normal&quot;" edittype="expr:dataset.getRowType(currow) == 2 ? &quot;normal&quot;:&quot;none&quot;" editfilter="upper,digit" text="bind:modId" editimemode="alpha" editautoselect="true" combodisplay="edit"/>
+                      <Cell col="5" displaytype="text" edittype="text" style="align:left middle;" text="bind:modNm" editimemode="hangul" editautoselect="true" editdisplay="display" combodisplay="edit"/>
+                      <Cell col="6" displaytype="combocontrol" edittype="combo" text="bind:modTy" editautoselect="true" editdisplay="display" combodataset="dsCodeCm002" combocodecol="FIELDCODE" combodatacol="FIELDNAME" combodisplay="display"/>
+                      <Cell col="7" displaytype="combocontrol" edittype="combo" text="bind:modGcd" editautoselect="true" editdisplay="display" combodataset="dsCodeCm003" combocodecol="FIELDCODE" combodatacol="FIELDNAME" combodisplayrowcount="10" combodisplay="display"/>
+                      <Cell col="8" displaytype="text" edittype="text" style="align:left middle;" text="bind:claNm" editimemode="alpha" editautoselect="true" editdisplay="display" combodisplay="edit"/>
+                      <Cell col="9" celltype="none" displaytype="checkboxcontrol" edittype="checkbox" text="bind:useYn" editautoselect="false" editdisplay="edit" combodisplay="display" combotype="dropdown" autosizerow="default" autosizecol="default"/>
+                      <Cell col="10" text="bind:ernamt"/>
+                      <Cell col="11" displaytype="date" edittype="none" text="bind:erdat" calendardisplaynulltype="nulltext"/>
+                      <Cell col="12" text="bind:aenamt"/>
+                      <Cell col="13" displaytype="date" edittype="none" text="bind:aedat" mask="####-##-## ##:##:##" calendardisplay="edit" calendardisplaynulltype="nulltext"/>
+                      <Cell col="14" style="align:left middle;" text="bind:message"/>
                     </Band>
                   </Format>
                 </Formats>
@@ -123,8 +123,8 @@
               <Static id="Static01_00_00_00_00" taborder="5" text="10" top="614" cssclass="sta_Guide" width="100" left="50" height="10" visible="false"/>
               <Static id="Static01_00_00_00_00_00" taborder="6" text="30" top="614" cssclass="sta_Guide" width="100" left="809" height="30" visible="false"/>
               <Static id="Static00_00_00" taborder="7" text="※ 일반적인 안내문은 영역 좌측 하단에 배치합니다. / 또는 타이틀 옆에 도움말이 위치하기에 공간이 협소한 경우, 예외적으로 하단에 위치할 수 있습니다." left="0" width="1180" height="24" cssclass="sta_txt_desc" bottom="2" initvalueid="iv_fc_blue"/>
-              <Button id="Button00_00_01_00_02_02_00_00" taborder="8" top="20" width="44" height="24" cssclass="btn_Block_excelUp" right="368"/>
-              <Button id="Button00_00_01_00_02_02_00_00_00" taborder="9" top="20" width="44" height="24" cssclass="btn_Block_excelDown" right="320"/>
+              <Button id="btnExcelImport" taborder="8" top="20" width="44" height="24" cssclass="btn_Block_excelUp" right="368"/>
+              <Button id="btnExcelExport" taborder="9" top="20" width="44" height="24" cssclass="btn_Block_excelDown" right="320" text="" onclick="divGridWapper_btnExcelExport_onclick"/>
               <Button id="btnAdd" taborder="10" text="행추가" top="20" width="76" height="24" cssclass="btn_Block_addRow" right="240" onclick="divGridWapper_btnAdd_onclick"/>
               <Static id="Static02_02_00" taborder="12" text="건" top="20" width="17" height="24" cssclass="sta_WF_gridUnit" right="476"/>
               <Button id="btnCopy" taborder="13" text="행복사" top="20" width="76" height="24" cssclass="btn_Block_copyRow" right="160"/>
@@ -133,24 +133,33 @@
               <Static id="Static01_00_00_01_00_00_03_01_00_00_00" taborder="17" text="4" top="14" cssclass="sta_Guide" width="4" left="1120" height="35" visible="false"/>
               <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00" taborder="18" text="6" top="44" cssclass="sta_Guide" width="100" left="1234" height="6" visible="false"/>
               <Static id="Static01_00_00_01_00_00_03_01_00_00_00_00_00" taborder="19" text="12" top="38" cssclass="sta_Guide" width="100" left="1018" height="12" visible="false"/>
-              <Button id="btnDelete" taborder="20" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="80"/>
-              <Button id="btnCancel" taborder="21" text="행취소" top="20" width="76" height="24" cssclass="btn_Block_reset" right="0"/>
+              <Button id="btnDelete" taborder="20" text="행삭제" top="20" width="76" height="24" cssclass="btn_Block_delRow" right="80" onclick="divGridWapper_btnDelete_onclick"/>
+              <Button id="btnCancel" taborder="21" text="행취소" top="20" width="76" height="24" cssclass="btn_Block_reset" right="0" onclick="divGridWapper_btnCancel_onclick"/>
               <Static id="Static02_00" taborder="22" text="4" top="20" width="50" height="24" cssclass="sta_WF_gridCountNum" right="496"/>
             </Layout>
           </Layouts>
         </Div>
         <Static id="Static01" taborder="2" text="40" top="-62" cssclass="sta_Guide" width="40" right="0" bottom="62" visible="false"/>
+        <Div id="divFooter" taborder="3" text="div00" left="0" height="48" right="40" cssclass="div_footer" formscrolltype="none" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="Static01_00_01_00_00" taborder="0" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="0" height="10"/>
+              <Static id="Static01_00_01_00_00_00" taborder="1" text="10" cssclass="sta_Guide" width="50" visible="false" right="34" bottom="38" height="10"/>
+              <Button id="btnSave" taborder="2" text="저장" width="64" height="28" cssclass="btn_Comm_func" top="10" right="0" onclick="divFooter_btnSave_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
       </Layout>
     </Layouts>
     <Objects>
       <Dataset id="dsImp" onrowsetchanged="dsImp_onrowsetchanged" oncolumnchanged="dsImp_oncolumnchanged">
         <ColumnInfo>
-          <Column type="string" id="I_MOD_GCD" size="11"/>
-          <Column type="string" id="I_MOD_ID" size="20"/>
-          <Column type="string" id="I_MOD_NM" size="75"/>
-          <Column type="string" id="I_MOD_TY" size="9"/>
-          <Column type="string" id="I_SYS_CD" size="20"/>
-          <Column type="string" id="I_USE_YN" size="1"/>
+          <Column type="string" id="modGcd" size="11"/>
+          <Column type="string" id="modId" size="20"/>
+          <Column type="string" id="modNm" size="75"/>
+          <Column type="string" id="modTy" size="9"/>
+          <Column type="string" id="sysCd" size="20"/>
+          <Column type="string" id="useYn" size="1"/>
         </ColumnInfo>
         <Rows>
           <Row/>
@@ -781,31 +790,31 @@
       <Dataset id="dsList">
         <ColumnInfo>
           <Column id="_chk" type="STRING" size="256"/>
-          <Column id="GUBUN" type="STRING" size="256"/>
-          <Column id="SYS_CD" type="STRING" size="256"/>
-          <Column id="MOD_ID" type="STRING" size="256"/>
-          <Column id="MOD_NM" type="STRING" size="256"/>
-          <Column id="MOD_TY" type="STRING" size="256"/>
-          <Column id="MOD_GCD" type="STRING" size="256"/>
-          <Column id="CLA_NM" type="STRING" size="256"/>
-          <Column id="USE_YN" type="STRING" size="256"/>
-          <Column id="DES_2" type="STRING" size="256"/>
-          <Column id="DUT_L" type="STRING" size="256"/>
-          <Column id="DUT_M" type="STRING" size="256"/>
-          <Column id="DUT_S" type="STRING" size="256"/>
-          <Column id="INQ_YN" type="STRING" size="256"/>
-          <Column id="RG_YN" type="STRING" size="256"/>
-          <Column id="DEL_YN" type="STRING" size="256"/>
-          <Column id="PRT_YN" type="STRING" size="256"/>
-          <Column id="EXL_YN" type="STRING" size="256"/>
-          <Column id="CON_YN" type="STRING" size="256"/>
-          <Column id="ERNAM" type="STRING" size="256"/>
-          <Column id="ERNAMT" type="STRING" size="256"/>
-          <Column id="ERDAT" type="STRING" size="256"/>
-          <Column id="AENAM" type="STRING" size="256"/>
-          <Column id="AENAMT" type="STRING" size="256"/>
-          <Column id="AEDAT" type="STRING" size="256"/>
-          <Column id="MESSAGE" type="STRING" size="256"/>
+          <Column id="gubun" type="STRING" size="256"/>
+          <Column id="sysCd" type="STRING" size="256"/>
+          <Column id="modId" type="STRING" size="256"/>
+          <Column id="modNm" type="STRING" size="256"/>
+          <Column id="modTy" type="STRING" size="256"/>
+          <Column id="modGcd" type="STRING" size="256"/>
+          <Column id="claNm" type="STRING" size="256"/>
+          <Column id="useYn" type="STRING" size="256"/>
+          <Column id="des2" type="STRING" size="256"/>
+          <Column id="dutL" type="STRING" size="256"/>
+          <Column id="dutM" type="STRING" size="256"/>
+          <Column id="dutS" type="STRING" size="256"/>
+          <Column id="inqYn" type="STRING" size="256"/>
+          <Column id="rgYn" type="STRING" size="256"/>
+          <Column id="delYn" type="STRING" size="256"/>
+          <Column id="prtYn" type="STRING" size="256"/>
+          <Column id="exlYn" type="STRING" size="256"/>
+          <Column id="conYn" type="STRING" size="256"/>
+          <Column id="ernam" type="STRING" size="256"/>
+          <Column id="ernamt" type="STRING" size="256"/>
+          <Column id="erdat" type="STRING" size="256"/>
+          <Column id="aenam" type="STRING" size="256"/>
+          <Column id="aenamt" type="STRING" size="256"/>
+          <Column id="aedat" type="STRING" size="256"/>
+          <Column id="message" type="STRING" size="256"/>
         </ColumnInfo>
       </Dataset>
       <Dataset id="dsImp_IS_LOGIN">
@@ -1257,8 +1266,46 @@ this.fnFormOnload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 	this.divSearch.form.cmbModGcd.set_index(0);
 	this.divSearch.form.cmbModTy.set_index(0);
 	this.divSearch.form.cmbSysCd.set_index(0);
+	
+	this.fnSetValidation();
 }
- 
+
+this.fnSetValidation = function()
+{
+
+	// Validation 체크 Rule의 종류
+	// required - 필수 체크
+	// length:7 - 길이가 7자리인지 체크
+	// rangelength:2:3 - 길이가 2 ~ 3 자리인지 체크
+	// maxlength:7 - 길이가 7보다 작은지 체크
+	// minlength:3 - 길이가 3보다 큰지 체크
+	// maxlengthbyte:7 - byte의 길이가 7보다 작은지 체크
+	// minlengthbyte:3 - byte의 길이가 3보다 큰지 체크
+	// digits - 숫자여부 체크
+	// min:7 - 값이 7보다 작은지 체크
+	// max:7 - 값이 7보다 큰지 체크
+	// declimit:3 - 소수점의 자리수가 3자리인지 체크
+	// date - 년월일형태의 날짜가 맞는지 체크
+	// dateym - 년월형태의 날짜가 맞는지 체크
+	// range:40:100 - 값이 40 ~ 100 사이의 값인지 체크
+	// code:1:2:3 - 값이 1,2,3 의 값인지 체크
+	// equalto:NAME - NAME 칼럼의 값과 같은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "equalto:NAME");
+	// fromto:ID - 등록된 날짜가 ID의 칼럼의 값 보다 큰지 예) this.gfnSetValidation(this.dsList, "NAME", "종료일,시작일", "fromto:ID");
+	// comparebig:NAME - NAME 칼럼의 값보다 큰지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparebig:NAME");
+	// comparesmall:NAME - NAME 칼럼의 값보다 작은지 체크 예) this.gfnSetValidation(this.dsList, "ID", "아이디", "comparesmall:NAME");
+	// isssn - 공통함수 gfnIsSSN로 주민번호 체크
+	// isfrn - 공통함수 gfnIsFrnrIdNo로 외국인등록번호 체크
+	// isbzid - 공통함수 gfnIsBzIdNo로 사업자등록번호 체크
+	// isfirmid - 공통함수 gfnIsFirmIdNo로 법인등록번호 체크
+	// iscardno - 공통함수 gfnIsCardNo로 신용카드번호 체크
+	// isemail - 공통함수 gfnIsEmail로 이메일 체크
+	
+
+	this.gfnSetValidation(this.divSearch.form.edtModId, "", "모듈ID", "required");
+	this.gfnSetValidation(this.divSearch.form.edtModNm, "", "모듈명", "required");
+	
+}
+
 /************************************************************************************************
 * CALLBACK 콜백 처리부분(Transaction, Popup)
 ************************************************************************************************/
@@ -1266,8 +1313,11 @@ this.fnCallback = function(sSvcId, nErrCode, sErrMsg)
 {
     switch(sSvcId)
     {
-    	case "searchSD10040" :
+    	case "search" :
     	break;
+    	case "save" :
+			this.fnSearch();
+    	break;		
     	default:
 		break;
     }
@@ -1278,24 +1328,30 @@ this.fnCallback = function(sSvcId, nErrCode, sErrMsg)
 ************************************************************************************************/
 this.fnSearch = function()
 {
-	if(this.gfnIsNull(this.divSearch.form.cmbSysCd.value) ){
-		this.gfnAlert("시스템은 필수입력 항목입니다.",
-		 function(sId,sVal)
-		 {
-			this.divSearch.form.cmbSysCd.setFocus();
-		 });
-		return;
-	}
+	if(!this.gfnValidation(this.divSearch)) return;
 	
  
     var oArgs  = {
-			  svcId 	: 	"searchSD10040",
-			  rfcName 	: 	"ZCM_WEB_PRO_LIST",
-			  inDs 		: 	"dsImp=dsImp"
-						  +" dsImp_IS_LOGIN=dsImp_IS_LOGIN",
-			  outDs 	: 	"dsExp_ES_RETURN=dsExp_ES_RETURN"
-						  +" dsTbl_T_DATA=dsTbl_T_DATA",
+			  svcId 	: 	"search",
+			  //rfcName 	: 	"ZCM_WEB_PRO_LIST",
+			  svcUrl    : "selectnexacrovolist",
+			  inDs 		: 	"dsImp=dsImp",
+			  outDs 	: 	"dsList=dsList",
 			  svcType 	: 	"R"
+	}	
+
+	// 공통 트랜잭션 호출
+	this.gfnTransaction(oArgs);
+}
+
+this.fnSave = function()
+{
+    var oArgs  = {
+			  svcId 	: 	"save",
+			  //rfcName 	: 	"ZCM_WEB_PRO_LIST",
+			  svcUrl    : "savenexacrovolist",
+			  inDs 		: 	"dsList=dsList",
+			  svcType 	: 	"S"
 	}	
 
 	// 공통 트랜잭션 호출
@@ -1317,29 +1373,40 @@ this.DivSearch_btnSearch_onclick = function(obj:nexacro.Button,e:nexacro.ClickEv
 
 this.divGridWapper_btnAdd_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	var nRow = this.dsList.addRow();
-	this.dsList.setColumn(nRow, "USE_YN", "1");							// 사용여부 디폴트(사용 : 1)
-	this.dsList.setColumn(nRow, "SYS_CD", this.divSearch.form.cmbSysCd.value);		// 시스템 디폴트(조회조건의 코드로)
-	this.dsList.setColumn(nRow, "MOD_TY", "xfdl");						// 유형:xfdl	
+	var nRow = this.gfnAddRow(this.dsList);
+	this.dsList.setColumn(nRow, "useYn", "1");							// 사용여부 디폴트(사용 : 1)
+	this.dsList.setColumn(nRow, "sysCd", this.divSearch.form.cmbSysCd.value);		// 시스템 디폴트(조회조건의 코드로)
+	this.dsList.setColumn(nRow, "modTy", "xfdl");						// 유형:xfdl	
 };
 
-this.dsImp_onrowsetchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo)
+this.divFooter_btnSave_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	
+	this.fnSave();
 };
 
-this.dsImp_oncolumnchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo)
+this.divGridWapper_btnDelete_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	
+	this.gfnDeleteRow(this.dsList);
+};
+
+this.divGridWapper_btnCancel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.dsList.reset();
+};
+
+
+this.divGridWapper_btnExcelExport_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnExcelExport(this.divGridWapper.form.grdList);
 };
 ]]></Script>
     <Bind>
-      <BindItem id="item0" compid="divSearch.form.cmbModTy" propid="value" datasetid="dsImp" columnid="I_MOD_TY"/>
-      <BindItem id="item1" compid="divSearch.form.edtModId" propid="value" datasetid="dsImp" columnid="I_MOD_ID"/>
-      <BindItem id="item2" compid="divSearch.form.edtModNm" propid="value" datasetid="dsImp" columnid="I_MOD_NM"/>
-      <BindItem id="item3" compid="divSearch.form.cmbModGcd" propid="value" datasetid="dsImp" columnid="I_MOD_GCD"/>
-      <BindItem id="item4" compid="divSearch.form.cmbSysCd" propid="value" datasetid="dsImp" columnid="I_SYS_CD"/>
-      <BindItem id="item5" compid="divSearch.form.radUseYn" propid="value" datasetid="dsImp" columnid="I_USE_YN"/>
+      <BindItem id="item0" compid="divSearch.form.cmbModTy" propid="value" datasetid="dsImp" columnid="modTy"/>
+      <BindItem id="item1" compid="divSearch.form.edtModId" propid="value" datasetid="dsImp" columnid="modId"/>
+      <BindItem id="item2" compid="divSearch.form.edtModNm" propid="value" datasetid="dsImp" columnid="modNm"/>
+      <BindItem id="item3" compid="divSearch.form.cmbModGcd" propid="value" datasetid="dsImp" columnid="modGcd"/>
+      <BindItem id="item4" compid="divSearch.form.cmbSysCd" propid="value" datasetid="dsImp" columnid="sysCd"/>
+      <BindItem id="item5" compid="divSearch.form.radUseYn" propid="value" datasetid="dsImp" columnid="useYn"/>
     </Bind>
   </Form>
 </FDL>
